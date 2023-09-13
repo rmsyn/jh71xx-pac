@@ -1,0 +1,28 @@
+[package]
+name = "jh71xx-pac"
+version = "0.1.0"
+edition = "2021"
+authors = ["rmsyn <rmsynchls@gmail.com>"]
+repository = "https://github.com/rmsyn/jh71xx-pac"
+categories = ["embedded", "hardware-support", "no-std"]
+description = "Board support package for the JH71xx boards"
+keywords = ["riscv", "jh7110", "bsp"]
+
+[dependencies.jh7110-vf2-12a-pac]
+path = "./jh7110-vf2-12a-pac"
+optional = true
+
+[dependencies.jh7110-vf2-13b-pac]
+path = "./jh7110-vf2-13b-pac"
+optional = true
+
+[workspace]
+members = [
+    "jh7110-vf2-12a-pac",
+    "jh7110-vf2-13b-pac",
+]
+
+[features]
+visionfive2-12a = ["jh7110-vf2-12a-pac"]
+visionfive2-13b = ["jh7110-vf2-13b-pac"]
+all = ["visionfive2-12a", "visionfive2-13b"]

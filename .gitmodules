@@ -1,0 +1,4 @@
+[submodule "cmsis-svd-generator"]
+	path = cmsis-svd-generator
+	url = https://github.com/rmsyn/cmsis-svd-generator
+	branch = dev
