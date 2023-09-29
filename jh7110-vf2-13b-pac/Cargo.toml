@@ -7,6 +7,7 @@ repository = "https://github.com/rmsyn/jh71xx-pac"
 categories = ["embedded", "hardware-support", "no-std"]
 description = "Board support package for the JH7110 VisionFive2 v1.3b board"
 keywords = ["riscv", "jh7110", "bsp"]
+license = "AGPL"
 
 [dependencies]
 critical-section = { version = "1.1.2", optional = true }
