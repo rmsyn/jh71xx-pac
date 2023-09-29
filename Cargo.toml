@@ -11,10 +11,12 @@ license = "GPL-3.0-only"
 
 [dependencies.jh7110-vf2-12a-pac]
 path = "./jh7110-vf2-12a-pac"
+version = "0.1"
 optional = true
 
 [dependencies.jh7110-vf2-13b-pac]
 path = "./jh7110-vf2-13b-pac"
+version = "0.1"
 optional = true
 
 [workspace]
