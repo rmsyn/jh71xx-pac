@@ -5760,6 +5760,118 @@
       </addressBlock>
     </peripheral>
     <peripheral>
+      <name>starfive_jh7110_pwm_0</name>
+      <description>From starfive,jh7110-pwm, peripheral generator</description>
+      <baseAddress>0x120D0000</baseAddress>
+      <addressBlock>
+        <offset>0</offset>
+        <size>0x10000</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <name>cntr</name>
+          <description>PTC counter register</description>
+          <addressOffset>0x0</addressOffset>
+          <fields>
+            <field>
+              <name>cntr</name>
+              <description>PWM PTC counter</description>
+              <bitRange>[31:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>hrc</name>
+          <description>PTC duty-cycle register</description>
+          <addressOffset>0x4</addressOffset>
+          <fields>
+            <field>
+              <name>hrc</name>
+              <description>PWM PTC duty-cycle value</description>
+              <bitRange>[31:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>lrc</name>
+          <description>PTC period register</description>
+          <addressOffset>0x8</addressOffset>
+          <fields>
+            <field>
+              <name>lrc</name>
+              <description>PWM PTC period value</description>
+              <bitRange>[31:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>ctrl</name>
+          <description>PTC control register</description>
+          <addressOffset>0xc</addressOffset>
+          <fields>
+            <field>
+              <name>en</name>
+              <description>PWM PTC enable</description>
+              <bitRange>[0:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>eclk</name>
+              <description>PWM PTC enable clock</description>
+              <bitRange>[1:1]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>nec</name>
+              <description>PWM PTC nec</description>
+              <bitRange>[2:2]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>oe</name>
+              <description>PWM PTC oe</description>
+              <bitRange>[3:3]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>single</name>
+              <description>PWM PTC single</description>
+              <bitRange>[4:4]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>inte</name>
+              <description>PWM PTC interrupt enable</description>
+              <bitRange>[5:5]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>int</name>
+              <description>PWM PTC interrupt</description>
+              <bitRange>[6:6]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>cntrrst</name>
+              <description>PWM PTC counter reset</description>
+              <bitRange>[7:7]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>capte</name>
+              <description>PWM PTC capte</description>
+              <bitRange>[8:8]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+      </registers>
+    </peripheral>
+    <peripheral>
       <name>starfive_jh7110_syscrg_0</name>
       <description>From starfive,jh7110-syscrg, peripheral generator</description>
       <baseAddress>0x13020000</baseAddress>
@@ -20379,6 +20491,7 @@
           <name>hard_event_turn_on_mask</name>
           <description>Hardware Event Turn-On Mask</description>
           <addressOffset>0x4</addressOffset>
+          <size>32</size>
           <fields>
             <field>
               <name>hard_event_0_on_mask</name>
@@ -20434,46 +20547,47 @@
           <name>soft_turn_on_power_mode</name>
           <description>Software Turn-On Power Mode</description>
           <addressOffset>0xc</addressOffset>
+          <size>32</size>
           <fields>
             <field>
               <name>systop_power_mode</name>
-              <description>SYSTOP turn-on power mode</description>
+              <description>SYSTOP turn-on power mode.</description>
               <bitRange>[0:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
               <name>cpu_power_mode</name>
-              <description>CPU turn-on power mode</description>
+              <description>CPU turn-on power mode.</description>
               <bitRange>[1:1]</bitRange>
               <access>read-write</access>
             </field>
             <field>
               <name>gpua_power_mode</name>
-              <description>GPUA turn-on power mode</description>
+              <description>GPUA turn-on power mode.</description>
               <bitRange>[2:2]</bitRange>
               <access>read-write</access>
             </field>
             <field>
               <name>vdec_power_mode</name>
-              <description>VDEC turn-on power mode</description>
+              <description>VDEC turn-on power mode.</description>
               <bitRange>[3:3]</bitRange>
               <access>read-write</access>
             </field>
             <field>
               <name>vout_power_mode</name>
-              <description>VOUT turn-on power mode</description>
+              <description>VOUT turn-on power mode.</description>
               <bitRange>[4:4]</bitRange>
               <access>read-write</access>
             </field>
             <field>
               <name>isp_power_mode</name>
-              <description>ISP turn-on power mode</description>
+              <description>ISP turn-on power mode.</description>
               <bitRange>[5:5]</bitRange>
               <access>read-write</access>
             </field>
             <field>
               <name>venc_power_mode</name>
-              <description>VENC turn-on power mode</description>
+              <description>VENC turn-on power mode.</description>
               <bitRange>[6:6]</bitRange>
               <access>read-write</access>
             </field>
@@ -20482,47 +20596,48 @@
         <register>
           <name>soft_turn_off_power_mode</name>
           <description>Software Turn-Off Power Mode</description>
-          <addressOffset>0xc</addressOffset>
+          <addressOffset>0x10</addressOffset>
+          <size>32</size>
           <fields>
             <field>
               <name>systop_power_mode</name>
-              <description>SYSTOP turn-off power mode</description>
+              <description>SYSTOP turn-off power mode.</description>
               <bitRange>[0:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
               <name>cpu_power_mode</name>
-              <description>CPU turn-off power mode</description>
+              <description>CPU turn-off power mode.</description>
               <bitRange>[1:1]</bitRange>
               <access>read-write</access>
             </field>
             <field>
               <name>gpua_power_mode</name>
-              <description>GPUA turn-off power mode</description>
+              <description>GPUA turn-off power mode.</description>
               <bitRange>[2:2]</bitRange>
               <access>read-write</access>
             </field>
             <field>
               <name>vdec_power_mode</name>
-              <description>VDEC turn-off power mode</description>
+              <description>VDEC turn-off power mode.</description>
               <bitRange>[3:3]</bitRange>
               <access>read-write</access>
             </field>
             <field>
               <name>vout_power_mode</name>
-              <description>VOUT turn-off power mode</description>
+              <description>VOUT turn-off power mode.</description>
               <bitRange>[4:4]</bitRange>
               <access>read-write</access>
             </field>
             <field>
               <name>isp_power_mode</name>
-              <description>ISP turn-off power mode</description>
+              <description>ISP turn-off power mode.</description>
               <bitRange>[5:5]</bitRange>
               <access>read-write</access>
             </field>
             <field>
               <name>venc_power_mode</name>
-              <description>VENC turn-off power mode</description>
+              <description>VENC turn-off power mode.</description>
               <bitRange>[6:6]</bitRange>
               <access>read-write</access>
             </field>
@@ -20532,10 +20647,11 @@
           <name>timeout_seq_thd</name>
           <description>Threshold Sequence Timeout</description>
           <addressOffset>0x14</addressOffset>
+          <size>32</size>
           <fields>
             <field>
               <name>timeout_seq_thd</name>
-              <description>Threshold sequence timeout</description>
+              <description>Threshold Sequence Timeout</description>
               <bitRange>[15:0]</bitRange>
               <access>read-write</access>
             </field>
@@ -20545,6 +20661,7 @@
           <name>pdc0</name>
           <description>Powerdomain Cascade 0</description>
           <addressOffset>0x18</addressOffset>
+          <size>32</size>
           <fields>
             <field>
               <name>pd0_off_cas</name>
@@ -20588,6 +20705,7 @@
           <name>pdc1</name>
           <description>Powerdomain Cascade 1</description>
           <addressOffset>0x1c</addressOffset>
+          <size>32</size>
           <fields>
             <field>
               <name>pd3_off_cas</name>
@@ -20631,6 +20749,7 @@
           <name>pdc2</name>
           <description>Powerdomain Cascade 2</description>
           <addressOffset>0x20</addressOffset>
+          <size>32</size>
           <fields>
             <field>
               <name>pd6_off_cas</name>
@@ -20672,12 +20791,13 @@
         </register>
         <register>
           <name>sw_encourage</name>
-          <description>Software Ecncourage</description>
+          <description>Software Encouragement</description>
           <addressOffset>0x44</addressOffset>
+          <size>32</size>
           <fields>
             <field>
               <name>sw_encourage</name>
-              <description>Software encouragement</description>
+              <description>Software Encouragement</description>
               <bitRange>[7:0]</bitRange>
               <access>read-write</access>
             </field>
@@ -20687,6 +20807,7 @@
           <name>tim</name>
           <description>TIMER Interrupt Mask</description>
           <addressOffset>0x48</addressOffset>
+          <size>32</size>
           <fields>
             <field>
               <name>seq_done_mask</name>
@@ -20722,8 +20843,9 @@
         </register>
         <register>
           <name>pch_bypass</name>
-          <description>P-channel bypass</description>
+          <description>P-channel Bypass</description>
           <addressOffset>0x4c</addressOffset>
+          <size>32</size>
           <fields>
             <field>
               <name>pch_bypass</name>
@@ -20737,6 +20859,7 @@
           <name>pch_pstate</name>
           <description>P-channel PSTATE</description>
           <addressOffset>0x50</addressOffset>
+          <size>32</size>
           <fields>
             <field>
               <name>pch_pstate</name>
@@ -20750,6 +20873,7 @@
           <name>pch_timeout</name>
           <description>P-channel Timeout Threshold</description>
           <addressOffset>0x54</addressOffset>
+          <size>32</size>
           <fields>
             <field>
               <name>pch_timeout</name>
@@ -20763,6 +20887,7 @@
           <name>lp_timeout</name>
           <description>LP Cell Control Timeout Threshold</description>
           <addressOffset>0x58</addressOffset>
+          <size>32</size>
           <fields>
             <field>
               <name>lp_timeout</name>
@@ -20776,6 +20901,7 @@
           <name>hard_turn_on_power_mode</name>
           <description>Hardware Turn-On Power Mode</description>
           <addressOffset>0x5c</addressOffset>
+          <size>32</size>
           <fields>
             <field>
               <name>systop_power_mode</name>
@@ -20825,6 +20951,7 @@
           <name>current_power_mode</name>
           <description>Current Power Mode</description>
           <addressOffset>0x80</addressOffset>
+          <size>32</size>
           <fields>
             <field>
               <name>systop_power_mode</name>
@@ -20874,6 +21001,7 @@
           <name>current_seq_state</name>
           <description>Current Sequence State</description>
           <addressOffset>0x84</addressOffset>
+          <size>32</size>
           <fields>
             <field>
               <name>power_mode_cur</name>
@@ -20887,6 +21015,7 @@
           <name>event_status</name>
           <description>PMU Event Status</description>
           <addressOffset>0x88</addressOffset>
+          <size>32</size>
           <fields>
             <field>
               <name>seq_done_event</name>
@@ -20924,6 +21053,7 @@
           <name>int_status</name>
           <description>PMU Interrupt Status</description>
           <addressOffset>0x8c</addressOffset>
+          <size>32</size>
           <fields>
             <field>
               <name>seq_done_event</name>
@@ -20961,6 +21091,7 @@
           <name>hw_event_crd</name>
           <description>Hardware Event Record</description>
           <addressOffset>0x90</addressOffset>
+          <size>32</size>
           <fields>
             <field>
               <name>hw_event_crd</name>
@@ -20974,6 +21105,7 @@
           <name>encourage_type_crd</name>
           <description>Hardware Event Type Record</description>
           <addressOffset>0x94</addressOffset>
+          <size>32</size>
           <fields>
             <field>
               <name>encourage_type_crd</name>
@@ -20987,6 +21119,7 @@
           <name>pch_active</name>
           <description>P-channel PACTIVE Status</description>
           <addressOffset>0x98</addressOffset>
+          <size>32</size>
           <fields>
             <field>
               <name>pch_active</name>
