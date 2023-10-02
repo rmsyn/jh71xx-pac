@@ -27,7 +27,7 @@ impl W {
         self
     }
 }
-#[doc = "P-channel bypass\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`pch_bypass::R`](R).  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pch_bypass::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "P-channel Bypass\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`pch_bypass::R`](R).  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pch_bypass::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct PCH_BYPASS_SPEC;
 impl crate::RegisterSpec for PCH_BYPASS_SPEC {
     type Ux = u32;

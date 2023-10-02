@@ -1,6 +1,6 @@
 [package]
 name = "jh7110-vf2-12a-pac"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["rmsyn <rmsynchls@gmail.com>"]
 repository = "https://github.com/rmsyn/jh71xx-pac"

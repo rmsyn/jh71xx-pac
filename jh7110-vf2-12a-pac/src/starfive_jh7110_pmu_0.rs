@@ -5,8 +5,10 @@ pub struct RegisterBlock {
     #[doc = "0x04 - Hardware Event Turn-On Mask"]
     pub hard_event_turn_on_mask: HARD_EVENT_TURN_ON_MASK,
     _reserved1: [u8; 0x04],
-    _reserved_1_soft_turn: [u8; 0x04],
-    _reserved2: [u8; 0x04],
+    #[doc = "0x0c - Software Turn-On Power Mode"]
+    pub soft_turn_on_power_mode: SOFT_TURN_ON_POWER_MODE,
+    #[doc = "0x10 - Software Turn-Off Power Mode"]
+    pub soft_turn_off_power_mode: SOFT_TURN_OFF_POWER_MODE,
     #[doc = "0x14 - Threshold Sequence Timeout"]
     pub timeout_seq_thd: TIMEOUT_SEQ_THD,
     #[doc = "0x18 - Powerdomain Cascade 0"]
@@ -15,12 +17,12 @@ pub struct RegisterBlock {
     pub pdc1: PDC1,
     #[doc = "0x20 - Powerdomain Cascade 2"]
     pub pdc2: PDC2,
-    _reserved6: [u8; 0x20],
-    #[doc = "0x44 - Software Ecncourage"]
+    _reserved7: [u8; 0x20],
+    #[doc = "0x44 - Software Encouragement"]
     pub sw_encourage: SW_ENCOURAGE,
     #[doc = "0x48 - TIMER Interrupt Mask"]
     pub tim: TIM,
-    #[doc = "0x4c - P-channel bypass"]
+    #[doc = "0x4c - P-channel Bypass"]
     pub pch_bypass: PCH_BYPASS,
     #[doc = "0x50 - P-channel PSTATE"]
     pub pch_pstate: PCH_PSTATE,
@@ -30,7 +32,7 @@ pub struct RegisterBlock {
     pub lp_timeout: LP_TIMEOUT,
     #[doc = "0x5c - Hardware Turn-On Power Mode"]
     pub hard_turn_on_power_mode: HARD_TURN_ON_POWER_MODE,
-    _reserved13: [u8; 0x20],
+    _reserved14: [u8; 0x20],
     #[doc = "0x80 - Current Power Mode"]
     pub current_power_mode: CURRENT_POWER_MODE,
     #[doc = "0x84 - Current Sequence State"]
@@ -45,18 +47,6 @@ pub struct RegisterBlock {
     pub encourage_type_crd: ENCOURAGE_TYPE_CRD,
     #[doc = "0x98 - P-channel PACTIVE Status"]
     pub pch_active: PCH_ACTIVE,
-}
-impl RegisterBlock {
-    #[doc = "0x0c - Software Turn-Off Power Mode"]
-    #[inline(always)]
-    pub const fn soft_turn_off_power_mode(&self) -> &SOFT_TURN_OFF_POWER_MODE {
-        unsafe { &*(self as *const Self).cast::<u8>().add(12usize).cast() }
-    }
-    #[doc = "0x0c - Software Turn-On Power Mode"]
-    #[inline(always)]
-    pub const fn soft_turn_on_power_mode(&self) -> &SOFT_TURN_ON_POWER_MODE {
-        unsafe { &*(self as *const Self).cast::<u8>().add(12usize).cast() }
-    }
 }
 #[doc = "hard_event_turn_on_mask (rw) register accessor: Hardware Event Turn-On Mask\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`hard_event_turn_on_mask::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hard_event_turn_on_mask::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`hard_event_turn_on_mask`]
 module"]
@@ -96,20 +86,20 @@ module"]
 pub type PDC2 = crate::Reg<pdc2::PDC2_SPEC>;
 #[doc = "Powerdomain Cascade 2"]
 pub mod pdc2;
-#[doc = "sw_encourage (rw) register accessor: Software Ecncourage\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sw_encourage::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sw_encourage::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sw_encourage`]
+#[doc = "sw_encourage (rw) register accessor: Software Encouragement\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sw_encourage::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sw_encourage::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sw_encourage`]
 module"]
 pub type SW_ENCOURAGE = crate::Reg<sw_encourage::SW_ENCOURAGE_SPEC>;
-#[doc = "Software Ecncourage"]
+#[doc = "Software Encouragement"]
 pub mod sw_encourage;
 #[doc = "tim (rw) register accessor: TIMER Interrupt Mask\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`tim::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`tim::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`tim`]
 module"]
 pub type TIM = crate::Reg<tim::TIM_SPEC>;
 #[doc = "TIMER Interrupt Mask"]
 pub mod tim;
-#[doc = "pch_bypass (rw) register accessor: P-channel bypass\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`pch_bypass::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pch_bypass::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`pch_bypass`]
+#[doc = "pch_bypass (rw) register accessor: P-channel Bypass\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`pch_bypass::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pch_bypass::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`pch_bypass`]
 module"]
 pub type PCH_BYPASS = crate::Reg<pch_bypass::PCH_BYPASS_SPEC>;
-#[doc = "P-channel bypass"]
+#[doc = "P-channel Bypass"]
 pub mod pch_bypass;
 #[doc = "pch_pstate (rw) register accessor: P-channel PSTATE\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`pch_pstate::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`pch_pstate::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`pch_pstate`]
 module"]

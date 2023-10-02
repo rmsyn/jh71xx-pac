@@ -218,6 +218,52 @@ impl core::fmt::Debug for STARFIVE_JH7110_STG_SYSCON_0 {
 }
 #[doc = "From starfive,jh7110-stg-syscon, peripheral generator"]
 pub mod starfive_jh7110_stg_syscon_0;
+#[doc = "From starfive,jh7110-pwm, peripheral generator"]
+pub struct STARFIVE_JH7110_PWM_0 {
+    _marker: PhantomData<*const ()>,
+}
+unsafe impl Send for STARFIVE_JH7110_PWM_0 {}
+impl STARFIVE_JH7110_PWM_0 {
+    #[doc = r"Pointer to the register block"]
+    pub const PTR: *const starfive_jh7110_pwm_0::RegisterBlock = 0x120d_0000 as *const _;
+    #[doc = r"Return the pointer to the register block"]
+    #[inline(always)]
+    pub const fn ptr() -> *const starfive_jh7110_pwm_0::RegisterBlock {
+        Self::PTR
+    }
+    #[doc = r" Steal an instance of this peripheral"]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Ensure that the new instance of the peripheral cannot be used in a way"]
+    #[doc = r" that may race with any existing instances, for example by only"]
+    #[doc = r" accessing read-only or write-only registers, or by consuming the"]
+    #[doc = r" original peripheral and using critical sections to coordinate"]
+    #[doc = r" access between multiple new instances."]
+    #[doc = r""]
+    #[doc = r" Additionally, other software such as HALs may rely on only one"]
+    #[doc = r" peripheral instance existing to ensure memory safety; ensure"]
+    #[doc = r" no stolen instances are passed to such software."]
+    pub unsafe fn steal() -> Self {
+        Self {
+            _marker: PhantomData,
+        }
+    }
+}
+impl Deref for STARFIVE_JH7110_PWM_0 {
+    type Target = starfive_jh7110_pwm_0::RegisterBlock;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        unsafe { &*Self::PTR }
+    }
+}
+impl core::fmt::Debug for STARFIVE_JH7110_PWM_0 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("STARFIVE_JH7110_PWM_0").finish()
+    }
+}
+#[doc = "From starfive,jh7110-pwm, peripheral generator"]
+pub mod starfive_jh7110_pwm_0;
 #[doc = "From starfive,jh7110-syscrg, peripheral generator"]
 pub struct STARFIVE_JH7110_SYSCRG_0 {
     _marker: PhantomData<*const ()>,
@@ -507,6 +553,8 @@ pub struct Peripherals {
     pub STARFIVE_JH7110_STGCRG_0: STARFIVE_JH7110_STGCRG_0,
     #[doc = "STARFIVE_JH7110_STG_SYSCON_0"]
     pub STARFIVE_JH7110_STG_SYSCON_0: STARFIVE_JH7110_STG_SYSCON_0,
+    #[doc = "STARFIVE_JH7110_PWM_0"]
+    pub STARFIVE_JH7110_PWM_0: STARFIVE_JH7110_PWM_0,
     #[doc = "STARFIVE_JH7110_SYSCRG_0"]
     pub STARFIVE_JH7110_SYSCRG_0: STARFIVE_JH7110_SYSCRG_0,
     #[doc = "STARFIVE_JH7110_SYS_SYSCON_0"]
@@ -551,6 +599,9 @@ impl Peripherals {
                 _marker: PhantomData,
             },
             STARFIVE_JH7110_STG_SYSCON_0: STARFIVE_JH7110_STG_SYSCON_0 {
+                _marker: PhantomData,
+            },
+            STARFIVE_JH7110_PWM_0: STARFIVE_JH7110_PWM_0 {
                 _marker: PhantomData,
             },
             STARFIVE_JH7110_SYSCRG_0: STARFIVE_JH7110_SYSCRG_0 {

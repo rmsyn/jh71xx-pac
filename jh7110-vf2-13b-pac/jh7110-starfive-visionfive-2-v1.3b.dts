@@ -545,6 +545,15 @@
 			};
 		};
 
+                ptc: pwm@120d0000 {
+                        compatible = "starfive,jh7110-pwm";
+                        reg = <0x0 0x120d0000 0x0 0x10000>;
+                        clocks = <&syscrg 121>;
+                        resets = <&syscrg 108>;
+                        #pwm-cells = <3>;
+                        status = "disabled";
+                };
+
 		syscrg: clock-controller@13020000 {
 			compatible = "starfive,jh7110-syscrg";
 			reg = <0x00 0x13020000 0x00 0x10000>;
