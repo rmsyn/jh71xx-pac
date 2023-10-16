@@ -2,23 +2,23 @@
 pub type R = crate::R<TAR_SPEC>;
 #[doc = "Register `tar` writer"]
 pub type W = crate::W<TAR_SPEC>;
-#[doc = "Field `tar` reader - tar"]
-pub type TAR_R = crate::FieldReader<u32>;
-#[doc = "Field `tar` writer - tar"]
-pub type TAR_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 32, O, u32>;
+#[doc = "Field `master_10bit` reader - If I2C_DYNAMIC_TAR_UPDATE is set, the 10-bit addressing mode has to be enabled via bit 12 of TAR register. We set it always as I2C_DYNAMIC_TAR_UPDATE can't be detected from registers."]
+pub type MASTER_10BIT_R = crate::BitReader;
+#[doc = "Field `master_10bit` writer - If I2C_DYNAMIC_TAR_UPDATE is set, the 10-bit addressing mode has to be enabled via bit 12 of TAR register. We set it always as I2C_DYNAMIC_TAR_UPDATE can't be detected from registers."]
+pub type MASTER_10BIT_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
 impl R {
-    #[doc = "Bits 0:31 - tar"]
+    #[doc = "Bit 12 - If I2C_DYNAMIC_TAR_UPDATE is set, the 10-bit addressing mode has to be enabled via bit 12 of TAR register. We set it always as I2C_DYNAMIC_TAR_UPDATE can't be detected from registers."]
     #[inline(always)]
-    pub fn tar(&self) -> TAR_R {
-        TAR_R::new(self.bits)
+    pub fn master_10bit(&self) -> MASTER_10BIT_R {
+        MASTER_10BIT_R::new(((self.bits >> 12) & 1) != 0)
     }
 }
 impl W {
-    #[doc = "Bits 0:31 - tar"]
+    #[doc = "Bit 12 - If I2C_DYNAMIC_TAR_UPDATE is set, the 10-bit addressing mode has to be enabled via bit 12 of TAR register. We set it always as I2C_DYNAMIC_TAR_UPDATE can't be detected from registers."]
     #[inline(always)]
     #[must_use]
-    pub fn tar(&mut self) -> TAR_W<TAR_SPEC, 0> {
-        TAR_W::new(self)
+    pub fn master_10bit(&mut self) -> MASTER_10BIT_W<TAR_SPEC, 12> {
+        MASTER_10BIT_W::new(self)
     }
     #[doc = "Writes raw bits to the register."]
     #[inline(always)]
