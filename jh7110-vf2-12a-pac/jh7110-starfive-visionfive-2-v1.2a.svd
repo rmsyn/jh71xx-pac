@@ -256,9 +256,9 @@
           <size>32</size>
           <fields>
             <field>
-              <name>tar</name>
-              <description>tar</description>
-              <bitRange>[31:0]</bitRange>
+              <name>master_10bit</name>
+              <description>If I2C_DYNAMIC_TAR_UPDATE is set, the 10-bit addressing mode has to be enabled via bit 12 of TAR register. We set it always as I2C_DYNAMIC_TAR_UPDATE can't be detected from registers.</description>
+              <bitRange>[12:12]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
@@ -1284,9 +1284,9 @@
           <size>32</size>
           <fields>
             <field>
-              <name>tar</name>
-              <description>tar</description>
-              <bitRange>[31:0]</bitRange>
+              <name>master_10bit</name>
+              <description>If I2C_DYNAMIC_TAR_UPDATE is set, the 10-bit addressing mode has to be enabled via bit 12 of TAR register. We set it always as I2C_DYNAMIC_TAR_UPDATE can't be detected from registers.</description>
+              <bitRange>[12:12]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
@@ -2312,9 +2312,9 @@
           <size>32</size>
           <fields>
             <field>
-              <name>tar</name>
-              <description>tar</description>
-              <bitRange>[31:0]</bitRange>
+              <name>master_10bit</name>
+              <description>If I2C_DYNAMIC_TAR_UPDATE is set, the 10-bit addressing mode has to be enabled via bit 12 of TAR register. We set it always as I2C_DYNAMIC_TAR_UPDATE can't be detected from registers.</description>
+              <bitRange>[12:12]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
@@ -9952,9 +9952,9 @@
           <size>32</size>
           <fields>
             <field>
-              <name>tar</name>
-              <description>tar</description>
-              <bitRange>[31:0]</bitRange>
+              <name>master_10bit</name>
+              <description>If I2C_DYNAMIC_TAR_UPDATE is set, the 10-bit addressing mode has to be enabled via bit 12 of TAR register. We set it always as I2C_DYNAMIC_TAR_UPDATE can't be detected from registers.</description>
+              <bitRange>[12:12]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
@@ -10980,9 +10980,9 @@
           <size>32</size>
           <fields>
             <field>
-              <name>tar</name>
-              <description>tar</description>
-              <bitRange>[31:0]</bitRange>
+              <name>master_10bit</name>
+              <description>If I2C_DYNAMIC_TAR_UPDATE is set, the 10-bit addressing mode has to be enabled via bit 12 of TAR register. We set it always as I2C_DYNAMIC_TAR_UPDATE can't be detected from registers.</description>
+              <bitRange>[12:12]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
@@ -12008,9 +12008,9 @@
           <size>32</size>
           <fields>
             <field>
-              <name>tar</name>
-              <description>tar</description>
-              <bitRange>[31:0]</bitRange>
+              <name>master_10bit</name>
+              <description>If I2C_DYNAMIC_TAR_UPDATE is set, the 10-bit addressing mode has to be enabled via bit 12 of TAR register. We set it always as I2C_DYNAMIC_TAR_UPDATE can't be detected from registers.</description>
+              <bitRange>[12:12]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
@@ -13036,9 +13036,9 @@
           <size>32</size>
           <fields>
             <field>
-              <name>tar</name>
-              <description>tar</description>
-              <bitRange>[31:0]</bitRange>
+              <name>master_10bit</name>
+              <description>If I2C_DYNAMIC_TAR_UPDATE is set, the 10-bit addressing mode has to be enabled via bit 12 of TAR register. We set it always as I2C_DYNAMIC_TAR_UPDATE can't be detected from registers.</description>
+              <bitRange>[12:12]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
