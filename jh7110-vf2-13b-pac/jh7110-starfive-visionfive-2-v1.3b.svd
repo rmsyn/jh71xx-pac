@@ -308,6 +308,24 @@
               <access>read-write</access>
             </field>
             <field>
+              <name>read</name>
+              <description>Data Command READ Bit - 0: Write, 1: Read</description>
+              <bitRange>[8:8]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>stop</name>
+              <description>Data Command STOP Bit - 0: Non-terminal DATA command byte, 1: Terminal DATA command byte</description>
+              <bitRange>[9:9]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>restart</name>
+              <description>Data Command RESTART Bit - 0: Do not restart the transfer, 1: Restart the transfer</description>
+              <bitRange>[10:10]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
               <name>first_data_byte</name>
               <description>Data Command First Data Byte - 0: False, 1: True</description>
               <bitRange>[11:11]</bitRange>
@@ -1354,6 +1372,24 @@
               <access>read-write</access>
             </field>
             <field>
+              <name>read</name>
+              <description>Data Command READ Bit - 0: Write, 1: Read</description>
+              <bitRange>[8:8]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>stop</name>
+              <description>Data Command STOP Bit - 0: Non-terminal DATA command byte, 1: Terminal DATA command byte</description>
+              <bitRange>[9:9]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>restart</name>
+              <description>Data Command RESTART Bit - 0: Do not restart the transfer, 1: Restart the transfer</description>
+              <bitRange>[10:10]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
               <name>first_data_byte</name>
               <description>Data Command First Data Byte - 0: False, 1: True</description>
               <bitRange>[11:11]</bitRange>
@@ -2397,6 +2433,24 @@
               <name>dat</name>
               <description>Data Command Data Byte</description>
               <bitRange>[7:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>read</name>
+              <description>Data Command READ Bit - 0: Write, 1: Read</description>
+              <bitRange>[8:8]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>stop</name>
+              <description>Data Command STOP Bit - 0: Non-terminal DATA command byte, 1: Terminal DATA command byte</description>
+              <bitRange>[9:9]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>restart</name>
+              <description>Data Command RESTART Bit - 0: Do not restart the transfer, 1: Restart the transfer</description>
+              <bitRange>[10:10]</bitRange>
               <access>read-write</access>
             </field>
             <field>
@@ -10058,6 +10112,24 @@
               <access>read-write</access>
             </field>
             <field>
+              <name>read</name>
+              <description>Data Command READ Bit - 0: Write, 1: Read</description>
+              <bitRange>[8:8]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>stop</name>
+              <description>Data Command STOP Bit - 0: Non-terminal DATA command byte, 1: Terminal DATA command byte</description>
+              <bitRange>[9:9]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>restart</name>
+              <description>Data Command RESTART Bit - 0: Do not restart the transfer, 1: Restart the transfer</description>
+              <bitRange>[10:10]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
               <name>first_data_byte</name>
               <description>Data Command First Data Byte - 0: False, 1: True</description>
               <bitRange>[11:11]</bitRange>
@@ -11104,6 +11176,24 @@
               <access>read-write</access>
             </field>
             <field>
+              <name>read</name>
+              <description>Data Command READ Bit - 0: Write, 1: Read</description>
+              <bitRange>[8:8]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>stop</name>
+              <description>Data Command STOP Bit - 0: Non-terminal DATA command byte, 1: Terminal DATA command byte</description>
+              <bitRange>[9:9]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>restart</name>
+              <description>Data Command RESTART Bit - 0: Do not restart the transfer, 1: Restart the transfer</description>
+              <bitRange>[10:10]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
               <name>first_data_byte</name>
               <description>Data Command First Data Byte - 0: False, 1: True</description>
               <bitRange>[11:11]</bitRange>
@@ -12147,6 +12237,24 @@
               <name>dat</name>
               <description>Data Command Data Byte</description>
               <bitRange>[7:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>read</name>
+              <description>Data Command READ Bit - 0: Write, 1: Read</description>
+              <bitRange>[8:8]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>stop</name>
+              <description>Data Command STOP Bit - 0: Non-terminal DATA command byte, 1: Terminal DATA command byte</description>
+              <bitRange>[9:9]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>restart</name>
+              <description>Data Command RESTART Bit - 0: Do not restart the transfer, 1: Restart the transfer</description>
+              <bitRange>[10:10]</bitRange>
               <access>read-write</access>
             </field>
             <field>
@@ -13203,6 +13311,24 @@
               <name>dat</name>
               <description>Data Command Data Byte</description>
               <bitRange>[7:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>read</name>
+              <description>Data Command READ Bit - 0: Write, 1: Read</description>
+              <bitRange>[8:8]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>stop</name>
+              <description>Data Command STOP Bit - 0: Non-terminal DATA command byte, 1: Terminal DATA command byte</description>
+              <bitRange>[9:9]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>restart</name>
+              <description>Data Command RESTART Bit - 0: Do not restart the transfer, 1: Restart the transfer</description>
+              <bitRange>[10:10]</bitRange>
               <access>read-write</access>
             </field>
             <field>
