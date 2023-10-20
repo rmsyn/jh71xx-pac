@@ -117,7 +117,7 @@ impl W {
         self
     }
 }
-#[doc = "Software Turn-Off Power Mode\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`soft_turn_off_power_mode::R`](R).  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`soft_turn_off_power_mode::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "Software Turn-Off Power Mode\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`soft_turn_off_power_mode::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`soft_turn_off_power_mode::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct SOFT_TURN_OFF_POWER_MODE_SPEC;
 impl crate::RegisterSpec for SOFT_TURN_OFF_POWER_MODE_SPEC {
     type Ux = u32;
@@ -128,4 +128,8 @@ impl crate::Readable for SOFT_TURN_OFF_POWER_MODE_SPEC {}
 impl crate::Writable for SOFT_TURN_OFF_POWER_MODE_SPEC {
     const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+}
+#[doc = "`reset()` method sets soft_turn_off_power_mode to value 0"]
+impl crate::Resettable for SOFT_TURN_OFF_POWER_MODE_SPEC {
+    const RESET_VALUE: Self::Ux = 0;
 }

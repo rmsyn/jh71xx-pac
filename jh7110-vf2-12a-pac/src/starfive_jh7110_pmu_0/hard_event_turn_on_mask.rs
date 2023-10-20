@@ -148,7 +148,7 @@ impl W {
         self
     }
 }
-#[doc = "Hardware Event Turn-On Mask\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`hard_event_turn_on_mask::R`](R).  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hard_event_turn_on_mask::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "Hardware Event Turn-On Mask\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`hard_event_turn_on_mask::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`hard_event_turn_on_mask::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct HARD_EVENT_TURN_ON_MASK_SPEC;
 impl crate::RegisterSpec for HARD_EVENT_TURN_ON_MASK_SPEC {
     type Ux = u32;
@@ -159,4 +159,8 @@ impl crate::Readable for HARD_EVENT_TURN_ON_MASK_SPEC {}
 impl crate::Writable for HARD_EVENT_TURN_ON_MASK_SPEC {
     const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+}
+#[doc = "`reset()` method sets hard_event_turn_on_mask to value 0"]
+impl crate::Resettable for HARD_EVENT_TURN_ON_MASK_SPEC {
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -186,6 +186,7 @@
           <description>DesignWare I2C CON</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>master</name>
@@ -254,6 +255,7 @@
           <description>DesignWare I2C TAR</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>address_7bit</name>
@@ -280,6 +282,7 @@
           <description>DesignWare I2C SAR</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>address_7bit</name>
@@ -300,6 +303,7 @@
           <description>DesignWare I2C Data Command</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>dat</name>
@@ -338,6 +342,7 @@
           <description>DesignWare I2C SS SCL HCNT</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ss_scl_hcnt</name>
@@ -352,6 +357,7 @@
           <description>DesignWare I2C SS SCL LCNT</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ss_scl_lcnt</name>
@@ -366,6 +372,7 @@
           <description>DesignWare I2C FS SCL HCNT</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>fs_scl_hcnt</name>
@@ -380,6 +387,7 @@
           <description>DesignWare I2C FS SCL LCNT</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>fs_scl_lcnt</name>
@@ -394,6 +402,7 @@
           <description>DesignWare I2C HS SCL HCNT</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>hs_scl_hcnt</name>
@@ -408,6 +417,7 @@
           <description>DesignWare I2C HS SCL LCNT</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>hs_scl_lcnt</name>
@@ -422,6 +432,7 @@
           <description>DesignWare I2C Interrupt Status</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -514,6 +525,7 @@
           <description>DesignWare I2C Interrupt Mask</description>
           <addressOffset>0x30</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -606,6 +618,7 @@
           <description>DesignWare I2C Raw Interrupt Status</description>
           <addressOffset>0x34</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -698,6 +711,7 @@
           <description>DesignWare I2C RX TL</description>
           <addressOffset>0x38</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_tl</name>
@@ -712,6 +726,7 @@
           <description>DesignWare I2C TX TL</description>
           <addressOffset>0x3c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>tx_tl</name>
@@ -726,6 +741,7 @@
           <description>DesignWare I2C Clear Interrrupt</description>
           <addressOffset>0x40</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -818,6 +834,7 @@
           <description>DesignWare I2C Clear RX Underrun</description>
           <addressOffset>0x44</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rx_under</name>
@@ -832,6 +849,7 @@
           <description>DesignWare I2C Clear RX Overrun</description>
           <addressOffset>0x48</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rx_over</name>
@@ -846,6 +864,7 @@
           <description>DesignWare I2C Clear TX Overrun</description>
           <addressOffset>0x4c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_tx_over</name>
@@ -860,6 +879,7 @@
           <description>DesignWare I2C Clear Read Request</description>
           <addressOffset>0x50</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rd_req</name>
@@ -874,6 +894,7 @@
           <description>DesignWare I2C Clear TX Abort</description>
           <addressOffset>0x54</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_tx_abrt</name>
@@ -888,6 +909,7 @@
           <description>DesignWare I2C Clear RX Done</description>
           <addressOffset>0x58</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rx_done</name>
@@ -902,6 +924,7 @@
           <description>DesignWare I2C Clear Activity</description>
           <addressOffset>0x5c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_activity</name>
@@ -916,6 +939,7 @@
           <description>DesignWare I2C Clear Stop DET</description>
           <addressOffset>0x60</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_stop_det</name>
@@ -930,6 +954,7 @@
           <description>DesignWare I2C Clear Start DET</description>
           <addressOffset>0x64</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_start_det</name>
@@ -944,6 +969,7 @@
           <description>DesignWare I2C Clear General Call</description>
           <addressOffset>0x68</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_gen_call</name>
@@ -958,6 +984,7 @@
           <description>DesignWare I2C Enable</description>
           <addressOffset>0x6c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>abort</name>
@@ -972,6 +999,7 @@
           <description>DesignWare I2C Status</description>
           <addressOffset>0x70</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>activity</name>
@@ -1010,6 +1038,7 @@
           <description>DesignWare I2C TX Failure</description>
           <addressOffset>0x74</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>txflr</name>
@@ -1024,6 +1053,7 @@
           <description>DesignWare I2C RX Failure</description>
           <addressOffset>0x78</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rxflr</name>
@@ -1038,6 +1068,7 @@
           <description>DesignWare I2C SDA Hold</description>
           <addressOffset>0x7c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>sda_hold</name>
@@ -1052,6 +1083,7 @@
           <description>DesignWare I2C TX Abort Source</description>
           <addressOffset>0x80</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>b7_addr_noack</name>
@@ -1144,6 +1176,7 @@
           <description>DesignWare I2C Enable Status</description>
           <addressOffset>0x9c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>activity</name>
@@ -1182,6 +1215,7 @@
           <description>DesignWare I2C Clear Restart DET</description>
           <addressOffset>0xa8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_restart_det</name>
@@ -1196,6 +1230,7 @@
           <description>DesignWare I2C Compatibility Parameter 1</description>
           <addressOffset>0xf4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>speed</name>
@@ -1210,6 +1245,7 @@
           <description>DesignWare I2C Compatibility Version</description>
           <addressOffset>0xf8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>comp_version</name>
@@ -1224,6 +1260,7 @@
           <description>DesignWare I2C Compatibility Type</description>
           <addressOffset>0xfc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>comp_type</name>
@@ -1250,6 +1287,7 @@
           <description>DesignWare I2C CON</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>master</name>
@@ -1318,6 +1356,7 @@
           <description>DesignWare I2C TAR</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>address_7bit</name>
@@ -1344,6 +1383,7 @@
           <description>DesignWare I2C SAR</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>address_7bit</name>
@@ -1364,6 +1404,7 @@
           <description>DesignWare I2C Data Command</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>dat</name>
@@ -1402,6 +1443,7 @@
           <description>DesignWare I2C SS SCL HCNT</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ss_scl_hcnt</name>
@@ -1416,6 +1458,7 @@
           <description>DesignWare I2C SS SCL LCNT</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ss_scl_lcnt</name>
@@ -1430,6 +1473,7 @@
           <description>DesignWare I2C FS SCL HCNT</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>fs_scl_hcnt</name>
@@ -1444,6 +1488,7 @@
           <description>DesignWare I2C FS SCL LCNT</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>fs_scl_lcnt</name>
@@ -1458,6 +1503,7 @@
           <description>DesignWare I2C HS SCL HCNT</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>hs_scl_hcnt</name>
@@ -1472,6 +1518,7 @@
           <description>DesignWare I2C HS SCL LCNT</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>hs_scl_lcnt</name>
@@ -1486,6 +1533,7 @@
           <description>DesignWare I2C Interrupt Status</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -1578,6 +1626,7 @@
           <description>DesignWare I2C Interrupt Mask</description>
           <addressOffset>0x30</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -1670,6 +1719,7 @@
           <description>DesignWare I2C Raw Interrupt Status</description>
           <addressOffset>0x34</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -1762,6 +1812,7 @@
           <description>DesignWare I2C RX TL</description>
           <addressOffset>0x38</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_tl</name>
@@ -1776,6 +1827,7 @@
           <description>DesignWare I2C TX TL</description>
           <addressOffset>0x3c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>tx_tl</name>
@@ -1790,6 +1842,7 @@
           <description>DesignWare I2C Clear Interrrupt</description>
           <addressOffset>0x40</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -1882,6 +1935,7 @@
           <description>DesignWare I2C Clear RX Underrun</description>
           <addressOffset>0x44</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rx_under</name>
@@ -1896,6 +1950,7 @@
           <description>DesignWare I2C Clear RX Overrun</description>
           <addressOffset>0x48</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rx_over</name>
@@ -1910,6 +1965,7 @@
           <description>DesignWare I2C Clear TX Overrun</description>
           <addressOffset>0x4c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_tx_over</name>
@@ -1924,6 +1980,7 @@
           <description>DesignWare I2C Clear Read Request</description>
           <addressOffset>0x50</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rd_req</name>
@@ -1938,6 +1995,7 @@
           <description>DesignWare I2C Clear TX Abort</description>
           <addressOffset>0x54</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_tx_abrt</name>
@@ -1952,6 +2010,7 @@
           <description>DesignWare I2C Clear RX Done</description>
           <addressOffset>0x58</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rx_done</name>
@@ -1966,6 +2025,7 @@
           <description>DesignWare I2C Clear Activity</description>
           <addressOffset>0x5c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_activity</name>
@@ -1980,6 +2040,7 @@
           <description>DesignWare I2C Clear Stop DET</description>
           <addressOffset>0x60</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_stop_det</name>
@@ -1994,6 +2055,7 @@
           <description>DesignWare I2C Clear Start DET</description>
           <addressOffset>0x64</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_start_det</name>
@@ -2008,6 +2070,7 @@
           <description>DesignWare I2C Clear General Call</description>
           <addressOffset>0x68</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_gen_call</name>
@@ -2022,6 +2085,7 @@
           <description>DesignWare I2C Enable</description>
           <addressOffset>0x6c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>abort</name>
@@ -2036,6 +2100,7 @@
           <description>DesignWare I2C Status</description>
           <addressOffset>0x70</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>activity</name>
@@ -2074,6 +2139,7 @@
           <description>DesignWare I2C TX Failure</description>
           <addressOffset>0x74</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>txflr</name>
@@ -2088,6 +2154,7 @@
           <description>DesignWare I2C RX Failure</description>
           <addressOffset>0x78</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rxflr</name>
@@ -2102,6 +2169,7 @@
           <description>DesignWare I2C SDA Hold</description>
           <addressOffset>0x7c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>sda_hold</name>
@@ -2116,6 +2184,7 @@
           <description>DesignWare I2C TX Abort Source</description>
           <addressOffset>0x80</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>b7_addr_noack</name>
@@ -2208,6 +2277,7 @@
           <description>DesignWare I2C Enable Status</description>
           <addressOffset>0x9c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>activity</name>
@@ -2246,6 +2316,7 @@
           <description>DesignWare I2C Clear Restart DET</description>
           <addressOffset>0xa8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_restart_det</name>
@@ -2260,6 +2331,7 @@
           <description>DesignWare I2C Compatibility Parameter 1</description>
           <addressOffset>0xf4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>speed</name>
@@ -2274,6 +2346,7 @@
           <description>DesignWare I2C Compatibility Version</description>
           <addressOffset>0xf8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>comp_version</name>
@@ -2288,6 +2361,7 @@
           <description>DesignWare I2C Compatibility Type</description>
           <addressOffset>0xfc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>comp_type</name>
@@ -2314,6 +2388,7 @@
           <description>DesignWare I2C CON</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>master</name>
@@ -2382,6 +2457,7 @@
           <description>DesignWare I2C TAR</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>address_7bit</name>
@@ -2408,6 +2484,7 @@
           <description>DesignWare I2C SAR</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>address_7bit</name>
@@ -2428,6 +2505,7 @@
           <description>DesignWare I2C Data Command</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>dat</name>
@@ -2466,6 +2544,7 @@
           <description>DesignWare I2C SS SCL HCNT</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ss_scl_hcnt</name>
@@ -2480,6 +2559,7 @@
           <description>DesignWare I2C SS SCL LCNT</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ss_scl_lcnt</name>
@@ -2494,6 +2574,7 @@
           <description>DesignWare I2C FS SCL HCNT</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>fs_scl_hcnt</name>
@@ -2508,6 +2589,7 @@
           <description>DesignWare I2C FS SCL LCNT</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>fs_scl_lcnt</name>
@@ -2522,6 +2604,7 @@
           <description>DesignWare I2C HS SCL HCNT</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>hs_scl_hcnt</name>
@@ -2536,6 +2619,7 @@
           <description>DesignWare I2C HS SCL LCNT</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>hs_scl_lcnt</name>
@@ -2550,6 +2634,7 @@
           <description>DesignWare I2C Interrupt Status</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -2642,6 +2727,7 @@
           <description>DesignWare I2C Interrupt Mask</description>
           <addressOffset>0x30</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -2734,6 +2820,7 @@
           <description>DesignWare I2C Raw Interrupt Status</description>
           <addressOffset>0x34</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -2826,6 +2913,7 @@
           <description>DesignWare I2C RX TL</description>
           <addressOffset>0x38</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_tl</name>
@@ -2840,6 +2928,7 @@
           <description>DesignWare I2C TX TL</description>
           <addressOffset>0x3c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>tx_tl</name>
@@ -2854,6 +2943,7 @@
           <description>DesignWare I2C Clear Interrrupt</description>
           <addressOffset>0x40</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -2946,6 +3036,7 @@
           <description>DesignWare I2C Clear RX Underrun</description>
           <addressOffset>0x44</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rx_under</name>
@@ -2960,6 +3051,7 @@
           <description>DesignWare I2C Clear RX Overrun</description>
           <addressOffset>0x48</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rx_over</name>
@@ -2974,6 +3066,7 @@
           <description>DesignWare I2C Clear TX Overrun</description>
           <addressOffset>0x4c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_tx_over</name>
@@ -2988,6 +3081,7 @@
           <description>DesignWare I2C Clear Read Request</description>
           <addressOffset>0x50</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rd_req</name>
@@ -3002,6 +3096,7 @@
           <description>DesignWare I2C Clear TX Abort</description>
           <addressOffset>0x54</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_tx_abrt</name>
@@ -3016,6 +3111,7 @@
           <description>DesignWare I2C Clear RX Done</description>
           <addressOffset>0x58</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rx_done</name>
@@ -3030,6 +3126,7 @@
           <description>DesignWare I2C Clear Activity</description>
           <addressOffset>0x5c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_activity</name>
@@ -3044,6 +3141,7 @@
           <description>DesignWare I2C Clear Stop DET</description>
           <addressOffset>0x60</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_stop_det</name>
@@ -3058,6 +3156,7 @@
           <description>DesignWare I2C Clear Start DET</description>
           <addressOffset>0x64</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_start_det</name>
@@ -3072,6 +3171,7 @@
           <description>DesignWare I2C Clear General Call</description>
           <addressOffset>0x68</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_gen_call</name>
@@ -3086,6 +3186,7 @@
           <description>DesignWare I2C Enable</description>
           <addressOffset>0x6c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>abort</name>
@@ -3100,6 +3201,7 @@
           <description>DesignWare I2C Status</description>
           <addressOffset>0x70</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>activity</name>
@@ -3138,6 +3240,7 @@
           <description>DesignWare I2C TX Failure</description>
           <addressOffset>0x74</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>txflr</name>
@@ -3152,6 +3255,7 @@
           <description>DesignWare I2C RX Failure</description>
           <addressOffset>0x78</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rxflr</name>
@@ -3166,6 +3270,7 @@
           <description>DesignWare I2C SDA Hold</description>
           <addressOffset>0x7c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>sda_hold</name>
@@ -3180,6 +3285,7 @@
           <description>DesignWare I2C TX Abort Source</description>
           <addressOffset>0x80</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>b7_addr_noack</name>
@@ -3272,6 +3378,7 @@
           <description>DesignWare I2C Enable Status</description>
           <addressOffset>0x9c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>activity</name>
@@ -3310,6 +3417,7 @@
           <description>DesignWare I2C Clear Restart DET</description>
           <addressOffset>0xa8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_restart_det</name>
@@ -3324,6 +3432,7 @@
           <description>DesignWare I2C Compatibility Parameter 1</description>
           <addressOffset>0xf4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>speed</name>
@@ -3338,6 +3447,7 @@
           <description>DesignWare I2C Compatibility Version</description>
           <addressOffset>0xf8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>comp_version</name>
@@ -3352,6 +3462,7 @@
           <description>DesignWare I2C Compatibility Type</description>
           <addressOffset>0xfc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>comp_type</name>
@@ -3378,6 +3489,7 @@
           <description>SSPCR0 is control register 0 and contains five bit fields that control various functions within the PrimeCell SSP.</description>
           <addressOffset>0x0</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>dss</name>
@@ -3416,6 +3528,7 @@
           <description>SSPCR1 is the control register 1 and contains four different bit fields, that control various functions within the PrimeCell SSP.</description>
           <addressOffset>0x4</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>lbm</name>
@@ -3448,6 +3561,7 @@
           <description>SSPDR is the data register and is 16-bits wide. When SSPDR is read, the entry in the receive FIFO, pointed to by the current FIFO read pointer, is accessed. As data values are removed by the PrimeCell SSP receive logic from the incoming data frame, they are placed into the entry in the receive FIFO, pointed to by the current FIFO write pointer. When SSPDR is written to, the entry in the transmit FIFO, pointed to by the write pointer, is written to. Data values are removed from the transmit FIFO one value at a time by the transmit logic. It is loaded into the transmit serial shifter, then serially shifted out onto the SSPTXD pin at the programmed bit rate. When a data size of less than 16 bits is selected, the user must right-justify data written to the transmit FIFO. The transmit logic ignores the unused bits. Received data less than 16 bits is automatically right-justified in the receive buffer.</description>
           <addressOffset>0x8</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>data</name>
@@ -3462,6 +3576,7 @@
           <description>SSPSR is a RO status register that contains bits that indicate the FIFO fill status and the PrimeCell SSP busy status.</description>
           <addressOffset>0xc</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>tfe</name>
@@ -3500,6 +3615,7 @@
           <description>SSPCPSR is the clock prescale register and specifies the division factor by which the input SSPCLK must be internally divided before further use. The value programmed into this register must be an even number between [2:254]. The least significant bit of the programmed number is hard-coded to zero. If an odd number is written to this register, data read back from this register has the least significant bit as zero.</description>
           <addressOffset>0x10</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>cpsdvsr</name>
@@ -3514,6 +3630,7 @@
           <description>The SSPIMSC register is the interrupt mask set or clear register. It is a RW register. On a read this register gives the current value of the mask on the relevant interrupt. A write of 1 to the particular bit sets the mask, enabling the interrupt to be read. A write of 0 clears the corresponding mask. All the bits are cleared to 0 when reset.</description>
           <addressOffset>0x14</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rorim</name>
@@ -3546,6 +3663,7 @@
           <description>The SSPRIS register is the raw interrupt status register. It is a RO register. On a read this register gives the current raw status value of the corresponding interrupt prior to masking. A write has no effect.</description>
           <addressOffset>0x18</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rorris</name>
@@ -3578,6 +3696,7 @@
           <description>The SSPMIS register is the masked interrupt status register. It is a RO register. On a read this register gives the current masked status value of the corresponding interrupt. A write has no effect.</description>
           <addressOffset>0x1c</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rormis</name>
@@ -3610,6 +3729,7 @@
           <description>The SSPICR register is the interrupt clear register and is write-only. On a write of 1, the corresponding interrupt is cleared. A write of 0 has no effect.</description>
           <addressOffset>0x20</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>roric</name>
@@ -3630,6 +3750,7 @@
           <description>The SSPDMACR register is the DMA control register. It is a RW register. All the bits are cleared to 0 on reset.</description>
           <addressOffset>0x24</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rxdmae</name>
@@ -3650,6 +3771,7 @@
           <description>The SSPPeriphID0 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfe0</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>part_number0</name>
@@ -3664,6 +3786,7 @@
           <description>The SSPPeriphID1 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfe4</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>part_number1</name>
@@ -3684,6 +3807,7 @@
           <description>The SSPPeriphID2 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfe8</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>designer1</name>
@@ -3704,6 +3828,7 @@
           <description>The SSPPeriphID3 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfec</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>configuration</name>
@@ -3718,6 +3843,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xff0</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id0</name>
@@ -3732,6 +3858,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xff4</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id1</name>
@@ -3746,6 +3873,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xff8</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id2</name>
@@ -3760,6 +3888,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xffc</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id3</name>
@@ -3806,6 +3935,7 @@
           <description>SSPCR0 is control register 0 and contains five bit fields that control various functions within the PrimeCell SSP.</description>
           <addressOffset>0x0</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>dss</name>
@@ -3844,6 +3974,7 @@
           <description>SSPCR1 is the control register 1 and contains four different bit fields, that control various functions within the PrimeCell SSP.</description>
           <addressOffset>0x4</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>lbm</name>
@@ -3876,6 +4007,7 @@
           <description>SSPDR is the data register and is 16-bits wide. When SSPDR is read, the entry in the receive FIFO, pointed to by the current FIFO read pointer, is accessed. As data values are removed by the PrimeCell SSP receive logic from the incoming data frame, they are placed into the entry in the receive FIFO, pointed to by the current FIFO write pointer. When SSPDR is written to, the entry in the transmit FIFO, pointed to by the write pointer, is written to. Data values are removed from the transmit FIFO one value at a time by the transmit logic. It is loaded into the transmit serial shifter, then serially shifted out onto the SSPTXD pin at the programmed bit rate. When a data size of less than 16 bits is selected, the user must right-justify data written to the transmit FIFO. The transmit logic ignores the unused bits. Received data less than 16 bits is automatically right-justified in the receive buffer.</description>
           <addressOffset>0x8</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>data</name>
@@ -3890,6 +4022,7 @@
           <description>SSPSR is a RO status register that contains bits that indicate the FIFO fill status and the PrimeCell SSP busy status.</description>
           <addressOffset>0xc</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>tfe</name>
@@ -3928,6 +4061,7 @@
           <description>SSPCPSR is the clock prescale register and specifies the division factor by which the input SSPCLK must be internally divided before further use. The value programmed into this register must be an even number between [2:254]. The least significant bit of the programmed number is hard-coded to zero. If an odd number is written to this register, data read back from this register has the least significant bit as zero.</description>
           <addressOffset>0x10</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>cpsdvsr</name>
@@ -3942,6 +4076,7 @@
           <description>The SSPIMSC register is the interrupt mask set or clear register. It is a RW register. On a read this register gives the current value of the mask on the relevant interrupt. A write of 1 to the particular bit sets the mask, enabling the interrupt to be read. A write of 0 clears the corresponding mask. All the bits are cleared to 0 when reset.</description>
           <addressOffset>0x14</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rorim</name>
@@ -3974,6 +4109,7 @@
           <description>The SSPRIS register is the raw interrupt status register. It is a RO register. On a read this register gives the current raw status value of the corresponding interrupt prior to masking. A write has no effect.</description>
           <addressOffset>0x18</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rorris</name>
@@ -4006,6 +4142,7 @@
           <description>The SSPMIS register is the masked interrupt status register. It is a RO register. On a read this register gives the current masked status value of the corresponding interrupt. A write has no effect.</description>
           <addressOffset>0x1c</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rormis</name>
@@ -4038,6 +4175,7 @@
           <description>The SSPICR register is the interrupt clear register and is write-only. On a write of 1, the corresponding interrupt is cleared. A write of 0 has no effect.</description>
           <addressOffset>0x20</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>roric</name>
@@ -4058,6 +4196,7 @@
           <description>The SSPDMACR register is the DMA control register. It is a RW register. All the bits are cleared to 0 on reset.</description>
           <addressOffset>0x24</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rxdmae</name>
@@ -4078,6 +4217,7 @@
           <description>The SSPPeriphID0 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfe0</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>part_number0</name>
@@ -4092,6 +4232,7 @@
           <description>The SSPPeriphID1 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfe4</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>part_number1</name>
@@ -4112,6 +4253,7 @@
           <description>The SSPPeriphID2 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfe8</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>designer1</name>
@@ -4132,6 +4274,7 @@
           <description>The SSPPeriphID3 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfec</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>configuration</name>
@@ -4146,6 +4289,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xff0</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id0</name>
@@ -4160,6 +4304,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xff4</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id1</name>
@@ -4174,6 +4319,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xff8</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id2</name>
@@ -4188,6 +4334,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xffc</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id3</name>
@@ -4224,6 +4371,7 @@
           <description>SSPCR0 is control register 0 and contains five bit fields that control various functions within the PrimeCell SSP.</description>
           <addressOffset>0x0</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>dss</name>
@@ -4262,6 +4410,7 @@
           <description>SSPCR1 is the control register 1 and contains four different bit fields, that control various functions within the PrimeCell SSP.</description>
           <addressOffset>0x4</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>lbm</name>
@@ -4294,6 +4443,7 @@
           <description>SSPDR is the data register and is 16-bits wide. When SSPDR is read, the entry in the receive FIFO, pointed to by the current FIFO read pointer, is accessed. As data values are removed by the PrimeCell SSP receive logic from the incoming data frame, they are placed into the entry in the receive FIFO, pointed to by the current FIFO write pointer. When SSPDR is written to, the entry in the transmit FIFO, pointed to by the write pointer, is written to. Data values are removed from the transmit FIFO one value at a time by the transmit logic. It is loaded into the transmit serial shifter, then serially shifted out onto the SSPTXD pin at the programmed bit rate. When a data size of less than 16 bits is selected, the user must right-justify data written to the transmit FIFO. The transmit logic ignores the unused bits. Received data less than 16 bits is automatically right-justified in the receive buffer.</description>
           <addressOffset>0x8</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>data</name>
@@ -4308,6 +4458,7 @@
           <description>SSPSR is a RO status register that contains bits that indicate the FIFO fill status and the PrimeCell SSP busy status.</description>
           <addressOffset>0xc</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>tfe</name>
@@ -4346,6 +4497,7 @@
           <description>SSPCPSR is the clock prescale register and specifies the division factor by which the input SSPCLK must be internally divided before further use. The value programmed into this register must be an even number between [2:254]. The least significant bit of the programmed number is hard-coded to zero. If an odd number is written to this register, data read back from this register has the least significant bit as zero.</description>
           <addressOffset>0x10</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>cpsdvsr</name>
@@ -4360,6 +4512,7 @@
           <description>The SSPIMSC register is the interrupt mask set or clear register. It is a RW register. On a read this register gives the current value of the mask on the relevant interrupt. A write of 1 to the particular bit sets the mask, enabling the interrupt to be read. A write of 0 clears the corresponding mask. All the bits are cleared to 0 when reset.</description>
           <addressOffset>0x14</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rorim</name>
@@ -4392,6 +4545,7 @@
           <description>The SSPRIS register is the raw interrupt status register. It is a RO register. On a read this register gives the current raw status value of the corresponding interrupt prior to masking. A write has no effect.</description>
           <addressOffset>0x18</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rorris</name>
@@ -4424,6 +4578,7 @@
           <description>The SSPMIS register is the masked interrupt status register. It is a RO register. On a read this register gives the current masked status value of the corresponding interrupt. A write has no effect.</description>
           <addressOffset>0x1c</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rormis</name>
@@ -4456,6 +4611,7 @@
           <description>The SSPICR register is the interrupt clear register and is write-only. On a write of 1, the corresponding interrupt is cleared. A write of 0 has no effect.</description>
           <addressOffset>0x20</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>roric</name>
@@ -4476,6 +4632,7 @@
           <description>The SSPDMACR register is the DMA control register. It is a RW register. All the bits are cleared to 0 on reset.</description>
           <addressOffset>0x24</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rxdmae</name>
@@ -4496,6 +4653,7 @@
           <description>The SSPPeriphID0 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfe0</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>part_number0</name>
@@ -4510,6 +4668,7 @@
           <description>The SSPPeriphID1 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfe4</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>part_number1</name>
@@ -4530,6 +4689,7 @@
           <description>The SSPPeriphID2 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfe8</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>designer1</name>
@@ -4550,6 +4710,7 @@
           <description>The SSPPeriphID3 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfec</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>configuration</name>
@@ -4564,6 +4725,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xff0</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id0</name>
@@ -4578,6 +4740,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xff4</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id1</name>
@@ -4592,6 +4755,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xff8</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id2</name>
@@ -4606,6 +4770,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xffc</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id3</name>
@@ -9990,6 +10155,7 @@
           <description>DesignWare I2C CON</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>master</name>
@@ -10058,6 +10224,7 @@
           <description>DesignWare I2C TAR</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>address_7bit</name>
@@ -10084,6 +10251,7 @@
           <description>DesignWare I2C SAR</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>address_7bit</name>
@@ -10104,6 +10272,7 @@
           <description>DesignWare I2C Data Command</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>dat</name>
@@ -10142,6 +10311,7 @@
           <description>DesignWare I2C SS SCL HCNT</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ss_scl_hcnt</name>
@@ -10156,6 +10326,7 @@
           <description>DesignWare I2C SS SCL LCNT</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ss_scl_lcnt</name>
@@ -10170,6 +10341,7 @@
           <description>DesignWare I2C FS SCL HCNT</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>fs_scl_hcnt</name>
@@ -10184,6 +10356,7 @@
           <description>DesignWare I2C FS SCL LCNT</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>fs_scl_lcnt</name>
@@ -10198,6 +10371,7 @@
           <description>DesignWare I2C HS SCL HCNT</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>hs_scl_hcnt</name>
@@ -10212,6 +10386,7 @@
           <description>DesignWare I2C HS SCL LCNT</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>hs_scl_lcnt</name>
@@ -10226,6 +10401,7 @@
           <description>DesignWare I2C Interrupt Status</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -10318,6 +10494,7 @@
           <description>DesignWare I2C Interrupt Mask</description>
           <addressOffset>0x30</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -10410,6 +10587,7 @@
           <description>DesignWare I2C Raw Interrupt Status</description>
           <addressOffset>0x34</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -10502,6 +10680,7 @@
           <description>DesignWare I2C RX TL</description>
           <addressOffset>0x38</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_tl</name>
@@ -10516,6 +10695,7 @@
           <description>DesignWare I2C TX TL</description>
           <addressOffset>0x3c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>tx_tl</name>
@@ -10530,6 +10710,7 @@
           <description>DesignWare I2C Clear Interrrupt</description>
           <addressOffset>0x40</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -10622,6 +10803,7 @@
           <description>DesignWare I2C Clear RX Underrun</description>
           <addressOffset>0x44</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rx_under</name>
@@ -10636,6 +10818,7 @@
           <description>DesignWare I2C Clear RX Overrun</description>
           <addressOffset>0x48</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rx_over</name>
@@ -10650,6 +10833,7 @@
           <description>DesignWare I2C Clear TX Overrun</description>
           <addressOffset>0x4c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_tx_over</name>
@@ -10664,6 +10848,7 @@
           <description>DesignWare I2C Clear Read Request</description>
           <addressOffset>0x50</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rd_req</name>
@@ -10678,6 +10863,7 @@
           <description>DesignWare I2C Clear TX Abort</description>
           <addressOffset>0x54</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_tx_abrt</name>
@@ -10692,6 +10878,7 @@
           <description>DesignWare I2C Clear RX Done</description>
           <addressOffset>0x58</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rx_done</name>
@@ -10706,6 +10893,7 @@
           <description>DesignWare I2C Clear Activity</description>
           <addressOffset>0x5c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_activity</name>
@@ -10720,6 +10908,7 @@
           <description>DesignWare I2C Clear Stop DET</description>
           <addressOffset>0x60</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_stop_det</name>
@@ -10734,6 +10923,7 @@
           <description>DesignWare I2C Clear Start DET</description>
           <addressOffset>0x64</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_start_det</name>
@@ -10748,6 +10938,7 @@
           <description>DesignWare I2C Clear General Call</description>
           <addressOffset>0x68</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_gen_call</name>
@@ -10762,6 +10953,7 @@
           <description>DesignWare I2C Enable</description>
           <addressOffset>0x6c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>abort</name>
@@ -10776,6 +10968,7 @@
           <description>DesignWare I2C Status</description>
           <addressOffset>0x70</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>activity</name>
@@ -10814,6 +11007,7 @@
           <description>DesignWare I2C TX Failure</description>
           <addressOffset>0x74</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>txflr</name>
@@ -10828,6 +11022,7 @@
           <description>DesignWare I2C RX Failure</description>
           <addressOffset>0x78</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rxflr</name>
@@ -10842,6 +11037,7 @@
           <description>DesignWare I2C SDA Hold</description>
           <addressOffset>0x7c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>sda_hold</name>
@@ -10856,6 +11052,7 @@
           <description>DesignWare I2C TX Abort Source</description>
           <addressOffset>0x80</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>b7_addr_noack</name>
@@ -10948,6 +11145,7 @@
           <description>DesignWare I2C Enable Status</description>
           <addressOffset>0x9c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>activity</name>
@@ -10986,6 +11184,7 @@
           <description>DesignWare I2C Clear Restart DET</description>
           <addressOffset>0xa8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_restart_det</name>
@@ -11000,6 +11199,7 @@
           <description>DesignWare I2C Compatibility Parameter 1</description>
           <addressOffset>0xf4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>speed</name>
@@ -11014,6 +11214,7 @@
           <description>DesignWare I2C Compatibility Version</description>
           <addressOffset>0xf8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>comp_version</name>
@@ -11028,6 +11229,7 @@
           <description>DesignWare I2C Compatibility Type</description>
           <addressOffset>0xfc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>comp_type</name>
@@ -11054,6 +11256,7 @@
           <description>DesignWare I2C CON</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>master</name>
@@ -11122,6 +11325,7 @@
           <description>DesignWare I2C TAR</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>address_7bit</name>
@@ -11148,6 +11352,7 @@
           <description>DesignWare I2C SAR</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>address_7bit</name>
@@ -11168,6 +11373,7 @@
           <description>DesignWare I2C Data Command</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>dat</name>
@@ -11206,6 +11412,7 @@
           <description>DesignWare I2C SS SCL HCNT</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ss_scl_hcnt</name>
@@ -11220,6 +11427,7 @@
           <description>DesignWare I2C SS SCL LCNT</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ss_scl_lcnt</name>
@@ -11234,6 +11442,7 @@
           <description>DesignWare I2C FS SCL HCNT</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>fs_scl_hcnt</name>
@@ -11248,6 +11457,7 @@
           <description>DesignWare I2C FS SCL LCNT</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>fs_scl_lcnt</name>
@@ -11262,6 +11472,7 @@
           <description>DesignWare I2C HS SCL HCNT</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>hs_scl_hcnt</name>
@@ -11276,6 +11487,7 @@
           <description>DesignWare I2C HS SCL LCNT</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>hs_scl_lcnt</name>
@@ -11290,6 +11502,7 @@
           <description>DesignWare I2C Interrupt Status</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -11382,6 +11595,7 @@
           <description>DesignWare I2C Interrupt Mask</description>
           <addressOffset>0x30</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -11474,6 +11688,7 @@
           <description>DesignWare I2C Raw Interrupt Status</description>
           <addressOffset>0x34</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -11566,6 +11781,7 @@
           <description>DesignWare I2C RX TL</description>
           <addressOffset>0x38</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_tl</name>
@@ -11580,6 +11796,7 @@
           <description>DesignWare I2C TX TL</description>
           <addressOffset>0x3c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>tx_tl</name>
@@ -11594,6 +11811,7 @@
           <description>DesignWare I2C Clear Interrrupt</description>
           <addressOffset>0x40</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -11686,6 +11904,7 @@
           <description>DesignWare I2C Clear RX Underrun</description>
           <addressOffset>0x44</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rx_under</name>
@@ -11700,6 +11919,7 @@
           <description>DesignWare I2C Clear RX Overrun</description>
           <addressOffset>0x48</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rx_over</name>
@@ -11714,6 +11934,7 @@
           <description>DesignWare I2C Clear TX Overrun</description>
           <addressOffset>0x4c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_tx_over</name>
@@ -11728,6 +11949,7 @@
           <description>DesignWare I2C Clear Read Request</description>
           <addressOffset>0x50</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rd_req</name>
@@ -11742,6 +11964,7 @@
           <description>DesignWare I2C Clear TX Abort</description>
           <addressOffset>0x54</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_tx_abrt</name>
@@ -11756,6 +11979,7 @@
           <description>DesignWare I2C Clear RX Done</description>
           <addressOffset>0x58</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rx_done</name>
@@ -11770,6 +11994,7 @@
           <description>DesignWare I2C Clear Activity</description>
           <addressOffset>0x5c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_activity</name>
@@ -11784,6 +12009,7 @@
           <description>DesignWare I2C Clear Stop DET</description>
           <addressOffset>0x60</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_stop_det</name>
@@ -11798,6 +12024,7 @@
           <description>DesignWare I2C Clear Start DET</description>
           <addressOffset>0x64</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_start_det</name>
@@ -11812,6 +12039,7 @@
           <description>DesignWare I2C Clear General Call</description>
           <addressOffset>0x68</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_gen_call</name>
@@ -11826,6 +12054,7 @@
           <description>DesignWare I2C Enable</description>
           <addressOffset>0x6c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>abort</name>
@@ -11840,6 +12069,7 @@
           <description>DesignWare I2C Status</description>
           <addressOffset>0x70</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>activity</name>
@@ -11878,6 +12108,7 @@
           <description>DesignWare I2C TX Failure</description>
           <addressOffset>0x74</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>txflr</name>
@@ -11892,6 +12123,7 @@
           <description>DesignWare I2C RX Failure</description>
           <addressOffset>0x78</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rxflr</name>
@@ -11906,6 +12138,7 @@
           <description>DesignWare I2C SDA Hold</description>
           <addressOffset>0x7c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>sda_hold</name>
@@ -11920,6 +12153,7 @@
           <description>DesignWare I2C TX Abort Source</description>
           <addressOffset>0x80</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>b7_addr_noack</name>
@@ -12012,6 +12246,7 @@
           <description>DesignWare I2C Enable Status</description>
           <addressOffset>0x9c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>activity</name>
@@ -12050,6 +12285,7 @@
           <description>DesignWare I2C Clear Restart DET</description>
           <addressOffset>0xa8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_restart_det</name>
@@ -12064,6 +12300,7 @@
           <description>DesignWare I2C Compatibility Parameter 1</description>
           <addressOffset>0xf4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>speed</name>
@@ -12078,6 +12315,7 @@
           <description>DesignWare I2C Compatibility Version</description>
           <addressOffset>0xf8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>comp_version</name>
@@ -12092,6 +12330,7 @@
           <description>DesignWare I2C Compatibility Type</description>
           <addressOffset>0xfc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>comp_type</name>
@@ -12118,6 +12357,7 @@
           <description>DesignWare I2C CON</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>master</name>
@@ -12186,6 +12426,7 @@
           <description>DesignWare I2C TAR</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>address_7bit</name>
@@ -12212,6 +12453,7 @@
           <description>DesignWare I2C SAR</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>address_7bit</name>
@@ -12232,6 +12474,7 @@
           <description>DesignWare I2C Data Command</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>dat</name>
@@ -12270,6 +12513,7 @@
           <description>DesignWare I2C SS SCL HCNT</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ss_scl_hcnt</name>
@@ -12284,6 +12528,7 @@
           <description>DesignWare I2C SS SCL LCNT</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ss_scl_lcnt</name>
@@ -12298,6 +12543,7 @@
           <description>DesignWare I2C FS SCL HCNT</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>fs_scl_hcnt</name>
@@ -12312,6 +12558,7 @@
           <description>DesignWare I2C FS SCL LCNT</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>fs_scl_lcnt</name>
@@ -12326,6 +12573,7 @@
           <description>DesignWare I2C HS SCL HCNT</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>hs_scl_hcnt</name>
@@ -12340,6 +12588,7 @@
           <description>DesignWare I2C HS SCL LCNT</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>hs_scl_lcnt</name>
@@ -12354,6 +12603,7 @@
           <description>DesignWare I2C Interrupt Status</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -12446,6 +12696,7 @@
           <description>DesignWare I2C Interrupt Mask</description>
           <addressOffset>0x30</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -12538,6 +12789,7 @@
           <description>DesignWare I2C Raw Interrupt Status</description>
           <addressOffset>0x34</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -12630,6 +12882,7 @@
           <description>DesignWare I2C RX TL</description>
           <addressOffset>0x38</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_tl</name>
@@ -12644,6 +12897,7 @@
           <description>DesignWare I2C TX TL</description>
           <addressOffset>0x3c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>tx_tl</name>
@@ -12658,6 +12912,7 @@
           <description>DesignWare I2C Clear Interrrupt</description>
           <addressOffset>0x40</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -12750,6 +13005,7 @@
           <description>DesignWare I2C Clear RX Underrun</description>
           <addressOffset>0x44</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rx_under</name>
@@ -12764,6 +13020,7 @@
           <description>DesignWare I2C Clear RX Overrun</description>
           <addressOffset>0x48</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rx_over</name>
@@ -12778,6 +13035,7 @@
           <description>DesignWare I2C Clear TX Overrun</description>
           <addressOffset>0x4c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_tx_over</name>
@@ -12792,6 +13050,7 @@
           <description>DesignWare I2C Clear Read Request</description>
           <addressOffset>0x50</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rd_req</name>
@@ -12806,6 +13065,7 @@
           <description>DesignWare I2C Clear TX Abort</description>
           <addressOffset>0x54</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_tx_abrt</name>
@@ -12820,6 +13080,7 @@
           <description>DesignWare I2C Clear RX Done</description>
           <addressOffset>0x58</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rx_done</name>
@@ -12834,6 +13095,7 @@
           <description>DesignWare I2C Clear Activity</description>
           <addressOffset>0x5c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_activity</name>
@@ -12848,6 +13110,7 @@
           <description>DesignWare I2C Clear Stop DET</description>
           <addressOffset>0x60</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_stop_det</name>
@@ -12862,6 +13125,7 @@
           <description>DesignWare I2C Clear Start DET</description>
           <addressOffset>0x64</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_start_det</name>
@@ -12876,6 +13140,7 @@
           <description>DesignWare I2C Clear General Call</description>
           <addressOffset>0x68</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_gen_call</name>
@@ -12890,6 +13155,7 @@
           <description>DesignWare I2C Enable</description>
           <addressOffset>0x6c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>abort</name>
@@ -12904,6 +13170,7 @@
           <description>DesignWare I2C Status</description>
           <addressOffset>0x70</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>activity</name>
@@ -12942,6 +13209,7 @@
           <description>DesignWare I2C TX Failure</description>
           <addressOffset>0x74</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>txflr</name>
@@ -12956,6 +13224,7 @@
           <description>DesignWare I2C RX Failure</description>
           <addressOffset>0x78</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rxflr</name>
@@ -12970,6 +13239,7 @@
           <description>DesignWare I2C SDA Hold</description>
           <addressOffset>0x7c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>sda_hold</name>
@@ -12984,6 +13254,7 @@
           <description>DesignWare I2C TX Abort Source</description>
           <addressOffset>0x80</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>b7_addr_noack</name>
@@ -13076,6 +13347,7 @@
           <description>DesignWare I2C Enable Status</description>
           <addressOffset>0x9c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>activity</name>
@@ -13114,6 +13386,7 @@
           <description>DesignWare I2C Clear Restart DET</description>
           <addressOffset>0xa8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_restart_det</name>
@@ -13128,6 +13401,7 @@
           <description>DesignWare I2C Compatibility Parameter 1</description>
           <addressOffset>0xf4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>speed</name>
@@ -13142,6 +13416,7 @@
           <description>DesignWare I2C Compatibility Version</description>
           <addressOffset>0xf8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>comp_version</name>
@@ -13156,6 +13431,7 @@
           <description>DesignWare I2C Compatibility Type</description>
           <addressOffset>0xfc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>comp_type</name>
@@ -13182,6 +13458,7 @@
           <description>DesignWare I2C CON</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>master</name>
@@ -13250,6 +13527,7 @@
           <description>DesignWare I2C TAR</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>address_7bit</name>
@@ -13276,6 +13554,7 @@
           <description>DesignWare I2C SAR</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>address_7bit</name>
@@ -13296,6 +13575,7 @@
           <description>DesignWare I2C Data Command</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>dat</name>
@@ -13334,6 +13614,7 @@
           <description>DesignWare I2C SS SCL HCNT</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ss_scl_hcnt</name>
@@ -13348,6 +13629,7 @@
           <description>DesignWare I2C SS SCL LCNT</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ss_scl_lcnt</name>
@@ -13362,6 +13644,7 @@
           <description>DesignWare I2C FS SCL HCNT</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>fs_scl_hcnt</name>
@@ -13376,6 +13659,7 @@
           <description>DesignWare I2C FS SCL LCNT</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>fs_scl_lcnt</name>
@@ -13390,6 +13674,7 @@
           <description>DesignWare I2C HS SCL HCNT</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>hs_scl_hcnt</name>
@@ -13404,6 +13689,7 @@
           <description>DesignWare I2C HS SCL LCNT</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>hs_scl_lcnt</name>
@@ -13418,6 +13704,7 @@
           <description>DesignWare I2C Interrupt Status</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -13510,6 +13797,7 @@
           <description>DesignWare I2C Interrupt Mask</description>
           <addressOffset>0x30</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -13602,6 +13890,7 @@
           <description>DesignWare I2C Raw Interrupt Status</description>
           <addressOffset>0x34</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -13694,6 +13983,7 @@
           <description>DesignWare I2C RX TL</description>
           <addressOffset>0x38</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_tl</name>
@@ -13708,6 +13998,7 @@
           <description>DesignWare I2C TX TL</description>
           <addressOffset>0x3c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>tx_tl</name>
@@ -13722,6 +14013,7 @@
           <description>DesignWare I2C Clear Interrrupt</description>
           <addressOffset>0x40</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rx_under</name>
@@ -13814,6 +14106,7 @@
           <description>DesignWare I2C Clear RX Underrun</description>
           <addressOffset>0x44</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rx_under</name>
@@ -13828,6 +14121,7 @@
           <description>DesignWare I2C Clear RX Overrun</description>
           <addressOffset>0x48</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rx_over</name>
@@ -13842,6 +14136,7 @@
           <description>DesignWare I2C Clear TX Overrun</description>
           <addressOffset>0x4c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_tx_over</name>
@@ -13856,6 +14151,7 @@
           <description>DesignWare I2C Clear Read Request</description>
           <addressOffset>0x50</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rd_req</name>
@@ -13870,6 +14166,7 @@
           <description>DesignWare I2C Clear TX Abort</description>
           <addressOffset>0x54</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_tx_abrt</name>
@@ -13884,6 +14181,7 @@
           <description>DesignWare I2C Clear RX Done</description>
           <addressOffset>0x58</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_rx_done</name>
@@ -13898,6 +14196,7 @@
           <description>DesignWare I2C Clear Activity</description>
           <addressOffset>0x5c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_activity</name>
@@ -13912,6 +14211,7 @@
           <description>DesignWare I2C Clear Stop DET</description>
           <addressOffset>0x60</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_stop_det</name>
@@ -13926,6 +14226,7 @@
           <description>DesignWare I2C Clear Start DET</description>
           <addressOffset>0x64</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_start_det</name>
@@ -13940,6 +14241,7 @@
           <description>DesignWare I2C Clear General Call</description>
           <addressOffset>0x68</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_gen_call</name>
@@ -13954,6 +14256,7 @@
           <description>DesignWare I2C Enable</description>
           <addressOffset>0x6c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>abort</name>
@@ -13968,6 +14271,7 @@
           <description>DesignWare I2C Status</description>
           <addressOffset>0x70</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>activity</name>
@@ -14006,6 +14310,7 @@
           <description>DesignWare I2C TX Failure</description>
           <addressOffset>0x74</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>txflr</name>
@@ -14020,6 +14325,7 @@
           <description>DesignWare I2C RX Failure</description>
           <addressOffset>0x78</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rxflr</name>
@@ -14034,6 +14340,7 @@
           <description>DesignWare I2C SDA Hold</description>
           <addressOffset>0x7c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>sda_hold</name>
@@ -14048,6 +14355,7 @@
           <description>DesignWare I2C TX Abort Source</description>
           <addressOffset>0x80</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>b7_addr_noack</name>
@@ -14140,6 +14448,7 @@
           <description>DesignWare I2C Enable Status</description>
           <addressOffset>0x9c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>activity</name>
@@ -14178,6 +14487,7 @@
           <description>DesignWare I2C Clear Restart DET</description>
           <addressOffset>0xa8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clr_restart_det</name>
@@ -14192,6 +14502,7 @@
           <description>DesignWare I2C Compatibility Parameter 1</description>
           <addressOffset>0xf4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>speed</name>
@@ -14206,6 +14517,7 @@
           <description>DesignWare I2C Compatibility Version</description>
           <addressOffset>0xf8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>comp_version</name>
@@ -14220,6 +14532,7 @@
           <description>DesignWare I2C Compatibility Type</description>
           <addressOffset>0xfc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>comp_type</name>
@@ -14246,6 +14559,7 @@
           <description>SSPCR0 is control register 0 and contains five bit fields that control various functions within the PrimeCell SSP.</description>
           <addressOffset>0x0</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>dss</name>
@@ -14284,6 +14598,7 @@
           <description>SSPCR1 is the control register 1 and contains four different bit fields, that control various functions within the PrimeCell SSP.</description>
           <addressOffset>0x4</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>lbm</name>
@@ -14316,6 +14631,7 @@
           <description>SSPDR is the data register and is 16-bits wide. When SSPDR is read, the entry in the receive FIFO, pointed to by the current FIFO read pointer, is accessed. As data values are removed by the PrimeCell SSP receive logic from the incoming data frame, they are placed into the entry in the receive FIFO, pointed to by the current FIFO write pointer. When SSPDR is written to, the entry in the transmit FIFO, pointed to by the write pointer, is written to. Data values are removed from the transmit FIFO one value at a time by the transmit logic. It is loaded into the transmit serial shifter, then serially shifted out onto the SSPTXD pin at the programmed bit rate. When a data size of less than 16 bits is selected, the user must right-justify data written to the transmit FIFO. The transmit logic ignores the unused bits. Received data less than 16 bits is automatically right-justified in the receive buffer.</description>
           <addressOffset>0x8</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>data</name>
@@ -14330,6 +14646,7 @@
           <description>SSPSR is a RO status register that contains bits that indicate the FIFO fill status and the PrimeCell SSP busy status.</description>
           <addressOffset>0xc</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>tfe</name>
@@ -14368,6 +14685,7 @@
           <description>SSPCPSR is the clock prescale register and specifies the division factor by which the input SSPCLK must be internally divided before further use. The value programmed into this register must be an even number between [2:254]. The least significant bit of the programmed number is hard-coded to zero. If an odd number is written to this register, data read back from this register has the least significant bit as zero.</description>
           <addressOffset>0x10</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>cpsdvsr</name>
@@ -14382,6 +14700,7 @@
           <description>The SSPIMSC register is the interrupt mask set or clear register. It is a RW register. On a read this register gives the current value of the mask on the relevant interrupt. A write of 1 to the particular bit sets the mask, enabling the interrupt to be read. A write of 0 clears the corresponding mask. All the bits are cleared to 0 when reset.</description>
           <addressOffset>0x14</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rorim</name>
@@ -14414,6 +14733,7 @@
           <description>The SSPRIS register is the raw interrupt status register. It is a RO register. On a read this register gives the current raw status value of the corresponding interrupt prior to masking. A write has no effect.</description>
           <addressOffset>0x18</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rorris</name>
@@ -14446,6 +14766,7 @@
           <description>The SSPMIS register is the masked interrupt status register. It is a RO register. On a read this register gives the current masked status value of the corresponding interrupt. A write has no effect.</description>
           <addressOffset>0x1c</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rormis</name>
@@ -14478,6 +14799,7 @@
           <description>The SSPICR register is the interrupt clear register and is write-only. On a write of 1, the corresponding interrupt is cleared. A write of 0 has no effect.</description>
           <addressOffset>0x20</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>roric</name>
@@ -14498,6 +14820,7 @@
           <description>The SSPDMACR register is the DMA control register. It is a RW register. All the bits are cleared to 0 on reset.</description>
           <addressOffset>0x24</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rxdmae</name>
@@ -14518,6 +14841,7 @@
           <description>The SSPPeriphID0 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfe0</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>part_number0</name>
@@ -14532,6 +14856,7 @@
           <description>The SSPPeriphID1 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfe4</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>part_number1</name>
@@ -14552,6 +14877,7 @@
           <description>The SSPPeriphID2 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfe8</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>designer1</name>
@@ -14572,6 +14898,7 @@
           <description>The SSPPeriphID3 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfec</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>configuration</name>
@@ -14586,6 +14913,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xff0</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id0</name>
@@ -14600,6 +14928,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xff4</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id1</name>
@@ -14614,6 +14943,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xff8</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id2</name>
@@ -14628,6 +14958,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xffc</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id3</name>
@@ -14664,6 +14995,7 @@
           <description>SSPCR0 is control register 0 and contains five bit fields that control various functions within the PrimeCell SSP.</description>
           <addressOffset>0x0</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>dss</name>
@@ -14702,6 +15034,7 @@
           <description>SSPCR1 is the control register 1 and contains four different bit fields, that control various functions within the PrimeCell SSP.</description>
           <addressOffset>0x4</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>lbm</name>
@@ -14734,6 +15067,7 @@
           <description>SSPDR is the data register and is 16-bits wide. When SSPDR is read, the entry in the receive FIFO, pointed to by the current FIFO read pointer, is accessed. As data values are removed by the PrimeCell SSP receive logic from the incoming data frame, they are placed into the entry in the receive FIFO, pointed to by the current FIFO write pointer. When SSPDR is written to, the entry in the transmit FIFO, pointed to by the write pointer, is written to. Data values are removed from the transmit FIFO one value at a time by the transmit logic. It is loaded into the transmit serial shifter, then serially shifted out onto the SSPTXD pin at the programmed bit rate. When a data size of less than 16 bits is selected, the user must right-justify data written to the transmit FIFO. The transmit logic ignores the unused bits. Received data less than 16 bits is automatically right-justified in the receive buffer.</description>
           <addressOffset>0x8</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>data</name>
@@ -14748,6 +15082,7 @@
           <description>SSPSR is a RO status register that contains bits that indicate the FIFO fill status and the PrimeCell SSP busy status.</description>
           <addressOffset>0xc</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>tfe</name>
@@ -14786,6 +15121,7 @@
           <description>SSPCPSR is the clock prescale register and specifies the division factor by which the input SSPCLK must be internally divided before further use. The value programmed into this register must be an even number between [2:254]. The least significant bit of the programmed number is hard-coded to zero. If an odd number is written to this register, data read back from this register has the least significant bit as zero.</description>
           <addressOffset>0x10</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>cpsdvsr</name>
@@ -14800,6 +15136,7 @@
           <description>The SSPIMSC register is the interrupt mask set or clear register. It is a RW register. On a read this register gives the current value of the mask on the relevant interrupt. A write of 1 to the particular bit sets the mask, enabling the interrupt to be read. A write of 0 clears the corresponding mask. All the bits are cleared to 0 when reset.</description>
           <addressOffset>0x14</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rorim</name>
@@ -14832,6 +15169,7 @@
           <description>The SSPRIS register is the raw interrupt status register. It is a RO register. On a read this register gives the current raw status value of the corresponding interrupt prior to masking. A write has no effect.</description>
           <addressOffset>0x18</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rorris</name>
@@ -14864,6 +15202,7 @@
           <description>The SSPMIS register is the masked interrupt status register. It is a RO register. On a read this register gives the current masked status value of the corresponding interrupt. A write has no effect.</description>
           <addressOffset>0x1c</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rormis</name>
@@ -14896,6 +15235,7 @@
           <description>The SSPICR register is the interrupt clear register and is write-only. On a write of 1, the corresponding interrupt is cleared. A write of 0 has no effect.</description>
           <addressOffset>0x20</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>roric</name>
@@ -14916,6 +15256,7 @@
           <description>The SSPDMACR register is the DMA control register. It is a RW register. All the bits are cleared to 0 on reset.</description>
           <addressOffset>0x24</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rxdmae</name>
@@ -14936,6 +15277,7 @@
           <description>The SSPPeriphID0 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfe0</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>part_number0</name>
@@ -14950,6 +15292,7 @@
           <description>The SSPPeriphID1 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfe4</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>part_number1</name>
@@ -14970,6 +15313,7 @@
           <description>The SSPPeriphID2 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfe8</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>designer1</name>
@@ -14990,6 +15334,7 @@
           <description>The SSPPeriphID3 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfec</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>configuration</name>
@@ -15004,6 +15349,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xff0</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id0</name>
@@ -15018,6 +15364,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xff4</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id1</name>
@@ -15032,6 +15379,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xff8</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id2</name>
@@ -15046,6 +15394,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xffc</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id3</name>
@@ -15082,6 +15431,7 @@
           <description>SSPCR0 is control register 0 and contains five bit fields that control various functions within the PrimeCell SSP.</description>
           <addressOffset>0x0</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>dss</name>
@@ -15120,6 +15470,7 @@
           <description>SSPCR1 is the control register 1 and contains four different bit fields, that control various functions within the PrimeCell SSP.</description>
           <addressOffset>0x4</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>lbm</name>
@@ -15152,6 +15503,7 @@
           <description>SSPDR is the data register and is 16-bits wide. When SSPDR is read, the entry in the receive FIFO, pointed to by the current FIFO read pointer, is accessed. As data values are removed by the PrimeCell SSP receive logic from the incoming data frame, they are placed into the entry in the receive FIFO, pointed to by the current FIFO write pointer. When SSPDR is written to, the entry in the transmit FIFO, pointed to by the write pointer, is written to. Data values are removed from the transmit FIFO one value at a time by the transmit logic. It is loaded into the transmit serial shifter, then serially shifted out onto the SSPTXD pin at the programmed bit rate. When a data size of less than 16 bits is selected, the user must right-justify data written to the transmit FIFO. The transmit logic ignores the unused bits. Received data less than 16 bits is automatically right-justified in the receive buffer.</description>
           <addressOffset>0x8</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>data</name>
@@ -15166,6 +15518,7 @@
           <description>SSPSR is a RO status register that contains bits that indicate the FIFO fill status and the PrimeCell SSP busy status.</description>
           <addressOffset>0xc</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>tfe</name>
@@ -15204,6 +15557,7 @@
           <description>SSPCPSR is the clock prescale register and specifies the division factor by which the input SSPCLK must be internally divided before further use. The value programmed into this register must be an even number between [2:254]. The least significant bit of the programmed number is hard-coded to zero. If an odd number is written to this register, data read back from this register has the least significant bit as zero.</description>
           <addressOffset>0x10</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>cpsdvsr</name>
@@ -15218,6 +15572,7 @@
           <description>The SSPIMSC register is the interrupt mask set or clear register. It is a RW register. On a read this register gives the current value of the mask on the relevant interrupt. A write of 1 to the particular bit sets the mask, enabling the interrupt to be read. A write of 0 clears the corresponding mask. All the bits are cleared to 0 when reset.</description>
           <addressOffset>0x14</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rorim</name>
@@ -15250,6 +15605,7 @@
           <description>The SSPRIS register is the raw interrupt status register. It is a RO register. On a read this register gives the current raw status value of the corresponding interrupt prior to masking. A write has no effect.</description>
           <addressOffset>0x18</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rorris</name>
@@ -15282,6 +15638,7 @@
           <description>The SSPMIS register is the masked interrupt status register. It is a RO register. On a read this register gives the current masked status value of the corresponding interrupt. A write has no effect.</description>
           <addressOffset>0x1c</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rormis</name>
@@ -15314,6 +15671,7 @@
           <description>The SSPICR register is the interrupt clear register and is write-only. On a write of 1, the corresponding interrupt is cleared. A write of 0 has no effect.</description>
           <addressOffset>0x20</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>roric</name>
@@ -15334,6 +15692,7 @@
           <description>The SSPDMACR register is the DMA control register. It is a RW register. All the bits are cleared to 0 on reset.</description>
           <addressOffset>0x24</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rxdmae</name>
@@ -15354,6 +15713,7 @@
           <description>The SSPPeriphID0 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfe0</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>part_number0</name>
@@ -15368,6 +15728,7 @@
           <description>The SSPPeriphID1 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfe4</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>part_number1</name>
@@ -15388,6 +15749,7 @@
           <description>The SSPPeriphID2 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfe8</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>designer1</name>
@@ -15408,6 +15770,7 @@
           <description>The SSPPeriphID3 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfec</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>configuration</name>
@@ -15422,6 +15785,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xff0</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id0</name>
@@ -15436,6 +15800,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xff4</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id1</name>
@@ -15450,6 +15815,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xff8</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id2</name>
@@ -15464,6 +15830,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xffc</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id3</name>
@@ -15500,6 +15867,7 @@
           <description>SSPCR0 is control register 0 and contains five bit fields that control various functions within the PrimeCell SSP.</description>
           <addressOffset>0x0</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>dss</name>
@@ -15538,6 +15906,7 @@
           <description>SSPCR1 is the control register 1 and contains four different bit fields, that control various functions within the PrimeCell SSP.</description>
           <addressOffset>0x4</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>lbm</name>
@@ -15570,6 +15939,7 @@
           <description>SSPDR is the data register and is 16-bits wide. When SSPDR is read, the entry in the receive FIFO, pointed to by the current FIFO read pointer, is accessed. As data values are removed by the PrimeCell SSP receive logic from the incoming data frame, they are placed into the entry in the receive FIFO, pointed to by the current FIFO write pointer. When SSPDR is written to, the entry in the transmit FIFO, pointed to by the write pointer, is written to. Data values are removed from the transmit FIFO one value at a time by the transmit logic. It is loaded into the transmit serial shifter, then serially shifted out onto the SSPTXD pin at the programmed bit rate. When a data size of less than 16 bits is selected, the user must right-justify data written to the transmit FIFO. The transmit logic ignores the unused bits. Received data less than 16 bits is automatically right-justified in the receive buffer.</description>
           <addressOffset>0x8</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>data</name>
@@ -15584,6 +15954,7 @@
           <description>SSPSR is a RO status register that contains bits that indicate the FIFO fill status and the PrimeCell SSP busy status.</description>
           <addressOffset>0xc</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>tfe</name>
@@ -15622,6 +15993,7 @@
           <description>SSPCPSR is the clock prescale register and specifies the division factor by which the input SSPCLK must be internally divided before further use. The value programmed into this register must be an even number between [2:254]. The least significant bit of the programmed number is hard-coded to zero. If an odd number is written to this register, data read back from this register has the least significant bit as zero.</description>
           <addressOffset>0x10</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>cpsdvsr</name>
@@ -15636,6 +16008,7 @@
           <description>The SSPIMSC register is the interrupt mask set or clear register. It is a RW register. On a read this register gives the current value of the mask on the relevant interrupt. A write of 1 to the particular bit sets the mask, enabling the interrupt to be read. A write of 0 clears the corresponding mask. All the bits are cleared to 0 when reset.</description>
           <addressOffset>0x14</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rorim</name>
@@ -15668,6 +16041,7 @@
           <description>The SSPRIS register is the raw interrupt status register. It is a RO register. On a read this register gives the current raw status value of the corresponding interrupt prior to masking. A write has no effect.</description>
           <addressOffset>0x18</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rorris</name>
@@ -15700,6 +16074,7 @@
           <description>The SSPMIS register is the masked interrupt status register. It is a RO register. On a read this register gives the current masked status value of the corresponding interrupt. A write has no effect.</description>
           <addressOffset>0x1c</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rormis</name>
@@ -15732,6 +16107,7 @@
           <description>The SSPICR register is the interrupt clear register and is write-only. On a write of 1, the corresponding interrupt is cleared. A write of 0 has no effect.</description>
           <addressOffset>0x20</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>roric</name>
@@ -15752,6 +16128,7 @@
           <description>The SSPDMACR register is the DMA control register. It is a RW register. All the bits are cleared to 0 on reset.</description>
           <addressOffset>0x24</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rxdmae</name>
@@ -15772,6 +16149,7 @@
           <description>The SSPPeriphID0 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfe0</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>part_number0</name>
@@ -15786,6 +16164,7 @@
           <description>The SSPPeriphID1 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfe4</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>part_number1</name>
@@ -15806,6 +16185,7 @@
           <description>The SSPPeriphID2 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfe8</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>designer1</name>
@@ -15826,6 +16206,7 @@
           <description>The SSPPeriphID3 register is hard-coded and the fields within the register determine reset value. The SSPPeriphID0-3 registers are four 8-bit registers, that span address locations 0xFE0 to 0xFEC. The registers can conceptually be treated as a single 32-bit register.</description>
           <addressOffset>0xfec</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>configuration</name>
@@ -15840,6 +16221,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xff0</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id0</name>
@@ -15854,6 +16236,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xff4</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id1</name>
@@ -15868,6 +16251,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xff8</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id2</name>
@@ -15882,6 +16266,7 @@
           <description>The SSPPCellID0-3 registers are four 8-bit wide registers, that span address locations 0xFF0-0xFFC. The registers can conceptually be treated as a 32-bit register. The register is used as a standard cross-peripheral identification system. The SSPPCellID register is set to 0xB105F00D.</description>
           <addressOffset>0xffc</addressOffset>
           <size>16</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>ssp_pcell_id3</name>
@@ -30656,6 +31041,7 @@
           <description>Hardware Event Turn-On Mask</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>hard_event_0_on_mask</name>
@@ -30712,6 +31098,7 @@
           <description>Software Turn-On Power Mode</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>systop_power_mode</name>
@@ -30762,6 +31149,7 @@
           <description>Software Turn-Off Power Mode</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>systop_power_mode</name>
@@ -30812,6 +31200,7 @@
           <description>Threshold Sequence Timeout</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>timeout_seq_thd</name>
@@ -30826,6 +31215,7 @@
           <description>Powerdomain Cascade 0</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>pd0_off_cas</name>
@@ -30870,6 +31260,7 @@
           <description>Powerdomain Cascade 1</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>pd3_off_cas</name>
@@ -30914,6 +31305,7 @@
           <description>Powerdomain Cascade 2</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>pd6_off_cas</name>
@@ -30958,6 +31350,7 @@
           <description>Software Encouragement</description>
           <addressOffset>0x44</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>sw_encourage</name>
@@ -30972,6 +31365,7 @@
           <description>TIMER Interrupt Mask</description>
           <addressOffset>0x48</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>seq_done_mask</name>
@@ -31010,6 +31404,7 @@
           <description>P-channel Bypass</description>
           <addressOffset>0x4c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>pch_bypass</name>
@@ -31024,6 +31419,7 @@
           <description>P-channel PSTATE</description>
           <addressOffset>0x50</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>pch_pstate</name>
@@ -31038,6 +31434,7 @@
           <description>P-channel Timeout Threshold</description>
           <addressOffset>0x54</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>pch_timeout</name>
@@ -31052,6 +31449,7 @@
           <description>LP Cell Control Timeout Threshold</description>
           <addressOffset>0x58</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>lp_timeout</name>
@@ -31066,6 +31464,7 @@
           <description>Hardware Turn-On Power Mode</description>
           <addressOffset>0x5c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>systop_power_mode</name>
@@ -31116,6 +31515,7 @@
           <description>Current Power Mode</description>
           <addressOffset>0x80</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>systop_power_mode</name>
@@ -31166,6 +31566,7 @@
           <description>Current Sequence State</description>
           <addressOffset>0x84</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>power_mode_cur</name>
@@ -31180,6 +31581,7 @@
           <description>PMU Event Status</description>
           <addressOffset>0x88</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>seq_done_event</name>
@@ -31218,6 +31620,7 @@
           <description>PMU Interrupt Status</description>
           <addressOffset>0x8c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>seq_done_event</name>
@@ -31256,6 +31659,7 @@
           <description>Hardware Event Record</description>
           <addressOffset>0x90</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>hw_event_crd</name>
@@ -31270,6 +31674,7 @@
           <description>Hardware Event Type Record</description>
           <addressOffset>0x94</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>encourage_type_crd</name>
@@ -31284,6 +31689,7 @@
           <description>P-channel PACTIVE Status</description>
           <addressOffset>0x98</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>pch_active</name>

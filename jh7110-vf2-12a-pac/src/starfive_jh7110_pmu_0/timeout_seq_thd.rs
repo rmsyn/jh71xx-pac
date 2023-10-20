@@ -27,7 +27,7 @@ impl W {
         self
     }
 }
-#[doc = "Threshold Sequence Timeout\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`timeout_seq_thd::R`](R).  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`timeout_seq_thd::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "Threshold Sequence Timeout\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`timeout_seq_thd::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`timeout_seq_thd::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct TIMEOUT_SEQ_THD_SPEC;
 impl crate::RegisterSpec for TIMEOUT_SEQ_THD_SPEC {
     type Ux = u32;
@@ -38,4 +38,8 @@ impl crate::Readable for TIMEOUT_SEQ_THD_SPEC {}
 impl crate::Writable for TIMEOUT_SEQ_THD_SPEC {
     const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+}
+#[doc = "`reset()` method sets timeout_seq_thd to value 0"]
+impl crate::Resettable for TIMEOUT_SEQ_THD_SPEC {
+    const RESET_VALUE: Self::Ux = 0;
 }

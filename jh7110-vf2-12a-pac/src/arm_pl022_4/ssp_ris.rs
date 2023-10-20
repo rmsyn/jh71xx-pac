@@ -40,7 +40,7 @@ impl W {
         self
     }
 }
-#[doc = "The SSPRIS register is the raw interrupt status register. It is a RO register. On a read this register gives the current raw status value of the corresponding interrupt prior to masking. A write has no effect.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ssp_ris::R`](R).  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ssp_ris::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "The SSPRIS register is the raw interrupt status register. It is a RO register. On a read this register gives the current raw status value of the corresponding interrupt prior to masking. A write has no effect.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ssp_ris::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ssp_ris::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct SSP_RIS_SPEC;
 impl crate::RegisterSpec for SSP_RIS_SPEC {
     type Ux = u16;
@@ -51,4 +51,8 @@ impl crate::Readable for SSP_RIS_SPEC {}
 impl crate::Writable for SSP_RIS_SPEC {
     const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+}
+#[doc = "`reset()` method sets ssp_ris to value 0"]
+impl crate::Resettable for SSP_RIS_SPEC {
+    const RESET_VALUE: Self::Ux = 0;
 }

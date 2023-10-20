@@ -72,7 +72,7 @@ impl W {
         self
     }
 }
-#[doc = "SSPCR1 is the control register 1 and contains four different bit fields, that control various functions within the PrimeCell SSP.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ssp_cr1::R`](R).  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ssp_cr1::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "SSPCR1 is the control register 1 and contains four different bit fields, that control various functions within the PrimeCell SSP.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ssp_cr1::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ssp_cr1::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct SSP_CR1_SPEC;
 impl crate::RegisterSpec for SSP_CR1_SPEC {
     type Ux = u16;
@@ -83,4 +83,8 @@ impl crate::Readable for SSP_CR1_SPEC {}
 impl crate::Writable for SSP_CR1_SPEC {
     const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+}
+#[doc = "`reset()` method sets ssp_cr1 to value 0"]
+impl crate::Resettable for SSP_CR1_SPEC {
+    const RESET_VALUE: Self::Ux = 0;
 }
