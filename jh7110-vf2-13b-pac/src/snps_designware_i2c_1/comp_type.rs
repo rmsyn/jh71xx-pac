@@ -19,7 +19,7 @@ impl W {
         self
     }
 }
-#[doc = "DesignWare I2C Compatibility Type\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`comp_type::R`](R).  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comp_type::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "DesignWare I2C Compatibility Type\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`comp_type::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`comp_type::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct COMP_TYPE_SPEC;
 impl crate::RegisterSpec for COMP_TYPE_SPEC {
     type Ux = u32;
@@ -30,4 +30,8 @@ impl crate::Readable for COMP_TYPE_SPEC {}
 impl crate::Writable for COMP_TYPE_SPEC {
     const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+}
+#[doc = "`reset()` method sets comp_type to value 0"]
+impl crate::Resettable for COMP_TYPE_SPEC {
+    const RESET_VALUE: Self::Ux = 0;
 }

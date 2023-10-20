@@ -27,7 +27,7 @@ impl W {
         self
     }
 }
-#[doc = "SSPCPSR is the clock prescale register and specifies the division factor by which the input SSPCLK must be internally divided before further use. The value programmed into this register must be an even number between \\[2:254\\]. The least significant bit of the programmed number is hard-coded to zero. If an odd number is written to this register, data read back from this register has the least significant bit as zero.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ssp_cpsr::R`](R).  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ssp_cpsr::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "SSPCPSR is the clock prescale register and specifies the division factor by which the input SSPCLK must be internally divided before further use. The value programmed into this register must be an even number between \\[2:254\\]. The least significant bit of the programmed number is hard-coded to zero. If an odd number is written to this register, data read back from this register has the least significant bit as zero.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ssp_cpsr::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ssp_cpsr::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct SSP_CPSR_SPEC;
 impl crate::RegisterSpec for SSP_CPSR_SPEC {
     type Ux = u16;
@@ -38,4 +38,8 @@ impl crate::Readable for SSP_CPSR_SPEC {}
 impl crate::Writable for SSP_CPSR_SPEC {
     const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+}
+#[doc = "`reset()` method sets ssp_cpsr to value 0"]
+impl crate::Resettable for SSP_CPSR_SPEC {
+    const RESET_VALUE: Self::Ux = 0;
 }

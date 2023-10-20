@@ -72,7 +72,7 @@ impl W {
         self
     }
 }
-#[doc = "The SSPIMSC register is the interrupt mask set or clear register. It is a RW register. On a read this register gives the current value of the mask on the relevant interrupt. A write of 1 to the particular bit sets the mask, enabling the interrupt to be read. A write of 0 clears the corresponding mask. All the bits are cleared to 0 when reset.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ssp_imsc::R`](R).  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ssp_imsc::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "The SSPIMSC register is the interrupt mask set or clear register. It is a RW register. On a read this register gives the current value of the mask on the relevant interrupt. A write of 1 to the particular bit sets the mask, enabling the interrupt to be read. A write of 0 clears the corresponding mask. All the bits are cleared to 0 when reset.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ssp_imsc::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ssp_imsc::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct SSP_IMSC_SPEC;
 impl crate::RegisterSpec for SSP_IMSC_SPEC {
     type Ux = u16;
@@ -83,4 +83,8 @@ impl crate::Readable for SSP_IMSC_SPEC {}
 impl crate::Writable for SSP_IMSC_SPEC {
     const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+}
+#[doc = "`reset()` method sets ssp_imsc to value 0"]
+impl crate::Resettable for SSP_IMSC_SPEC {
+    const RESET_VALUE: Self::Ux = 0;
 }

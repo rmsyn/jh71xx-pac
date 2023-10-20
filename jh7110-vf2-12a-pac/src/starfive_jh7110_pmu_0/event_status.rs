@@ -47,7 +47,7 @@ impl W {
         self
     }
 }
-#[doc = "PMU Event Status\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`event_status::R`](R).  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`event_status::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "PMU Event Status\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`event_status::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`event_status::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct EVENT_STATUS_SPEC;
 impl crate::RegisterSpec for EVENT_STATUS_SPEC {
     type Ux = u32;
@@ -58,4 +58,8 @@ impl crate::Readable for EVENT_STATUS_SPEC {}
 impl crate::Writable for EVENT_STATUS_SPEC {
     const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+}
+#[doc = "`reset()` method sets event_status to value 0"]
+impl crate::Resettable for EVENT_STATUS_SPEC {
+    const RESET_VALUE: Self::Ux = 0;
 }
