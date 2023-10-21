@@ -34,17 +34,17 @@ pub union Vector {
 #[doc(hidden)]
 #[no_mangle]
 pub static __EXTERNAL_INTERRUPTS: [Vector; 0] = [];
-#[doc = "From sifive,clint0, peripheral generator"]
-pub struct SIFIVE_CLINT0_0 {
+#[doc = "From starfive,jh7110-clint, peripheral generator"]
+pub struct CLINT {
     _marker: PhantomData<*const ()>,
 }
-unsafe impl Send for SIFIVE_CLINT0_0 {}
-impl SIFIVE_CLINT0_0 {
+unsafe impl Send for CLINT {}
+impl CLINT {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const sifive_clint0_0::RegisterBlock = 0x0200_0000 as *const _;
+    pub const PTR: *const clint::RegisterBlock = 0x0200_0000 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const sifive_clint0_0::RegisterBlock {
+    pub const fn ptr() -> *const clint::RegisterBlock {
         Self::PTR
     }
     #[doc = r" Steal an instance of this peripheral"]
@@ -66,31 +66,31 @@ impl SIFIVE_CLINT0_0 {
         }
     }
 }
-impl Deref for SIFIVE_CLINT0_0 {
-    type Target = sifive_clint0_0::RegisterBlock;
+impl Deref for CLINT {
+    type Target = clint::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
     }
 }
-impl core::fmt::Debug for SIFIVE_CLINT0_0 {
+impl core::fmt::Debug for CLINT {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("SIFIVE_CLINT0_0").finish()
+        f.debug_struct("CLINT").finish()
     }
 }
-#[doc = "From sifive,clint0, peripheral generator"]
-pub mod sifive_clint0_0;
-#[doc = "From snps,designware-i2c, peripheral generator"]
-pub struct SNPS_DESIGNWARE_I2C_0 {
+#[doc = "From starfive,jh7110-clint, peripheral generator"]
+pub mod clint;
+#[doc = "From starfive,jh7110-plic, peripheral generator"]
+pub struct PLIC {
     _marker: PhantomData<*const ()>,
 }
-unsafe impl Send for SNPS_DESIGNWARE_I2C_0 {}
-impl SNPS_DESIGNWARE_I2C_0 {
+unsafe impl Send for PLIC {}
+impl PLIC {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const snps_designware_i2c_0::RegisterBlock = 0x1003_0000 as *const _;
+    pub const PTR: *const plic::RegisterBlock = 0x0c00_0000 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const snps_designware_i2c_0::RegisterBlock {
+    pub const fn ptr() -> *const plic::RegisterBlock {
         Self::PTR
     }
     #[doc = r" Steal an instance of this peripheral"]
@@ -112,31 +112,31 @@ impl SNPS_DESIGNWARE_I2C_0 {
         }
     }
 }
-impl Deref for SNPS_DESIGNWARE_I2C_0 {
-    type Target = snps_designware_i2c_0::RegisterBlock;
+impl Deref for PLIC {
+    type Target = plic::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
     }
 }
-impl core::fmt::Debug for SNPS_DESIGNWARE_I2C_0 {
+impl core::fmt::Debug for PLIC {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("SNPS_DESIGNWARE_I2C_0").finish()
+        f.debug_struct("PLIC").finish()
     }
 }
+#[doc = "From starfive,jh7110-plic, peripheral generator"]
+pub mod plic;
 #[doc = "From snps,designware-i2c, peripheral generator"]
-pub mod snps_designware_i2c_0;
-#[doc = "From snps,designware-i2c, peripheral generator"]
-pub struct SNPS_DESIGNWARE_I2C_1 {
+pub struct I2C0 {
     _marker: PhantomData<*const ()>,
 }
-unsafe impl Send for SNPS_DESIGNWARE_I2C_1 {}
-impl SNPS_DESIGNWARE_I2C_1 {
+unsafe impl Send for I2C0 {}
+impl I2C0 {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const snps_designware_i2c_1::RegisterBlock = 0x1004_0000 as *const _;
+    pub const PTR: *const i2c0::RegisterBlock = 0x1003_0000 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const snps_designware_i2c_1::RegisterBlock {
+    pub const fn ptr() -> *const i2c0::RegisterBlock {
         Self::PTR
     }
     #[doc = r" Steal an instance of this peripheral"]
@@ -158,77 +158,31 @@ impl SNPS_DESIGNWARE_I2C_1 {
         }
     }
 }
-impl Deref for SNPS_DESIGNWARE_I2C_1 {
-    type Target = snps_designware_i2c_1::RegisterBlock;
+impl Deref for I2C0 {
+    type Target = i2c0::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
     }
 }
-impl core::fmt::Debug for SNPS_DESIGNWARE_I2C_1 {
+impl core::fmt::Debug for I2C0 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("SNPS_DESIGNWARE_I2C_1").finish()
-    }
-}
-#[doc = "From snps,designware-i2c, peripheral generator"]
-pub mod snps_designware_i2c_1;
-#[doc = "From snps,designware-i2c, peripheral generator"]
-pub struct SNPS_DESIGNWARE_I2C_2 {
-    _marker: PhantomData<*const ()>,
-}
-unsafe impl Send for SNPS_DESIGNWARE_I2C_2 {}
-impl SNPS_DESIGNWARE_I2C_2 {
-    #[doc = r"Pointer to the register block"]
-    pub const PTR: *const snps_designware_i2c_2::RegisterBlock = 0x1005_0000 as *const _;
-    #[doc = r"Return the pointer to the register block"]
-    #[inline(always)]
-    pub const fn ptr() -> *const snps_designware_i2c_2::RegisterBlock {
-        Self::PTR
-    }
-    #[doc = r" Steal an instance of this peripheral"]
-    #[doc = r""]
-    #[doc = r" # Safety"]
-    #[doc = r""]
-    #[doc = r" Ensure that the new instance of the peripheral cannot be used in a way"]
-    #[doc = r" that may race with any existing instances, for example by only"]
-    #[doc = r" accessing read-only or write-only registers, or by consuming the"]
-    #[doc = r" original peripheral and using critical sections to coordinate"]
-    #[doc = r" access between multiple new instances."]
-    #[doc = r""]
-    #[doc = r" Additionally, other software such as HALs may rely on only one"]
-    #[doc = r" peripheral instance existing to ensure memory safety; ensure"]
-    #[doc = r" no stolen instances are passed to such software."]
-    pub unsafe fn steal() -> Self {
-        Self {
-            _marker: PhantomData,
-        }
-    }
-}
-impl Deref for SNPS_DESIGNWARE_I2C_2 {
-    type Target = snps_designware_i2c_2::RegisterBlock;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        unsafe { &*Self::PTR }
-    }
-}
-impl core::fmt::Debug for SNPS_DESIGNWARE_I2C_2 {
-    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("SNPS_DESIGNWARE_I2C_2").finish()
+        f.debug_struct("I2C0").finish()
     }
 }
 #[doc = "From snps,designware-i2c, peripheral generator"]
-pub mod snps_designware_i2c_2;
-#[doc = "From arm,pl022, peripheral generator"]
-pub struct ARM_PL022_0 {
+pub mod i2c0;
+#[doc = "From snps,designware-i2c, peripheral generator"]
+pub struct I2C1 {
     _marker: PhantomData<*const ()>,
 }
-unsafe impl Send for ARM_PL022_0 {}
-impl ARM_PL022_0 {
+unsafe impl Send for I2C1 {}
+impl I2C1 {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const arm_pl022_0::RegisterBlock = 0x1006_0000 as *const _;
+    pub const PTR: *const i2c1::RegisterBlock = 0x1004_0000 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const arm_pl022_0::RegisterBlock {
+    pub const fn ptr() -> *const i2c1::RegisterBlock {
         Self::PTR
     }
     #[doc = r" Steal an instance of this peripheral"]
@@ -250,31 +204,31 @@ impl ARM_PL022_0 {
         }
     }
 }
-impl Deref for ARM_PL022_0 {
-    type Target = arm_pl022_0::RegisterBlock;
+impl Deref for I2C1 {
+    type Target = i2c1::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
     }
 }
-impl core::fmt::Debug for ARM_PL022_0 {
+impl core::fmt::Debug for I2C1 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("ARM_PL022_0").finish()
+        f.debug_struct("I2C1").finish()
     }
 }
-#[doc = "From arm,pl022, peripheral generator"]
-pub mod arm_pl022_0;
-#[doc = "From arm,pl022, peripheral generator"]
-pub struct ARM_PL022_1 {
+#[doc = "From snps,designware-i2c, peripheral generator"]
+pub mod i2c1;
+#[doc = "From snps,designware-i2c, peripheral generator"]
+pub struct I2C2 {
     _marker: PhantomData<*const ()>,
 }
-unsafe impl Send for ARM_PL022_1 {}
-impl ARM_PL022_1 {
+unsafe impl Send for I2C2 {}
+impl I2C2 {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const arm_pl022_1::RegisterBlock = 0x1007_0000 as *const _;
+    pub const PTR: *const i2c2::RegisterBlock = 0x1005_0000 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const arm_pl022_1::RegisterBlock {
+    pub const fn ptr() -> *const i2c2::RegisterBlock {
         Self::PTR
     }
     #[doc = r" Steal an instance of this peripheral"]
@@ -296,31 +250,31 @@ impl ARM_PL022_1 {
         }
     }
 }
-impl Deref for ARM_PL022_1 {
-    type Target = arm_pl022_1::RegisterBlock;
+impl Deref for I2C2 {
+    type Target = i2c2::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
     }
 }
-impl core::fmt::Debug for ARM_PL022_1 {
+impl core::fmt::Debug for I2C2 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("ARM_PL022_1").finish()
+        f.debug_struct("I2C2").finish()
     }
 }
+#[doc = "From snps,designware-i2c, peripheral generator"]
+pub mod i2c2;
 #[doc = "From arm,pl022, peripheral generator"]
-pub mod arm_pl022_1;
-#[doc = "From arm,pl022, peripheral generator"]
-pub struct ARM_PL022_2 {
+pub struct SPI0 {
     _marker: PhantomData<*const ()>,
 }
-unsafe impl Send for ARM_PL022_2 {}
-impl ARM_PL022_2 {
+unsafe impl Send for SPI0 {}
+impl SPI0 {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const arm_pl022_2::RegisterBlock = 0x1008_0000 as *const _;
+    pub const PTR: *const spi0::RegisterBlock = 0x1006_0000 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const arm_pl022_2::RegisterBlock {
+    pub const fn ptr() -> *const spi0::RegisterBlock {
         Self::PTR
     }
     #[doc = r" Steal an instance of this peripheral"]
@@ -342,31 +296,123 @@ impl ARM_PL022_2 {
         }
     }
 }
-impl Deref for ARM_PL022_2 {
-    type Target = arm_pl022_2::RegisterBlock;
+impl Deref for SPI0 {
+    type Target = spi0::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
     }
 }
-impl core::fmt::Debug for ARM_PL022_2 {
+impl core::fmt::Debug for SPI0 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("ARM_PL022_2").finish()
+        f.debug_struct("SPI0").finish()
     }
 }
 #[doc = "From arm,pl022, peripheral generator"]
-pub mod arm_pl022_2;
+pub mod spi0;
+#[doc = "From arm,pl022, peripheral generator"]
+pub struct SPI1 {
+    _marker: PhantomData<*const ()>,
+}
+unsafe impl Send for SPI1 {}
+impl SPI1 {
+    #[doc = r"Pointer to the register block"]
+    pub const PTR: *const spi1::RegisterBlock = 0x1007_0000 as *const _;
+    #[doc = r"Return the pointer to the register block"]
+    #[inline(always)]
+    pub const fn ptr() -> *const spi1::RegisterBlock {
+        Self::PTR
+    }
+    #[doc = r" Steal an instance of this peripheral"]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Ensure that the new instance of the peripheral cannot be used in a way"]
+    #[doc = r" that may race with any existing instances, for example by only"]
+    #[doc = r" accessing read-only or write-only registers, or by consuming the"]
+    #[doc = r" original peripheral and using critical sections to coordinate"]
+    #[doc = r" access between multiple new instances."]
+    #[doc = r""]
+    #[doc = r" Additionally, other software such as HALs may rely on only one"]
+    #[doc = r" peripheral instance existing to ensure memory safety; ensure"]
+    #[doc = r" no stolen instances are passed to such software."]
+    pub unsafe fn steal() -> Self {
+        Self {
+            _marker: PhantomData,
+        }
+    }
+}
+impl Deref for SPI1 {
+    type Target = spi1::RegisterBlock;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        unsafe { &*Self::PTR }
+    }
+}
+impl core::fmt::Debug for SPI1 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("SPI1").finish()
+    }
+}
+#[doc = "From arm,pl022, peripheral generator"]
+pub mod spi1;
+#[doc = "From arm,pl022, peripheral generator"]
+pub struct SPI2 {
+    _marker: PhantomData<*const ()>,
+}
+unsafe impl Send for SPI2 {}
+impl SPI2 {
+    #[doc = r"Pointer to the register block"]
+    pub const PTR: *const spi2::RegisterBlock = 0x1008_0000 as *const _;
+    #[doc = r"Return the pointer to the register block"]
+    #[inline(always)]
+    pub const fn ptr() -> *const spi2::RegisterBlock {
+        Self::PTR
+    }
+    #[doc = r" Steal an instance of this peripheral"]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Ensure that the new instance of the peripheral cannot be used in a way"]
+    #[doc = r" that may race with any existing instances, for example by only"]
+    #[doc = r" accessing read-only or write-only registers, or by consuming the"]
+    #[doc = r" original peripheral and using critical sections to coordinate"]
+    #[doc = r" access between multiple new instances."]
+    #[doc = r""]
+    #[doc = r" Additionally, other software such as HALs may rely on only one"]
+    #[doc = r" peripheral instance existing to ensure memory safety; ensure"]
+    #[doc = r" no stolen instances are passed to such software."]
+    pub unsafe fn steal() -> Self {
+        Self {
+            _marker: PhantomData,
+        }
+    }
+}
+impl Deref for SPI2 {
+    type Target = spi2::RegisterBlock;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        unsafe { &*Self::PTR }
+    }
+}
+impl core::fmt::Debug for SPI2 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("SPI2").finish()
+    }
+}
+#[doc = "From arm,pl022, peripheral generator"]
+pub mod spi2;
 #[doc = "From starfive,jh7110-stgcrg, peripheral generator"]
-pub struct STARFIVE_JH7110_STGCRG_0 {
+pub struct STGCRG {
     _marker: PhantomData<*const ()>,
 }
-unsafe impl Send for STARFIVE_JH7110_STGCRG_0 {}
-impl STARFIVE_JH7110_STGCRG_0 {
+unsafe impl Send for STGCRG {}
+impl STGCRG {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const starfive_jh7110_stgcrg_0::RegisterBlock = 0x1023_0000 as *const _;
+    pub const PTR: *const stgcrg::RegisterBlock = 0x1023_0000 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const starfive_jh7110_stgcrg_0::RegisterBlock {
+    pub const fn ptr() -> *const stgcrg::RegisterBlock {
         Self::PTR
     }
     #[doc = r" Steal an instance of this peripheral"]
@@ -388,31 +434,31 @@ impl STARFIVE_JH7110_STGCRG_0 {
         }
     }
 }
-impl Deref for STARFIVE_JH7110_STGCRG_0 {
-    type Target = starfive_jh7110_stgcrg_0::RegisterBlock;
+impl Deref for STGCRG {
+    type Target = stgcrg::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
     }
 }
-impl core::fmt::Debug for STARFIVE_JH7110_STGCRG_0 {
+impl core::fmt::Debug for STGCRG {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("STARFIVE_JH7110_STGCRG_0").finish()
+        f.debug_struct("STGCRG").finish()
     }
 }
 #[doc = "From starfive,jh7110-stgcrg, peripheral generator"]
-pub mod starfive_jh7110_stgcrg_0;
+pub mod stgcrg;
 #[doc = "From starfive,jh7110-stg-syscon, peripheral generator"]
-pub struct STARFIVE_JH7110_STG_SYSCON_0 {
+pub struct STG_SYSCON {
     _marker: PhantomData<*const ()>,
 }
-unsafe impl Send for STARFIVE_JH7110_STG_SYSCON_0 {}
-impl STARFIVE_JH7110_STG_SYSCON_0 {
+unsafe impl Send for STG_SYSCON {}
+impl STG_SYSCON {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const starfive_jh7110_stg_syscon_0::RegisterBlock = 0x1024_0000 as *const _;
+    pub const PTR: *const stg_syscon::RegisterBlock = 0x1024_0000 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const starfive_jh7110_stg_syscon_0::RegisterBlock {
+    pub const fn ptr() -> *const stg_syscon::RegisterBlock {
         Self::PTR
     }
     #[doc = r" Steal an instance of this peripheral"]
@@ -434,31 +480,31 @@ impl STARFIVE_JH7110_STG_SYSCON_0 {
         }
     }
 }
-impl Deref for STARFIVE_JH7110_STG_SYSCON_0 {
-    type Target = starfive_jh7110_stg_syscon_0::RegisterBlock;
+impl Deref for STG_SYSCON {
+    type Target = stg_syscon::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
     }
 }
-impl core::fmt::Debug for STARFIVE_JH7110_STG_SYSCON_0 {
+impl core::fmt::Debug for STG_SYSCON {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("STARFIVE_JH7110_STG_SYSCON_0").finish()
+        f.debug_struct("STG_SYSCON").finish()
     }
 }
 #[doc = "From starfive,jh7110-stg-syscon, peripheral generator"]
-pub mod starfive_jh7110_stg_syscon_0;
+pub mod stg_syscon;
 #[doc = "From snps,designware-i2c, peripheral generator"]
-pub struct SNPS_DESIGNWARE_I2C_3 {
+pub struct I2C3 {
     _marker: PhantomData<*const ()>,
 }
-unsafe impl Send for SNPS_DESIGNWARE_I2C_3 {}
-impl SNPS_DESIGNWARE_I2C_3 {
+unsafe impl Send for I2C3 {}
+impl I2C3 {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const snps_designware_i2c_3::RegisterBlock = 0x1203_0000 as *const _;
+    pub const PTR: *const i2c3::RegisterBlock = 0x1203_0000 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const snps_designware_i2c_3::RegisterBlock {
+    pub const fn ptr() -> *const i2c3::RegisterBlock {
         Self::PTR
     }
     #[doc = r" Steal an instance of this peripheral"]
@@ -480,31 +526,31 @@ impl SNPS_DESIGNWARE_I2C_3 {
         }
     }
 }
-impl Deref for SNPS_DESIGNWARE_I2C_3 {
-    type Target = snps_designware_i2c_3::RegisterBlock;
+impl Deref for I2C3 {
+    type Target = i2c3::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
     }
 }
-impl core::fmt::Debug for SNPS_DESIGNWARE_I2C_3 {
+impl core::fmt::Debug for I2C3 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("SNPS_DESIGNWARE_I2C_3").finish()
+        f.debug_struct("I2C3").finish()
     }
 }
 #[doc = "From snps,designware-i2c, peripheral generator"]
-pub mod snps_designware_i2c_3;
+pub mod i2c3;
 #[doc = "From snps,designware-i2c, peripheral generator"]
-pub struct SNPS_DESIGNWARE_I2C_4 {
+pub struct I2C4 {
     _marker: PhantomData<*const ()>,
 }
-unsafe impl Send for SNPS_DESIGNWARE_I2C_4 {}
-impl SNPS_DESIGNWARE_I2C_4 {
+unsafe impl Send for I2C4 {}
+impl I2C4 {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const snps_designware_i2c_4::RegisterBlock = 0x1204_0000 as *const _;
+    pub const PTR: *const i2c4::RegisterBlock = 0x1204_0000 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const snps_designware_i2c_4::RegisterBlock {
+    pub const fn ptr() -> *const i2c4::RegisterBlock {
         Self::PTR
     }
     #[doc = r" Steal an instance of this peripheral"]
@@ -526,31 +572,31 @@ impl SNPS_DESIGNWARE_I2C_4 {
         }
     }
 }
-impl Deref for SNPS_DESIGNWARE_I2C_4 {
-    type Target = snps_designware_i2c_4::RegisterBlock;
+impl Deref for I2C4 {
+    type Target = i2c4::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
     }
 }
-impl core::fmt::Debug for SNPS_DESIGNWARE_I2C_4 {
+impl core::fmt::Debug for I2C4 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("SNPS_DESIGNWARE_I2C_4").finish()
+        f.debug_struct("I2C4").finish()
     }
 }
 #[doc = "From snps,designware-i2c, peripheral generator"]
-pub mod snps_designware_i2c_4;
+pub mod i2c4;
 #[doc = "From snps,designware-i2c, peripheral generator"]
-pub struct SNPS_DESIGNWARE_I2C_5 {
+pub struct I2C5 {
     _marker: PhantomData<*const ()>,
 }
-unsafe impl Send for SNPS_DESIGNWARE_I2C_5 {}
-impl SNPS_DESIGNWARE_I2C_5 {
+unsafe impl Send for I2C5 {}
+impl I2C5 {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const snps_designware_i2c_5::RegisterBlock = 0x1205_0000 as *const _;
+    pub const PTR: *const i2c5::RegisterBlock = 0x1205_0000 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const snps_designware_i2c_5::RegisterBlock {
+    pub const fn ptr() -> *const i2c5::RegisterBlock {
         Self::PTR
     }
     #[doc = r" Steal an instance of this peripheral"]
@@ -572,77 +618,31 @@ impl SNPS_DESIGNWARE_I2C_5 {
         }
     }
 }
-impl Deref for SNPS_DESIGNWARE_I2C_5 {
-    type Target = snps_designware_i2c_5::RegisterBlock;
+impl Deref for I2C5 {
+    type Target = i2c5::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
     }
 }
-impl core::fmt::Debug for SNPS_DESIGNWARE_I2C_5 {
+impl core::fmt::Debug for I2C5 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("SNPS_DESIGNWARE_I2C_5").finish()
-    }
-}
-#[doc = "From snps,designware-i2c, peripheral generator"]
-pub mod snps_designware_i2c_5;
-#[doc = "From snps,designware-i2c, peripheral generator"]
-pub struct SNPS_DESIGNWARE_I2C_6 {
-    _marker: PhantomData<*const ()>,
-}
-unsafe impl Send for SNPS_DESIGNWARE_I2C_6 {}
-impl SNPS_DESIGNWARE_I2C_6 {
-    #[doc = r"Pointer to the register block"]
-    pub const PTR: *const snps_designware_i2c_6::RegisterBlock = 0x1206_0000 as *const _;
-    #[doc = r"Return the pointer to the register block"]
-    #[inline(always)]
-    pub const fn ptr() -> *const snps_designware_i2c_6::RegisterBlock {
-        Self::PTR
-    }
-    #[doc = r" Steal an instance of this peripheral"]
-    #[doc = r""]
-    #[doc = r" # Safety"]
-    #[doc = r""]
-    #[doc = r" Ensure that the new instance of the peripheral cannot be used in a way"]
-    #[doc = r" that may race with any existing instances, for example by only"]
-    #[doc = r" accessing read-only or write-only registers, or by consuming the"]
-    #[doc = r" original peripheral and using critical sections to coordinate"]
-    #[doc = r" access between multiple new instances."]
-    #[doc = r""]
-    #[doc = r" Additionally, other software such as HALs may rely on only one"]
-    #[doc = r" peripheral instance existing to ensure memory safety; ensure"]
-    #[doc = r" no stolen instances are passed to such software."]
-    pub unsafe fn steal() -> Self {
-        Self {
-            _marker: PhantomData,
-        }
-    }
-}
-impl Deref for SNPS_DESIGNWARE_I2C_6 {
-    type Target = snps_designware_i2c_6::RegisterBlock;
-    #[inline(always)]
-    fn deref(&self) -> &Self::Target {
-        unsafe { &*Self::PTR }
-    }
-}
-impl core::fmt::Debug for SNPS_DESIGNWARE_I2C_6 {
-    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("SNPS_DESIGNWARE_I2C_6").finish()
+        f.debug_struct("I2C5").finish()
     }
 }
 #[doc = "From snps,designware-i2c, peripheral generator"]
-pub mod snps_designware_i2c_6;
-#[doc = "From arm,pl022, peripheral generator"]
-pub struct ARM_PL022_3 {
+pub mod i2c5;
+#[doc = "From snps,designware-i2c, peripheral generator"]
+pub struct I2C6 {
     _marker: PhantomData<*const ()>,
 }
-unsafe impl Send for ARM_PL022_3 {}
-impl ARM_PL022_3 {
+unsafe impl Send for I2C6 {}
+impl I2C6 {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const arm_pl022_3::RegisterBlock = 0x1207_0000 as *const _;
+    pub const PTR: *const i2c6::RegisterBlock = 0x1206_0000 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const arm_pl022_3::RegisterBlock {
+    pub const fn ptr() -> *const i2c6::RegisterBlock {
         Self::PTR
     }
     #[doc = r" Steal an instance of this peripheral"]
@@ -664,31 +664,31 @@ impl ARM_PL022_3 {
         }
     }
 }
-impl Deref for ARM_PL022_3 {
-    type Target = arm_pl022_3::RegisterBlock;
+impl Deref for I2C6 {
+    type Target = i2c6::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
     }
 }
-impl core::fmt::Debug for ARM_PL022_3 {
+impl core::fmt::Debug for I2C6 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("ARM_PL022_3").finish()
+        f.debug_struct("I2C6").finish()
     }
 }
+#[doc = "From snps,designware-i2c, peripheral generator"]
+pub mod i2c6;
 #[doc = "From arm,pl022, peripheral generator"]
-pub mod arm_pl022_3;
-#[doc = "From arm,pl022, peripheral generator"]
-pub struct ARM_PL022_4 {
+pub struct SPI3 {
     _marker: PhantomData<*const ()>,
 }
-unsafe impl Send for ARM_PL022_4 {}
-impl ARM_PL022_4 {
+unsafe impl Send for SPI3 {}
+impl SPI3 {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const arm_pl022_4::RegisterBlock = 0x1208_0000 as *const _;
+    pub const PTR: *const spi3::RegisterBlock = 0x1207_0000 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const arm_pl022_4::RegisterBlock {
+    pub const fn ptr() -> *const spi3::RegisterBlock {
         Self::PTR
     }
     #[doc = r" Steal an instance of this peripheral"]
@@ -710,31 +710,31 @@ impl ARM_PL022_4 {
         }
     }
 }
-impl Deref for ARM_PL022_4 {
-    type Target = arm_pl022_4::RegisterBlock;
+impl Deref for SPI3 {
+    type Target = spi3::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
     }
 }
-impl core::fmt::Debug for ARM_PL022_4 {
+impl core::fmt::Debug for SPI3 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("ARM_PL022_4").finish()
+        f.debug_struct("SPI3").finish()
     }
 }
 #[doc = "From arm,pl022, peripheral generator"]
-pub mod arm_pl022_4;
+pub mod spi3;
 #[doc = "From arm,pl022, peripheral generator"]
-pub struct ARM_PL022_5 {
+pub struct SPI4 {
     _marker: PhantomData<*const ()>,
 }
-unsafe impl Send for ARM_PL022_5 {}
-impl ARM_PL022_5 {
+unsafe impl Send for SPI4 {}
+impl SPI4 {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const arm_pl022_5::RegisterBlock = 0x1209_0000 as *const _;
+    pub const PTR: *const spi4::RegisterBlock = 0x1208_0000 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const arm_pl022_5::RegisterBlock {
+    pub const fn ptr() -> *const spi4::RegisterBlock {
         Self::PTR
     }
     #[doc = r" Steal an instance of this peripheral"]
@@ -756,31 +756,31 @@ impl ARM_PL022_5 {
         }
     }
 }
-impl Deref for ARM_PL022_5 {
-    type Target = arm_pl022_5::RegisterBlock;
+impl Deref for SPI4 {
+    type Target = spi4::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
     }
 }
-impl core::fmt::Debug for ARM_PL022_5 {
+impl core::fmt::Debug for SPI4 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("ARM_PL022_5").finish()
+        f.debug_struct("SPI4").finish()
     }
 }
 #[doc = "From arm,pl022, peripheral generator"]
-pub mod arm_pl022_5;
+pub mod spi4;
 #[doc = "From arm,pl022, peripheral generator"]
-pub struct ARM_PL022_6 {
+pub struct SPI5 {
     _marker: PhantomData<*const ()>,
 }
-unsafe impl Send for ARM_PL022_6 {}
-impl ARM_PL022_6 {
+unsafe impl Send for SPI5 {}
+impl SPI5 {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const arm_pl022_6::RegisterBlock = 0x120a_0000 as *const _;
+    pub const PTR: *const spi5::RegisterBlock = 0x1209_0000 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const arm_pl022_6::RegisterBlock {
+    pub const fn ptr() -> *const spi5::RegisterBlock {
         Self::PTR
     }
     #[doc = r" Steal an instance of this peripheral"]
@@ -802,31 +802,77 @@ impl ARM_PL022_6 {
         }
     }
 }
-impl Deref for ARM_PL022_6 {
-    type Target = arm_pl022_6::RegisterBlock;
+impl Deref for SPI5 {
+    type Target = spi5::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
     }
 }
-impl core::fmt::Debug for ARM_PL022_6 {
+impl core::fmt::Debug for SPI5 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("ARM_PL022_6").finish()
+        f.debug_struct("SPI5").finish()
     }
 }
 #[doc = "From arm,pl022, peripheral generator"]
-pub mod arm_pl022_6;
+pub mod spi5;
+#[doc = "From arm,pl022, peripheral generator"]
+pub struct SPI6 {
+    _marker: PhantomData<*const ()>,
+}
+unsafe impl Send for SPI6 {}
+impl SPI6 {
+    #[doc = r"Pointer to the register block"]
+    pub const PTR: *const spi6::RegisterBlock = 0x120a_0000 as *const _;
+    #[doc = r"Return the pointer to the register block"]
+    #[inline(always)]
+    pub const fn ptr() -> *const spi6::RegisterBlock {
+        Self::PTR
+    }
+    #[doc = r" Steal an instance of this peripheral"]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Ensure that the new instance of the peripheral cannot be used in a way"]
+    #[doc = r" that may race with any existing instances, for example by only"]
+    #[doc = r" accessing read-only or write-only registers, or by consuming the"]
+    #[doc = r" original peripheral and using critical sections to coordinate"]
+    #[doc = r" access between multiple new instances."]
+    #[doc = r""]
+    #[doc = r" Additionally, other software such as HALs may rely on only one"]
+    #[doc = r" peripheral instance existing to ensure memory safety; ensure"]
+    #[doc = r" no stolen instances are passed to such software."]
+    pub unsafe fn steal() -> Self {
+        Self {
+            _marker: PhantomData,
+        }
+    }
+}
+impl Deref for SPI6 {
+    type Target = spi6::RegisterBlock;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        unsafe { &*Self::PTR }
+    }
+}
+impl core::fmt::Debug for SPI6 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("SPI6").finish()
+    }
+}
+#[doc = "From arm,pl022, peripheral generator"]
+pub mod spi6;
 #[doc = "From starfive,jh7110-syscrg, peripheral generator"]
-pub struct STARFIVE_JH7110_SYSCRG_0 {
+pub struct SYSCRG {
     _marker: PhantomData<*const ()>,
 }
-unsafe impl Send for STARFIVE_JH7110_SYSCRG_0 {}
-impl STARFIVE_JH7110_SYSCRG_0 {
+unsafe impl Send for SYSCRG {}
+impl SYSCRG {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const starfive_jh7110_syscrg_0::RegisterBlock = 0x1302_0000 as *const _;
+    pub const PTR: *const syscrg::RegisterBlock = 0x1302_0000 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const starfive_jh7110_syscrg_0::RegisterBlock {
+    pub const fn ptr() -> *const syscrg::RegisterBlock {
         Self::PTR
     }
     #[doc = r" Steal an instance of this peripheral"]
@@ -848,31 +894,31 @@ impl STARFIVE_JH7110_SYSCRG_0 {
         }
     }
 }
-impl Deref for STARFIVE_JH7110_SYSCRG_0 {
-    type Target = starfive_jh7110_syscrg_0::RegisterBlock;
+impl Deref for SYSCRG {
+    type Target = syscrg::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
     }
 }
-impl core::fmt::Debug for STARFIVE_JH7110_SYSCRG_0 {
+impl core::fmt::Debug for SYSCRG {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("STARFIVE_JH7110_SYSCRG_0").finish()
+        f.debug_struct("SYSCRG").finish()
     }
 }
 #[doc = "From starfive,jh7110-syscrg, peripheral generator"]
-pub mod starfive_jh7110_syscrg_0;
+pub mod syscrg;
 #[doc = "From starfive,jh7110-sys-syscon, peripheral generator"]
-pub struct STARFIVE_JH7110_SYS_SYSCON_0 {
+pub struct SYS_SYSCON {
     _marker: PhantomData<*const ()>,
 }
-unsafe impl Send for STARFIVE_JH7110_SYS_SYSCON_0 {}
-impl STARFIVE_JH7110_SYS_SYSCON_0 {
+unsafe impl Send for SYS_SYSCON {}
+impl SYS_SYSCON {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const starfive_jh7110_sys_syscon_0::RegisterBlock = 0x1303_0000 as *const _;
+    pub const PTR: *const sys_syscon::RegisterBlock = 0x1303_0000 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const starfive_jh7110_sys_syscon_0::RegisterBlock {
+    pub const fn ptr() -> *const sys_syscon::RegisterBlock {
         Self::PTR
     }
     #[doc = r" Steal an instance of this peripheral"]
@@ -894,31 +940,31 @@ impl STARFIVE_JH7110_SYS_SYSCON_0 {
         }
     }
 }
-impl Deref for STARFIVE_JH7110_SYS_SYSCON_0 {
-    type Target = starfive_jh7110_sys_syscon_0::RegisterBlock;
+impl Deref for SYS_SYSCON {
+    type Target = sys_syscon::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
     }
 }
-impl core::fmt::Debug for STARFIVE_JH7110_SYS_SYSCON_0 {
+impl core::fmt::Debug for SYS_SYSCON {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("STARFIVE_JH7110_SYS_SYSCON_0").finish()
+        f.debug_struct("SYS_SYSCON").finish()
     }
 }
 #[doc = "From starfive,jh7110-sys-syscon, peripheral generator"]
-pub mod starfive_jh7110_sys_syscon_0;
+pub mod sys_syscon;
 #[doc = "From starfive,jh7110-sys-pinctrl, peripheral generator"]
-pub struct STARFIVE_JH7110_SYS_PINCTRL_0 {
+pub struct SYS_PINCTRL {
     _marker: PhantomData<*const ()>,
 }
-unsafe impl Send for STARFIVE_JH7110_SYS_PINCTRL_0 {}
-impl STARFIVE_JH7110_SYS_PINCTRL_0 {
+unsafe impl Send for SYS_PINCTRL {}
+impl SYS_PINCTRL {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const starfive_jh7110_sys_pinctrl_0::RegisterBlock = 0x1304_0000 as *const _;
+    pub const PTR: *const sys_pinctrl::RegisterBlock = 0x1304_0000 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const starfive_jh7110_sys_pinctrl_0::RegisterBlock {
+    pub const fn ptr() -> *const sys_pinctrl::RegisterBlock {
         Self::PTR
     }
     #[doc = r" Steal an instance of this peripheral"]
@@ -940,31 +986,31 @@ impl STARFIVE_JH7110_SYS_PINCTRL_0 {
         }
     }
 }
-impl Deref for STARFIVE_JH7110_SYS_PINCTRL_0 {
-    type Target = starfive_jh7110_sys_pinctrl_0::RegisterBlock;
+impl Deref for SYS_PINCTRL {
+    type Target = sys_pinctrl::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
     }
 }
-impl core::fmt::Debug for STARFIVE_JH7110_SYS_PINCTRL_0 {
+impl core::fmt::Debug for SYS_PINCTRL {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("STARFIVE_JH7110_SYS_PINCTRL_0").finish()
+        f.debug_struct("SYS_PINCTRL").finish()
     }
 }
 #[doc = "From starfive,jh7110-sys-pinctrl, peripheral generator"]
-pub mod starfive_jh7110_sys_pinctrl_0;
+pub mod sys_pinctrl;
 #[doc = "From starfive,jh7110-trng, peripheral generator"]
-pub struct STARFIVE_JH7110_TRNG_0 {
+pub struct TRNG {
     _marker: PhantomData<*const ()>,
 }
-unsafe impl Send for STARFIVE_JH7110_TRNG_0 {}
-impl STARFIVE_JH7110_TRNG_0 {
+unsafe impl Send for TRNG {}
+impl TRNG {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const starfive_jh7110_trng_0::RegisterBlock = 0x1600_c000 as *const _;
+    pub const PTR: *const trng::RegisterBlock = 0x1600_c000 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const starfive_jh7110_trng_0::RegisterBlock {
+    pub const fn ptr() -> *const trng::RegisterBlock {
         Self::PTR
     }
     #[doc = r" Steal an instance of this peripheral"]
@@ -986,31 +1032,31 @@ impl STARFIVE_JH7110_TRNG_0 {
         }
     }
 }
-impl Deref for STARFIVE_JH7110_TRNG_0 {
-    type Target = starfive_jh7110_trng_0::RegisterBlock;
+impl Deref for TRNG {
+    type Target = trng::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
     }
 }
-impl core::fmt::Debug for STARFIVE_JH7110_TRNG_0 {
+impl core::fmt::Debug for TRNG {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("STARFIVE_JH7110_TRNG_0").finish()
+        f.debug_struct("TRNG").finish()
     }
 }
 #[doc = "From starfive,jh7110-trng, peripheral generator"]
-pub mod starfive_jh7110_trng_0;
+pub mod trng;
 #[doc = "From starfive,jh7110-aoncrg, peripheral generator"]
-pub struct STARFIVE_JH7110_AONCRG_0 {
+pub struct AONCRG {
     _marker: PhantomData<*const ()>,
 }
-unsafe impl Send for STARFIVE_JH7110_AONCRG_0 {}
-impl STARFIVE_JH7110_AONCRG_0 {
+unsafe impl Send for AONCRG {}
+impl AONCRG {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const starfive_jh7110_aoncrg_0::RegisterBlock = 0x1700_0000 as *const _;
+    pub const PTR: *const aoncrg::RegisterBlock = 0x1700_0000 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const starfive_jh7110_aoncrg_0::RegisterBlock {
+    pub const fn ptr() -> *const aoncrg::RegisterBlock {
         Self::PTR
     }
     #[doc = r" Steal an instance of this peripheral"]
@@ -1032,31 +1078,31 @@ impl STARFIVE_JH7110_AONCRG_0 {
         }
     }
 }
-impl Deref for STARFIVE_JH7110_AONCRG_0 {
-    type Target = starfive_jh7110_aoncrg_0::RegisterBlock;
+impl Deref for AONCRG {
+    type Target = aoncrg::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
     }
 }
-impl core::fmt::Debug for STARFIVE_JH7110_AONCRG_0 {
+impl core::fmt::Debug for AONCRG {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("STARFIVE_JH7110_AONCRG_0").finish()
+        f.debug_struct("AONCRG").finish()
     }
 }
 #[doc = "From starfive,jh7110-aoncrg, peripheral generator"]
-pub mod starfive_jh7110_aoncrg_0;
+pub mod aoncrg;
 #[doc = "From starfive,jh7110-aon-syscon, peripheral generator"]
-pub struct STARFIVE_JH7110_AON_SYSCON_0 {
+pub struct AON_SYSCON {
     _marker: PhantomData<*const ()>,
 }
-unsafe impl Send for STARFIVE_JH7110_AON_SYSCON_0 {}
-impl STARFIVE_JH7110_AON_SYSCON_0 {
+unsafe impl Send for AON_SYSCON {}
+impl AON_SYSCON {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const starfive_jh7110_aon_syscon_0::RegisterBlock = 0x1701_0000 as *const _;
+    pub const PTR: *const aon_syscon::RegisterBlock = 0x1701_0000 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const starfive_jh7110_aon_syscon_0::RegisterBlock {
+    pub const fn ptr() -> *const aon_syscon::RegisterBlock {
         Self::PTR
     }
     #[doc = r" Steal an instance of this peripheral"]
@@ -1078,31 +1124,31 @@ impl STARFIVE_JH7110_AON_SYSCON_0 {
         }
     }
 }
-impl Deref for STARFIVE_JH7110_AON_SYSCON_0 {
-    type Target = starfive_jh7110_aon_syscon_0::RegisterBlock;
+impl Deref for AON_SYSCON {
+    type Target = aon_syscon::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
     }
 }
-impl core::fmt::Debug for STARFIVE_JH7110_AON_SYSCON_0 {
+impl core::fmt::Debug for AON_SYSCON {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("STARFIVE_JH7110_AON_SYSCON_0").finish()
+        f.debug_struct("AON_SYSCON").finish()
     }
 }
 #[doc = "From starfive,jh7110-aon-syscon, peripheral generator"]
-pub mod starfive_jh7110_aon_syscon_0;
+pub mod aon_syscon;
 #[doc = "From starfive,jh7110-aon-pinctrl, peripheral generator"]
-pub struct STARFIVE_JH7110_AON_PINCTRL_0 {
+pub struct AON_PINCTRL {
     _marker: PhantomData<*const ()>,
 }
-unsafe impl Send for STARFIVE_JH7110_AON_PINCTRL_0 {}
-impl STARFIVE_JH7110_AON_PINCTRL_0 {
+unsafe impl Send for AON_PINCTRL {}
+impl AON_PINCTRL {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const starfive_jh7110_aon_pinctrl_0::RegisterBlock = 0x1702_0000 as *const _;
+    pub const PTR: *const aon_pinctrl::RegisterBlock = 0x1702_0000 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const starfive_jh7110_aon_pinctrl_0::RegisterBlock {
+    pub const fn ptr() -> *const aon_pinctrl::RegisterBlock {
         Self::PTR
     }
     #[doc = r" Steal an instance of this peripheral"]
@@ -1124,31 +1170,31 @@ impl STARFIVE_JH7110_AON_PINCTRL_0 {
         }
     }
 }
-impl Deref for STARFIVE_JH7110_AON_PINCTRL_0 {
-    type Target = starfive_jh7110_aon_pinctrl_0::RegisterBlock;
+impl Deref for AON_PINCTRL {
+    type Target = aon_pinctrl::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
     }
 }
-impl core::fmt::Debug for STARFIVE_JH7110_AON_PINCTRL_0 {
+impl core::fmt::Debug for AON_PINCTRL {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("STARFIVE_JH7110_AON_PINCTRL_0").finish()
+        f.debug_struct("AON_PINCTRL").finish()
     }
 }
 #[doc = "From starfive,jh7110-aon-pinctrl, peripheral generator"]
-pub mod starfive_jh7110_aon_pinctrl_0;
+pub mod aon_pinctrl;
 #[doc = "From starfive,jh7110-pmu, peripheral generator"]
-pub struct STARFIVE_JH7110_PMU_0 {
+pub struct PMU {
     _marker: PhantomData<*const ()>,
 }
-unsafe impl Send for STARFIVE_JH7110_PMU_0 {}
-impl STARFIVE_JH7110_PMU_0 {
+unsafe impl Send for PMU {}
+impl PMU {
     #[doc = r"Pointer to the register block"]
-    pub const PTR: *const starfive_jh7110_pmu_0::RegisterBlock = 0x1703_0000 as *const _;
+    pub const PTR: *const pmu::RegisterBlock = 0x1703_0000 as *const _;
     #[doc = r"Return the pointer to the register block"]
     #[inline(always)]
-    pub const fn ptr() -> *const starfive_jh7110_pmu_0::RegisterBlock {
+    pub const fn ptr() -> *const pmu::RegisterBlock {
         Self::PTR
     }
     #[doc = r" Steal an instance of this peripheral"]
@@ -1170,75 +1216,77 @@ impl STARFIVE_JH7110_PMU_0 {
         }
     }
 }
-impl Deref for STARFIVE_JH7110_PMU_0 {
-    type Target = starfive_jh7110_pmu_0::RegisterBlock;
+impl Deref for PMU {
+    type Target = pmu::RegisterBlock;
     #[inline(always)]
     fn deref(&self) -> &Self::Target {
         unsafe { &*Self::PTR }
     }
 }
-impl core::fmt::Debug for STARFIVE_JH7110_PMU_0 {
+impl core::fmt::Debug for PMU {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("STARFIVE_JH7110_PMU_0").finish()
+        f.debug_struct("PMU").finish()
     }
 }
 #[doc = "From starfive,jh7110-pmu, peripheral generator"]
-pub mod starfive_jh7110_pmu_0;
+pub mod pmu;
 #[no_mangle]
 static mut DEVICE_PERIPHERALS: bool = false;
 #[doc = r" All the peripherals."]
 #[allow(non_snake_case)]
 pub struct Peripherals {
-    #[doc = "SIFIVE_CLINT0_0"]
-    pub SIFIVE_CLINT0_0: SIFIVE_CLINT0_0,
-    #[doc = "SNPS_DESIGNWARE_I2C_0"]
-    pub SNPS_DESIGNWARE_I2C_0: SNPS_DESIGNWARE_I2C_0,
-    #[doc = "SNPS_DESIGNWARE_I2C_1"]
-    pub SNPS_DESIGNWARE_I2C_1: SNPS_DESIGNWARE_I2C_1,
-    #[doc = "SNPS_DESIGNWARE_I2C_2"]
-    pub SNPS_DESIGNWARE_I2C_2: SNPS_DESIGNWARE_I2C_2,
-    #[doc = "ARM_PL022_0"]
-    pub ARM_PL022_0: ARM_PL022_0,
-    #[doc = "ARM_PL022_1"]
-    pub ARM_PL022_1: ARM_PL022_1,
-    #[doc = "ARM_PL022_2"]
-    pub ARM_PL022_2: ARM_PL022_2,
-    #[doc = "STARFIVE_JH7110_STGCRG_0"]
-    pub STARFIVE_JH7110_STGCRG_0: STARFIVE_JH7110_STGCRG_0,
-    #[doc = "STARFIVE_JH7110_STG_SYSCON_0"]
-    pub STARFIVE_JH7110_STG_SYSCON_0: STARFIVE_JH7110_STG_SYSCON_0,
-    #[doc = "SNPS_DESIGNWARE_I2C_3"]
-    pub SNPS_DESIGNWARE_I2C_3: SNPS_DESIGNWARE_I2C_3,
-    #[doc = "SNPS_DESIGNWARE_I2C_4"]
-    pub SNPS_DESIGNWARE_I2C_4: SNPS_DESIGNWARE_I2C_4,
-    #[doc = "SNPS_DESIGNWARE_I2C_5"]
-    pub SNPS_DESIGNWARE_I2C_5: SNPS_DESIGNWARE_I2C_5,
-    #[doc = "SNPS_DESIGNWARE_I2C_6"]
-    pub SNPS_DESIGNWARE_I2C_6: SNPS_DESIGNWARE_I2C_6,
-    #[doc = "ARM_PL022_3"]
-    pub ARM_PL022_3: ARM_PL022_3,
-    #[doc = "ARM_PL022_4"]
-    pub ARM_PL022_4: ARM_PL022_4,
-    #[doc = "ARM_PL022_5"]
-    pub ARM_PL022_5: ARM_PL022_5,
-    #[doc = "ARM_PL022_6"]
-    pub ARM_PL022_6: ARM_PL022_6,
-    #[doc = "STARFIVE_JH7110_SYSCRG_0"]
-    pub STARFIVE_JH7110_SYSCRG_0: STARFIVE_JH7110_SYSCRG_0,
-    #[doc = "STARFIVE_JH7110_SYS_SYSCON_0"]
-    pub STARFIVE_JH7110_SYS_SYSCON_0: STARFIVE_JH7110_SYS_SYSCON_0,
-    #[doc = "STARFIVE_JH7110_SYS_PINCTRL_0"]
-    pub STARFIVE_JH7110_SYS_PINCTRL_0: STARFIVE_JH7110_SYS_PINCTRL_0,
-    #[doc = "STARFIVE_JH7110_TRNG_0"]
-    pub STARFIVE_JH7110_TRNG_0: STARFIVE_JH7110_TRNG_0,
-    #[doc = "STARFIVE_JH7110_AONCRG_0"]
-    pub STARFIVE_JH7110_AONCRG_0: STARFIVE_JH7110_AONCRG_0,
-    #[doc = "STARFIVE_JH7110_AON_SYSCON_0"]
-    pub STARFIVE_JH7110_AON_SYSCON_0: STARFIVE_JH7110_AON_SYSCON_0,
-    #[doc = "STARFIVE_JH7110_AON_PINCTRL_0"]
-    pub STARFIVE_JH7110_AON_PINCTRL_0: STARFIVE_JH7110_AON_PINCTRL_0,
-    #[doc = "STARFIVE_JH7110_PMU_0"]
-    pub STARFIVE_JH7110_PMU_0: STARFIVE_JH7110_PMU_0,
+    #[doc = "CLINT"]
+    pub CLINT: CLINT,
+    #[doc = "PLIC"]
+    pub PLIC: PLIC,
+    #[doc = "I2C0"]
+    pub I2C0: I2C0,
+    #[doc = "I2C1"]
+    pub I2C1: I2C1,
+    #[doc = "I2C2"]
+    pub I2C2: I2C2,
+    #[doc = "SPI0"]
+    pub SPI0: SPI0,
+    #[doc = "SPI1"]
+    pub SPI1: SPI1,
+    #[doc = "SPI2"]
+    pub SPI2: SPI2,
+    #[doc = "STGCRG"]
+    pub STGCRG: STGCRG,
+    #[doc = "STG_SYSCON"]
+    pub STG_SYSCON: STG_SYSCON,
+    #[doc = "I2C3"]
+    pub I2C3: I2C3,
+    #[doc = "I2C4"]
+    pub I2C4: I2C4,
+    #[doc = "I2C5"]
+    pub I2C5: I2C5,
+    #[doc = "I2C6"]
+    pub I2C6: I2C6,
+    #[doc = "SPI3"]
+    pub SPI3: SPI3,
+    #[doc = "SPI4"]
+    pub SPI4: SPI4,
+    #[doc = "SPI5"]
+    pub SPI5: SPI5,
+    #[doc = "SPI6"]
+    pub SPI6: SPI6,
+    #[doc = "SYSCRG"]
+    pub SYSCRG: SYSCRG,
+    #[doc = "SYS_SYSCON"]
+    pub SYS_SYSCON: SYS_SYSCON,
+    #[doc = "SYS_PINCTRL"]
+    pub SYS_PINCTRL: SYS_PINCTRL,
+    #[doc = "TRNG"]
+    pub TRNG: TRNG,
+    #[doc = "AONCRG"]
+    pub AONCRG: AONCRG,
+    #[doc = "AON_SYSCON"]
+    pub AON_SYSCON: AON_SYSCON,
+    #[doc = "AON_PINCTRL"]
+    pub AON_PINCTRL: AON_PINCTRL,
+    #[doc = "PMU"]
+    pub PMU: PMU,
 }
 impl Peripherals {
     #[doc = r" Returns all the peripherals *once*."]
@@ -1261,79 +1309,82 @@ impl Peripherals {
     pub unsafe fn steal() -> Self {
         DEVICE_PERIPHERALS = true;
         Peripherals {
-            SIFIVE_CLINT0_0: SIFIVE_CLINT0_0 {
+            CLINT: CLINT {
                 _marker: PhantomData,
             },
-            SNPS_DESIGNWARE_I2C_0: SNPS_DESIGNWARE_I2C_0 {
+            PLIC: PLIC {
                 _marker: PhantomData,
             },
-            SNPS_DESIGNWARE_I2C_1: SNPS_DESIGNWARE_I2C_1 {
+            I2C0: I2C0 {
                 _marker: PhantomData,
             },
-            SNPS_DESIGNWARE_I2C_2: SNPS_DESIGNWARE_I2C_2 {
+            I2C1: I2C1 {
                 _marker: PhantomData,
             },
-            ARM_PL022_0: ARM_PL022_0 {
+            I2C2: I2C2 {
                 _marker: PhantomData,
             },
-            ARM_PL022_1: ARM_PL022_1 {
+            SPI0: SPI0 {
                 _marker: PhantomData,
             },
-            ARM_PL022_2: ARM_PL022_2 {
+            SPI1: SPI1 {
                 _marker: PhantomData,
             },
-            STARFIVE_JH7110_STGCRG_0: STARFIVE_JH7110_STGCRG_0 {
+            SPI2: SPI2 {
                 _marker: PhantomData,
             },
-            STARFIVE_JH7110_STG_SYSCON_0: STARFIVE_JH7110_STG_SYSCON_0 {
+            STGCRG: STGCRG {
                 _marker: PhantomData,
             },
-            SNPS_DESIGNWARE_I2C_3: SNPS_DESIGNWARE_I2C_3 {
+            STG_SYSCON: STG_SYSCON {
                 _marker: PhantomData,
             },
-            SNPS_DESIGNWARE_I2C_4: SNPS_DESIGNWARE_I2C_4 {
+            I2C3: I2C3 {
                 _marker: PhantomData,
             },
-            SNPS_DESIGNWARE_I2C_5: SNPS_DESIGNWARE_I2C_5 {
+            I2C4: I2C4 {
                 _marker: PhantomData,
             },
-            SNPS_DESIGNWARE_I2C_6: SNPS_DESIGNWARE_I2C_6 {
+            I2C5: I2C5 {
                 _marker: PhantomData,
             },
-            ARM_PL022_3: ARM_PL022_3 {
+            I2C6: I2C6 {
                 _marker: PhantomData,
             },
-            ARM_PL022_4: ARM_PL022_4 {
+            SPI3: SPI3 {
                 _marker: PhantomData,
             },
-            ARM_PL022_5: ARM_PL022_5 {
+            SPI4: SPI4 {
                 _marker: PhantomData,
             },
-            ARM_PL022_6: ARM_PL022_6 {
+            SPI5: SPI5 {
                 _marker: PhantomData,
             },
-            STARFIVE_JH7110_SYSCRG_0: STARFIVE_JH7110_SYSCRG_0 {
+            SPI6: SPI6 {
                 _marker: PhantomData,
             },
-            STARFIVE_JH7110_SYS_SYSCON_0: STARFIVE_JH7110_SYS_SYSCON_0 {
+            SYSCRG: SYSCRG {
                 _marker: PhantomData,
             },
-            STARFIVE_JH7110_SYS_PINCTRL_0: STARFIVE_JH7110_SYS_PINCTRL_0 {
+            SYS_SYSCON: SYS_SYSCON {
                 _marker: PhantomData,
             },
-            STARFIVE_JH7110_TRNG_0: STARFIVE_JH7110_TRNG_0 {
+            SYS_PINCTRL: SYS_PINCTRL {
                 _marker: PhantomData,
             },
-            STARFIVE_JH7110_AONCRG_0: STARFIVE_JH7110_AONCRG_0 {
+            TRNG: TRNG {
                 _marker: PhantomData,
             },
-            STARFIVE_JH7110_AON_SYSCON_0: STARFIVE_JH7110_AON_SYSCON_0 {
+            AONCRG: AONCRG {
                 _marker: PhantomData,
             },
-            STARFIVE_JH7110_AON_PINCTRL_0: STARFIVE_JH7110_AON_PINCTRL_0 {
+            AON_SYSCON: AON_SYSCON {
                 _marker: PhantomData,
             },
-            STARFIVE_JH7110_PMU_0: STARFIVE_JH7110_PMU_0 {
+            AON_PINCTRL: AON_PINCTRL {
+                _marker: PhantomData,
+            },
+            PMU: PMU {
                 _marker: PhantomData,
             },
         }
