@@ -1,1396 +1,1423 @@
 #[doc = r"Register block"]
 #[repr(C)]
 pub struct RegisterBlock {
-    #[doc = "0x00 - SYS IOMUX CFG SAIF SYSCFG FMUX 0"]
-    pub sys_iomux_cfgsaif_syscfg_fmux0: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX0,
-    #[doc = "0x04 - SYS IOMUX CFG SAIF SYSCFG FMUX 1"]
-    pub sys_iomux_cfgsaif_syscfg_fmux1: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX1,
-    #[doc = "0x08 - SYS IOMUX CFG SAIF SYSCFG FMUX 2"]
-    pub sys_iomux_cfgsaif_syscfg_fmux2: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX2,
-    #[doc = "0x0c - SYS IOMUX CFG SAIF SYSCFG FMUX 3"]
-    pub sys_iomux_cfgsaif_syscfg_fmux3: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX3,
-    #[doc = "0x10 - SYS IOMUX CFG SAIF SYSCFG FMUX 4"]
-    pub sys_iomux_cfgsaif_syscfg_fmux4: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX4,
-    #[doc = "0x14 - SYS IOMUX CFG SAIF SYSCFG FMUX 5"]
-    pub sys_iomux_cfgsaif_syscfg_fmux5: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX5,
-    #[doc = "0x18 - SYS IOMUX CFG SAIF SYSCFG FMUX 6"]
-    pub sys_iomux_cfgsaif_syscfg_fmux6: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX6,
-    #[doc = "0x1c - SYS IOMUX CFG SAIF SYSCFG FMUX 7"]
-    pub sys_iomux_cfgsaif_syscfg_fmux7: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX7,
-    #[doc = "0x20 - SYS IOMUX CFG SAIF SYSCFG FMUX 8"]
-    pub sys_iomux_cfgsaif_syscfg_fmux8: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX8,
-    #[doc = "0x24 - SYS IOMUX CFG SAIF SYSCFG FMUX 9"]
-    pub sys_iomux_cfgsaif_syscfg_fmux9: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX9,
-    #[doc = "0x28 - SYS IOMUX CFG SAIF SYSCFG FMUX 10"]
-    pub sys_iomux_cfgsaif_syscfg_fmux10: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX10,
-    #[doc = "0x2c - SYS IOMUX CFG SAIF SYSCFG FMUX 11"]
-    pub sys_iomux_cfgsaif_syscfg_fmux11: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX11,
-    #[doc = "0x30 - SYS IOMUX CFG SAIF SYSCFG FMUX 12"]
-    pub sys_iomux_cfgsaif_syscfg_fmux12: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX12,
-    #[doc = "0x34 - SYS IOMUX CFG SAIF SYSCFG FMUX 13"]
-    pub sys_iomux_cfgsaif_syscfg_fmux13: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX13,
-    #[doc = "0x38 - SYS IOMUX CFG SAIF SYSCFG FMUX 14"]
-    pub sys_iomux_cfgsaif_syscfg_fmux14: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX14,
-    #[doc = "0x3c - SYS IOMUX CFG SAIF SYSCFG FMUX 15"]
-    pub sys_iomux_cfgsaif_syscfg_fmux15: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX15,
-    #[doc = "0x40 - SYS IOMUX CFG SAIF SYSCFG FMUX 16"]
-    pub sys_iomux_cfgsaif_syscfg_fmux16: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX16,
-    #[doc = "0x44 - SYS IOMUX CFG SAIF SYSCFG FMUX 17"]
-    pub sys_iomux_cfgsaif_syscfg_fmux17: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX17,
-    #[doc = "0x48 - SYS IOMUX CFG SAIF SYSCFG FMUX 18"]
-    pub sys_iomux_cfgsaif_syscfg_fmux18: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX18,
-    #[doc = "0x4c - SYS IOMUX CFG SAIF SYSCFG FMUX 19"]
-    pub sys_iomux_cfgsaif_syscfg_fmux19: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX19,
-    #[doc = "0x50 - SYS IOMUX CFG SAIF SYSCFG FMUX 20"]
-    pub sys_iomux_cfgsaif_syscfg_fmux20: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX20,
-    #[doc = "0x54 - SYS IOMUX CFG SAIF SYSCFG FMUX 21"]
-    pub sys_iomux_cfgsaif_syscfg_fmux21: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX21,
-    #[doc = "0x58 - SYS IOMUX CFG SAIF SYSCFG FMUX 22"]
-    pub sys_iomux_cfgsaif_syscfg_fmux22: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX22,
-    #[doc = "0x5c - SYS IOMUX CFG SAIF SYSCFG FMUX 23"]
-    pub sys_iomux_cfgsaif_syscfg_fmux23: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX23,
-    #[doc = "0x60 - SYS IOMUX CFG SAIF SYSCFG FMUX 24"]
-    pub sys_iomux_cfgsaif_syscfg_fmux24: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX24,
-    #[doc = "0x64 - SYS IOMUX CFG SAIF SYSCFG FMUX 25"]
-    pub sys_iomux_cfgsaif_syscfg_fmux25: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX25,
-    #[doc = "0x68 - SYS IOMUX CFG SAIF SYSCFG FMUX 26"]
-    pub sys_iomux_cfgsaif_syscfg_fmux26: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX26,
-    #[doc = "0x6c - SYS IOMUX CFG SAIF SYSCFG FMUX 27"]
-    pub sys_iomux_cfgsaif_syscfg_fmux27: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX27,
-    #[doc = "0x70 - SYS IOMUX CFG SAIF SYSCFG FMUX 28"]
-    pub sys_iomux_cfgsaif_syscfg_fmux28: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX28,
-    #[doc = "0x74 - SYS IOMUX CFG SAIF SYSCFG FMUX 29"]
-    pub sys_iomux_cfgsaif_syscfg_fmux29: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX29,
-    #[doc = "0x78 - SYS IOMUX CFG SAIF SYSCFG FMUX 30"]
-    pub sys_iomux_cfgsaif_syscfg_fmux30: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX30,
-    #[doc = "0x7c - SYS IOMUX CFG SAIF SYSCFG FMUX 31"]
-    pub sys_iomux_cfgsaif_syscfg_fmux31: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX31,
-    #[doc = "0x80 - SYS IOMUX CFG SAIF SYSCFG FMUX 32"]
-    pub sys_iomux_cfgsaif_syscfg_fmux32: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX32,
-    #[doc = "0x84 - SYS IOMUX CFG SAIF SYSCFG FMUX 33"]
-    pub sys_iomux_cfgsaif_syscfg_fmux33: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX33,
-    #[doc = "0x88 - SYS IOMUX CFG SAIF SYSCFG FMUX 34"]
-    pub sys_iomux_cfgsaif_syscfg_fmux34: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX34,
-    #[doc = "0x8c - SYS IOMUX CFG SAIF SYSCFG FMUX 35"]
-    pub sys_iomux_cfgsaif_syscfg_fmux35: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX35,
-    #[doc = "0x90 - SYS IOMUX CFG SAIF SYSCFG FMUX 36"]
-    pub sys_iomux_cfgsaif_syscfg_fmux36: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX36,
-    #[doc = "0x94 - SYS IOMUX CFG SAIF SYSCFG FMUX 37"]
-    pub sys_iomux_cfgsaif_syscfg_fmux37: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX37,
-    #[doc = "0x98 - SYS IOMUX CFG SAIF SYSCFG FMUX 38"]
-    pub sys_iomux_cfgsaif_syscfg_fmux38: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX38,
-    #[doc = "0x9c - SYS IOMUX CFG SAIF SYSCFG FMUX 39"]
-    pub sys_iomux_cfgsaif_syscfg_fmux39: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX39,
-    #[doc = "0xa0 - SYS IOMUX CFG SAIF SYSCFG FMUX 40"]
-    pub sys_iomux_cfgsaif_syscfg_fmux40: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX40,
-    #[doc = "0xa4 - SYS IOMUX CFG SAIF SYSCFG FMUX 41"]
-    pub sys_iomux_cfgsaif_syscfg_fmux41: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX41,
-    #[doc = "0xa8 - SYS IOMUX CFG SAIF SYSCFG FMUX 42"]
-    pub sys_iomux_cfgsaif_syscfg_fmux42: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX42,
-    #[doc = "0xac - SYS IOMUX CFG SAIF SYSCFG FMUX 43"]
-    pub sys_iomux_cfgsaif_syscfg_fmux43: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX43,
-    #[doc = "0xb0 - SYS IOMUX CFG SAIF SYSCFG FMUX 44"]
-    pub sys_iomux_cfgsaif_syscfg_fmux44: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX44,
-    #[doc = "0xb4 - SYS IOMUX CFG SAIF SYSCFG FMUX 45"]
-    pub sys_iomux_cfgsaif_syscfg_fmux45: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX45,
-    #[doc = "0xb8 - SYS IOMUX CFG SAIF SYSCFG FMUX 46"]
-    pub sys_iomux_cfgsaif_syscfg_fmux46: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX46,
-    #[doc = "0xbc - SYS IOMUX CFG SAIF SYSCFG FMUX 47"]
-    pub sys_iomux_cfgsaif_syscfg_fmux47: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX47,
-    #[doc = "0xc0 - SYS IOMUX CFG SAIF SYSCFG FMUX 48"]
-    pub sys_iomux_cfgsaif_syscfg_fmux48: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX48,
-    #[doc = "0xc4 - SYS IOMUX CFG SAIF SYSCFG FMUX 49"]
-    pub sys_iomux_cfgsaif_syscfg_fmux49: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX49,
-    #[doc = "0xc8 - SYS IOMUX CFG SAIF SYSCFG FMUX 50"]
-    pub sys_iomux_cfgsaif_syscfg_fmux50: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX50,
-    #[doc = "0xcc - SYS IOMUX CFG SAIF SYSCFG FMUX 51"]
-    pub sys_iomux_cfgsaif_syscfg_fmux51: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX51,
-    #[doc = "0xd0 - SYS IOMUX CFG SAIF SYSCFG FMUX 52"]
-    pub sys_iomux_cfgsaif_syscfg_fmux52: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX52,
-    #[doc = "0xd4 - SYS IOMUX CFG SAIF SYSCFG FMUX 53"]
-    pub sys_iomux_cfgsaif_syscfg_fmux53: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX53,
-    #[doc = "0xd8 - SYS IOMUX CFG SAIF SYSCFG FMUX 54"]
-    pub sys_iomux_cfgsaif_syscfg_fmux54: SYS_IOMUX_CFGSAIF_SYSCFG_FMUX54,
-    #[doc = "0xdc - SYS IOMUX CFG SAIF SYSCFG IOIRQ 55"]
-    pub sys_iomux_cfgsaif_syscfg_ioirq55: SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ55,
-    #[doc = "0xe0 - SYS IOMUX CFG SAIF SYSCFG IOIRQ 56"]
-    pub sys_iomux_cfgsaif_syscfg_ioirq56: SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ56,
-    #[doc = "0xe4 - SYS IOMUX CFG SAIF SYSCFG IOIRQ 57"]
-    pub sys_iomux_cfgsaif_syscfg_ioirq57: SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ57,
-    #[doc = "0xe8 - SYS IOMUX CFG SAIF SYSCFG IOIRQ 58"]
-    pub sys_iomux_cfgsaif_syscfg_ioirq58: SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ58,
-    #[doc = "0xec - SYS IOMUX CFG SAIF SYSCFG IOIRQ 59"]
-    pub sys_iomux_cfgsaif_syscfg_ioirq59: SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ59,
-    #[doc = "0xf0 - SYS IOMUX CFG SAIF SYSCFG IOIRQ 60"]
-    pub sys_iomux_cfgsaif_syscfg_ioirq60: SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ60,
-    #[doc = "0xf4 - SYS IOMUX CFG SAIF SYSCFG IOIRQ 61"]
-    pub sys_iomux_cfgsaif_syscfg_ioirq61: SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ61,
-    #[doc = "0xf8 - SYS IOMUX CFG SAIF SYSCFG IOIRQ 62"]
-    pub sys_iomux_cfgsaif_syscfg_ioirq62: SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ62,
-    #[doc = "0xfc - SYS IOMUX CFG SAIF SYSCFG IOIRQ 63"]
-    pub sys_iomux_cfgsaif_syscfg_ioirq63: SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ63,
-    #[doc = "0x100 - SYS IOMUX CFG SAIF SYSCFG IOIRQ 64"]
-    pub sys_iomux_cfgsaif_syscfg_ioirq64: SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ64,
-    #[doc = "0x104 - SYS IOMUX CFG SAIF SYSCFG IOIRQ 65"]
-    pub sys_iomux_cfgsaif_syscfg_ioirq65: SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ65,
-    #[doc = "0x108 - SYS IOMUX CFG SAIF SYSCFG IOIRQ 66"]
-    pub sys_iomux_cfgsaif_syscfg_ioirq66: SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ66,
-    #[doc = "0x10c - SYS IOMUX CFG SAIF SYSCFG IOIRQ 67"]
-    pub sys_iomux_cfgsaif_syscfg_ioirq67: SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ67,
-    #[doc = "0x110 - SYS IOMUX CFG SAIF SYSCFG IOIRQ 68"]
-    pub sys_iomux_cfgsaif_syscfg_ioirq68: SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ68,
-    #[doc = "0x114 - SYS IOMUX CFG SAIF SYSCFG IOIRQ 69"]
-    pub sys_iomux_cfgsaif_syscfg_ioirq69: SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ69,
-    #[doc = "0x118 - SYS IOMUX CFG SAIF SYSCFG IOIRQ 70"]
-    pub sys_iomux_cfgsaif_syscfg_ioirq70: SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ70,
-    #[doc = "0x11c - SYS IOMUX CFG SAIF SYSCFG IOIRQ 71"]
-    pub sys_iomux_cfgsaif_syscfg_ioirq71: SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ71,
-    #[doc = "0x120 - SYS IOMUX CFG SAIF SYSCFG 288"]
-    pub sys_iomux_cfgsaif_syscfg288: SYS_IOMUX_CFGSAIF_SYSCFG288,
-    #[doc = "0x124 - SYS IOMUX CFG SAIF SYSCFG 292"]
-    pub sys_iomux_cfgsaif_syscfg292: SYS_IOMUX_CFGSAIF_SYSCFG292,
-    #[doc = "0x128 - SYS IOMUX CFG SAIF SYSCFG 296"]
-    pub sys_iomux_cfgsaif_syscfg296: SYS_IOMUX_CFGSAIF_SYSCFG296,
-    #[doc = "0x12c - SYS IOMUX CFG SAIF SYSCFG 300"]
-    pub sys_iomux_cfgsaif_syscfg300: SYS_IOMUX_CFGSAIF_SYSCFG300,
-    #[doc = "0x130 - SYS IOMUX CFG SAIF SYSCFG 304"]
-    pub sys_iomux_cfgsaif_syscfg304: SYS_IOMUX_CFGSAIF_SYSCFG304,
-    #[doc = "0x134 - SYS IOMUX CFG SAIF SYSCFG 308"]
-    pub sys_iomux_cfgsaif_syscfg308: SYS_IOMUX_CFGSAIF_SYSCFG308,
-    #[doc = "0x138 - SYS IOMUX CFG SAIF SYSCFG 312"]
-    pub sys_iomux_cfgsaif_syscfg312: SYS_IOMUX_CFGSAIF_SYSCFG312,
-    #[doc = "0x13c - SYS IOMUX CFG SAIF SYSCFG 316"]
-    pub sys_iomux_cfgsaif_syscfg316: SYS_IOMUX_CFGSAIF_SYSCFG316,
-    #[doc = "0x140 - SYS IOMUX CFG SAIF SYSCFG 320"]
-    pub sys_iomux_cfgsaif_syscfg320: SYS_IOMUX_CFGSAIF_SYSCFG320,
-    #[doc = "0x144 - SYS IOMUX CFG SAIF SYSCFG 324"]
-    pub sys_iomux_cfgsaif_syscfg324: SYS_IOMUX_CFGSAIF_SYSCFG324,
-    #[doc = "0x148 - SYS IOMUX CFG SAIF SYSCFG 328"]
-    pub sys_iomux_cfgsaif_syscfg328: SYS_IOMUX_CFGSAIF_SYSCFG328,
-    #[doc = "0x14c - SYS IOMUX CFG SAIF SYSCFG 332"]
-    pub sys_iomux_cfgsaif_syscfg332: SYS_IOMUX_CFGSAIF_SYSCFG332,
-    #[doc = "0x150 - SYS IOMUX CFG SAIF SYSCFG 336"]
-    pub sys_iomux_cfgsaif_syscfg336: SYS_IOMUX_CFGSAIF_SYSCFG336,
-    #[doc = "0x154 - SYS IOMUX CFG SAIF SYSCFG 340"]
-    pub sys_iomux_cfgsaif_syscfg340: SYS_IOMUX_CFGSAIF_SYSCFG340,
-    #[doc = "0x158 - SYS IOMUX CFG SAIF SYSCFG 344"]
-    pub sys_iomux_cfgsaif_syscfg344: SYS_IOMUX_CFGSAIF_SYSCFG344,
-    #[doc = "0x15c - SYS IOMUX CFG SAIF SYSCFG 348"]
-    pub sys_iomux_cfgsaif_syscfg348: SYS_IOMUX_CFGSAIF_SYSCFG348,
-    #[doc = "0x160 - SYS IOMUX CFG SAIF SYSCFG 352"]
-    pub sys_iomux_cfgsaif_syscfg352: SYS_IOMUX_CFGSAIF_SYSCFG352,
-    #[doc = "0x164 - SYS IOMUX CFG SAIF SYSCFG 356"]
-    pub sys_iomux_cfgsaif_syscfg356: SYS_IOMUX_CFGSAIF_SYSCFG356,
-    #[doc = "0x168 - SYS IOMUX CFG SAIF SYSCFG 360"]
-    pub sys_iomux_cfgsaif_syscfg360: SYS_IOMUX_CFGSAIF_SYSCFG360,
-    #[doc = "0x16c - SYS IOMUX CFG SAIF SYSCFG 364"]
-    pub sys_iomux_cfgsaif_syscfg364: SYS_IOMUX_CFGSAIF_SYSCFG364,
-    #[doc = "0x170 - SYS IOMUX CFG SAIF SYSCFG 368"]
-    pub sys_iomux_cfgsaif_syscfg368: SYS_IOMUX_CFGSAIF_SYSCFG368,
-    #[doc = "0x174 - SYS IOMUX CFG SAIF SYSCFG 372"]
-    pub sys_iomux_cfgsaif_syscfg372: SYS_IOMUX_CFGSAIF_SYSCFG372,
-    #[doc = "0x178 - SYS IOMUX CFG SAIF SYSCFG 376"]
-    pub sys_iomux_cfgsaif_syscfg376: SYS_IOMUX_CFGSAIF_SYSCFG376,
-    #[doc = "0x17c - SYS IOMUX CFG SAIF SYSCFG 380"]
-    pub sys_iomux_cfgsaif_syscfg380: SYS_IOMUX_CFGSAIF_SYSCFG380,
-    #[doc = "0x180 - SYS IOMUX CFG SAIF SYSCFG 384"]
-    pub sys_iomux_cfgsaif_syscfg384: SYS_IOMUX_CFGSAIF_SYSCFG384,
-    #[doc = "0x184 - SYS IOMUX CFG SAIF SYSCFG 388"]
-    pub sys_iomux_cfgsaif_syscfg388: SYS_IOMUX_CFGSAIF_SYSCFG388,
-    #[doc = "0x188 - SYS IOMUX CFG SAIF SYSCFG 392"]
-    pub sys_iomux_cfgsaif_syscfg392: SYS_IOMUX_CFGSAIF_SYSCFG392,
-    #[doc = "0x18c - SYS IOMUX CFG SAIF SYSCFG 396"]
-    pub sys_iomux_cfgsaif_syscfg396: SYS_IOMUX_CFGSAIF_SYSCFG396,
-    #[doc = "0x190 - SYS IOMUX CFG SAIF SYSCFG 400"]
-    pub sys_iomux_cfgsaif_syscfg400: SYS_IOMUX_CFGSAIF_SYSCFG400,
-    #[doc = "0x194 - SYS IOMUX CFG SAIF SYSCFG 404"]
-    pub sys_iomux_cfgsaif_syscfg404: SYS_IOMUX_CFGSAIF_SYSCFG404,
-    #[doc = "0x198 - SYS IOMUX CFG SAIF SYSCFG 408"]
-    pub sys_iomux_cfgsaif_syscfg408: SYS_IOMUX_CFGSAIF_SYSCFG408,
-    #[doc = "0x19c - SYS IOMUX CFG SAIF SYSCFG 412"]
-    pub sys_iomux_cfgsaif_syscfg412: SYS_IOMUX_CFGSAIF_SYSCFG412,
-    #[doc = "0x1a0 - SYS IOMUX CFG SAIF SYSCFG 416"]
-    pub sys_iomux_cfgsaif_syscfg416: SYS_IOMUX_CFGSAIF_SYSCFG416,
-    #[doc = "0x1a4 - SYS IOMUX CFG SAIF SYSCFG 420"]
-    pub sys_iomux_cfgsaif_syscfg420: SYS_IOMUX_CFGSAIF_SYSCFG420,
-    #[doc = "0x1a8 - SYS IOMUX CFG SAIF SYSCFG 424"]
-    pub sys_iomux_cfgsaif_syscfg424: SYS_IOMUX_CFGSAIF_SYSCFG424,
-    #[doc = "0x1ac - SYS IOMUX CFG SAIF SYSCFG 428"]
-    pub sys_iomux_cfgsaif_syscfg428: SYS_IOMUX_CFGSAIF_SYSCFG428,
-    #[doc = "0x1b0 - SYS IOMUX CFG SAIF SYSCFG 432"]
-    pub sys_iomux_cfgsaif_syscfg432: SYS_IOMUX_CFGSAIF_SYSCFG432,
-    #[doc = "0x1b4 - SYS IOMUX CFG SAIF SYSCFG 436"]
-    pub sys_iomux_cfgsaif_syscfg436: SYS_IOMUX_CFGSAIF_SYSCFG436,
-    #[doc = "0x1b8 - SYS IOMUX CFG SAIF SYSCFG 440"]
-    pub sys_iomux_cfgsaif_syscfg440: SYS_IOMUX_CFGSAIF_SYSCFG440,
-    #[doc = "0x1bc - SYS IOMUX CFG SAIF SYSCFG 444"]
-    pub sys_iomux_cfgsaif_syscfg444: SYS_IOMUX_CFGSAIF_SYSCFG444,
-    #[doc = "0x1c0 - SYS IOMUX CFG SAIF SYSCFG 448"]
-    pub sys_iomux_cfgsaif_syscfg448: SYS_IOMUX_CFGSAIF_SYSCFG448,
-    #[doc = "0x1c4 - SYS IOMUX CFG SAIF SYSCFG 452"]
-    pub sys_iomux_cfgsaif_syscfg452: SYS_IOMUX_CFGSAIF_SYSCFG452,
-    #[doc = "0x1c8 - SYS IOMUX CFG SAIF SYSCFG 456"]
-    pub sys_iomux_cfgsaif_syscfg456: SYS_IOMUX_CFGSAIF_SYSCFG456,
-    #[doc = "0x1cc - SYS IOMUX CFG SAIF SYSCFG 460"]
-    pub sys_iomux_cfgsaif_syscfg460: SYS_IOMUX_CFGSAIF_SYSCFG460,
-    #[doc = "0x1d0 - SYS IOMUX CFG SAIF SYSCFG 464"]
-    pub sys_iomux_cfgsaif_syscfg464: SYS_IOMUX_CFGSAIF_SYSCFG464,
-    #[doc = "0x1d4 - SYS IOMUX CFG SAIF SYSCFG 468"]
-    pub sys_iomux_cfgsaif_syscfg468: SYS_IOMUX_CFGSAIF_SYSCFG468,
-    #[doc = "0x1d8 - SYS IOMUX CFG SAIF SYSCFG 472"]
-    pub sys_iomux_cfgsaif_syscfg472: SYS_IOMUX_CFGSAIF_SYSCFG472,
-    #[doc = "0x1dc - SYS IOMUX CFG SAIF SYSCFG 476"]
-    pub sys_iomux_cfgsaif_syscfg476: SYS_IOMUX_CFGSAIF_SYSCFG476,
-    #[doc = "0x1e0 - SYS IOMUX CFG SAIF SYSCFG 480"]
-    pub sys_iomux_cfgsaif_syscfg480: SYS_IOMUX_CFGSAIF_SYSCFG480,
-    #[doc = "0x1e4 - SYS IOMUX CFG SAIF SYSCFG 484"]
-    pub sys_iomux_cfgsaif_syscfg484: SYS_IOMUX_CFGSAIF_SYSCFG484,
-    #[doc = "0x1e8 - SYS IOMUX CFG SAIF SYSCFG 488"]
-    pub sys_iomux_cfgsaif_syscfg488: SYS_IOMUX_CFGSAIF_SYSCFG488,
-    #[doc = "0x1ec - SYS IOMUX CFG SAIF SYSCFG 492"]
-    pub sys_iomux_cfgsaif_syscfg492: SYS_IOMUX_CFGSAIF_SYSCFG492,
-    #[doc = "0x1f0 - SYS IOMUX CFG SAIF SYSCFG 496"]
-    pub sys_iomux_cfgsaif_syscfg496: SYS_IOMUX_CFGSAIF_SYSCFG496,
-    #[doc = "0x1f4 - SYS IOMUX CFG SAIF SYSCFG 500"]
-    pub sys_iomux_cfgsaif_syscfg500: SYS_IOMUX_CFGSAIF_SYSCFG500,
-    #[doc = "0x1f8 - SYS IOMUX CFG SAIF SYSCFG 504"]
-    pub sys_iomux_cfgsaif_syscfg504: SYS_IOMUX_CFGSAIF_SYSCFG504,
-    #[doc = "0x1fc - SYS IOMUX CFG SAIF SYSCFG 508"]
-    pub sys_iomux_cfgsaif_syscfg508: SYS_IOMUX_CFGSAIF_SYSCFG508,
-    #[doc = "0x200 - SYS IOMUX CFG SAIF SYSCFG 512"]
-    pub sys_iomux_cfgsaif_syscfg512: SYS_IOMUX_CFGSAIF_SYSCFG512,
-    #[doc = "0x204 - SYS IOMUX CFG SAIF SYSCFG 516"]
-    pub sys_iomux_cfgsaif_syscfg516: SYS_IOMUX_CFGSAIF_SYSCFG516,
-    #[doc = "0x208 - SYS IOMUX CFG SAIF SYSCFG 520"]
-    pub sys_iomux_cfgsaif_syscfg520: SYS_IOMUX_CFGSAIF_SYSCFG520,
-    #[doc = "0x20c - SYS IOMUX CFG SAIF SYSCFG 524"]
-    pub sys_iomux_cfgsaif_syscfg524: SYS_IOMUX_CFGSAIF_SYSCFG524,
-    #[doc = "0x210 - SYS IOMUX CFG SAIF SYSCFG 528"]
-    pub sys_iomux_cfgsaif_syscfg528: SYS_IOMUX_CFGSAIF_SYSCFG528,
-    #[doc = "0x214 - SYS IOMUX CFG SAIF SYSCFG 532"]
-    pub sys_iomux_cfgsaif_syscfg532: SYS_IOMUX_CFGSAIF_SYSCFG532,
-    #[doc = "0x218 - SYS IOMUX CFG SAIF SYSCFG 536"]
-    pub sys_iomux_cfgsaif_syscfg536: SYS_IOMUX_CFGSAIF_SYSCFG536,
-    #[doc = "0x21c - SYS IOMUX CFG SAIF SYSCFG 540"]
-    pub sys_iomux_cfgsaif_syscfg540: SYS_IOMUX_CFGSAIF_SYSCFG540,
-    #[doc = "0x220 - SYS IOMUX CFG SAIF SYSCFG 544"]
-    pub sys_iomux_cfgsaif_syscfg544: SYS_IOMUX_CFGSAIF_SYSCFG544,
-    #[doc = "0x224 - SYS IOMUX CFG SAIF SYSCFG 548"]
-    pub sys_iomux_cfgsaif_syscfg548: SYS_IOMUX_CFGSAIF_SYSCFG548,
-    #[doc = "0x228 - SYS IOMUX CFG SAIF SYSCFG 552"]
-    pub sys_iomux_cfgsaif_syscfg552: SYS_IOMUX_CFGSAIF_SYSCFG552,
-    #[doc = "0x22c - SYS IOMUX CFG SAIF SYSCFG 556"]
-    pub sys_iomux_cfgsaif_syscfg556: SYS_IOMUX_CFGSAIF_SYSCFG556,
-    #[doc = "0x230 - SYS IOMUX CFG SAIF SYSCFG 560"]
-    pub sys_iomux_cfgsaif_syscfg560: SYS_IOMUX_CFGSAIF_SYSCFG560,
-    #[doc = "0x234 - SYS IOMUX CFG SAIF SYSCFG 564"]
-    pub sys_iomux_cfgsaif_syscfg564: SYS_IOMUX_CFGSAIF_SYSCFG564,
-    #[doc = "0x238 - SYS IOMUX CFG SAIF SYSCFG 568"]
-    pub sys_iomux_cfgsaif_syscfg568: SYS_IOMUX_CFGSAIF_SYSCFG568,
-    #[doc = "0x23c - SYS IOMUX CFG SAIF SYSCFG 572"]
-    pub sys_iomux_cfgsaif_syscfg572: SYS_IOMUX_CFGSAIF_SYSCFG572,
-    #[doc = "0x240 - SYS IOMUX CFG SAIF SYSCFG 576"]
-    pub sys_iomux_cfgsaif_syscfg576: SYS_IOMUX_CFGSAIF_SYSCFG576,
-    #[doc = "0x244 - SYS IOMUX CFG SAIF SYSCFG 580"]
-    pub sys_iomux_cfgsaif_syscfg580: SYS_IOMUX_CFGSAIF_SYSCFG580,
-    #[doc = "0x248 - SYS IOMUX CFG SAIF SYSCFG 584"]
-    pub sys_iomux_cfgsaif_syscfg584: SYS_IOMUX_CFGSAIF_SYSCFG584,
-    #[doc = "0x24c - SYS IOMUX CFG SAIF SYSCFG 588"]
-    pub sys_iomux_cfgsaif_syscfg588: SYS_IOMUX_CFGSAIF_SYSCFG588,
-    #[doc = "0x250 - SYS IOMUX CFG SAIF SYSCFG 592"]
-    pub sys_iomux_cfgsaif_syscfg592: SYS_IOMUX_CFGSAIF_SYSCFG592,
-    #[doc = "0x254 - SYS IOMUX CFG SAIF SYSCFG 596"]
-    pub sys_iomux_cfgsaif_syscfg596: SYS_IOMUX_CFGSAIF_SYSCFG596,
-    #[doc = "0x258 - SYS IOMUX CFG SAIF SYSCFG 600"]
-    pub sys_iomux_cfgsaif_syscfg600: SYS_IOMUX_CFGSAIF_SYSCFG600,
-    #[doc = "0x25c - SYS IOMUX CFG SAIF SYSCFG 604"]
-    pub sys_iomux_cfgsaif_syscfg604: SYS_IOMUX_CFGSAIF_SYSCFG604,
-    #[doc = "0x260 - SYS IOMUX CFG SAIF SYSCFG 608"]
-    pub sys_iomux_cfgsaif_syscfg608: SYS_IOMUX_CFGSAIF_SYSCFG608,
-    #[doc = "0x264 - SYS IOMUX CFG SAIF SYSCFG 612"]
-    pub sys_iomux_cfgsaif_syscfg612: SYS_IOMUX_CFGSAIF_SYSCFG612,
-    #[doc = "0x268 - SYS IOMUX CFG SAIF SYSCFG 616"]
-    pub sys_iomux_cfgsaif_syscfg616: SYS_IOMUX_CFGSAIF_SYSCFG616,
-    #[doc = "0x26c - SYS IOMUX CFG SAIF SYSCFG 620"]
-    pub sys_iomux_cfgsaif_syscfg620: SYS_IOMUX_CFGSAIF_SYSCFG620,
-    #[doc = "0x270 - SYS IOMUX CFG SAIF SYSCFG 624"]
-    pub sys_iomux_cfgsaif_syscfg624: SYS_IOMUX_CFGSAIF_SYSCFG624,
-    #[doc = "0x274 - SYS IOMUX CFG SAIF SYSCFG 628"]
-    pub sys_iomux_cfgsaif_syscfg628: SYS_IOMUX_CFGSAIF_SYSCFG628,
-    #[doc = "0x278 - SYS IOMUX CFG SAIF SYSCFG 632"]
-    pub sys_iomux_cfgsaif_syscfg632: SYS_IOMUX_CFGSAIF_SYSCFG632,
-    #[doc = "0x27c - SYS IOMUX CFG SAIF SYSCFG 636"]
-    pub sys_iomux_cfgsaif_syscfg636: SYS_IOMUX_CFGSAIF_SYSCFG636,
-    #[doc = "0x280 - SYS IOMUX CFG SAIF SYSCFG 640"]
-    pub sys_iomux_cfgsaif_syscfg640: SYS_IOMUX_CFGSAIF_SYSCFG640,
-    #[doc = "0x284 - SYS IOMUX CFG SAIF SYSCFG 644"]
-    pub sys_iomux_cfgsaif_syscfg644: SYS_IOMUX_CFGSAIF_SYSCFG644,
-    #[doc = "0x288 - SYS IOMUX CFG SAIF SYSCFG 648"]
-    pub sys_iomux_cfgsaif_syscfg648: SYS_IOMUX_CFGSAIF_SYSCFG648,
-    #[doc = "0x28c - SYS IOMUX CFG SAIF SYSCFG 652"]
-    pub sys_iomux_cfgsaif_syscfg652: SYS_IOMUX_CFGSAIF_SYSCFG652,
-    #[doc = "0x290 - SYS IOMUX CFG SAIF SYSCFG 656"]
-    pub sys_iomux_cfgsaif_syscfg656: SYS_IOMUX_CFGSAIF_SYSCFG656,
-    #[doc = "0x294 - SYS IOMUX CFG SAIF SYSCFG 660"]
-    pub sys_iomux_cfgsaif_syscfg660: SYS_IOMUX_CFGSAIF_SYSCFG660,
-    #[doc = "0x298 - SYS IOMUX CFG SAIF SYSCFG 664"]
-    pub sys_iomux_cfgsaif_syscfg664: SYS_IOMUX_CFGSAIF_SYSCFG664,
-    #[doc = "0x29c - SYS IOMUX CFG SAIF SYSCFG 668"]
-    pub sys_iomux_cfgsaif_syscfg668: SYS_IOMUX_CFGSAIF_SYSCFG668,
-    #[doc = "0x2a0 - SYS IOMUX CFG SAIF SYSCFG 672"]
-    pub sys_iomux_cfgsaif_syscfg672: SYS_IOMUX_CFGSAIF_SYSCFG672,
-    #[doc = "0x2a4 - SYS IOMUX CFG SAIF SYSCFG 676"]
-    pub sys_iomux_cfgsaif_syscfg676: SYS_IOMUX_CFGSAIF_SYSCFG676,
-    #[doc = "0x2a8 - SYS IOMUX CFG SAIF SYSCFG 680"]
-    pub sys_iomux_cfgsaif_syscfg680: SYS_IOMUX_CFGSAIF_SYSCFG680,
-    #[doc = "0x2ac - SYS IOMUX CFG SAIF SYSCFG 684"]
-    pub sys_iomux_cfgsaif_syscfg684: SYS_IOMUX_CFGSAIF_SYSCFG684,
-    #[doc = "0x2b0 - SYS IOMUX CFG SAIF SYSCFG 688"]
-    pub sys_iomux_cfgsaif_syscfg688: SYS_IOMUX_CFGSAIF_SYSCFG688,
-    #[doc = "0x2b4 - SYS IOMUX CFG SAIF SYSCFG 692"]
-    pub sys_iomux_cfgsaif_syscfg692: SYS_IOMUX_CFGSAIF_SYSCFG692,
+    #[doc = "0x00 - SYS IOMUX CFG SAIF SYSCFG FMUX 0 DOEN"]
+    pub gpo_doen0: GPO_DOEN0,
+    #[doc = "0x04 - SYS IOMUX CFG SAIF SYSCFG FMUX 1 DOEN"]
+    pub gpo_doen1: GPO_DOEN1,
+    #[doc = "0x08 - SYS IOMUX CFG SAIF SYSCFG FMUX 2 DOEN"]
+    pub gpo_doen2: GPO_DOEN2,
+    #[doc = "0x0c - SYS IOMUX CFG SAIF SYSCFG FMUX 3 DOEN"]
+    pub gpo_doen3: GPO_DOEN3,
+    #[doc = "0x10 - SYS IOMUX CFG SAIF SYSCFG FMUX 4 DOEN"]
+    pub gpo_doen4: GPO_DOEN4,
+    #[doc = "0x14 - SYS IOMUX CFG SAIF SYSCFG FMUX 5 DOEN"]
+    pub gpo_doen5: GPO_DOEN5,
+    #[doc = "0x18 - SYS IOMUX CFG SAIF SYSCFG FMUX 6 DOEN"]
+    pub gpo_doen6: GPO_DOEN6,
+    #[doc = "0x1c - SYS IOMUX CFG SAIF SYSCFG FMUX 7 DOEN"]
+    pub gpo_doen7: GPO_DOEN7,
+    #[doc = "0x20 - SYS IOMUX CFG SAIF SYSCFG FMUX 8 DOEN"]
+    pub gpo_doen8: GPO_DOEN8,
+    #[doc = "0x24 - SYS IOMUX CFG SAIF SYSCFG FMUX 9 DOEN"]
+    pub gpo_doen9: GPO_DOEN9,
+    #[doc = "0x28 - SYS IOMUX CFG SAIF SYSCFG FMUX 10 DOEN"]
+    pub gpo_doen10: GPO_DOEN10,
+    #[doc = "0x2c - SYS IOMUX CFG SAIF SYSCFG FMUX 11 DOEN"]
+    pub gpo_doen11: GPO_DOEN11,
+    #[doc = "0x30 - SYS IOMUX CFG SAIF SYSCFG FMUX 12 DOEN"]
+    pub gpo_doen12: GPO_DOEN12,
+    #[doc = "0x34 - SYS IOMUX CFG SAIF SYSCFG FMUX 13 DOEN"]
+    pub gpo_doen13: GPO_DOEN13,
+    _reserved_14_gpi0: [u8; 0x4c],
+    #[doc = "0x84 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 4 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+    pub gpi4: GPI4,
+    #[doc = "0x88 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 8 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+    pub gpi8: GPI8,
+    #[doc = "0x8c - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 12 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+    pub gpi12: GPI12,
+    #[doc = "0x90 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 16 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+    pub gpi16: GPI16,
+    #[doc = "0x94 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 20 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+    pub gpi20: GPI20,
+    #[doc = "0x98 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 24 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+    pub gpi24: GPI24,
+    #[doc = "0x9c - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 28 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+    pub gpi28: GPI28,
+    #[doc = "0xa0 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 32 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+    pub gpi32: GPI32,
+    #[doc = "0xa4 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 36 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+    pub gpi36: GPI36,
+    #[doc = "0xa8 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 40 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+    pub gpi40: GPI40,
+    #[doc = "0xac - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 44 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+    pub gpi44: GPI44,
+    #[doc = "0xb0 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 48 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+    pub gpi48: GPI48,
+    #[doc = "0xb4 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 52 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+    pub gpi52: GPI52,
+    #[doc = "0xb8 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 56 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+    pub gpi56: GPI56,
+    #[doc = "0xbc - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 60 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+    pub gpi60: GPI60,
+    #[doc = "0xc0 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 64 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+    pub gpi64: GPI64,
+    #[doc = "0xc4 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 68 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+    pub gpi68: GPI68,
+    #[doc = "0xc8 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 72 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+    pub gpi72: GPI72,
+    #[doc = "0xcc - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 76 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+    pub gpi76: GPI76,
+    #[doc = "0xd0 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 80 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+    pub gpi80: GPI80,
+    #[doc = "0xd4 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 84 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+    pub gpi84: GPI84,
+    #[doc = "0xd8 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 88 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+    pub gpi88: GPI88,
+    #[doc = "0xdc - Enable GPIO IRQ function"]
+    pub ioirq0: IOIRQ0,
+    _reserved38: [u8; 0x40],
+    #[doc = "0x120 - SYS IOMUX CFG SAIF SYSCFG PADCFG 288: GPIO0"]
+    pub padcfg_gpio0: PADCFG_GPIO0,
+    #[doc = "0x124 - SYS IOMUX CFG SAIF SYSCFG PADCFG 292: GPIO1"]
+    pub padcfg_gpio1: PADCFG_GPIO1,
+    #[doc = "0x128 - SYS IOMUX CFG SAIF SYSCFG PADCFG 296: GPIO2"]
+    pub padcfg_gpio2: PADCFG_GPIO2,
+    #[doc = "0x12c - SYS IOMUX CFG SAIF SYSCFG PADCFG 300: GPIO3"]
+    pub padcfg_gpio3: PADCFG_GPIO3,
+    #[doc = "0x130 - SYS IOMUX CFG SAIF SYSCFG PADCFG 304: GPIO4"]
+    pub padcfg_gpio4: PADCFG_GPIO4,
+    #[doc = "0x134 - SYS IOMUX CFG SAIF SYSCFG PADCFG 308: GPIO5"]
+    pub padcfg_gpio5: PADCFG_GPIO5,
+    #[doc = "0x138 - SYS IOMUX CFG SAIF SYSCFG PADCFG 312: GPIO6"]
+    pub padcfg_gpio6: PADCFG_GPIO6,
+    #[doc = "0x13c - SYS IOMUX CFG SAIF SYSCFG PADCFG 316: GPIO7"]
+    pub padcfg_gpio7: PADCFG_GPIO7,
+    #[doc = "0x140 - SYS IOMUX CFG SAIF SYSCFG PADCFG 320: GPIO8"]
+    pub padcfg_gpio8: PADCFG_GPIO8,
+    #[doc = "0x144 - SYS IOMUX CFG SAIF SYSCFG PADCFG 324: GPIO9"]
+    pub padcfg_gpio9: PADCFG_GPIO9,
+    #[doc = "0x148 - SYS IOMUX CFG SAIF SYSCFG PADCFG 328: GPIO10"]
+    pub padcfg_gpio10: PADCFG_GPIO10,
+    #[doc = "0x14c - SYS IOMUX CFG SAIF SYSCFG PADCFG 332: GPIO11"]
+    pub padcfg_gpio11: PADCFG_GPIO11,
+    #[doc = "0x150 - SYS IOMUX CFG SAIF SYSCFG PADCFG 336: GPIO12"]
+    pub padcfg_gpio12: PADCFG_GPIO12,
+    #[doc = "0x154 - SYS IOMUX CFG SAIF SYSCFG PADCFG 340: GPIO13"]
+    pub padcfg_gpio13: PADCFG_GPIO13,
+    #[doc = "0x158 - SYS IOMUX CFG SAIF SYSCFG PADCFG 344: GPIO14"]
+    pub padcfg_gpio14: PADCFG_GPIO14,
+    #[doc = "0x15c - SYS IOMUX CFG SAIF SYSCFG PADCFG 348: GPIO15"]
+    pub padcfg_gpio15: PADCFG_GPIO15,
+    #[doc = "0x160 - SYS IOMUX CFG SAIF SYSCFG PADCFG 352: GPIO16"]
+    pub padcfg_gpio16: PADCFG_GPIO16,
+    #[doc = "0x164 - SYS IOMUX CFG SAIF SYSCFG PADCFG 356: GPIO17"]
+    pub padcfg_gpio17: PADCFG_GPIO17,
+    #[doc = "0x168 - SYS IOMUX CFG SAIF SYSCFG PADCFG 360: GPIO18"]
+    pub padcfg_gpio18: PADCFG_GPIO18,
+    #[doc = "0x16c - SYS IOMUX CFG SAIF SYSCFG PADCFG 364: GPIO19"]
+    pub padcfg_gpio19: PADCFG_GPIO19,
+    #[doc = "0x170 - SYS IOMUX CFG SAIF SYSCFG PADCFG 368: GPIO20"]
+    pub padcfg_gpio20: PADCFG_GPIO20,
+    #[doc = "0x174 - SYS IOMUX CFG SAIF SYSCFG PADCFG 372: GPIO21"]
+    pub padcfg_gpio21: PADCFG_GPIO21,
+    #[doc = "0x178 - SYS IOMUX CFG SAIF SYSCFG PADCFG 376: GPIO22"]
+    pub padcfg_gpio22: PADCFG_GPIO22,
+    #[doc = "0x17c - SYS IOMUX CFG SAIF SYSCFG PADCFG 380: GPIO23"]
+    pub padcfg_gpio23: PADCFG_GPIO23,
+    #[doc = "0x180 - SYS IOMUX CFG SAIF SYSCFG PADCFG 384: GPIO24"]
+    pub padcfg_gpio24: PADCFG_GPIO24,
+    #[doc = "0x184 - SYS IOMUX CFG SAIF SYSCFG PADCFG 388: GPIO25"]
+    pub padcfg_gpio25: PADCFG_GPIO25,
+    #[doc = "0x188 - SYS IOMUX CFG SAIF SYSCFG PADCFG 392: GPIO26"]
+    pub padcfg_gpio26: PADCFG_GPIO26,
+    #[doc = "0x18c - SYS IOMUX CFG SAIF SYSCFG PADCFG 396: GPIO27"]
+    pub padcfg_gpio27: PADCFG_GPIO27,
+    #[doc = "0x190 - SYS IOMUX CFG SAIF SYSCFG PADCFG 400: GPIO28"]
+    pub padcfg_gpio28: PADCFG_GPIO28,
+    #[doc = "0x194 - SYS IOMUX CFG SAIF SYSCFG PADCFG 404: GPIO29"]
+    pub padcfg_gpio29: PADCFG_GPIO29,
+    #[doc = "0x198 - SYS IOMUX CFG SAIF SYSCFG PADCFG 408: GPIO30"]
+    pub padcfg_gpio30: PADCFG_GPIO30,
+    #[doc = "0x19c - SYS IOMUX CFG SAIF SYSCFG PADCFG 412: GPIO31"]
+    pub padcfg_gpio31: PADCFG_GPIO31,
+    #[doc = "0x1a0 - SYS IOMUX CFG SAIF SYSCFG PADCFG 416: GPIO32"]
+    pub padcfg_gpio32: PADCFG_GPIO32,
+    #[doc = "0x1a4 - SYS IOMUX CFG SAIF SYSCFG PADCFG 420: GPIO33"]
+    pub padcfg_gpio33: PADCFG_GPIO33,
+    #[doc = "0x1a8 - SYS IOMUX CFG SAIF SYSCFG PADCFG 424: GPIO34"]
+    pub padcfg_gpio34: PADCFG_GPIO34,
+    #[doc = "0x1ac - SYS IOMUX CFG SAIF SYSCFG PADCFG 428: GPIO35"]
+    pub padcfg_gpio35: PADCFG_GPIO35,
+    #[doc = "0x1b0 - SYS IOMUX CFG SAIF SYSCFG PADCFG 432: GPIO36"]
+    pub padcfg_gpio36: PADCFG_GPIO36,
+    #[doc = "0x1b4 - SYS IOMUX CFG SAIF SYSCFG PADCFG 436: GPIO37"]
+    pub padcfg_gpio37: PADCFG_GPIO37,
+    #[doc = "0x1b8 - SYS IOMUX CFG SAIF SYSCFG PADCFG 440: GPIO38"]
+    pub padcfg_gpio38: PADCFG_GPIO38,
+    #[doc = "0x1bc - SYS IOMUX CFG SAIF SYSCFG PADCFG 444: GPIO39"]
+    pub padcfg_gpio39: PADCFG_GPIO39,
+    #[doc = "0x1c0 - SYS IOMUX CFG SAIF SYSCFG PADCFG 448: GPIO40"]
+    pub padcfg_gpio40: PADCFG_GPIO40,
+    #[doc = "0x1c4 - SYS IOMUX CFG SAIF SYSCFG PADCFG 452: GPIO41"]
+    pub padcfg_gpio41: PADCFG_GPIO41,
+    #[doc = "0x1c8 - SYS IOMUX CFG SAIF SYSCFG PADCFG 456: GPIO42"]
+    pub padcfg_gpio42: PADCFG_GPIO42,
+    #[doc = "0x1cc - SYS IOMUX CFG SAIF SYSCFG PADCFG 460: GPIO43"]
+    pub padcfg_gpio43: PADCFG_GPIO43,
+    #[doc = "0x1d0 - SYS IOMUX CFG SAIF SYSCFG PADCFG 464: GPIO44"]
+    pub padcfg_gpio44: PADCFG_GPIO44,
+    #[doc = "0x1d4 - SYS IOMUX CFG SAIF SYSCFG PADCFG 468: GPIO45"]
+    pub padcfg_gpio45: PADCFG_GPIO45,
+    #[doc = "0x1d8 - SYS IOMUX CFG SAIF SYSCFG PADCFG 472: GPIO46"]
+    pub padcfg_gpio46: PADCFG_GPIO46,
+    #[doc = "0x1dc - SYS IOMUX CFG SAIF SYSCFG PADCFG 476: GPIO47"]
+    pub padcfg_gpio47: PADCFG_GPIO47,
+    #[doc = "0x1e0 - SYS IOMUX CFG SAIF SYSCFG PADCFG 480: GPIO48"]
+    pub padcfg_gpio48: PADCFG_GPIO48,
+    #[doc = "0x1e4 - SYS IOMUX CFG SAIF SYSCFG PADCFG 484: GPIO49"]
+    pub padcfg_gpio49: PADCFG_GPIO49,
+    #[doc = "0x1e8 - SYS IOMUX CFG SAIF SYSCFG PADCFG 488: GPIO50"]
+    pub padcfg_gpio50: PADCFG_GPIO50,
+    #[doc = "0x1ec - SYS IOMUX CFG SAIF SYSCFG PADCFG 492: GPIO51"]
+    pub padcfg_gpio51: PADCFG_GPIO51,
+    #[doc = "0x1f0 - SYS IOMUX CFG SAIF SYSCFG PADCFG 496: GPIO52"]
+    pub padcfg_gpio52: PADCFG_GPIO52,
+    #[doc = "0x1f4 - SYS IOMUX CFG SAIF SYSCFG PADCFG 500: GPIO53"]
+    pub padcfg_gpio53: PADCFG_GPIO53,
+    #[doc = "0x1f8 - SYS IOMUX CFG SAIF SYSCFG PADCFG 504: GPIO54"]
+    pub padcfg_gpio54: PADCFG_GPIO54,
+    #[doc = "0x1fc - SYS IOMUX CFG SAIF SYSCFG PADCFG 508: GPIO55"]
+    pub padcfg_gpio55: PADCFG_GPIO55,
+    #[doc = "0x200 - SYS IOMUX CFG SAIF SYSCFG PADCFG 512: GPIO56"]
+    pub padcfg_gpio56: PADCFG_GPIO56,
+    #[doc = "0x204 - SYS IOMUX CFG SAIF SYSCFG PADCFG 516: GPIO57"]
+    pub padcfg_gpio57: PADCFG_GPIO57,
+    #[doc = "0x208 - SYS IOMUX CFG SAIF SYSCFG PADCFG 520: GPIO58"]
+    pub padcfg_gpio58: PADCFG_GPIO58,
+    #[doc = "0x20c - SYS IOMUX CFG SAIF SYSCFG PADCFG 524: GPIO59"]
+    pub padcfg_gpio59: PADCFG_GPIO59,
+    #[doc = "0x210 - SYS IOMUX CFG SAIF SYSCFG PADCFG 528: GPIO60"]
+    pub padcfg_gpio60: PADCFG_GPIO60,
+    #[doc = "0x214 - SYS IOMUX CFG SAIF SYSCFG PADCFG 532: GPIO61"]
+    pub padcfg_gpio61: PADCFG_GPIO61,
+    #[doc = "0x218 - SYS IOMUX CFG SAIF SYSCFG PADCFG 536: GPIO62"]
+    pub padcfg_gpio62: PADCFG_GPIO62,
+    #[doc = "0x21c - SYS IOMUX CFG SAIF SYSCFG PADCFG 540: GPIO63"]
+    pub padcfg_gpio63: PADCFG_GPIO63,
+    #[doc = "0x220 - SYS IOMUX CFG SAIF SYSCFG PADCFG 544: SD0_CLK"]
+    pub padcfg_sd0_clk: PADCFG_SD0_CLK,
+    #[doc = "0x224 - SYS IOMUX CFG SAIF SYSCFG PADCFG 548: SD0_CMD"]
+    pub padcfg_sd0_cmd: PADCFG_SD0_CMD,
+    #[doc = "0x228 - SYS IOMUX CFG SAIF SYSCFG PADCFG 552: SD0_DATA0"]
+    pub padcfg_sd0_data0: PADCFG_SD0_DATA0,
+    _reserved105: [u8; 0x0c],
+    #[doc = "0x238 - SYS IOMUX CFG SAIF SYSCFG PADCFG 568: SD0_DATA1"]
+    pub padcfg_sd0_data1: PADCFG_SD0_DATA1,
+    _reserved106: [u8; 0x0c],
+    _reserved_106_padcfg_sd0: [u8; 0x04],
+    _reserved107: [u8; 0x0c],
+    #[doc = "0x258 - SYS IOMUX CFG SAIF SYSCFG PADCFG 600: SD0_DATA3"]
+    pub padcfg_sd0_data3: PADCFG_SD0_DATA3,
+    _reserved108: [u8; 0x0c],
+    #[doc = "0x268 - SYS IOMUX CFG SAIF SYSCFG PADCFG 616: SD0_DATA4"]
+    pub padcfg_sd0_data4: PADCFG_SD0_DATA4,
+    _reserved109: [u8; 0x0c],
+    #[doc = "0x278 - SYS IOMUX CFG SAIF SYSCFG PADCFG 632: SD0_DATA5"]
+    pub padcfg_sd0_data5: PADCFG_SD0_DATA5,
+    _reserved110: [u8; 0x08],
+    #[doc = "0x284 - SYS IOMUX CFG SAIF SYSCFG PADCFG 644: QSPI_SCLK"]
+    pub padcfg_qspi_sclk: PADCFG_QSPI_SCLK,
+    _reserved_111_padcfg: [u8; 0x04],
+    #[doc = "0x28c - SYS IOMUX CFG SAIF SYSCFG PADCFG 652: QSPI_DATA0"]
+    pub padcfg_qspi_data0: PADCFG_QSPI_DATA0,
+    _reserved113: [u8; 0x08],
+    #[doc = "0x298 - SYS IOMUX CFG SAIF SYSCFG PADCFG 664: SD0_DATA7"]
+    pub padcfg_sd0_data7: PADCFG_SD0_DATA7,
+    _reserved_114_func_sel0: [u8; 0x04],
+    #[doc = "0x2a0 - SYS IOMUX CFG SAIF SYSCFG 1"]
+    pub func_sel1: FUNC_SEL1,
+    #[doc = "0x2a4 - SYS IOMUX CFG SAIF SYSCFG 2"]
+    pub func_sel2: FUNC_SEL2,
+    #[doc = "0x2a8 - SYS IOMUX CFG SAIF SYSCFG 3"]
+    pub func_sel3: FUNC_SEL3,
+    _reserved_118_func_sel4: [u8; 0x04],
+    #[doc = "0x2b0 - SYS IOMUX CFG SAIF SYSCFG 5"]
+    pub func_sel5: FUNC_SEL5,
+    #[doc = "0x2b4 - SYS IOMUX CFG SAIF SYSCFG 6"]
+    pub func_sel6: FUNC_SEL6,
+    _reserved121: [u8; 0x04],
+    #[doc = "0x2bc - SYS IOMUX CFG SAIF SYSCFG PADCFG 700: QSPI_DATA3"]
+    pub padcfg_qspi_data3: PADCFG_QSPI_DATA3,
 }
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux0 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 0\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux0::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux0`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX0 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux0::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX0_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 0"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux0;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux1 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 1\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux1::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux1`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX1 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux1::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX1_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 1"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux1;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux2 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 2\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux2::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux2`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX2 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux2::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX2_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 2"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux2;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux3 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 3\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux3::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux3`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX3 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux3::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX3_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 3"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux3;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux4 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 4\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux4::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux4::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux4`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX4 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux4::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX4_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 4"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux4;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux5 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 5\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux5::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux5::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux5`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX5 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux5::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX5_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 5"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux5;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux6 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 6\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux6::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux6::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux6`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX6 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux6::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX6_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 6"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux6;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux7 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 7\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux7::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux7::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux7`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX7 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux7::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX7_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 7"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux7;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux8 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 8\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux8::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux8::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux8`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX8 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux8::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX8_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 8"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux8;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux9 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 9\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux9::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux9::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux9`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX9 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux9::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX9_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 9"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux9;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux10 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 10\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux10::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux10::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux10`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX10 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux10::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX10_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 10"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux10;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux11 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 11\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux11::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux11::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux11`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX11 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux11::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX11_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 11"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux11;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux12 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 12\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux12::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux12::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux12`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX12 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux12::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX12_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 12"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux12;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux13 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 13\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux13::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux13::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux13`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX13 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux13::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX13_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 13"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux13;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux14 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 14\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux14::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux14::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux14`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX14 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux14::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX14_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 14"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux14;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux15 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 15\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux15::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux15::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux15`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX15 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux15::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX15_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 15"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux15;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux16 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 16\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux16::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux16::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux16`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX16 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux16::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX16_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 16"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux16;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux17 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 17\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux17::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux17::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux17`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX17 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux17::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX17_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 17"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux17;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux18 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 18\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux18::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux18::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux18`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX18 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux18::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX18_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 18"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux18;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux19 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 19\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux19::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux19::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux19`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX19 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux19::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX19_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 19"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux19;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux20 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 20\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux20::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux20::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux20`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX20 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux20::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX20_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 20"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux20;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux21 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 21\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux21::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux21::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux21`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX21 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux21::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX21_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 21"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux21;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux22 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 22\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux22::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux22::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux22`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX22 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux22::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX22_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 22"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux22;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux23 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 23\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux23::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux23::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux23`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX23 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux23::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX23_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 23"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux23;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux24 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 24\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux24::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux24::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux24`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX24 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux24::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX24_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 24"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux24;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux25 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 25\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux25::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux25::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux25`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX25 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux25::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX25_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 25"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux25;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux26 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 26\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux26::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux26::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux26`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX26 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux26::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX26_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 26"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux26;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux27 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 27\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux27::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux27::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux27`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX27 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux27::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX27_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 27"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux27;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux28 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 28\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux28::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux28::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux28`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX28 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux28::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX28_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 28"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux28;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux29 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 29\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux29::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux29::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux29`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX29 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux29::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX29_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 29"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux29;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux30 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 30\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux30::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux30::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux30`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX30 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux30::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX30_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 30"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux30;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux31 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 31\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux31::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux31::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux31`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX31 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux31::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX31_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 31"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux31;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux32 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 32\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux32::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux32::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux32`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX32 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux32::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX32_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 32"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux32;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux33 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 33\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux33::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux33::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux33`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX33 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux33::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX33_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 33"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux33;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux34 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 34\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux34::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux34::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux34`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX34 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux34::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX34_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 34"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux34;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux35 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 35\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux35::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux35::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux35`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX35 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux35::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX35_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 35"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux35;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux36 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 36\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux36::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux36::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux36`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX36 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux36::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX36_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 36"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux36;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux37 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 37\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux37::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux37::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux37`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX37 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux37::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX37_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 37"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux37;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux38 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 38\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux38::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux38::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux38`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX38 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux38::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX38_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 38"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux38;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux39 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 39\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux39::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux39::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux39`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX39 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux39::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX39_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 39"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux39;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux40 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 40\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux40::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux40::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux40`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX40 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux40::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX40_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 40"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux40;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux41 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 41\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux41::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux41::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux41`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX41 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux41::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX41_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 41"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux41;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux42 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 42\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux42::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux42::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux42`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX42 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux42::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX42_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 42"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux42;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux43 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 43\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux43::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux43::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux43`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX43 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux43::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX43_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 43"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux43;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux44 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 44\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux44::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux44::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux44`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX44 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux44::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX44_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 44"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux44;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux45 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 45\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux45::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux45::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux45`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX45 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux45::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX45_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 45"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux45;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux46 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 46\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux46::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux46::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux46`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX46 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux46::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX46_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 46"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux46;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux47 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 47\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux47::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux47::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux47`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX47 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux47::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX47_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 47"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux47;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux48 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 48\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux48::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux48::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux48`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX48 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux48::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX48_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 48"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux48;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux49 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 49\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux49::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux49::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux49`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX49 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux49::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX49_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 49"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux49;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux50 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 50\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux50::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux50::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux50`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX50 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux50::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX50_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 50"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux50;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux51 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 51\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux51::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux51::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux51`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX51 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux51::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX51_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 51"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux51;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux52 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 52\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux52::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux52::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux52`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX52 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux52::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX52_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 52"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux52;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux53 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 53\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux53::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux53::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux53`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX53 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux53::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX53_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 53"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux53;
-#[doc = "sys_iomux_cfgsaif_syscfg_fmux54 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 54\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_fmux54::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_fmux54::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_fmux54`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_FMUX54 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_fmux54::SYS_IOMUX_CFGSAIF_SYSCFG_FMUX54_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 54"]
-pub mod sys_iomux_cfgsaif_syscfg_fmux54;
-#[doc = "sys_iomux_cfgsaif_syscfg_ioirq55 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG IOIRQ 55\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_ioirq55::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_ioirq55::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_ioirq55`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ55 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_ioirq55::SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ55_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG IOIRQ 55"]
-pub mod sys_iomux_cfgsaif_syscfg_ioirq55;
-#[doc = "sys_iomux_cfgsaif_syscfg_ioirq56 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG IOIRQ 56\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_ioirq56::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_ioirq56::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_ioirq56`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ56 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_ioirq56::SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ56_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG IOIRQ 56"]
-pub mod sys_iomux_cfgsaif_syscfg_ioirq56;
-#[doc = "sys_iomux_cfgsaif_syscfg_ioirq57 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG IOIRQ 57\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_ioirq57::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_ioirq57::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_ioirq57`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ57 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_ioirq57::SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ57_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG IOIRQ 57"]
-pub mod sys_iomux_cfgsaif_syscfg_ioirq57;
-#[doc = "sys_iomux_cfgsaif_syscfg_ioirq58 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG IOIRQ 58\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_ioirq58::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_ioirq58::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_ioirq58`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ58 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_ioirq58::SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ58_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG IOIRQ 58"]
-pub mod sys_iomux_cfgsaif_syscfg_ioirq58;
-#[doc = "sys_iomux_cfgsaif_syscfg_ioirq59 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG IOIRQ 59\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_ioirq59::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_ioirq59::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_ioirq59`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ59 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_ioirq59::SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ59_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG IOIRQ 59"]
-pub mod sys_iomux_cfgsaif_syscfg_ioirq59;
-#[doc = "sys_iomux_cfgsaif_syscfg_ioirq60 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG IOIRQ 60\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_ioirq60::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_ioirq60::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_ioirq60`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ60 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_ioirq60::SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ60_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG IOIRQ 60"]
-pub mod sys_iomux_cfgsaif_syscfg_ioirq60;
-#[doc = "sys_iomux_cfgsaif_syscfg_ioirq61 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG IOIRQ 61\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_ioirq61::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_ioirq61::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_ioirq61`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ61 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_ioirq61::SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ61_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG IOIRQ 61"]
-pub mod sys_iomux_cfgsaif_syscfg_ioirq61;
-#[doc = "sys_iomux_cfgsaif_syscfg_ioirq62 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG IOIRQ 62\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_ioirq62::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_ioirq62::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_ioirq62`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ62 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_ioirq62::SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ62_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG IOIRQ 62"]
-pub mod sys_iomux_cfgsaif_syscfg_ioirq62;
-#[doc = "sys_iomux_cfgsaif_syscfg_ioirq63 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG IOIRQ 63\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_ioirq63::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_ioirq63::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_ioirq63`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ63 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_ioirq63::SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ63_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG IOIRQ 63"]
-pub mod sys_iomux_cfgsaif_syscfg_ioirq63;
-#[doc = "sys_iomux_cfgsaif_syscfg_ioirq64 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG IOIRQ 64\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_ioirq64::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_ioirq64::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_ioirq64`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ64 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_ioirq64::SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ64_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG IOIRQ 64"]
-pub mod sys_iomux_cfgsaif_syscfg_ioirq64;
-#[doc = "sys_iomux_cfgsaif_syscfg_ioirq65 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG IOIRQ 65\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_ioirq65::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_ioirq65::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_ioirq65`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ65 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_ioirq65::SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ65_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG IOIRQ 65"]
-pub mod sys_iomux_cfgsaif_syscfg_ioirq65;
-#[doc = "sys_iomux_cfgsaif_syscfg_ioirq66 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG IOIRQ 66\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_ioirq66::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_ioirq66::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_ioirq66`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ66 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_ioirq66::SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ66_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG IOIRQ 66"]
-pub mod sys_iomux_cfgsaif_syscfg_ioirq66;
-#[doc = "sys_iomux_cfgsaif_syscfg_ioirq67 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG IOIRQ 67\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_ioirq67::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_ioirq67::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_ioirq67`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ67 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_ioirq67::SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ67_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG IOIRQ 67"]
-pub mod sys_iomux_cfgsaif_syscfg_ioirq67;
-#[doc = "sys_iomux_cfgsaif_syscfg_ioirq68 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG IOIRQ 68\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_ioirq68::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_ioirq68::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_ioirq68`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ68 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_ioirq68::SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ68_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG IOIRQ 68"]
-pub mod sys_iomux_cfgsaif_syscfg_ioirq68;
-#[doc = "sys_iomux_cfgsaif_syscfg_ioirq69 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG IOIRQ 69\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_ioirq69::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_ioirq69::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_ioirq69`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ69 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_ioirq69::SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ69_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG IOIRQ 69"]
-pub mod sys_iomux_cfgsaif_syscfg_ioirq69;
-#[doc = "sys_iomux_cfgsaif_syscfg_ioirq70 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG IOIRQ 70\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_ioirq70::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_ioirq70::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_ioirq70`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ70 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_ioirq70::SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ70_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG IOIRQ 70"]
-pub mod sys_iomux_cfgsaif_syscfg_ioirq70;
-#[doc = "sys_iomux_cfgsaif_syscfg_ioirq71 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG IOIRQ 71\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg_ioirq71::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg_ioirq71::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg_ioirq71`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ71 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg_ioirq71::SYS_IOMUX_CFGSAIF_SYSCFG_IOIRQ71_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG IOIRQ 71"]
-pub mod sys_iomux_cfgsaif_syscfg_ioirq71;
-#[doc = "sys_iomux_cfgsaif_syscfg288 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 288\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg288::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg288::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg288`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG288 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg288::SYS_IOMUX_CFGSAIF_SYSCFG288_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 288"]
-pub mod sys_iomux_cfgsaif_syscfg288;
-#[doc = "sys_iomux_cfgsaif_syscfg292 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 292\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg292::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg292::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg292`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG292 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg292::SYS_IOMUX_CFGSAIF_SYSCFG292_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 292"]
-pub mod sys_iomux_cfgsaif_syscfg292;
-#[doc = "sys_iomux_cfgsaif_syscfg296 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 296\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg296::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg296::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg296`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG296 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg296::SYS_IOMUX_CFGSAIF_SYSCFG296_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 296"]
-pub mod sys_iomux_cfgsaif_syscfg296;
-#[doc = "sys_iomux_cfgsaif_syscfg300 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 300\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg300::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg300::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg300`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG300 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg300::SYS_IOMUX_CFGSAIF_SYSCFG300_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 300"]
-pub mod sys_iomux_cfgsaif_syscfg300;
-#[doc = "sys_iomux_cfgsaif_syscfg304 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 304\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg304::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg304::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg304`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG304 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg304::SYS_IOMUX_CFGSAIF_SYSCFG304_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 304"]
-pub mod sys_iomux_cfgsaif_syscfg304;
-#[doc = "sys_iomux_cfgsaif_syscfg308 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 308\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg308::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg308::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg308`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG308 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg308::SYS_IOMUX_CFGSAIF_SYSCFG308_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 308"]
-pub mod sys_iomux_cfgsaif_syscfg308;
-#[doc = "sys_iomux_cfgsaif_syscfg312 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 312\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg312::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg312::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg312`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG312 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg312::SYS_IOMUX_CFGSAIF_SYSCFG312_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 312"]
-pub mod sys_iomux_cfgsaif_syscfg312;
-#[doc = "sys_iomux_cfgsaif_syscfg316 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 316\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg316::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg316::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg316`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG316 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg316::SYS_IOMUX_CFGSAIF_SYSCFG316_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 316"]
-pub mod sys_iomux_cfgsaif_syscfg316;
-#[doc = "sys_iomux_cfgsaif_syscfg320 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 320\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg320::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg320::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg320`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG320 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg320::SYS_IOMUX_CFGSAIF_SYSCFG320_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 320"]
-pub mod sys_iomux_cfgsaif_syscfg320;
-#[doc = "sys_iomux_cfgsaif_syscfg324 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 324\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg324::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg324::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg324`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG324 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg324::SYS_IOMUX_CFGSAIF_SYSCFG324_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 324"]
-pub mod sys_iomux_cfgsaif_syscfg324;
-#[doc = "sys_iomux_cfgsaif_syscfg328 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 328\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg328::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg328::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg328`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG328 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg328::SYS_IOMUX_CFGSAIF_SYSCFG328_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 328"]
-pub mod sys_iomux_cfgsaif_syscfg328;
-#[doc = "sys_iomux_cfgsaif_syscfg332 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 332\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg332::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg332::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg332`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG332 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg332::SYS_IOMUX_CFGSAIF_SYSCFG332_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 332"]
-pub mod sys_iomux_cfgsaif_syscfg332;
-#[doc = "sys_iomux_cfgsaif_syscfg336 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 336\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg336::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg336::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg336`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG336 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg336::SYS_IOMUX_CFGSAIF_SYSCFG336_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 336"]
-pub mod sys_iomux_cfgsaif_syscfg336;
-#[doc = "sys_iomux_cfgsaif_syscfg340 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 340\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg340::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg340::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg340`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG340 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg340::SYS_IOMUX_CFGSAIF_SYSCFG340_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 340"]
-pub mod sys_iomux_cfgsaif_syscfg340;
-#[doc = "sys_iomux_cfgsaif_syscfg344 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 344\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg344::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg344::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg344`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG344 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg344::SYS_IOMUX_CFGSAIF_SYSCFG344_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 344"]
-pub mod sys_iomux_cfgsaif_syscfg344;
-#[doc = "sys_iomux_cfgsaif_syscfg348 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 348\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg348::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg348::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg348`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG348 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg348::SYS_IOMUX_CFGSAIF_SYSCFG348_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 348"]
-pub mod sys_iomux_cfgsaif_syscfg348;
-#[doc = "sys_iomux_cfgsaif_syscfg352 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 352\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg352::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg352::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg352`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG352 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg352::SYS_IOMUX_CFGSAIF_SYSCFG352_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 352"]
-pub mod sys_iomux_cfgsaif_syscfg352;
-#[doc = "sys_iomux_cfgsaif_syscfg356 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 356\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg356::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg356::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg356`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG356 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg356::SYS_IOMUX_CFGSAIF_SYSCFG356_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 356"]
-pub mod sys_iomux_cfgsaif_syscfg356;
-#[doc = "sys_iomux_cfgsaif_syscfg360 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 360\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg360::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg360::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg360`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG360 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg360::SYS_IOMUX_CFGSAIF_SYSCFG360_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 360"]
-pub mod sys_iomux_cfgsaif_syscfg360;
-#[doc = "sys_iomux_cfgsaif_syscfg364 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 364\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg364::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg364::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg364`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG364 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg364::SYS_IOMUX_CFGSAIF_SYSCFG364_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 364"]
-pub mod sys_iomux_cfgsaif_syscfg364;
-#[doc = "sys_iomux_cfgsaif_syscfg368 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 368\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg368::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg368::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg368`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG368 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg368::SYS_IOMUX_CFGSAIF_SYSCFG368_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 368"]
-pub mod sys_iomux_cfgsaif_syscfg368;
-#[doc = "sys_iomux_cfgsaif_syscfg372 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 372\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg372::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg372::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg372`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG372 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg372::SYS_IOMUX_CFGSAIF_SYSCFG372_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 372"]
-pub mod sys_iomux_cfgsaif_syscfg372;
-#[doc = "sys_iomux_cfgsaif_syscfg376 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 376\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg376::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg376::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg376`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG376 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg376::SYS_IOMUX_CFGSAIF_SYSCFG376_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 376"]
-pub mod sys_iomux_cfgsaif_syscfg376;
-#[doc = "sys_iomux_cfgsaif_syscfg380 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 380\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg380::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg380::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg380`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG380 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg380::SYS_IOMUX_CFGSAIF_SYSCFG380_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 380"]
-pub mod sys_iomux_cfgsaif_syscfg380;
-#[doc = "sys_iomux_cfgsaif_syscfg384 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 384\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg384::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg384::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg384`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG384 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg384::SYS_IOMUX_CFGSAIF_SYSCFG384_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 384"]
-pub mod sys_iomux_cfgsaif_syscfg384;
-#[doc = "sys_iomux_cfgsaif_syscfg388 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 388\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg388::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg388::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg388`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG388 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg388::SYS_IOMUX_CFGSAIF_SYSCFG388_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 388"]
-pub mod sys_iomux_cfgsaif_syscfg388;
-#[doc = "sys_iomux_cfgsaif_syscfg392 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 392\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg392::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg392::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg392`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG392 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg392::SYS_IOMUX_CFGSAIF_SYSCFG392_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 392"]
-pub mod sys_iomux_cfgsaif_syscfg392;
-#[doc = "sys_iomux_cfgsaif_syscfg396 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 396\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg396::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg396::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg396`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG396 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg396::SYS_IOMUX_CFGSAIF_SYSCFG396_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 396"]
-pub mod sys_iomux_cfgsaif_syscfg396;
-#[doc = "sys_iomux_cfgsaif_syscfg400 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 400\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg400::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg400::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg400`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG400 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg400::SYS_IOMUX_CFGSAIF_SYSCFG400_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 400"]
-pub mod sys_iomux_cfgsaif_syscfg400;
-#[doc = "sys_iomux_cfgsaif_syscfg404 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 404\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg404::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg404::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg404`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG404 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg404::SYS_IOMUX_CFGSAIF_SYSCFG404_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 404"]
-pub mod sys_iomux_cfgsaif_syscfg404;
-#[doc = "sys_iomux_cfgsaif_syscfg408 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 408\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg408::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg408::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg408`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG408 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg408::SYS_IOMUX_CFGSAIF_SYSCFG408_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 408"]
-pub mod sys_iomux_cfgsaif_syscfg408;
-#[doc = "sys_iomux_cfgsaif_syscfg412 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 412\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg412::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg412::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg412`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG412 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg412::SYS_IOMUX_CFGSAIF_SYSCFG412_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 412"]
-pub mod sys_iomux_cfgsaif_syscfg412;
-#[doc = "sys_iomux_cfgsaif_syscfg416 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 416\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg416::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg416::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg416`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG416 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg416::SYS_IOMUX_CFGSAIF_SYSCFG416_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 416"]
-pub mod sys_iomux_cfgsaif_syscfg416;
-#[doc = "sys_iomux_cfgsaif_syscfg420 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 420\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg420::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg420::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg420`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG420 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg420::SYS_IOMUX_CFGSAIF_SYSCFG420_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 420"]
-pub mod sys_iomux_cfgsaif_syscfg420;
-#[doc = "sys_iomux_cfgsaif_syscfg424 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 424\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg424::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg424::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg424`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG424 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg424::SYS_IOMUX_CFGSAIF_SYSCFG424_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 424"]
-pub mod sys_iomux_cfgsaif_syscfg424;
-#[doc = "sys_iomux_cfgsaif_syscfg428 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 428\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg428::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg428::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg428`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG428 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg428::SYS_IOMUX_CFGSAIF_SYSCFG428_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 428"]
-pub mod sys_iomux_cfgsaif_syscfg428;
-#[doc = "sys_iomux_cfgsaif_syscfg432 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 432\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg432::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg432::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg432`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG432 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg432::SYS_IOMUX_CFGSAIF_SYSCFG432_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 432"]
-pub mod sys_iomux_cfgsaif_syscfg432;
-#[doc = "sys_iomux_cfgsaif_syscfg436 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 436\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg436::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg436::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg436`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG436 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg436::SYS_IOMUX_CFGSAIF_SYSCFG436_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 436"]
-pub mod sys_iomux_cfgsaif_syscfg436;
-#[doc = "sys_iomux_cfgsaif_syscfg440 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 440\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg440::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg440::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg440`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG440 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg440::SYS_IOMUX_CFGSAIF_SYSCFG440_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 440"]
-pub mod sys_iomux_cfgsaif_syscfg440;
-#[doc = "sys_iomux_cfgsaif_syscfg444 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 444\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg444::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg444::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg444`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG444 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg444::SYS_IOMUX_CFGSAIF_SYSCFG444_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 444"]
-pub mod sys_iomux_cfgsaif_syscfg444;
-#[doc = "sys_iomux_cfgsaif_syscfg448 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 448\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg448::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg448::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg448`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG448 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg448::SYS_IOMUX_CFGSAIF_SYSCFG448_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 448"]
-pub mod sys_iomux_cfgsaif_syscfg448;
-#[doc = "sys_iomux_cfgsaif_syscfg452 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 452\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg452::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg452::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg452`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG452 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg452::SYS_IOMUX_CFGSAIF_SYSCFG452_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 452"]
-pub mod sys_iomux_cfgsaif_syscfg452;
-#[doc = "sys_iomux_cfgsaif_syscfg456 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 456\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg456::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg456::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg456`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG456 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg456::SYS_IOMUX_CFGSAIF_SYSCFG456_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 456"]
-pub mod sys_iomux_cfgsaif_syscfg456;
-#[doc = "sys_iomux_cfgsaif_syscfg460 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 460\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg460::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg460::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg460`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG460 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg460::SYS_IOMUX_CFGSAIF_SYSCFG460_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 460"]
-pub mod sys_iomux_cfgsaif_syscfg460;
-#[doc = "sys_iomux_cfgsaif_syscfg464 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 464\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg464::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg464::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg464`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG464 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg464::SYS_IOMUX_CFGSAIF_SYSCFG464_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 464"]
-pub mod sys_iomux_cfgsaif_syscfg464;
-#[doc = "sys_iomux_cfgsaif_syscfg468 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 468\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg468::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg468::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg468`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG468 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg468::SYS_IOMUX_CFGSAIF_SYSCFG468_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 468"]
-pub mod sys_iomux_cfgsaif_syscfg468;
-#[doc = "sys_iomux_cfgsaif_syscfg472 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 472\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg472::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg472::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg472`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG472 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg472::SYS_IOMUX_CFGSAIF_SYSCFG472_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 472"]
-pub mod sys_iomux_cfgsaif_syscfg472;
-#[doc = "sys_iomux_cfgsaif_syscfg476 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 476\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg476::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg476::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg476`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG476 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg476::SYS_IOMUX_CFGSAIF_SYSCFG476_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 476"]
-pub mod sys_iomux_cfgsaif_syscfg476;
-#[doc = "sys_iomux_cfgsaif_syscfg480 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 480\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg480::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg480::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg480`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG480 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg480::SYS_IOMUX_CFGSAIF_SYSCFG480_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 480"]
-pub mod sys_iomux_cfgsaif_syscfg480;
-#[doc = "sys_iomux_cfgsaif_syscfg484 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 484\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg484::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg484::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg484`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG484 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg484::SYS_IOMUX_CFGSAIF_SYSCFG484_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 484"]
-pub mod sys_iomux_cfgsaif_syscfg484;
-#[doc = "sys_iomux_cfgsaif_syscfg488 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 488\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg488::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg488::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg488`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG488 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg488::SYS_IOMUX_CFGSAIF_SYSCFG488_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 488"]
-pub mod sys_iomux_cfgsaif_syscfg488;
-#[doc = "sys_iomux_cfgsaif_syscfg492 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 492\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg492::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg492::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg492`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG492 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg492::SYS_IOMUX_CFGSAIF_SYSCFG492_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 492"]
-pub mod sys_iomux_cfgsaif_syscfg492;
-#[doc = "sys_iomux_cfgsaif_syscfg496 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 496\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg496::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg496::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg496`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG496 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg496::SYS_IOMUX_CFGSAIF_SYSCFG496_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 496"]
-pub mod sys_iomux_cfgsaif_syscfg496;
-#[doc = "sys_iomux_cfgsaif_syscfg500 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 500\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg500::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg500::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg500`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG500 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg500::SYS_IOMUX_CFGSAIF_SYSCFG500_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 500"]
-pub mod sys_iomux_cfgsaif_syscfg500;
-#[doc = "sys_iomux_cfgsaif_syscfg504 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 504\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg504::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg504::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg504`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG504 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg504::SYS_IOMUX_CFGSAIF_SYSCFG504_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 504"]
-pub mod sys_iomux_cfgsaif_syscfg504;
-#[doc = "sys_iomux_cfgsaif_syscfg508 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 508\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg508::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg508::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg508`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG508 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg508::SYS_IOMUX_CFGSAIF_SYSCFG508_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 508"]
-pub mod sys_iomux_cfgsaif_syscfg508;
-#[doc = "sys_iomux_cfgsaif_syscfg512 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 512\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg512::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg512::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg512`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG512 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg512::SYS_IOMUX_CFGSAIF_SYSCFG512_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 512"]
-pub mod sys_iomux_cfgsaif_syscfg512;
-#[doc = "sys_iomux_cfgsaif_syscfg516 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 516\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg516::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg516::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg516`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG516 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg516::SYS_IOMUX_CFGSAIF_SYSCFG516_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 516"]
-pub mod sys_iomux_cfgsaif_syscfg516;
-#[doc = "sys_iomux_cfgsaif_syscfg520 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 520\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg520::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg520::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg520`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG520 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg520::SYS_IOMUX_CFGSAIF_SYSCFG520_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 520"]
-pub mod sys_iomux_cfgsaif_syscfg520;
-#[doc = "sys_iomux_cfgsaif_syscfg524 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 524\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg524::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg524::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg524`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG524 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg524::SYS_IOMUX_CFGSAIF_SYSCFG524_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 524"]
-pub mod sys_iomux_cfgsaif_syscfg524;
-#[doc = "sys_iomux_cfgsaif_syscfg528 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 528\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg528::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg528::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg528`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG528 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg528::SYS_IOMUX_CFGSAIF_SYSCFG528_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 528"]
-pub mod sys_iomux_cfgsaif_syscfg528;
-#[doc = "sys_iomux_cfgsaif_syscfg532 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 532\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg532::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg532::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg532`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG532 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg532::SYS_IOMUX_CFGSAIF_SYSCFG532_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 532"]
-pub mod sys_iomux_cfgsaif_syscfg532;
-#[doc = "sys_iomux_cfgsaif_syscfg536 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 536\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg536::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg536::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg536`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG536 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg536::SYS_IOMUX_CFGSAIF_SYSCFG536_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 536"]
-pub mod sys_iomux_cfgsaif_syscfg536;
-#[doc = "sys_iomux_cfgsaif_syscfg540 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 540\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg540::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg540::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg540`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG540 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg540::SYS_IOMUX_CFGSAIF_SYSCFG540_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 540"]
-pub mod sys_iomux_cfgsaif_syscfg540;
-#[doc = "sys_iomux_cfgsaif_syscfg544 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 544\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg544::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg544::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg544`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG544 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg544::SYS_IOMUX_CFGSAIF_SYSCFG544_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 544"]
-pub mod sys_iomux_cfgsaif_syscfg544;
-#[doc = "sys_iomux_cfgsaif_syscfg548 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 548\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg548::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg548::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg548`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG548 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg548::SYS_IOMUX_CFGSAIF_SYSCFG548_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 548"]
-pub mod sys_iomux_cfgsaif_syscfg548;
-#[doc = "sys_iomux_cfgsaif_syscfg552 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 552\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg552::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg552::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg552`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG552 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg552::SYS_IOMUX_CFGSAIF_SYSCFG552_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 552"]
-pub mod sys_iomux_cfgsaif_syscfg552;
-#[doc = "sys_iomux_cfgsaif_syscfg556 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 556\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg556::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg556::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg556`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG556 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg556::SYS_IOMUX_CFGSAIF_SYSCFG556_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 556"]
-pub mod sys_iomux_cfgsaif_syscfg556;
-#[doc = "sys_iomux_cfgsaif_syscfg560 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 560\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg560::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg560::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg560`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG560 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg560::SYS_IOMUX_CFGSAIF_SYSCFG560_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 560"]
-pub mod sys_iomux_cfgsaif_syscfg560;
-#[doc = "sys_iomux_cfgsaif_syscfg564 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 564\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg564::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg564::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg564`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG564 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg564::SYS_IOMUX_CFGSAIF_SYSCFG564_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 564"]
-pub mod sys_iomux_cfgsaif_syscfg564;
-#[doc = "sys_iomux_cfgsaif_syscfg568 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 568\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg568::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg568::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg568`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG568 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg568::SYS_IOMUX_CFGSAIF_SYSCFG568_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 568"]
-pub mod sys_iomux_cfgsaif_syscfg568;
-#[doc = "sys_iomux_cfgsaif_syscfg572 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 572\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg572::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg572::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg572`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG572 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg572::SYS_IOMUX_CFGSAIF_SYSCFG572_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 572"]
-pub mod sys_iomux_cfgsaif_syscfg572;
-#[doc = "sys_iomux_cfgsaif_syscfg576 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 576\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg576::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg576::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg576`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG576 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg576::SYS_IOMUX_CFGSAIF_SYSCFG576_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 576"]
-pub mod sys_iomux_cfgsaif_syscfg576;
-#[doc = "sys_iomux_cfgsaif_syscfg580 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 580\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg580::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg580::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg580`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG580 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg580::SYS_IOMUX_CFGSAIF_SYSCFG580_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 580"]
-pub mod sys_iomux_cfgsaif_syscfg580;
-#[doc = "sys_iomux_cfgsaif_syscfg584 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 584\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg584::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg584::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg584`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG584 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg584::SYS_IOMUX_CFGSAIF_SYSCFG584_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 584"]
-pub mod sys_iomux_cfgsaif_syscfg584;
-#[doc = "sys_iomux_cfgsaif_syscfg588 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 588\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg588::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg588::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg588`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG588 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg588::SYS_IOMUX_CFGSAIF_SYSCFG588_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 588"]
-pub mod sys_iomux_cfgsaif_syscfg588;
-#[doc = "sys_iomux_cfgsaif_syscfg592 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 592\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg592::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg592::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg592`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG592 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg592::SYS_IOMUX_CFGSAIF_SYSCFG592_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 592"]
-pub mod sys_iomux_cfgsaif_syscfg592;
-#[doc = "sys_iomux_cfgsaif_syscfg596 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 596\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg596::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg596::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg596`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG596 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg596::SYS_IOMUX_CFGSAIF_SYSCFG596_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 596"]
-pub mod sys_iomux_cfgsaif_syscfg596;
-#[doc = "sys_iomux_cfgsaif_syscfg600 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 600\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg600::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg600::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg600`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG600 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg600::SYS_IOMUX_CFGSAIF_SYSCFG600_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 600"]
-pub mod sys_iomux_cfgsaif_syscfg600;
-#[doc = "sys_iomux_cfgsaif_syscfg604 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 604\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg604::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg604::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg604`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG604 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg604::SYS_IOMUX_CFGSAIF_SYSCFG604_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 604"]
-pub mod sys_iomux_cfgsaif_syscfg604;
-#[doc = "sys_iomux_cfgsaif_syscfg608 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 608\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg608::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg608::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg608`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG608 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg608::SYS_IOMUX_CFGSAIF_SYSCFG608_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 608"]
-pub mod sys_iomux_cfgsaif_syscfg608;
-#[doc = "sys_iomux_cfgsaif_syscfg612 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 612\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg612::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg612::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg612`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG612 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg612::SYS_IOMUX_CFGSAIF_SYSCFG612_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 612"]
-pub mod sys_iomux_cfgsaif_syscfg612;
-#[doc = "sys_iomux_cfgsaif_syscfg616 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 616\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg616::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg616::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg616`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG616 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg616::SYS_IOMUX_CFGSAIF_SYSCFG616_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 616"]
-pub mod sys_iomux_cfgsaif_syscfg616;
-#[doc = "sys_iomux_cfgsaif_syscfg620 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 620\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg620::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg620::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg620`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG620 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg620::SYS_IOMUX_CFGSAIF_SYSCFG620_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 620"]
-pub mod sys_iomux_cfgsaif_syscfg620;
-#[doc = "sys_iomux_cfgsaif_syscfg624 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 624\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg624::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg624::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg624`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG624 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg624::SYS_IOMUX_CFGSAIF_SYSCFG624_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 624"]
-pub mod sys_iomux_cfgsaif_syscfg624;
-#[doc = "sys_iomux_cfgsaif_syscfg628 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 628\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg628::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg628::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg628`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG628 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg628::SYS_IOMUX_CFGSAIF_SYSCFG628_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 628"]
-pub mod sys_iomux_cfgsaif_syscfg628;
-#[doc = "sys_iomux_cfgsaif_syscfg632 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 632\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg632::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg632::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg632`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG632 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg632::SYS_IOMUX_CFGSAIF_SYSCFG632_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 632"]
-pub mod sys_iomux_cfgsaif_syscfg632;
-#[doc = "sys_iomux_cfgsaif_syscfg636 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 636\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg636::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg636::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg636`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG636 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg636::SYS_IOMUX_CFGSAIF_SYSCFG636_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 636"]
-pub mod sys_iomux_cfgsaif_syscfg636;
-#[doc = "sys_iomux_cfgsaif_syscfg640 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 640\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg640::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg640::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg640`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG640 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg640::SYS_IOMUX_CFGSAIF_SYSCFG640_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 640"]
-pub mod sys_iomux_cfgsaif_syscfg640;
-#[doc = "sys_iomux_cfgsaif_syscfg644 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 644\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg644::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg644::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg644`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG644 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg644::SYS_IOMUX_CFGSAIF_SYSCFG644_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 644"]
-pub mod sys_iomux_cfgsaif_syscfg644;
-#[doc = "sys_iomux_cfgsaif_syscfg648 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 648\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg648::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg648::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg648`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG648 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg648::SYS_IOMUX_CFGSAIF_SYSCFG648_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 648"]
-pub mod sys_iomux_cfgsaif_syscfg648;
-#[doc = "sys_iomux_cfgsaif_syscfg652 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 652\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg652::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg652::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg652`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG652 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg652::SYS_IOMUX_CFGSAIF_SYSCFG652_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 652"]
-pub mod sys_iomux_cfgsaif_syscfg652;
-#[doc = "sys_iomux_cfgsaif_syscfg656 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 656\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg656::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg656::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg656`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG656 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg656::SYS_IOMUX_CFGSAIF_SYSCFG656_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 656"]
-pub mod sys_iomux_cfgsaif_syscfg656;
-#[doc = "sys_iomux_cfgsaif_syscfg660 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 660\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg660::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg660::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg660`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG660 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg660::SYS_IOMUX_CFGSAIF_SYSCFG660_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 660"]
-pub mod sys_iomux_cfgsaif_syscfg660;
-#[doc = "sys_iomux_cfgsaif_syscfg664 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 664\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg664::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg664::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg664`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG664 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg664::SYS_IOMUX_CFGSAIF_SYSCFG664_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 664"]
-pub mod sys_iomux_cfgsaif_syscfg664;
-#[doc = "sys_iomux_cfgsaif_syscfg668 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 668\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg668::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg668::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg668`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG668 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg668::SYS_IOMUX_CFGSAIF_SYSCFG668_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 668"]
-pub mod sys_iomux_cfgsaif_syscfg668;
-#[doc = "sys_iomux_cfgsaif_syscfg672 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 672\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg672::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg672::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg672`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG672 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg672::SYS_IOMUX_CFGSAIF_SYSCFG672_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 672"]
-pub mod sys_iomux_cfgsaif_syscfg672;
-#[doc = "sys_iomux_cfgsaif_syscfg676 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 676\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg676::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg676::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg676`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG676 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg676::SYS_IOMUX_CFGSAIF_SYSCFG676_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 676"]
-pub mod sys_iomux_cfgsaif_syscfg676;
-#[doc = "sys_iomux_cfgsaif_syscfg680 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 680\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg680::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg680::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg680`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG680 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg680::SYS_IOMUX_CFGSAIF_SYSCFG680_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 680"]
-pub mod sys_iomux_cfgsaif_syscfg680;
-#[doc = "sys_iomux_cfgsaif_syscfg684 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 684\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg684::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg684::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg684`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG684 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg684::SYS_IOMUX_CFGSAIF_SYSCFG684_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 684"]
-pub mod sys_iomux_cfgsaif_syscfg684;
-#[doc = "sys_iomux_cfgsaif_syscfg688 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 688\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg688::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg688::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg688`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG688 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg688::SYS_IOMUX_CFGSAIF_SYSCFG688_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 688"]
-pub mod sys_iomux_cfgsaif_syscfg688;
-#[doc = "sys_iomux_cfgsaif_syscfg692 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 692\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sys_iomux_cfgsaif_syscfg692::R`].  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sys_iomux_cfgsaif_syscfg692::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sys_iomux_cfgsaif_syscfg692`]
-module"]
-pub type SYS_IOMUX_CFGSAIF_SYSCFG692 =
-    crate::Reg<sys_iomux_cfgsaif_syscfg692::SYS_IOMUX_CFGSAIF_SYSCFG692_SPEC>;
-#[doc = "SYS IOMUX CFG SAIF SYSCFG 692"]
-pub mod sys_iomux_cfgsaif_syscfg692;
+impl RegisterBlock {
+    #[doc = "0x38 - SYS IOMUX CFGSAIF SYSCFG IOIRQ 56: GPIO Interrupt Edge Trigger Selector"]
+    #[inline(always)]
+    pub const fn ioirq1(&self) -> &IOIRQ1 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(56usize).cast() }
+    }
+    #[doc = "0x38 - SYS IOMUX CFG SAIF SYSCFG FMUX 14 DOEN"]
+    #[inline(always)]
+    pub const fn gpo_doen14(&self) -> &GPO_DOEN14 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(56usize).cast() }
+    }
+    #[doc = "0x39 - SYS IOMUX CFGSAIF SYSCFG IOIRQ 57: GPIO Interrupt Edge Trigger Selector"]
+    #[inline(always)]
+    pub const fn ioirq2(&self) -> &IOIRQ2 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(57usize).cast() }
+    }
+    #[doc = "0x3a - SYS IOMUX CFGSAIF SYSCFG IOIRQ 58: GPIO Interrupt Clear"]
+    #[inline(always)]
+    pub const fn ioirq3(&self) -> &IOIRQ3 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(58usize).cast() }
+    }
+    #[doc = "0x3b - SYS IOMUX CFGSAIF SYSCFG IOIRQ 59: GPIO Interrupt Clear"]
+    #[inline(always)]
+    pub const fn ioirq4(&self) -> &IOIRQ4 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(59usize).cast() }
+    }
+    #[doc = "0x3c - SYS IOMUX CFGSAIF SYSCFG IOIRQ 60: GPIO Interrupt Both Edge Trigger Selector"]
+    #[inline(always)]
+    pub const fn ioirq5(&self) -> &IOIRQ5 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(60usize).cast() }
+    }
+    #[doc = "0x3c - SYS IOMUX CFG SAIF SYSCFG FMUX 15 DOEN"]
+    #[inline(always)]
+    pub const fn gpo_doen15(&self) -> &GPO_DOEN15 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(60usize).cast() }
+    }
+    #[doc = "0x3d - SYS IOMUX CFGSAIF SYSCFG IOIRQ 61: GPIO Interrupt Both Edge Trigger Selector"]
+    #[inline(always)]
+    pub const fn ioirq6(&self) -> &IOIRQ6 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(61usize).cast() }
+    }
+    #[doc = "0x3e - SYS IOMUX CFGSAIF SYSCFG IOIRQ 62: GPIO Interrupt Edge Value"]
+    #[inline(always)]
+    pub const fn ioirq7(&self) -> &IOIRQ7 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(62usize).cast() }
+    }
+    #[doc = "0x3f - SYS IOMUX CFGSAIF SYSCFG IOIRQ 63: GPIO Interrupt Edge Value"]
+    #[inline(always)]
+    pub const fn ioirq8(&self) -> &IOIRQ8 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(63usize).cast() }
+    }
+    #[doc = "0x40 - SYS IOMUX CFGSAIF SYSCFG IOIRQ 64: GPIO Interrupt Edge Mask Selector"]
+    #[inline(always)]
+    pub const fn ioirq9(&self) -> &IOIRQ9 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(64usize).cast() }
+    }
+    #[doc = "0x40 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 0-3 DOUT"]
+    #[inline(always)]
+    pub const fn gpo_dout0_3(&self) -> &GPO_DOUT0_3 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(64usize).cast() }
+    }
+    #[doc = "0x41 - SYS IOMUX CFGSAIF SYSCFG IOIRQ 65: GPIO Interrupt Edge Mask Selector"]
+    #[inline(always)]
+    pub const fn ioirq10(&self) -> &IOIRQ10 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(65usize).cast() }
+    }
+    #[doc = "0x42 - SYS IOMUX CFGSAIF SYSCFG IOIRQ 66: GPIO Register Interrupt Status"]
+    #[inline(always)]
+    pub const fn ioirq11(&self) -> &IOIRQ11 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(66usize).cast() }
+    }
+    #[doc = "0x43 - SYS IOMUX CFGSAIF SYSCFG IOIRQ 67: GPIO Register Interrupt Status"]
+    #[inline(always)]
+    pub const fn ioirq12(&self) -> &IOIRQ12 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(67usize).cast() }
+    }
+    #[doc = "0x44 - SYS IOMUX CFGSAIF SYSCFG IOIRQ 68: GPIO Masked Interrupt Status"]
+    #[inline(always)]
+    pub const fn ioirq13(&self) -> &IOIRQ13 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(68usize).cast() }
+    }
+    #[doc = "0x44 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 4-7 DOUT"]
+    #[inline(always)]
+    pub const fn gpo_dout4_7(&self) -> &GPO_DOUT4_7 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(68usize).cast() }
+    }
+    #[doc = "0x45 - SYS IOMUX CFGSAIF SYSCFG IOIRQ 69: GPIO Masked Interrupt Status"]
+    #[inline(always)]
+    pub const fn ioirq14(&self) -> &IOIRQ14 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(69usize).cast() }
+    }
+    #[doc = "0x46 - SYS IOMUX CFGSAIF SYSCFG IOIRQ 70: GPIO Synchronization Status"]
+    #[inline(always)]
+    pub const fn ioirq15(&self) -> &IOIRQ15 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(70usize).cast() }
+    }
+    #[doc = "0x47 - SYS IOMUX CFGSAIF SYSCFG IOIRQ 71: GPIO Synchronization Status"]
+    #[inline(always)]
+    pub const fn ioirq16(&self) -> &IOIRQ16 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(71usize).cast() }
+    }
+    #[doc = "0x48 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 8-11 DOUT"]
+    #[inline(always)]
+    pub const fn gpo_dout8_11(&self) -> &GPO_DOUT8_11 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(72usize).cast() }
+    }
+    #[doc = "0x4b - GPIO GMAC1 MDC Pad Configuration"]
+    #[inline(always)]
+    pub const fn padcfg_gmac1_mdc_syscon(&self) -> &PADCFG_GMAC1_MDC_SYSCON {
+        unsafe { &*(self as *const Self).cast::<u8>().add(75usize).cast() }
+    }
+    #[doc = "0x4c - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 12-15 DOUT"]
+    #[inline(always)]
+    pub const fn gpo_dout12_15(&self) -> &GPO_DOUT12_15 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(76usize).cast() }
+    }
+    #[doc = "0x4f - GPIO GMAC1 MDIO Pad Configuration"]
+    #[inline(always)]
+    pub const fn padcfg_gmac1_mdio_syscon(&self) -> &PADCFG_GMAC1_MDIO_SYSCON {
+        unsafe { &*(self as *const Self).cast::<u8>().add(79usize).cast() }
+    }
+    #[doc = "0x50 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 16-19 DOUT"]
+    #[inline(always)]
+    pub const fn gpo_dout16_19(&self) -> &GPO_DOUT16_19 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(80usize).cast() }
+    }
+    #[doc = "0x53 - GPIO GMAC1 RXD0 Pad Configuration"]
+    #[inline(always)]
+    pub const fn padcfg_gmac1_rxd0_syscon(&self) -> &PADCFG_GMAC1_RXD0_SYSCON {
+        unsafe { &*(self as *const Self).cast::<u8>().add(83usize).cast() }
+    }
+    #[doc = "0x54 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 20-23 DOUT"]
+    #[inline(always)]
+    pub const fn gpo_dout20_23(&self) -> &GPO_DOUT20_23 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(84usize).cast() }
+    }
+    #[doc = "0x57 - GPIO GMAC1 RXD1 Pad Configuration"]
+    #[inline(always)]
+    pub const fn padcfg_gmac1_rxd1_syscon(&self) -> &PADCFG_GMAC1_RXD1_SYSCON {
+        unsafe { &*(self as *const Self).cast::<u8>().add(87usize).cast() }
+    }
+    #[doc = "0x58 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 24-27 DOUT"]
+    #[inline(always)]
+    pub const fn gpo_dout24_27(&self) -> &GPO_DOUT24_27 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(88usize).cast() }
+    }
+    #[doc = "0x5b - GPIO GMAC1 RXD2 Pad Configuration"]
+    #[inline(always)]
+    pub const fn padcfg_gmac1_rxd2_syscon(&self) -> &PADCFG_GMAC1_RXD2_SYSCON {
+        unsafe { &*(self as *const Self).cast::<u8>().add(91usize).cast() }
+    }
+    #[doc = "0x5c - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 28-31 DOUT"]
+    #[inline(always)]
+    pub const fn gpo_dout28_31(&self) -> &GPO_DOUT28_31 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(92usize).cast() }
+    }
+    #[doc = "0x5f - GPIO GMAC1 RXD3 Pad Configuration"]
+    #[inline(always)]
+    pub const fn padcfg_gmac1_rxd3_syscon(&self) -> &PADCFG_GMAC1_RXD3_SYSCON {
+        unsafe { &*(self as *const Self).cast::<u8>().add(95usize).cast() }
+    }
+    #[doc = "0x60 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 32-35 DOUT"]
+    #[inline(always)]
+    pub const fn gpo_dout32_35(&self) -> &GPO_DOUT32_35 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(96usize).cast() }
+    }
+    #[doc = "0x63 - GPIO GMAC1 RXDV Pad Configuration"]
+    #[inline(always)]
+    pub const fn padcfg_gmac1_rxdv_syscon(&self) -> &PADCFG_GMAC1_RXDV_SYSCON {
+        unsafe { &*(self as *const Self).cast::<u8>().add(99usize).cast() }
+    }
+    #[doc = "0x64 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 36-39 DOUT"]
+    #[inline(always)]
+    pub const fn gpo_dout36_39(&self) -> &GPO_DOUT36_39 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(100usize).cast() }
+    }
+    #[doc = "0x67 - GPIO GMAC1 RXC Pad Configuration"]
+    #[inline(always)]
+    pub const fn padcfg_gmac1_rxc_syscon(&self) -> &PADCFG_GMAC1_RXC_SYSCON {
+        unsafe { &*(self as *const Self).cast::<u8>().add(103usize).cast() }
+    }
+    #[doc = "0x68 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 40-43 DOUT"]
+    #[inline(always)]
+    pub const fn gpo_dout40_43(&self) -> &GPO_DOUT40_43 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(104usize).cast() }
+    }
+    #[doc = "0x6b - GPIO GMAC1 TXD0 Pad Configuration"]
+    #[inline(always)]
+    pub const fn padcfg_gmac1_txd0_syscon(&self) -> &PADCFG_GMAC1_TXD0_SYSCON {
+        unsafe { &*(self as *const Self).cast::<u8>().add(107usize).cast() }
+    }
+    #[doc = "0x6c - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 44-47 DOUT"]
+    #[inline(always)]
+    pub const fn gpo_dout44_47(&self) -> &GPO_DOUT44_47 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(108usize).cast() }
+    }
+    #[doc = "0x6f - GPIO GMAC1 TXD1 Pad Configuration"]
+    #[inline(always)]
+    pub const fn padcfg_gmac1_txd1_syscon(&self) -> &PADCFG_GMAC1_TXD1_SYSCON {
+        unsafe { &*(self as *const Self).cast::<u8>().add(111usize).cast() }
+    }
+    #[doc = "0x70 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 48-51 DOUT"]
+    #[inline(always)]
+    pub const fn gpo_dout48_51(&self) -> &GPO_DOUT48_51 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(112usize).cast() }
+    }
+    #[doc = "0x73 - GPIO GMAC1 TXD2 Pad Configuration"]
+    #[inline(always)]
+    pub const fn padcfg_gmac1_txd2_syscon(&self) -> &PADCFG_GMAC1_TXD2_SYSCON {
+        unsafe { &*(self as *const Self).cast::<u8>().add(115usize).cast() }
+    }
+    #[doc = "0x74 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 52-55 DOUT"]
+    #[inline(always)]
+    pub const fn gpo_dout52_55(&self) -> &GPO_DOUT52_55 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(116usize).cast() }
+    }
+    #[doc = "0x77 - GPIO GMAC1 TXD3 Pad Configuration"]
+    #[inline(always)]
+    pub const fn padcfg_gmac1_txd3_syscon(&self) -> &PADCFG_GMAC1_TXD3_SYSCON {
+        unsafe { &*(self as *const Self).cast::<u8>().add(119usize).cast() }
+    }
+    #[doc = "0x78 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 56-59 DOUT"]
+    #[inline(always)]
+    pub const fn gpo_dout56_59(&self) -> &GPO_DOUT56_59 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(120usize).cast() }
+    }
+    #[doc = "0x7b - GPIO GMAC1 TXEN Pad Configuration"]
+    #[inline(always)]
+    pub const fn padcfg_gmac1_txen_syscon(&self) -> &PADCFG_GMAC1_TXEN_SYSCON {
+        unsafe { &*(self as *const Self).cast::<u8>().add(123usize).cast() }
+    }
+    #[doc = "0x7c - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 60-63 DOUT"]
+    #[inline(always)]
+    pub const fn gpo_dout60_63(&self) -> &GPO_DOUT60_63 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(124usize).cast() }
+    }
+    #[doc = "0x7f - GPIO GMAC1 TXC Pad Configuration"]
+    #[inline(always)]
+    pub const fn padcfg_gmac1_txc_syscon(&self) -> &PADCFG_GMAC1_TXC_SYSCON {
+        unsafe { &*(self as *const Self).cast::<u8>().add(127usize).cast() }
+    }
+    #[doc = "0x80 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 0 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+    #[inline(always)]
+    pub const fn gpi0(&self) -> &GPI0 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(128usize).cast() }
+    }
+    #[doc = "0x248 - SYS IOMUX CFG SAIF SYSCFG PADCFG 584: SD0_STRB"]
+    #[inline(always)]
+    pub const fn padcfg_sd0_strb(&self) -> &PADCFG_SD0_STRB {
+        unsafe { &*(self as *const Self).cast::<u8>().add(584usize).cast() }
+    }
+    #[doc = "0x248 - SYS IOMUX CFG SAIF SYSCFG PADCFG 584: SD0_DATA2"]
+    #[inline(always)]
+    pub const fn padcfg_sd0_data2(&self) -> &PADCFG_SD0_DATA2 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(584usize).cast() }
+    }
+    #[doc = "0x288 - SYS IOMUX CFG SAIF SYSCFG PADCFG 648: QSPI_CSN0"]
+    #[inline(always)]
+    pub const fn padcfg_qspi_csn0(&self) -> &PADCFG_QSPI_CSN0 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(648usize).cast() }
+    }
+    #[doc = "0x288 - SYS IOMUX CFG SAIF SYSCFG PADCFG 648: SD0_DATA6"]
+    #[inline(always)]
+    pub const fn padcfg_sd0_data6(&self) -> &PADCFG_SD0_DATA6 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(648usize).cast() }
+    }
+    #[doc = "0x29c - SYS IOMUX CFG SAIF SYSCFG 0"]
+    #[inline(always)]
+    pub const fn func_sel0(&self) -> &FUNC_SEL0 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(668usize).cast() }
+    }
+    #[doc = "0x29c - SYS IOMUX CFG SAIF SYSCFG PADCFG 668: QSPI_DATA1"]
+    #[inline(always)]
+    pub const fn padcfg_qspi_data1(&self) -> &PADCFG_QSPI_DATA1 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(668usize).cast() }
+    }
+    #[doc = "0x2ac - SYS IOMUX CFG SAIF SYSCFG 4"]
+    #[inline(always)]
+    pub const fn func_sel4(&self) -> &FUNC_SEL4 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(684usize).cast() }
+    }
+    #[doc = "0x2ac - SYS IOMUX CFG SAIF SYSCFG PADCFG 684: QSPI_DATA2"]
+    #[inline(always)]
+    pub const fn padcfg_qspi_data2(&self) -> &PADCFG_QSPI_DATA2 {
+        unsafe { &*(self as *const Self).cast::<u8>().add(684usize).cast() }
+    }
+}
+#[doc = "gpo_doen0 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 0 DOEN\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_doen0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_doen0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_doen0`]
+module"]
+pub type GPO_DOEN0 = crate::Reg<gpo_doen0::GPO_DOEN0_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 0 DOEN"]
+pub mod gpo_doen0;
+#[doc = "gpo_doen1 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 1 DOEN\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_doen1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_doen1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_doen1`]
+module"]
+pub type GPO_DOEN1 = crate::Reg<gpo_doen1::GPO_DOEN1_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 1 DOEN"]
+pub mod gpo_doen1;
+#[doc = "gpo_doen2 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 2 DOEN\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_doen2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_doen2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_doen2`]
+module"]
+pub type GPO_DOEN2 = crate::Reg<gpo_doen2::GPO_DOEN2_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 2 DOEN"]
+pub mod gpo_doen2;
+#[doc = "gpo_doen3 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 3 DOEN\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_doen3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_doen3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_doen3`]
+module"]
+pub type GPO_DOEN3 = crate::Reg<gpo_doen3::GPO_DOEN3_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 3 DOEN"]
+pub mod gpo_doen3;
+#[doc = "gpo_doen4 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 4 DOEN\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_doen4::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_doen4::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_doen4`]
+module"]
+pub type GPO_DOEN4 = crate::Reg<gpo_doen4::GPO_DOEN4_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 4 DOEN"]
+pub mod gpo_doen4;
+#[doc = "gpo_doen5 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 5 DOEN\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_doen5::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_doen5::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_doen5`]
+module"]
+pub type GPO_DOEN5 = crate::Reg<gpo_doen5::GPO_DOEN5_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 5 DOEN"]
+pub mod gpo_doen5;
+#[doc = "gpo_doen6 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 6 DOEN\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_doen6::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_doen6::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_doen6`]
+module"]
+pub type GPO_DOEN6 = crate::Reg<gpo_doen6::GPO_DOEN6_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 6 DOEN"]
+pub mod gpo_doen6;
+#[doc = "gpo_doen7 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 7 DOEN\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_doen7::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_doen7::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_doen7`]
+module"]
+pub type GPO_DOEN7 = crate::Reg<gpo_doen7::GPO_DOEN7_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 7 DOEN"]
+pub mod gpo_doen7;
+#[doc = "gpo_doen8 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 8 DOEN\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_doen8::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_doen8::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_doen8`]
+module"]
+pub type GPO_DOEN8 = crate::Reg<gpo_doen8::GPO_DOEN8_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 8 DOEN"]
+pub mod gpo_doen8;
+#[doc = "gpo_doen9 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 9 DOEN\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_doen9::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_doen9::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_doen9`]
+module"]
+pub type GPO_DOEN9 = crate::Reg<gpo_doen9::GPO_DOEN9_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 9 DOEN"]
+pub mod gpo_doen9;
+#[doc = "gpo_doen10 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 10 DOEN\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_doen10::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_doen10::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_doen10`]
+module"]
+pub type GPO_DOEN10 = crate::Reg<gpo_doen10::GPO_DOEN10_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 10 DOEN"]
+pub mod gpo_doen10;
+#[doc = "gpo_doen11 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 11 DOEN\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_doen11::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_doen11::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_doen11`]
+module"]
+pub type GPO_DOEN11 = crate::Reg<gpo_doen11::GPO_DOEN11_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 11 DOEN"]
+pub mod gpo_doen11;
+#[doc = "gpo_doen12 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 12 DOEN\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_doen12::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_doen12::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_doen12`]
+module"]
+pub type GPO_DOEN12 = crate::Reg<gpo_doen12::GPO_DOEN12_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 12 DOEN"]
+pub mod gpo_doen12;
+#[doc = "gpo_doen13 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 13 DOEN\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_doen13::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_doen13::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_doen13`]
+module"]
+pub type GPO_DOEN13 = crate::Reg<gpo_doen13::GPO_DOEN13_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 13 DOEN"]
+pub mod gpo_doen13;
+#[doc = "gpo_doen14 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 14 DOEN\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_doen14::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_doen14::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_doen14`]
+module"]
+pub type GPO_DOEN14 = crate::Reg<gpo_doen14::GPO_DOEN14_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 14 DOEN"]
+pub mod gpo_doen14;
+#[doc = "gpo_doen15 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX 15 DOEN\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_doen15::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_doen15::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_doen15`]
+module"]
+pub type GPO_DOEN15 = crate::Reg<gpo_doen15::GPO_DOEN15_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 15 DOEN"]
+pub mod gpo_doen15;
+#[doc = "gpo_dout0_3 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 0-3 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout0_3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout0_3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_dout0_3`]
+module"]
+pub type GPO_DOUT0_3 = crate::Reg<gpo_dout0_3::GPO_DOUT0_3_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 0-3 DOUT"]
+pub mod gpo_dout0_3;
+#[doc = "gpo_dout4_7 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 4-7 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout4_7::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout4_7::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_dout4_7`]
+module"]
+pub type GPO_DOUT4_7 = crate::Reg<gpo_dout4_7::GPO_DOUT4_7_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 4-7 DOUT"]
+pub mod gpo_dout4_7;
+#[doc = "gpo_dout8_11 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 8-11 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout8_11::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout8_11::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_dout8_11`]
+module"]
+pub type GPO_DOUT8_11 = crate::Reg<gpo_dout8_11::GPO_DOUT8_11_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 8-11 DOUT"]
+pub mod gpo_dout8_11;
+#[doc = "gpo_dout12_15 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 12-15 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout12_15::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout12_15::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_dout12_15`]
+module"]
+pub type GPO_DOUT12_15 = crate::Reg<gpo_dout12_15::GPO_DOUT12_15_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 12-15 DOUT"]
+pub mod gpo_dout12_15;
+#[doc = "gpo_dout16_19 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 16-19 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout16_19::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout16_19::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_dout16_19`]
+module"]
+pub type GPO_DOUT16_19 = crate::Reg<gpo_dout16_19::GPO_DOUT16_19_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 16-19 DOUT"]
+pub mod gpo_dout16_19;
+#[doc = "gpo_dout20_23 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 20-23 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout20_23::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout20_23::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_dout20_23`]
+module"]
+pub type GPO_DOUT20_23 = crate::Reg<gpo_dout20_23::GPO_DOUT20_23_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 20-23 DOUT"]
+pub mod gpo_dout20_23;
+#[doc = "gpo_dout24_27 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 24-27 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout24_27::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout24_27::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_dout24_27`]
+module"]
+pub type GPO_DOUT24_27 = crate::Reg<gpo_dout24_27::GPO_DOUT24_27_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 24-27 DOUT"]
+pub mod gpo_dout24_27;
+#[doc = "gpo_dout28_31 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 28-31 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout28_31::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout28_31::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_dout28_31`]
+module"]
+pub type GPO_DOUT28_31 = crate::Reg<gpo_dout28_31::GPO_DOUT28_31_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 28-31 DOUT"]
+pub mod gpo_dout28_31;
+#[doc = "gpo_dout32_35 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 32-35 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout32_35::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout32_35::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_dout32_35`]
+module"]
+pub type GPO_DOUT32_35 = crate::Reg<gpo_dout32_35::GPO_DOUT32_35_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 32-35 DOUT"]
+pub mod gpo_dout32_35;
+#[doc = "gpo_dout36_39 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 36-39 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout36_39::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout36_39::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_dout36_39`]
+module"]
+pub type GPO_DOUT36_39 = crate::Reg<gpo_dout36_39::GPO_DOUT36_39_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 36-39 DOUT"]
+pub mod gpo_dout36_39;
+#[doc = "gpo_dout40_43 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 40-43 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout40_43::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout40_43::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_dout40_43`]
+module"]
+pub type GPO_DOUT40_43 = crate::Reg<gpo_dout40_43::GPO_DOUT40_43_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 40-43 DOUT"]
+pub mod gpo_dout40_43;
+#[doc = "gpo_dout44_47 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 44-47 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout44_47::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout44_47::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_dout44_47`]
+module"]
+pub type GPO_DOUT44_47 = crate::Reg<gpo_dout44_47::GPO_DOUT44_47_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 44-47 DOUT"]
+pub mod gpo_dout44_47;
+#[doc = "gpo_dout48_51 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 48-51 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout48_51::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout48_51::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_dout48_51`]
+module"]
+pub type GPO_DOUT48_51 = crate::Reg<gpo_dout48_51::GPO_DOUT48_51_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 48-51 DOUT"]
+pub mod gpo_dout48_51;
+#[doc = "gpo_dout52_55 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 52-55 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout52_55::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout52_55::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_dout52_55`]
+module"]
+pub type GPO_DOUT52_55 = crate::Reg<gpo_dout52_55::GPO_DOUT52_55_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 52-55 DOUT"]
+pub mod gpo_dout52_55;
+#[doc = "gpo_dout56_59 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 56-59 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout56_59::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout56_59::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_dout56_59`]
+module"]
+pub type GPO_DOUT56_59 = crate::Reg<gpo_dout56_59::GPO_DOUT56_59_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 56-59 DOUT"]
+pub mod gpo_dout56_59;
+#[doc = "gpo_dout60_63 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 60-63 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout60_63::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout60_63::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpo_dout60_63`]
+module"]
+pub type GPO_DOUT60_63 = crate::Reg<gpo_dout60_63::GPO_DOUT60_63_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 60-63 DOUT"]
+pub mod gpo_dout60_63;
+#[doc = "gpi0 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 0 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpi0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpi0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpi0`]
+module"]
+pub type GPI0 = crate::Reg<gpi0::GPI0_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 0 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+pub mod gpi0;
+#[doc = "gpi4 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 4 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpi4::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpi4::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpi4`]
+module"]
+pub type GPI4 = crate::Reg<gpi4::GPI4_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 4 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+pub mod gpi4;
+#[doc = "gpi8 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 8 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpi8::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpi8::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpi8`]
+module"]
+pub type GPI8 = crate::Reg<gpi8::GPI8_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 8 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+pub mod gpi8;
+#[doc = "gpi12 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 12 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpi12::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpi12::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpi12`]
+module"]
+pub type GPI12 = crate::Reg<gpi12::GPI12_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 12 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+pub mod gpi12;
+#[doc = "gpi16 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 16 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpi16::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpi16::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpi16`]
+module"]
+pub type GPI16 = crate::Reg<gpi16::GPI16_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 16 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+pub mod gpi16;
+#[doc = "gpi20 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 20 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpi20::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpi20::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpi20`]
+module"]
+pub type GPI20 = crate::Reg<gpi20::GPI20_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 20 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+pub mod gpi20;
+#[doc = "gpi24 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 24 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpi24::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpi24::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpi24`]
+module"]
+pub type GPI24 = crate::Reg<gpi24::GPI24_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 24 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+pub mod gpi24;
+#[doc = "gpi28 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 28 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpi28::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpi28::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpi28`]
+module"]
+pub type GPI28 = crate::Reg<gpi28::GPI28_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 28 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+pub mod gpi28;
+#[doc = "gpi32 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 32 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpi32::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpi32::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpi32`]
+module"]
+pub type GPI32 = crate::Reg<gpi32::GPI32_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 32 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+pub mod gpi32;
+#[doc = "gpi36 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 36 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpi36::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpi36::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpi36`]
+module"]
+pub type GPI36 = crate::Reg<gpi36::GPI36_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 36 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+pub mod gpi36;
+#[doc = "gpi40 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 40 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpi40::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpi40::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpi40`]
+module"]
+pub type GPI40 = crate::Reg<gpi40::GPI40_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 40 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+pub mod gpi40;
+#[doc = "gpi44 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 44 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpi44::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpi44::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpi44`]
+module"]
+pub type GPI44 = crate::Reg<gpi44::GPI44_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 44 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+pub mod gpi44;
+#[doc = "gpi48 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 48 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpi48::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpi48::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpi48`]
+module"]
+pub type GPI48 = crate::Reg<gpi48::GPI48_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 48 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+pub mod gpi48;
+#[doc = "gpi52 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 52 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpi52::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpi52::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpi52`]
+module"]
+pub type GPI52 = crate::Reg<gpi52::GPI52_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 52 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+pub mod gpi52;
+#[doc = "gpi56 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 56 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpi56::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpi56::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpi56`]
+module"]
+pub type GPI56 = crate::Reg<gpi56::GPI56_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 56 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+pub mod gpi56;
+#[doc = "gpi60 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 60 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpi60::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpi60::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpi60`]
+module"]
+pub type GPI60 = crate::Reg<gpi60::GPI60_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 60 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+pub mod gpi60;
+#[doc = "gpi64 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 64 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpi64::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpi64::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpi64`]
+module"]
+pub type GPI64 = crate::Reg<gpi64::GPI64_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 64 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+pub mod gpi64;
+#[doc = "gpi68 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 68 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpi68::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpi68::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpi68`]
+module"]
+pub type GPI68 = crate::Reg<gpi68::GPI68_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 68 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+pub mod gpi68;
+#[doc = "gpi72 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 72 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpi72::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpi72::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpi72`]
+module"]
+pub type GPI72 = crate::Reg<gpi72::GPI72_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 72 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+pub mod gpi72;
+#[doc = "gpi76 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 76 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpi76::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpi76::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpi76`]
+module"]
+pub type GPI76 = crate::Reg<gpi76::GPI76_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 76 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+pub mod gpi76;
+#[doc = "gpi80 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 80 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpi80::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpi80::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpi80`]
+module"]
+pub type GPI80 = crate::Reg<gpi80::GPI80_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 80 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+pub mod gpi80;
+#[doc = "gpi84 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 84 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpi84::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpi84::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpi84`]
+module"]
+pub type GPI84 = crate::Reg<gpi84::GPI84_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 84 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+pub mod gpi84;
+#[doc = "gpi88 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 88 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpi88::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpi88::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`gpi88`]
+module"]
+pub type GPI88 = crate::Reg<gpi88::GPI88_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 88 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
+pub mod gpi88;
+#[doc = "ioirq0 (rw) register accessor: Enable GPIO IRQ function\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ioirq0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ioirq0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`ioirq0`]
+module"]
+pub type IOIRQ0 = crate::Reg<ioirq0::IOIRQ0_SPEC>;
+#[doc = "Enable GPIO IRQ function"]
+pub mod ioirq0;
+#[doc = "ioirq1 (rw) register accessor: SYS IOMUX CFGSAIF SYSCFG IOIRQ 56: GPIO Interrupt Edge Trigger Selector\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ioirq1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ioirq1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`ioirq1`]
+module"]
+pub type IOIRQ1 = crate::Reg<ioirq1::IOIRQ1_SPEC>;
+#[doc = "SYS IOMUX CFGSAIF SYSCFG IOIRQ 56: GPIO Interrupt Edge Trigger Selector"]
+pub mod ioirq1;
+#[doc = "ioirq2 (rw) register accessor: SYS IOMUX CFGSAIF SYSCFG IOIRQ 57: GPIO Interrupt Edge Trigger Selector\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ioirq2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ioirq2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`ioirq2`]
+module"]
+pub type IOIRQ2 = crate::Reg<ioirq2::IOIRQ2_SPEC>;
+#[doc = "SYS IOMUX CFGSAIF SYSCFG IOIRQ 57: GPIO Interrupt Edge Trigger Selector"]
+pub mod ioirq2;
+#[doc = "ioirq3 (rw) register accessor: SYS IOMUX CFGSAIF SYSCFG IOIRQ 58: GPIO Interrupt Clear\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ioirq3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ioirq3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`ioirq3`]
+module"]
+pub type IOIRQ3 = crate::Reg<ioirq3::IOIRQ3_SPEC>;
+#[doc = "SYS IOMUX CFGSAIF SYSCFG IOIRQ 58: GPIO Interrupt Clear"]
+pub mod ioirq3;
+#[doc = "ioirq4 (rw) register accessor: SYS IOMUX CFGSAIF SYSCFG IOIRQ 59: GPIO Interrupt Clear\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ioirq4::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ioirq4::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`ioirq4`]
+module"]
+pub type IOIRQ4 = crate::Reg<ioirq4::IOIRQ4_SPEC>;
+#[doc = "SYS IOMUX CFGSAIF SYSCFG IOIRQ 59: GPIO Interrupt Clear"]
+pub mod ioirq4;
+#[doc = "ioirq5 (rw) register accessor: SYS IOMUX CFGSAIF SYSCFG IOIRQ 60: GPIO Interrupt Both Edge Trigger Selector\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ioirq5::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ioirq5::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`ioirq5`]
+module"]
+pub type IOIRQ5 = crate::Reg<ioirq5::IOIRQ5_SPEC>;
+#[doc = "SYS IOMUX CFGSAIF SYSCFG IOIRQ 60: GPIO Interrupt Both Edge Trigger Selector"]
+pub mod ioirq5;
+#[doc = "ioirq6 (rw) register accessor: SYS IOMUX CFGSAIF SYSCFG IOIRQ 61: GPIO Interrupt Both Edge Trigger Selector\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ioirq6::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ioirq6::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`ioirq6`]
+module"]
+pub type IOIRQ6 = crate::Reg<ioirq6::IOIRQ6_SPEC>;
+#[doc = "SYS IOMUX CFGSAIF SYSCFG IOIRQ 61: GPIO Interrupt Both Edge Trigger Selector"]
+pub mod ioirq6;
+#[doc = "ioirq7 (rw) register accessor: SYS IOMUX CFGSAIF SYSCFG IOIRQ 62: GPIO Interrupt Edge Value\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ioirq7::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ioirq7::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`ioirq7`]
+module"]
+pub type IOIRQ7 = crate::Reg<ioirq7::IOIRQ7_SPEC>;
+#[doc = "SYS IOMUX CFGSAIF SYSCFG IOIRQ 62: GPIO Interrupt Edge Value"]
+pub mod ioirq7;
+#[doc = "ioirq8 (rw) register accessor: SYS IOMUX CFGSAIF SYSCFG IOIRQ 63: GPIO Interrupt Edge Value\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ioirq8::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ioirq8::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`ioirq8`]
+module"]
+pub type IOIRQ8 = crate::Reg<ioirq8::IOIRQ8_SPEC>;
+#[doc = "SYS IOMUX CFGSAIF SYSCFG IOIRQ 63: GPIO Interrupt Edge Value"]
+pub mod ioirq8;
+#[doc = "ioirq9 (rw) register accessor: SYS IOMUX CFGSAIF SYSCFG IOIRQ 64: GPIO Interrupt Edge Mask Selector\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ioirq9::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ioirq9::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`ioirq9`]
+module"]
+pub type IOIRQ9 = crate::Reg<ioirq9::IOIRQ9_SPEC>;
+#[doc = "SYS IOMUX CFGSAIF SYSCFG IOIRQ 64: GPIO Interrupt Edge Mask Selector"]
+pub mod ioirq9;
+#[doc = "ioirq10 (rw) register accessor: SYS IOMUX CFGSAIF SYSCFG IOIRQ 65: GPIO Interrupt Edge Mask Selector\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ioirq10::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ioirq10::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`ioirq10`]
+module"]
+pub type IOIRQ10 = crate::Reg<ioirq10::IOIRQ10_SPEC>;
+#[doc = "SYS IOMUX CFGSAIF SYSCFG IOIRQ 65: GPIO Interrupt Edge Mask Selector"]
+pub mod ioirq10;
+#[doc = "ioirq11 (rw) register accessor: SYS IOMUX CFGSAIF SYSCFG IOIRQ 66: GPIO Register Interrupt Status\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ioirq11::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ioirq11::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`ioirq11`]
+module"]
+pub type IOIRQ11 = crate::Reg<ioirq11::IOIRQ11_SPEC>;
+#[doc = "SYS IOMUX CFGSAIF SYSCFG IOIRQ 66: GPIO Register Interrupt Status"]
+pub mod ioirq11;
+#[doc = "ioirq12 (rw) register accessor: SYS IOMUX CFGSAIF SYSCFG IOIRQ 67: GPIO Register Interrupt Status\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ioirq12::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ioirq12::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`ioirq12`]
+module"]
+pub type IOIRQ12 = crate::Reg<ioirq12::IOIRQ12_SPEC>;
+#[doc = "SYS IOMUX CFGSAIF SYSCFG IOIRQ 67: GPIO Register Interrupt Status"]
+pub mod ioirq12;
+#[doc = "ioirq13 (rw) register accessor: SYS IOMUX CFGSAIF SYSCFG IOIRQ 68: GPIO Masked Interrupt Status\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ioirq13::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ioirq13::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`ioirq13`]
+module"]
+pub type IOIRQ13 = crate::Reg<ioirq13::IOIRQ13_SPEC>;
+#[doc = "SYS IOMUX CFGSAIF SYSCFG IOIRQ 68: GPIO Masked Interrupt Status"]
+pub mod ioirq13;
+#[doc = "ioirq14 (rw) register accessor: SYS IOMUX CFGSAIF SYSCFG IOIRQ 69: GPIO Masked Interrupt Status\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ioirq14::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ioirq14::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`ioirq14`]
+module"]
+pub type IOIRQ14 = crate::Reg<ioirq14::IOIRQ14_SPEC>;
+#[doc = "SYS IOMUX CFGSAIF SYSCFG IOIRQ 69: GPIO Masked Interrupt Status"]
+pub mod ioirq14;
+#[doc = "ioirq15 (rw) register accessor: SYS IOMUX CFGSAIF SYSCFG IOIRQ 70: GPIO Synchronization Status\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ioirq15::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ioirq15::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`ioirq15`]
+module"]
+pub type IOIRQ15 = crate::Reg<ioirq15::IOIRQ15_SPEC>;
+#[doc = "SYS IOMUX CFGSAIF SYSCFG IOIRQ 70: GPIO Synchronization Status"]
+pub mod ioirq15;
+#[doc = "ioirq16 (rw) register accessor: SYS IOMUX CFGSAIF SYSCFG IOIRQ 71: GPIO Synchronization Status\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ioirq16::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ioirq16::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`ioirq16`]
+module"]
+pub type IOIRQ16 = crate::Reg<ioirq16::IOIRQ16_SPEC>;
+#[doc = "SYS IOMUX CFGSAIF SYSCFG IOIRQ 71: GPIO Synchronization Status"]
+pub mod ioirq16;
+#[doc = "padcfg_gpio0 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 288: GPIO0\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio0`]
+module"]
+pub type PADCFG_GPIO0 = crate::Reg<padcfg_gpio0::PADCFG_GPIO0_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 288: GPIO0"]
+pub mod padcfg_gpio0;
+#[doc = "padcfg_gpio1 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 292: GPIO1\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio1`]
+module"]
+pub type PADCFG_GPIO1 = crate::Reg<padcfg_gpio1::PADCFG_GPIO1_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 292: GPIO1"]
+pub mod padcfg_gpio1;
+#[doc = "padcfg_gpio2 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 296: GPIO2\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio2`]
+module"]
+pub type PADCFG_GPIO2 = crate::Reg<padcfg_gpio2::PADCFG_GPIO2_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 296: GPIO2"]
+pub mod padcfg_gpio2;
+#[doc = "padcfg_gpio3 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 300: GPIO3\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio3`]
+module"]
+pub type PADCFG_GPIO3 = crate::Reg<padcfg_gpio3::PADCFG_GPIO3_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 300: GPIO3"]
+pub mod padcfg_gpio3;
+#[doc = "padcfg_gpio4 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 304: GPIO4\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio4::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio4::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio4`]
+module"]
+pub type PADCFG_GPIO4 = crate::Reg<padcfg_gpio4::PADCFG_GPIO4_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 304: GPIO4"]
+pub mod padcfg_gpio4;
+#[doc = "padcfg_gpio5 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 308: GPIO5\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio5::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio5::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio5`]
+module"]
+pub type PADCFG_GPIO5 = crate::Reg<padcfg_gpio5::PADCFG_GPIO5_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 308: GPIO5"]
+pub mod padcfg_gpio5;
+#[doc = "padcfg_gpio6 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 312: GPIO6\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio6::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio6::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio6`]
+module"]
+pub type PADCFG_GPIO6 = crate::Reg<padcfg_gpio6::PADCFG_GPIO6_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 312: GPIO6"]
+pub mod padcfg_gpio6;
+#[doc = "padcfg_gpio7 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 316: GPIO7\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio7::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio7::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio7`]
+module"]
+pub type PADCFG_GPIO7 = crate::Reg<padcfg_gpio7::PADCFG_GPIO7_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 316: GPIO7"]
+pub mod padcfg_gpio7;
+#[doc = "padcfg_gpio8 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 320: GPIO8\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio8::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio8::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio8`]
+module"]
+pub type PADCFG_GPIO8 = crate::Reg<padcfg_gpio8::PADCFG_GPIO8_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 320: GPIO8"]
+pub mod padcfg_gpio8;
+#[doc = "padcfg_gpio9 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 324: GPIO9\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio9::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio9::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio9`]
+module"]
+pub type PADCFG_GPIO9 = crate::Reg<padcfg_gpio9::PADCFG_GPIO9_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 324: GPIO9"]
+pub mod padcfg_gpio9;
+#[doc = "padcfg_gpio10 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 328: GPIO10\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio10::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio10::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio10`]
+module"]
+pub type PADCFG_GPIO10 = crate::Reg<padcfg_gpio10::PADCFG_GPIO10_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 328: GPIO10"]
+pub mod padcfg_gpio10;
+#[doc = "padcfg_gpio11 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 332: GPIO11\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio11::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio11::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio11`]
+module"]
+pub type PADCFG_GPIO11 = crate::Reg<padcfg_gpio11::PADCFG_GPIO11_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 332: GPIO11"]
+pub mod padcfg_gpio11;
+#[doc = "padcfg_gpio12 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 336: GPIO12\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio12::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio12::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio12`]
+module"]
+pub type PADCFG_GPIO12 = crate::Reg<padcfg_gpio12::PADCFG_GPIO12_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 336: GPIO12"]
+pub mod padcfg_gpio12;
+#[doc = "padcfg_gpio13 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 340: GPIO13\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio13::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio13::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio13`]
+module"]
+pub type PADCFG_GPIO13 = crate::Reg<padcfg_gpio13::PADCFG_GPIO13_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 340: GPIO13"]
+pub mod padcfg_gpio13;
+#[doc = "padcfg_gpio14 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 344: GPIO14\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio14::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio14::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio14`]
+module"]
+pub type PADCFG_GPIO14 = crate::Reg<padcfg_gpio14::PADCFG_GPIO14_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 344: GPIO14"]
+pub mod padcfg_gpio14;
+#[doc = "padcfg_gpio15 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 348: GPIO15\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio15::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio15::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio15`]
+module"]
+pub type PADCFG_GPIO15 = crate::Reg<padcfg_gpio15::PADCFG_GPIO15_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 348: GPIO15"]
+pub mod padcfg_gpio15;
+#[doc = "padcfg_gpio16 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 352: GPIO16\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio16::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio16::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio16`]
+module"]
+pub type PADCFG_GPIO16 = crate::Reg<padcfg_gpio16::PADCFG_GPIO16_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 352: GPIO16"]
+pub mod padcfg_gpio16;
+#[doc = "padcfg_gpio17 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 356: GPIO17\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio17::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio17::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio17`]
+module"]
+pub type PADCFG_GPIO17 = crate::Reg<padcfg_gpio17::PADCFG_GPIO17_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 356: GPIO17"]
+pub mod padcfg_gpio17;
+#[doc = "padcfg_gpio18 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 360: GPIO18\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio18::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio18::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio18`]
+module"]
+pub type PADCFG_GPIO18 = crate::Reg<padcfg_gpio18::PADCFG_GPIO18_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 360: GPIO18"]
+pub mod padcfg_gpio18;
+#[doc = "padcfg_gpio19 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 364: GPIO19\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio19::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio19::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio19`]
+module"]
+pub type PADCFG_GPIO19 = crate::Reg<padcfg_gpio19::PADCFG_GPIO19_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 364: GPIO19"]
+pub mod padcfg_gpio19;
+#[doc = "padcfg_gpio20 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 368: GPIO20\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio20::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio20::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio20`]
+module"]
+pub type PADCFG_GPIO20 = crate::Reg<padcfg_gpio20::PADCFG_GPIO20_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 368: GPIO20"]
+pub mod padcfg_gpio20;
+#[doc = "padcfg_gpio21 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 372: GPIO21\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio21::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio21::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio21`]
+module"]
+pub type PADCFG_GPIO21 = crate::Reg<padcfg_gpio21::PADCFG_GPIO21_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 372: GPIO21"]
+pub mod padcfg_gpio21;
+#[doc = "padcfg_gpio22 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 376: GPIO22\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio22::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio22::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio22`]
+module"]
+pub type PADCFG_GPIO22 = crate::Reg<padcfg_gpio22::PADCFG_GPIO22_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 376: GPIO22"]
+pub mod padcfg_gpio22;
+#[doc = "padcfg_gpio23 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 380: GPIO23\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio23::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio23::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio23`]
+module"]
+pub type PADCFG_GPIO23 = crate::Reg<padcfg_gpio23::PADCFG_GPIO23_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 380: GPIO23"]
+pub mod padcfg_gpio23;
+#[doc = "padcfg_gpio24 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 384: GPIO24\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio24::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio24::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio24`]
+module"]
+pub type PADCFG_GPIO24 = crate::Reg<padcfg_gpio24::PADCFG_GPIO24_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 384: GPIO24"]
+pub mod padcfg_gpio24;
+#[doc = "padcfg_gpio25 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 388: GPIO25\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio25::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio25::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio25`]
+module"]
+pub type PADCFG_GPIO25 = crate::Reg<padcfg_gpio25::PADCFG_GPIO25_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 388: GPIO25"]
+pub mod padcfg_gpio25;
+#[doc = "padcfg_gpio26 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 392: GPIO26\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio26::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio26::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio26`]
+module"]
+pub type PADCFG_GPIO26 = crate::Reg<padcfg_gpio26::PADCFG_GPIO26_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 392: GPIO26"]
+pub mod padcfg_gpio26;
+#[doc = "padcfg_gpio27 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 396: GPIO27\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio27::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio27::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio27`]
+module"]
+pub type PADCFG_GPIO27 = crate::Reg<padcfg_gpio27::PADCFG_GPIO27_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 396: GPIO27"]
+pub mod padcfg_gpio27;
+#[doc = "padcfg_gpio28 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 400: GPIO28\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio28::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio28::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio28`]
+module"]
+pub type PADCFG_GPIO28 = crate::Reg<padcfg_gpio28::PADCFG_GPIO28_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 400: GPIO28"]
+pub mod padcfg_gpio28;
+#[doc = "padcfg_gpio29 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 404: GPIO29\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio29::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio29::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio29`]
+module"]
+pub type PADCFG_GPIO29 = crate::Reg<padcfg_gpio29::PADCFG_GPIO29_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 404: GPIO29"]
+pub mod padcfg_gpio29;
+#[doc = "padcfg_gpio30 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 408: GPIO30\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio30::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio30::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio30`]
+module"]
+pub type PADCFG_GPIO30 = crate::Reg<padcfg_gpio30::PADCFG_GPIO30_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 408: GPIO30"]
+pub mod padcfg_gpio30;
+#[doc = "padcfg_gpio31 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 412: GPIO31\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio31::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio31::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio31`]
+module"]
+pub type PADCFG_GPIO31 = crate::Reg<padcfg_gpio31::PADCFG_GPIO31_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 412: GPIO31"]
+pub mod padcfg_gpio31;
+#[doc = "padcfg_gpio32 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 416: GPIO32\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio32::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio32::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio32`]
+module"]
+pub type PADCFG_GPIO32 = crate::Reg<padcfg_gpio32::PADCFG_GPIO32_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 416: GPIO32"]
+pub mod padcfg_gpio32;
+#[doc = "padcfg_gpio33 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 420: GPIO33\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio33::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio33::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio33`]
+module"]
+pub type PADCFG_GPIO33 = crate::Reg<padcfg_gpio33::PADCFG_GPIO33_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 420: GPIO33"]
+pub mod padcfg_gpio33;
+#[doc = "padcfg_gpio34 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 424: GPIO34\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio34::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio34::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio34`]
+module"]
+pub type PADCFG_GPIO34 = crate::Reg<padcfg_gpio34::PADCFG_GPIO34_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 424: GPIO34"]
+pub mod padcfg_gpio34;
+#[doc = "padcfg_gpio35 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 428: GPIO35\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio35::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio35::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio35`]
+module"]
+pub type PADCFG_GPIO35 = crate::Reg<padcfg_gpio35::PADCFG_GPIO35_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 428: GPIO35"]
+pub mod padcfg_gpio35;
+#[doc = "padcfg_gpio36 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 432: GPIO36\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio36::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio36::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio36`]
+module"]
+pub type PADCFG_GPIO36 = crate::Reg<padcfg_gpio36::PADCFG_GPIO36_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 432: GPIO36"]
+pub mod padcfg_gpio36;
+#[doc = "padcfg_gpio37 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 436: GPIO37\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio37::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio37::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio37`]
+module"]
+pub type PADCFG_GPIO37 = crate::Reg<padcfg_gpio37::PADCFG_GPIO37_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 436: GPIO37"]
+pub mod padcfg_gpio37;
+#[doc = "padcfg_gpio38 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 440: GPIO38\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio38::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio38::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio38`]
+module"]
+pub type PADCFG_GPIO38 = crate::Reg<padcfg_gpio38::PADCFG_GPIO38_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 440: GPIO38"]
+pub mod padcfg_gpio38;
+#[doc = "padcfg_gpio39 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 444: GPIO39\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio39::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio39::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio39`]
+module"]
+pub type PADCFG_GPIO39 = crate::Reg<padcfg_gpio39::PADCFG_GPIO39_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 444: GPIO39"]
+pub mod padcfg_gpio39;
+#[doc = "padcfg_gpio40 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 448: GPIO40\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio40::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio40::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio40`]
+module"]
+pub type PADCFG_GPIO40 = crate::Reg<padcfg_gpio40::PADCFG_GPIO40_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 448: GPIO40"]
+pub mod padcfg_gpio40;
+#[doc = "padcfg_gpio41 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 452: GPIO41\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio41::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio41::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio41`]
+module"]
+pub type PADCFG_GPIO41 = crate::Reg<padcfg_gpio41::PADCFG_GPIO41_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 452: GPIO41"]
+pub mod padcfg_gpio41;
+#[doc = "padcfg_gpio42 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 456: GPIO42\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio42::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio42::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio42`]
+module"]
+pub type PADCFG_GPIO42 = crate::Reg<padcfg_gpio42::PADCFG_GPIO42_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 456: GPIO42"]
+pub mod padcfg_gpio42;
+#[doc = "padcfg_gpio43 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 460: GPIO43\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio43::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio43::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio43`]
+module"]
+pub type PADCFG_GPIO43 = crate::Reg<padcfg_gpio43::PADCFG_GPIO43_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 460: GPIO43"]
+pub mod padcfg_gpio43;
+#[doc = "padcfg_gpio44 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 464: GPIO44\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio44::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio44::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio44`]
+module"]
+pub type PADCFG_GPIO44 = crate::Reg<padcfg_gpio44::PADCFG_GPIO44_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 464: GPIO44"]
+pub mod padcfg_gpio44;
+#[doc = "padcfg_gpio45 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 468: GPIO45\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio45::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio45::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio45`]
+module"]
+pub type PADCFG_GPIO45 = crate::Reg<padcfg_gpio45::PADCFG_GPIO45_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 468: GPIO45"]
+pub mod padcfg_gpio45;
+#[doc = "padcfg_gpio46 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 472: GPIO46\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio46::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio46::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio46`]
+module"]
+pub type PADCFG_GPIO46 = crate::Reg<padcfg_gpio46::PADCFG_GPIO46_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 472: GPIO46"]
+pub mod padcfg_gpio46;
+#[doc = "padcfg_gpio47 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 476: GPIO47\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio47::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio47::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio47`]
+module"]
+pub type PADCFG_GPIO47 = crate::Reg<padcfg_gpio47::PADCFG_GPIO47_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 476: GPIO47"]
+pub mod padcfg_gpio47;
+#[doc = "padcfg_gpio48 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 480: GPIO48\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio48::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio48::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio48`]
+module"]
+pub type PADCFG_GPIO48 = crate::Reg<padcfg_gpio48::PADCFG_GPIO48_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 480: GPIO48"]
+pub mod padcfg_gpio48;
+#[doc = "padcfg_gpio49 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 484: GPIO49\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio49::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio49::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio49`]
+module"]
+pub type PADCFG_GPIO49 = crate::Reg<padcfg_gpio49::PADCFG_GPIO49_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 484: GPIO49"]
+pub mod padcfg_gpio49;
+#[doc = "padcfg_gpio50 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 488: GPIO50\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio50::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio50::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio50`]
+module"]
+pub type PADCFG_GPIO50 = crate::Reg<padcfg_gpio50::PADCFG_GPIO50_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 488: GPIO50"]
+pub mod padcfg_gpio50;
+#[doc = "padcfg_gpio51 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 492: GPIO51\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio51::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio51::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio51`]
+module"]
+pub type PADCFG_GPIO51 = crate::Reg<padcfg_gpio51::PADCFG_GPIO51_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 492: GPIO51"]
+pub mod padcfg_gpio51;
+#[doc = "padcfg_gpio52 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 496: GPIO52\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio52::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio52::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio52`]
+module"]
+pub type PADCFG_GPIO52 = crate::Reg<padcfg_gpio52::PADCFG_GPIO52_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 496: GPIO52"]
+pub mod padcfg_gpio52;
+#[doc = "padcfg_gpio53 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 500: GPIO53\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio53::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio53::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio53`]
+module"]
+pub type PADCFG_GPIO53 = crate::Reg<padcfg_gpio53::PADCFG_GPIO53_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 500: GPIO53"]
+pub mod padcfg_gpio53;
+#[doc = "padcfg_gpio54 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 504: GPIO54\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio54::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio54::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio54`]
+module"]
+pub type PADCFG_GPIO54 = crate::Reg<padcfg_gpio54::PADCFG_GPIO54_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 504: GPIO54"]
+pub mod padcfg_gpio54;
+#[doc = "padcfg_gpio55 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 508: GPIO55\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio55::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio55::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio55`]
+module"]
+pub type PADCFG_GPIO55 = crate::Reg<padcfg_gpio55::PADCFG_GPIO55_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 508: GPIO55"]
+pub mod padcfg_gpio55;
+#[doc = "padcfg_gpio56 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 512: GPIO56\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio56::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio56::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio56`]
+module"]
+pub type PADCFG_GPIO56 = crate::Reg<padcfg_gpio56::PADCFG_GPIO56_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 512: GPIO56"]
+pub mod padcfg_gpio56;
+#[doc = "padcfg_gpio57 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 516: GPIO57\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio57::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio57::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio57`]
+module"]
+pub type PADCFG_GPIO57 = crate::Reg<padcfg_gpio57::PADCFG_GPIO57_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 516: GPIO57"]
+pub mod padcfg_gpio57;
+#[doc = "padcfg_gpio58 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 520: GPIO58\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio58::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio58::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio58`]
+module"]
+pub type PADCFG_GPIO58 = crate::Reg<padcfg_gpio58::PADCFG_GPIO58_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 520: GPIO58"]
+pub mod padcfg_gpio58;
+#[doc = "padcfg_gpio59 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 524: GPIO59\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio59::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio59::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio59`]
+module"]
+pub type PADCFG_GPIO59 = crate::Reg<padcfg_gpio59::PADCFG_GPIO59_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 524: GPIO59"]
+pub mod padcfg_gpio59;
+#[doc = "padcfg_gpio60 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 528: GPIO60\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio60::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio60::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio60`]
+module"]
+pub type PADCFG_GPIO60 = crate::Reg<padcfg_gpio60::PADCFG_GPIO60_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 528: GPIO60"]
+pub mod padcfg_gpio60;
+#[doc = "padcfg_gpio61 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 532: GPIO61\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio61::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio61::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio61`]
+module"]
+pub type PADCFG_GPIO61 = crate::Reg<padcfg_gpio61::PADCFG_GPIO61_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 532: GPIO61"]
+pub mod padcfg_gpio61;
+#[doc = "padcfg_gpio62 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 536: GPIO62\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio62::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio62::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio62`]
+module"]
+pub type PADCFG_GPIO62 = crate::Reg<padcfg_gpio62::PADCFG_GPIO62_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 536: GPIO62"]
+pub mod padcfg_gpio62;
+#[doc = "padcfg_gpio63 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 540: GPIO63\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gpio63::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gpio63::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gpio63`]
+module"]
+pub type PADCFG_GPIO63 = crate::Reg<padcfg_gpio63::PADCFG_GPIO63_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 540: GPIO63"]
+pub mod padcfg_gpio63;
+#[doc = "padcfg_sd0_clk (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 544: SD0_CLK\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_sd0_clk::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_sd0_clk::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_sd0_clk`]
+module"]
+pub type PADCFG_SD0_CLK = crate::Reg<padcfg_sd0_clk::PADCFG_SD0_CLK_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 544: SD0_CLK"]
+pub mod padcfg_sd0_clk;
+#[doc = "padcfg_sd0_cmd (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 548: SD0_CMD\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_sd0_cmd::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_sd0_cmd::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_sd0_cmd`]
+module"]
+pub type PADCFG_SD0_CMD = crate::Reg<padcfg_sd0_cmd::PADCFG_SD0_CMD_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 548: SD0_CMD"]
+pub mod padcfg_sd0_cmd;
+#[doc = "padcfg_sd0_data0 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 552: SD0_DATA0\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_sd0_data0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_sd0_data0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_sd0_data0`]
+module"]
+pub type PADCFG_SD0_DATA0 = crate::Reg<padcfg_sd0_data0::PADCFG_SD0_DATA0_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 552: SD0_DATA0"]
+pub mod padcfg_sd0_data0;
+#[doc = "padcfg_sd0_data1 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 568: SD0_DATA1\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_sd0_data1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_sd0_data1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_sd0_data1`]
+module"]
+pub type PADCFG_SD0_DATA1 = crate::Reg<padcfg_sd0_data1::PADCFG_SD0_DATA1_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 568: SD0_DATA1"]
+pub mod padcfg_sd0_data1;
+#[doc = "padcfg_sd0_data2 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 584: SD0_DATA2\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_sd0_data2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_sd0_data2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_sd0_data2`]
+module"]
+pub type PADCFG_SD0_DATA2 = crate::Reg<padcfg_sd0_data2::PADCFG_SD0_DATA2_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 584: SD0_DATA2"]
+pub mod padcfg_sd0_data2;
+#[doc = "padcfg_sd0_data3 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 600: SD0_DATA3\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_sd0_data3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_sd0_data3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_sd0_data3`]
+module"]
+pub type PADCFG_SD0_DATA3 = crate::Reg<padcfg_sd0_data3::PADCFG_SD0_DATA3_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 600: SD0_DATA3"]
+pub mod padcfg_sd0_data3;
+#[doc = "padcfg_sd0_data4 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 616: SD0_DATA4\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_sd0_data4::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_sd0_data4::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_sd0_data4`]
+module"]
+pub type PADCFG_SD0_DATA4 = crate::Reg<padcfg_sd0_data4::PADCFG_SD0_DATA4_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 616: SD0_DATA4"]
+pub mod padcfg_sd0_data4;
+#[doc = "padcfg_sd0_data5 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 632: SD0_DATA5\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_sd0_data5::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_sd0_data5::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_sd0_data5`]
+module"]
+pub type PADCFG_SD0_DATA5 = crate::Reg<padcfg_sd0_data5::PADCFG_SD0_DATA5_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 632: SD0_DATA5"]
+pub mod padcfg_sd0_data5;
+#[doc = "padcfg_sd0_data6 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 648: SD0_DATA6\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_sd0_data6::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_sd0_data6::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_sd0_data6`]
+module"]
+pub type PADCFG_SD0_DATA6 = crate::Reg<padcfg_sd0_data6::PADCFG_SD0_DATA6_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 648: SD0_DATA6"]
+pub mod padcfg_sd0_data6;
+#[doc = "padcfg_sd0_data7 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 664: SD0_DATA7\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_sd0_data7::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_sd0_data7::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_sd0_data7`]
+module"]
+pub type PADCFG_SD0_DATA7 = crate::Reg<padcfg_sd0_data7::PADCFG_SD0_DATA7_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 664: SD0_DATA7"]
+pub mod padcfg_sd0_data7;
+#[doc = "padcfg_sd0_strb (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 584: SD0_STRB\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_sd0_strb::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_sd0_strb::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_sd0_strb`]
+module"]
+pub type PADCFG_SD0_STRB = crate::Reg<padcfg_sd0_strb::PADCFG_SD0_STRB_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 584: SD0_STRB"]
+pub mod padcfg_sd0_strb;
+#[doc = "padcfg_gmac1_mdc_syscon (rw) register accessor: GPIO GMAC1 MDC Pad Configuration\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gmac1_mdc_syscon::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gmac1_mdc_syscon::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gmac1_mdc_syscon`]
+module"]
+pub type PADCFG_GMAC1_MDC_SYSCON =
+    crate::Reg<padcfg_gmac1_mdc_syscon::PADCFG_GMAC1_MDC_SYSCON_SPEC>;
+#[doc = "GPIO GMAC1 MDC Pad Configuration"]
+pub mod padcfg_gmac1_mdc_syscon;
+#[doc = "padcfg_gmac1_mdio_syscon (rw) register accessor: GPIO GMAC1 MDIO Pad Configuration\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gmac1_mdio_syscon::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gmac1_mdio_syscon::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gmac1_mdio_syscon`]
+module"]
+pub type PADCFG_GMAC1_MDIO_SYSCON =
+    crate::Reg<padcfg_gmac1_mdio_syscon::PADCFG_GMAC1_MDIO_SYSCON_SPEC>;
+#[doc = "GPIO GMAC1 MDIO Pad Configuration"]
+pub mod padcfg_gmac1_mdio_syscon;
+#[doc = "padcfg_gmac1_rxd0_syscon (rw) register accessor: GPIO GMAC1 RXD0 Pad Configuration\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gmac1_rxd0_syscon::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gmac1_rxd0_syscon::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gmac1_rxd0_syscon`]
+module"]
+pub type PADCFG_GMAC1_RXD0_SYSCON =
+    crate::Reg<padcfg_gmac1_rxd0_syscon::PADCFG_GMAC1_RXD0_SYSCON_SPEC>;
+#[doc = "GPIO GMAC1 RXD0 Pad Configuration"]
+pub mod padcfg_gmac1_rxd0_syscon;
+#[doc = "padcfg_gmac1_rxd1_syscon (rw) register accessor: GPIO GMAC1 RXD1 Pad Configuration\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gmac1_rxd1_syscon::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gmac1_rxd1_syscon::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gmac1_rxd1_syscon`]
+module"]
+pub type PADCFG_GMAC1_RXD1_SYSCON =
+    crate::Reg<padcfg_gmac1_rxd1_syscon::PADCFG_GMAC1_RXD1_SYSCON_SPEC>;
+#[doc = "GPIO GMAC1 RXD1 Pad Configuration"]
+pub mod padcfg_gmac1_rxd1_syscon;
+#[doc = "padcfg_gmac1_rxd2_syscon (rw) register accessor: GPIO GMAC1 RXD2 Pad Configuration\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gmac1_rxd2_syscon::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gmac1_rxd2_syscon::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gmac1_rxd2_syscon`]
+module"]
+pub type PADCFG_GMAC1_RXD2_SYSCON =
+    crate::Reg<padcfg_gmac1_rxd2_syscon::PADCFG_GMAC1_RXD2_SYSCON_SPEC>;
+#[doc = "GPIO GMAC1 RXD2 Pad Configuration"]
+pub mod padcfg_gmac1_rxd2_syscon;
+#[doc = "padcfg_gmac1_rxd3_syscon (rw) register accessor: GPIO GMAC1 RXD3 Pad Configuration\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gmac1_rxd3_syscon::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gmac1_rxd3_syscon::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gmac1_rxd3_syscon`]
+module"]
+pub type PADCFG_GMAC1_RXD3_SYSCON =
+    crate::Reg<padcfg_gmac1_rxd3_syscon::PADCFG_GMAC1_RXD3_SYSCON_SPEC>;
+#[doc = "GPIO GMAC1 RXD3 Pad Configuration"]
+pub mod padcfg_gmac1_rxd3_syscon;
+#[doc = "padcfg_gmac1_rxdv_syscon (rw) register accessor: GPIO GMAC1 RXDV Pad Configuration\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gmac1_rxdv_syscon::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gmac1_rxdv_syscon::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gmac1_rxdv_syscon`]
+module"]
+pub type PADCFG_GMAC1_RXDV_SYSCON =
+    crate::Reg<padcfg_gmac1_rxdv_syscon::PADCFG_GMAC1_RXDV_SYSCON_SPEC>;
+#[doc = "GPIO GMAC1 RXDV Pad Configuration"]
+pub mod padcfg_gmac1_rxdv_syscon;
+#[doc = "padcfg_gmac1_rxc_syscon (rw) register accessor: GPIO GMAC1 RXC Pad Configuration\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gmac1_rxc_syscon::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gmac1_rxc_syscon::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gmac1_rxc_syscon`]
+module"]
+pub type PADCFG_GMAC1_RXC_SYSCON =
+    crate::Reg<padcfg_gmac1_rxc_syscon::PADCFG_GMAC1_RXC_SYSCON_SPEC>;
+#[doc = "GPIO GMAC1 RXC Pad Configuration"]
+pub mod padcfg_gmac1_rxc_syscon;
+#[doc = "padcfg_gmac1_txd0_syscon (rw) register accessor: GPIO GMAC1 TXD0 Pad Configuration\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gmac1_txd0_syscon::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gmac1_txd0_syscon::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gmac1_txd0_syscon`]
+module"]
+pub type PADCFG_GMAC1_TXD0_SYSCON =
+    crate::Reg<padcfg_gmac1_txd0_syscon::PADCFG_GMAC1_TXD0_SYSCON_SPEC>;
+#[doc = "GPIO GMAC1 TXD0 Pad Configuration"]
+pub mod padcfg_gmac1_txd0_syscon;
+#[doc = "padcfg_gmac1_txd1_syscon (rw) register accessor: GPIO GMAC1 TXD1 Pad Configuration\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gmac1_txd1_syscon::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gmac1_txd1_syscon::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gmac1_txd1_syscon`]
+module"]
+pub type PADCFG_GMAC1_TXD1_SYSCON =
+    crate::Reg<padcfg_gmac1_txd1_syscon::PADCFG_GMAC1_TXD1_SYSCON_SPEC>;
+#[doc = "GPIO GMAC1 TXD1 Pad Configuration"]
+pub mod padcfg_gmac1_txd1_syscon;
+#[doc = "padcfg_gmac1_txd2_syscon (rw) register accessor: GPIO GMAC1 TXD2 Pad Configuration\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gmac1_txd2_syscon::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gmac1_txd2_syscon::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gmac1_txd2_syscon`]
+module"]
+pub type PADCFG_GMAC1_TXD2_SYSCON =
+    crate::Reg<padcfg_gmac1_txd2_syscon::PADCFG_GMAC1_TXD2_SYSCON_SPEC>;
+#[doc = "GPIO GMAC1 TXD2 Pad Configuration"]
+pub mod padcfg_gmac1_txd2_syscon;
+#[doc = "padcfg_gmac1_txd3_syscon (rw) register accessor: GPIO GMAC1 TXD3 Pad Configuration\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gmac1_txd3_syscon::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gmac1_txd3_syscon::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gmac1_txd3_syscon`]
+module"]
+pub type PADCFG_GMAC1_TXD3_SYSCON =
+    crate::Reg<padcfg_gmac1_txd3_syscon::PADCFG_GMAC1_TXD3_SYSCON_SPEC>;
+#[doc = "GPIO GMAC1 TXD3 Pad Configuration"]
+pub mod padcfg_gmac1_txd3_syscon;
+#[doc = "padcfg_gmac1_txen_syscon (rw) register accessor: GPIO GMAC1 TXEN Pad Configuration\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gmac1_txen_syscon::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gmac1_txen_syscon::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gmac1_txen_syscon`]
+module"]
+pub type PADCFG_GMAC1_TXEN_SYSCON =
+    crate::Reg<padcfg_gmac1_txen_syscon::PADCFG_GMAC1_TXEN_SYSCON_SPEC>;
+#[doc = "GPIO GMAC1 TXEN Pad Configuration"]
+pub mod padcfg_gmac1_txen_syscon;
+#[doc = "padcfg_gmac1_txc_syscon (rw) register accessor: GPIO GMAC1 TXC Pad Configuration\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_gmac1_txc_syscon::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_gmac1_txc_syscon::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_gmac1_txc_syscon`]
+module"]
+pub type PADCFG_GMAC1_TXC_SYSCON =
+    crate::Reg<padcfg_gmac1_txc_syscon::PADCFG_GMAC1_TXC_SYSCON_SPEC>;
+#[doc = "GPIO GMAC1 TXC Pad Configuration"]
+pub mod padcfg_gmac1_txc_syscon;
+#[doc = "padcfg_qspi_sclk (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 644: QSPI_SCLK\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_qspi_sclk::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_qspi_sclk::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_qspi_sclk`]
+module"]
+pub type PADCFG_QSPI_SCLK = crate::Reg<padcfg_qspi_sclk::PADCFG_QSPI_SCLK_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 644: QSPI_SCLK"]
+pub mod padcfg_qspi_sclk;
+#[doc = "padcfg_qspi_csn0 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 648: QSPI_CSN0\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_qspi_csn0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_qspi_csn0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_qspi_csn0`]
+module"]
+pub type PADCFG_QSPI_CSN0 = crate::Reg<padcfg_qspi_csn0::PADCFG_QSPI_CSN0_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 648: QSPI_CSN0"]
+pub mod padcfg_qspi_csn0;
+#[doc = "padcfg_qspi_data0 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 652: QSPI_DATA0\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_qspi_data0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_qspi_data0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_qspi_data0`]
+module"]
+pub type PADCFG_QSPI_DATA0 = crate::Reg<padcfg_qspi_data0::PADCFG_QSPI_DATA0_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 652: QSPI_DATA0"]
+pub mod padcfg_qspi_data0;
+#[doc = "padcfg_qspi_data1 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 668: QSPI_DATA1\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_qspi_data1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_qspi_data1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_qspi_data1`]
+module"]
+pub type PADCFG_QSPI_DATA1 = crate::Reg<padcfg_qspi_data1::PADCFG_QSPI_DATA1_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 668: QSPI_DATA1"]
+pub mod padcfg_qspi_data1;
+#[doc = "padcfg_qspi_data2 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 684: QSPI_DATA2\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_qspi_data2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_qspi_data2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_qspi_data2`]
+module"]
+pub type PADCFG_QSPI_DATA2 = crate::Reg<padcfg_qspi_data2::PADCFG_QSPI_DATA2_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 684: QSPI_DATA2"]
+pub mod padcfg_qspi_data2;
+#[doc = "padcfg_qspi_data3 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG PADCFG 700: QSPI_DATA3\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`padcfg_qspi_data3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`padcfg_qspi_data3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`padcfg_qspi_data3`]
+module"]
+pub type PADCFG_QSPI_DATA3 = crate::Reg<padcfg_qspi_data3::PADCFG_QSPI_DATA3_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG PADCFG 700: QSPI_DATA3"]
+pub mod padcfg_qspi_data3;
+#[doc = "func_sel0 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 0\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`func_sel0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`func_sel0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`func_sel0`]
+module"]
+pub type FUNC_SEL0 = crate::Reg<func_sel0::FUNC_SEL0_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG 0"]
+pub mod func_sel0;
+#[doc = "func_sel1 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 1\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`func_sel1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`func_sel1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`func_sel1`]
+module"]
+pub type FUNC_SEL1 = crate::Reg<func_sel1::FUNC_SEL1_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG 1"]
+pub mod func_sel1;
+#[doc = "func_sel2 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 2\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`func_sel2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`func_sel2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`func_sel2`]
+module"]
+pub type FUNC_SEL2 = crate::Reg<func_sel2::FUNC_SEL2_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG 2"]
+pub mod func_sel2;
+#[doc = "func_sel3 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 3\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`func_sel3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`func_sel3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`func_sel3`]
+module"]
+pub type FUNC_SEL3 = crate::Reg<func_sel3::FUNC_SEL3_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG 3"]
+pub mod func_sel3;
+#[doc = "func_sel4 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 4\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`func_sel4::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`func_sel4::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`func_sel4`]
+module"]
+pub type FUNC_SEL4 = crate::Reg<func_sel4::FUNC_SEL4_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG 4"]
+pub mod func_sel4;
+#[doc = "func_sel5 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 5\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`func_sel5::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`func_sel5::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`func_sel5`]
+module"]
+pub type FUNC_SEL5 = crate::Reg<func_sel5::FUNC_SEL5_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG 5"]
+pub mod func_sel5;
+#[doc = "func_sel6 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG 6\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`func_sel6::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`func_sel6::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`func_sel6`]
+module"]
+pub type FUNC_SEL6 = crate::Reg<func_sel6::FUNC_SEL6_SPEC>;
+#[doc = "SYS IOMUX CFG SAIF SYSCFG 6"]
+pub mod func_sel6;
