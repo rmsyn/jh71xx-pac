@@ -298,7 +298,7 @@
 		ranges;
 
 		clint: timer@2000000 {
-			compatible = "starfive,jh7110-clint", "sifive,clint0";
+			compatible = "starfive,jh7110-clint";
 			reg = <0x00 0x2000000 0x00 0x10000>;
 			interrupts-extended = <&cpu0_intc 0x03>, <&cpu0_intc 0x07>, <&cpu1_intc 0x03>, <&cpu1_intc 0x07>, <&cpu2_intc 0x03>, <&cpu2_intc 0x07>, <&cpu3_intc 0x03>, <&cpu3_intc 0x07>, <&cpu4_intc 0x03>, <&cpu4_intc 0x07>;
 		};
@@ -316,7 +316,7 @@
 		};
 
 		plic: interrupt-controller@c000000 {
-			compatible = "starfive,jh7110-plic", "sifive,plic-1_0_0";
+			compatible = "starfive,jh7110-plic";
 			reg = <0x00 0xc000000 0x00 0x4000000>;
 			interrupts-extended = <&cpu0_intc 0x0b>, <&cpu1_intc 0x0b>, <&cpu1_intc 0x09>, <&cpu2_intc 0x0b>, <&cpu2_intc 0x09>, <&cpu3_intc 0x0b>, <&cpu3_intc 0x09>, <&cpu4_intc 0x0b>, <&cpu4_intc 0x09>;
 			interrupt-controller;
