@@ -862,6 +862,52 @@ impl core::fmt::Debug for SPI6 {
 }
 #[doc = "From arm,pl022, peripheral generator"]
 pub mod spi6;
+#[doc = "From cdns,qspi-nor, peripheral generator"]
+pub struct QSPI {
+    _marker: PhantomData<*const ()>,
+}
+unsafe impl Send for QSPI {}
+impl QSPI {
+    #[doc = r"Pointer to the register block"]
+    pub const PTR: *const qspi::RegisterBlock = 0x1301_0000 as *const _;
+    #[doc = r"Return the pointer to the register block"]
+    #[inline(always)]
+    pub const fn ptr() -> *const qspi::RegisterBlock {
+        Self::PTR
+    }
+    #[doc = r" Steal an instance of this peripheral"]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Ensure that the new instance of the peripheral cannot be used in a way"]
+    #[doc = r" that may race with any existing instances, for example by only"]
+    #[doc = r" accessing read-only or write-only registers, or by consuming the"]
+    #[doc = r" original peripheral and using critical sections to coordinate"]
+    #[doc = r" access between multiple new instances."]
+    #[doc = r""]
+    #[doc = r" Additionally, other software such as HALs may rely on only one"]
+    #[doc = r" peripheral instance existing to ensure memory safety; ensure"]
+    #[doc = r" no stolen instances are passed to such software."]
+    pub unsafe fn steal() -> Self {
+        Self {
+            _marker: PhantomData,
+        }
+    }
+}
+impl Deref for QSPI {
+    type Target = qspi::RegisterBlock;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        unsafe { &*Self::PTR }
+    }
+}
+impl core::fmt::Debug for QSPI {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("QSPI").finish()
+    }
+}
+#[doc = "From cdns,qspi-nor, peripheral generator"]
+pub mod qspi;
 #[doc = "From starfive,jh7110-syscrg, peripheral generator"]
 pub struct SYSCRG {
     _marker: PhantomData<*const ()>,
@@ -1271,6 +1317,8 @@ pub struct Peripherals {
     pub SPI5: SPI5,
     #[doc = "SPI6"]
     pub SPI6: SPI6,
+    #[doc = "QSPI"]
+    pub QSPI: QSPI,
     #[doc = "SYSCRG"]
     pub SYSCRG: SYSCRG,
     #[doc = "SYS_SYSCON"]
@@ -1361,6 +1409,9 @@ impl Peripherals {
                 _marker: PhantomData,
             },
             SPI6: SPI6 {
+                _marker: PhantomData,
+            },
+            QSPI: QSPI {
                 _marker: PhantomData,
             },
             SYSCRG: SYSCRG {

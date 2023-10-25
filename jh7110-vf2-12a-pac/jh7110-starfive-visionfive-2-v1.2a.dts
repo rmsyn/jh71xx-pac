@@ -702,12 +702,39 @@
 
 		qspi: spi@13010000 {
 			compatible = "starfive,jh7110-qspi", "cdns,qspi-nor";
-			reg = <0x00 0x13010000 0x00 0x10000>, <0x00 0x21000000 0x00 0x400000>;
+			reg = <0x00 0x13010000 0x00 0x10000>;
 			interrupts = <0x19>;
 			clocks = <&syscrg 0x5a>, <&syscrg 0x57>, <&syscrg 0x58>;
 			clock-names = "ref", "ahb", "apb";
 			resets = <&syscrg 0x3e>, <&syscrg 0x3d>, <&syscrg 0x3f>;
 			reset-names = "qspi", "qspi-ocp", "rstc_ref";
+			cdns,fifo-depth = <0x100>;
+			cdns,fifo-width = <0x04>;
+			cdns,trigger-address = <0x00>;
+			status = "okay";
+			#address-cells = <0x01>;
+			#size-cells = <0x00>;
+
+			nor_flash: flash@0 {
+				compatible = "jedec,spi-nor";
+				reg = <0x00>;
+				cdns,read-delay = <0x05>;
+				spi-max-frequency = <0xb71b00>;
+				cdns,tshsl-ns = <0x01>;
+				cdns,tsd2d-ns = <0x01>;
+				cdns,tchsh-ns = <0x01>;
+				cdns,tslch-ns = <0x01>;
+			};
+		};
+
+		xspi: spi@21000000 {
+			compatible = "starfive,jh7110-xspi", "cdns,xspi-nor";
+			reg = <0x00 0x21000000 0x00 0x400000>;
+			interrupts = <0x19>;
+			clocks = <&syscrg 0x5a>, <&syscrg 0x57>, <&syscrg 0x58>;
+			clock-names = "ref", "ahb", "apb";
+			resets = <&syscrg 0x3e>, <&syscrg 0x3d>, <&syscrg 0x3f>;
+			reset-names = "xspi", "qspi", "rstc_ref";
 			cdns,fifo-depth = <0x100>;
 			cdns,fifo-width = <0x04>;
 			cdns,trigger-address = <0x00>;
