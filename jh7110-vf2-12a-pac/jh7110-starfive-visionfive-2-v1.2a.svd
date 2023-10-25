@@ -17161,7 +17161,842 @@
       </addressBlock>
     </peripheral>
     <peripheral>
+      <name>starfive_jh7110_qspi_0</name>
+      <description>From starfive,jh7110-qspi, peripheral generator</description>
+      <baseAddress>0x13010000</baseAddress>
+      <addressBlock>
+        <offset>0</offset>
+        <size>0x10000</size>
+        <usage>registers</usage>
+      </addressBlock>
+    </peripheral>
+    <peripheral>
+      <name>qspi</name>
+      <description>From cdns,qspi-nor, peripheral generator</description>
+      <baseAddress>0x13010000</baseAddress>
+      <addressBlock>
+        <offset>0</offset>
+        <size>0x10000</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <name>config</name>
+          <description>Cadence QSPI Configuration</description>
+          <addressOffset>0x0</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>enable</name>
+              <description>Enable the QSPI controller</description>
+              <bitRange>[0:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>enb_dir_acc_ctrl</name>
+              <description>Enable direct access controller</description>
+              <bitRange>[7:7]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>decode</name>
+              <description>Enable the QSPI decoder</description>
+              <bitRange>[9:9]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>chipselect</name>
+              <description>Chip select - CS0: 0b1110, CS1: 0b1101, CS2: 0b1011, CS3: 0b0111</description>
+              <bitRange>[13:10]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>dma</name>
+              <description>Enable Direct Memory Access</description>
+              <bitRange>[15:15]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>baud</name>
+              <description>Set the QSPI BAUD rate divisor</description>
+              <bitRange>[22:19]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>dtr_proto</name>
+              <description>Enable DTR Protocol</description>
+              <bitRange>[24:24]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>dual_opcode</name>
+              <description>Enable Dual Opcode Mode</description>
+              <bitRange>[30:30]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>idle</name>
+              <description>Set Idle</description>
+              <bitRange>[31:31]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>rd_instr</name>
+          <description>Cadence QSPI Read Instruction</description>
+          <addressOffset>0x4</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>opcode</name>
+              <description>Instruction Opcode</description>
+              <bitRange>[7:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>type_instr</name>
+              <description>Type of Instruction</description>
+              <bitRange>[9:8]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>type_addr</name>
+              <description>Type of Address</description>
+              <bitRange>[13:12]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>type_data</name>
+              <description>type_data</description>
+              <bitRange>[17:16]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>mode_en</name>
+              <description>Mode </description>
+              <bitRange>[20:20]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>dummy</name>
+              <description>Send dummy signal to stall the device</description>
+              <bitRange>[28:24]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>wr_instr</name>
+          <description>Cadence QSPI Write Instruction</description>
+          <addressOffset>0x8</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>opcode</name>
+              <description>Instruction Opcode</description>
+              <bitRange>[7:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>type_addr</name>
+              <description>Type of Address</description>
+              <bitRange>[13:12]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>type_data</name>
+              <description>type_data</description>
+              <bitRange>[17:16]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>delay</name>
+          <description>Cadence QSPI Delay</description>
+          <addressOffset>0xc</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>tslch</name>
+              <description>TSLCH Delay Value</description>
+              <bitRange>[7:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>tchsh</name>
+              <description>TCHSH Delay Value</description>
+              <bitRange>[15:8]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>tsd2d</name>
+              <description>TSD2D Delay Value</description>
+              <bitRange>[23:16]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>tshsl</name>
+              <description>TSHSL Delay Value</description>
+              <bitRange>[31:24]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>read_capture</name>
+          <description>Cadence QSPI Read Capture</description>
+          <addressOffset>0x10</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>bypass</name>
+              <description>Bypass the Read Capture</description>
+              <bitRange>[0:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>delay</name>
+              <description>Read Capture Delay Value</description>
+              <bitRange>[4:1]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>reg_size</name>
+          <description>Cadence QSPI Register Size</description>
+          <addressOffset>0x14</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>address</name>
+              <description>Register Size Address</description>
+              <bitRange>[3:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>page</name>
+              <description>Read Capture Delay Value</description>
+              <bitRange>[15:4]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>block</name>
+              <description>Read Capture Block Number</description>
+              <bitRange>[21:16]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>sram_partition</name>
+          <description>Cadence QSPI SRAM Partition Size</description>
+          <addressOffset>0x18</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>size</name>
+              <description>Partition size in bytes</description>
+              <bitRange>[31:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>indirect_trigger</name>
+          <description>Cadence QSPI Indirect Trigger Address</description>
+          <addressOffset>0x1c</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>address</name>
+              <description>address</description>
+              <bitRange>[31:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>dma</name>
+          <description>Cadence QSPI Direct Memory Access</description>
+          <addressOffset>0x20</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>single</name>
+              <description>single</description>
+              <bitRange>[7:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>burst</name>
+              <description>burst</description>
+              <bitRange>[15:8]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>remap</name>
+          <description>Cadence QSPI Remap Address</description>
+          <addressOffset>0x24</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>address</name>
+              <description>address</description>
+              <bitRange>[31:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>mode_bit</name>
+          <description>Cadence QSPI Mode Bit(s)</description>
+          <addressOffset>0x28</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>mode</name>
+              <description>mode</description>
+              <bitRange>[31:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>sdram_level</name>
+          <description>Cadence QSPI SDRAM Level</description>
+          <addressOffset>0x2c</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>rd</name>
+              <description>SDRAM Read Level</description>
+              <bitRange>[15:0]</bitRange>
+              <access>read-only</access>
+            </field>
+            <field>
+              <name>wr</name>
+              <description>SDRAM Write Level</description>
+              <bitRange>[31:16]</bitRange>
+              <access>read-only</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>wr_completion_ctrl</name>
+          <description>Cadence QSPI Write Completion Control</description>
+          <addressOffset>0x38</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>disable_auto_poll</name>
+              <description>SPI NAND flashes require the address of the status register to be passed in the Read SR command. Also, some SPI NOR flashes like the Cypress Semper flash expect a 4-byte dummy address in the Read SR command in DTR mode. But this controller does not support address phase in the Read SR command when doing auto-HW polling. So, disable write completion polling on the controller's side. spi-nand and spi-nor will take care of polling the status register.</description>
+              <bitRange>[14:14]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>irq_status</name>
+          <description>Cadence QSPI IRQ Status</description>
+          <addressOffset>0x40</addressOffset>
+          <size>32</size>
+          <resetValue>131071</resetValue>
+          <fields>
+            <field>
+              <name>mode_err</name>
+              <description>Mode error interrupt</description>
+              <bitRange>[0:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>underflow</name>
+              <description>Buffer underflow interrupt</description>
+              <bitRange>[1:1]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>ind_comp</name>
+              <description>Indirect computation interrupt</description>
+              <bitRange>[2:2]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>ind_rd_reject</name>
+              <description>Indirect read rejection interrupt</description>
+              <bitRange>[3:3]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>wr_protected_err</name>
+              <description>Write protected error interrupt</description>
+              <bitRange>[4:4]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>illegal_ahb_err</name>
+              <description>Illegal AHB clock error interrupt</description>
+              <bitRange>[5:5]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>watermark</name>
+              <description>Watermark interrupt</description>
+              <bitRange>[6:6]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>ind_sram_full</name>
+              <description>Indirect SRAM full interrupt</description>
+              <bitRange>[12:12]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>irq_mask</name>
+          <description>Cadence QSPI IRQ Mask</description>
+          <addressOffset>0x44</addressOffset>
+          <size>32</size>
+          <resetValue>70</resetValue>
+          <fields>
+            <field>
+              <name>mode_err</name>
+              <description>Mode error interrupt</description>
+              <bitRange>[0:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>underflow</name>
+              <description>Buffer underflow interrupt</description>
+              <bitRange>[1:1]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>ind_comp</name>
+              <description>Indirect computation interrupt</description>
+              <bitRange>[2:2]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>ind_rd_reject</name>
+              <description>Indirect read rejection interrupt</description>
+              <bitRange>[3:3]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>wr_protected_err</name>
+              <description>Write protected error interrupt</description>
+              <bitRange>[4:4]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>illegal_ahb_err</name>
+              <description>Illegal AHB clock error interrupt</description>
+              <bitRange>[5:5]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>watermark</name>
+              <description>Watermark interrupt</description>
+              <bitRange>[6:6]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>ind_sram_full</name>
+              <description>Indirect SRAM full interrupt</description>
+              <bitRange>[12:12]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>indirect_rd</name>
+          <description>Cadence QSPI Indirect Read</description>
+          <addressOffset>0x60</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>start</name>
+              <description>Start indirect read</description>
+              <bitRange>[0:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>cancel</name>
+              <description>Cancel indirect read</description>
+              <bitRange>[1:1]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>done</name>
+              <description>Indirect read done</description>
+              <bitRange>[5:5]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>indirect_rd_watermark</name>
+          <description>Cadence QSPI Indirect Read Watermark</description>
+          <addressOffset>0x64</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>watermark</name>
+              <description>watermark</description>
+              <bitRange>[31:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>indirect_rd_start_addr</name>
+          <description>Cadence QSPI Indirect Read Start Address</description>
+          <addressOffset>0x68</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>address</name>
+              <description>address</description>
+              <bitRange>[31:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>indirect_rd_bytes</name>
+          <description>Cadence QSPI Indirect Read Bytes</description>
+          <addressOffset>0x6c</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>bytes</name>
+              <description>bytes</description>
+              <bitRange>[31:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>indirect_wr</name>
+          <description>Cadence QSPI Indirect Write</description>
+          <addressOffset>0x70</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>start</name>
+              <description>Start indirect write</description>
+              <bitRange>[0:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>cancel</name>
+              <description>Cancel indirect write</description>
+              <bitRange>[1:1]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>done</name>
+              <description>Indirect write done</description>
+              <bitRange>[5:5]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>indirect_wr_watermark</name>
+          <description>Cadence QSPI Indirect Write Watermark</description>
+          <addressOffset>0x74</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>watermark</name>
+              <description>watermark</description>
+              <bitRange>[31:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>indirect_wr_start_addr</name>
+          <description>Cadence QSPI Indirect Write Start Address</description>
+          <addressOffset>0x78</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>address</name>
+              <description>address</description>
+              <bitRange>[31:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>indirect_wr_bytes</name>
+          <description>Cadence QSPI Indirect Write Bytes</description>
+          <addressOffset>0x7c</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>bytes</name>
+              <description>bytes</description>
+              <bitRange>[31:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>cmd_ctrl</name>
+          <description>Cadence QSPI Command Control</description>
+          <addressOffset>0x90</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>execute</name>
+              <description>Execute-in-Place (XIP)</description>
+              <bitRange>[0:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>in_progress</name>
+              <description>Command in progress</description>
+              <bitRange>[1:1]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>dummy</name>
+              <description>Dummy command</description>
+              <bitRange>[11:7]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>wr_bytes</name>
+              <description>Write bytes</description>
+              <bitRange>[14:12]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>wr_en</name>
+              <description>Write enable</description>
+              <bitRange>[15:15]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>add_bytes</name>
+              <description>Add command bytes</description>
+              <bitRange>[17:16]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>addr_en</name>
+              <description>Address enable</description>
+              <bitRange>[19:19]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>rd_bytes</name>
+              <description>Read bytes</description>
+              <bitRange>[22:20]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>rd_en</name>
+              <description>Read enable</description>
+              <bitRange>[23:23]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>opcode</name>
+              <description>Command opcode</description>
+              <bitRange>[31:24]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>cmd_address</name>
+          <description>Cadence QSPI Command Address</description>
+          <addressOffset>0x94</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>address</name>
+              <description>address</description>
+              <bitRange>[31:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>cmd_read_at_lower</name>
+          <description>Cadence QSPI Command Read at Lower</description>
+          <addressOffset>0xa0</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>read_at_lower</name>
+              <description>read_at_lower</description>
+              <bitRange>[31:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>cmd_read_at_upper</name>
+          <description>Cadence QSPI Command Read at Upper</description>
+          <addressOffset>0xa4</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>read_at_upper</name>
+              <description>read_at_upper</description>
+              <bitRange>[31:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>cmd_write_at_lower</name>
+          <description>Cadence QSPI Command Write at Lower</description>
+          <addressOffset>0xa8</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>write_at_lower</name>
+              <description>write_at_lower</description>
+              <bitRange>[31:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>cmd_write_at_upper</name>
+          <description>Cadence QSPI Command Write at Upper</description>
+          <addressOffset>0xac</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>write_at_upper</name>
+              <description>write_at_upper</description>
+              <bitRange>[31:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>polling_status</name>
+          <description>Cadence QSPI Polling Status</description>
+          <addressOffset>0xb0</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>status</name>
+              <description>status</description>
+              <bitRange>[15:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>dummy</name>
+              <description>dummy</description>
+              <bitRange>[20:16]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>ext_lower</name>
+          <description>Cadence QSPI Extension Lower</description>
+          <addressOffset>0xe0</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>stig</name>
+              <description>stig</description>
+              <bitRange>[15:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>write</name>
+              <description>write</description>
+              <bitRange>[23:16]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>read</name>
+              <description>read</description>
+              <bitRange>[31:24]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+      </registers>
+    </peripheral>
+    <peripheral>
       <name>jedec_spi_nor_0</name>
+      <description>From jedec,spi-nor, peripheral generator</description>
+      <baseAddress>0x0</baseAddress>
+      <addressBlock>
+        <offset>0</offset>
+        <size>0x0</size>
+        <usage>registers</usage>
+      </addressBlock>
+    </peripheral>
+    <peripheral>
+      <name>starfive_jh7110_xspi_0</name>
+      <description>From starfive,jh7110-xspi, peripheral generator</description>
+      <baseAddress>0x21000000</baseAddress>
+      <addressBlock>
+        <offset>0</offset>
+        <size>0x400000</size>
+        <usage>registers</usage>
+      </addressBlock>
+    </peripheral>
+    <peripheral>
+      <name>cdns_xspi_nor_0</name>
+      <description>From cdns,xspi-nor, peripheral generator</description>
+      <baseAddress>0x21000000</baseAddress>
+      <addressBlock>
+        <offset>0</offset>
+        <size>0x400000</size>
+        <usage>registers</usage>
+      </addressBlock>
+    </peripheral>
+    <peripheral>
+      <name>jedec_spi_nor_1</name>
       <description>From jedec,spi-nor, peripheral generator</description>
       <baseAddress>0x0</baseAddress>
       <addressBlock>
