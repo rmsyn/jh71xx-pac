@@ -17380,27 +17380,27 @@
           </fields>
         </register>
         <register>
-          <name>reg_size</name>
-          <description>Cadence QSPI Register Size</description>
+          <name>size</name>
+          <description>Cadence QSPI Size Configuration</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
           <fields>
             <field>
               <name>address</name>
-              <description>Register Size Address</description>
+              <description>Address Size in Bytes</description>
               <bitRange>[3:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
               <name>page</name>
-              <description>Read Capture Delay Value</description>
+              <description>Page Size in Bytes</description>
               <bitRange>[15:4]</bitRange>
               <access>read-write</access>
             </field>
             <field>
               <name>block</name>
-              <description>Read Capture Block Number</description>
+              <description>Block Size in Bytes</description>
               <bitRange>[21:16]</bitRange>
               <access>read-write</access>
             </field>

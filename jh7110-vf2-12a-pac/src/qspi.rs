@@ -11,8 +11,8 @@ pub struct RegisterBlock {
     pub delay: DELAY,
     #[doc = "0x10 - Cadence QSPI Read Capture"]
     pub read_capture: READ_CAPTURE,
-    #[doc = "0x14 - Cadence QSPI Register Size"]
-    pub reg_size: REG_SIZE,
+    #[doc = "0x14 - Cadence QSPI Size Configuration"]
+    pub size: SIZE,
     #[doc = "0x18 - Cadence QSPI SRAM Partition Size"]
     pub sram_partition: SRAM_PARTITION,
     #[doc = "0x1c - Cadence QSPI Indirect Trigger Address"]
@@ -95,11 +95,11 @@ module"]
 pub type READ_CAPTURE = crate::Reg<read_capture::READ_CAPTURE_SPEC>;
 #[doc = "Cadence QSPI Read Capture"]
 pub mod read_capture;
-#[doc = "reg_size (rw) register accessor: Cadence QSPI Register Size\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`reg_size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`reg_size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`reg_size`]
+#[doc = "size (rw) register accessor: Cadence QSPI Size Configuration\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`size::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`size::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`size`]
 module"]
-pub type REG_SIZE = crate::Reg<reg_size::REG_SIZE_SPEC>;
-#[doc = "Cadence QSPI Register Size"]
-pub mod reg_size;
+pub type SIZE = crate::Reg<size::SIZE_SPEC>;
+#[doc = "Cadence QSPI Size Configuration"]
+pub mod size;
 #[doc = "sram_partition (rw) register accessor: Cadence QSPI SRAM Partition Size\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`sram_partition::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`sram_partition::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`sram_partition`]
 module"]
 pub type SRAM_PARTITION = crate::Reg<sram_partition::SRAM_PARTITION_SPEC>;
