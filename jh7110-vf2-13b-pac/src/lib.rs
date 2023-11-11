@@ -126,6 +126,144 @@ impl core::fmt::Debug for PLIC {
 }
 #[doc = "From starfive,jh7110-plic, peripheral generator"]
 pub mod plic;
+#[doc = "From snps,dw-apb-uart, peripheral generator"]
+pub struct UART0 {
+    _marker: PhantomData<*const ()>,
+}
+unsafe impl Send for UART0 {}
+impl UART0 {
+    #[doc = r"Pointer to the register block"]
+    pub const PTR: *const uart0::RegisterBlock = 0x1000_0000 as *const _;
+    #[doc = r"Return the pointer to the register block"]
+    #[inline(always)]
+    pub const fn ptr() -> *const uart0::RegisterBlock {
+        Self::PTR
+    }
+    #[doc = r" Steal an instance of this peripheral"]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Ensure that the new instance of the peripheral cannot be used in a way"]
+    #[doc = r" that may race with any existing instances, for example by only"]
+    #[doc = r" accessing read-only or write-only registers, or by consuming the"]
+    #[doc = r" original peripheral and using critical sections to coordinate"]
+    #[doc = r" access between multiple new instances."]
+    #[doc = r""]
+    #[doc = r" Additionally, other software such as HALs may rely on only one"]
+    #[doc = r" peripheral instance existing to ensure memory safety; ensure"]
+    #[doc = r" no stolen instances are passed to such software."]
+    pub unsafe fn steal() -> Self {
+        Self {
+            _marker: PhantomData,
+        }
+    }
+}
+impl Deref for UART0 {
+    type Target = uart0::RegisterBlock;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        unsafe { &*Self::PTR }
+    }
+}
+impl core::fmt::Debug for UART0 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("UART0").finish()
+    }
+}
+#[doc = "From snps,dw-apb-uart, peripheral generator"]
+pub mod uart0;
+#[doc = "From snps,dw-apb-uart, peripheral generator"]
+pub struct UART1 {
+    _marker: PhantomData<*const ()>,
+}
+unsafe impl Send for UART1 {}
+impl UART1 {
+    #[doc = r"Pointer to the register block"]
+    pub const PTR: *const uart1::RegisterBlock = 0x1001_0000 as *const _;
+    #[doc = r"Return the pointer to the register block"]
+    #[inline(always)]
+    pub const fn ptr() -> *const uart1::RegisterBlock {
+        Self::PTR
+    }
+    #[doc = r" Steal an instance of this peripheral"]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Ensure that the new instance of the peripheral cannot be used in a way"]
+    #[doc = r" that may race with any existing instances, for example by only"]
+    #[doc = r" accessing read-only or write-only registers, or by consuming the"]
+    #[doc = r" original peripheral and using critical sections to coordinate"]
+    #[doc = r" access between multiple new instances."]
+    #[doc = r""]
+    #[doc = r" Additionally, other software such as HALs may rely on only one"]
+    #[doc = r" peripheral instance existing to ensure memory safety; ensure"]
+    #[doc = r" no stolen instances are passed to such software."]
+    pub unsafe fn steal() -> Self {
+        Self {
+            _marker: PhantomData,
+        }
+    }
+}
+impl Deref for UART1 {
+    type Target = uart1::RegisterBlock;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        unsafe { &*Self::PTR }
+    }
+}
+impl core::fmt::Debug for UART1 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("UART1").finish()
+    }
+}
+#[doc = "From snps,dw-apb-uart, peripheral generator"]
+pub mod uart1;
+#[doc = "From snps,dw-apb-uart, peripheral generator"]
+pub struct UART2 {
+    _marker: PhantomData<*const ()>,
+}
+unsafe impl Send for UART2 {}
+impl UART2 {
+    #[doc = r"Pointer to the register block"]
+    pub const PTR: *const uart2::RegisterBlock = 0x1002_0000 as *const _;
+    #[doc = r"Return the pointer to the register block"]
+    #[inline(always)]
+    pub const fn ptr() -> *const uart2::RegisterBlock {
+        Self::PTR
+    }
+    #[doc = r" Steal an instance of this peripheral"]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Ensure that the new instance of the peripheral cannot be used in a way"]
+    #[doc = r" that may race with any existing instances, for example by only"]
+    #[doc = r" accessing read-only or write-only registers, or by consuming the"]
+    #[doc = r" original peripheral and using critical sections to coordinate"]
+    #[doc = r" access between multiple new instances."]
+    #[doc = r""]
+    #[doc = r" Additionally, other software such as HALs may rely on only one"]
+    #[doc = r" peripheral instance existing to ensure memory safety; ensure"]
+    #[doc = r" no stolen instances are passed to such software."]
+    pub unsafe fn steal() -> Self {
+        Self {
+            _marker: PhantomData,
+        }
+    }
+}
+impl Deref for UART2 {
+    type Target = uart2::RegisterBlock;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        unsafe { &*Self::PTR }
+    }
+}
+impl core::fmt::Debug for UART2 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("UART2").finish()
+    }
+}
+#[doc = "From snps,dw-apb-uart, peripheral generator"]
+pub mod uart2;
 #[doc = "From snps,designware-i2c, peripheral generator"]
 pub struct I2C0 {
     _marker: PhantomData<*const ()>,
@@ -494,6 +632,144 @@ impl core::fmt::Debug for STG_SYSCON {
 }
 #[doc = "From starfive,jh7110-stg-syscon, peripheral generator"]
 pub mod stg_syscon;
+#[doc = "From snps,dw-apb-uart, peripheral generator"]
+pub struct UART3 {
+    _marker: PhantomData<*const ()>,
+}
+unsafe impl Send for UART3 {}
+impl UART3 {
+    #[doc = r"Pointer to the register block"]
+    pub const PTR: *const uart3::RegisterBlock = 0x1200_0000 as *const _;
+    #[doc = r"Return the pointer to the register block"]
+    #[inline(always)]
+    pub const fn ptr() -> *const uart3::RegisterBlock {
+        Self::PTR
+    }
+    #[doc = r" Steal an instance of this peripheral"]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Ensure that the new instance of the peripheral cannot be used in a way"]
+    #[doc = r" that may race with any existing instances, for example by only"]
+    #[doc = r" accessing read-only or write-only registers, or by consuming the"]
+    #[doc = r" original peripheral and using critical sections to coordinate"]
+    #[doc = r" access between multiple new instances."]
+    #[doc = r""]
+    #[doc = r" Additionally, other software such as HALs may rely on only one"]
+    #[doc = r" peripheral instance existing to ensure memory safety; ensure"]
+    #[doc = r" no stolen instances are passed to such software."]
+    pub unsafe fn steal() -> Self {
+        Self {
+            _marker: PhantomData,
+        }
+    }
+}
+impl Deref for UART3 {
+    type Target = uart3::RegisterBlock;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        unsafe { &*Self::PTR }
+    }
+}
+impl core::fmt::Debug for UART3 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("UART3").finish()
+    }
+}
+#[doc = "From snps,dw-apb-uart, peripheral generator"]
+pub mod uart3;
+#[doc = "From snps,dw-apb-uart, peripheral generator"]
+pub struct UART4 {
+    _marker: PhantomData<*const ()>,
+}
+unsafe impl Send for UART4 {}
+impl UART4 {
+    #[doc = r"Pointer to the register block"]
+    pub const PTR: *const uart4::RegisterBlock = 0x1201_0000 as *const _;
+    #[doc = r"Return the pointer to the register block"]
+    #[inline(always)]
+    pub const fn ptr() -> *const uart4::RegisterBlock {
+        Self::PTR
+    }
+    #[doc = r" Steal an instance of this peripheral"]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Ensure that the new instance of the peripheral cannot be used in a way"]
+    #[doc = r" that may race with any existing instances, for example by only"]
+    #[doc = r" accessing read-only or write-only registers, or by consuming the"]
+    #[doc = r" original peripheral and using critical sections to coordinate"]
+    #[doc = r" access between multiple new instances."]
+    #[doc = r""]
+    #[doc = r" Additionally, other software such as HALs may rely on only one"]
+    #[doc = r" peripheral instance existing to ensure memory safety; ensure"]
+    #[doc = r" no stolen instances are passed to such software."]
+    pub unsafe fn steal() -> Self {
+        Self {
+            _marker: PhantomData,
+        }
+    }
+}
+impl Deref for UART4 {
+    type Target = uart4::RegisterBlock;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        unsafe { &*Self::PTR }
+    }
+}
+impl core::fmt::Debug for UART4 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("UART4").finish()
+    }
+}
+#[doc = "From snps,dw-apb-uart, peripheral generator"]
+pub mod uart4;
+#[doc = "From snps,dw-apb-uart, peripheral generator"]
+pub struct UART5 {
+    _marker: PhantomData<*const ()>,
+}
+unsafe impl Send for UART5 {}
+impl UART5 {
+    #[doc = r"Pointer to the register block"]
+    pub const PTR: *const uart5::RegisterBlock = 0x1202_0000 as *const _;
+    #[doc = r"Return the pointer to the register block"]
+    #[inline(always)]
+    pub const fn ptr() -> *const uart5::RegisterBlock {
+        Self::PTR
+    }
+    #[doc = r" Steal an instance of this peripheral"]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Ensure that the new instance of the peripheral cannot be used in a way"]
+    #[doc = r" that may race with any existing instances, for example by only"]
+    #[doc = r" accessing read-only or write-only registers, or by consuming the"]
+    #[doc = r" original peripheral and using critical sections to coordinate"]
+    #[doc = r" access between multiple new instances."]
+    #[doc = r""]
+    #[doc = r" Additionally, other software such as HALs may rely on only one"]
+    #[doc = r" peripheral instance existing to ensure memory safety; ensure"]
+    #[doc = r" no stolen instances are passed to such software."]
+    pub unsafe fn steal() -> Self {
+        Self {
+            _marker: PhantomData,
+        }
+    }
+}
+impl Deref for UART5 {
+    type Target = uart5::RegisterBlock;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        unsafe { &*Self::PTR }
+    }
+}
+impl core::fmt::Debug for UART5 {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("UART5").finish()
+    }
+}
+#[doc = "From snps,dw-apb-uart, peripheral generator"]
+pub mod uart5;
 #[doc = "From snps,designware-i2c, peripheral generator"]
 pub struct I2C3 {
     _marker: PhantomData<*const ()>,
@@ -1285,6 +1561,12 @@ pub struct Peripherals {
     pub CLINT: CLINT,
     #[doc = "PLIC"]
     pub PLIC: PLIC,
+    #[doc = "UART0"]
+    pub UART0: UART0,
+    #[doc = "UART1"]
+    pub UART1: UART1,
+    #[doc = "UART2"]
+    pub UART2: UART2,
     #[doc = "I2C0"]
     pub I2C0: I2C0,
     #[doc = "I2C1"]
@@ -1301,6 +1583,12 @@ pub struct Peripherals {
     pub STGCRG: STGCRG,
     #[doc = "STG_SYSCON"]
     pub STG_SYSCON: STG_SYSCON,
+    #[doc = "UART3"]
+    pub UART3: UART3,
+    #[doc = "UART4"]
+    pub UART4: UART4,
+    #[doc = "UART5"]
+    pub UART5: UART5,
     #[doc = "I2C3"]
     pub I2C3: I2C3,
     #[doc = "I2C4"]
@@ -1363,6 +1651,15 @@ impl Peripherals {
             PLIC: PLIC {
                 _marker: PhantomData,
             },
+            UART0: UART0 {
+                _marker: PhantomData,
+            },
+            UART1: UART1 {
+                _marker: PhantomData,
+            },
+            UART2: UART2 {
+                _marker: PhantomData,
+            },
             I2C0: I2C0 {
                 _marker: PhantomData,
             },
@@ -1385,6 +1682,15 @@ impl Peripherals {
                 _marker: PhantomData,
             },
             STG_SYSCON: STG_SYSCON {
+                _marker: PhantomData,
+            },
+            UART3: UART3 {
+                _marker: PhantomData,
+            },
+            UART4: UART4 {
+                _marker: PhantomData,
+            },
+            UART5: UART5 {
                 _marker: PhantomData,
             },
             I2C3: I2C3 {
