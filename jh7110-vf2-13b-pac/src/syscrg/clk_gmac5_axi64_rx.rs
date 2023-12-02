@@ -5,7 +5,7 @@ pub type W = crate::W<CLK_GMAC5_AXI64_RX_SPEC>;
 #[doc = "Field `dly_chain_sel` reader - Selector delay chain stage number, totally 32 stages, -50 ps each stage. The register value indicates the delay chain stage number. For example, diy_chain_sel=1 means to delay 1 stage."]
 pub type DLY_CHAIN_SEL_R = crate::FieldReader<u32>;
 #[doc = "Field `dly_chain_sel` writer - Selector delay chain stage number, totally 32 stages, -50 ps each stage. The register value indicates the delay chain stage number. For example, diy_chain_sel=1 means to delay 1 stage."]
-pub type DLY_CHAIN_SEL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 24, O, u32>;
+pub type DLY_CHAIN_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 24, u32>;
 impl R {
     #[doc = "Bits 0:23 - Selector delay chain stage number, totally 32 stages, -50 ps each stage. The register value indicates the delay chain stage number. For example, diy_chain_sel=1 means to delay 1 stage."]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bits 0:23 - Selector delay chain stage number, totally 32 stages, -50 ps each stage. The register value indicates the delay chain stage number. For example, diy_chain_sel=1 means to delay 1 stage."]
     #[inline(always)]
     #[must_use]
-    pub fn dly_chain_sel(&mut self) -> DLY_CHAIN_SEL_W<CLK_GMAC5_AXI64_RX_SPEC, 0> {
-        DLY_CHAIN_SEL_W::new(self)
+    pub fn dly_chain_sel(&mut self) -> DLY_CHAIN_SEL_W<CLK_GMAC5_AXI64_RX_SPEC> {
+        DLY_CHAIN_SEL_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

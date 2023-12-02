@@ -5,7 +5,7 @@ pub type W = crate::W<PCH_TIMEOUT_SPEC>;
 #[doc = "Field `pch_timeout` reader - P-channel waiting device acknowledge timeout."]
 pub type PCH_TIMEOUT_R = crate::FieldReader;
 #[doc = "Field `pch_timeout` writer - P-channel waiting device acknowledge timeout."]
-pub type PCH_TIMEOUT_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 8, O>;
+pub type PCH_TIMEOUT_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 impl R {
     #[doc = "Bits 0:7 - P-channel waiting device acknowledge timeout."]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bits 0:7 - P-channel waiting device acknowledge timeout."]
     #[inline(always)]
     #[must_use]
-    pub fn pch_timeout(&mut self) -> PCH_TIMEOUT_W<PCH_TIMEOUT_SPEC, 0> {
-        PCH_TIMEOUT_W::new(self)
+    pub fn pch_timeout(&mut self) -> PCH_TIMEOUT_W<PCH_TIMEOUT_SPEC> {
+        PCH_TIMEOUT_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

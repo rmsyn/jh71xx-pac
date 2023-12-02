@@ -5,23 +5,23 @@ pub type W = crate::W<AON_IOMUX_CFGSAIF_SYSCFG_FMUX2_SPEC>;
 #[doc = "Field `aon_iomux_gpi_u0_pmu_io_event_stub_gpio_wakeup_0_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2-GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_0_CFG_R = crate::FieldReader;
 #[doc = "Field `aon_iomux_gpi_u0_pmu_io_event_stub_gpio_wakeup_0_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2-GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_0_CFG_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 3, O>;
+pub type AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_0_CFG_W<'a, REG> =
+    crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `aon_iomux_gpi_u0_pmu_io_event_stub_gpio_wakeup_1_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2-GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_1_CFG_R = crate::FieldReader;
 #[doc = "Field `aon_iomux_gpi_u0_pmu_io_event_stub_gpio_wakeup_1_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2-GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_1_CFG_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 3, O>;
+pub type AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_1_CFG_W<'a, REG> =
+    crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `aon_iomux_gpi_u0_pmu_io_event_stub_gpio_wakeup_2_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2-GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_2_CFG_R = crate::FieldReader;
 #[doc = "Field `aon_iomux_gpi_u0_pmu_io_event_stub_gpio_wakeup_2_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2-GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_2_CFG_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 3, O>;
+pub type AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_2_CFG_W<'a, REG> =
+    crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `aon_iomux_gpi_u0_pmu_io_event_stub_gpio_wakeup_3_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2-GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_3_CFG_R = crate::FieldReader;
 #[doc = "Field `aon_iomux_gpi_u0_pmu_io_event_stub_gpio_wakeup_3_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2-GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_3_CFG_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 3, O>;
+pub type AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_3_CFG_W<'a, REG> =
+    crate::FieldWriter<'a, REG, 3>;
 impl R {
     #[doc = "Bits 0:2 - The register value indicates the selected GPIO number + 2 (GPIO2-GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
@@ -58,46 +58,42 @@ impl W {
     #[must_use]
     pub fn aon_iomux_gpi_u0_pmu_io_event_stub_gpio_wakeup_0_cfg(
         &mut self,
-    ) -> AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_0_CFG_W<
-        AON_IOMUX_CFGSAIF_SYSCFG_FMUX2_SPEC,
-        0,
-    > {
-        AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_0_CFG_W::new(self)
+    ) -> AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_0_CFG_W<AON_IOMUX_CFGSAIF_SYSCFG_FMUX2_SPEC>
+    {
+        AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_0_CFG_W::new(self, 0)
     }
     #[doc = "Bits 8:10 - The register value indicates the selected GPIO number + 2 (GPIO2-GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
     pub fn aon_iomux_gpi_u0_pmu_io_event_stub_gpio_wakeup_1_cfg(
         &mut self,
-    ) -> AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_1_CFG_W<
-        AON_IOMUX_CFGSAIF_SYSCFG_FMUX2_SPEC,
-        8,
-    > {
-        AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_1_CFG_W::new(self)
+    ) -> AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_1_CFG_W<AON_IOMUX_CFGSAIF_SYSCFG_FMUX2_SPEC>
+    {
+        AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_1_CFG_W::new(self, 8)
     }
     #[doc = "Bits 16:18 - The register value indicates the selected GPIO number + 2 (GPIO2-GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
     pub fn aon_iomux_gpi_u0_pmu_io_event_stub_gpio_wakeup_2_cfg(
         &mut self,
-    ) -> AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_2_CFG_W<
-        AON_IOMUX_CFGSAIF_SYSCFG_FMUX2_SPEC,
-        16,
-    > {
-        AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_2_CFG_W::new(self)
+    ) -> AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_2_CFG_W<AON_IOMUX_CFGSAIF_SYSCFG_FMUX2_SPEC>
+    {
+        AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_2_CFG_W::new(self, 16)
     }
     #[doc = "Bits 24:26 - The register value indicates the selected GPIO number + 2 (GPIO2-GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
     pub fn aon_iomux_gpi_u0_pmu_io_event_stub_gpio_wakeup_3_cfg(
         &mut self,
-    ) -> AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_3_CFG_W<
-        AON_IOMUX_CFGSAIF_SYSCFG_FMUX2_SPEC,
-        24,
-    > {
-        AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_3_CFG_W::new(self)
+    ) -> AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_3_CFG_W<AON_IOMUX_CFGSAIF_SYSCFG_FMUX2_SPEC>
+    {
+        AON_IOMUX_GPI_U0_PMU_IO_EVENT_STUB_GPIO_WAKEUP_3_CFG_W::new(self, 24)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

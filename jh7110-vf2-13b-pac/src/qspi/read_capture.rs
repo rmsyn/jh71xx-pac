@@ -5,11 +5,11 @@ pub type W = crate::W<READ_CAPTURE_SPEC>;
 #[doc = "Field `bypass` reader - Bypass the Read Capture"]
 pub type BYPASS_R = crate::BitReader;
 #[doc = "Field `bypass` writer - Bypass the Read Capture"]
-pub type BYPASS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type BYPASS_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `delay` reader - Read Capture Delay Value"]
 pub type DELAY_R = crate::FieldReader;
 #[doc = "Field `delay` writer - Read Capture Delay Value"]
-pub type DELAY_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 4, O>;
+pub type DELAY_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
 impl R {
     #[doc = "Bit 0 - Bypass the Read Capture"]
     #[inline(always)]
@@ -26,16 +26,20 @@ impl W {
     #[doc = "Bit 0 - Bypass the Read Capture"]
     #[inline(always)]
     #[must_use]
-    pub fn bypass(&mut self) -> BYPASS_W<READ_CAPTURE_SPEC, 0> {
-        BYPASS_W::new(self)
+    pub fn bypass(&mut self) -> BYPASS_W<READ_CAPTURE_SPEC> {
+        BYPASS_W::new(self, 0)
     }
     #[doc = "Bits 1:4 - Read Capture Delay Value"]
     #[inline(always)]
     #[must_use]
-    pub fn delay(&mut self) -> DELAY_W<READ_CAPTURE_SPEC, 1> {
-        DELAY_W::new(self)
+    pub fn delay(&mut self) -> DELAY_W<READ_CAPTURE_SPEC> {
+        DELAY_W::new(self, 1)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

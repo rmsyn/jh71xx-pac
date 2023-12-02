@@ -5,7 +5,7 @@ pub type W = crate::W<CLR_RD_REQ_SPEC>;
 #[doc = "Field `clr_rd_req` reader - clr_rd_req"]
 pub type CLR_RD_REQ_R = crate::FieldReader<u32>;
 #[doc = "Field `clr_rd_req` writer - clr_rd_req"]
-pub type CLR_RD_REQ_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 32, O, u32>;
+pub type CLR_RD_REQ_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl R {
     #[doc = "Bits 0:31 - clr_rd_req"]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bits 0:31 - clr_rd_req"]
     #[inline(always)]
     #[must_use]
-    pub fn clr_rd_req(&mut self) -> CLR_RD_REQ_W<CLR_RD_REQ_SPEC, 0> {
-        CLR_RD_REQ_W::new(self)
+    pub fn clr_rd_req(&mut self) -> CLR_RD_REQ_W<CLR_RD_REQ_SPEC> {
+        CLR_RD_REQ_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

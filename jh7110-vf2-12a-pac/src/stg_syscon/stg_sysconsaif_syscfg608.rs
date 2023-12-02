@@ -5,18 +5,15 @@ pub type W = crate::W<STG_SYSCONSAIF_SYSCFG608_SPEC>;
 #[doc = "Field `u1_plda_pcie_axi4_slv0_aruser_40_32` reader - u1_plda_pcie_axi4_slv0_aruser_40_32"]
 pub type U1_PLDA_PCIE_AXI4_SLV0_ARUSER_40_32_R = crate::FieldReader<u16>;
 #[doc = "Field `u1_plda_pcie_axi4_slv0_aruser_40_32` writer - u1_plda_pcie_axi4_slv0_aruser_40_32"]
-pub type U1_PLDA_PCIE_AXI4_SLV0_ARUSER_40_32_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 9, O, u16>;
+pub type U1_PLDA_PCIE_AXI4_SLV0_ARUSER_40_32_W<'a, REG> = crate::FieldWriter<'a, REG, 9, u16>;
 #[doc = "Field `u1_plda_pcie_axi4_slv0_awfunc` reader - u1_plda_pcie_axi4_slv0_awfunc"]
 pub type U1_PLDA_PCIE_AXI4_SLV0_AWFUNC_R = crate::FieldReader<u16>;
 #[doc = "Field `u1_plda_pcie_axi4_slv0_awfunc` writer - u1_plda_pcie_axi4_slv0_awfunc"]
-pub type U1_PLDA_PCIE_AXI4_SLV0_AWFUNC_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 15, O, u16>;
+pub type U1_PLDA_PCIE_AXI4_SLV0_AWFUNC_W<'a, REG> = crate::FieldWriter<'a, REG, 15, u16>;
 #[doc = "Field `u1_plda_pcie_axi4_slv0_awregion` reader - u1_plda_pcie_axi4_slv0_awregion"]
 pub type U1_PLDA_PCIE_AXI4_SLV0_AWREGION_R = crate::FieldReader;
 #[doc = "Field `u1_plda_pcie_axi4_slv0_awregion` writer - u1_plda_pcie_axi4_slv0_awregion"]
-pub type U1_PLDA_PCIE_AXI4_SLV0_AWREGION_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 4, O>;
+pub type U1_PLDA_PCIE_AXI4_SLV0_AWREGION_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
 impl R {
     #[doc = "Bits 0:8 - u1_plda_pcie_axi4_slv0_aruser_40_32"]
     #[inline(always)]
@@ -40,26 +37,30 @@ impl W {
     #[must_use]
     pub fn u1_plda_pcie_axi4_slv0_aruser_40_32(
         &mut self,
-    ) -> U1_PLDA_PCIE_AXI4_SLV0_ARUSER_40_32_W<STG_SYSCONSAIF_SYSCFG608_SPEC, 0> {
-        U1_PLDA_PCIE_AXI4_SLV0_ARUSER_40_32_W::new(self)
+    ) -> U1_PLDA_PCIE_AXI4_SLV0_ARUSER_40_32_W<STG_SYSCONSAIF_SYSCFG608_SPEC> {
+        U1_PLDA_PCIE_AXI4_SLV0_ARUSER_40_32_W::new(self, 0)
     }
     #[doc = "Bits 9:23 - u1_plda_pcie_axi4_slv0_awfunc"]
     #[inline(always)]
     #[must_use]
     pub fn u1_plda_pcie_axi4_slv0_awfunc(
         &mut self,
-    ) -> U1_PLDA_PCIE_AXI4_SLV0_AWFUNC_W<STG_SYSCONSAIF_SYSCFG608_SPEC, 9> {
-        U1_PLDA_PCIE_AXI4_SLV0_AWFUNC_W::new(self)
+    ) -> U1_PLDA_PCIE_AXI4_SLV0_AWFUNC_W<STG_SYSCONSAIF_SYSCFG608_SPEC> {
+        U1_PLDA_PCIE_AXI4_SLV0_AWFUNC_W::new(self, 9)
     }
     #[doc = "Bits 24:27 - u1_plda_pcie_axi4_slv0_awregion"]
     #[inline(always)]
     #[must_use]
     pub fn u1_plda_pcie_axi4_slv0_awregion(
         &mut self,
-    ) -> U1_PLDA_PCIE_AXI4_SLV0_AWREGION_W<STG_SYSCONSAIF_SYSCFG608_SPEC, 24> {
-        U1_PLDA_PCIE_AXI4_SLV0_AWREGION_W::new(self)
+    ) -> U1_PLDA_PCIE_AXI4_SLV0_AWREGION_W<STG_SYSCONSAIF_SYSCFG608_SPEC> {
+        U1_PLDA_PCIE_AXI4_SLV0_AWREGION_W::new(self, 24)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

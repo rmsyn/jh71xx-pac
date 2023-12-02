@@ -5,42 +5,35 @@ pub type W = crate::W<FUNC_SEL6_SPEC>;
 #[doc = "Field `u0_dom_isp_top_u0_vin_dvp_data_c5_func_sel` reader - Function Selector of DVP_DATA\\[idx\\], see Function 2 for more information"]
 pub type U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C5_FUNC_SEL_R = crate::FieldReader;
 #[doc = "Field `u0_dom_isp_top_u0_vin_dvp_data_c5_func_sel` writer - Function Selector of DVP_DATA\\[idx\\], see Function 2 for more information"]
-pub type U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C5_FUNC_SEL_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 3, O>;
+pub type U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C5_FUNC_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `u0_dom_isp_top_u0_vin_dvp_data_c6_func_sel` reader - Function Selector of DVP_DATA\\[idx\\], see Function 2 for more information"]
 pub type U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C6_FUNC_SEL_R = crate::FieldReader;
 #[doc = "Field `u0_dom_isp_top_u0_vin_dvp_data_c6_func_sel` writer - Function Selector of DVP_DATA\\[idx\\], see Function 2 for more information"]
-pub type U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C6_FUNC_SEL_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 3, O>;
+pub type U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C6_FUNC_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `u0_dom_isp_top_u0_vin_dvp_data_c7_func_sel` reader - Function Selector of DVP_DATA\\[idx\\], see Function 2 for more information"]
 pub type U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C7_FUNC_SEL_R = crate::FieldReader;
 #[doc = "Field `u0_dom_isp_top_u0_vin_dvp_data_c7_func_sel` writer - Function Selector of DVP_DATA\\[idx\\], see Function 2 for more information"]
-pub type U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C7_FUNC_SEL_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 3, O>;
+pub type U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C7_FUNC_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `u0_dom_isp_top_u0_vin_dvp_data_c8_func_sel` reader - Function Selector of DVP_DATA\\[idx\\], see Function 2 for more information"]
 pub type U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C8_FUNC_SEL_R = crate::FieldReader;
 #[doc = "Field `u0_dom_isp_top_u0_vin_dvp_data_c8_func_sel` writer - Function Selector of DVP_DATA\\[idx\\], see Function 2 for more information"]
-pub type U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C8_FUNC_SEL_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 3, O>;
+pub type U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C8_FUNC_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `u0_dom_isp_top_u0_vin_dvp_data_c9_func_sel` reader - Function Selector of DVP_DATA\\[idx\\], see Function 2 for more information"]
 pub type U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C9_FUNC_SEL_R = crate::FieldReader;
 #[doc = "Field `u0_dom_isp_top_u0_vin_dvp_data_c9_func_sel` writer - Function Selector of DVP_DATA\\[idx\\], see Function 2 for more information"]
-pub type U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C9_FUNC_SEL_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 3, O>;
+pub type U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C9_FUNC_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `u0_dom_isp_top_u0_vin_dvp_hvalid_c_func_sel` reader - Function Selector of DVP_HSYNC, see Function 2 for more information"]
 pub type U0_DOM_ISP_TOP_U0_VIN_DVP_HVALID_C_FUNC_SEL_R = crate::FieldReader;
 #[doc = "Field `u0_dom_isp_top_u0_vin_dvp_hvalid_c_func_sel` writer - Function Selector of DVP_HSYNC, see Function 2 for more information"]
-pub type U0_DOM_ISP_TOP_U0_VIN_DVP_HVALID_C_FUNC_SEL_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 3, O>;
+pub type U0_DOM_ISP_TOP_U0_VIN_DVP_HVALID_C_FUNC_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `u0_dom_isp_top_u0_vin_dvp_vvalid_c_func_sel` reader - Function Selector of DVP_VSYNC, see Function 2 for more information"]
 pub type U0_DOM_ISP_TOP_U0_VIN_DVP_VVALID_C_FUNC_SEL_R = crate::FieldReader;
 #[doc = "Field `u0_dom_isp_top_u0_vin_dvp_vvalid_c_func_sel` writer - Function Selector of DVP_VSYNC, see Function 2 for more information"]
-pub type U0_DOM_ISP_TOP_U0_VIN_DVP_VVALID_C_FUNC_SEL_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 3, O>;
+pub type U0_DOM_ISP_TOP_U0_VIN_DVP_VVALID_C_FUNC_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `u0_sys_crg_dvp_clk_func_sel` reader - Function Selector of DVP_CLK, see Function 2 for more information"]
 pub type U0_SYS_CRG_DVP_CLK_FUNC_SEL_R = crate::FieldReader;
 #[doc = "Field `u0_sys_crg_dvp_clk_func_sel` writer - Function Selector of DVP_CLK, see Function 2 for more information"]
-pub type U0_SYS_CRG_DVP_CLK_FUNC_SEL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 3, O>;
+pub type U0_SYS_CRG_DVP_CLK_FUNC_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 impl R {
     #[doc = "Bits 0:2 - Function Selector of DVP_DATA\\[idx\\], see Function 2 for more information"]
     #[inline(always)]
@@ -103,66 +96,68 @@ impl W {
     #[must_use]
     pub fn u0_dom_isp_top_u0_vin_dvp_data_c5_func_sel(
         &mut self,
-    ) -> U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C5_FUNC_SEL_W<FUNC_SEL6_SPEC, 0> {
-        U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C5_FUNC_SEL_W::new(self)
+    ) -> U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C5_FUNC_SEL_W<FUNC_SEL6_SPEC> {
+        U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C5_FUNC_SEL_W::new(self, 0)
     }
     #[doc = "Bits 3:5 - Function Selector of DVP_DATA\\[idx\\], see Function 2 for more information"]
     #[inline(always)]
     #[must_use]
     pub fn u0_dom_isp_top_u0_vin_dvp_data_c6_func_sel(
         &mut self,
-    ) -> U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C6_FUNC_SEL_W<FUNC_SEL6_SPEC, 3> {
-        U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C6_FUNC_SEL_W::new(self)
+    ) -> U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C6_FUNC_SEL_W<FUNC_SEL6_SPEC> {
+        U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C6_FUNC_SEL_W::new(self, 3)
     }
     #[doc = "Bits 6:8 - Function Selector of DVP_DATA\\[idx\\], see Function 2 for more information"]
     #[inline(always)]
     #[must_use]
     pub fn u0_dom_isp_top_u0_vin_dvp_data_c7_func_sel(
         &mut self,
-    ) -> U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C7_FUNC_SEL_W<FUNC_SEL6_SPEC, 6> {
-        U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C7_FUNC_SEL_W::new(self)
+    ) -> U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C7_FUNC_SEL_W<FUNC_SEL6_SPEC> {
+        U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C7_FUNC_SEL_W::new(self, 6)
     }
     #[doc = "Bits 9:11 - Function Selector of DVP_DATA\\[idx\\], see Function 2 for more information"]
     #[inline(always)]
     #[must_use]
     pub fn u0_dom_isp_top_u0_vin_dvp_data_c8_func_sel(
         &mut self,
-    ) -> U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C8_FUNC_SEL_W<FUNC_SEL6_SPEC, 9> {
-        U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C8_FUNC_SEL_W::new(self)
+    ) -> U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C8_FUNC_SEL_W<FUNC_SEL6_SPEC> {
+        U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C8_FUNC_SEL_W::new(self, 9)
     }
     #[doc = "Bits 12:14 - Function Selector of DVP_DATA\\[idx\\], see Function 2 for more information"]
     #[inline(always)]
     #[must_use]
     pub fn u0_dom_isp_top_u0_vin_dvp_data_c9_func_sel(
         &mut self,
-    ) -> U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C9_FUNC_SEL_W<FUNC_SEL6_SPEC, 12> {
-        U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C9_FUNC_SEL_W::new(self)
+    ) -> U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C9_FUNC_SEL_W<FUNC_SEL6_SPEC> {
+        U0_DOM_ISP_TOP_U0_VIN_DVP_DATA_C9_FUNC_SEL_W::new(self, 12)
     }
     #[doc = "Bits 15:17 - Function Selector of DVP_HSYNC, see Function 2 for more information"]
     #[inline(always)]
     #[must_use]
     pub fn u0_dom_isp_top_u0_vin_dvp_hvalid_c_func_sel(
         &mut self,
-    ) -> U0_DOM_ISP_TOP_U0_VIN_DVP_HVALID_C_FUNC_SEL_W<FUNC_SEL6_SPEC, 15> {
-        U0_DOM_ISP_TOP_U0_VIN_DVP_HVALID_C_FUNC_SEL_W::new(self)
+    ) -> U0_DOM_ISP_TOP_U0_VIN_DVP_HVALID_C_FUNC_SEL_W<FUNC_SEL6_SPEC> {
+        U0_DOM_ISP_TOP_U0_VIN_DVP_HVALID_C_FUNC_SEL_W::new(self, 15)
     }
     #[doc = "Bits 18:20 - Function Selector of DVP_VSYNC, see Function 2 for more information"]
     #[inline(always)]
     #[must_use]
     pub fn u0_dom_isp_top_u0_vin_dvp_vvalid_c_func_sel(
         &mut self,
-    ) -> U0_DOM_ISP_TOP_U0_VIN_DVP_VVALID_C_FUNC_SEL_W<FUNC_SEL6_SPEC, 18> {
-        U0_DOM_ISP_TOP_U0_VIN_DVP_VVALID_C_FUNC_SEL_W::new(self)
+    ) -> U0_DOM_ISP_TOP_U0_VIN_DVP_VVALID_C_FUNC_SEL_W<FUNC_SEL6_SPEC> {
+        U0_DOM_ISP_TOP_U0_VIN_DVP_VVALID_C_FUNC_SEL_W::new(self, 18)
     }
     #[doc = "Bits 21:23 - Function Selector of DVP_CLK, see Function 2 for more information"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_sys_crg_dvp_clk_func_sel(
-        &mut self,
-    ) -> U0_SYS_CRG_DVP_CLK_FUNC_SEL_W<FUNC_SEL6_SPEC, 21> {
-        U0_SYS_CRG_DVP_CLK_FUNC_SEL_W::new(self)
+    pub fn u0_sys_crg_dvp_clk_func_sel(&mut self) -> U0_SYS_CRG_DVP_CLK_FUNC_SEL_W<FUNC_SEL6_SPEC> {
+        U0_SYS_CRG_DVP_CLK_FUNC_SEL_W::new(self, 21)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

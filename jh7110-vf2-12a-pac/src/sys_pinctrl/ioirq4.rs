@@ -5,7 +5,7 @@ pub type W = crate::W<IOIRQ4_SPEC>;
 #[doc = "Field `gpioic1` reader - 1: Do not clear the register, 0: Clear the register"]
 pub type GPIOIC1_R = crate::FieldReader<u32>;
 #[doc = "Field `gpioic1` writer - 1: Do not clear the register, 0: Clear the register"]
-pub type GPIOIC1_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 32, O, u32>;
+pub type GPIOIC1_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl R {
     #[doc = "Bits 0:31 - 1: Do not clear the register, 0: Clear the register"]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bits 0:31 - 1: Do not clear the register, 0: Clear the register"]
     #[inline(always)]
     #[must_use]
-    pub fn gpioic1(&mut self) -> GPIOIC1_W<IOIRQ4_SPEC, 0> {
-        GPIOIC1_W::new(self)
+    pub fn gpioic1(&mut self) -> GPIOIC1_W<IOIRQ4_SPEC> {
+        GPIOIC1_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

@@ -5,20 +5,19 @@ pub type W = crate::W<GPI0_SPEC>;
 #[doc = "Field `u0_WAVE511_i_uart_rxsin_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type U0_WAVE511_I_UART_RXSIN_CFG_R = crate::FieldReader;
 #[doc = "Field `u0_WAVE511_i_uart_rxsin_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type U0_WAVE511_I_UART_RXSIN_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type U0_WAVE511_I_UART_RXSIN_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 #[doc = "Field `u0_can_ctrl_rxd_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type U0_CAN_CTRL_RXD_CFG_R = crate::FieldReader;
 #[doc = "Field `u0_can_ctrl_rxd_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type U0_CAN_CTRL_RXD_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type U0_CAN_CTRL_RXD_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 #[doc = "Field `u0_cdn_usb_over_current_n_io_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type U0_CDN_USB_OVER_CURRENT_N_IO_CFG_R = crate::FieldReader;
 #[doc = "Field `u0_cdn_usb_over_current_n_io_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type U0_CDN_USB_OVER_CURRENT_N_IO_CFG_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 7, O>;
+pub type U0_CDN_USB_OVER_CURRENT_N_IO_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 #[doc = "Field `u0_cdns_spdif_spdi_fi_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type U0_CDNS_SPDIF_SPDI_FI_CFG_R = crate::FieldReader;
 #[doc = "Field `u0_cdns_spdif_spdi_fi_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type U0_CDNS_SPDIF_SPDI_FI_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type U0_CDNS_SPDIF_SPDI_FI_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 impl R {
     #[doc = "Bits 0:6 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
@@ -45,30 +44,34 @@ impl W {
     #[doc = "Bits 0:6 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
-    pub fn u0_wave511_i_uart_rxsin_cfg(&mut self) -> U0_WAVE511_I_UART_RXSIN_CFG_W<GPI0_SPEC, 0> {
-        U0_WAVE511_I_UART_RXSIN_CFG_W::new(self)
+    pub fn u0_wave511_i_uart_rxsin_cfg(&mut self) -> U0_WAVE511_I_UART_RXSIN_CFG_W<GPI0_SPEC> {
+        U0_WAVE511_I_UART_RXSIN_CFG_W::new(self, 0)
     }
     #[doc = "Bits 8:14 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
-    pub fn u0_can_ctrl_rxd_cfg(&mut self) -> U0_CAN_CTRL_RXD_CFG_W<GPI0_SPEC, 8> {
-        U0_CAN_CTRL_RXD_CFG_W::new(self)
+    pub fn u0_can_ctrl_rxd_cfg(&mut self) -> U0_CAN_CTRL_RXD_CFG_W<GPI0_SPEC> {
+        U0_CAN_CTRL_RXD_CFG_W::new(self, 8)
     }
     #[doc = "Bits 16:22 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_over_current_n_io_cfg(
         &mut self,
-    ) -> U0_CDN_USB_OVER_CURRENT_N_IO_CFG_W<GPI0_SPEC, 16> {
-        U0_CDN_USB_OVER_CURRENT_N_IO_CFG_W::new(self)
+    ) -> U0_CDN_USB_OVER_CURRENT_N_IO_CFG_W<GPI0_SPEC> {
+        U0_CDN_USB_OVER_CURRENT_N_IO_CFG_W::new(self, 16)
     }
     #[doc = "Bits 24:30 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
-    pub fn u0_cdns_spdif_spdi_fi_cfg(&mut self) -> U0_CDNS_SPDIF_SPDI_FI_CFG_W<GPI0_SPEC, 24> {
-        U0_CDNS_SPDIF_SPDI_FI_CFG_W::new(self)
+    pub fn u0_cdns_spdif_spdi_fi_cfg(&mut self) -> U0_CDNS_SPDIF_SPDI_FI_CFG_W<GPI0_SPEC> {
+        U0_CDNS_SPDIF_SPDI_FI_CFG_W::new(self, 24)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

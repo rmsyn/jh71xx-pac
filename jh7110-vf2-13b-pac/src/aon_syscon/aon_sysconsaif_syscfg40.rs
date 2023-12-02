@@ -11,13 +11,13 @@ pub type U0_OTPC_LOAD_BUSY_R = crate::BitReader;
 #[doc = "Field `u0_reset_ctrl_clr_reset_status` reader - u0_reset_ctrl_clr_reset_status"]
 pub type U0_RESET_CTRL_CLR_RESET_STATUS_R = crate::BitReader;
 #[doc = "Field `u0_reset_ctrl_clr_reset_status` writer - u0_reset_ctrl_clr_reset_status"]
-pub type U0_RESET_CTRL_CLR_RESET_STATUS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_RESET_CTRL_CLR_RESET_STATUS_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_reset_ctrl_pll_timecnt_finish` reader - u0_reset_ctrl_pll_timecnt_finish"]
 pub type U0_RESET_CTRL_PLL_TIMECNT_FINISH_R = crate::BitReader;
 #[doc = "Field `u0_reset_ctrl_rstn_sw` reader - u0_reset_ctrl_rstn_sw"]
 pub type U0_RESET_CTRL_RSTN_SW_R = crate::BitReader;
 #[doc = "Field `u0_reset_ctrl_rstn_sw` writer - u0_reset_ctrl_rstn_sw"]
-pub type U0_RESET_CTRL_RSTN_SW_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_RESET_CTRL_RSTN_SW_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_reset_ctrl_sys_reset_status` reader - u0_reset_ctrl_sys_reset_status"]
 pub type U0_RESET_CTRL_SYS_RESET_STATUS_R = crate::FieldReader;
 impl R {
@@ -63,18 +63,22 @@ impl W {
     #[must_use]
     pub fn u0_reset_ctrl_clr_reset_status(
         &mut self,
-    ) -> U0_RESET_CTRL_CLR_RESET_STATUS_W<AON_SYSCONSAIF_SYSCFG40_SPEC, 3> {
-        U0_RESET_CTRL_CLR_RESET_STATUS_W::new(self)
+    ) -> U0_RESET_CTRL_CLR_RESET_STATUS_W<AON_SYSCONSAIF_SYSCFG40_SPEC> {
+        U0_RESET_CTRL_CLR_RESET_STATUS_W::new(self, 3)
     }
     #[doc = "Bit 5 - u0_reset_ctrl_rstn_sw"]
     #[inline(always)]
     #[must_use]
     pub fn u0_reset_ctrl_rstn_sw(
         &mut self,
-    ) -> U0_RESET_CTRL_RSTN_SW_W<AON_SYSCONSAIF_SYSCFG40_SPEC, 5> {
-        U0_RESET_CTRL_RSTN_SW_W::new(self)
+    ) -> U0_RESET_CTRL_RSTN_SW_W<AON_SYSCONSAIF_SYSCFG40_SPEC> {
+        U0_RESET_CTRL_RSTN_SW_W::new(self, 5)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

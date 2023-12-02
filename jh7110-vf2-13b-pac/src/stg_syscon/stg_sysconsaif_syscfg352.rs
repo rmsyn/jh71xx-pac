@@ -5,7 +5,7 @@ pub type W = crate::W<STG_SYSCONSAIF_SYSCFG352_SPEC>;
 #[doc = "Field `u0_plda_pcie_pl_wake_in` reader - u0_plda_pcie_pl_wake_in"]
 pub type U0_PLDA_PCIE_PL_WAKE_IN_R = crate::BitReader;
 #[doc = "Field `u0_plda_pcie_pl_wake_in` writer - u0_plda_pcie_pl_wake_in"]
-pub type U0_PLDA_PCIE_PL_WAKE_IN_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_PLDA_PCIE_PL_WAKE_IN_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_plda_pcie_pl_wake_oen` reader - u0_plda_pcie_pl_wake_oen"]
 pub type U0_PLDA_PCIE_PL_WAKE_OEN_R = crate::BitReader;
 #[doc = "Field `u0_plda_pcie_rx_standby_0` reader - u0_plda_pcie_rx_standby_0"]
@@ -33,10 +33,14 @@ impl W {
     #[must_use]
     pub fn u0_plda_pcie_pl_wake_in(
         &mut self,
-    ) -> U0_PLDA_PCIE_PL_WAKE_IN_W<STG_SYSCONSAIF_SYSCFG352_SPEC, 0> {
-        U0_PLDA_PCIE_PL_WAKE_IN_W::new(self)
+    ) -> U0_PLDA_PCIE_PL_WAKE_IN_W<STG_SYSCONSAIF_SYSCFG352_SPEC> {
+        U0_PLDA_PCIE_PL_WAKE_IN_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

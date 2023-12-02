@@ -5,8 +5,7 @@ pub type W = crate::W<STG_SYSCONSAIF_SYSCFG612_SPEC>;
 #[doc = "Field `u1_plda_pcie_axi4_slv0_awuser_31_0` reader - u1_plda_pcie_axi4_slv0_awuser_31_0"]
 pub type U1_PLDA_PCIE_AXI4_SLV0_AWUSER_31_0_R = crate::FieldReader<u32>;
 #[doc = "Field `u1_plda_pcie_axi4_slv0_awuser_31_0` writer - u1_plda_pcie_axi4_slv0_awuser_31_0"]
-pub type U1_PLDA_PCIE_AXI4_SLV0_AWUSER_31_0_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 32, O, u32>;
+pub type U1_PLDA_PCIE_AXI4_SLV0_AWUSER_31_0_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl R {
     #[doc = "Bits 0:31 - u1_plda_pcie_axi4_slv0_awuser_31_0"]
     #[inline(always)]
@@ -20,10 +19,14 @@ impl W {
     #[must_use]
     pub fn u1_plda_pcie_axi4_slv0_awuser_31_0(
         &mut self,
-    ) -> U1_PLDA_PCIE_AXI4_SLV0_AWUSER_31_0_W<STG_SYSCONSAIF_SYSCFG612_SPEC, 0> {
-        U1_PLDA_PCIE_AXI4_SLV0_AWUSER_31_0_W::new(self)
+    ) -> U1_PLDA_PCIE_AXI4_SLV0_AWUSER_31_0_W<STG_SYSCONSAIF_SYSCFG612_SPEC> {
+        U1_PLDA_PCIE_AXI4_SLV0_AWUSER_31_0_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

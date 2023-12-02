@@ -5,7 +5,7 @@ pub type W = crate::W<CLK_U1_I2STX_LRCK_SPEC>;
 #[doc = "Field `clk_mux_sel` reader - Clock multiplexing selector: clk_i2stx_4ch1_lrck_mst, clk_i2stx_lrck_ext"]
 pub type CLK_MUX_SEL_R = crate::FieldReader;
 #[doc = "Field `clk_mux_sel` writer - Clock multiplexing selector: clk_i2stx_4ch1_lrck_mst, clk_i2stx_lrck_ext"]
-pub type CLK_MUX_SEL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 6, O>;
+pub type CLK_MUX_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 6>;
 impl R {
     #[doc = "Bits 24:29 - Clock multiplexing selector: clk_i2stx_4ch1_lrck_mst, clk_i2stx_lrck_ext"]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bits 24:29 - Clock multiplexing selector: clk_i2stx_4ch1_lrck_mst, clk_i2stx_lrck_ext"]
     #[inline(always)]
     #[must_use]
-    pub fn clk_mux_sel(&mut self) -> CLK_MUX_SEL_W<CLK_U1_I2STX_LRCK_SPEC, 24> {
-        CLK_MUX_SEL_W::new(self)
+    pub fn clk_mux_sel(&mut self) -> CLK_MUX_SEL_W<CLK_U1_I2STX_LRCK_SPEC> {
+        CLK_MUX_SEL_W::new(self, 24)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

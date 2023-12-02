@@ -5,7 +5,7 @@ pub type W = crate::W<WR_COMPLETION_CTRL_SPEC>;
 #[doc = "Field `disable_auto_poll` reader - SPI NAND flashes require the address of the status register to be passed in the Read SR command. Also, some SPI NOR flashes like the Cypress Semper flash expect a 4-byte dummy address in the Read SR command in DTR mode. But this controller does not support address phase in the Read SR command when doing auto-HW polling. So, disable write completion polling on the controller's side. spi-nand and spi-nor will take care of polling the status register."]
 pub type DISABLE_AUTO_POLL_R = crate::BitReader;
 #[doc = "Field `disable_auto_poll` writer - SPI NAND flashes require the address of the status register to be passed in the Read SR command. Also, some SPI NOR flashes like the Cypress Semper flash expect a 4-byte dummy address in the Read SR command in DTR mode. But this controller does not support address phase in the Read SR command when doing auto-HW polling. So, disable write completion polling on the controller's side. spi-nand and spi-nor will take care of polling the status register."]
-pub type DISABLE_AUTO_POLL_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type DISABLE_AUTO_POLL_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 14 - SPI NAND flashes require the address of the status register to be passed in the Read SR command. Also, some SPI NOR flashes like the Cypress Semper flash expect a 4-byte dummy address in the Read SR command in DTR mode. But this controller does not support address phase in the Read SR command when doing auto-HW polling. So, disable write completion polling on the controller's side. spi-nand and spi-nor will take care of polling the status register."]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bit 14 - SPI NAND flashes require the address of the status register to be passed in the Read SR command. Also, some SPI NOR flashes like the Cypress Semper flash expect a 4-byte dummy address in the Read SR command in DTR mode. But this controller does not support address phase in the Read SR command when doing auto-HW polling. So, disable write completion polling on the controller's side. spi-nand and spi-nor will take care of polling the status register."]
     #[inline(always)]
     #[must_use]
-    pub fn disable_auto_poll(&mut self) -> DISABLE_AUTO_POLL_W<WR_COMPLETION_CTRL_SPEC, 14> {
-        DISABLE_AUTO_POLL_W::new(self)
+    pub fn disable_auto_poll(&mut self) -> DISABLE_AUTO_POLL_W<WR_COMPLETION_CTRL_SPEC> {
+        DISABLE_AUTO_POLL_W::new(self, 14)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

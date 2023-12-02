@@ -5,11 +5,11 @@ pub type W = crate::W<SSP_ICR_SPEC>;
 #[doc = "Field `roric` reader - Clears the SSPRORINTR interrupt"]
 pub type RORIC_R = crate::BitReader;
 #[doc = "Field `roric` writer - Clears the SSPRORINTR interrupt"]
-pub type RORIC_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type RORIC_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `rtic` reader - Clears the SSPRTINTR interrupt"]
 pub type RTIC_R = crate::BitReader;
 #[doc = "Field `rtic` writer - Clears the SSPRTINTR interrupt"]
-pub type RTIC_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type RTIC_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - Clears the SSPRORINTR interrupt"]
     #[inline(always)]
@@ -26,16 +26,20 @@ impl W {
     #[doc = "Bit 0 - Clears the SSPRORINTR interrupt"]
     #[inline(always)]
     #[must_use]
-    pub fn roric(&mut self) -> RORIC_W<SSP_ICR_SPEC, 0> {
-        RORIC_W::new(self)
+    pub fn roric(&mut self) -> RORIC_W<SSP_ICR_SPEC> {
+        RORIC_W::new(self, 0)
     }
     #[doc = "Bit 1 - Clears the SSPRTINTR interrupt"]
     #[inline(always)]
     #[must_use]
-    pub fn rtic(&mut self) -> RTIC_W<SSP_ICR_SPEC, 1> {
-        RTIC_W::new(self)
+    pub fn rtic(&mut self) -> RTIC_W<SSP_ICR_SPEC> {
+        RTIC_W::new(self, 1)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u16) -> &mut Self {
         self.bits = bits;

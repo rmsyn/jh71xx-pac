@@ -5,13 +5,11 @@ pub type W = crate::W<STG_SYSCONSAIF_SYSCFG60_SPEC>;
 #[doc = "Field `u0_hifi4_scfg_dsp_mst_offset_master` reader - Indicates that master port remap address"]
 pub type U0_HIFI4_SCFG_DSP_MST_OFFSET_MASTER_R = crate::FieldReader<u16>;
 #[doc = "Field `u0_hifi4_scfg_dsp_mst_offset_master` writer - Indicates that master port remap address"]
-pub type U0_HIFI4_SCFG_DSP_MST_OFFSET_MASTER_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 12, O, u16>;
+pub type U0_HIFI4_SCFG_DSP_MST_OFFSET_MASTER_W<'a, REG> = crate::FieldWriter<'a, REG, 12, u16>;
 #[doc = "Field `u0_hifi4_scfg_dsp_mst_offset_dma` reader - Indicates the DMA port remap address"]
 pub type U0_HIFI4_SCFG_DSP_MST_OFFSET_DMA_R = crate::FieldReader<u16>;
 #[doc = "Field `u0_hifi4_scfg_dsp_mst_offset_dma` writer - Indicates the DMA port remap address"]
-pub type U0_HIFI4_SCFG_DSP_MST_OFFSET_DMA_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 12, O, u16>;
+pub type U0_HIFI4_SCFG_DSP_MST_OFFSET_DMA_W<'a, REG> = crate::FieldWriter<'a, REG, 12, u16>;
 impl R {
     #[doc = "Bits 0:11 - Indicates that master port remap address"]
     #[inline(always)]
@@ -30,18 +28,22 @@ impl W {
     #[must_use]
     pub fn u0_hifi4_scfg_dsp_mst_offset_master(
         &mut self,
-    ) -> U0_HIFI4_SCFG_DSP_MST_OFFSET_MASTER_W<STG_SYSCONSAIF_SYSCFG60_SPEC, 0> {
-        U0_HIFI4_SCFG_DSP_MST_OFFSET_MASTER_W::new(self)
+    ) -> U0_HIFI4_SCFG_DSP_MST_OFFSET_MASTER_W<STG_SYSCONSAIF_SYSCFG60_SPEC> {
+        U0_HIFI4_SCFG_DSP_MST_OFFSET_MASTER_W::new(self, 0)
     }
     #[doc = "Bits 16:27 - Indicates the DMA port remap address"]
     #[inline(always)]
     #[must_use]
     pub fn u0_hifi4_scfg_dsp_mst_offset_dma(
         &mut self,
-    ) -> U0_HIFI4_SCFG_DSP_MST_OFFSET_DMA_W<STG_SYSCONSAIF_SYSCFG60_SPEC, 16> {
-        U0_HIFI4_SCFG_DSP_MST_OFFSET_DMA_W::new(self)
+    ) -> U0_HIFI4_SCFG_DSP_MST_OFFSET_DMA_W<STG_SYSCONSAIF_SYSCFG60_SPEC> {
+        U0_HIFI4_SCFG_DSP_MST_OFFSET_DMA_W::new(self, 16)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

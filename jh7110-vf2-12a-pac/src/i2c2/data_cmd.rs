@@ -5,23 +5,23 @@ pub type W = crate::W<DATA_CMD_SPEC>;
 #[doc = "Field `dat` reader - Data Command Data Byte"]
 pub type DAT_R = crate::FieldReader;
 #[doc = "Field `dat` writer - Data Command Data Byte"]
-pub type DAT_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 8, O>;
+pub type DAT_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 #[doc = "Field `read` reader - Data Command READ Bit - 0: Write, 1: Read"]
 pub type READ_R = crate::BitReader;
 #[doc = "Field `read` writer - Data Command READ Bit - 0: Write, 1: Read"]
-pub type READ_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type READ_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `stop` reader - Data Command STOP Bit - 0: Non-terminal DATA command byte, 1: Terminal DATA command byte"]
 pub type STOP_R = crate::BitReader;
 #[doc = "Field `stop` writer - Data Command STOP Bit - 0: Non-terminal DATA command byte, 1: Terminal DATA command byte"]
-pub type STOP_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type STOP_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `restart` reader - Data Command RESTART Bit - 0: Do not restart the transfer, 1: Restart the transfer"]
 pub type RESTART_R = crate::BitReader;
 #[doc = "Field `restart` writer - Data Command RESTART Bit - 0: Do not restart the transfer, 1: Restart the transfer"]
-pub type RESTART_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type RESTART_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `first_data_byte` reader - Data Command First Data Byte - 0: False, 1: True"]
 pub type FIRST_DATA_BYTE_R = crate::BitReader;
 #[doc = "Field `first_data_byte` writer - Data Command First Data Byte - 0: False, 1: True"]
-pub type FIRST_DATA_BYTE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type FIRST_DATA_BYTE_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bits 0:7 - Data Command Data Byte"]
     #[inline(always)]
@@ -53,34 +53,38 @@ impl W {
     #[doc = "Bits 0:7 - Data Command Data Byte"]
     #[inline(always)]
     #[must_use]
-    pub fn dat(&mut self) -> DAT_W<DATA_CMD_SPEC, 0> {
-        DAT_W::new(self)
+    pub fn dat(&mut self) -> DAT_W<DATA_CMD_SPEC> {
+        DAT_W::new(self, 0)
     }
     #[doc = "Bit 8 - Data Command READ Bit - 0: Write, 1: Read"]
     #[inline(always)]
     #[must_use]
-    pub fn read(&mut self) -> READ_W<DATA_CMD_SPEC, 8> {
-        READ_W::new(self)
+    pub fn read(&mut self) -> READ_W<DATA_CMD_SPEC> {
+        READ_W::new(self, 8)
     }
     #[doc = "Bit 9 - Data Command STOP Bit - 0: Non-terminal DATA command byte, 1: Terminal DATA command byte"]
     #[inline(always)]
     #[must_use]
-    pub fn stop(&mut self) -> STOP_W<DATA_CMD_SPEC, 9> {
-        STOP_W::new(self)
+    pub fn stop(&mut self) -> STOP_W<DATA_CMD_SPEC> {
+        STOP_W::new(self, 9)
     }
     #[doc = "Bit 10 - Data Command RESTART Bit - 0: Do not restart the transfer, 1: Restart the transfer"]
     #[inline(always)]
     #[must_use]
-    pub fn restart(&mut self) -> RESTART_W<DATA_CMD_SPEC, 10> {
-        RESTART_W::new(self)
+    pub fn restart(&mut self) -> RESTART_W<DATA_CMD_SPEC> {
+        RESTART_W::new(self, 10)
     }
     #[doc = "Bit 11 - Data Command First Data Byte - 0: False, 1: True"]
     #[inline(always)]
     #[must_use]
-    pub fn first_data_byte(&mut self) -> FIRST_DATA_BYTE_W<DATA_CMD_SPEC, 11> {
-        FIRST_DATA_BYTE_W::new(self)
+    pub fn first_data_byte(&mut self) -> FIRST_DATA_BYTE_W<DATA_CMD_SPEC> {
+        FIRST_DATA_BYTE_W::new(self, 11)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

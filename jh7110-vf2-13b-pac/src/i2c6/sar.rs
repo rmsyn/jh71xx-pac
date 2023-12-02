@@ -5,11 +5,11 @@ pub type W = crate::W<SAR_SPEC>;
 #[doc = "Field `address_7bit` reader - Slave address, 7-bit mode"]
 pub type ADDRESS_7BIT_R = crate::FieldReader;
 #[doc = "Field `address_7bit` writer - Slave address, 7-bit mode"]
-pub type ADDRESS_7BIT_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type ADDRESS_7BIT_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 #[doc = "Field `address_10bit` reader - Slave address, 10-bit mode"]
 pub type ADDRESS_10BIT_R = crate::FieldReader<u16>;
 #[doc = "Field `address_10bit` writer - Slave address, 10-bit mode"]
-pub type ADDRESS_10BIT_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 10, O, u16>;
+pub type ADDRESS_10BIT_W<'a, REG> = crate::FieldWriter<'a, REG, 10, u16>;
 impl R {
     #[doc = "Bits 0:6 - Slave address, 7-bit mode"]
     #[inline(always)]
@@ -26,16 +26,20 @@ impl W {
     #[doc = "Bits 0:6 - Slave address, 7-bit mode"]
     #[inline(always)]
     #[must_use]
-    pub fn address_7bit(&mut self) -> ADDRESS_7BIT_W<SAR_SPEC, 0> {
-        ADDRESS_7BIT_W::new(self)
+    pub fn address_7bit(&mut self) -> ADDRESS_7BIT_W<SAR_SPEC> {
+        ADDRESS_7BIT_W::new(self, 0)
     }
     #[doc = "Bits 0:9 - Slave address, 10-bit mode"]
     #[inline(always)]
     #[must_use]
-    pub fn address_10bit(&mut self) -> ADDRESS_10BIT_W<SAR_SPEC, 0> {
-        ADDRESS_10BIT_W::new(self)
+    pub fn address_10bit(&mut self) -> ADDRESS_10BIT_W<SAR_SPEC> {
+        ADDRESS_10BIT_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

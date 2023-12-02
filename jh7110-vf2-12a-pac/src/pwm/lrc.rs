@@ -5,7 +5,7 @@ pub type W = crate::W<LRC_SPEC>;
 #[doc = "Field `lrc` reader - PWM PTC period value"]
 pub type LRC_R = crate::FieldReader<u32>;
 #[doc = "Field `lrc` writer - PWM PTC period value"]
-pub type LRC_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 32, O, u32>;
+pub type LRC_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl R {
     #[doc = "Bits 0:31 - PWM PTC period value"]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bits 0:31 - PWM PTC period value"]
     #[inline(always)]
     #[must_use]
-    pub fn lrc(&mut self) -> LRC_W<LRC_SPEC, 0> {
-        LRC_W::new(self)
+    pub fn lrc(&mut self) -> LRC_W<LRC_SPEC> {
+        LRC_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

@@ -5,12 +5,11 @@ pub type W = crate::W<STG_SYSCONSAIF_SYSCFG924_SPEC>;
 #[doc = "Field `u1_plda_pcie_test_sel` reader - u1_plda_pcie_test_sel"]
 pub type U1_PLDA_PCIE_TEST_SEL_R = crate::FieldReader;
 #[doc = "Field `u1_plda_pcie_test_sel` writer - u1_plda_pcie_test_sel"]
-pub type U1_PLDA_PCIE_TEST_SEL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 4, O>;
+pub type U1_PLDA_PCIE_TEST_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
 #[doc = "Field `u1_plda_pcie_tl_clock_freq` reader - u1_plda_pcie_tl_clock_freq"]
 pub type U1_PLDA_PCIE_TL_CLOCK_FREQ_R = crate::FieldReader<u32>;
 #[doc = "Field `u1_plda_pcie_tl_clock_freq` writer - u1_plda_pcie_tl_clock_freq"]
-pub type U1_PLDA_PCIE_TL_CLOCK_FREQ_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 22, O, u32>;
+pub type U1_PLDA_PCIE_TL_CLOCK_FREQ_W<'a, REG> = crate::FieldWriter<'a, REG, 22, u32>;
 impl R {
     #[doc = "Bits 0:3 - u1_plda_pcie_test_sel"]
     #[inline(always)]
@@ -29,18 +28,22 @@ impl W {
     #[must_use]
     pub fn u1_plda_pcie_test_sel(
         &mut self,
-    ) -> U1_PLDA_PCIE_TEST_SEL_W<STG_SYSCONSAIF_SYSCFG924_SPEC, 0> {
-        U1_PLDA_PCIE_TEST_SEL_W::new(self)
+    ) -> U1_PLDA_PCIE_TEST_SEL_W<STG_SYSCONSAIF_SYSCFG924_SPEC> {
+        U1_PLDA_PCIE_TEST_SEL_W::new(self, 0)
     }
     #[doc = "Bits 4:25 - u1_plda_pcie_tl_clock_freq"]
     #[inline(always)]
     #[must_use]
     pub fn u1_plda_pcie_tl_clock_freq(
         &mut self,
-    ) -> U1_PLDA_PCIE_TL_CLOCK_FREQ_W<STG_SYSCONSAIF_SYSCFG924_SPEC, 4> {
-        U1_PLDA_PCIE_TL_CLOCK_FREQ_W::new(self)
+    ) -> U1_PLDA_PCIE_TL_CLOCK_FREQ_W<STG_SYSCONSAIF_SYSCFG924_SPEC> {
+        U1_PLDA_PCIE_TL_CLOCK_FREQ_W::new(self, 4)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

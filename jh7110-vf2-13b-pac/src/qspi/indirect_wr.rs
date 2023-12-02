@@ -5,15 +5,15 @@ pub type W = crate::W<INDIRECT_WR_SPEC>;
 #[doc = "Field `start` reader - Start indirect write"]
 pub type START_R = crate::BitReader;
 #[doc = "Field `start` writer - Start indirect write"]
-pub type START_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type START_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `cancel` reader - Cancel indirect write"]
 pub type CANCEL_R = crate::BitReader;
 #[doc = "Field `cancel` writer - Cancel indirect write"]
-pub type CANCEL_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type CANCEL_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `done` reader - Indirect write done"]
 pub type DONE_R = crate::BitReader;
 #[doc = "Field `done` writer - Indirect write done"]
-pub type DONE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type DONE_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - Start indirect write"]
     #[inline(always)]
@@ -35,22 +35,26 @@ impl W {
     #[doc = "Bit 0 - Start indirect write"]
     #[inline(always)]
     #[must_use]
-    pub fn start(&mut self) -> START_W<INDIRECT_WR_SPEC, 0> {
-        START_W::new(self)
+    pub fn start(&mut self) -> START_W<INDIRECT_WR_SPEC> {
+        START_W::new(self, 0)
     }
     #[doc = "Bit 1 - Cancel indirect write"]
     #[inline(always)]
     #[must_use]
-    pub fn cancel(&mut self) -> CANCEL_W<INDIRECT_WR_SPEC, 1> {
-        CANCEL_W::new(self)
+    pub fn cancel(&mut self) -> CANCEL_W<INDIRECT_WR_SPEC> {
+        CANCEL_W::new(self, 1)
     }
     #[doc = "Bit 5 - Indirect write done"]
     #[inline(always)]
     #[must_use]
-    pub fn done(&mut self) -> DONE_W<INDIRECT_WR_SPEC, 5> {
-        DONE_W::new(self)
+    pub fn done(&mut self) -> DONE_W<INDIRECT_WR_SPEC> {
+        DONE_W::new(self, 5)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

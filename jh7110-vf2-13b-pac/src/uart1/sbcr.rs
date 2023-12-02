@@ -7,7 +7,7 @@ pub type W = crate::W<SBCR_SPEC>;
 pub type SBCR_R = crate::BitReader;
 #[doc = "Field `sbcr` writer - Shadow Break Control Bit. This is a shadow register for the Break bit (LCR\\[6\\]), this can be used to remove the burden of having to performing a read modify write on the LCR. This is used to cause a break condition to be transmitted to the receiving device. If set to one the serial output is forced to the spacing (logic 0) state. When not in Loopback Mode, as determined by MCR\\[4\\], the sout line is forced low until the Break bit is cleared. If SIR_MODE == Enabled and active (MCR\\[6\\]
 = 1) the sir_out_n line is continuously pulsed. When in Loopback Mode, the break condition is internally looped back to the receiver."]
-pub type SBCR_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type SBCR_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - Shadow Break Control Bit. This is a shadow register for the Break bit (LCR\\[6\\]), this can be used to remove the burden of having to performing a read modify write on the LCR. This is used to cause a break condition to be transmitted to the receiving device. If set to one the serial output is forced to the spacing (logic 0) state. When not in Loopback Mode, as determined by MCR\\[4\\], the sout line is forced low until the Break bit is cleared. If SIR_MODE == Enabled and active (MCR\\[6\\]
 = 1) the sir_out_n line is continuously pulsed. When in Loopback Mode, the break condition is internally looped back to the receiver."]
@@ -21,10 +21,14 @@ impl W {
 = 1) the sir_out_n line is continuously pulsed. When in Loopback Mode, the break condition is internally looped back to the receiver."]
     #[inline(always)]
     #[must_use]
-    pub fn sbcr(&mut self) -> SBCR_W<SBCR_SPEC, 0> {
-        SBCR_W::new(self)
+    pub fn sbcr(&mut self) -> SBCR_W<SBCR_SPEC> {
+        SBCR_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

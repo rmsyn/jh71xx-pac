@@ -15,7 +15,7 @@ pub type SRTS_R = crate::BitReader;
 = 1) and FIFOs enable (FCR\\[0\\]
 = 1), the rts_n output is controlled in the same way, but is also gated with the receiver FIFO threshold trigger (rts_n is inactive high when above the threshold). Note that in Loopback mode (MCR\\[4\\]
 = 1), the rts_n output is held inactive-high while the value of this location is internally looped back to an input."]
-pub type SRTS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type SRTS_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - Shadow Request to Send. This is a shadow register for the RTS bit (MCR\\[1\\]), this can be used to remove the burden of having to performing a read-modify-write on the MCR. This is used to directly control the Request to Send (rts_n) output. The Request To Send (rts_n) output is used to inform the modem or data set that the DW_apb_uart is ready to exchange data. When Auto RTS Flow Control is not enabled (MCR\\[5\\]
 = 0), the rts_n signal is set low by programming MCR\\[1\\]
@@ -37,10 +37,14 @@ impl W {
 = 1), the rts_n output is held inactive-high while the value of this location is internally looped back to an input."]
     #[inline(always)]
     #[must_use]
-    pub fn srts(&mut self) -> SRTS_W<SRTS_SPEC, 0> {
-        SRTS_W::new(self)
+    pub fn srts(&mut self) -> SRTS_W<SRTS_SPEC> {
+        SRTS_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

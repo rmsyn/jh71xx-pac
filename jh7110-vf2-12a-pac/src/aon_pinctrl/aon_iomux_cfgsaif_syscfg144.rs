@@ -5,7 +5,7 @@ pub type W = crate::W<AON_IOMUX_CFGSAIF_SYSCFG144_SPEC>;
 #[doc = "Field `pad_gmac0_rxc_func_sel` reader - Function selector of GMAC0_RXC: * Function 0: u0_aon_crg_clk_gmac0_rgmii_rx, * Function 1: u0_aon_crg_clk_gmac0_rmii_ref, * Function 2: None, * Function 3: None"]
 pub type PAD_GMAC0_RXC_FUNC_SEL_R = crate::FieldReader;
 #[doc = "Field `pad_gmac0_rxc_func_sel` writer - Function selector of GMAC0_RXC: * Function 0: u0_aon_crg_clk_gmac0_rgmii_rx, * Function 1: u0_aon_crg_clk_gmac0_rmii_ref, * Function 2: None, * Function 3: None"]
-pub type PAD_GMAC0_RXC_FUNC_SEL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type PAD_GMAC0_RXC_FUNC_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 impl R {
     #[doc = "Bits 0:1 - Function selector of GMAC0_RXC: * Function 0: u0_aon_crg_clk_gmac0_rgmii_rx, * Function 1: u0_aon_crg_clk_gmac0_rmii_ref, * Function 2: None, * Function 3: None"]
     #[inline(always)]
@@ -19,10 +19,14 @@ impl W {
     #[must_use]
     pub fn pad_gmac0_rxc_func_sel(
         &mut self,
-    ) -> PAD_GMAC0_RXC_FUNC_SEL_W<AON_IOMUX_CFGSAIF_SYSCFG144_SPEC, 0> {
-        PAD_GMAC0_RXC_FUNC_SEL_W::new(self)
+    ) -> PAD_GMAC0_RXC_FUNC_SEL_W<AON_IOMUX_CFGSAIF_SYSCFG144_SPEC> {
+        PAD_GMAC0_RXC_FUNC_SEL_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

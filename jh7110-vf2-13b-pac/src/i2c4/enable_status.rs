@@ -5,23 +5,23 @@ pub type W = crate::W<ENABLE_STATUS_SPEC>;
 #[doc = "Field `activity` reader - activity"]
 pub type ACTIVITY_R = crate::BitReader;
 #[doc = "Field `activity` writer - activity"]
-pub type ACTIVITY_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type ACTIVITY_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `tfe` reader - tfe"]
 pub type TFE_R = crate::BitReader;
 #[doc = "Field `tfe` writer - tfe"]
-pub type TFE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type TFE_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `rfne` reader - rfne"]
 pub type RFNE_R = crate::BitReader;
 #[doc = "Field `rfne` writer - rfne"]
-pub type RFNE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type RFNE_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `master_activity` reader - master_activity"]
 pub type MASTER_ACTIVITY_R = crate::BitReader;
 #[doc = "Field `master_activity` writer - master_activity"]
-pub type MASTER_ACTIVITY_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type MASTER_ACTIVITY_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `slave_activity` reader - slave_activity"]
 pub type SLAVE_ACTIVITY_R = crate::BitReader;
 #[doc = "Field `slave_activity` writer - slave_activity"]
-pub type SLAVE_ACTIVITY_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type SLAVE_ACTIVITY_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - activity"]
     #[inline(always)]
@@ -53,34 +53,38 @@ impl W {
     #[doc = "Bit 0 - activity"]
     #[inline(always)]
     #[must_use]
-    pub fn activity(&mut self) -> ACTIVITY_W<ENABLE_STATUS_SPEC, 0> {
-        ACTIVITY_W::new(self)
+    pub fn activity(&mut self) -> ACTIVITY_W<ENABLE_STATUS_SPEC> {
+        ACTIVITY_W::new(self, 0)
     }
     #[doc = "Bit 2 - tfe"]
     #[inline(always)]
     #[must_use]
-    pub fn tfe(&mut self) -> TFE_W<ENABLE_STATUS_SPEC, 2> {
-        TFE_W::new(self)
+    pub fn tfe(&mut self) -> TFE_W<ENABLE_STATUS_SPEC> {
+        TFE_W::new(self, 2)
     }
     #[doc = "Bit 3 - rfne"]
     #[inline(always)]
     #[must_use]
-    pub fn rfne(&mut self) -> RFNE_W<ENABLE_STATUS_SPEC, 3> {
-        RFNE_W::new(self)
+    pub fn rfne(&mut self) -> RFNE_W<ENABLE_STATUS_SPEC> {
+        RFNE_W::new(self, 3)
     }
     #[doc = "Bit 5 - master_activity"]
     #[inline(always)]
     #[must_use]
-    pub fn master_activity(&mut self) -> MASTER_ACTIVITY_W<ENABLE_STATUS_SPEC, 5> {
-        MASTER_ACTIVITY_W::new(self)
+    pub fn master_activity(&mut self) -> MASTER_ACTIVITY_W<ENABLE_STATUS_SPEC> {
+        MASTER_ACTIVITY_W::new(self, 5)
     }
     #[doc = "Bit 6 - slave_activity"]
     #[inline(always)]
     #[must_use]
-    pub fn slave_activity(&mut self) -> SLAVE_ACTIVITY_W<ENABLE_STATUS_SPEC, 6> {
-        SLAVE_ACTIVITY_W::new(self)
+    pub fn slave_activity(&mut self) -> SLAVE_ACTIVITY_W<ENABLE_STATUS_SPEC> {
+        SLAVE_ACTIVITY_W::new(self, 6)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

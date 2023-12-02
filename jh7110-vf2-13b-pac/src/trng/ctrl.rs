@@ -5,15 +5,15 @@ pub type W = crate::W<CTRL_SPEC>;
 #[doc = "Field `exec_nop` reader - Execute a NOP instruction"]
 pub type EXEC_NOP_R = crate::BitReader;
 #[doc = "Field `exec_nop` writer - Execute a NOP instruction"]
-pub type EXEC_NOP_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type EXEC_NOP_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `gene_randnum` reader - Generate a random number"]
 pub type GENE_RANDNUM_R = crate::BitReader;
 #[doc = "Field `gene_randnum` writer - Generate a random number"]
-pub type GENE_RANDNUM_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type GENE_RANDNUM_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `exec_randreseed` reader - Reseed the TRNG from noise sources"]
 pub type EXEC_RANDRESEED_R = crate::BitReader;
 #[doc = "Field `exec_randreseed` writer - Reseed the TRNG from noise sources"]
-pub type EXEC_RANDRESEED_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type EXEC_RANDRESEED_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - Execute a NOP instruction"]
     #[inline(always)]
@@ -35,22 +35,26 @@ impl W {
     #[doc = "Bit 0 - Execute a NOP instruction"]
     #[inline(always)]
     #[must_use]
-    pub fn exec_nop(&mut self) -> EXEC_NOP_W<CTRL_SPEC, 0> {
-        EXEC_NOP_W::new(self)
+    pub fn exec_nop(&mut self) -> EXEC_NOP_W<CTRL_SPEC> {
+        EXEC_NOP_W::new(self, 0)
     }
     #[doc = "Bit 1 - Generate a random number"]
     #[inline(always)]
     #[must_use]
-    pub fn gene_randnum(&mut self) -> GENE_RANDNUM_W<CTRL_SPEC, 1> {
-        GENE_RANDNUM_W::new(self)
+    pub fn gene_randnum(&mut self) -> GENE_RANDNUM_W<CTRL_SPEC> {
+        GENE_RANDNUM_W::new(self, 1)
     }
     #[doc = "Bit 2 - Reseed the TRNG from noise sources"]
     #[inline(always)]
     #[must_use]
-    pub fn exec_randreseed(&mut self) -> EXEC_RANDRESEED_W<CTRL_SPEC, 2> {
-        EXEC_RANDRESEED_W::new(self)
+    pub fn exec_randreseed(&mut self) -> EXEC_RANDRESEED_W<CTRL_SPEC> {
+        EXEC_RANDRESEED_W::new(self, 2)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

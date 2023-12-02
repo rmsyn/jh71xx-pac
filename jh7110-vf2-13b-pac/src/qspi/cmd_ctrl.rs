@@ -5,43 +5,43 @@ pub type W = crate::W<CMD_CTRL_SPEC>;
 #[doc = "Field `execute` reader - Execute-in-Place (XIP)"]
 pub type EXECUTE_R = crate::BitReader;
 #[doc = "Field `execute` writer - Execute-in-Place (XIP)"]
-pub type EXECUTE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type EXECUTE_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `in_progress` reader - Command in progress"]
 pub type IN_PROGRESS_R = crate::BitReader;
 #[doc = "Field `in_progress` writer - Command in progress"]
-pub type IN_PROGRESS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type IN_PROGRESS_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `dummy` reader - Dummy command"]
 pub type DUMMY_R = crate::FieldReader;
 #[doc = "Field `dummy` writer - Dummy command"]
-pub type DUMMY_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 5, O>;
+pub type DUMMY_W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
 #[doc = "Field `wr_bytes` reader - Write bytes"]
 pub type WR_BYTES_R = crate::FieldReader;
 #[doc = "Field `wr_bytes` writer - Write bytes"]
-pub type WR_BYTES_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 3, O>;
+pub type WR_BYTES_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `wr_en` reader - Write enable"]
 pub type WR_EN_R = crate::BitReader;
 #[doc = "Field `wr_en` writer - Write enable"]
-pub type WR_EN_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type WR_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `add_bytes` reader - Add command bytes"]
 pub type ADD_BYTES_R = crate::FieldReader;
 #[doc = "Field `add_bytes` writer - Add command bytes"]
-pub type ADD_BYTES_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type ADD_BYTES_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `addr_en` reader - Address enable"]
 pub type ADDR_EN_R = crate::BitReader;
 #[doc = "Field `addr_en` writer - Address enable"]
-pub type ADDR_EN_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type ADDR_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `rd_bytes` reader - Read bytes"]
 pub type RD_BYTES_R = crate::FieldReader;
 #[doc = "Field `rd_bytes` writer - Read bytes"]
-pub type RD_BYTES_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 3, O>;
+pub type RD_BYTES_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `rd_en` reader - Read enable"]
 pub type RD_EN_R = crate::BitReader;
 #[doc = "Field `rd_en` writer - Read enable"]
-pub type RD_EN_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type RD_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `opcode` reader - Command opcode"]
 pub type OPCODE_R = crate::FieldReader;
 #[doc = "Field `opcode` writer - Command opcode"]
-pub type OPCODE_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 8, O>;
+pub type OPCODE_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 impl R {
     #[doc = "Bit 0 - Execute-in-Place (XIP)"]
     #[inline(always)]
@@ -98,64 +98,68 @@ impl W {
     #[doc = "Bit 0 - Execute-in-Place (XIP)"]
     #[inline(always)]
     #[must_use]
-    pub fn execute(&mut self) -> EXECUTE_W<CMD_CTRL_SPEC, 0> {
-        EXECUTE_W::new(self)
+    pub fn execute(&mut self) -> EXECUTE_W<CMD_CTRL_SPEC> {
+        EXECUTE_W::new(self, 0)
     }
     #[doc = "Bit 1 - Command in progress"]
     #[inline(always)]
     #[must_use]
-    pub fn in_progress(&mut self) -> IN_PROGRESS_W<CMD_CTRL_SPEC, 1> {
-        IN_PROGRESS_W::new(self)
+    pub fn in_progress(&mut self) -> IN_PROGRESS_W<CMD_CTRL_SPEC> {
+        IN_PROGRESS_W::new(self, 1)
     }
     #[doc = "Bits 7:11 - Dummy command"]
     #[inline(always)]
     #[must_use]
-    pub fn dummy(&mut self) -> DUMMY_W<CMD_CTRL_SPEC, 7> {
-        DUMMY_W::new(self)
+    pub fn dummy(&mut self) -> DUMMY_W<CMD_CTRL_SPEC> {
+        DUMMY_W::new(self, 7)
     }
     #[doc = "Bits 12:14 - Write bytes"]
     #[inline(always)]
     #[must_use]
-    pub fn wr_bytes(&mut self) -> WR_BYTES_W<CMD_CTRL_SPEC, 12> {
-        WR_BYTES_W::new(self)
+    pub fn wr_bytes(&mut self) -> WR_BYTES_W<CMD_CTRL_SPEC> {
+        WR_BYTES_W::new(self, 12)
     }
     #[doc = "Bit 15 - Write enable"]
     #[inline(always)]
     #[must_use]
-    pub fn wr_en(&mut self) -> WR_EN_W<CMD_CTRL_SPEC, 15> {
-        WR_EN_W::new(self)
+    pub fn wr_en(&mut self) -> WR_EN_W<CMD_CTRL_SPEC> {
+        WR_EN_W::new(self, 15)
     }
     #[doc = "Bits 16:17 - Add command bytes"]
     #[inline(always)]
     #[must_use]
-    pub fn add_bytes(&mut self) -> ADD_BYTES_W<CMD_CTRL_SPEC, 16> {
-        ADD_BYTES_W::new(self)
+    pub fn add_bytes(&mut self) -> ADD_BYTES_W<CMD_CTRL_SPEC> {
+        ADD_BYTES_W::new(self, 16)
     }
     #[doc = "Bit 19 - Address enable"]
     #[inline(always)]
     #[must_use]
-    pub fn addr_en(&mut self) -> ADDR_EN_W<CMD_CTRL_SPEC, 19> {
-        ADDR_EN_W::new(self)
+    pub fn addr_en(&mut self) -> ADDR_EN_W<CMD_CTRL_SPEC> {
+        ADDR_EN_W::new(self, 19)
     }
     #[doc = "Bits 20:22 - Read bytes"]
     #[inline(always)]
     #[must_use]
-    pub fn rd_bytes(&mut self) -> RD_BYTES_W<CMD_CTRL_SPEC, 20> {
-        RD_BYTES_W::new(self)
+    pub fn rd_bytes(&mut self) -> RD_BYTES_W<CMD_CTRL_SPEC> {
+        RD_BYTES_W::new(self, 20)
     }
     #[doc = "Bit 23 - Read enable"]
     #[inline(always)]
     #[must_use]
-    pub fn rd_en(&mut self) -> RD_EN_W<CMD_CTRL_SPEC, 23> {
-        RD_EN_W::new(self)
+    pub fn rd_en(&mut self) -> RD_EN_W<CMD_CTRL_SPEC> {
+        RD_EN_W::new(self, 23)
     }
     #[doc = "Bits 24:31 - Command opcode"]
     #[inline(always)]
     #[must_use]
-    pub fn opcode(&mut self) -> OPCODE_W<CMD_CTRL_SPEC, 24> {
-        OPCODE_W::new(self)
+    pub fn opcode(&mut self) -> OPCODE_W<CMD_CTRL_SPEC> {
+        OPCODE_W::new(self, 24)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

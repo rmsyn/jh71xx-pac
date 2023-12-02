@@ -5,27 +5,27 @@ pub type W = crate::W<RD_INSTR_SPEC>;
 #[doc = "Field `opcode` reader - Instruction Opcode"]
 pub type OPCODE_R = crate::FieldReader;
 #[doc = "Field `opcode` writer - Instruction Opcode"]
-pub type OPCODE_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 8, O>;
+pub type OPCODE_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 #[doc = "Field `type_instr` reader - Type of Instruction"]
 pub type TYPE_INSTR_R = crate::FieldReader;
 #[doc = "Field `type_instr` writer - Type of Instruction"]
-pub type TYPE_INSTR_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type TYPE_INSTR_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `type_addr` reader - Type of Address"]
 pub type TYPE_ADDR_R = crate::FieldReader;
 #[doc = "Field `type_addr` writer - Type of Address"]
-pub type TYPE_ADDR_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type TYPE_ADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `type_data` reader - type_data"]
 pub type TYPE_DATA_R = crate::FieldReader;
 #[doc = "Field `type_data` writer - type_data"]
-pub type TYPE_DATA_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type TYPE_DATA_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `mode_en` reader - Mode"]
 pub type MODE_EN_R = crate::BitReader;
 #[doc = "Field `mode_en` writer - Mode"]
-pub type MODE_EN_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type MODE_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `dummy` reader - Send dummy signal to stall the device"]
 pub type DUMMY_R = crate::FieldReader;
 #[doc = "Field `dummy` writer - Send dummy signal to stall the device"]
-pub type DUMMY_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 5, O>;
+pub type DUMMY_W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
 impl R {
     #[doc = "Bits 0:7 - Instruction Opcode"]
     #[inline(always)]
@@ -62,40 +62,44 @@ impl W {
     #[doc = "Bits 0:7 - Instruction Opcode"]
     #[inline(always)]
     #[must_use]
-    pub fn opcode(&mut self) -> OPCODE_W<RD_INSTR_SPEC, 0> {
-        OPCODE_W::new(self)
+    pub fn opcode(&mut self) -> OPCODE_W<RD_INSTR_SPEC> {
+        OPCODE_W::new(self, 0)
     }
     #[doc = "Bits 8:9 - Type of Instruction"]
     #[inline(always)]
     #[must_use]
-    pub fn type_instr(&mut self) -> TYPE_INSTR_W<RD_INSTR_SPEC, 8> {
-        TYPE_INSTR_W::new(self)
+    pub fn type_instr(&mut self) -> TYPE_INSTR_W<RD_INSTR_SPEC> {
+        TYPE_INSTR_W::new(self, 8)
     }
     #[doc = "Bits 12:13 - Type of Address"]
     #[inline(always)]
     #[must_use]
-    pub fn type_addr(&mut self) -> TYPE_ADDR_W<RD_INSTR_SPEC, 12> {
-        TYPE_ADDR_W::new(self)
+    pub fn type_addr(&mut self) -> TYPE_ADDR_W<RD_INSTR_SPEC> {
+        TYPE_ADDR_W::new(self, 12)
     }
     #[doc = "Bits 16:17 - type_data"]
     #[inline(always)]
     #[must_use]
-    pub fn type_data(&mut self) -> TYPE_DATA_W<RD_INSTR_SPEC, 16> {
-        TYPE_DATA_W::new(self)
+    pub fn type_data(&mut self) -> TYPE_DATA_W<RD_INSTR_SPEC> {
+        TYPE_DATA_W::new(self, 16)
     }
     #[doc = "Bit 20 - Mode"]
     #[inline(always)]
     #[must_use]
-    pub fn mode_en(&mut self) -> MODE_EN_W<RD_INSTR_SPEC, 20> {
-        MODE_EN_W::new(self)
+    pub fn mode_en(&mut self) -> MODE_EN_W<RD_INSTR_SPEC> {
+        MODE_EN_W::new(self, 20)
     }
     #[doc = "Bits 24:28 - Send dummy signal to stall the device"]
     #[inline(always)]
     #[must_use]
-    pub fn dummy(&mut self) -> DUMMY_W<RD_INSTR_SPEC, 24> {
-        DUMMY_W::new(self)
+    pub fn dummy(&mut self) -> DUMMY_W<RD_INSTR_SPEC> {
+        DUMMY_W::new(self, 24)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

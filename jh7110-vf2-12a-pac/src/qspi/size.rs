@@ -5,15 +5,15 @@ pub type W = crate::W<SIZE_SPEC>;
 #[doc = "Field `address` reader - Address Size in Bytes"]
 pub type ADDRESS_R = crate::FieldReader;
 #[doc = "Field `address` writer - Address Size in Bytes"]
-pub type ADDRESS_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 4, O>;
+pub type ADDRESS_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
 #[doc = "Field `page` reader - Page Size in Bytes"]
 pub type PAGE_R = crate::FieldReader<u16>;
 #[doc = "Field `page` writer - Page Size in Bytes"]
-pub type PAGE_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 12, O, u16>;
+pub type PAGE_W<'a, REG> = crate::FieldWriter<'a, REG, 12, u16>;
 #[doc = "Field `block` reader - Block Size in Bytes"]
 pub type BLOCK_R = crate::FieldReader;
 #[doc = "Field `block` writer - Block Size in Bytes"]
-pub type BLOCK_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 6, O>;
+pub type BLOCK_W<'a, REG> = crate::FieldWriter<'a, REG, 6>;
 impl R {
     #[doc = "Bits 0:3 - Address Size in Bytes"]
     #[inline(always)]
@@ -35,22 +35,26 @@ impl W {
     #[doc = "Bits 0:3 - Address Size in Bytes"]
     #[inline(always)]
     #[must_use]
-    pub fn address(&mut self) -> ADDRESS_W<SIZE_SPEC, 0> {
-        ADDRESS_W::new(self)
+    pub fn address(&mut self) -> ADDRESS_W<SIZE_SPEC> {
+        ADDRESS_W::new(self, 0)
     }
     #[doc = "Bits 4:15 - Page Size in Bytes"]
     #[inline(always)]
     #[must_use]
-    pub fn page(&mut self) -> PAGE_W<SIZE_SPEC, 4> {
-        PAGE_W::new(self)
+    pub fn page(&mut self) -> PAGE_W<SIZE_SPEC> {
+        PAGE_W::new(self, 4)
     }
     #[doc = "Bits 16:21 - Block Size in Bytes"]
     #[inline(always)]
     #[must_use]
-    pub fn block(&mut self) -> BLOCK_W<SIZE_SPEC, 16> {
-        BLOCK_W::new(self)
+    pub fn block(&mut self) -> BLOCK_W<SIZE_SPEC> {
+        BLOCK_W::new(self, 16)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

@@ -5,11 +5,11 @@ pub type W = crate::W<AON_IOMUX_CFGSAIF_SYSCFG68_SPEC>;
 #[doc = "Field `padcfg_pad_rstn_smt` reader - Active high Schmitt (SMT) trigger selector - 0: No hysteresis, 1: Schmitt trigger enabled"]
 pub type PADCFG_PAD_RSTN_SMT_R = crate::BitReader;
 #[doc = "Field `padcfg_pad_rstn_smt` writer - Active high Schmitt (SMT) trigger selector - 0: No hysteresis, 1: Schmitt trigger enabled"]
-pub type PADCFG_PAD_RSTN_SMT_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type PADCFG_PAD_RSTN_SMT_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `padcfg_pad_rstn_pos` reader - Power-on-Start (POS) enabler - 1: Enable active pull-down for loss of core power, 0: Active pull-down capability disabled"]
 pub type PADCFG_PAD_RSTN_POS_R = crate::BitReader;
 #[doc = "Field `padcfg_pad_rstn_pos` writer - Power-on-Start (POS) enabler - 1: Enable active pull-down for loss of core power, 0: Active pull-down capability disabled"]
-pub type PADCFG_PAD_RSTN_POS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type PADCFG_PAD_RSTN_POS_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - Active high Schmitt (SMT) trigger selector - 0: No hysteresis, 1: Schmitt trigger enabled"]
     #[inline(always)]
@@ -28,18 +28,22 @@ impl W {
     #[must_use]
     pub fn padcfg_pad_rstn_smt(
         &mut self,
-    ) -> PADCFG_PAD_RSTN_SMT_W<AON_IOMUX_CFGSAIF_SYSCFG68_SPEC, 0> {
-        PADCFG_PAD_RSTN_SMT_W::new(self)
+    ) -> PADCFG_PAD_RSTN_SMT_W<AON_IOMUX_CFGSAIF_SYSCFG68_SPEC> {
+        PADCFG_PAD_RSTN_SMT_W::new(self, 0)
     }
     #[doc = "Bit 1 - Power-on-Start (POS) enabler - 1: Enable active pull-down for loss of core power, 0: Active pull-down capability disabled"]
     #[inline(always)]
     #[must_use]
     pub fn padcfg_pad_rstn_pos(
         &mut self,
-    ) -> PADCFG_PAD_RSTN_POS_W<AON_IOMUX_CFGSAIF_SYSCFG68_SPEC, 1> {
-        PADCFG_PAD_RSTN_POS_W::new(self)
+    ) -> PADCFG_PAD_RSTN_POS_W<AON_IOMUX_CFGSAIF_SYSCFG68_SPEC> {
+        PADCFG_PAD_RSTN_POS_W::new(self, 1)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

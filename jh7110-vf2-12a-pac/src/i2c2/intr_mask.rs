@@ -5,59 +5,59 @@ pub type W = crate::W<INTR_MASK_SPEC>;
 #[doc = "Field `rx_under` reader - RX FIFO Underrun"]
 pub type RX_UNDER_R = crate::BitReader;
 #[doc = "Field `rx_under` writer - RX FIFO Underrun"]
-pub type RX_UNDER_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type RX_UNDER_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `rx_over` reader - RX FIFO Overrun"]
 pub type RX_OVER_R = crate::BitReader;
 #[doc = "Field `rx_over` writer - RX FIFO Overrun"]
-pub type RX_OVER_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type RX_OVER_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `rx_full` reader - RX FIFO Full"]
 pub type RX_FULL_R = crate::BitReader;
 #[doc = "Field `rx_full` writer - RX FIFO Full"]
-pub type RX_FULL_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type RX_FULL_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `tx_over` reader - TX FIFO Overrun"]
 pub type TX_OVER_R = crate::BitReader;
 #[doc = "Field `tx_over` writer - TX FIFO Overrun"]
-pub type TX_OVER_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type TX_OVER_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `tx_empty` reader - TX FIFO Empty"]
 pub type TX_EMPTY_R = crate::BitReader;
 #[doc = "Field `tx_empty` writer - TX FIFO Empty"]
-pub type TX_EMPTY_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type TX_EMPTY_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `rd_req` reader - Read Request"]
 pub type RD_REQ_R = crate::BitReader;
 #[doc = "Field `rd_req` writer - Read Request"]
-pub type RD_REQ_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type RD_REQ_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `tx_abrt` reader - TX Abort"]
 pub type TX_ABRT_R = crate::BitReader;
 #[doc = "Field `tx_abrt` writer - TX Abort"]
-pub type TX_ABRT_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type TX_ABRT_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `rx_done` reader - RX Done"]
 pub type RX_DONE_R = crate::BitReader;
 #[doc = "Field `rx_done` writer - RX Done"]
-pub type RX_DONE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type RX_DONE_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `activity` reader - Activity"]
 pub type ACTIVITY_R = crate::BitReader;
 #[doc = "Field `activity` writer - Activity"]
-pub type ACTIVITY_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type ACTIVITY_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `stop_det` reader - Stop DET"]
 pub type STOP_DET_R = crate::BitReader;
 #[doc = "Field `stop_det` writer - Stop DET"]
-pub type STOP_DET_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type STOP_DET_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `start_det` reader - Start DET"]
 pub type START_DET_R = crate::BitReader;
 #[doc = "Field `start_det` writer - Start DET"]
-pub type START_DET_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type START_DET_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `gen_call` reader - General Call"]
 pub type GEN_CALL_R = crate::BitReader;
 #[doc = "Field `gen_call` writer - General Call"]
-pub type GEN_CALL_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type GEN_CALL_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `restart_det` reader - Restart DET"]
 pub type RESTART_DET_R = crate::BitReader;
 #[doc = "Field `restart_det` writer - Restart DET"]
-pub type RESTART_DET_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type RESTART_DET_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `mst_on_hold` reader - Master on Hold"]
 pub type MST_ON_HOLD_R = crate::BitReader;
 #[doc = "Field `mst_on_hold` writer - Master on Hold"]
-pub type MST_ON_HOLD_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type MST_ON_HOLD_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - RX FIFO Underrun"]
     #[inline(always)]
@@ -134,88 +134,92 @@ impl W {
     #[doc = "Bit 0 - RX FIFO Underrun"]
     #[inline(always)]
     #[must_use]
-    pub fn rx_under(&mut self) -> RX_UNDER_W<INTR_MASK_SPEC, 0> {
-        RX_UNDER_W::new(self)
+    pub fn rx_under(&mut self) -> RX_UNDER_W<INTR_MASK_SPEC> {
+        RX_UNDER_W::new(self, 0)
     }
     #[doc = "Bit 1 - RX FIFO Overrun"]
     #[inline(always)]
     #[must_use]
-    pub fn rx_over(&mut self) -> RX_OVER_W<INTR_MASK_SPEC, 1> {
-        RX_OVER_W::new(self)
+    pub fn rx_over(&mut self) -> RX_OVER_W<INTR_MASK_SPEC> {
+        RX_OVER_W::new(self, 1)
     }
     #[doc = "Bit 2 - RX FIFO Full"]
     #[inline(always)]
     #[must_use]
-    pub fn rx_full(&mut self) -> RX_FULL_W<INTR_MASK_SPEC, 2> {
-        RX_FULL_W::new(self)
+    pub fn rx_full(&mut self) -> RX_FULL_W<INTR_MASK_SPEC> {
+        RX_FULL_W::new(self, 2)
     }
     #[doc = "Bit 3 - TX FIFO Overrun"]
     #[inline(always)]
     #[must_use]
-    pub fn tx_over(&mut self) -> TX_OVER_W<INTR_MASK_SPEC, 3> {
-        TX_OVER_W::new(self)
+    pub fn tx_over(&mut self) -> TX_OVER_W<INTR_MASK_SPEC> {
+        TX_OVER_W::new(self, 3)
     }
     #[doc = "Bit 4 - TX FIFO Empty"]
     #[inline(always)]
     #[must_use]
-    pub fn tx_empty(&mut self) -> TX_EMPTY_W<INTR_MASK_SPEC, 4> {
-        TX_EMPTY_W::new(self)
+    pub fn tx_empty(&mut self) -> TX_EMPTY_W<INTR_MASK_SPEC> {
+        TX_EMPTY_W::new(self, 4)
     }
     #[doc = "Bit 5 - Read Request"]
     #[inline(always)]
     #[must_use]
-    pub fn rd_req(&mut self) -> RD_REQ_W<INTR_MASK_SPEC, 5> {
-        RD_REQ_W::new(self)
+    pub fn rd_req(&mut self) -> RD_REQ_W<INTR_MASK_SPEC> {
+        RD_REQ_W::new(self, 5)
     }
     #[doc = "Bit 6 - TX Abort"]
     #[inline(always)]
     #[must_use]
-    pub fn tx_abrt(&mut self) -> TX_ABRT_W<INTR_MASK_SPEC, 6> {
-        TX_ABRT_W::new(self)
+    pub fn tx_abrt(&mut self) -> TX_ABRT_W<INTR_MASK_SPEC> {
+        TX_ABRT_W::new(self, 6)
     }
     #[doc = "Bit 7 - RX Done"]
     #[inline(always)]
     #[must_use]
-    pub fn rx_done(&mut self) -> RX_DONE_W<INTR_MASK_SPEC, 7> {
-        RX_DONE_W::new(self)
+    pub fn rx_done(&mut self) -> RX_DONE_W<INTR_MASK_SPEC> {
+        RX_DONE_W::new(self, 7)
     }
     #[doc = "Bit 8 - Activity"]
     #[inline(always)]
     #[must_use]
-    pub fn activity(&mut self) -> ACTIVITY_W<INTR_MASK_SPEC, 8> {
-        ACTIVITY_W::new(self)
+    pub fn activity(&mut self) -> ACTIVITY_W<INTR_MASK_SPEC> {
+        ACTIVITY_W::new(self, 8)
     }
     #[doc = "Bit 9 - Stop DET"]
     #[inline(always)]
     #[must_use]
-    pub fn stop_det(&mut self) -> STOP_DET_W<INTR_MASK_SPEC, 9> {
-        STOP_DET_W::new(self)
+    pub fn stop_det(&mut self) -> STOP_DET_W<INTR_MASK_SPEC> {
+        STOP_DET_W::new(self, 9)
     }
     #[doc = "Bit 10 - Start DET"]
     #[inline(always)]
     #[must_use]
-    pub fn start_det(&mut self) -> START_DET_W<INTR_MASK_SPEC, 10> {
-        START_DET_W::new(self)
+    pub fn start_det(&mut self) -> START_DET_W<INTR_MASK_SPEC> {
+        START_DET_W::new(self, 10)
     }
     #[doc = "Bit 11 - General Call"]
     #[inline(always)]
     #[must_use]
-    pub fn gen_call(&mut self) -> GEN_CALL_W<INTR_MASK_SPEC, 11> {
-        GEN_CALL_W::new(self)
+    pub fn gen_call(&mut self) -> GEN_CALL_W<INTR_MASK_SPEC> {
+        GEN_CALL_W::new(self, 11)
     }
     #[doc = "Bit 12 - Restart DET"]
     #[inline(always)]
     #[must_use]
-    pub fn restart_det(&mut self) -> RESTART_DET_W<INTR_MASK_SPEC, 12> {
-        RESTART_DET_W::new(self)
+    pub fn restart_det(&mut self) -> RESTART_DET_W<INTR_MASK_SPEC> {
+        RESTART_DET_W::new(self, 12)
     }
     #[doc = "Bit 13 - Master on Hold"]
     #[inline(always)]
     #[must_use]
-    pub fn mst_on_hold(&mut self) -> MST_ON_HOLD_W<INTR_MASK_SPEC, 13> {
-        MST_ON_HOLD_W::new(self)
+    pub fn mst_on_hold(&mut self) -> MST_ON_HOLD_W<INTR_MASK_SPEC> {
+        MST_ON_HOLD_W::new(self, 13)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

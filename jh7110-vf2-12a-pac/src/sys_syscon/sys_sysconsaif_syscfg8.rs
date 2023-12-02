@@ -5,15 +5,15 @@ pub type W = crate::W<SYS_SYSCONSAIF_SYSCFG8_SPEC>;
 #[doc = "Field `scfg_vout0_remap_awaddr` reader - scfg_vout0_remap_awaddr"]
 pub type SCFG_VOUT0_REMAP_AWADDR_R = crate::FieldReader;
 #[doc = "Field `scfg_vout0_remap_awaddr` writer - scfg_vout0_remap_awaddr"]
-pub type SCFG_VOUT0_REMAP_AWADDR_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 4, O>;
+pub type SCFG_VOUT0_REMAP_AWADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
 #[doc = "Field `scfg_vout1_remap_araddr` reader - scfg_vout1_remap_araddr"]
 pub type SCFG_VOUT1_REMAP_ARADDR_R = crate::FieldReader;
 #[doc = "Field `scfg_vout1_remap_araddr` writer - scfg_vout1_remap_araddr"]
-pub type SCFG_VOUT1_REMAP_ARADDR_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 4, O>;
+pub type SCFG_VOUT1_REMAP_ARADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
 #[doc = "Field `scfg_vout1_remap_awaddr` reader - scfg_vout1_remap_awaddr"]
 pub type SCFG_VOUT1_REMAP_AWADDR_R = crate::FieldReader;
 #[doc = "Field `scfg_vout1_remap_awaddr` writer - scfg_vout1_remap_awaddr"]
-pub type SCFG_VOUT1_REMAP_AWADDR_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 4, O>;
+pub type SCFG_VOUT1_REMAP_AWADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
 impl R {
     #[doc = "Bits 0:3 - scfg_vout0_remap_awaddr"]
     #[inline(always)]
@@ -37,26 +37,30 @@ impl W {
     #[must_use]
     pub fn scfg_vout0_remap_awaddr(
         &mut self,
-    ) -> SCFG_VOUT0_REMAP_AWADDR_W<SYS_SYSCONSAIF_SYSCFG8_SPEC, 0> {
-        SCFG_VOUT0_REMAP_AWADDR_W::new(self)
+    ) -> SCFG_VOUT0_REMAP_AWADDR_W<SYS_SYSCONSAIF_SYSCFG8_SPEC> {
+        SCFG_VOUT0_REMAP_AWADDR_W::new(self, 0)
     }
     #[doc = "Bits 4:7 - scfg_vout1_remap_araddr"]
     #[inline(always)]
     #[must_use]
     pub fn scfg_vout1_remap_araddr(
         &mut self,
-    ) -> SCFG_VOUT1_REMAP_ARADDR_W<SYS_SYSCONSAIF_SYSCFG8_SPEC, 4> {
-        SCFG_VOUT1_REMAP_ARADDR_W::new(self)
+    ) -> SCFG_VOUT1_REMAP_ARADDR_W<SYS_SYSCONSAIF_SYSCFG8_SPEC> {
+        SCFG_VOUT1_REMAP_ARADDR_W::new(self, 4)
     }
     #[doc = "Bits 8:11 - scfg_vout1_remap_awaddr"]
     #[inline(always)]
     #[must_use]
     pub fn scfg_vout1_remap_awaddr(
         &mut self,
-    ) -> SCFG_VOUT1_REMAP_AWADDR_W<SYS_SYSCONSAIF_SYSCFG8_SPEC, 8> {
-        SCFG_VOUT1_REMAP_AWADDR_W::new(self)
+    ) -> SCFG_VOUT1_REMAP_AWADDR_W<SYS_SYSCONSAIF_SYSCFG8_SPEC> {
+        SCFG_VOUT1_REMAP_AWADDR_W::new(self, 8)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

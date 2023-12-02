@@ -5,7 +5,7 @@ pub type W = crate::W<RX_TL_SPEC>;
 #[doc = "Field `rx_tl` reader - rx_tl"]
 pub type RX_TL_R = crate::FieldReader<u32>;
 #[doc = "Field `rx_tl` writer - rx_tl"]
-pub type RX_TL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 32, O, u32>;
+pub type RX_TL_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl R {
     #[doc = "Bits 0:31 - rx_tl"]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bits 0:31 - rx_tl"]
     #[inline(always)]
     #[must_use]
-    pub fn rx_tl(&mut self) -> RX_TL_W<RX_TL_SPEC, 0> {
-        RX_TL_W::new(self)
+    pub fn rx_tl(&mut self) -> RX_TL_W<RX_TL_SPEC> {
+        RX_TL_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

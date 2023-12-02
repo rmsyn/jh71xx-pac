@@ -5,43 +5,43 @@ pub type W = crate::W<CON_SPEC>;
 #[doc = "Field `master` reader - I2C Master Connection - 0: Slave, 1: Master"]
 pub type MASTER_R = crate::BitReader;
 #[doc = "Field `master` writer - I2C Master Connection - 0: Slave, 1: Master"]
-pub type MASTER_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type MASTER_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `speed` reader - I2C Speed - 01: Standard, 10: Fast, 11: High"]
 pub type SPEED_R = crate::FieldReader;
 #[doc = "Field `speed` writer - I2C Speed - 01: Standard, 10: Fast, 11: High"]
-pub type SPEED_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type SPEED_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `slave_10bitaddr` reader - I2C Slave 10-bit Address - 0: False, 1: True"]
 pub type SLAVE_10BITADDR_R = crate::BitReader;
 #[doc = "Field `slave_10bitaddr` writer - I2C Slave 10-bit Address - 0: False, 1: True"]
-pub type SLAVE_10BITADDR_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type SLAVE_10BITADDR_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `master_10bitaddr` reader - I2C Master 10-bit Address - 0: False, 1: True"]
 pub type MASTER_10BITADDR_R = crate::BitReader;
 #[doc = "Field `master_10bitaddr` writer - I2C Master 10-bit Address - 0: False, 1: True"]
-pub type MASTER_10BITADDR_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type MASTER_10BITADDR_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `restart_en` reader - I2C Restart Enable - 0: False, 1: True"]
 pub type RESTART_EN_R = crate::BitReader;
 #[doc = "Field `restart_en` writer - I2C Restart Enable - 0: False, 1: True"]
-pub type RESTART_EN_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type RESTART_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `slave_disable` reader - I2C Slave Disable - 0: False, 1: True"]
 pub type SLAVE_DISABLE_R = crate::BitReader;
 #[doc = "Field `slave_disable` writer - I2C Slave Disable - 0: False, 1: True"]
-pub type SLAVE_DISABLE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type SLAVE_DISABLE_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `stop_det_ifaddressed` reader - I2C Stop DET If Addressed - 0: False, 1: True"]
 pub type STOP_DET_IFADDRESSED_R = crate::BitReader;
 #[doc = "Field `stop_det_ifaddressed` writer - I2C Stop DET If Addressed - 0: False, 1: True"]
-pub type STOP_DET_IFADDRESSED_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type STOP_DET_IFADDRESSED_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `tx_empty_ctrl` reader - I2C TX Empty Control - 0: False, 1: True"]
 pub type TX_EMPTY_CTRL_R = crate::BitReader;
 #[doc = "Field `tx_empty_ctrl` writer - I2C TX Empty Control - 0: False, 1: True"]
-pub type TX_EMPTY_CTRL_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type TX_EMPTY_CTRL_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `rx_fifo_full_hld_ctrl` reader - I2C RX FIFO Full Hold Control - 0: False, 1: True"]
 pub type RX_FIFO_FULL_HLD_CTRL_R = crate::BitReader;
 #[doc = "Field `rx_fifo_full_hld_ctrl` writer - I2C RX FIFO Full Hold Control - 0: False, 1: True"]
-pub type RX_FIFO_FULL_HLD_CTRL_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type RX_FIFO_FULL_HLD_CTRL_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `bus_clear_ctrl` reader - I2C Bus Clear Control - 0: False, 1: True"]
 pub type BUS_CLEAR_CTRL_R = crate::BitReader;
 #[doc = "Field `bus_clear_ctrl` writer - I2C Bus Clear Control - 0: False, 1: True"]
-pub type BUS_CLEAR_CTRL_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type BUS_CLEAR_CTRL_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - I2C Master Connection - 0: Slave, 1: Master"]
     #[inline(always)]
@@ -98,64 +98,68 @@ impl W {
     #[doc = "Bit 0 - I2C Master Connection - 0: Slave, 1: Master"]
     #[inline(always)]
     #[must_use]
-    pub fn master(&mut self) -> MASTER_W<CON_SPEC, 0> {
-        MASTER_W::new(self)
+    pub fn master(&mut self) -> MASTER_W<CON_SPEC> {
+        MASTER_W::new(self, 0)
     }
     #[doc = "Bits 1:2 - I2C Speed - 01: Standard, 10: Fast, 11: High"]
     #[inline(always)]
     #[must_use]
-    pub fn speed(&mut self) -> SPEED_W<CON_SPEC, 1> {
-        SPEED_W::new(self)
+    pub fn speed(&mut self) -> SPEED_W<CON_SPEC> {
+        SPEED_W::new(self, 1)
     }
     #[doc = "Bit 3 - I2C Slave 10-bit Address - 0: False, 1: True"]
     #[inline(always)]
     #[must_use]
-    pub fn slave_10bitaddr(&mut self) -> SLAVE_10BITADDR_W<CON_SPEC, 3> {
-        SLAVE_10BITADDR_W::new(self)
+    pub fn slave_10bitaddr(&mut self) -> SLAVE_10BITADDR_W<CON_SPEC> {
+        SLAVE_10BITADDR_W::new(self, 3)
     }
     #[doc = "Bit 4 - I2C Master 10-bit Address - 0: False, 1: True"]
     #[inline(always)]
     #[must_use]
-    pub fn master_10bitaddr(&mut self) -> MASTER_10BITADDR_W<CON_SPEC, 4> {
-        MASTER_10BITADDR_W::new(self)
+    pub fn master_10bitaddr(&mut self) -> MASTER_10BITADDR_W<CON_SPEC> {
+        MASTER_10BITADDR_W::new(self, 4)
     }
     #[doc = "Bit 5 - I2C Restart Enable - 0: False, 1: True"]
     #[inline(always)]
     #[must_use]
-    pub fn restart_en(&mut self) -> RESTART_EN_W<CON_SPEC, 5> {
-        RESTART_EN_W::new(self)
+    pub fn restart_en(&mut self) -> RESTART_EN_W<CON_SPEC> {
+        RESTART_EN_W::new(self, 5)
     }
     #[doc = "Bit 6 - I2C Slave Disable - 0: False, 1: True"]
     #[inline(always)]
     #[must_use]
-    pub fn slave_disable(&mut self) -> SLAVE_DISABLE_W<CON_SPEC, 6> {
-        SLAVE_DISABLE_W::new(self)
+    pub fn slave_disable(&mut self) -> SLAVE_DISABLE_W<CON_SPEC> {
+        SLAVE_DISABLE_W::new(self, 6)
     }
     #[doc = "Bit 7 - I2C Stop DET If Addressed - 0: False, 1: True"]
     #[inline(always)]
     #[must_use]
-    pub fn stop_det_ifaddressed(&mut self) -> STOP_DET_IFADDRESSED_W<CON_SPEC, 7> {
-        STOP_DET_IFADDRESSED_W::new(self)
+    pub fn stop_det_ifaddressed(&mut self) -> STOP_DET_IFADDRESSED_W<CON_SPEC> {
+        STOP_DET_IFADDRESSED_W::new(self, 7)
     }
     #[doc = "Bit 8 - I2C TX Empty Control - 0: False, 1: True"]
     #[inline(always)]
     #[must_use]
-    pub fn tx_empty_ctrl(&mut self) -> TX_EMPTY_CTRL_W<CON_SPEC, 8> {
-        TX_EMPTY_CTRL_W::new(self)
+    pub fn tx_empty_ctrl(&mut self) -> TX_EMPTY_CTRL_W<CON_SPEC> {
+        TX_EMPTY_CTRL_W::new(self, 8)
     }
     #[doc = "Bit 9 - I2C RX FIFO Full Hold Control - 0: False, 1: True"]
     #[inline(always)]
     #[must_use]
-    pub fn rx_fifo_full_hld_ctrl(&mut self) -> RX_FIFO_FULL_HLD_CTRL_W<CON_SPEC, 9> {
-        RX_FIFO_FULL_HLD_CTRL_W::new(self)
+    pub fn rx_fifo_full_hld_ctrl(&mut self) -> RX_FIFO_FULL_HLD_CTRL_W<CON_SPEC> {
+        RX_FIFO_FULL_HLD_CTRL_W::new(self, 9)
     }
     #[doc = "Bit 11 - I2C Bus Clear Control - 0: False, 1: True"]
     #[inline(always)]
     #[must_use]
-    pub fn bus_clear_ctrl(&mut self) -> BUS_CLEAR_CTRL_W<CON_SPEC, 11> {
-        BUS_CLEAR_CTRL_W::new(self)
+    pub fn bus_clear_ctrl(&mut self) -> BUS_CLEAR_CTRL_W<CON_SPEC> {
+        BUS_CLEAR_CTRL_W::new(self, 11)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

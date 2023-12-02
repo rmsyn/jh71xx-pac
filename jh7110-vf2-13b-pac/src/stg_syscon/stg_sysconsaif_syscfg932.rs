@@ -5,29 +5,29 @@ pub type W = crate::W<STG_SYSCONSAIF_SYSCFG932_SPEC>;
 #[doc = "Field `u1_plda_pcie_tx_pattern` reader - u1_plda_pcie_tx_pattern"]
 pub type U1_PLDA_PCIE_TX_PATTERN_R = crate::FieldReader;
 #[doc = "Field `u1_plda_pcie_tx_pattern` writer - u1_plda_pcie_tx_pattern"]
-pub type U1_PLDA_PCIE_TX_PATTERN_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type U1_PLDA_PCIE_TX_PATTERN_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `u1_plda_pcie_usb3_bus_width` reader - u1_plda_pcie_usb3_bus_width"]
 pub type U1_PLDA_PCIE_USB3_BUS_WIDTH_R = crate::FieldReader;
 #[doc = "Field `u1_plda_pcie_usb3_bus_width` writer - u1_plda_pcie_usb3_bus_width"]
-pub type U1_PLDA_PCIE_USB3_BUS_WIDTH_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type U1_PLDA_PCIE_USB3_BUS_WIDTH_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `u1_plda_pcie_usb3_phy_enable` reader - u1_plda_pcie_usb3_phy_enable"]
 pub type U1_PLDA_PCIE_USB3_PHY_ENABLE_R = crate::BitReader;
 #[doc = "Field `u1_plda_pcie_usb3_phy_enable` writer - u1_plda_pcie_usb3_phy_enable"]
-pub type U1_PLDA_PCIE_USB3_PHY_ENABLE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U1_PLDA_PCIE_USB3_PHY_ENABLE_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u1_plda_pcie_usb3_rate` reader - u1_plda_pcie_usb3_rate"]
 pub type U1_PLDA_PCIE_USB3_RATE_R = crate::FieldReader;
 #[doc = "Field `u1_plda_pcie_usb3_rate` writer - u1_plda_pcie_usb3_rate"]
-pub type U1_PLDA_PCIE_USB3_RATE_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type U1_PLDA_PCIE_USB3_RATE_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `u1_plda_pcie_usb3_rx_standby` reader - u1_plda_pcie_usb3_rx_standby"]
 pub type U1_PLDA_PCIE_USB3_RX_STANDBY_R = crate::BitReader;
 #[doc = "Field `u1_plda_pcie_usb3_rx_standby` writer - u1_plda_pcie_usb3_rx_standby"]
-pub type U1_PLDA_PCIE_USB3_RX_STANDBY_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U1_PLDA_PCIE_USB3_RX_STANDBY_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u1_plda_pcie_xwdecerr` reader - u1_plda_pcie_xwdecerr"]
 pub type U1_PLDA_PCIE_XWDECERR_R = crate::BitReader;
 #[doc = "Field `u1_plda_pcie_xwerrclr` reader - u1_plda_pcie_xwerrclr"]
 pub type U1_PLDA_PCIE_XWERRCLR_R = crate::BitReader;
 #[doc = "Field `u1_plda_pcie_xwerrclr` writer - u1_plda_pcie_xwerrclr"]
-pub type U1_PLDA_PCIE_XWERRCLR_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U1_PLDA_PCIE_XWERRCLR_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u1_plda_pcie_xwslverr` reader - u1_plda_pcie_xwslverr"]
 pub type U1_PLDA_PCIE_XWSLVERR_R = crate::BitReader;
 impl R {
@@ -78,50 +78,54 @@ impl W {
     #[must_use]
     pub fn u1_plda_pcie_tx_pattern(
         &mut self,
-    ) -> U1_PLDA_PCIE_TX_PATTERN_W<STG_SYSCONSAIF_SYSCFG932_SPEC, 0> {
-        U1_PLDA_PCIE_TX_PATTERN_W::new(self)
+    ) -> U1_PLDA_PCIE_TX_PATTERN_W<STG_SYSCONSAIF_SYSCFG932_SPEC> {
+        U1_PLDA_PCIE_TX_PATTERN_W::new(self, 0)
     }
     #[doc = "Bits 2:3 - u1_plda_pcie_usb3_bus_width"]
     #[inline(always)]
     #[must_use]
     pub fn u1_plda_pcie_usb3_bus_width(
         &mut self,
-    ) -> U1_PLDA_PCIE_USB3_BUS_WIDTH_W<STG_SYSCONSAIF_SYSCFG932_SPEC, 2> {
-        U1_PLDA_PCIE_USB3_BUS_WIDTH_W::new(self)
+    ) -> U1_PLDA_PCIE_USB3_BUS_WIDTH_W<STG_SYSCONSAIF_SYSCFG932_SPEC> {
+        U1_PLDA_PCIE_USB3_BUS_WIDTH_W::new(self, 2)
     }
     #[doc = "Bit 4 - u1_plda_pcie_usb3_phy_enable"]
     #[inline(always)]
     #[must_use]
     pub fn u1_plda_pcie_usb3_phy_enable(
         &mut self,
-    ) -> U1_PLDA_PCIE_USB3_PHY_ENABLE_W<STG_SYSCONSAIF_SYSCFG932_SPEC, 4> {
-        U1_PLDA_PCIE_USB3_PHY_ENABLE_W::new(self)
+    ) -> U1_PLDA_PCIE_USB3_PHY_ENABLE_W<STG_SYSCONSAIF_SYSCFG932_SPEC> {
+        U1_PLDA_PCIE_USB3_PHY_ENABLE_W::new(self, 4)
     }
     #[doc = "Bits 5:6 - u1_plda_pcie_usb3_rate"]
     #[inline(always)]
     #[must_use]
     pub fn u1_plda_pcie_usb3_rate(
         &mut self,
-    ) -> U1_PLDA_PCIE_USB3_RATE_W<STG_SYSCONSAIF_SYSCFG932_SPEC, 5> {
-        U1_PLDA_PCIE_USB3_RATE_W::new(self)
+    ) -> U1_PLDA_PCIE_USB3_RATE_W<STG_SYSCONSAIF_SYSCFG932_SPEC> {
+        U1_PLDA_PCIE_USB3_RATE_W::new(self, 5)
     }
     #[doc = "Bit 7 - u1_plda_pcie_usb3_rx_standby"]
     #[inline(always)]
     #[must_use]
     pub fn u1_plda_pcie_usb3_rx_standby(
         &mut self,
-    ) -> U1_PLDA_PCIE_USB3_RX_STANDBY_W<STG_SYSCONSAIF_SYSCFG932_SPEC, 7> {
-        U1_PLDA_PCIE_USB3_RX_STANDBY_W::new(self)
+    ) -> U1_PLDA_PCIE_USB3_RX_STANDBY_W<STG_SYSCONSAIF_SYSCFG932_SPEC> {
+        U1_PLDA_PCIE_USB3_RX_STANDBY_W::new(self, 7)
     }
     #[doc = "Bit 9 - u1_plda_pcie_xwerrclr"]
     #[inline(always)]
     #[must_use]
     pub fn u1_plda_pcie_xwerrclr(
         &mut self,
-    ) -> U1_PLDA_PCIE_XWERRCLR_W<STG_SYSCONSAIF_SYSCFG932_SPEC, 9> {
-        U1_PLDA_PCIE_XWERRCLR_W::new(self)
+    ) -> U1_PLDA_PCIE_XWERRCLR_W<STG_SYSCONSAIF_SYSCFG932_SPEC> {
+        U1_PLDA_PCIE_XWERRCLR_W::new(self, 9)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

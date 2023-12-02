@@ -5,26 +5,25 @@ pub type W = crate::W<STG_SYSCONSAIF_SYSCFG628_SPEC>;
 #[doc = "Field `u1_plda_pcie_axi4_slvl_awfunc` reader - u1_plda_pcie_axi4_slvl_awfunc"]
 pub type U1_PLDA_PCIE_AXI4_SLVL_AWFUNC_R = crate::FieldReader<u16>;
 #[doc = "Field `u1_plda_pcie_axi4_slvl_awfunc` writer - u1_plda_pcie_axi4_slvl_awfunc"]
-pub type U1_PLDA_PCIE_AXI4_SLVL_AWFUNC_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 15, O, u16>;
+pub type U1_PLDA_PCIE_AXI4_SLVL_AWFUNC_W<'a, REG> = crate::FieldWriter<'a, REG, 15, u16>;
 #[doc = "Field `u1_plda_pcie_bus_width_o` reader - u1_plda_pcie_bus_width_o"]
 pub type U1_PLDA_PCIE_BUS_WIDTH_O_R = crate::FieldReader;
 #[doc = "Field `u1_plda_pcie_bypass_codec` reader - u1_plda_pcie_bypass_codec"]
 pub type U1_PLDA_PCIE_BYPASS_CODEC_R = crate::BitReader;
 #[doc = "Field `u1_plda_pcie_bypass_codec` writer - u1_plda_pcie_bypass_codec"]
-pub type U1_PLDA_PCIE_BYPASS_CODEC_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U1_PLDA_PCIE_BYPASS_CODEC_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u1_plda_pcie_ckref_src` reader - u1_plda_pcie_ckref_src"]
 pub type U1_PLDA_PCIE_CKREF_SRC_R = crate::FieldReader;
 #[doc = "Field `u1_plda_pcie_ckref_src` writer - u1_plda_pcie_ckref_src"]
-pub type U1_PLDA_PCIE_CKREF_SRC_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type U1_PLDA_PCIE_CKREF_SRC_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `u1_plda_pcie_clk_sel` reader - u1_plda_pcie_clk_sel"]
 pub type U1_PLDA_PCIE_CLK_SEL_R = crate::FieldReader;
 #[doc = "Field `u1_plda_pcie_clk_sel` writer - u1_plda_pcie_clk_sel"]
-pub type U1_PLDA_PCIE_CLK_SEL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type U1_PLDA_PCIE_CLK_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `u1_plda_pcie_clkreq` reader - u1_plda_pcie_clkreq"]
 pub type U1_PLDA_PCIE_CLKREQ_R = crate::BitReader;
 #[doc = "Field `u1_plda_pcie_clkreq` writer - u1_plda_pcie_clkreq"]
-pub type U1_PLDA_PCIE_CLKREQ_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U1_PLDA_PCIE_CLKREQ_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bits 0:14 - u1_plda_pcie_axi4_slvl_awfunc"]
     #[inline(always)]
@@ -63,42 +62,44 @@ impl W {
     #[must_use]
     pub fn u1_plda_pcie_axi4_slvl_awfunc(
         &mut self,
-    ) -> U1_PLDA_PCIE_AXI4_SLVL_AWFUNC_W<STG_SYSCONSAIF_SYSCFG628_SPEC, 0> {
-        U1_PLDA_PCIE_AXI4_SLVL_AWFUNC_W::new(self)
+    ) -> U1_PLDA_PCIE_AXI4_SLVL_AWFUNC_W<STG_SYSCONSAIF_SYSCFG628_SPEC> {
+        U1_PLDA_PCIE_AXI4_SLVL_AWFUNC_W::new(self, 0)
     }
     #[doc = "Bit 17 - u1_plda_pcie_bypass_codec"]
     #[inline(always)]
     #[must_use]
     pub fn u1_plda_pcie_bypass_codec(
         &mut self,
-    ) -> U1_PLDA_PCIE_BYPASS_CODEC_W<STG_SYSCONSAIF_SYSCFG628_SPEC, 17> {
-        U1_PLDA_PCIE_BYPASS_CODEC_W::new(self)
+    ) -> U1_PLDA_PCIE_BYPASS_CODEC_W<STG_SYSCONSAIF_SYSCFG628_SPEC> {
+        U1_PLDA_PCIE_BYPASS_CODEC_W::new(self, 17)
     }
     #[doc = "Bits 18:19 - u1_plda_pcie_ckref_src"]
     #[inline(always)]
     #[must_use]
     pub fn u1_plda_pcie_ckref_src(
         &mut self,
-    ) -> U1_PLDA_PCIE_CKREF_SRC_W<STG_SYSCONSAIF_SYSCFG628_SPEC, 18> {
-        U1_PLDA_PCIE_CKREF_SRC_W::new(self)
+    ) -> U1_PLDA_PCIE_CKREF_SRC_W<STG_SYSCONSAIF_SYSCFG628_SPEC> {
+        U1_PLDA_PCIE_CKREF_SRC_W::new(self, 18)
     }
     #[doc = "Bits 20:21 - u1_plda_pcie_clk_sel"]
     #[inline(always)]
     #[must_use]
     pub fn u1_plda_pcie_clk_sel(
         &mut self,
-    ) -> U1_PLDA_PCIE_CLK_SEL_W<STG_SYSCONSAIF_SYSCFG628_SPEC, 20> {
-        U1_PLDA_PCIE_CLK_SEL_W::new(self)
+    ) -> U1_PLDA_PCIE_CLK_SEL_W<STG_SYSCONSAIF_SYSCFG628_SPEC> {
+        U1_PLDA_PCIE_CLK_SEL_W::new(self, 20)
     }
     #[doc = "Bit 22 - u1_plda_pcie_clkreq"]
     #[inline(always)]
     #[must_use]
-    pub fn u1_plda_pcie_clkreq(
-        &mut self,
-    ) -> U1_PLDA_PCIE_CLKREQ_W<STG_SYSCONSAIF_SYSCFG628_SPEC, 22> {
-        U1_PLDA_PCIE_CLKREQ_W::new(self)
+    pub fn u1_plda_pcie_clkreq(&mut self) -> U1_PLDA_PCIE_CLKREQ_W<STG_SYSCONSAIF_SYSCFG628_SPEC> {
+        U1_PLDA_PCIE_CLKREQ_W::new(self, 22)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

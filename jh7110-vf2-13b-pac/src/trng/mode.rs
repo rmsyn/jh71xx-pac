@@ -5,7 +5,7 @@ pub type W = crate::W<MODE_SPEC>;
 #[doc = "Field `r256` reader - 256-bit operation mode: 0 - 128-bit mode, 1 - 256-bit mode"]
 pub type R256_R = crate::BitReader;
 #[doc = "Field `r256` writer - 256-bit operation mode: 0 - 128-bit mode, 1 - 256-bit mode"]
-pub type R256_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type R256_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 3 - 256-bit operation mode: 0 - 128-bit mode, 1 - 256-bit mode"]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bit 3 - 256-bit operation mode: 0 - 128-bit mode, 1 - 256-bit mode"]
     #[inline(always)]
     #[must_use]
-    pub fn r256(&mut self) -> R256_W<MODE_SPEC, 3> {
-        R256_W::new(self)
+    pub fn r256(&mut self) -> R256_W<MODE_SPEC> {
+        R256_W::new(self, 3)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

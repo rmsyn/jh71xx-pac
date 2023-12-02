@@ -5,19 +5,19 @@ pub type W = crate::W<GPI52_SPEC>;
 #[doc = "Field `u1_sdio_cdata_in_7_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type U1_SDIO_CDATA_IN_7_CFG_R = crate::FieldReader;
 #[doc = "Field `u1_sdio_cdata_in_7_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type U1_SDIO_CDATA_IN_7_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type U1_SDIO_CDATA_IN_7_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 #[doc = "Field `u1_sdio_data_strobe_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type U1_SDIO_DATA_STROBE_CFG_R = crate::FieldReader;
 #[doc = "Field `u1_sdio_data_strobe_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type U1_SDIO_DATA_STROBE_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type U1_SDIO_DATA_STROBE_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 #[doc = "Field `u1_uart_cts_n_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type U1_UART_CTS_N_CFG_R = crate::FieldReader;
 #[doc = "Field `u1_uart_cts_n_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type U1_UART_CTS_N_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type U1_UART_CTS_N_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 #[doc = "Field `u1_uart_sin_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type U1_UART_SIN_CFG_R = crate::FieldReader;
 #[doc = "Field `u1_uart_sin_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type U1_UART_SIN_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type U1_UART_SIN_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 impl R {
     #[doc = "Bits 0:6 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
@@ -44,28 +44,32 @@ impl W {
     #[doc = "Bits 0:6 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
-    pub fn u1_sdio_cdata_in_7_cfg(&mut self) -> U1_SDIO_CDATA_IN_7_CFG_W<GPI52_SPEC, 0> {
-        U1_SDIO_CDATA_IN_7_CFG_W::new(self)
+    pub fn u1_sdio_cdata_in_7_cfg(&mut self) -> U1_SDIO_CDATA_IN_7_CFG_W<GPI52_SPEC> {
+        U1_SDIO_CDATA_IN_7_CFG_W::new(self, 0)
     }
     #[doc = "Bits 8:14 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
-    pub fn u1_sdio_data_strobe_cfg(&mut self) -> U1_SDIO_DATA_STROBE_CFG_W<GPI52_SPEC, 8> {
-        U1_SDIO_DATA_STROBE_CFG_W::new(self)
+    pub fn u1_sdio_data_strobe_cfg(&mut self) -> U1_SDIO_DATA_STROBE_CFG_W<GPI52_SPEC> {
+        U1_SDIO_DATA_STROBE_CFG_W::new(self, 8)
     }
     #[doc = "Bits 16:22 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
-    pub fn u1_uart_cts_n_cfg(&mut self) -> U1_UART_CTS_N_CFG_W<GPI52_SPEC, 16> {
-        U1_UART_CTS_N_CFG_W::new(self)
+    pub fn u1_uart_cts_n_cfg(&mut self) -> U1_UART_CTS_N_CFG_W<GPI52_SPEC> {
+        U1_UART_CTS_N_CFG_W::new(self, 16)
     }
     #[doc = "Bits 24:30 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
-    pub fn u1_uart_sin_cfg(&mut self) -> U1_UART_SIN_CFG_W<GPI52_SPEC, 24> {
-        U1_UART_SIN_CFG_W::new(self)
+    pub fn u1_uart_sin_cfg(&mut self) -> U1_UART_SIN_CFG_W<GPI52_SPEC> {
+        U1_UART_SIN_CFG_W::new(self, 24)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

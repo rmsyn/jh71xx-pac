@@ -5,11 +5,11 @@ pub type W = crate::W<SSP_DMACR_SPEC>;
 #[doc = "Field `rxdmae` reader - Receive DMA Enable. If this bit is set to 1, DMA for the receive FIFO is enabled."]
 pub type RXDMAE_R = crate::BitReader;
 #[doc = "Field `rxdmae` writer - Receive DMA Enable. If this bit is set to 1, DMA for the receive FIFO is enabled."]
-pub type RXDMAE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type RXDMAE_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `txdmae` reader - Transmit DMA Enable. If this bit is set to 1, DMA for the transmit FIFO is enabled."]
 pub type TXDMAE_R = crate::BitReader;
 #[doc = "Field `txdmae` writer - Transmit DMA Enable. If this bit is set to 1, DMA for the transmit FIFO is enabled."]
-pub type TXDMAE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type TXDMAE_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - Receive DMA Enable. If this bit is set to 1, DMA for the receive FIFO is enabled."]
     #[inline(always)]
@@ -26,16 +26,20 @@ impl W {
     #[doc = "Bit 0 - Receive DMA Enable. If this bit is set to 1, DMA for the receive FIFO is enabled."]
     #[inline(always)]
     #[must_use]
-    pub fn rxdmae(&mut self) -> RXDMAE_W<SSP_DMACR_SPEC, 0> {
-        RXDMAE_W::new(self)
+    pub fn rxdmae(&mut self) -> RXDMAE_W<SSP_DMACR_SPEC> {
+        RXDMAE_W::new(self, 0)
     }
     #[doc = "Bit 1 - Transmit DMA Enable. If this bit is set to 1, DMA for the transmit FIFO is enabled."]
     #[inline(always)]
     #[must_use]
-    pub fn txdmae(&mut self) -> TXDMAE_W<SSP_DMACR_SPEC, 1> {
-        TXDMAE_W::new(self)
+    pub fn txdmae(&mut self) -> TXDMAE_W<SSP_DMACR_SPEC> {
+        TXDMAE_W::new(self, 1)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u16) -> &mut Self {
         self.bits = bits;

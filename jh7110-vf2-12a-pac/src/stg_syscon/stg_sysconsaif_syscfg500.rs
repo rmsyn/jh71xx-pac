@@ -5,63 +5,63 @@ pub type W = crate::W<STG_SYSCONSAIF_SYSCFG500_SPEC>;
 #[doc = "Field `u0_plda_pcie_tx_pattern` reader - u0_plda_pcie_tx_pattern"]
 pub type U0_PLDA_PCIE_TX_PATTERN_R = crate::FieldReader;
 #[doc = "Field `u0_plda_pcie_tx_pattern` writer - u0_plda_pcie_tx_pattern"]
-pub type U0_PLDA_PCIE_TX_PATTERN_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type U0_PLDA_PCIE_TX_PATTERN_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `u0_plda_pcie_usb3_bus_width` reader - u0_plda_pcie_usb3_bus_width"]
 pub type U0_PLDA_PCIE_USB3_BUS_WIDTH_R = crate::FieldReader;
 #[doc = "Field `u0_plda_pcie_usb3_bus_width` writer - u0_plda_pcie_usb3_bus_width"]
-pub type U0_PLDA_PCIE_USB3_BUS_WIDTH_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type U0_PLDA_PCIE_USB3_BUS_WIDTH_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `u0_plda_pcie_usb3_phy_enable` reader - u0_plda_pcie_usb3_phy_enable"]
 pub type U0_PLDA_PCIE_USB3_PHY_ENABLE_R = crate::BitReader;
 #[doc = "Field `u0_plda_pcie_usb3_phy_enable` writer - u0_plda_pcie_usb3_phy_enable"]
-pub type U0_PLDA_PCIE_USB3_PHY_ENABLE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_PLDA_PCIE_USB3_PHY_ENABLE_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_plda_pcie_usb3_rate` reader - u0_plda_pcie_usb3_rate"]
 pub type U0_PLDA_PCIE_USB3_RATE_R = crate::FieldReader;
 #[doc = "Field `u0_plda_pcie_usb3_rate` writer - u0_plda_pcie_usb3_rate"]
-pub type U0_PLDA_PCIE_USB3_RATE_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type U0_PLDA_PCIE_USB3_RATE_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `u0_plda_pcie_usb3_rx_standby` reader - u0_plda_pcie_usb3_rx_standby"]
 pub type U0_PLDA_PCIE_USB3_RX_STANDBY_R = crate::BitReader;
 #[doc = "Field `u0_plda_pcie_usb3_rx_standby` writer - u0_plda_pcie_usb3_rx_standby"]
-pub type U0_PLDA_PCIE_USB3_RX_STANDBY_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_PLDA_PCIE_USB3_RX_STANDBY_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_plda_pcie_xwdecerr` reader - u0_plda_pcie_xwdecerr"]
 pub type U0_PLDA_PCIE_XWDECERR_R = crate::BitReader;
 #[doc = "Field `u0_plda_pcie_xwerrclr` reader - u0_plda_pcie_xwerrclr"]
 pub type U0_PLDA_PCIE_XWERRCLR_R = crate::BitReader;
 #[doc = "Field `u0_plda_pcie_xwerrclr` writer - u0_plda_pcie_xwerrclr"]
-pub type U0_PLDA_PCIE_XWERRCLR_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_PLDA_PCIE_XWERRCLR_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_plda_pcie_xwslverr` reader - u0_plda_pcie_xwslverr"]
 pub type U0_PLDA_PCIE_XWSLVERR_R = crate::BitReader;
 #[doc = "Field `u0_sec_top_sramcfg_slp` reader - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
 pub type U0_SEC_TOP_SRAMCFG_SLP_R = crate::BitReader;
 #[doc = "Field `u0_sec_top_sramcfg_slp` writer - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
-pub type U0_SEC_TOP_SRAMCFG_SLP_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_SEC_TOP_SRAMCFG_SLP_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_sec_top_sramcfg_sram_config_sd` reader - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
 pub type U0_SEC_TOP_SRAMCFG_SRAM_CONFIG_SD_R = crate::BitReader;
 #[doc = "Field `u0_sec_top_sramcfg_sram_config_sd` writer - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
-pub type U0_SEC_TOP_SRAMCFG_SRAM_CONFIG_SD_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_SEC_TOP_SRAMCFG_SRAM_CONFIG_SD_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_sec_top_sramcfg_rtsel` reader - SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01."]
 pub type U0_SEC_TOP_SRAMCFG_RTSEL_R = crate::FieldReader;
 #[doc = "Field `u0_sec_top_sramcfg_rtsel` writer - SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01."]
-pub type U0_SEC_TOP_SRAMCFG_RTSEL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type U0_SEC_TOP_SRAMCFG_RTSEL_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `u0_sec_top_sramcfg_ptsel` reader - SRAM/ROM configuration. PTSEL: timing setting for debug purpose, default is 2'b01."]
 pub type U0_SEC_TOP_SRAMCFG_PTSEL_R = crate::FieldReader;
 #[doc = "Field `u0_sec_top_sramcfg_ptsel` writer - SRAM/ROM configuration. PTSEL: timing setting for debug purpose, default is 2'b01."]
-pub type U0_SEC_TOP_SRAMCFG_PTSEL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type U0_SEC_TOP_SRAMCFG_PTSEL_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `u0_sec_top_sramcfg_trb` reader - SRAM/ROM configuration. TRB: timing setting for debug purpose, default is 2'b01."]
 pub type U0_SEC_TOP_SRAMCFG_TRB_R = crate::FieldReader;
 #[doc = "Field `u0_sec_top_sramcfg_trb` writer - SRAM/ROM configuration. TRB: timing setting for debug purpose, default is 2'b01."]
-pub type U0_SEC_TOP_SRAMCFG_TRB_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type U0_SEC_TOP_SRAMCFG_TRB_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `u0_sec_top_sramcfg_wtsel` reader - SRAM/ROM configuration. WTSEL: timing setting for debug purpose, default is 2'b01."]
 pub type U0_SEC_TOP_SRAMCFG_WTSEL_R = crate::FieldReader;
 #[doc = "Field `u0_sec_top_sramcfg_wtsel` writer - SRAM/ROM configuration. WTSEL: timing setting for debug purpose, default is 2'b01."]
-pub type U0_SEC_TOP_SRAMCFG_WTSEL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type U0_SEC_TOP_SRAMCFG_WTSEL_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `u0_sec_top_sramcfg_vs` reader - SRAM/ROM configuration. VS: timing setting for debug purpose, default is 1'b1."]
 pub type U0_SEC_TOP_SRAMCFG_VS_R = crate::BitReader;
 #[doc = "Field `u0_sec_top_sramcfg_vs` writer - SRAM/ROM configuration. VS: timing setting for debug purpose, default is 1'b1."]
-pub type U0_SEC_TOP_SRAMCFG_VS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_SEC_TOP_SRAMCFG_VS_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_sec_top_sramcfg_vg` reader - SRAM/ROM configuration. VG: timing setting for debug purpose, default is 1'b1."]
 pub type U0_SEC_TOP_SRAMCFG_VG_R = crate::BitReader;
 #[doc = "Field `u0_sec_top_sramcfg_vg` writer - SRAM/ROM configuration. VG: timing setting for debug purpose, default is 1'b1."]
-pub type U0_SEC_TOP_SRAMCFG_VG_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_SEC_TOP_SRAMCFG_VG_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_plda_pcie_align_detect` reader - u0_plda_pcie_align_detect"]
 pub type U0_PLDA_PCIE_ALIGN_DETECT_R = crate::BitReader;
 impl R {
@@ -157,114 +157,118 @@ impl W {
     #[must_use]
     pub fn u0_plda_pcie_tx_pattern(
         &mut self,
-    ) -> U0_PLDA_PCIE_TX_PATTERN_W<STG_SYSCONSAIF_SYSCFG500_SPEC, 0> {
-        U0_PLDA_PCIE_TX_PATTERN_W::new(self)
+    ) -> U0_PLDA_PCIE_TX_PATTERN_W<STG_SYSCONSAIF_SYSCFG500_SPEC> {
+        U0_PLDA_PCIE_TX_PATTERN_W::new(self, 0)
     }
     #[doc = "Bits 2:3 - u0_plda_pcie_usb3_bus_width"]
     #[inline(always)]
     #[must_use]
     pub fn u0_plda_pcie_usb3_bus_width(
         &mut self,
-    ) -> U0_PLDA_PCIE_USB3_BUS_WIDTH_W<STG_SYSCONSAIF_SYSCFG500_SPEC, 2> {
-        U0_PLDA_PCIE_USB3_BUS_WIDTH_W::new(self)
+    ) -> U0_PLDA_PCIE_USB3_BUS_WIDTH_W<STG_SYSCONSAIF_SYSCFG500_SPEC> {
+        U0_PLDA_PCIE_USB3_BUS_WIDTH_W::new(self, 2)
     }
     #[doc = "Bit 4 - u0_plda_pcie_usb3_phy_enable"]
     #[inline(always)]
     #[must_use]
     pub fn u0_plda_pcie_usb3_phy_enable(
         &mut self,
-    ) -> U0_PLDA_PCIE_USB3_PHY_ENABLE_W<STG_SYSCONSAIF_SYSCFG500_SPEC, 4> {
-        U0_PLDA_PCIE_USB3_PHY_ENABLE_W::new(self)
+    ) -> U0_PLDA_PCIE_USB3_PHY_ENABLE_W<STG_SYSCONSAIF_SYSCFG500_SPEC> {
+        U0_PLDA_PCIE_USB3_PHY_ENABLE_W::new(self, 4)
     }
     #[doc = "Bits 5:6 - u0_plda_pcie_usb3_rate"]
     #[inline(always)]
     #[must_use]
     pub fn u0_plda_pcie_usb3_rate(
         &mut self,
-    ) -> U0_PLDA_PCIE_USB3_RATE_W<STG_SYSCONSAIF_SYSCFG500_SPEC, 5> {
-        U0_PLDA_PCIE_USB3_RATE_W::new(self)
+    ) -> U0_PLDA_PCIE_USB3_RATE_W<STG_SYSCONSAIF_SYSCFG500_SPEC> {
+        U0_PLDA_PCIE_USB3_RATE_W::new(self, 5)
     }
     #[doc = "Bit 7 - u0_plda_pcie_usb3_rx_standby"]
     #[inline(always)]
     #[must_use]
     pub fn u0_plda_pcie_usb3_rx_standby(
         &mut self,
-    ) -> U0_PLDA_PCIE_USB3_RX_STANDBY_W<STG_SYSCONSAIF_SYSCFG500_SPEC, 7> {
-        U0_PLDA_PCIE_USB3_RX_STANDBY_W::new(self)
+    ) -> U0_PLDA_PCIE_USB3_RX_STANDBY_W<STG_SYSCONSAIF_SYSCFG500_SPEC> {
+        U0_PLDA_PCIE_USB3_RX_STANDBY_W::new(self, 7)
     }
     #[doc = "Bit 9 - u0_plda_pcie_xwerrclr"]
     #[inline(always)]
     #[must_use]
     pub fn u0_plda_pcie_xwerrclr(
         &mut self,
-    ) -> U0_PLDA_PCIE_XWERRCLR_W<STG_SYSCONSAIF_SYSCFG500_SPEC, 9> {
-        U0_PLDA_PCIE_XWERRCLR_W::new(self)
+    ) -> U0_PLDA_PCIE_XWERRCLR_W<STG_SYSCONSAIF_SYSCFG500_SPEC> {
+        U0_PLDA_PCIE_XWERRCLR_W::new(self, 9)
     }
     #[doc = "Bit 11 - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
     #[inline(always)]
     #[must_use]
     pub fn u0_sec_top_sramcfg_slp(
         &mut self,
-    ) -> U0_SEC_TOP_SRAMCFG_SLP_W<STG_SYSCONSAIF_SYSCFG500_SPEC, 11> {
-        U0_SEC_TOP_SRAMCFG_SLP_W::new(self)
+    ) -> U0_SEC_TOP_SRAMCFG_SLP_W<STG_SYSCONSAIF_SYSCFG500_SPEC> {
+        U0_SEC_TOP_SRAMCFG_SLP_W::new(self, 11)
     }
     #[doc = "Bit 12 - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
     #[inline(always)]
     #[must_use]
     pub fn u0_sec_top_sramcfg_sram_config_sd(
         &mut self,
-    ) -> U0_SEC_TOP_SRAMCFG_SRAM_CONFIG_SD_W<STG_SYSCONSAIF_SYSCFG500_SPEC, 12> {
-        U0_SEC_TOP_SRAMCFG_SRAM_CONFIG_SD_W::new(self)
+    ) -> U0_SEC_TOP_SRAMCFG_SRAM_CONFIG_SD_W<STG_SYSCONSAIF_SYSCFG500_SPEC> {
+        U0_SEC_TOP_SRAMCFG_SRAM_CONFIG_SD_W::new(self, 12)
     }
     #[doc = "Bits 13:14 - SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01."]
     #[inline(always)]
     #[must_use]
     pub fn u0_sec_top_sramcfg_rtsel(
         &mut self,
-    ) -> U0_SEC_TOP_SRAMCFG_RTSEL_W<STG_SYSCONSAIF_SYSCFG500_SPEC, 13> {
-        U0_SEC_TOP_SRAMCFG_RTSEL_W::new(self)
+    ) -> U0_SEC_TOP_SRAMCFG_RTSEL_W<STG_SYSCONSAIF_SYSCFG500_SPEC> {
+        U0_SEC_TOP_SRAMCFG_RTSEL_W::new(self, 13)
     }
     #[doc = "Bits 15:16 - SRAM/ROM configuration. PTSEL: timing setting for debug purpose, default is 2'b01."]
     #[inline(always)]
     #[must_use]
     pub fn u0_sec_top_sramcfg_ptsel(
         &mut self,
-    ) -> U0_SEC_TOP_SRAMCFG_PTSEL_W<STG_SYSCONSAIF_SYSCFG500_SPEC, 15> {
-        U0_SEC_TOP_SRAMCFG_PTSEL_W::new(self)
+    ) -> U0_SEC_TOP_SRAMCFG_PTSEL_W<STG_SYSCONSAIF_SYSCFG500_SPEC> {
+        U0_SEC_TOP_SRAMCFG_PTSEL_W::new(self, 15)
     }
     #[doc = "Bits 17:18 - SRAM/ROM configuration. TRB: timing setting for debug purpose, default is 2'b01."]
     #[inline(always)]
     #[must_use]
     pub fn u0_sec_top_sramcfg_trb(
         &mut self,
-    ) -> U0_SEC_TOP_SRAMCFG_TRB_W<STG_SYSCONSAIF_SYSCFG500_SPEC, 17> {
-        U0_SEC_TOP_SRAMCFG_TRB_W::new(self)
+    ) -> U0_SEC_TOP_SRAMCFG_TRB_W<STG_SYSCONSAIF_SYSCFG500_SPEC> {
+        U0_SEC_TOP_SRAMCFG_TRB_W::new(self, 17)
     }
     #[doc = "Bits 19:20 - SRAM/ROM configuration. WTSEL: timing setting for debug purpose, default is 2'b01."]
     #[inline(always)]
     #[must_use]
     pub fn u0_sec_top_sramcfg_wtsel(
         &mut self,
-    ) -> U0_SEC_TOP_SRAMCFG_WTSEL_W<STG_SYSCONSAIF_SYSCFG500_SPEC, 19> {
-        U0_SEC_TOP_SRAMCFG_WTSEL_W::new(self)
+    ) -> U0_SEC_TOP_SRAMCFG_WTSEL_W<STG_SYSCONSAIF_SYSCFG500_SPEC> {
+        U0_SEC_TOP_SRAMCFG_WTSEL_W::new(self, 19)
     }
     #[doc = "Bit 21 - SRAM/ROM configuration. VS: timing setting for debug purpose, default is 1'b1."]
     #[inline(always)]
     #[must_use]
     pub fn u0_sec_top_sramcfg_vs(
         &mut self,
-    ) -> U0_SEC_TOP_SRAMCFG_VS_W<STG_SYSCONSAIF_SYSCFG500_SPEC, 21> {
-        U0_SEC_TOP_SRAMCFG_VS_W::new(self)
+    ) -> U0_SEC_TOP_SRAMCFG_VS_W<STG_SYSCONSAIF_SYSCFG500_SPEC> {
+        U0_SEC_TOP_SRAMCFG_VS_W::new(self, 21)
     }
     #[doc = "Bit 22 - SRAM/ROM configuration. VG: timing setting for debug purpose, default is 1'b1."]
     #[inline(always)]
     #[must_use]
     pub fn u0_sec_top_sramcfg_vg(
         &mut self,
-    ) -> U0_SEC_TOP_SRAMCFG_VG_W<STG_SYSCONSAIF_SYSCFG500_SPEC, 22> {
-        U0_SEC_TOP_SRAMCFG_VG_W::new(self)
+    ) -> U0_SEC_TOP_SRAMCFG_VG_W<STG_SYSCONSAIF_SYSCFG500_SPEC> {
+        U0_SEC_TOP_SRAMCFG_VG_W::new(self, 22)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

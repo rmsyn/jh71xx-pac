@@ -3,15 +3,19 @@ pub type R = crate::R<DMASA_SPEC>;
 #[doc = "Register `dmasa` writer"]
 pub type W = crate::W<DMASA_SPEC>;
 #[doc = "Field `dmasa` writer - This register is use to perform a DMA software acknowledge if a transfer needs to be terminated due to an error condition. For example, if the DMA disables the channel, then the DW_apb_uart should clear its request. This causes the TX request, TX single, RX request and RX single signals to de-assert. Note that this bit is 'self-clearing'. It is not necessary to clear this bit."]
-pub type DMASA_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type DMASA_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl W {
     #[doc = "Bit 0 - This register is use to perform a DMA software acknowledge if a transfer needs to be terminated due to an error condition. For example, if the DMA disables the channel, then the DW_apb_uart should clear its request. This causes the TX request, TX single, RX request and RX single signals to de-assert. Note that this bit is 'self-clearing'. It is not necessary to clear this bit."]
     #[inline(always)]
     #[must_use]
-    pub fn dmasa(&mut self) -> DMASA_W<DMASA_SPEC, 0> {
-        DMASA_W::new(self)
+    pub fn dmasa(&mut self) -> DMASA_W<DMASA_SPEC> {
+        DMASA_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

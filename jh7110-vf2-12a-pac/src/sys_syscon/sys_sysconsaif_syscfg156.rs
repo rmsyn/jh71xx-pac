@@ -7,25 +7,25 @@ pub type U1_I2C_IC_EN_R = crate::BitReader;
 #[doc = "Field `u1_sdio_data_strobe_phase_ctrl` reader - Data strobe delay chain select."]
 pub type U1_SDIO_DATA_STROBE_PHASE_CTRL_R = crate::FieldReader;
 #[doc = "Field `u1_sdio_data_strobe_phase_ctrl` writer - Data strobe delay chain select."]
-pub type U1_SDIO_DATA_STROBE_PHASE_CTRL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 5, O>;
+pub type U1_SDIO_DATA_STROBE_PHASE_CTRL_W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
 #[doc = "Field `u1_sdio_hbig_endian` reader - AHB bus interface endianness: 1: Big-endian AHB bus interface, 0: Little-endian AHB bus interface"]
 pub type U1_SDIO_HBIG_ENDIAN_R = crate::BitReader;
 #[doc = "Field `u1_sdio_hbig_endian` writer - AHB bus interface endianness: 1: Big-endian AHB bus interface, 0: Little-endian AHB bus interface"]
-pub type U1_SDIO_HBIG_ENDIAN_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U1_SDIO_HBIG_ENDIAN_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u1_sdio_m_hbig_endian` reader - AHB bus interface endianness: 1: Big-endian AHB bus interface, 0: Little-endian AHB bus interface"]
 pub type U1_SDIO_M_HBIG_ENDIAN_R = crate::BitReader;
 #[doc = "Field `u1_sdio_m_hbig_endian` writer - AHB bus interface endianness: 1: Big-endian AHB bus interface, 0: Little-endian AHB bus interface"]
-pub type U1_SDIO_M_HBIG_ENDIAN_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U1_SDIO_M_HBIG_ENDIAN_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u1_reset_ctrl_clr_reset_status` reader - u1_reset_ctrl_clr_reset_status"]
 pub type U1_RESET_CTRL_CLR_RESET_STATUS_R = crate::BitReader;
 #[doc = "Field `u1_reset_ctrl_clr_reset_status` writer - u1_reset_ctrl_clr_reset_status"]
-pub type U1_RESET_CTRL_CLR_RESET_STATUS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U1_RESET_CTRL_CLR_RESET_STATUS_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u1_reset_ctrl_pll_timecnt_finish` reader - u1_reset_ctrl_pll_timecnt_finish"]
 pub type U1_RESET_CTRL_PLL_TIMECNT_FINISH_R = crate::BitReader;
 #[doc = "Field `u1_reset_ctrl_rstn_sw` reader - u1_reset_ctrl_rstn_sw"]
 pub type U1_RESET_CTRL_RSTN_SW_R = crate::BitReader;
 #[doc = "Field `u1_reset_ctrl_rstn_sw` writer - u1_reset_ctrl_rstn_sw"]
-pub type U1_RESET_CTRL_RSTN_SW_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U1_RESET_CTRL_RSTN_SW_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u1_reset_ctrl_sys_reset_status` reader - u1_reset_ctrl_sys_reset_status"]
 pub type U1_RESET_CTRL_SYS_RESET_STATUS_R = crate::FieldReader;
 #[doc = "Field `u2_i2c_ic_en` reader - I2C interface enable."]
@@ -111,42 +111,44 @@ impl W {
     #[must_use]
     pub fn u1_sdio_data_strobe_phase_ctrl(
         &mut self,
-    ) -> U1_SDIO_DATA_STROBE_PHASE_CTRL_W<SYS_SYSCONSAIF_SYSCFG156_SPEC, 1> {
-        U1_SDIO_DATA_STROBE_PHASE_CTRL_W::new(self)
+    ) -> U1_SDIO_DATA_STROBE_PHASE_CTRL_W<SYS_SYSCONSAIF_SYSCFG156_SPEC> {
+        U1_SDIO_DATA_STROBE_PHASE_CTRL_W::new(self, 1)
     }
     #[doc = "Bit 6 - AHB bus interface endianness: 1: Big-endian AHB bus interface, 0: Little-endian AHB bus interface"]
     #[inline(always)]
     #[must_use]
-    pub fn u1_sdio_hbig_endian(
-        &mut self,
-    ) -> U1_SDIO_HBIG_ENDIAN_W<SYS_SYSCONSAIF_SYSCFG156_SPEC, 6> {
-        U1_SDIO_HBIG_ENDIAN_W::new(self)
+    pub fn u1_sdio_hbig_endian(&mut self) -> U1_SDIO_HBIG_ENDIAN_W<SYS_SYSCONSAIF_SYSCFG156_SPEC> {
+        U1_SDIO_HBIG_ENDIAN_W::new(self, 6)
     }
     #[doc = "Bit 7 - AHB bus interface endianness: 1: Big-endian AHB bus interface, 0: Little-endian AHB bus interface"]
     #[inline(always)]
     #[must_use]
     pub fn u1_sdio_m_hbig_endian(
         &mut self,
-    ) -> U1_SDIO_M_HBIG_ENDIAN_W<SYS_SYSCONSAIF_SYSCFG156_SPEC, 7> {
-        U1_SDIO_M_HBIG_ENDIAN_W::new(self)
+    ) -> U1_SDIO_M_HBIG_ENDIAN_W<SYS_SYSCONSAIF_SYSCFG156_SPEC> {
+        U1_SDIO_M_HBIG_ENDIAN_W::new(self, 7)
     }
     #[doc = "Bit 8 - u1_reset_ctrl_clr_reset_status"]
     #[inline(always)]
     #[must_use]
     pub fn u1_reset_ctrl_clr_reset_status(
         &mut self,
-    ) -> U1_RESET_CTRL_CLR_RESET_STATUS_W<SYS_SYSCONSAIF_SYSCFG156_SPEC, 8> {
-        U1_RESET_CTRL_CLR_RESET_STATUS_W::new(self)
+    ) -> U1_RESET_CTRL_CLR_RESET_STATUS_W<SYS_SYSCONSAIF_SYSCFG156_SPEC> {
+        U1_RESET_CTRL_CLR_RESET_STATUS_W::new(self, 8)
     }
     #[doc = "Bit 10 - u1_reset_ctrl_rstn_sw"]
     #[inline(always)]
     #[must_use]
     pub fn u1_reset_ctrl_rstn_sw(
         &mut self,
-    ) -> U1_RESET_CTRL_RSTN_SW_W<SYS_SYSCONSAIF_SYSCFG156_SPEC, 10> {
-        U1_RESET_CTRL_RSTN_SW_W::new(self)
+    ) -> U1_RESET_CTRL_RSTN_SW_W<SYS_SYSCONSAIF_SYSCFG156_SPEC> {
+        U1_RESET_CTRL_RSTN_SW_W::new(self, 10)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

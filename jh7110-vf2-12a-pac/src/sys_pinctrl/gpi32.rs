@@ -5,19 +5,19 @@ pub type W = crate::W<GPI32_SPEC>;
 #[doc = "Field `u0_sys_crg_i2srx_lrck_slv_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type U0_SYS_CRG_I2SRX_LRCK_SLV_CFG_R = crate::FieldReader;
 #[doc = "Field `u0_sys_crg_i2srx_lrck_slv_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type U0_SYS_CRG_I2SRX_LRCK_SLV_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type U0_SYS_CRG_I2SRX_LRCK_SLV_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 #[doc = "Field `u0_sys_crg_i2stx_bclk_slv_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type U0_SYS_CRG_I2STX_BCLK_SLV_CFG_R = crate::FieldReader;
 #[doc = "Field `u0_sys_crg_i2stx_bclk_slv_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type U0_SYS_CRG_I2STX_BCLK_SLV_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type U0_SYS_CRG_I2STX_BCLK_SLV_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 #[doc = "Field `u0_sys_crg_i2stx_lrck_slv_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type U0_SYS_CRG_I2STX_LRCK_SLV_CFG_R = crate::FieldReader;
 #[doc = "Field `u0_sys_crg_i2stx_lrck_slv_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type U0_SYS_CRG_I2STX_LRCK_SLV_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type U0_SYS_CRG_I2STX_LRCK_SLV_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 #[doc = "Field `u0_sys_crg_tdm_clk_slv_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type U0_SYS_CRG_TDM_CLK_SLV_CFG_R = crate::FieldReader;
 #[doc = "Field `u0_sys_crg_tdm_clk_slv_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type U0_SYS_CRG_TDM_CLK_SLV_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type U0_SYS_CRG_TDM_CLK_SLV_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 impl R {
     #[doc = "Bits 0:6 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
@@ -44,34 +44,32 @@ impl W {
     #[doc = "Bits 0:6 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
-    pub fn u0_sys_crg_i2srx_lrck_slv_cfg(
-        &mut self,
-    ) -> U0_SYS_CRG_I2SRX_LRCK_SLV_CFG_W<GPI32_SPEC, 0> {
-        U0_SYS_CRG_I2SRX_LRCK_SLV_CFG_W::new(self)
+    pub fn u0_sys_crg_i2srx_lrck_slv_cfg(&mut self) -> U0_SYS_CRG_I2SRX_LRCK_SLV_CFG_W<GPI32_SPEC> {
+        U0_SYS_CRG_I2SRX_LRCK_SLV_CFG_W::new(self, 0)
     }
     #[doc = "Bits 8:14 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
-    pub fn u0_sys_crg_i2stx_bclk_slv_cfg(
-        &mut self,
-    ) -> U0_SYS_CRG_I2STX_BCLK_SLV_CFG_W<GPI32_SPEC, 8> {
-        U0_SYS_CRG_I2STX_BCLK_SLV_CFG_W::new(self)
+    pub fn u0_sys_crg_i2stx_bclk_slv_cfg(&mut self) -> U0_SYS_CRG_I2STX_BCLK_SLV_CFG_W<GPI32_SPEC> {
+        U0_SYS_CRG_I2STX_BCLK_SLV_CFG_W::new(self, 8)
     }
     #[doc = "Bits 16:22 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
-    pub fn u0_sys_crg_i2stx_lrck_slv_cfg(
-        &mut self,
-    ) -> U0_SYS_CRG_I2STX_LRCK_SLV_CFG_W<GPI32_SPEC, 16> {
-        U0_SYS_CRG_I2STX_LRCK_SLV_CFG_W::new(self)
+    pub fn u0_sys_crg_i2stx_lrck_slv_cfg(&mut self) -> U0_SYS_CRG_I2STX_LRCK_SLV_CFG_W<GPI32_SPEC> {
+        U0_SYS_CRG_I2STX_LRCK_SLV_CFG_W::new(self, 16)
     }
     #[doc = "Bits 24:30 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
-    pub fn u0_sys_crg_tdm_clk_slv_cfg(&mut self) -> U0_SYS_CRG_TDM_CLK_SLV_CFG_W<GPI32_SPEC, 24> {
-        U0_SYS_CRG_TDM_CLK_SLV_CFG_W::new(self)
+    pub fn u0_sys_crg_tdm_clk_slv_cfg(&mut self) -> U0_SYS_CRG_TDM_CLK_SLV_CFG_W<GPI32_SPEC> {
+        U0_SYS_CRG_TDM_CLK_SLV_CFG_W::new(self, 24)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

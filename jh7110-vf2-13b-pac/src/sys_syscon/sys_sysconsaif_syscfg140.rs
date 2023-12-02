@@ -7,40 +7,35 @@ pub type U1_CAN_CTRL_HOST_IF_R = crate::FieldReader<u32>;
 #[doc = "Field `u1_gmac5_axi64_scfg_ram_cfg_slp` reader - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
 pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_SLP_R = crate::BitReader;
 #[doc = "Field `u1_gmac5_axi64_scfg_ram_cfg_slp` writer - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
-pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_SLP_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_SLP_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u1_gmac5_axi64_scfg_ram_cfg_sram_config_sd` reader - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
 pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_SRAM_CONFIG_SD_R = crate::BitReader;
 #[doc = "Field `u1_gmac5_axi64_scfg_ram_cfg_sram_config_sd` writer - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
-pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_SRAM_CONFIG_SD_W<'a, REG, const O: u8> =
-    crate::BitWriter<'a, REG, O>;
+pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_SRAM_CONFIG_SD_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u1_gmac5_axi64_scfg_ram_cfg_rtsel` reader - SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01."]
 pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_RTSEL_R = crate::FieldReader;
 #[doc = "Field `u1_gmac5_axi64_scfg_ram_cfg_rtsel` writer - SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01."]
-pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_RTSEL_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 2, O>;
+pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_RTSEL_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `u1_gmac5_axi64_scfg_ram_cfg_ptsel` reader - SRAM/ROM configuration. PTSEL: timing setting for debug purpose, default is 2'b01."]
 pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_PTSEL_R = crate::FieldReader;
 #[doc = "Field `u1_gmac5_axi64_scfg_ram_cfg_ptsel` writer - SRAM/ROM configuration. PTSEL: timing setting for debug purpose, default is 2'b01."]
-pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_PTSEL_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 2, O>;
+pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_PTSEL_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `u1_gmac5_axi64_scfg_ram_cfg_trb` reader - SRAM/ROM configuration. TRB: timing setting for debug purpose, default is 2'b01."]
 pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_TRB_R = crate::FieldReader;
 #[doc = "Field `u1_gmac5_axi64_scfg_ram_cfg_trb` writer - SRAM/ROM configuration. TRB: timing setting for debug purpose, default is 2'b01."]
-pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_TRB_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 2, O>;
+pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_TRB_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `u1_gmac5_axi64_scfg_ram_cfg_wtsel` reader - SRAM/ROM configuration. WTSEL: timing setting for debug purpose, default is 2'b01."]
 pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_WTSEL_R = crate::FieldReader;
 #[doc = "Field `u1_gmac5_axi64_scfg_ram_cfg_wtsel` writer - SRAM/ROM configuration. WTSEL: timing setting for debug purpose, default is 2'b01."]
-pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_WTSEL_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 2, O>;
+pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_WTSEL_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `u1_gmac5_axi64_scfg_ram_cfg_vs` reader - SRAM/ROM configuration. VS: timing setting for debug purpose, default is 1'b1."]
 pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_VS_R = crate::BitReader;
 #[doc = "Field `u1_gmac5_axi64_scfg_ram_cfg_vs` writer - SRAM/ROM configuration. VS: timing setting for debug purpose, default is 1'b1."]
-pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_VS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_VS_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u1_gmac5_axi64_scfg_ram_cfg_vg` reader - SRAM/ROM configuration. VG: timing setting for debug purpose, default is 1'b1."]
 pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_VG_R = crate::BitReader;
 #[doc = "Field `u1_gmac5_axi64_scfg_ram_cfg_vg` writer - SRAM/ROM configuration. VG: timing setting for debug purpose, default is 1'b1."]
-pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_VG_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_VG_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bits 0:18 - u1_can_ctrl_host_if"]
     #[inline(always)]
@@ -96,66 +91,70 @@ impl W {
     #[must_use]
     pub fn u1_gmac5_axi64_scfg_ram_cfg_slp(
         &mut self,
-    ) -> U1_GMAC5_AXI64_SCFG_RAM_CFG_SLP_W<SYS_SYSCONSAIF_SYSCFG140_SPEC, 19> {
-        U1_GMAC5_AXI64_SCFG_RAM_CFG_SLP_W::new(self)
+    ) -> U1_GMAC5_AXI64_SCFG_RAM_CFG_SLP_W<SYS_SYSCONSAIF_SYSCFG140_SPEC> {
+        U1_GMAC5_AXI64_SCFG_RAM_CFG_SLP_W::new(self, 19)
     }
     #[doc = "Bit 20 - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
     #[inline(always)]
     #[must_use]
     pub fn u1_gmac5_axi64_scfg_ram_cfg_sram_config_sd(
         &mut self,
-    ) -> U1_GMAC5_AXI64_SCFG_RAM_CFG_SRAM_CONFIG_SD_W<SYS_SYSCONSAIF_SYSCFG140_SPEC, 20> {
-        U1_GMAC5_AXI64_SCFG_RAM_CFG_SRAM_CONFIG_SD_W::new(self)
+    ) -> U1_GMAC5_AXI64_SCFG_RAM_CFG_SRAM_CONFIG_SD_W<SYS_SYSCONSAIF_SYSCFG140_SPEC> {
+        U1_GMAC5_AXI64_SCFG_RAM_CFG_SRAM_CONFIG_SD_W::new(self, 20)
     }
     #[doc = "Bits 21:22 - SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01."]
     #[inline(always)]
     #[must_use]
     pub fn u1_gmac5_axi64_scfg_ram_cfg_rtsel(
         &mut self,
-    ) -> U1_GMAC5_AXI64_SCFG_RAM_CFG_RTSEL_W<SYS_SYSCONSAIF_SYSCFG140_SPEC, 21> {
-        U1_GMAC5_AXI64_SCFG_RAM_CFG_RTSEL_W::new(self)
+    ) -> U1_GMAC5_AXI64_SCFG_RAM_CFG_RTSEL_W<SYS_SYSCONSAIF_SYSCFG140_SPEC> {
+        U1_GMAC5_AXI64_SCFG_RAM_CFG_RTSEL_W::new(self, 21)
     }
     #[doc = "Bits 23:24 - SRAM/ROM configuration. PTSEL: timing setting for debug purpose, default is 2'b01."]
     #[inline(always)]
     #[must_use]
     pub fn u1_gmac5_axi64_scfg_ram_cfg_ptsel(
         &mut self,
-    ) -> U1_GMAC5_AXI64_SCFG_RAM_CFG_PTSEL_W<SYS_SYSCONSAIF_SYSCFG140_SPEC, 23> {
-        U1_GMAC5_AXI64_SCFG_RAM_CFG_PTSEL_W::new(self)
+    ) -> U1_GMAC5_AXI64_SCFG_RAM_CFG_PTSEL_W<SYS_SYSCONSAIF_SYSCFG140_SPEC> {
+        U1_GMAC5_AXI64_SCFG_RAM_CFG_PTSEL_W::new(self, 23)
     }
     #[doc = "Bits 25:26 - SRAM/ROM configuration. TRB: timing setting for debug purpose, default is 2'b01."]
     #[inline(always)]
     #[must_use]
     pub fn u1_gmac5_axi64_scfg_ram_cfg_trb(
         &mut self,
-    ) -> U1_GMAC5_AXI64_SCFG_RAM_CFG_TRB_W<SYS_SYSCONSAIF_SYSCFG140_SPEC, 25> {
-        U1_GMAC5_AXI64_SCFG_RAM_CFG_TRB_W::new(self)
+    ) -> U1_GMAC5_AXI64_SCFG_RAM_CFG_TRB_W<SYS_SYSCONSAIF_SYSCFG140_SPEC> {
+        U1_GMAC5_AXI64_SCFG_RAM_CFG_TRB_W::new(self, 25)
     }
     #[doc = "Bits 27:28 - SRAM/ROM configuration. WTSEL: timing setting for debug purpose, default is 2'b01."]
     #[inline(always)]
     #[must_use]
     pub fn u1_gmac5_axi64_scfg_ram_cfg_wtsel(
         &mut self,
-    ) -> U1_GMAC5_AXI64_SCFG_RAM_CFG_WTSEL_W<SYS_SYSCONSAIF_SYSCFG140_SPEC, 27> {
-        U1_GMAC5_AXI64_SCFG_RAM_CFG_WTSEL_W::new(self)
+    ) -> U1_GMAC5_AXI64_SCFG_RAM_CFG_WTSEL_W<SYS_SYSCONSAIF_SYSCFG140_SPEC> {
+        U1_GMAC5_AXI64_SCFG_RAM_CFG_WTSEL_W::new(self, 27)
     }
     #[doc = "Bit 29 - SRAM/ROM configuration. VS: timing setting for debug purpose, default is 1'b1."]
     #[inline(always)]
     #[must_use]
     pub fn u1_gmac5_axi64_scfg_ram_cfg_vs(
         &mut self,
-    ) -> U1_GMAC5_AXI64_SCFG_RAM_CFG_VS_W<SYS_SYSCONSAIF_SYSCFG140_SPEC, 29> {
-        U1_GMAC5_AXI64_SCFG_RAM_CFG_VS_W::new(self)
+    ) -> U1_GMAC5_AXI64_SCFG_RAM_CFG_VS_W<SYS_SYSCONSAIF_SYSCFG140_SPEC> {
+        U1_GMAC5_AXI64_SCFG_RAM_CFG_VS_W::new(self, 29)
     }
     #[doc = "Bit 30 - SRAM/ROM configuration. VG: timing setting for debug purpose, default is 1'b1."]
     #[inline(always)]
     #[must_use]
     pub fn u1_gmac5_axi64_scfg_ram_cfg_vg(
         &mut self,
-    ) -> U1_GMAC5_AXI64_SCFG_RAM_CFG_VG_W<SYS_SYSCONSAIF_SYSCFG140_SPEC, 30> {
-        U1_GMAC5_AXI64_SCFG_RAM_CFG_VG_W::new(self)
+    ) -> U1_GMAC5_AXI64_SCFG_RAM_CFG_VG_W<SYS_SYSCONSAIF_SYSCFG140_SPEC> {
+        U1_GMAC5_AXI64_SCFG_RAM_CFG_VG_W::new(self, 30)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

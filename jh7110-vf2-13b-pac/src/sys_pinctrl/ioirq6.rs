@@ -5,7 +5,7 @@ pub type W = crate::W<IOIRQ6_SPEC>;
 #[doc = "Field `gpioibe1` reader - 1: Trigger on both edges, 0: Trigger on a single edge"]
 pub type GPIOIBE1_R = crate::FieldReader<u32>;
 #[doc = "Field `gpioibe1` writer - 1: Trigger on both edges, 0: Trigger on a single edge"]
-pub type GPIOIBE1_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 32, O, u32>;
+pub type GPIOIBE1_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl R {
     #[doc = "Bits 0:31 - 1: Trigger on both edges, 0: Trigger on a single edge"]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bits 0:31 - 1: Trigger on both edges, 0: Trigger on a single edge"]
     #[inline(always)]
     #[must_use]
-    pub fn gpioibe1(&mut self) -> GPIOIBE1_W<IOIRQ6_SPEC, 0> {
-        GPIOIBE1_W::new(self)
+    pub fn gpioibe1(&mut self) -> GPIOIBE1_W<IOIRQ6_SPEC> {
+        GPIOIBE1_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

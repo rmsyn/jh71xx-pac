@@ -5,11 +5,11 @@ pub type W = crate::W<CLK_U1_SD_CARD_SPEC>;
 #[doc = "Field `clk_divcfg` reader - Clock divider coefficient: Max=15, Default=2, Min=2, Typical=2"]
 pub type CLK_DIVCFG_R = crate::FieldReader<u32>;
 #[doc = "Field `clk_divcfg` writer - Clock divider coefficient: Max=15, Default=2, Min=2, Typical=2"]
-pub type CLK_DIVCFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 24, O, u32>;
+pub type CLK_DIVCFG_W<'a, REG> = crate::FieldWriter<'a, REG, 24, u32>;
 #[doc = "Field `clk_icg` reader - 1: Clock enable, 0: Clock disable"]
 pub type CLK_ICG_R = crate::BitReader;
 #[doc = "Field `clk_icg` writer - 1: Clock enable, 0: Clock disable"]
-pub type CLK_ICG_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type CLK_ICG_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bits 0:23 - Clock divider coefficient: Max=15, Default=2, Min=2, Typical=2"]
     #[inline(always)]
@@ -26,16 +26,20 @@ impl W {
     #[doc = "Bits 0:23 - Clock divider coefficient: Max=15, Default=2, Min=2, Typical=2"]
     #[inline(always)]
     #[must_use]
-    pub fn clk_divcfg(&mut self) -> CLK_DIVCFG_W<CLK_U1_SD_CARD_SPEC, 0> {
-        CLK_DIVCFG_W::new(self)
+    pub fn clk_divcfg(&mut self) -> CLK_DIVCFG_W<CLK_U1_SD_CARD_SPEC> {
+        CLK_DIVCFG_W::new(self, 0)
     }
     #[doc = "Bit 31 - 1: Clock enable, 0: Clock disable"]
     #[inline(always)]
     #[must_use]
-    pub fn clk_icg(&mut self) -> CLK_ICG_W<CLK_U1_SD_CARD_SPEC, 31> {
-        CLK_ICG_W::new(self)
+    pub fn clk_icg(&mut self) -> CLK_ICG_W<CLK_U1_SD_CARD_SPEC> {
+        CLK_ICG_W::new(self, 31)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

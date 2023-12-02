@@ -5,7 +5,7 @@ pub type W = crate::W<CLK_GMAC5_AXI64_RXI_SPEC>;
 #[doc = "Field `clk_polarity` reader - 1: Clock inverter, 0: Clock buffer"]
 pub type CLK_POLARITY_R = crate::BitReader;
 #[doc = "Field `clk_polarity` writer - 1: Clock inverter, 0: Clock buffer"]
-pub type CLK_POLARITY_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type CLK_POLARITY_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 30 - 1: Clock inverter, 0: Clock buffer"]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bit 30 - 1: Clock inverter, 0: Clock buffer"]
     #[inline(always)]
     #[must_use]
-    pub fn clk_polarity(&mut self) -> CLK_POLARITY_W<CLK_GMAC5_AXI64_RXI_SPEC, 30> {
-        CLK_POLARITY_W::new(self)
+    pub fn clk_polarity(&mut self) -> CLK_POLARITY_W<CLK_GMAC5_AXI64_RXI_SPEC> {
+        CLK_POLARITY_W::new(self, 30)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

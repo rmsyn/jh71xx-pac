@@ -5,19 +5,19 @@ pub type W = crate::W<AON_IOMUX_CFGSAIF_SYSCFG_FMUX1_SPEC>;
 #[doc = "Field `aon_iomux_gpo0_dout_cfg` reader - The selected OEN signal for GPIO0. The register value indicates the selected GPIO output signal list 0-9. See Table 2-42: GPIO OEN List for AON_IOMUX for more information."]
 pub type AON_IOMUX_GPO0_DOUT_CFG_R = crate::FieldReader;
 #[doc = "Field `aon_iomux_gpo0_dout_cfg` writer - The selected OEN signal for GPIO0. The register value indicates the selected GPIO output signal list 0-9. See Table 2-42: GPIO OEN List for AON_IOMUX for more information."]
-pub type AON_IOMUX_GPO0_DOUT_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 4, O>;
+pub type AON_IOMUX_GPO0_DOUT_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
 #[doc = "Field `aon_iomux_gpo1_dout_cfg` reader - The selected OEN signal for GPIO1. The register value indicates the selected GPIO output signal list 0-9. See Table 2-42: GPIO OEN List for AON_IOMUX for more information."]
 pub type AON_IOMUX_GPO1_DOUT_CFG_R = crate::FieldReader;
 #[doc = "Field `aon_iomux_gpo1_dout_cfg` writer - The selected OEN signal for GPIO1. The register value indicates the selected GPIO output signal list 0-9. See Table 2-42: GPIO OEN List for AON_IOMUX for more information."]
-pub type AON_IOMUX_GPO1_DOUT_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 4, O>;
+pub type AON_IOMUX_GPO1_DOUT_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
 #[doc = "Field `aon_iomux_gpo2_dout_cfg` reader - The selected OEN signal for GPIO2. The register value indicates the selected GPIO output signal list 0-9. See Table 2-42: GPIO OEN List for AON_IOMUX for more information."]
 pub type AON_IOMUX_GPO2_DOUT_CFG_R = crate::FieldReader;
 #[doc = "Field `aon_iomux_gpo2_dout_cfg` writer - The selected OEN signal for GPIO2. The register value indicates the selected GPIO output signal list 0-9. See Table 2-42: GPIO OEN List for AON_IOMUX for more information."]
-pub type AON_IOMUX_GPO2_DOUT_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 4, O>;
+pub type AON_IOMUX_GPO2_DOUT_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
 #[doc = "Field `aon_iomux_gpo3_dout_cfg` reader - The selected OEN signal for GPIO3. The register value indicates the selected GPIO output signal list 0-9. See Table 2-42: GPIO OEN List for AON_IOMUX for more information."]
 pub type AON_IOMUX_GPO3_DOUT_CFG_R = crate::FieldReader;
 #[doc = "Field `aon_iomux_gpo3_dout_cfg` writer - The selected OEN signal for GPIO3. The register value indicates the selected GPIO output signal list 0-9. See Table 2-42: GPIO OEN List for AON_IOMUX for more information."]
-pub type AON_IOMUX_GPO3_DOUT_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 4, O>;
+pub type AON_IOMUX_GPO3_DOUT_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
 impl R {
     #[doc = "Bits 0:3 - The selected OEN signal for GPIO0. The register value indicates the selected GPIO output signal list 0-9. See Table 2-42: GPIO OEN List for AON_IOMUX for more information."]
     #[inline(always)]
@@ -46,34 +46,38 @@ impl W {
     #[must_use]
     pub fn aon_iomux_gpo0_dout_cfg(
         &mut self,
-    ) -> AON_IOMUX_GPO0_DOUT_CFG_W<AON_IOMUX_CFGSAIF_SYSCFG_FMUX1_SPEC, 0> {
-        AON_IOMUX_GPO0_DOUT_CFG_W::new(self)
+    ) -> AON_IOMUX_GPO0_DOUT_CFG_W<AON_IOMUX_CFGSAIF_SYSCFG_FMUX1_SPEC> {
+        AON_IOMUX_GPO0_DOUT_CFG_W::new(self, 0)
     }
     #[doc = "Bits 8:11 - The selected OEN signal for GPIO1. The register value indicates the selected GPIO output signal list 0-9. See Table 2-42: GPIO OEN List for AON_IOMUX for more information."]
     #[inline(always)]
     #[must_use]
     pub fn aon_iomux_gpo1_dout_cfg(
         &mut self,
-    ) -> AON_IOMUX_GPO1_DOUT_CFG_W<AON_IOMUX_CFGSAIF_SYSCFG_FMUX1_SPEC, 8> {
-        AON_IOMUX_GPO1_DOUT_CFG_W::new(self)
+    ) -> AON_IOMUX_GPO1_DOUT_CFG_W<AON_IOMUX_CFGSAIF_SYSCFG_FMUX1_SPEC> {
+        AON_IOMUX_GPO1_DOUT_CFG_W::new(self, 8)
     }
     #[doc = "Bits 16:19 - The selected OEN signal for GPIO2. The register value indicates the selected GPIO output signal list 0-9. See Table 2-42: GPIO OEN List for AON_IOMUX for more information."]
     #[inline(always)]
     #[must_use]
     pub fn aon_iomux_gpo2_dout_cfg(
         &mut self,
-    ) -> AON_IOMUX_GPO2_DOUT_CFG_W<AON_IOMUX_CFGSAIF_SYSCFG_FMUX1_SPEC, 16> {
-        AON_IOMUX_GPO2_DOUT_CFG_W::new(self)
+    ) -> AON_IOMUX_GPO2_DOUT_CFG_W<AON_IOMUX_CFGSAIF_SYSCFG_FMUX1_SPEC> {
+        AON_IOMUX_GPO2_DOUT_CFG_W::new(self, 16)
     }
     #[doc = "Bits 24:27 - The selected OEN signal for GPIO3. The register value indicates the selected GPIO output signal list 0-9. See Table 2-42: GPIO OEN List for AON_IOMUX for more information."]
     #[inline(always)]
     #[must_use]
     pub fn aon_iomux_gpo3_dout_cfg(
         &mut self,
-    ) -> AON_IOMUX_GPO3_DOUT_CFG_W<AON_IOMUX_CFGSAIF_SYSCFG_FMUX1_SPEC, 24> {
-        AON_IOMUX_GPO3_DOUT_CFG_W::new(self)
+    ) -> AON_IOMUX_GPO3_DOUT_CFG_W<AON_IOMUX_CFGSAIF_SYSCFG_FMUX1_SPEC> {
+        AON_IOMUX_GPO3_DOUT_CFG_W::new(self, 24)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

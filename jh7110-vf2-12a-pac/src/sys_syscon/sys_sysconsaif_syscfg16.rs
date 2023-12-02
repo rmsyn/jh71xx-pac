@@ -9,11 +9,11 @@ pub type U0_WAVE511_O_VPU_IDLE_R = crate::BitReader;
 #[doc = "Field `u0_can_ctrl_can_fd_enable` reader - u0_can_ctrl_can_fd_enable"]
 pub type U0_CAN_CTRL_CAN_FD_ENABLE_R = crate::BitReader;
 #[doc = "Field `u0_can_ctrl_can_fd_enable` writer - u0_can_ctrl_can_fd_enable"]
-pub type U0_CAN_CTRL_CAN_FD_ENABLE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CAN_CTRL_CAN_FD_ENABLE_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_can_ctrl_host_ecc_disable` reader - u0_can_ctrl_host_ecc_disable"]
 pub type U0_CAN_CTRL_HOST_ECC_DISABLE_R = crate::BitReader;
 #[doc = "Field `u0_can_ctrl_host_ecc_disable` writer - u0_can_ctrl_host_ecc_disable"]
-pub type U0_CAN_CTRL_HOST_ECC_DISABLE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CAN_CTRL_HOST_ECC_DISABLE_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_can_ctrl_host_if` reader - u0_can_ctrl_host_if"]
 pub type U0_CAN_CTRL_HOST_IF_R = crate::FieldReader<u32>;
 #[doc = "Field `u0_cdns_qspi_scfg_qspi_sclk_dlychain_sel` reader - des_qspi_sclk_dla: clock delay"]
@@ -58,18 +58,22 @@ impl W {
     #[must_use]
     pub fn u0_can_ctrl_can_fd_enable(
         &mut self,
-    ) -> U0_CAN_CTRL_CAN_FD_ENABLE_W<SYS_SYSCONSAIF_SYSCFG16_SPEC, 3> {
-        U0_CAN_CTRL_CAN_FD_ENABLE_W::new(self)
+    ) -> U0_CAN_CTRL_CAN_FD_ENABLE_W<SYS_SYSCONSAIF_SYSCFG16_SPEC> {
+        U0_CAN_CTRL_CAN_FD_ENABLE_W::new(self, 3)
     }
     #[doc = "Bit 4 - u0_can_ctrl_host_ecc_disable"]
     #[inline(always)]
     #[must_use]
     pub fn u0_can_ctrl_host_ecc_disable(
         &mut self,
-    ) -> U0_CAN_CTRL_HOST_ECC_DISABLE_W<SYS_SYSCONSAIF_SYSCFG16_SPEC, 4> {
-        U0_CAN_CTRL_HOST_ECC_DISABLE_W::new(self)
+    ) -> U0_CAN_CTRL_HOST_ECC_DISABLE_W<SYS_SYSCONSAIF_SYSCFG16_SPEC> {
+        U0_CAN_CTRL_HOST_ECC_DISABLE_W::new(self, 4)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

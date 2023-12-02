@@ -9,57 +9,57 @@ pub type U0_CDN_USB_LTM_HOST_REQ_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_ltm_host_req_halt` reader - LTM interface to software"]
 pub type U0_CDN_USB_LTM_HOST_REQ_HALT_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_ltm_host_req_halt` writer - LTM interface to software"]
-pub type U0_CDN_USB_LTM_HOST_REQ_HALT_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_LTM_HOST_REQ_HALT_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_mdctrl_clk_sel` reader - u0_cdn_usb_mdctrl_clk_sel"]
 pub type U0_CDN_USB_MDCTRL_CLK_SEL_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_mdctrl_clk_sel` writer - u0_cdn_usb_mdctrl_clk_sel"]
-pub type U0_CDN_USB_MDCTRL_CLK_SEL_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_MDCTRL_CLK_SEL_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_mdctrl_clk_status` reader - u0_cdn_usb_mdctrl_clk_status"]
 pub type U0_CDN_USB_MDCTRL_CLK_STATUS_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_mode_strap` reader - Can onlly be changed when pwrup_rst_n is low"]
 pub type U0_CDN_USB_MODE_STRAP_R = crate::FieldReader;
 #[doc = "Field `u0_cdn_usb_mode_strap` writer - Can onlly be changed when pwrup_rst_n is low"]
-pub type U0_CDN_USB_MODE_STRAP_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 3, O>;
+pub type U0_CDN_USB_MODE_STRAP_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `u0_cdn_usb_otg_suspendm` reader - u0_cdn_usb_otg_suspendm"]
 pub type U0_CDN_USB_OTG_SUSPENDM_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_otg_suspendm` writer - u0_cdn_usb_otg_suspendm"]
-pub type U0_CDN_USB_OTG_SUSPENDM_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_OTG_SUSPENDM_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_otg_suspendm_byps` reader - u0_cdn_usb_otg_suspendm_byps"]
 pub type U0_CDN_USB_OTG_SUSPENDM_BYPS_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_otg_suspendm_byps` writer - u0_cdn_usb_otg_suspendm_byps"]
-pub type U0_CDN_USB_OTG_SUSPENDM_BYPS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_OTG_SUSPENDM_BYPS_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_phy_bvalid` reader - u0_cdn_usb_phy_bvalid"]
 pub type U0_CDN_USB_PHY_BVALID_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_pll_en` reader - u0_cdn_usb_pll_en"]
 pub type U0_CDN_USB_PLL_EN_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_pll_en` writer - u0_cdn_usb_pll_en"]
-pub type U0_CDN_USB_PLL_EN_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_PLL_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_refclk_mode` reader - u0_cdn_usb_refclk_mode"]
 pub type U0_CDN_USB_REFCLK_MODE_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_refclk_mode` writer - u0_cdn_usb_refclk_mode"]
-pub type U0_CDN_USB_REFCLK_MODE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_REFCLK_MODE_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_rid_a_comp_sts` reader - u0_cdn_usb_rid_a_comp_sts"]
 pub type U0_CDN_USB_RID_A_COMP_STS_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_rid_a_comp_sts` writer - u0_cdn_usb_rid_a_comp_sts"]
-pub type U0_CDN_USB_RID_A_COMP_STS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_RID_A_COMP_STS_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_rid_b_comp_sts` reader - u0_cdn_usb_rid_b_comp_sts"]
 pub type U0_CDN_USB_RID_B_COMP_STS_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_rid_b_comp_sts` writer - u0_cdn_usb_rid_b_comp_sts"]
-pub type U0_CDN_USB_RID_B_COMP_STS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_RID_B_COMP_STS_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_rid_c_comp_sts` reader - u0_cdn_usb_rid_c_comp_sts"]
 pub type U0_CDN_USB_RID_C_COMP_STS_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_rid_c_comp_sts` writer - u0_cdn_usb_rid_c_comp_sts"]
-pub type U0_CDN_USB_RID_C_COMP_STS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_RID_C_COMP_STS_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_rid_float_comp_en` reader - u0_cdn_usb_rid_float_comp_en"]
 pub type U0_CDN_USB_RID_FLOAT_COMP_EN_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_rid_float_comp_sts` reader - u0_cdn_usb_rid_float_comp_sts"]
 pub type U0_CDN_USB_RID_FLOAT_COMP_STS_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_rid_float_comp_sts` writer - u0_cdn_usb_rid_float_comp_sts"]
-pub type U0_CDN_USB_RID_FLOAT_COMP_STS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_RID_FLOAT_COMP_STS_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_rid_gnd_comp_sts` reader - u0_cdn_usb_rid_gnd_comp_sts"]
 pub type U0_CDN_USB_RID_GND_COMP_STS_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_rid_gnd_comp_sts` writer - u0_cdn_usb_rid_gnd_comp_sts"]
-pub type U0_CDN_USB_RID_GND_COMP_STS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_RID_GND_COMP_STS_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_rid_nonfloat_comp_en` reader - u0_cdn_usb_rid_nonfloat_comp_en"]
 pub type U0_CDN_USB_RID_NONFLOAT_COMP_EN_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_rx_dm` reader - u0_cdn_usb_rx_dm"]
@@ -167,96 +167,100 @@ impl W {
     #[must_use]
     pub fn u0_cdn_usb_ltm_host_req_halt(
         &mut self,
-    ) -> U0_CDN_USB_LTM_HOST_REQ_HALT_W<STG_SYSCONSAIF_SYSCFG4_SPEC, 13> {
-        U0_CDN_USB_LTM_HOST_REQ_HALT_W::new(self)
+    ) -> U0_CDN_USB_LTM_HOST_REQ_HALT_W<STG_SYSCONSAIF_SYSCFG4_SPEC> {
+        U0_CDN_USB_LTM_HOST_REQ_HALT_W::new(self, 13)
     }
     #[doc = "Bit 14 - u0_cdn_usb_mdctrl_clk_sel"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_mdctrl_clk_sel(
         &mut self,
-    ) -> U0_CDN_USB_MDCTRL_CLK_SEL_W<STG_SYSCONSAIF_SYSCFG4_SPEC, 14> {
-        U0_CDN_USB_MDCTRL_CLK_SEL_W::new(self)
+    ) -> U0_CDN_USB_MDCTRL_CLK_SEL_W<STG_SYSCONSAIF_SYSCFG4_SPEC> {
+        U0_CDN_USB_MDCTRL_CLK_SEL_W::new(self, 14)
     }
     #[doc = "Bits 16:18 - Can onlly be changed when pwrup_rst_n is low"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_mode_strap(
         &mut self,
-    ) -> U0_CDN_USB_MODE_STRAP_W<STG_SYSCONSAIF_SYSCFG4_SPEC, 16> {
-        U0_CDN_USB_MODE_STRAP_W::new(self)
+    ) -> U0_CDN_USB_MODE_STRAP_W<STG_SYSCONSAIF_SYSCFG4_SPEC> {
+        U0_CDN_USB_MODE_STRAP_W::new(self, 16)
     }
     #[doc = "Bit 19 - u0_cdn_usb_otg_suspendm"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_otg_suspendm(
         &mut self,
-    ) -> U0_CDN_USB_OTG_SUSPENDM_W<STG_SYSCONSAIF_SYSCFG4_SPEC, 19> {
-        U0_CDN_USB_OTG_SUSPENDM_W::new(self)
+    ) -> U0_CDN_USB_OTG_SUSPENDM_W<STG_SYSCONSAIF_SYSCFG4_SPEC> {
+        U0_CDN_USB_OTG_SUSPENDM_W::new(self, 19)
     }
     #[doc = "Bit 20 - u0_cdn_usb_otg_suspendm_byps"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_otg_suspendm_byps(
         &mut self,
-    ) -> U0_CDN_USB_OTG_SUSPENDM_BYPS_W<STG_SYSCONSAIF_SYSCFG4_SPEC, 20> {
-        U0_CDN_USB_OTG_SUSPENDM_BYPS_W::new(self)
+    ) -> U0_CDN_USB_OTG_SUSPENDM_BYPS_W<STG_SYSCONSAIF_SYSCFG4_SPEC> {
+        U0_CDN_USB_OTG_SUSPENDM_BYPS_W::new(self, 20)
     }
     #[doc = "Bit 22 - u0_cdn_usb_pll_en"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_cdn_usb_pll_en(&mut self) -> U0_CDN_USB_PLL_EN_W<STG_SYSCONSAIF_SYSCFG4_SPEC, 22> {
-        U0_CDN_USB_PLL_EN_W::new(self)
+    pub fn u0_cdn_usb_pll_en(&mut self) -> U0_CDN_USB_PLL_EN_W<STG_SYSCONSAIF_SYSCFG4_SPEC> {
+        U0_CDN_USB_PLL_EN_W::new(self, 22)
     }
     #[doc = "Bit 23 - u0_cdn_usb_refclk_mode"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_refclk_mode(
         &mut self,
-    ) -> U0_CDN_USB_REFCLK_MODE_W<STG_SYSCONSAIF_SYSCFG4_SPEC, 23> {
-        U0_CDN_USB_REFCLK_MODE_W::new(self)
+    ) -> U0_CDN_USB_REFCLK_MODE_W<STG_SYSCONSAIF_SYSCFG4_SPEC> {
+        U0_CDN_USB_REFCLK_MODE_W::new(self, 23)
     }
     #[doc = "Bit 24 - u0_cdn_usb_rid_a_comp_sts"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_rid_a_comp_sts(
         &mut self,
-    ) -> U0_CDN_USB_RID_A_COMP_STS_W<STG_SYSCONSAIF_SYSCFG4_SPEC, 24> {
-        U0_CDN_USB_RID_A_COMP_STS_W::new(self)
+    ) -> U0_CDN_USB_RID_A_COMP_STS_W<STG_SYSCONSAIF_SYSCFG4_SPEC> {
+        U0_CDN_USB_RID_A_COMP_STS_W::new(self, 24)
     }
     #[doc = "Bit 25 - u0_cdn_usb_rid_b_comp_sts"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_rid_b_comp_sts(
         &mut self,
-    ) -> U0_CDN_USB_RID_B_COMP_STS_W<STG_SYSCONSAIF_SYSCFG4_SPEC, 25> {
-        U0_CDN_USB_RID_B_COMP_STS_W::new(self)
+    ) -> U0_CDN_USB_RID_B_COMP_STS_W<STG_SYSCONSAIF_SYSCFG4_SPEC> {
+        U0_CDN_USB_RID_B_COMP_STS_W::new(self, 25)
     }
     #[doc = "Bit 26 - u0_cdn_usb_rid_c_comp_sts"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_rid_c_comp_sts(
         &mut self,
-    ) -> U0_CDN_USB_RID_C_COMP_STS_W<STG_SYSCONSAIF_SYSCFG4_SPEC, 26> {
-        U0_CDN_USB_RID_C_COMP_STS_W::new(self)
+    ) -> U0_CDN_USB_RID_C_COMP_STS_W<STG_SYSCONSAIF_SYSCFG4_SPEC> {
+        U0_CDN_USB_RID_C_COMP_STS_W::new(self, 26)
     }
     #[doc = "Bit 28 - u0_cdn_usb_rid_float_comp_sts"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_rid_float_comp_sts(
         &mut self,
-    ) -> U0_CDN_USB_RID_FLOAT_COMP_STS_W<STG_SYSCONSAIF_SYSCFG4_SPEC, 28> {
-        U0_CDN_USB_RID_FLOAT_COMP_STS_W::new(self)
+    ) -> U0_CDN_USB_RID_FLOAT_COMP_STS_W<STG_SYSCONSAIF_SYSCFG4_SPEC> {
+        U0_CDN_USB_RID_FLOAT_COMP_STS_W::new(self, 28)
     }
     #[doc = "Bit 29 - u0_cdn_usb_rid_gnd_comp_sts"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_rid_gnd_comp_sts(
         &mut self,
-    ) -> U0_CDN_USB_RID_GND_COMP_STS_W<STG_SYSCONSAIF_SYSCFG4_SPEC, 29> {
-        U0_CDN_USB_RID_GND_COMP_STS_W::new(self)
+    ) -> U0_CDN_USB_RID_GND_COMP_STS_W<STG_SYSCONSAIF_SYSCFG4_SPEC> {
+        U0_CDN_USB_RID_GND_COMP_STS_W::new(self, 29)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

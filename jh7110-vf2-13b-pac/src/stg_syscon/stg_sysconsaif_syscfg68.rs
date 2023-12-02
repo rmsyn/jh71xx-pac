@@ -5,47 +5,43 @@ pub type W = crate::W<STG_SYSCONSAIF_SYSCFG68_SPEC>;
 #[doc = "Field `u0_hifi4_scfg_sram_config_slp` reader - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
 pub type U0_HIFI4_SCFG_SRAM_CONFIG_SLP_R = crate::BitReader;
 #[doc = "Field `u0_hifi4_scfg_sram_config_slp` writer - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
-pub type U0_HIFI4_SCFG_SRAM_CONFIG_SLP_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_HIFI4_SCFG_SRAM_CONFIG_SLP_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_hifi4_scfg_sram_config_sram_config_sd` reader - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
 pub type U0_HIFI4_SCFG_SRAM_CONFIG_SRAM_CONFIG_SD_R = crate::BitReader;
 #[doc = "Field `u0_hifi4_scfg_sram_config_sram_config_sd` writer - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
-pub type U0_HIFI4_SCFG_SRAM_CONFIG_SRAM_CONFIG_SD_W<'a, REG, const O: u8> =
-    crate::BitWriter<'a, REG, O>;
+pub type U0_HIFI4_SCFG_SRAM_CONFIG_SRAM_CONFIG_SD_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_hifi4_scfg_sram_config_rtsel` reader - SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01."]
 pub type U0_HIFI4_SCFG_SRAM_CONFIG_RTSEL_R = crate::FieldReader;
 #[doc = "Field `u0_hifi4_scfg_sram_config_rtsel` writer - SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01."]
-pub type U0_HIFI4_SCFG_SRAM_CONFIG_RTSEL_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 2, O>;
+pub type U0_HIFI4_SCFG_SRAM_CONFIG_RTSEL_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `u0_hifi4_scfg_sram_config_ptsel` reader - SRAM/ROM configuration. PTSEL: timing setting for debug purpose, default is 2'b01."]
 pub type U0_HIFI4_SCFG_SRAM_CONFIG_PTSEL_R = crate::FieldReader;
 #[doc = "Field `u0_hifi4_scfg_sram_config_ptsel` writer - SRAM/ROM configuration. PTSEL: timing setting for debug purpose, default is 2'b01."]
-pub type U0_HIFI4_SCFG_SRAM_CONFIG_PTSEL_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 2, O>;
+pub type U0_HIFI4_SCFG_SRAM_CONFIG_PTSEL_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `u0_hifi4_scfg_sram_config_trb` reader - SRAM/ROM configuration. TRB: timing setting for debug purpose, default is 2'b01."]
 pub type U0_HIFI4_SCFG_SRAM_CONFIG_TRB_R = crate::FieldReader;
 #[doc = "Field `u0_hifi4_scfg_sram_config_trb` writer - SRAM/ROM configuration. TRB: timing setting for debug purpose, default is 2'b01."]
-pub type U0_HIFI4_SCFG_SRAM_CONFIG_TRB_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type U0_HIFI4_SCFG_SRAM_CONFIG_TRB_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `u0_hifi4_scfg_sram_config_wtsel` reader - SRAM/ROM configuration. WTSEL: timing setting for debug purpose, default is 2'b01."]
 pub type U0_HIFI4_SCFG_SRAM_CONFIG_WTSEL_R = crate::FieldReader;
 #[doc = "Field `u0_hifi4_scfg_sram_config_wtsel` writer - SRAM/ROM configuration. WTSEL: timing setting for debug purpose, default is 2'b01."]
-pub type U0_HIFI4_SCFG_SRAM_CONFIG_WTSEL_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 2, O>;
+pub type U0_HIFI4_SCFG_SRAM_CONFIG_WTSEL_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `u0_hifi4_scfg_sram_config_vs` reader - SRAM/ROM configuration. VS: timing setting for debug purpose, default is 1'b1."]
 pub type U0_HIFI4_SCFG_SRAM_CONFIG_VS_R = crate::BitReader;
 #[doc = "Field `u0_hifi4_scfg_sram_config_vs` writer - SRAM/ROM configuration. VS: timing setting for debug purpose, default is 1'b1."]
-pub type U0_HIFI4_SCFG_SRAM_CONFIG_VS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_HIFI4_SCFG_SRAM_CONFIG_VS_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_hifi4_scfg_sram_config_vg` reader - SRAM/ROM configuration. VG: timing setting for debug purpose, default is 1'b1."]
 pub type U0_HIFI4_SCFG_SRAM_CONFIG_VG_R = crate::BitReader;
 #[doc = "Field `u0_hifi4_scfg_sram_config_vg` writer - SRAM/ROM configuration. VG: timing setting for debug purpose, default is 1'b1."]
-pub type U0_HIFI4_SCFG_SRAM_CONFIG_VG_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_HIFI4_SCFG_SRAM_CONFIG_VG_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_hifi4_statvectorsel` reader - When the value is 1, it indicates that the AltResetVec is valid"]
 pub type U0_HIFI4_STATVECTORSEL_R = crate::BitReader;
 #[doc = "Field `u0_hifi4_statvectorsel` writer - When the value is 1, it indicates that the AltResetVec is valid"]
-pub type U0_HIFI4_STATVECTORSEL_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_HIFI4_STATVECTORSEL_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_hifi4_trigin_idma` reader - DMA port trigger"]
 pub type U0_HIFI4_TRIGIN_IDMA_R = crate::BitReader;
 #[doc = "Field `u0_hifi4_trigin_idma` writer - DMA port trigger"]
-pub type U0_HIFI4_TRIGIN_IDMA_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_HIFI4_TRIGIN_IDMA_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_hifi4_trigout_idma` reader - DMA port trigger"]
 pub type U0_HIFI4_TRIGOUT_IDMA_R = crate::BitReader;
 #[doc = "Field `u0_hifi4_xocdmode` reader - Debug signal"]
@@ -127,82 +123,84 @@ impl W {
     #[must_use]
     pub fn u0_hifi4_scfg_sram_config_slp(
         &mut self,
-    ) -> U0_HIFI4_SCFG_SRAM_CONFIG_SLP_W<STG_SYSCONSAIF_SYSCFG68_SPEC, 0> {
-        U0_HIFI4_SCFG_SRAM_CONFIG_SLP_W::new(self)
+    ) -> U0_HIFI4_SCFG_SRAM_CONFIG_SLP_W<STG_SYSCONSAIF_SYSCFG68_SPEC> {
+        U0_HIFI4_SCFG_SRAM_CONFIG_SLP_W::new(self, 0)
     }
     #[doc = "Bit 1 - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
     #[inline(always)]
     #[must_use]
     pub fn u0_hifi4_scfg_sram_config_sram_config_sd(
         &mut self,
-    ) -> U0_HIFI4_SCFG_SRAM_CONFIG_SRAM_CONFIG_SD_W<STG_SYSCONSAIF_SYSCFG68_SPEC, 1> {
-        U0_HIFI4_SCFG_SRAM_CONFIG_SRAM_CONFIG_SD_W::new(self)
+    ) -> U0_HIFI4_SCFG_SRAM_CONFIG_SRAM_CONFIG_SD_W<STG_SYSCONSAIF_SYSCFG68_SPEC> {
+        U0_HIFI4_SCFG_SRAM_CONFIG_SRAM_CONFIG_SD_W::new(self, 1)
     }
     #[doc = "Bits 2:3 - SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01."]
     #[inline(always)]
     #[must_use]
     pub fn u0_hifi4_scfg_sram_config_rtsel(
         &mut self,
-    ) -> U0_HIFI4_SCFG_SRAM_CONFIG_RTSEL_W<STG_SYSCONSAIF_SYSCFG68_SPEC, 2> {
-        U0_HIFI4_SCFG_SRAM_CONFIG_RTSEL_W::new(self)
+    ) -> U0_HIFI4_SCFG_SRAM_CONFIG_RTSEL_W<STG_SYSCONSAIF_SYSCFG68_SPEC> {
+        U0_HIFI4_SCFG_SRAM_CONFIG_RTSEL_W::new(self, 2)
     }
     #[doc = "Bits 4:5 - SRAM/ROM configuration. PTSEL: timing setting for debug purpose, default is 2'b01."]
     #[inline(always)]
     #[must_use]
     pub fn u0_hifi4_scfg_sram_config_ptsel(
         &mut self,
-    ) -> U0_HIFI4_SCFG_SRAM_CONFIG_PTSEL_W<STG_SYSCONSAIF_SYSCFG68_SPEC, 4> {
-        U0_HIFI4_SCFG_SRAM_CONFIG_PTSEL_W::new(self)
+    ) -> U0_HIFI4_SCFG_SRAM_CONFIG_PTSEL_W<STG_SYSCONSAIF_SYSCFG68_SPEC> {
+        U0_HIFI4_SCFG_SRAM_CONFIG_PTSEL_W::new(self, 4)
     }
     #[doc = "Bits 6:7 - SRAM/ROM configuration. TRB: timing setting for debug purpose, default is 2'b01."]
     #[inline(always)]
     #[must_use]
     pub fn u0_hifi4_scfg_sram_config_trb(
         &mut self,
-    ) -> U0_HIFI4_SCFG_SRAM_CONFIG_TRB_W<STG_SYSCONSAIF_SYSCFG68_SPEC, 6> {
-        U0_HIFI4_SCFG_SRAM_CONFIG_TRB_W::new(self)
+    ) -> U0_HIFI4_SCFG_SRAM_CONFIG_TRB_W<STG_SYSCONSAIF_SYSCFG68_SPEC> {
+        U0_HIFI4_SCFG_SRAM_CONFIG_TRB_W::new(self, 6)
     }
     #[doc = "Bits 8:9 - SRAM/ROM configuration. WTSEL: timing setting for debug purpose, default is 2'b01."]
     #[inline(always)]
     #[must_use]
     pub fn u0_hifi4_scfg_sram_config_wtsel(
         &mut self,
-    ) -> U0_HIFI4_SCFG_SRAM_CONFIG_WTSEL_W<STG_SYSCONSAIF_SYSCFG68_SPEC, 8> {
-        U0_HIFI4_SCFG_SRAM_CONFIG_WTSEL_W::new(self)
+    ) -> U0_HIFI4_SCFG_SRAM_CONFIG_WTSEL_W<STG_SYSCONSAIF_SYSCFG68_SPEC> {
+        U0_HIFI4_SCFG_SRAM_CONFIG_WTSEL_W::new(self, 8)
     }
     #[doc = "Bit 10 - SRAM/ROM configuration. VS: timing setting for debug purpose, default is 1'b1."]
     #[inline(always)]
     #[must_use]
     pub fn u0_hifi4_scfg_sram_config_vs(
         &mut self,
-    ) -> U0_HIFI4_SCFG_SRAM_CONFIG_VS_W<STG_SYSCONSAIF_SYSCFG68_SPEC, 10> {
-        U0_HIFI4_SCFG_SRAM_CONFIG_VS_W::new(self)
+    ) -> U0_HIFI4_SCFG_SRAM_CONFIG_VS_W<STG_SYSCONSAIF_SYSCFG68_SPEC> {
+        U0_HIFI4_SCFG_SRAM_CONFIG_VS_W::new(self, 10)
     }
     #[doc = "Bit 11 - SRAM/ROM configuration. VG: timing setting for debug purpose, default is 1'b1."]
     #[inline(always)]
     #[must_use]
     pub fn u0_hifi4_scfg_sram_config_vg(
         &mut self,
-    ) -> U0_HIFI4_SCFG_SRAM_CONFIG_VG_W<STG_SYSCONSAIF_SYSCFG68_SPEC, 11> {
-        U0_HIFI4_SCFG_SRAM_CONFIG_VG_W::new(self)
+    ) -> U0_HIFI4_SCFG_SRAM_CONFIG_VG_W<STG_SYSCONSAIF_SYSCFG68_SPEC> {
+        U0_HIFI4_SCFG_SRAM_CONFIG_VG_W::new(self, 11)
     }
     #[doc = "Bit 12 - When the value is 1, it indicates that the AltResetVec is valid"]
     #[inline(always)]
     #[must_use]
     pub fn u0_hifi4_statvectorsel(
         &mut self,
-    ) -> U0_HIFI4_STATVECTORSEL_W<STG_SYSCONSAIF_SYSCFG68_SPEC, 12> {
-        U0_HIFI4_STATVECTORSEL_W::new(self)
+    ) -> U0_HIFI4_STATVECTORSEL_W<STG_SYSCONSAIF_SYSCFG68_SPEC> {
+        U0_HIFI4_STATVECTORSEL_W::new(self, 12)
     }
     #[doc = "Bit 13 - DMA port trigger"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_hifi4_trigin_idma(
-        &mut self,
-    ) -> U0_HIFI4_TRIGIN_IDMA_W<STG_SYSCONSAIF_SYSCFG68_SPEC, 13> {
-        U0_HIFI4_TRIGIN_IDMA_W::new(self)
+    pub fn u0_hifi4_trigin_idma(&mut self) -> U0_HIFI4_TRIGIN_IDMA_W<STG_SYSCONSAIF_SYSCFG68_SPEC> {
+        U0_HIFI4_TRIGIN_IDMA_W::new(self, 13)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

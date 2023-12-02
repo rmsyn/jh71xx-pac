@@ -5,19 +5,19 @@ pub type W = crate::W<SSP_IMSC_SPEC>;
 #[doc = "Field `rorim` reader - Receive overrun interrupt mask - 0: Receive FIFO written to while full condition interrupt is masked, 1: Receive FIFO written to while full condition interrupt is not masked"]
 pub type RORIM_R = crate::BitReader;
 #[doc = "Field `rorim` writer - Receive overrun interrupt mask - 0: Receive FIFO written to while full condition interrupt is masked, 1: Receive FIFO written to while full condition interrupt is not masked"]
-pub type RORIM_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type RORIM_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `rtim` reader - Receive timeout interrupt mask - 0: Receive FIFO not empty and no read prior to timeout period interrupt is masked, 1: Receive FIFO not empty and no read prior to timeout period interrupt is not masked"]
 pub type RTIM_R = crate::BitReader;
 #[doc = "Field `rtim` writer - Receive timeout interrupt mask - 0: Receive FIFO not empty and no read prior to timeout period interrupt is masked, 1: Receive FIFO not empty and no read prior to timeout period interrupt is not masked"]
-pub type RTIM_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type RTIM_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `rxim` reader - Receive FIFO interrupt mask - 0: Receive FIFO half full or less condition interrupt is masked, 1: Receive FIFO half full or less condition interrupt is not masked"]
 pub type RXIM_R = crate::BitReader;
 #[doc = "Field `rxim` writer - Receive FIFO interrupt mask - 0: Receive FIFO half full or less condition interrupt is masked, 1: Receive FIFO half full or less condition interrupt is not masked"]
-pub type RXIM_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type RXIM_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `txim` reader - Transmit FIFO interrupt mask - 0: Transmit FIFO half empty or less condition interrupt is masked, 1: Transmit FIFO half empty or less condition interrupt is not masked"]
 pub type TXIM_R = crate::BitReader;
 #[doc = "Field `txim` writer - Transmit FIFO interrupt mask - 0: Transmit FIFO half empty or less condition interrupt is masked, 1: Transmit FIFO half empty or less condition interrupt is not masked"]
-pub type TXIM_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type TXIM_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - Receive overrun interrupt mask - 0: Receive FIFO written to while full condition interrupt is masked, 1: Receive FIFO written to while full condition interrupt is not masked"]
     #[inline(always)]
@@ -44,28 +44,32 @@ impl W {
     #[doc = "Bit 0 - Receive overrun interrupt mask - 0: Receive FIFO written to while full condition interrupt is masked, 1: Receive FIFO written to while full condition interrupt is not masked"]
     #[inline(always)]
     #[must_use]
-    pub fn rorim(&mut self) -> RORIM_W<SSP_IMSC_SPEC, 0> {
-        RORIM_W::new(self)
+    pub fn rorim(&mut self) -> RORIM_W<SSP_IMSC_SPEC> {
+        RORIM_W::new(self, 0)
     }
     #[doc = "Bit 1 - Receive timeout interrupt mask - 0: Receive FIFO not empty and no read prior to timeout period interrupt is masked, 1: Receive FIFO not empty and no read prior to timeout period interrupt is not masked"]
     #[inline(always)]
     #[must_use]
-    pub fn rtim(&mut self) -> RTIM_W<SSP_IMSC_SPEC, 1> {
-        RTIM_W::new(self)
+    pub fn rtim(&mut self) -> RTIM_W<SSP_IMSC_SPEC> {
+        RTIM_W::new(self, 1)
     }
     #[doc = "Bit 2 - Receive FIFO interrupt mask - 0: Receive FIFO half full or less condition interrupt is masked, 1: Receive FIFO half full or less condition interrupt is not masked"]
     #[inline(always)]
     #[must_use]
-    pub fn rxim(&mut self) -> RXIM_W<SSP_IMSC_SPEC, 2> {
-        RXIM_W::new(self)
+    pub fn rxim(&mut self) -> RXIM_W<SSP_IMSC_SPEC> {
+        RXIM_W::new(self, 2)
     }
     #[doc = "Bit 2 - Transmit FIFO interrupt mask - 0: Transmit FIFO half empty or less condition interrupt is masked, 1: Transmit FIFO half empty or less condition interrupt is not masked"]
     #[inline(always)]
     #[must_use]
-    pub fn txim(&mut self) -> TXIM_W<SSP_IMSC_SPEC, 2> {
-        TXIM_W::new(self)
+    pub fn txim(&mut self) -> TXIM_W<SSP_IMSC_SPEC> {
+        TXIM_W::new(self, 2)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u16) -> &mut Self {
         self.bits = bits;

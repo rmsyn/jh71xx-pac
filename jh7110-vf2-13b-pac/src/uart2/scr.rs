@@ -5,7 +5,7 @@ pub type W = crate::W<SCR_SPEC>;
 #[doc = "Field `scr` reader - This register is for programmers to use as a temporary storage space. It has no defined purpose in the DW_apb_uart."]
 pub type SCR_R = crate::FieldReader;
 #[doc = "Field `scr` writer - This register is for programmers to use as a temporary storage space. It has no defined purpose in the DW_apb_uart."]
-pub type SCR_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 8, O>;
+pub type SCR_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 impl R {
     #[doc = "Bits 0:7 - This register is for programmers to use as a temporary storage space. It has no defined purpose in the DW_apb_uart."]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bits 0:7 - This register is for programmers to use as a temporary storage space. It has no defined purpose in the DW_apb_uart."]
     #[inline(always)]
     #[must_use]
-    pub fn scr(&mut self) -> SCR_W<SCR_SPEC, 0> {
-        SCR_W::new(self)
+    pub fn scr(&mut self) -> SCR_W<SCR_SPEC> {
+        SCR_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

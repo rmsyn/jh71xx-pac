@@ -7,7 +7,7 @@ pub type U1_GMAC5_AXI64_MAC_SPEED_0_R = crate::FieldReader;
 #[doc = "Field `u1_gmac5_axi64_phy_intf_sel_i` reader - Active PHY Selected | When you have multiple GMAC PHY interfaces in your configuration, this field indicates the sampled value of the PHY selector during reset de-assertion. | Values: 0x0:(GMII or MII), 0x01:RGMII, 0x2:SGMII, 0x3:TBI, 0x4:RMII, 0x5:RTBI, 0x6:SMII, 0x7:REVMII"]
 pub type U1_GMAC5_AXI64_PHY_INTF_SEL_I_R = crate::FieldReader;
 #[doc = "Field `u1_gmac5_axi64_phy_intf_sel_i` writer - Active PHY Selected | When you have multiple GMAC PHY interfaces in your configuration, this field indicates the sampled value of the PHY selector during reset de-assertion. | Values: 0x0:(GMII or MII), 0x01:RGMII, 0x2:SGMII, 0x3:TBI, 0x4:RMII, 0x5:RTBI, 0x6:SMII, 0x7:REVMII"]
-pub type U1_GMAC5_AXI64_PHY_INTF_SEL_I_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 3, O>;
+pub type U1_GMAC5_AXI64_PHY_INTF_SEL_I_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 impl R {
     #[doc = "Bits 0:1 - u1_gmac5_axi64_mac_speed_0"]
     #[inline(always)]
@@ -26,10 +26,14 @@ impl W {
     #[must_use]
     pub fn u1_gmac5_axi64_phy_intf_sel_i(
         &mut self,
-    ) -> U1_GMAC5_AXI64_PHY_INTF_SEL_I_W<SYS_SYSCONSAIF_SYSCFG144_SPEC, 2> {
-        U1_GMAC5_AXI64_PHY_INTF_SEL_I_W::new(self)
+    ) -> U1_GMAC5_AXI64_PHY_INTF_SEL_I_W<SYS_SYSCONSAIF_SYSCFG144_SPEC> {
+        U1_GMAC5_AXI64_PHY_INTF_SEL_I_W::new(self, 2)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

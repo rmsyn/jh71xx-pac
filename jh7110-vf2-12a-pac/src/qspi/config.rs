@@ -5,39 +5,39 @@ pub type W = crate::W<CONFIG_SPEC>;
 #[doc = "Field `enable` reader - Enable the QSPI controller"]
 pub type ENABLE_R = crate::BitReader;
 #[doc = "Field `enable` writer - Enable the QSPI controller"]
-pub type ENABLE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type ENABLE_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `enb_dir_acc_ctrl` reader - Enable direct access controller"]
 pub type ENB_DIR_ACC_CTRL_R = crate::BitReader;
 #[doc = "Field `enb_dir_acc_ctrl` writer - Enable direct access controller"]
-pub type ENB_DIR_ACC_CTRL_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type ENB_DIR_ACC_CTRL_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `decode` reader - Enable the QSPI decoder"]
 pub type DECODE_R = crate::BitReader;
 #[doc = "Field `decode` writer - Enable the QSPI decoder"]
-pub type DECODE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type DECODE_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `chipselect` reader - Chip select - CS0: 0b1110, CS1: 0b1101, CS2: 0b1011, CS3: 0b0111"]
 pub type CHIPSELECT_R = crate::FieldReader;
 #[doc = "Field `chipselect` writer - Chip select - CS0: 0b1110, CS1: 0b1101, CS2: 0b1011, CS3: 0b0111"]
-pub type CHIPSELECT_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 4, O>;
+pub type CHIPSELECT_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
 #[doc = "Field `dma` reader - Enable Direct Memory Access"]
 pub type DMA_R = crate::BitReader;
 #[doc = "Field `dma` writer - Enable Direct Memory Access"]
-pub type DMA_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type DMA_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `baud` reader - Set the QSPI BAUD rate divisor"]
 pub type BAUD_R = crate::FieldReader;
 #[doc = "Field `baud` writer - Set the QSPI BAUD rate divisor"]
-pub type BAUD_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 4, O>;
+pub type BAUD_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
 #[doc = "Field `dtr_proto` reader - Enable DTR Protocol"]
 pub type DTR_PROTO_R = crate::BitReader;
 #[doc = "Field `dtr_proto` writer - Enable DTR Protocol"]
-pub type DTR_PROTO_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type DTR_PROTO_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `dual_opcode` reader - Enable Dual Opcode Mode"]
 pub type DUAL_OPCODE_R = crate::BitReader;
 #[doc = "Field `dual_opcode` writer - Enable Dual Opcode Mode"]
-pub type DUAL_OPCODE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type DUAL_OPCODE_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `idle` reader - Set Idle"]
 pub type IDLE_R = crate::BitReader;
 #[doc = "Field `idle` writer - Set Idle"]
-pub type IDLE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type IDLE_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - Enable the QSPI controller"]
     #[inline(always)]
@@ -89,58 +89,62 @@ impl W {
     #[doc = "Bit 0 - Enable the QSPI controller"]
     #[inline(always)]
     #[must_use]
-    pub fn enable(&mut self) -> ENABLE_W<CONFIG_SPEC, 0> {
-        ENABLE_W::new(self)
+    pub fn enable(&mut self) -> ENABLE_W<CONFIG_SPEC> {
+        ENABLE_W::new(self, 0)
     }
     #[doc = "Bit 7 - Enable direct access controller"]
     #[inline(always)]
     #[must_use]
-    pub fn enb_dir_acc_ctrl(&mut self) -> ENB_DIR_ACC_CTRL_W<CONFIG_SPEC, 7> {
-        ENB_DIR_ACC_CTRL_W::new(self)
+    pub fn enb_dir_acc_ctrl(&mut self) -> ENB_DIR_ACC_CTRL_W<CONFIG_SPEC> {
+        ENB_DIR_ACC_CTRL_W::new(self, 7)
     }
     #[doc = "Bit 9 - Enable the QSPI decoder"]
     #[inline(always)]
     #[must_use]
-    pub fn decode(&mut self) -> DECODE_W<CONFIG_SPEC, 9> {
-        DECODE_W::new(self)
+    pub fn decode(&mut self) -> DECODE_W<CONFIG_SPEC> {
+        DECODE_W::new(self, 9)
     }
     #[doc = "Bits 10:13 - Chip select - CS0: 0b1110, CS1: 0b1101, CS2: 0b1011, CS3: 0b0111"]
     #[inline(always)]
     #[must_use]
-    pub fn chipselect(&mut self) -> CHIPSELECT_W<CONFIG_SPEC, 10> {
-        CHIPSELECT_W::new(self)
+    pub fn chipselect(&mut self) -> CHIPSELECT_W<CONFIG_SPEC> {
+        CHIPSELECT_W::new(self, 10)
     }
     #[doc = "Bit 15 - Enable Direct Memory Access"]
     #[inline(always)]
     #[must_use]
-    pub fn dma(&mut self) -> DMA_W<CONFIG_SPEC, 15> {
-        DMA_W::new(self)
+    pub fn dma(&mut self) -> DMA_W<CONFIG_SPEC> {
+        DMA_W::new(self, 15)
     }
     #[doc = "Bits 19:22 - Set the QSPI BAUD rate divisor"]
     #[inline(always)]
     #[must_use]
-    pub fn baud(&mut self) -> BAUD_W<CONFIG_SPEC, 19> {
-        BAUD_W::new(self)
+    pub fn baud(&mut self) -> BAUD_W<CONFIG_SPEC> {
+        BAUD_W::new(self, 19)
     }
     #[doc = "Bit 24 - Enable DTR Protocol"]
     #[inline(always)]
     #[must_use]
-    pub fn dtr_proto(&mut self) -> DTR_PROTO_W<CONFIG_SPEC, 24> {
-        DTR_PROTO_W::new(self)
+    pub fn dtr_proto(&mut self) -> DTR_PROTO_W<CONFIG_SPEC> {
+        DTR_PROTO_W::new(self, 24)
     }
     #[doc = "Bit 30 - Enable Dual Opcode Mode"]
     #[inline(always)]
     #[must_use]
-    pub fn dual_opcode(&mut self) -> DUAL_OPCODE_W<CONFIG_SPEC, 30> {
-        DUAL_OPCODE_W::new(self)
+    pub fn dual_opcode(&mut self) -> DUAL_OPCODE_W<CONFIG_SPEC> {
+        DUAL_OPCODE_W::new(self, 30)
     }
     #[doc = "Bit 31 - Set Idle"]
     #[inline(always)]
     #[must_use]
-    pub fn idle(&mut self) -> IDLE_W<CONFIG_SPEC, 31> {
-        IDLE_W::new(self)
+    pub fn idle(&mut self) -> IDLE_W<CONFIG_SPEC> {
+        IDLE_W::new(self, 31)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

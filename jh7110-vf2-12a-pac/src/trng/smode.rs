@@ -5,15 +5,15 @@ pub type W = crate::W<SMODE_SPEC>;
 #[doc = "Field `nonce_mode` reader - Nonce operation mode"]
 pub type NONCE_MODE_R = crate::BitReader;
 #[doc = "Field `nonce_mode` writer - Nonce operation mode"]
-pub type NONCE_MODE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type NONCE_MODE_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `mission_mode` reader - Mission operation mode"]
 pub type MISSION_MODE_R = crate::BitReader;
 #[doc = "Field `mission_mode` writer - Mission operation mode"]
-pub type MISSION_MODE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type MISSION_MODE_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `max_rejects` reader - TRNG Maximum Rejects"]
 pub type MAX_REJECTS_R = crate::FieldReader<u16>;
 #[doc = "Field `max_rejects` writer - TRNG Maximum Rejects"]
-pub type MAX_REJECTS_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 16, O, u16>;
+pub type MAX_REJECTS_W<'a, REG> = crate::FieldWriter<'a, REG, 16, u16>;
 impl R {
     #[doc = "Bit 2 - Nonce operation mode"]
     #[inline(always)]
@@ -35,22 +35,26 @@ impl W {
     #[doc = "Bit 2 - Nonce operation mode"]
     #[inline(always)]
     #[must_use]
-    pub fn nonce_mode(&mut self) -> NONCE_MODE_W<SMODE_SPEC, 2> {
-        NONCE_MODE_W::new(self)
+    pub fn nonce_mode(&mut self) -> NONCE_MODE_W<SMODE_SPEC> {
+        NONCE_MODE_W::new(self, 2)
     }
     #[doc = "Bit 8 - Mission operation mode"]
     #[inline(always)]
     #[must_use]
-    pub fn mission_mode(&mut self) -> MISSION_MODE_W<SMODE_SPEC, 8> {
-        MISSION_MODE_W::new(self)
+    pub fn mission_mode(&mut self) -> MISSION_MODE_W<SMODE_SPEC> {
+        MISSION_MODE_W::new(self, 8)
     }
     #[doc = "Bits 16:31 - TRNG Maximum Rejects"]
     #[inline(always)]
     #[must_use]
-    pub fn max_rejects(&mut self) -> MAX_REJECTS_W<SMODE_SPEC, 16> {
-        MAX_REJECTS_W::new(self)
+    pub fn max_rejects(&mut self) -> MAX_REJECTS_W<SMODE_SPEC> {
+        MAX_REJECTS_W::new(self, 16)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

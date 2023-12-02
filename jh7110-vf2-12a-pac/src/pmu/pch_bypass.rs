@@ -5,7 +5,7 @@ pub type W = crate::W<PCH_BYPASS_SPEC>;
 #[doc = "Field `pch_bypass` reader - Bypass P-channel. 0: enable p-channel, 1: bypass p-channel"]
 pub type PCH_BYPASS_R = crate::BitReader;
 #[doc = "Field `pch_bypass` writer - Bypass P-channel. 0: enable p-channel, 1: bypass p-channel"]
-pub type PCH_BYPASS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type PCH_BYPASS_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - Bypass P-channel. 0: enable p-channel, 1: bypass p-channel"]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bit 0 - Bypass P-channel. 0: enable p-channel, 1: bypass p-channel"]
     #[inline(always)]
     #[must_use]
-    pub fn pch_bypass(&mut self) -> PCH_BYPASS_W<PCH_BYPASS_SPEC, 0> {
-        PCH_BYPASS_W::new(self)
+    pub fn pch_bypass(&mut self) -> PCH_BYPASS_W<PCH_BYPASS_SPEC> {
+        PCH_BYPASS_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

@@ -5,19 +5,19 @@ pub type W = crate::W<GPO_DOEN3_SPEC>;
 #[doc = "Field `gpo12_doen` reader - The selected OEN signal for GPIO12. The register value indicates the selected GPIO (Output Enable) OEN index from GPIO OEN list 0-49. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
 pub type GPO12_DOEN_R = crate::FieldReader;
 #[doc = "Field `gpo12_doen` writer - The selected OEN signal for GPIO12. The register value indicates the selected GPIO (Output Enable) OEN index from GPIO OEN list 0-49. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
-pub type GPO12_DOEN_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 6, O>;
+pub type GPO12_DOEN_W<'a, REG> = crate::FieldWriter<'a, REG, 6>;
 #[doc = "Field `gpo13_doen` reader - The selected OEN signal for GPIO13. The register value indicates the selected GPIO (Output Enable) OEN index from GPIO OEN list 0-49. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
 pub type GPO13_DOEN_R = crate::FieldReader;
 #[doc = "Field `gpo13_doen` writer - The selected OEN signal for GPIO13. The register value indicates the selected GPIO (Output Enable) OEN index from GPIO OEN list 0-49. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
-pub type GPO13_DOEN_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 6, O>;
+pub type GPO13_DOEN_W<'a, REG> = crate::FieldWriter<'a, REG, 6>;
 #[doc = "Field `gpo14_doen` reader - The selected OEN signal for GPIO14. The register value indicates the selected GPIO (Output Enable) OEN index from GPIO OEN list 0-49. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
 pub type GPO14_DOEN_R = crate::FieldReader;
 #[doc = "Field `gpo14_doen` writer - The selected OEN signal for GPIO14. The register value indicates the selected GPIO (Output Enable) OEN index from GPIO OEN list 0-49. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
-pub type GPO14_DOEN_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 6, O>;
+pub type GPO14_DOEN_W<'a, REG> = crate::FieldWriter<'a, REG, 6>;
 #[doc = "Field `gpo15_doen` reader - The selected OEN signal for GPIO15. The register value indicates the selected GPIO (Output Enable) OEN index from GPIO OEN list 0-49. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
 pub type GPO15_DOEN_R = crate::FieldReader;
 #[doc = "Field `gpo15_doen` writer - The selected OEN signal for GPIO15. The register value indicates the selected GPIO (Output Enable) OEN index from GPIO OEN list 0-49. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
-pub type GPO15_DOEN_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 6, O>;
+pub type GPO15_DOEN_W<'a, REG> = crate::FieldWriter<'a, REG, 6>;
 impl R {
     #[doc = "Bits 0:5 - The selected OEN signal for GPIO12. The register value indicates the selected GPIO (Output Enable) OEN index from GPIO OEN list 0-49. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
     #[inline(always)]
@@ -44,28 +44,32 @@ impl W {
     #[doc = "Bits 0:5 - The selected OEN signal for GPIO12. The register value indicates the selected GPIO (Output Enable) OEN index from GPIO OEN list 0-49. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
     #[inline(always)]
     #[must_use]
-    pub fn gpo12_doen(&mut self) -> GPO12_DOEN_W<GPO_DOEN3_SPEC, 0> {
-        GPO12_DOEN_W::new(self)
+    pub fn gpo12_doen(&mut self) -> GPO12_DOEN_W<GPO_DOEN3_SPEC> {
+        GPO12_DOEN_W::new(self, 0)
     }
     #[doc = "Bits 8:13 - The selected OEN signal for GPIO13. The register value indicates the selected GPIO (Output Enable) OEN index from GPIO OEN list 0-49. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
     #[inline(always)]
     #[must_use]
-    pub fn gpo13_doen(&mut self) -> GPO13_DOEN_W<GPO_DOEN3_SPEC, 8> {
-        GPO13_DOEN_W::new(self)
+    pub fn gpo13_doen(&mut self) -> GPO13_DOEN_W<GPO_DOEN3_SPEC> {
+        GPO13_DOEN_W::new(self, 8)
     }
     #[doc = "Bits 16:21 - The selected OEN signal for GPIO14. The register value indicates the selected GPIO (Output Enable) OEN index from GPIO OEN list 0-49. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
     #[inline(always)]
     #[must_use]
-    pub fn gpo14_doen(&mut self) -> GPO14_DOEN_W<GPO_DOEN3_SPEC, 16> {
-        GPO14_DOEN_W::new(self)
+    pub fn gpo14_doen(&mut self) -> GPO14_DOEN_W<GPO_DOEN3_SPEC> {
+        GPO14_DOEN_W::new(self, 16)
     }
     #[doc = "Bits 24:29 - The selected OEN signal for GPIO15. The register value indicates the selected GPIO (Output Enable) OEN index from GPIO OEN list 0-49. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
     #[inline(always)]
     #[must_use]
-    pub fn gpo15_doen(&mut self) -> GPO15_DOEN_W<GPO_DOEN3_SPEC, 24> {
-        GPO15_DOEN_W::new(self)
+    pub fn gpo15_doen(&mut self) -> GPO15_DOEN_W<GPO_DOEN3_SPEC> {
+        GPO15_DOEN_W::new(self, 24)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

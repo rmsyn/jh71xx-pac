@@ -5,35 +5,35 @@ pub type W = crate::W<IRQ_STATUS_SPEC>;
 #[doc = "Field `mode_err` reader - Mode error interrupt"]
 pub type MODE_ERR_R = crate::BitReader;
 #[doc = "Field `mode_err` writer - Mode error interrupt"]
-pub type MODE_ERR_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type MODE_ERR_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `underflow` reader - Buffer underflow interrupt"]
 pub type UNDERFLOW_R = crate::BitReader;
 #[doc = "Field `underflow` writer - Buffer underflow interrupt"]
-pub type UNDERFLOW_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type UNDERFLOW_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `ind_comp` reader - Indirect computation interrupt"]
 pub type IND_COMP_R = crate::BitReader;
 #[doc = "Field `ind_comp` writer - Indirect computation interrupt"]
-pub type IND_COMP_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type IND_COMP_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `ind_rd_reject` reader - Indirect read rejection interrupt"]
 pub type IND_RD_REJECT_R = crate::BitReader;
 #[doc = "Field `ind_rd_reject` writer - Indirect read rejection interrupt"]
-pub type IND_RD_REJECT_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type IND_RD_REJECT_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `wr_protected_err` reader - Write protected error interrupt"]
 pub type WR_PROTECTED_ERR_R = crate::BitReader;
 #[doc = "Field `wr_protected_err` writer - Write protected error interrupt"]
-pub type WR_PROTECTED_ERR_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type WR_PROTECTED_ERR_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `illegal_ahb_err` reader - Illegal AHB clock error interrupt"]
 pub type ILLEGAL_AHB_ERR_R = crate::BitReader;
 #[doc = "Field `illegal_ahb_err` writer - Illegal AHB clock error interrupt"]
-pub type ILLEGAL_AHB_ERR_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type ILLEGAL_AHB_ERR_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `watermark` reader - Watermark interrupt"]
 pub type WATERMARK_R = crate::BitReader;
 #[doc = "Field `watermark` writer - Watermark interrupt"]
-pub type WATERMARK_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type WATERMARK_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `ind_sram_full` reader - Indirect SRAM full interrupt"]
 pub type IND_SRAM_FULL_R = crate::BitReader;
 #[doc = "Field `ind_sram_full` writer - Indirect SRAM full interrupt"]
-pub type IND_SRAM_FULL_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type IND_SRAM_FULL_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - Mode error interrupt"]
     #[inline(always)]
@@ -80,52 +80,56 @@ impl W {
     #[doc = "Bit 0 - Mode error interrupt"]
     #[inline(always)]
     #[must_use]
-    pub fn mode_err(&mut self) -> MODE_ERR_W<IRQ_STATUS_SPEC, 0> {
-        MODE_ERR_W::new(self)
+    pub fn mode_err(&mut self) -> MODE_ERR_W<IRQ_STATUS_SPEC> {
+        MODE_ERR_W::new(self, 0)
     }
     #[doc = "Bit 1 - Buffer underflow interrupt"]
     #[inline(always)]
     #[must_use]
-    pub fn underflow(&mut self) -> UNDERFLOW_W<IRQ_STATUS_SPEC, 1> {
-        UNDERFLOW_W::new(self)
+    pub fn underflow(&mut self) -> UNDERFLOW_W<IRQ_STATUS_SPEC> {
+        UNDERFLOW_W::new(self, 1)
     }
     #[doc = "Bit 2 - Indirect computation interrupt"]
     #[inline(always)]
     #[must_use]
-    pub fn ind_comp(&mut self) -> IND_COMP_W<IRQ_STATUS_SPEC, 2> {
-        IND_COMP_W::new(self)
+    pub fn ind_comp(&mut self) -> IND_COMP_W<IRQ_STATUS_SPEC> {
+        IND_COMP_W::new(self, 2)
     }
     #[doc = "Bit 3 - Indirect read rejection interrupt"]
     #[inline(always)]
     #[must_use]
-    pub fn ind_rd_reject(&mut self) -> IND_RD_REJECT_W<IRQ_STATUS_SPEC, 3> {
-        IND_RD_REJECT_W::new(self)
+    pub fn ind_rd_reject(&mut self) -> IND_RD_REJECT_W<IRQ_STATUS_SPEC> {
+        IND_RD_REJECT_W::new(self, 3)
     }
     #[doc = "Bit 4 - Write protected error interrupt"]
     #[inline(always)]
     #[must_use]
-    pub fn wr_protected_err(&mut self) -> WR_PROTECTED_ERR_W<IRQ_STATUS_SPEC, 4> {
-        WR_PROTECTED_ERR_W::new(self)
+    pub fn wr_protected_err(&mut self) -> WR_PROTECTED_ERR_W<IRQ_STATUS_SPEC> {
+        WR_PROTECTED_ERR_W::new(self, 4)
     }
     #[doc = "Bit 5 - Illegal AHB clock error interrupt"]
     #[inline(always)]
     #[must_use]
-    pub fn illegal_ahb_err(&mut self) -> ILLEGAL_AHB_ERR_W<IRQ_STATUS_SPEC, 5> {
-        ILLEGAL_AHB_ERR_W::new(self)
+    pub fn illegal_ahb_err(&mut self) -> ILLEGAL_AHB_ERR_W<IRQ_STATUS_SPEC> {
+        ILLEGAL_AHB_ERR_W::new(self, 5)
     }
     #[doc = "Bit 6 - Watermark interrupt"]
     #[inline(always)]
     #[must_use]
-    pub fn watermark(&mut self) -> WATERMARK_W<IRQ_STATUS_SPEC, 6> {
-        WATERMARK_W::new(self)
+    pub fn watermark(&mut self) -> WATERMARK_W<IRQ_STATUS_SPEC> {
+        WATERMARK_W::new(self, 6)
     }
     #[doc = "Bit 12 - Indirect SRAM full interrupt"]
     #[inline(always)]
     #[must_use]
-    pub fn ind_sram_full(&mut self) -> IND_SRAM_FULL_W<IRQ_STATUS_SPEC, 12> {
-        IND_SRAM_FULL_W::new(self)
+    pub fn ind_sram_full(&mut self) -> IND_SRAM_FULL_W<IRQ_STATUS_SPEC> {
+        IND_SRAM_FULL_W::new(self, 12)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

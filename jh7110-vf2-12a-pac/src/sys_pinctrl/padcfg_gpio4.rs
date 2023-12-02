@@ -5,31 +5,31 @@ pub type W = crate::W<PADCFG_GPIO4_SPEC>;
 #[doc = "Field `ie` reader - Input Enable (IE) Controller - 1: Enable the receiver, 0: Disable the receiver"]
 pub type IE_R = crate::BitReader;
 #[doc = "Field `ie` writer - Input Enable (IE) Controller - 1: Enable the receiver, 0: Disable the receiver"]
-pub type IE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type IE_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `ds` reader - Output Drive Strength (DS) - 00: The rated drive strength is 2 mA, 01: The rated drive strength is 4 mA, 10: The rated drive strength is 8 mA, 11: The rated drive strength is 12 mA"]
 pub type DS_R = crate::FieldReader;
 #[doc = "Field `ds` writer - Output Drive Strength (DS) - 00: The rated drive strength is 2 mA, 01: The rated drive strength is 4 mA, 10: The rated drive strength is 8 mA, 11: The rated drive strength is 12 mA"]
-pub type DS_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type DS_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `pu` reader - Pull-Up (PU) settings - 1: Yes, 0: No"]
 pub type PU_R = crate::BitReader;
 #[doc = "Field `pu` writer - Pull-Up (PU) settings - 1: Yes, 0: No"]
-pub type PU_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type PU_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `pd` reader - Pull-Down (PD) settings - 1: Yes, 0: No"]
 pub type PD_R = crate::BitReader;
 #[doc = "Field `pd` writer - Pull-Down (PD) settings - 1: Yes, 0: No"]
-pub type PD_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type PD_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `slew` reader - Slew Rate Control - 0: Slow (Half frequency), 1: Fast"]
 pub type SLEW_R = crate::BitReader;
 #[doc = "Field `slew` writer - Slew Rate Control - 0: Slow (Half frequency), 1: Fast"]
-pub type SLEW_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type SLEW_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `smt` reader - Active high Schmitt (SMT) trigger selector - 0: No hysteresis, 1: Schmitt trigger ebabled"]
 pub type SMT_R = crate::BitReader;
 #[doc = "Field `smt` writer - Active high Schmitt (SMT) trigger selector - 0: No hysteresis, 1: Schmitt trigger ebabled"]
-pub type SMT_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type SMT_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `pos` reader - Power-on-Start (POS) enabler - 1: Enable active pull down for loss of core power, 0: Active pull-down capability disabled"]
 pub type POS_R = crate::BitReader;
 #[doc = "Field `pos` writer - Power-on-Start (POS) enabler - 1: Enable active pull down for loss of core power, 0: Active pull-down capability disabled"]
-pub type POS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type POS_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - Input Enable (IE) Controller - 1: Enable the receiver, 0: Disable the receiver"]
     #[inline(always)]
@@ -71,46 +71,50 @@ impl W {
     #[doc = "Bit 0 - Input Enable (IE) Controller - 1: Enable the receiver, 0: Disable the receiver"]
     #[inline(always)]
     #[must_use]
-    pub fn ie(&mut self) -> IE_W<PADCFG_GPIO4_SPEC, 0> {
-        IE_W::new(self)
+    pub fn ie(&mut self) -> IE_W<PADCFG_GPIO4_SPEC> {
+        IE_W::new(self, 0)
     }
     #[doc = "Bits 1:2 - Output Drive Strength (DS) - 00: The rated drive strength is 2 mA, 01: The rated drive strength is 4 mA, 10: The rated drive strength is 8 mA, 11: The rated drive strength is 12 mA"]
     #[inline(always)]
     #[must_use]
-    pub fn ds(&mut self) -> DS_W<PADCFG_GPIO4_SPEC, 1> {
-        DS_W::new(self)
+    pub fn ds(&mut self) -> DS_W<PADCFG_GPIO4_SPEC> {
+        DS_W::new(self, 1)
     }
     #[doc = "Bit 3 - Pull-Up (PU) settings - 1: Yes, 0: No"]
     #[inline(always)]
     #[must_use]
-    pub fn pu(&mut self) -> PU_W<PADCFG_GPIO4_SPEC, 3> {
-        PU_W::new(self)
+    pub fn pu(&mut self) -> PU_W<PADCFG_GPIO4_SPEC> {
+        PU_W::new(self, 3)
     }
     #[doc = "Bit 4 - Pull-Down (PD) settings - 1: Yes, 0: No"]
     #[inline(always)]
     #[must_use]
-    pub fn pd(&mut self) -> PD_W<PADCFG_GPIO4_SPEC, 4> {
-        PD_W::new(self)
+    pub fn pd(&mut self) -> PD_W<PADCFG_GPIO4_SPEC> {
+        PD_W::new(self, 4)
     }
     #[doc = "Bit 5 - Slew Rate Control - 0: Slow (Half frequency), 1: Fast"]
     #[inline(always)]
     #[must_use]
-    pub fn slew(&mut self) -> SLEW_W<PADCFG_GPIO4_SPEC, 5> {
-        SLEW_W::new(self)
+    pub fn slew(&mut self) -> SLEW_W<PADCFG_GPIO4_SPEC> {
+        SLEW_W::new(self, 5)
     }
     #[doc = "Bit 6 - Active high Schmitt (SMT) trigger selector - 0: No hysteresis, 1: Schmitt trigger ebabled"]
     #[inline(always)]
     #[must_use]
-    pub fn smt(&mut self) -> SMT_W<PADCFG_GPIO4_SPEC, 6> {
-        SMT_W::new(self)
+    pub fn smt(&mut self) -> SMT_W<PADCFG_GPIO4_SPEC> {
+        SMT_W::new(self, 6)
     }
     #[doc = "Bit 7 - Power-on-Start (POS) enabler - 1: Enable active pull down for loss of core power, 0: Active pull-down capability disabled"]
     #[inline(always)]
     #[must_use]
-    pub fn pos(&mut self) -> POS_W<PADCFG_GPIO4_SPEC, 7> {
-        POS_W::new(self)
+    pub fn pos(&mut self) -> POS_W<PADCFG_GPIO4_SPEC> {
+        POS_W::new(self, 7)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

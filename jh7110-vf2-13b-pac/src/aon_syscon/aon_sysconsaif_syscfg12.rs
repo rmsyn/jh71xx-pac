@@ -7,42 +7,41 @@ pub type U0_BOOT_CTRL_BOOT_VECTOR_35_32_R = crate::FieldReader;
 #[doc = "Field `gmac5_axi64_scfg_ram_cfg_slp` reader - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
 pub type GMAC5_AXI64_SCFG_RAM_CFG_SLP_R = crate::BitReader;
 #[doc = "Field `gmac5_axi64_scfg_ram_cfg_slp` writer - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
-pub type GMAC5_AXI64_SCFG_RAM_CFG_SLP_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type GMAC5_AXI64_SCFG_RAM_CFG_SLP_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `gmac5_axi64_scfg_ram_cfg_sram_config_sd` reader - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
 pub type GMAC5_AXI64_SCFG_RAM_CFG_SRAM_CONFIG_SD_R = crate::BitReader;
 #[doc = "Field `gmac5_axi64_scfg_ram_cfg_sram_config_sd` writer - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
-pub type GMAC5_AXI64_SCFG_RAM_CFG_SRAM_CONFIG_SD_W<'a, REG, const O: u8> =
-    crate::BitWriter<'a, REG, O>;
+pub type GMAC5_AXI64_SCFG_RAM_CFG_SRAM_CONFIG_SD_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `gmac5_axi64_scfg_ram_cfg_rtsel` reader - SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01."]
 pub type GMAC5_AXI64_SCFG_RAM_CFG_RTSEL_R = crate::FieldReader;
 #[doc = "Field `gmac5_axi64_scfg_ram_cfg_rtsel` writer - SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01."]
-pub type GMAC5_AXI64_SCFG_RAM_CFG_RTSEL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type GMAC5_AXI64_SCFG_RAM_CFG_RTSEL_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `gmac5_axi64_scfg_ram_cfg_ptsel` reader - SRAM/ROM configuration. PTSEL: timing setting for debug purpose, default is 2'b01."]
 pub type GMAC5_AXI64_SCFG_RAM_CFG_PTSEL_R = crate::FieldReader;
 #[doc = "Field `gmac5_axi64_scfg_ram_cfg_ptsel` writer - SRAM/ROM configuration. PTSEL: timing setting for debug purpose, default is 2'b01."]
-pub type GMAC5_AXI64_SCFG_RAM_CFG_PTSEL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type GMAC5_AXI64_SCFG_RAM_CFG_PTSEL_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `gmac5_axi64_scfg_ram_cfg_trb` reader - SRAM/ROM configuration. TRB: timing setting for debug purpose, default is 2'b01."]
 pub type GMAC5_AXI64_SCFG_RAM_CFG_TRB_R = crate::FieldReader;
 #[doc = "Field `gmac5_axi64_scfg_ram_cfg_trb` writer - SRAM/ROM configuration. TRB: timing setting for debug purpose, default is 2'b01."]
-pub type GMAC5_AXI64_SCFG_RAM_CFG_TRB_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type GMAC5_AXI64_SCFG_RAM_CFG_TRB_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `gmac5_axi64_scfg_ram_cfg_wtsel` reader - SRAM/ROM configuration. WTSEL: timing setting for debug purpose, default is 2'b01."]
 pub type GMAC5_AXI64_SCFG_RAM_CFG_WTSEL_R = crate::FieldReader;
 #[doc = "Field `gmac5_axi64_scfg_ram_cfg_wtsel` writer - SRAM/ROM configuration. WTSEL: timing setting for debug purpose, default is 2'b01."]
-pub type GMAC5_AXI64_SCFG_RAM_CFG_WTSEL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type GMAC5_AXI64_SCFG_RAM_CFG_WTSEL_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `gmac5_axi64_scfg_ram_cfg_vs` reader - SRAM/ROM configuration. VS: timing setting for debug purpose, default is 1'b1."]
 pub type GMAC5_AXI64_SCFG_RAM_CFG_VS_R = crate::BitReader;
 #[doc = "Field `gmac5_axi64_scfg_ram_cfg_vs` writer - SRAM/ROM configuration. VS: timing setting for debug purpose, default is 1'b1."]
-pub type GMAC5_AXI64_SCFG_RAM_CFG_VS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type GMAC5_AXI64_SCFG_RAM_CFG_VS_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `gmac5_axi64_scfg_ram_cfg_vg` reader - SRAM/ROM configuration. VG: timing setting for debug purpose, default is 1'b1."]
 pub type GMAC5_AXI64_SCFG_RAM_CFG_VG_R = crate::BitReader;
 #[doc = "Field `gmac5_axi64_scfg_ram_cfg_vg` writer - SRAM/ROM configuration. VG: timing setting for debug purpose, default is 1'b1."]
-pub type GMAC5_AXI64_SCFG_RAM_CFG_VG_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type GMAC5_AXI64_SCFG_RAM_CFG_VG_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `gmac5_axi64_mac_speed_o` reader - gmac5_axi64_mac_speed_o"]
 pub type GMAC5_AXI64_MAC_SPEED_O_R = crate::FieldReader;
 #[doc = "Field `gmac5_axi64_phy_intf_sel_i` reader - Active PHY Selected. When you have multiple GMAC PHY interfaces in your configuration, this field indicates the sampled value of the PHY selector during reset de-assertion. Values: 0x0 - GMII or MII, 0x1 - RGMII, 0x2 - SGMII, 0x3 - TBI, 0x4 - RMII, 0x5 - RTBI, 0x6 - SMII, 0x7 - REVMII"]
 pub type GMAC5_AXI64_PHY_INTF_SEL_I_R = crate::FieldReader;
 #[doc = "Field `gmac5_axi64_phy_intf_sel_i` writer - Active PHY Selected. When you have multiple GMAC PHY interfaces in your configuration, this field indicates the sampled value of the PHY selector during reset de-assertion. Values: 0x0 - GMII or MII, 0x1 - RGMII, 0x2 - SGMII, 0x3 - TBI, 0x4 - RMII, 0x5 - RTBI, 0x6 - SMII, 0x7 - REVMII"]
-pub type GMAC5_AXI64_PHY_INTF_SEL_I_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 3, O>;
+pub type GMAC5_AXI64_PHY_INTF_SEL_I_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 impl R {
     #[doc = "Bits 0:3 - u0_boot_ctrl_boot_vector_35_32"]
     #[inline(always)]
@@ -108,74 +107,78 @@ impl W {
     #[must_use]
     pub fn gmac5_axi64_scfg_ram_cfg_slp(
         &mut self,
-    ) -> GMAC5_AXI64_SCFG_RAM_CFG_SLP_W<AON_SYSCONSAIF_SYSCFG12_SPEC, 4> {
-        GMAC5_AXI64_SCFG_RAM_CFG_SLP_W::new(self)
+    ) -> GMAC5_AXI64_SCFG_RAM_CFG_SLP_W<AON_SYSCONSAIF_SYSCFG12_SPEC> {
+        GMAC5_AXI64_SCFG_RAM_CFG_SLP_W::new(self, 4)
     }
     #[doc = "Bit 5 - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
     #[inline(always)]
     #[must_use]
     pub fn gmac5_axi64_scfg_ram_cfg_sram_config_sd(
         &mut self,
-    ) -> GMAC5_AXI64_SCFG_RAM_CFG_SRAM_CONFIG_SD_W<AON_SYSCONSAIF_SYSCFG12_SPEC, 5> {
-        GMAC5_AXI64_SCFG_RAM_CFG_SRAM_CONFIG_SD_W::new(self)
+    ) -> GMAC5_AXI64_SCFG_RAM_CFG_SRAM_CONFIG_SD_W<AON_SYSCONSAIF_SYSCFG12_SPEC> {
+        GMAC5_AXI64_SCFG_RAM_CFG_SRAM_CONFIG_SD_W::new(self, 5)
     }
     #[doc = "Bits 6:7 - SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01."]
     #[inline(always)]
     #[must_use]
     pub fn gmac5_axi64_scfg_ram_cfg_rtsel(
         &mut self,
-    ) -> GMAC5_AXI64_SCFG_RAM_CFG_RTSEL_W<AON_SYSCONSAIF_SYSCFG12_SPEC, 6> {
-        GMAC5_AXI64_SCFG_RAM_CFG_RTSEL_W::new(self)
+    ) -> GMAC5_AXI64_SCFG_RAM_CFG_RTSEL_W<AON_SYSCONSAIF_SYSCFG12_SPEC> {
+        GMAC5_AXI64_SCFG_RAM_CFG_RTSEL_W::new(self, 6)
     }
     #[doc = "Bits 8:9 - SRAM/ROM configuration. PTSEL: timing setting for debug purpose, default is 2'b01."]
     #[inline(always)]
     #[must_use]
     pub fn gmac5_axi64_scfg_ram_cfg_ptsel(
         &mut self,
-    ) -> GMAC5_AXI64_SCFG_RAM_CFG_PTSEL_W<AON_SYSCONSAIF_SYSCFG12_SPEC, 8> {
-        GMAC5_AXI64_SCFG_RAM_CFG_PTSEL_W::new(self)
+    ) -> GMAC5_AXI64_SCFG_RAM_CFG_PTSEL_W<AON_SYSCONSAIF_SYSCFG12_SPEC> {
+        GMAC5_AXI64_SCFG_RAM_CFG_PTSEL_W::new(self, 8)
     }
     #[doc = "Bits 10:11 - SRAM/ROM configuration. TRB: timing setting for debug purpose, default is 2'b01."]
     #[inline(always)]
     #[must_use]
     pub fn gmac5_axi64_scfg_ram_cfg_trb(
         &mut self,
-    ) -> GMAC5_AXI64_SCFG_RAM_CFG_TRB_W<AON_SYSCONSAIF_SYSCFG12_SPEC, 10> {
-        GMAC5_AXI64_SCFG_RAM_CFG_TRB_W::new(self)
+    ) -> GMAC5_AXI64_SCFG_RAM_CFG_TRB_W<AON_SYSCONSAIF_SYSCFG12_SPEC> {
+        GMAC5_AXI64_SCFG_RAM_CFG_TRB_W::new(self, 10)
     }
     #[doc = "Bits 12:13 - SRAM/ROM configuration. WTSEL: timing setting for debug purpose, default is 2'b01."]
     #[inline(always)]
     #[must_use]
     pub fn gmac5_axi64_scfg_ram_cfg_wtsel(
         &mut self,
-    ) -> GMAC5_AXI64_SCFG_RAM_CFG_WTSEL_W<AON_SYSCONSAIF_SYSCFG12_SPEC, 12> {
-        GMAC5_AXI64_SCFG_RAM_CFG_WTSEL_W::new(self)
+    ) -> GMAC5_AXI64_SCFG_RAM_CFG_WTSEL_W<AON_SYSCONSAIF_SYSCFG12_SPEC> {
+        GMAC5_AXI64_SCFG_RAM_CFG_WTSEL_W::new(self, 12)
     }
     #[doc = "Bit 14 - SRAM/ROM configuration. VS: timing setting for debug purpose, default is 1'b1."]
     #[inline(always)]
     #[must_use]
     pub fn gmac5_axi64_scfg_ram_cfg_vs(
         &mut self,
-    ) -> GMAC5_AXI64_SCFG_RAM_CFG_VS_W<AON_SYSCONSAIF_SYSCFG12_SPEC, 14> {
-        GMAC5_AXI64_SCFG_RAM_CFG_VS_W::new(self)
+    ) -> GMAC5_AXI64_SCFG_RAM_CFG_VS_W<AON_SYSCONSAIF_SYSCFG12_SPEC> {
+        GMAC5_AXI64_SCFG_RAM_CFG_VS_W::new(self, 14)
     }
     #[doc = "Bit 15 - SRAM/ROM configuration. VG: timing setting for debug purpose, default is 1'b1."]
     #[inline(always)]
     #[must_use]
     pub fn gmac5_axi64_scfg_ram_cfg_vg(
         &mut self,
-    ) -> GMAC5_AXI64_SCFG_RAM_CFG_VG_W<AON_SYSCONSAIF_SYSCFG12_SPEC, 15> {
-        GMAC5_AXI64_SCFG_RAM_CFG_VG_W::new(self)
+    ) -> GMAC5_AXI64_SCFG_RAM_CFG_VG_W<AON_SYSCONSAIF_SYSCFG12_SPEC> {
+        GMAC5_AXI64_SCFG_RAM_CFG_VG_W::new(self, 15)
     }
     #[doc = "Bits 18:20 - Active PHY Selected. When you have multiple GMAC PHY interfaces in your configuration, this field indicates the sampled value of the PHY selector during reset de-assertion. Values: 0x0 - GMII or MII, 0x1 - RGMII, 0x2 - SGMII, 0x3 - TBI, 0x4 - RMII, 0x5 - RTBI, 0x6 - SMII, 0x7 - REVMII"]
     #[inline(always)]
     #[must_use]
     pub fn gmac5_axi64_phy_intf_sel_i(
         &mut self,
-    ) -> GMAC5_AXI64_PHY_INTF_SEL_I_W<AON_SYSCONSAIF_SYSCFG12_SPEC, 18> {
-        GMAC5_AXI64_PHY_INTF_SEL_I_W::new(self)
+    ) -> GMAC5_AXI64_PHY_INTF_SEL_I_W<AON_SYSCONSAIF_SYSCFG12_SPEC> {
+        GMAC5_AXI64_PHY_INTF_SEL_I_W::new(self, 18)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

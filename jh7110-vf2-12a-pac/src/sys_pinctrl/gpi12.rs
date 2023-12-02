@@ -5,19 +5,19 @@ pub type W = crate::W<GPI12_SPEC>;
 #[doc = "Field `u0_sdio_card_int_n_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type U0_SDIO_CARD_INT_N_CFG_R = crate::FieldReader;
 #[doc = "Field `u0_sdio_card_int_n_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type U0_SDIO_CARD_INT_N_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type U0_SDIO_CARD_INT_N_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 #[doc = "Field `u0_sdio_card_write_prt_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type U0_SDIO_CARD_WRITE_PRT_CFG_R = crate::FieldReader;
 #[doc = "Field `u0_sdio_card_write_prt_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type U0_SDIO_CARD_WRITE_PRT_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type U0_SDIO_CARD_WRITE_PRT_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 #[doc = "Field `u0_uart_sin_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type U0_UART_SIN_CFG_R = crate::FieldReader;
 #[doc = "Field `u0_uart_sin_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type U0_UART_SIN_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type U0_UART_SIN_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 #[doc = "Field `u0_hifi4_jtck_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type U0_HIFI4_JTCK_CFG_R = crate::FieldReader;
 #[doc = "Field `u0_hifi4_jtck_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type U0_HIFI4_JTCK_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type U0_HIFI4_JTCK_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 impl R {
     #[doc = "Bits 0:6 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
@@ -44,28 +44,32 @@ impl W {
     #[doc = "Bits 0:6 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
-    pub fn u0_sdio_card_int_n_cfg(&mut self) -> U0_SDIO_CARD_INT_N_CFG_W<GPI12_SPEC, 0> {
-        U0_SDIO_CARD_INT_N_CFG_W::new(self)
+    pub fn u0_sdio_card_int_n_cfg(&mut self) -> U0_SDIO_CARD_INT_N_CFG_W<GPI12_SPEC> {
+        U0_SDIO_CARD_INT_N_CFG_W::new(self, 0)
     }
     #[doc = "Bits 8:14 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
-    pub fn u0_sdio_card_write_prt_cfg(&mut self) -> U0_SDIO_CARD_WRITE_PRT_CFG_W<GPI12_SPEC, 8> {
-        U0_SDIO_CARD_WRITE_PRT_CFG_W::new(self)
+    pub fn u0_sdio_card_write_prt_cfg(&mut self) -> U0_SDIO_CARD_WRITE_PRT_CFG_W<GPI12_SPEC> {
+        U0_SDIO_CARD_WRITE_PRT_CFG_W::new(self, 8)
     }
     #[doc = "Bits 16:22 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
-    pub fn u0_uart_sin_cfg(&mut self) -> U0_UART_SIN_CFG_W<GPI12_SPEC, 16> {
-        U0_UART_SIN_CFG_W::new(self)
+    pub fn u0_uart_sin_cfg(&mut self) -> U0_UART_SIN_CFG_W<GPI12_SPEC> {
+        U0_UART_SIN_CFG_W::new(self, 16)
     }
     #[doc = "Bits 24:30 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
-    pub fn u0_hifi4_jtck_cfg(&mut self) -> U0_HIFI4_JTCK_CFG_W<GPI12_SPEC, 24> {
-        U0_HIFI4_JTCK_CFG_W::new(self)
+    pub fn u0_hifi4_jtck_cfg(&mut self) -> U0_HIFI4_JTCK_CFG_W<GPI12_SPEC> {
+        U0_HIFI4_JTCK_CFG_W::new(self, 24)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;
