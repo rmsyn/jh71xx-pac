@@ -5,35 +5,35 @@ pub type W = crate::W<HARD_EVENT_TURN_ON_MASK_SPEC>;
 #[doc = "Field `hard_event_0_on_mask` reader - RTC event encourage turn-on sequence, 1: mask hardware event, 0: enable hardware event"]
 pub type HARD_EVENT_0_ON_MASK_R = crate::BitReader;
 #[doc = "Field `hard_event_0_on_mask` writer - RTC event encourage turn-on sequence, 1: mask hardware event, 0: enable hardware event"]
-pub type HARD_EVENT_0_ON_MASK_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type HARD_EVENT_0_ON_MASK_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `hard_event_1_on_mask` reader - GMAC event encourage turn-on sequence, 1: mask hardware event, 0: enable hardware event"]
 pub type HARD_EVENT_1_ON_MASK_R = crate::BitReader;
 #[doc = "Field `hard_event_1_on_mask` writer - GMAC event encourage turn-on sequence, 1: mask hardware event, 0: enable hardware event"]
-pub type HARD_EVENT_1_ON_MASK_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type HARD_EVENT_1_ON_MASK_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `hard_event_2_on_mask` reader - RFU, 1: mask hardware event, 0: enable hardware event"]
 pub type HARD_EVENT_2_ON_MASK_R = crate::BitReader;
 #[doc = "Field `hard_event_2_on_mask` writer - RFU, 1: mask hardware event, 0: enable hardware event"]
-pub type HARD_EVENT_2_ON_MASK_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type HARD_EVENT_2_ON_MASK_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `hard_event_3_on_mask` reader - RGPIO0 event encourage turn-on sequence, 1: mask hardware event, 0: enable hardware event"]
 pub type HARD_EVENT_3_ON_MASK_R = crate::BitReader;
 #[doc = "Field `hard_event_3_on_mask` writer - RGPIO0 event encourage turn-on sequence, 1: mask hardware event, 0: enable hardware event"]
-pub type HARD_EVENT_3_ON_MASK_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type HARD_EVENT_3_ON_MASK_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `hard_event_4_on_mask` reader - RGPIO1 event encourage turn-on sequence, 1: mask hardware event, 0: enable hardware event"]
 pub type HARD_EVENT_4_ON_MASK_R = crate::BitReader;
 #[doc = "Field `hard_event_4_on_mask` writer - RGPIO1 event encourage turn-on sequence, 1: mask hardware event, 0: enable hardware event"]
-pub type HARD_EVENT_4_ON_MASK_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type HARD_EVENT_4_ON_MASK_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `hard_event_5_on_mask` reader - RGPIO2 event encourage turn-on sequence, 1: mask hardware event, 0: enable hardware event"]
 pub type HARD_EVENT_5_ON_MASK_R = crate::BitReader;
 #[doc = "Field `hard_event_5_on_mask` writer - RGPIO2 event encourage turn-on sequence, 1: mask hardware event, 0: enable hardware event"]
-pub type HARD_EVENT_5_ON_MASK_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type HARD_EVENT_5_ON_MASK_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `hard_event_6_on_mask` reader - RGPIO3 event encourage turn-on sequence, 1: mask hardware event, 0: enable hardware event"]
 pub type HARD_EVENT_6_ON_MASK_R = crate::BitReader;
 #[doc = "Field `hard_event_6_on_mask` writer - RGPIO3 event encourage turn-on sequence, 1: mask hardware event, 0: enable hardware event"]
-pub type HARD_EVENT_6_ON_MASK_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type HARD_EVENT_6_ON_MASK_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `hard_event_7_on_mask` reader - GPU event, 1: mask hardware event, 0: enable hardware event"]
 pub type HARD_EVENT_7_ON_MASK_R = crate::BitReader;
 #[doc = "Field `hard_event_7_on_mask` writer - GPU event, 1: mask hardware event, 0: enable hardware event"]
-pub type HARD_EVENT_7_ON_MASK_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type HARD_EVENT_7_ON_MASK_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - RTC event encourage turn-on sequence, 1: mask hardware event, 0: enable hardware event"]
     #[inline(always)]
@@ -80,68 +80,56 @@ impl W {
     #[doc = "Bit 0 - RTC event encourage turn-on sequence, 1: mask hardware event, 0: enable hardware event"]
     #[inline(always)]
     #[must_use]
-    pub fn hard_event_0_on_mask(
-        &mut self,
-    ) -> HARD_EVENT_0_ON_MASK_W<HARD_EVENT_TURN_ON_MASK_SPEC, 0> {
-        HARD_EVENT_0_ON_MASK_W::new(self)
+    pub fn hard_event_0_on_mask(&mut self) -> HARD_EVENT_0_ON_MASK_W<HARD_EVENT_TURN_ON_MASK_SPEC> {
+        HARD_EVENT_0_ON_MASK_W::new(self, 0)
     }
     #[doc = "Bit 1 - GMAC event encourage turn-on sequence, 1: mask hardware event, 0: enable hardware event"]
     #[inline(always)]
     #[must_use]
-    pub fn hard_event_1_on_mask(
-        &mut self,
-    ) -> HARD_EVENT_1_ON_MASK_W<HARD_EVENT_TURN_ON_MASK_SPEC, 1> {
-        HARD_EVENT_1_ON_MASK_W::new(self)
+    pub fn hard_event_1_on_mask(&mut self) -> HARD_EVENT_1_ON_MASK_W<HARD_EVENT_TURN_ON_MASK_SPEC> {
+        HARD_EVENT_1_ON_MASK_W::new(self, 1)
     }
     #[doc = "Bit 2 - RFU, 1: mask hardware event, 0: enable hardware event"]
     #[inline(always)]
     #[must_use]
-    pub fn hard_event_2_on_mask(
-        &mut self,
-    ) -> HARD_EVENT_2_ON_MASK_W<HARD_EVENT_TURN_ON_MASK_SPEC, 2> {
-        HARD_EVENT_2_ON_MASK_W::new(self)
+    pub fn hard_event_2_on_mask(&mut self) -> HARD_EVENT_2_ON_MASK_W<HARD_EVENT_TURN_ON_MASK_SPEC> {
+        HARD_EVENT_2_ON_MASK_W::new(self, 2)
     }
     #[doc = "Bit 3 - RGPIO0 event encourage turn-on sequence, 1: mask hardware event, 0: enable hardware event"]
     #[inline(always)]
     #[must_use]
-    pub fn hard_event_3_on_mask(
-        &mut self,
-    ) -> HARD_EVENT_3_ON_MASK_W<HARD_EVENT_TURN_ON_MASK_SPEC, 3> {
-        HARD_EVENT_3_ON_MASK_W::new(self)
+    pub fn hard_event_3_on_mask(&mut self) -> HARD_EVENT_3_ON_MASK_W<HARD_EVENT_TURN_ON_MASK_SPEC> {
+        HARD_EVENT_3_ON_MASK_W::new(self, 3)
     }
     #[doc = "Bit 4 - RGPIO1 event encourage turn-on sequence, 1: mask hardware event, 0: enable hardware event"]
     #[inline(always)]
     #[must_use]
-    pub fn hard_event_4_on_mask(
-        &mut self,
-    ) -> HARD_EVENT_4_ON_MASK_W<HARD_EVENT_TURN_ON_MASK_SPEC, 4> {
-        HARD_EVENT_4_ON_MASK_W::new(self)
+    pub fn hard_event_4_on_mask(&mut self) -> HARD_EVENT_4_ON_MASK_W<HARD_EVENT_TURN_ON_MASK_SPEC> {
+        HARD_EVENT_4_ON_MASK_W::new(self, 4)
     }
     #[doc = "Bit 5 - RGPIO2 event encourage turn-on sequence, 1: mask hardware event, 0: enable hardware event"]
     #[inline(always)]
     #[must_use]
-    pub fn hard_event_5_on_mask(
-        &mut self,
-    ) -> HARD_EVENT_5_ON_MASK_W<HARD_EVENT_TURN_ON_MASK_SPEC, 5> {
-        HARD_EVENT_5_ON_MASK_W::new(self)
+    pub fn hard_event_5_on_mask(&mut self) -> HARD_EVENT_5_ON_MASK_W<HARD_EVENT_TURN_ON_MASK_SPEC> {
+        HARD_EVENT_5_ON_MASK_W::new(self, 5)
     }
     #[doc = "Bit 6 - RGPIO3 event encourage turn-on sequence, 1: mask hardware event, 0: enable hardware event"]
     #[inline(always)]
     #[must_use]
-    pub fn hard_event_6_on_mask(
-        &mut self,
-    ) -> HARD_EVENT_6_ON_MASK_W<HARD_EVENT_TURN_ON_MASK_SPEC, 6> {
-        HARD_EVENT_6_ON_MASK_W::new(self)
+    pub fn hard_event_6_on_mask(&mut self) -> HARD_EVENT_6_ON_MASK_W<HARD_EVENT_TURN_ON_MASK_SPEC> {
+        HARD_EVENT_6_ON_MASK_W::new(self, 6)
     }
     #[doc = "Bit 7 - GPU event, 1: mask hardware event, 0: enable hardware event"]
     #[inline(always)]
     #[must_use]
-    pub fn hard_event_7_on_mask(
-        &mut self,
-    ) -> HARD_EVENT_7_ON_MASK_W<HARD_EVENT_TURN_ON_MASK_SPEC, 7> {
-        HARD_EVENT_7_ON_MASK_W::new(self)
+    pub fn hard_event_7_on_mask(&mut self) -> HARD_EVENT_7_ON_MASK_W<HARD_EVENT_TURN_ON_MASK_SPEC> {
+        HARD_EVENT_7_ON_MASK_W::new(self, 7)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

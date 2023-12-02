@@ -9,7 +9,7 @@ pub type U0_CDN_USB_RX_RCV_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_self_test` reader - For software bist_test"]
 pub type U0_CDN_USB_SELF_TEST_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_self_test` writer - For software bist_test"]
-pub type U0_CDN_USB_SELF_TEST_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_SELF_TEST_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_sessend` reader - u0_cdn_usb_sessend"]
 pub type U0_CDN_USB_SESSEND_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_sessvalid` reader - u0_cdn_usb_sessvalid"]
@@ -25,8 +25,7 @@ pub type U0_CDN_USB_USBDEV_MAIN_POWER_OFF_READY_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_usbdev_main_power_off_req` reader - u0_cdn_usb_usbdev_main_power_off_req"]
 pub type U0_CDN_USB_USBDEV_MAIN_POWER_OFF_REQ_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_usbdev_main_power_off_req` writer - u0_cdn_usb_usbdev_main_power_off_req"]
-pub type U0_CDN_USB_USBDEV_MAIN_POWER_OFF_REQ_W<'a, REG, const O: u8> =
-    crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_USBDEV_MAIN_POWER_OFF_REQ_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_usbdev_main_power_on_ready` reader - u0_cdn_usb_usbdev_main_power_on_ready"]
 pub type U0_CDN_USB_USBDEV_MAIN_POWER_ON_READY_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_usbdev_main_power_on_req` reader - u0_cdn_usb_usbdev_main_power_on_req"]
@@ -34,8 +33,7 @@ pub type U0_CDN_USB_USBDEV_MAIN_POWER_ON_REQ_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_usbdev_main_power_on_valid` reader - u0_cdn_usb_usbdev_main_power_on_valid"]
 pub type U0_CDN_USB_USBDEV_MAIN_POWER_ON_VALID_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_usbdev_main_power_on_valid` writer - u0_cdn_usb_usbdev_main_power_on_valid"]
-pub type U0_CDN_USB_USBDEV_MAIN_POWER_ON_VALID_W<'a, REG, const O: u8> =
-    crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_USBDEV_MAIN_POWER_ON_VALID_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_usbdev_power_off_ack` reader - u0_cdn_usb_usbdev_power_off_ack"]
 pub type U0_CDN_USB_USBDEV_POWER_OFF_ACK_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_usbdev_power_off_ready` reader - u0_cdn_usb_usbdev_power_off_ready"]
@@ -43,7 +41,7 @@ pub type U0_CDN_USB_USBDEV_POWER_OFF_READY_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_usbdev_power_off_req` reader - u0_cdn_usb_usbdev_power_off_req"]
 pub type U0_CDN_USB_USBDEV_POWER_OFF_REQ_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_usbdev_power_off_req` writer - u0_cdn_usb_usbdev_power_off_req"]
-pub type U0_CDN_USB_USBDEV_POWER_OFF_REQ_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_USBDEV_POWER_OFF_REQ_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_usbdev_power_on_ready` reader - u0_cdn_usb_usbdev_power_on_ready"]
 pub type U0_CDN_USB_USBDEV_POWER_ON_READY_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_usbdev_power_on_req` reader - u0_cdn_usb_usbdev_power_on_req"]
@@ -51,19 +49,19 @@ pub type U0_CDN_USB_USBDEV_POWER_ON_REQ_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_usbdev_power_on_valid` reader - u0_cdn_usb_usbdev_power_on_valid"]
 pub type U0_CDN_USB_USBDEV_POWER_ON_VALID_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_usbdev_power_on_valid` writer - u0_cdn_usb_usbdev_power_on_valid"]
-pub type U0_CDN_USB_USBDEV_POWER_ON_VALID_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_USBDEV_POWER_ON_VALID_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_utmi_dmpulldown_sit` reader - u0_cdn_usb_utmi_dmpulldown_sit"]
 pub type U0_CDN_USB_UTMI_DMPULLDOWN_SIT_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_utmi_dmpulldown_sit` writer - u0_cdn_usb_utmi_dmpulldown_sit"]
-pub type U0_CDN_USB_UTMI_DMPULLDOWN_SIT_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_UTMI_DMPULLDOWN_SIT_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_utmi_dppulldown_sit` reader - u0_cdn_usb_utmi_dppulldown_sit"]
 pub type U0_CDN_USB_UTMI_DPPULLDOWN_SIT_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_utmi_dppulldown_sit` writer - u0_cdn_usb_utmi_dppulldown_sit"]
-pub type U0_CDN_USB_UTMI_DPPULLDOWN_SIT_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_UTMI_DPPULLDOWN_SIT_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_utmi_fslsserialmode_sit` reader - u0_cdn_usb_utmi_fslsserialmode_sit"]
 pub type U0_CDN_USB_UTMI_FSLSSERIALMODE_SIT_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_utmi_fslsserialmode_sit` writer - u0_cdn_usb_utmi_fslsserialmode_sit"]
-pub type U0_CDN_USB_UTMI_FSLSSERIALMODE_SIT_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_UTMI_FSLSSERIALMODE_SIT_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_utmi_hostdisconnect_sit` reader - u0_cdn_usb_utmi_hostdisconnect_sit"]
 pub type U0_CDN_USB_UTMI_HOSTDISCONNECT_SIT_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_utmi_iddig_sit` reader - u0_cdn_usb_utmi_iddig_sit"]
@@ -71,13 +69,13 @@ pub type U0_CDN_USB_UTMI_IDDIG_SIT_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_utmi_idpullup_sit` reader - u0_cdn_usb_utmi_idpullup_sit"]
 pub type U0_CDN_USB_UTMI_IDPULLUP_SIT_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_utmi_idpullup_sit` writer - u0_cdn_usb_utmi_idpullup_sit"]
-pub type U0_CDN_USB_UTMI_IDPULLUP_SIT_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_UTMI_IDPULLUP_SIT_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_utmi_linestate_sit` reader - u0_cdn_usb_utmi_linestate_sit"]
 pub type U0_CDN_USB_UTMI_LINESTATE_SIT_R = crate::FieldReader;
 #[doc = "Field `u0_cdn_usb_utmi_opmode_sit` reader - u0_cdn_usb_utmi_opmode_sit"]
 pub type U0_CDN_USB_UTMI_OPMODE_SIT_R = crate::FieldReader;
 #[doc = "Field `u0_cdn_usb_utmi_opmode_sit` writer - u0_cdn_usb_utmi_opmode_sit"]
-pub type U0_CDN_USB_UTMI_OPMODE_SIT_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type U0_CDN_USB_UTMI_OPMODE_SIT_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `u0_cdn_usb_utmi_rxactive_sit` reader - u0_cdn_usb_utmi_rxactive_sit"]
 pub type U0_CDN_USB_UTMI_RXACTIVE_SIT_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_utmi_rxerror_sit` reader - u0_cdn_usb_utmi_rxerror_sit"]
@@ -242,84 +240,86 @@ impl W {
     #[doc = "Bit 2 - For software bist_test"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_cdn_usb_self_test(
-        &mut self,
-    ) -> U0_CDN_USB_SELF_TEST_W<STG_SYSCONSAIF_SYSCFG8_SPEC, 2> {
-        U0_CDN_USB_SELF_TEST_W::new(self)
+    pub fn u0_cdn_usb_self_test(&mut self) -> U0_CDN_USB_SELF_TEST_W<STG_SYSCONSAIF_SYSCFG8_SPEC> {
+        U0_CDN_USB_SELF_TEST_W::new(self, 2)
     }
     #[doc = "Bit 9 - u0_cdn_usb_usbdev_main_power_off_req"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_usbdev_main_power_off_req(
         &mut self,
-    ) -> U0_CDN_USB_USBDEV_MAIN_POWER_OFF_REQ_W<STG_SYSCONSAIF_SYSCFG8_SPEC, 9> {
-        U0_CDN_USB_USBDEV_MAIN_POWER_OFF_REQ_W::new(self)
+    ) -> U0_CDN_USB_USBDEV_MAIN_POWER_OFF_REQ_W<STG_SYSCONSAIF_SYSCFG8_SPEC> {
+        U0_CDN_USB_USBDEV_MAIN_POWER_OFF_REQ_W::new(self, 9)
     }
     #[doc = "Bit 12 - u0_cdn_usb_usbdev_main_power_on_valid"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_usbdev_main_power_on_valid(
         &mut self,
-    ) -> U0_CDN_USB_USBDEV_MAIN_POWER_ON_VALID_W<STG_SYSCONSAIF_SYSCFG8_SPEC, 12> {
-        U0_CDN_USB_USBDEV_MAIN_POWER_ON_VALID_W::new(self)
+    ) -> U0_CDN_USB_USBDEV_MAIN_POWER_ON_VALID_W<STG_SYSCONSAIF_SYSCFG8_SPEC> {
+        U0_CDN_USB_USBDEV_MAIN_POWER_ON_VALID_W::new(self, 12)
     }
     #[doc = "Bit 15 - u0_cdn_usb_usbdev_power_off_req"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_usbdev_power_off_req(
         &mut self,
-    ) -> U0_CDN_USB_USBDEV_POWER_OFF_REQ_W<STG_SYSCONSAIF_SYSCFG8_SPEC, 15> {
-        U0_CDN_USB_USBDEV_POWER_OFF_REQ_W::new(self)
+    ) -> U0_CDN_USB_USBDEV_POWER_OFF_REQ_W<STG_SYSCONSAIF_SYSCFG8_SPEC> {
+        U0_CDN_USB_USBDEV_POWER_OFF_REQ_W::new(self, 15)
     }
     #[doc = "Bit 18 - u0_cdn_usb_usbdev_power_on_valid"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_usbdev_power_on_valid(
         &mut self,
-    ) -> U0_CDN_USB_USBDEV_POWER_ON_VALID_W<STG_SYSCONSAIF_SYSCFG8_SPEC, 18> {
-        U0_CDN_USB_USBDEV_POWER_ON_VALID_W::new(self)
+    ) -> U0_CDN_USB_USBDEV_POWER_ON_VALID_W<STG_SYSCONSAIF_SYSCFG8_SPEC> {
+        U0_CDN_USB_USBDEV_POWER_ON_VALID_W::new(self, 18)
     }
     #[doc = "Bit 19 - u0_cdn_usb_utmi_dmpulldown_sit"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_utmi_dmpulldown_sit(
         &mut self,
-    ) -> U0_CDN_USB_UTMI_DMPULLDOWN_SIT_W<STG_SYSCONSAIF_SYSCFG8_SPEC, 19> {
-        U0_CDN_USB_UTMI_DMPULLDOWN_SIT_W::new(self)
+    ) -> U0_CDN_USB_UTMI_DMPULLDOWN_SIT_W<STG_SYSCONSAIF_SYSCFG8_SPEC> {
+        U0_CDN_USB_UTMI_DMPULLDOWN_SIT_W::new(self, 19)
     }
     #[doc = "Bit 20 - u0_cdn_usb_utmi_dppulldown_sit"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_utmi_dppulldown_sit(
         &mut self,
-    ) -> U0_CDN_USB_UTMI_DPPULLDOWN_SIT_W<STG_SYSCONSAIF_SYSCFG8_SPEC, 20> {
-        U0_CDN_USB_UTMI_DPPULLDOWN_SIT_W::new(self)
+    ) -> U0_CDN_USB_UTMI_DPPULLDOWN_SIT_W<STG_SYSCONSAIF_SYSCFG8_SPEC> {
+        U0_CDN_USB_UTMI_DPPULLDOWN_SIT_W::new(self, 20)
     }
     #[doc = "Bit 21 - u0_cdn_usb_utmi_fslsserialmode_sit"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_utmi_fslsserialmode_sit(
         &mut self,
-    ) -> U0_CDN_USB_UTMI_FSLSSERIALMODE_SIT_W<STG_SYSCONSAIF_SYSCFG8_SPEC, 21> {
-        U0_CDN_USB_UTMI_FSLSSERIALMODE_SIT_W::new(self)
+    ) -> U0_CDN_USB_UTMI_FSLSSERIALMODE_SIT_W<STG_SYSCONSAIF_SYSCFG8_SPEC> {
+        U0_CDN_USB_UTMI_FSLSSERIALMODE_SIT_W::new(self, 21)
     }
     #[doc = "Bit 24 - u0_cdn_usb_utmi_idpullup_sit"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_utmi_idpullup_sit(
         &mut self,
-    ) -> U0_CDN_USB_UTMI_IDPULLUP_SIT_W<STG_SYSCONSAIF_SYSCFG8_SPEC, 24> {
-        U0_CDN_USB_UTMI_IDPULLUP_SIT_W::new(self)
+    ) -> U0_CDN_USB_UTMI_IDPULLUP_SIT_W<STG_SYSCONSAIF_SYSCFG8_SPEC> {
+        U0_CDN_USB_UTMI_IDPULLUP_SIT_W::new(self, 24)
     }
     #[doc = "Bits 27:28 - u0_cdn_usb_utmi_opmode_sit"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_utmi_opmode_sit(
         &mut self,
-    ) -> U0_CDN_USB_UTMI_OPMODE_SIT_W<STG_SYSCONSAIF_SYSCFG8_SPEC, 27> {
-        U0_CDN_USB_UTMI_OPMODE_SIT_W::new(self)
+    ) -> U0_CDN_USB_UTMI_OPMODE_SIT_W<STG_SYSCONSAIF_SYSCFG8_SPEC> {
+        U0_CDN_USB_UTMI_OPMODE_SIT_W::new(self, 27)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

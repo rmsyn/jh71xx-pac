@@ -5,11 +5,11 @@ pub type W = crate::W<CLK_PERIPHERAL_ROOT_SPEC>;
 #[doc = "Field `clk_divcfg` reader - Clock divider coefficient: Max=2, Default=2, Min=2, Typical=2"]
 pub type CLK_DIVCFG_R = crate::FieldReader<u32>;
 #[doc = "Field `clk_divcfg` writer - Clock divider coefficient: Max=2, Default=2, Min=2, Typical=2"]
-pub type CLK_DIVCFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 24, O, u32>;
+pub type CLK_DIVCFG_W<'a, REG> = crate::FieldWriter<'a, REG, 24, u32>;
 #[doc = "Field `clk_mux_sel` reader - Clock multiplexing selector: clk_pll0, clk_pll2"]
 pub type CLK_MUX_SEL_R = crate::FieldReader;
 #[doc = "Field `clk_mux_sel` writer - Clock multiplexing selector: clk_pll0, clk_pll2"]
-pub type CLK_MUX_SEL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 6, O>;
+pub type CLK_MUX_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 6>;
 impl R {
     #[doc = "Bits 0:23 - Clock divider coefficient: Max=2, Default=2, Min=2, Typical=2"]
     #[inline(always)]
@@ -26,16 +26,20 @@ impl W {
     #[doc = "Bits 0:23 - Clock divider coefficient: Max=2, Default=2, Min=2, Typical=2"]
     #[inline(always)]
     #[must_use]
-    pub fn clk_divcfg(&mut self) -> CLK_DIVCFG_W<CLK_PERIPHERAL_ROOT_SPEC, 0> {
-        CLK_DIVCFG_W::new(self)
+    pub fn clk_divcfg(&mut self) -> CLK_DIVCFG_W<CLK_PERIPHERAL_ROOT_SPEC> {
+        CLK_DIVCFG_W::new(self, 0)
     }
     #[doc = "Bits 24:29 - Clock multiplexing selector: clk_pll0, clk_pll2"]
     #[inline(always)]
     #[must_use]
-    pub fn clk_mux_sel(&mut self) -> CLK_MUX_SEL_W<CLK_PERIPHERAL_ROOT_SPEC, 24> {
-        CLK_MUX_SEL_W::new(self)
+    pub fn clk_mux_sel(&mut self) -> CLK_MUX_SEL_W<CLK_PERIPHERAL_ROOT_SPEC> {
+        CLK_MUX_SEL_W::new(self, 24)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

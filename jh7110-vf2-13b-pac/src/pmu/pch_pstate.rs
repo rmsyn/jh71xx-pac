@@ -5,7 +5,7 @@ pub type W = crate::W<PCH_PSTATE_SPEC>;
 #[doc = "Field `pch_pstate` reader - P-channel state set"]
 pub type PCH_PSTATE_R = crate::FieldReader;
 #[doc = "Field `pch_pstate` writer - P-channel state set"]
-pub type PCH_PSTATE_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 5, O>;
+pub type PCH_PSTATE_W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
 impl R {
     #[doc = "Bits 0:4 - P-channel state set"]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bits 0:4 - P-channel state set"]
     #[inline(always)]
     #[must_use]
-    pub fn pch_pstate(&mut self) -> PCH_PSTATE_W<PCH_PSTATE_SPEC, 0> {
-        PCH_PSTATE_W::new(self)
+    pub fn pch_pstate(&mut self) -> PCH_PSTATE_W<PCH_PSTATE_SPEC> {
+        PCH_PSTATE_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

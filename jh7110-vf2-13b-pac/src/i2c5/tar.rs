@@ -5,15 +5,15 @@ pub type W = crate::W<TAR_SPEC>;
 #[doc = "Field `address_7bit` reader - Target address, 7-bit mode"]
 pub type ADDRESS_7BIT_R = crate::FieldReader;
 #[doc = "Field `address_7bit` writer - Target address, 7-bit mode"]
-pub type ADDRESS_7BIT_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type ADDRESS_7BIT_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 #[doc = "Field `address_10bit` reader - Target address, 10-bit mode"]
 pub type ADDRESS_10BIT_R = crate::FieldReader<u16>;
 #[doc = "Field `address_10bit` writer - Target address, 10-bit mode"]
-pub type ADDRESS_10BIT_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 10, O, u16>;
+pub type ADDRESS_10BIT_W<'a, REG> = crate::FieldWriter<'a, REG, 10, u16>;
 #[doc = "Field `mode` reader - Target addressing mode - 0: 7-bit, 1: 10-bit"]
 pub type MODE_R = crate::BitReader;
 #[doc = "Field `mode` writer - Target addressing mode - 0: 7-bit, 1: 10-bit"]
-pub type MODE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type MODE_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bits 0:6 - Target address, 7-bit mode"]
     #[inline(always)]
@@ -35,22 +35,26 @@ impl W {
     #[doc = "Bits 0:6 - Target address, 7-bit mode"]
     #[inline(always)]
     #[must_use]
-    pub fn address_7bit(&mut self) -> ADDRESS_7BIT_W<TAR_SPEC, 0> {
-        ADDRESS_7BIT_W::new(self)
+    pub fn address_7bit(&mut self) -> ADDRESS_7BIT_W<TAR_SPEC> {
+        ADDRESS_7BIT_W::new(self, 0)
     }
     #[doc = "Bits 0:9 - Target address, 10-bit mode"]
     #[inline(always)]
     #[must_use]
-    pub fn address_10bit(&mut self) -> ADDRESS_10BIT_W<TAR_SPEC, 0> {
-        ADDRESS_10BIT_W::new(self)
+    pub fn address_10bit(&mut self) -> ADDRESS_10BIT_W<TAR_SPEC> {
+        ADDRESS_10BIT_W::new(self, 0)
     }
     #[doc = "Bit 12 - Target addressing mode - 0: 7-bit, 1: 10-bit"]
     #[inline(always)]
     #[must_use]
-    pub fn mode(&mut self) -> MODE_W<TAR_SPEC, 12> {
-        MODE_W::new(self)
+    pub fn mode(&mut self) -> MODE_W<TAR_SPEC> {
+        MODE_W::new(self, 12)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

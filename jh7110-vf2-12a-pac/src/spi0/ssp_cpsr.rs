@@ -5,7 +5,7 @@ pub type W = crate::W<SSP_CPSR_SPEC>;
 #[doc = "Field `cpsdvsr` reader - Clock prescale divisor. Must be an even number from 2-254, depending on the frequency of SSPCLK. The least significant bit always returns zero on reads."]
 pub type CPSDVSR_R = crate::FieldReader;
 #[doc = "Field `cpsdvsr` writer - Clock prescale divisor. Must be an even number from 2-254, depending on the frequency of SSPCLK. The least significant bit always returns zero on reads."]
-pub type CPSDVSR_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 8, O>;
+pub type CPSDVSR_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 impl R {
     #[doc = "Bits 0:7 - Clock prescale divisor. Must be an even number from 2-254, depending on the frequency of SSPCLK. The least significant bit always returns zero on reads."]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bits 0:7 - Clock prescale divisor. Must be an even number from 2-254, depending on the frequency of SSPCLK. The least significant bit always returns zero on reads."]
     #[inline(always)]
     #[must_use]
-    pub fn cpsdvsr(&mut self) -> CPSDVSR_W<SSP_CPSR_SPEC, 0> {
-        CPSDVSR_W::new(self)
+    pub fn cpsdvsr(&mut self) -> CPSDVSR_W<SSP_CPSR_SPEC> {
+        CPSDVSR_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u16) -> &mut Self {
         self.bits = bits;

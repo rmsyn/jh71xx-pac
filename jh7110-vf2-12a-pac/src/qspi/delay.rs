@@ -5,19 +5,19 @@ pub type W = crate::W<DELAY_SPEC>;
 #[doc = "Field `tslch` reader - TSLCH Delay Value"]
 pub type TSLCH_R = crate::FieldReader;
 #[doc = "Field `tslch` writer - TSLCH Delay Value"]
-pub type TSLCH_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 8, O>;
+pub type TSLCH_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 #[doc = "Field `tchsh` reader - TCHSH Delay Value"]
 pub type TCHSH_R = crate::FieldReader;
 #[doc = "Field `tchsh` writer - TCHSH Delay Value"]
-pub type TCHSH_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 8, O>;
+pub type TCHSH_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 #[doc = "Field `tsd2d` reader - TSD2D Delay Value"]
 pub type TSD2D_R = crate::FieldReader;
 #[doc = "Field `tsd2d` writer - TSD2D Delay Value"]
-pub type TSD2D_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 8, O>;
+pub type TSD2D_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 #[doc = "Field `tshsl` reader - TSHSL Delay Value"]
 pub type TSHSL_R = crate::FieldReader;
 #[doc = "Field `tshsl` writer - TSHSL Delay Value"]
-pub type TSHSL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 8, O>;
+pub type TSHSL_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 impl R {
     #[doc = "Bits 0:7 - TSLCH Delay Value"]
     #[inline(always)]
@@ -44,28 +44,32 @@ impl W {
     #[doc = "Bits 0:7 - TSLCH Delay Value"]
     #[inline(always)]
     #[must_use]
-    pub fn tslch(&mut self) -> TSLCH_W<DELAY_SPEC, 0> {
-        TSLCH_W::new(self)
+    pub fn tslch(&mut self) -> TSLCH_W<DELAY_SPEC> {
+        TSLCH_W::new(self, 0)
     }
     #[doc = "Bits 8:15 - TCHSH Delay Value"]
     #[inline(always)]
     #[must_use]
-    pub fn tchsh(&mut self) -> TCHSH_W<DELAY_SPEC, 8> {
-        TCHSH_W::new(self)
+    pub fn tchsh(&mut self) -> TCHSH_W<DELAY_SPEC> {
+        TCHSH_W::new(self, 8)
     }
     #[doc = "Bits 16:23 - TSD2D Delay Value"]
     #[inline(always)]
     #[must_use]
-    pub fn tsd2d(&mut self) -> TSD2D_W<DELAY_SPEC, 16> {
-        TSD2D_W::new(self)
+    pub fn tsd2d(&mut self) -> TSD2D_W<DELAY_SPEC> {
+        TSD2D_W::new(self, 16)
     }
     #[doc = "Bits 24:31 - TSHSL Delay Value"]
     #[inline(always)]
     #[must_use]
-    pub fn tshsl(&mut self) -> TSHSL_W<DELAY_SPEC, 24> {
-        TSHSL_W::new(self)
+    pub fn tshsl(&mut self) -> TSHSL_W<DELAY_SPEC> {
+        TSHSL_W::new(self, 24)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

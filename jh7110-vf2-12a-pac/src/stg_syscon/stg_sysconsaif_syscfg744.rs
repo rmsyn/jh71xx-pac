@@ -5,28 +5,27 @@ pub type W = crate::W<STG_SYSCONSAIF_SYSCFG744_SPEC>;
 #[doc = "Field `u1_plda_pcie_mperstn` reader - u1_plda_pcie_mperstn"]
 pub type U1_PLDA_PCIE_MPERSTN_R = crate::BitReader;
 #[doc = "Field `u1_plda_pcie_mperstn` writer - u1_plda_pcie_mperstn"]
-pub type U1_PLDA_PCIE_MPERSTN_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U1_PLDA_PCIE_MPERSTN_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u1_plda_pcie_pcie_ebuf_mode` reader - u1_plda_pcie_pcie_ebuf_mode"]
 pub type U1_PLDA_PCIE_PCIE_EBUF_MODE_R = crate::BitReader;
 #[doc = "Field `u1_plda_pcie_pcie_ebuf_mode` writer - u1_plda_pcie_pcie_ebuf_mode"]
-pub type U1_PLDA_PCIE_PCIE_EBUF_MODE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U1_PLDA_PCIE_PCIE_EBUF_MODE_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u1_plda_pcie_pcie_phy_test_cfg` reader - u1_plda_pcie_pcie_phy_test_cfg"]
 pub type U1_PLDA_PCIE_PCIE_PHY_TEST_CFG_R = crate::FieldReader<u32>;
 #[doc = "Field `u1_plda_pcie_pcie_phy_test_cfg` writer - u1_plda_pcie_pcie_phy_test_cfg"]
-pub type U1_PLDA_PCIE_PCIE_PHY_TEST_CFG_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 23, O, u32>;
+pub type U1_PLDA_PCIE_PCIE_PHY_TEST_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 23, u32>;
 #[doc = "Field `u1_plda_pcie_pcie_rx_eq_training` reader - u1_plda_pcie_pcie_rx_eq_training"]
 pub type U1_PLDA_PCIE_PCIE_RX_EQ_TRAINING_R = crate::BitReader;
 #[doc = "Field `u1_plda_pcie_pcie_rx_eq_training` writer - u1_plda_pcie_pcie_rx_eq_training"]
-pub type U1_PLDA_PCIE_PCIE_RX_EQ_TRAINING_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U1_PLDA_PCIE_PCIE_RX_EQ_TRAINING_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u1_plda_pcie_pcie_rxterm_en` reader - u1_plda_pcie_pcie_rxterm_en"]
 pub type U1_PLDA_PCIE_PCIE_RXTERM_EN_R = crate::BitReader;
 #[doc = "Field `u1_plda_pcie_pcie_rxterm_en` writer - u1_plda_pcie_pcie_rxterm_en"]
-pub type U1_PLDA_PCIE_PCIE_RXTERM_EN_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U1_PLDA_PCIE_PCIE_RXTERM_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u1_plda_pcie_pcie_tx_oneszeros` reader - u1_plda_pcie_pcie_tx_oneszeros"]
 pub type U1_PLDA_PCIE_PCIE_TX_ONESZEROS_R = crate::BitReader;
 #[doc = "Field `u1_plda_pcie_pcie_tx_oneszeros` writer - u1_plda_pcie_pcie_tx_oneszeros"]
-pub type U1_PLDA_PCIE_PCIE_TX_ONESZEROS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U1_PLDA_PCIE_PCIE_TX_ONESZEROS_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - u1_plda_pcie_mperstn"]
     #[inline(always)]
@@ -65,50 +64,54 @@ impl W {
     #[must_use]
     pub fn u1_plda_pcie_mperstn(
         &mut self,
-    ) -> U1_PLDA_PCIE_MPERSTN_W<STG_SYSCONSAIF_SYSCFG744_SPEC, 0> {
-        U1_PLDA_PCIE_MPERSTN_W::new(self)
+    ) -> U1_PLDA_PCIE_MPERSTN_W<STG_SYSCONSAIF_SYSCFG744_SPEC> {
+        U1_PLDA_PCIE_MPERSTN_W::new(self, 0)
     }
     #[doc = "Bit 1 - u1_plda_pcie_pcie_ebuf_mode"]
     #[inline(always)]
     #[must_use]
     pub fn u1_plda_pcie_pcie_ebuf_mode(
         &mut self,
-    ) -> U1_PLDA_PCIE_PCIE_EBUF_MODE_W<STG_SYSCONSAIF_SYSCFG744_SPEC, 1> {
-        U1_PLDA_PCIE_PCIE_EBUF_MODE_W::new(self)
+    ) -> U1_PLDA_PCIE_PCIE_EBUF_MODE_W<STG_SYSCONSAIF_SYSCFG744_SPEC> {
+        U1_PLDA_PCIE_PCIE_EBUF_MODE_W::new(self, 1)
     }
     #[doc = "Bits 2:24 - u1_plda_pcie_pcie_phy_test_cfg"]
     #[inline(always)]
     #[must_use]
     pub fn u1_plda_pcie_pcie_phy_test_cfg(
         &mut self,
-    ) -> U1_PLDA_PCIE_PCIE_PHY_TEST_CFG_W<STG_SYSCONSAIF_SYSCFG744_SPEC, 2> {
-        U1_PLDA_PCIE_PCIE_PHY_TEST_CFG_W::new(self)
+    ) -> U1_PLDA_PCIE_PCIE_PHY_TEST_CFG_W<STG_SYSCONSAIF_SYSCFG744_SPEC> {
+        U1_PLDA_PCIE_PCIE_PHY_TEST_CFG_W::new(self, 2)
     }
     #[doc = "Bit 25 - u1_plda_pcie_pcie_rx_eq_training"]
     #[inline(always)]
     #[must_use]
     pub fn u1_plda_pcie_pcie_rx_eq_training(
         &mut self,
-    ) -> U1_PLDA_PCIE_PCIE_RX_EQ_TRAINING_W<STG_SYSCONSAIF_SYSCFG744_SPEC, 25> {
-        U1_PLDA_PCIE_PCIE_RX_EQ_TRAINING_W::new(self)
+    ) -> U1_PLDA_PCIE_PCIE_RX_EQ_TRAINING_W<STG_SYSCONSAIF_SYSCFG744_SPEC> {
+        U1_PLDA_PCIE_PCIE_RX_EQ_TRAINING_W::new(self, 25)
     }
     #[doc = "Bit 26 - u1_plda_pcie_pcie_rxterm_en"]
     #[inline(always)]
     #[must_use]
     pub fn u1_plda_pcie_pcie_rxterm_en(
         &mut self,
-    ) -> U1_PLDA_PCIE_PCIE_RXTERM_EN_W<STG_SYSCONSAIF_SYSCFG744_SPEC, 26> {
-        U1_PLDA_PCIE_PCIE_RXTERM_EN_W::new(self)
+    ) -> U1_PLDA_PCIE_PCIE_RXTERM_EN_W<STG_SYSCONSAIF_SYSCFG744_SPEC> {
+        U1_PLDA_PCIE_PCIE_RXTERM_EN_W::new(self, 26)
     }
     #[doc = "Bit 27 - u1_plda_pcie_pcie_tx_oneszeros"]
     #[inline(always)]
     #[must_use]
     pub fn u1_plda_pcie_pcie_tx_oneszeros(
         &mut self,
-    ) -> U1_PLDA_PCIE_PCIE_TX_ONESZEROS_W<STG_SYSCONSAIF_SYSCFG744_SPEC, 27> {
-        U1_PLDA_PCIE_PCIE_TX_ONESZEROS_W::new(self)
+    ) -> U1_PLDA_PCIE_PCIE_TX_ONESZEROS_W<STG_SYSCONSAIF_SYSCFG744_SPEC> {
+        U1_PLDA_PCIE_PCIE_TX_ONESZEROS_W::new(self, 27)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

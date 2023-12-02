@@ -5,7 +5,7 @@ pub type W = crate::W<ENABLE_SPEC>;
 #[doc = "Field `abort` reader - abort"]
 pub type ABORT_R = crate::BitReader;
 #[doc = "Field `abort` writer - abort"]
-pub type ABORT_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type ABORT_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 1 - abort"]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bit 1 - abort"]
     #[inline(always)]
     #[must_use]
-    pub fn abort(&mut self) -> ABORT_W<ENABLE_SPEC, 1> {
-        ABORT_W::new(self)
+    pub fn abort(&mut self) -> ABORT_W<ENABLE_SPEC> {
+        ABORT_W::new(self, 1)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

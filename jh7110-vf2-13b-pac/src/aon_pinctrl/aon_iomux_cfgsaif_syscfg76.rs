@@ -5,7 +5,7 @@ pub type W = crate::W<AON_IOMUX_CFGSAIF_SYSCFG76_SPEC>;
 #[doc = "Field `padcfg_pad_rtc_ds` reader - Output Drive Strength (DS): * 00: The rated drive strength is 2 mA. * 01: The rated drive strength is 4 mA. * 10: The rated drive strength is 8 mA. * 11: The rated drive strength is 12 mA."]
 pub type PADCFG_PAD_RTC_DS_R = crate::FieldReader;
 #[doc = "Field `padcfg_pad_rtc_ds` writer - Output Drive Strength (DS): * 00: The rated drive strength is 2 mA. * 01: The rated drive strength is 4 mA. * 10: The rated drive strength is 8 mA. * 11: The rated drive strength is 12 mA."]
-pub type PADCFG_PAD_RTC_DS_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type PADCFG_PAD_RTC_DS_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 impl R {
     #[doc = "Bits 0:1 - Output Drive Strength (DS): * 00: The rated drive strength is 2 mA. * 01: The rated drive strength is 4 mA. * 10: The rated drive strength is 8 mA. * 11: The rated drive strength is 12 mA."]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bits 0:1 - Output Drive Strength (DS): * 00: The rated drive strength is 2 mA. * 01: The rated drive strength is 4 mA. * 10: The rated drive strength is 8 mA. * 11: The rated drive strength is 12 mA."]
     #[inline(always)]
     #[must_use]
-    pub fn padcfg_pad_rtc_ds(&mut self) -> PADCFG_PAD_RTC_DS_W<AON_IOMUX_CFGSAIF_SYSCFG76_SPEC, 0> {
-        PADCFG_PAD_RTC_DS_W::new(self)
+    pub fn padcfg_pad_rtc_ds(&mut self) -> PADCFG_PAD_RTC_DS_W<AON_IOMUX_CFGSAIF_SYSCFG76_SPEC> {
+        PADCFG_PAD_RTC_DS_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

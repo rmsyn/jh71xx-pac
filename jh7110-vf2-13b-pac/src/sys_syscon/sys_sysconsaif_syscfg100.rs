@@ -5,19 +5,19 @@ pub type W = crate::W<SYS_SYSCONSAIF_SYSCFG100_SPEC>;
 #[doc = "Field `u0_trace_mtx_scfg_c3_in0_ctl` reader - u0_trace_mtx_scfg_c3_in0_ctl"]
 pub type U0_TRACE_MTX_SCFG_C3_IN0_CTL_R = crate::FieldReader;
 #[doc = "Field `u0_trace_mtx_scfg_c3_in0_ctl` writer - u0_trace_mtx_scfg_c3_in0_ctl"]
-pub type U0_TRACE_MTX_SCFG_C3_IN0_CTL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 5, O>;
+pub type U0_TRACE_MTX_SCFG_C3_IN0_CTL_W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
 #[doc = "Field `u0_trace_mtx_scfg_c3_in1_ctl` reader - u0_trace_mtx_scfg_c3_in1_ctl"]
 pub type U0_TRACE_MTX_SCFG_C3_IN1_CTL_R = crate::FieldReader;
 #[doc = "Field `u0_trace_mtx_scfg_c3_in1_ctl` writer - u0_trace_mtx_scfg_c3_in1_ctl"]
-pub type U0_TRACE_MTX_SCFG_C3_IN1_CTL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 5, O>;
+pub type U0_TRACE_MTX_SCFG_C3_IN1_CTL_W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
 #[doc = "Field `u0_trace_mtx_scfg_c4_in0_ctl` reader - u0_trace_mtx_scfg_c4_in0_ctl"]
 pub type U0_TRACE_MTX_SCFG_C4_IN0_CTL_R = crate::FieldReader;
 #[doc = "Field `u0_trace_mtx_scfg_c4_in0_ctl` writer - u0_trace_mtx_scfg_c4_in0_ctl"]
-pub type U0_TRACE_MTX_SCFG_C4_IN0_CTL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 5, O>;
+pub type U0_TRACE_MTX_SCFG_C4_IN0_CTL_W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
 #[doc = "Field `u0_trace_mtx_scfg_c4_in1_ctl` reader - u0_trace_mtx_scfg_c4_in1_ctl"]
 pub type U0_TRACE_MTX_SCFG_C4_IN1_CTL_R = crate::FieldReader;
 #[doc = "Field `u0_trace_mtx_scfg_c4_in1_ctl` writer - u0_trace_mtx_scfg_c4_in1_ctl"]
-pub type U0_TRACE_MTX_SCFG_C4_IN1_CTL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 5, O>;
+pub type U0_TRACE_MTX_SCFG_C4_IN1_CTL_W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
 #[doc = "Field `u0_u7mc_sft7110_cease_from_tile_0` reader - u0_u7mc_sft7110_cease_from_tile_0"]
 pub type U0_U7MC_SFT7110_CEASE_FROM_TILE_0_R = crate::BitReader;
 #[doc = "Field `u0_u7mc_sft7110_cease_from_tile_1` reader - u0_u7mc_sft7110_cease_from_tile_1"]
@@ -116,34 +116,38 @@ impl W {
     #[must_use]
     pub fn u0_trace_mtx_scfg_c3_in0_ctl(
         &mut self,
-    ) -> U0_TRACE_MTX_SCFG_C3_IN0_CTL_W<SYS_SYSCONSAIF_SYSCFG100_SPEC, 0> {
-        U0_TRACE_MTX_SCFG_C3_IN0_CTL_W::new(self)
+    ) -> U0_TRACE_MTX_SCFG_C3_IN0_CTL_W<SYS_SYSCONSAIF_SYSCFG100_SPEC> {
+        U0_TRACE_MTX_SCFG_C3_IN0_CTL_W::new(self, 0)
     }
     #[doc = "Bits 5:9 - u0_trace_mtx_scfg_c3_in1_ctl"]
     #[inline(always)]
     #[must_use]
     pub fn u0_trace_mtx_scfg_c3_in1_ctl(
         &mut self,
-    ) -> U0_TRACE_MTX_SCFG_C3_IN1_CTL_W<SYS_SYSCONSAIF_SYSCFG100_SPEC, 5> {
-        U0_TRACE_MTX_SCFG_C3_IN1_CTL_W::new(self)
+    ) -> U0_TRACE_MTX_SCFG_C3_IN1_CTL_W<SYS_SYSCONSAIF_SYSCFG100_SPEC> {
+        U0_TRACE_MTX_SCFG_C3_IN1_CTL_W::new(self, 5)
     }
     #[doc = "Bits 10:14 - u0_trace_mtx_scfg_c4_in0_ctl"]
     #[inline(always)]
     #[must_use]
     pub fn u0_trace_mtx_scfg_c4_in0_ctl(
         &mut self,
-    ) -> U0_TRACE_MTX_SCFG_C4_IN0_CTL_W<SYS_SYSCONSAIF_SYSCFG100_SPEC, 10> {
-        U0_TRACE_MTX_SCFG_C4_IN0_CTL_W::new(self)
+    ) -> U0_TRACE_MTX_SCFG_C4_IN0_CTL_W<SYS_SYSCONSAIF_SYSCFG100_SPEC> {
+        U0_TRACE_MTX_SCFG_C4_IN0_CTL_W::new(self, 10)
     }
     #[doc = "Bits 15:19 - u0_trace_mtx_scfg_c4_in1_ctl"]
     #[inline(always)]
     #[must_use]
     pub fn u0_trace_mtx_scfg_c4_in1_ctl(
         &mut self,
-    ) -> U0_TRACE_MTX_SCFG_C4_IN1_CTL_W<SYS_SYSCONSAIF_SYSCFG100_SPEC, 15> {
-        U0_TRACE_MTX_SCFG_C4_IN1_CTL_W::new(self)
+    ) -> U0_TRACE_MTX_SCFG_C4_IN1_CTL_W<SYS_SYSCONSAIF_SYSCFG100_SPEC> {
+        U0_TRACE_MTX_SCFG_C4_IN1_CTL_W::new(self, 15)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

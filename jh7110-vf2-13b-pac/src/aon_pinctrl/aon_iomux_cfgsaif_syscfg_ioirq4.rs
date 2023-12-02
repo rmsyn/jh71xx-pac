@@ -5,7 +5,7 @@ pub type W = crate::W<AON_IOMUX_CFGSAIF_SYSCFG_IOIRQ4_SPEC>;
 #[doc = "Field `aon_gpiois_0_reg` reader - 1: Edge trigger, 0: Level trigger"]
 pub type AON_GPIOIS_0_REG_R = crate::FieldReader;
 #[doc = "Field `aon_gpiois_0_reg` writer - 1: Edge trigger, 0: Level trigger"]
-pub type AON_GPIOIS_0_REG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 4, O>;
+pub type AON_GPIOIS_0_REG_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
 impl R {
     #[doc = "Bits 0:3 - 1: Edge trigger, 0: Level trigger"]
     #[inline(always)]
@@ -17,12 +17,14 @@ impl W {
     #[doc = "Bits 0:3 - 1: Edge trigger, 0: Level trigger"]
     #[inline(always)]
     #[must_use]
-    pub fn aon_gpiois_0_reg(
-        &mut self,
-    ) -> AON_GPIOIS_0_REG_W<AON_IOMUX_CFGSAIF_SYSCFG_IOIRQ4_SPEC, 0> {
-        AON_GPIOIS_0_REG_W::new(self)
+    pub fn aon_gpiois_0_reg(&mut self) -> AON_GPIOIS_0_REG_W<AON_IOMUX_CFGSAIF_SYSCFG_IOIRQ4_SPEC> {
+        AON_GPIOIS_0_REG_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

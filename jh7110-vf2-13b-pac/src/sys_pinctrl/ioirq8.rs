@@ -5,7 +5,7 @@ pub type W = crate::W<IOIRQ8_SPEC>;
 #[doc = "Field `gpioiev1` reader - 1: Positive/Low, 0: Negative/High"]
 pub type GPIOIEV1_R = crate::FieldReader<u32>;
 #[doc = "Field `gpioiev1` writer - 1: Positive/Low, 0: Negative/High"]
-pub type GPIOIEV1_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 32, O, u32>;
+pub type GPIOIEV1_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl R {
     #[doc = "Bits 0:31 - 1: Positive/Low, 0: Negative/High"]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bits 0:31 - 1: Positive/Low, 0: Negative/High"]
     #[inline(always)]
     #[must_use]
-    pub fn gpioiev1(&mut self) -> GPIOIEV1_W<IOIRQ8_SPEC, 0> {
-        GPIOIEV1_W::new(self)
+    pub fn gpioiev1(&mut self) -> GPIOIEV1_W<IOIRQ8_SPEC> {
+        GPIOIEV1_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

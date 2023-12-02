@@ -5,7 +5,7 @@ pub type W = crate::W<LP_TIMEOUT_SPEC>;
 #[doc = "Field `lp_timeout` reader - LP Cell Control signal waiting carries acknowledge timeout."]
 pub type LP_TIMEOUT_R = crate::FieldReader;
 #[doc = "Field `lp_timeout` writer - LP Cell Control signal waiting carries acknowledge timeout."]
-pub type LP_TIMEOUT_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 8, O>;
+pub type LP_TIMEOUT_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 impl R {
     #[doc = "Bits 0:7 - LP Cell Control signal waiting carries acknowledge timeout."]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bits 0:7 - LP Cell Control signal waiting carries acknowledge timeout."]
     #[inline(always)]
     #[must_use]
-    pub fn lp_timeout(&mut self) -> LP_TIMEOUT_W<LP_TIMEOUT_SPEC, 0> {
-        LP_TIMEOUT_W::new(self)
+    pub fn lp_timeout(&mut self) -> LP_TIMEOUT_W<LP_TIMEOUT_SPEC> {
+        LP_TIMEOUT_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

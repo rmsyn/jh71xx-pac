@@ -5,18 +5,17 @@ pub type W = crate::W<STG_SYSCONSAIF_SYSCFG736_SPEC>;
 #[doc = "Field `u1_plda_pcie_k_phyparam_839_832` reader - u1_plda_pcie_k_phyparam_839_832"]
 pub type U1_PLDA_PCIE_K_PHYPARAM_839_832_R = crate::FieldReader;
 #[doc = "Field `u1_plda_pcie_k_phyparam_839_832` writer - u1_plda_pcie_k_phyparam_839_832"]
-pub type U1_PLDA_PCIE_K_PHYPARAM_839_832_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 8, O>;
+pub type U1_PLDA_PCIE_K_PHYPARAM_839_832_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 #[doc = "Field `u1_plda_pcie_k_rp_nep` reader - u1_plda_pcie_k_rp_nep"]
 pub type U1_PLDA_PCIE_K_RP_NEP_R = crate::BitReader;
 #[doc = "Field `u1_plda_pcie_k_rp_nep` writer - u1_plda_pcie_k_rp_nep"]
-pub type U1_PLDA_PCIE_K_RP_NEP_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U1_PLDA_PCIE_K_RP_NEP_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u1_plda_pcie_l1sub_entack` reader - u1_plda_pcie_l1sub_entack"]
 pub type U1_PLDA_PCIE_L1SUB_ENTACK_R = crate::BitReader;
 #[doc = "Field `u1_plda_pcie_l1sub_entreq` reader - u1_plda_pcie_l1sub_entreq"]
 pub type U1_PLDA_PCIE_L1SUB_ENTREQ_R = crate::BitReader;
 #[doc = "Field `u1_plda_pcie_l1sub_entreq` writer - u1_plda_pcie_l1sub_entreq"]
-pub type U1_PLDA_PCIE_L1SUB_ENTREQ_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U1_PLDA_PCIE_L1SUB_ENTREQ_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bits 0:7 - u1_plda_pcie_k_phyparam_839_832"]
     #[inline(always)]
@@ -45,26 +44,30 @@ impl W {
     #[must_use]
     pub fn u1_plda_pcie_k_phyparam_839_832(
         &mut self,
-    ) -> U1_PLDA_PCIE_K_PHYPARAM_839_832_W<STG_SYSCONSAIF_SYSCFG736_SPEC, 0> {
-        U1_PLDA_PCIE_K_PHYPARAM_839_832_W::new(self)
+    ) -> U1_PLDA_PCIE_K_PHYPARAM_839_832_W<STG_SYSCONSAIF_SYSCFG736_SPEC> {
+        U1_PLDA_PCIE_K_PHYPARAM_839_832_W::new(self, 0)
     }
     #[doc = "Bit 8 - u1_plda_pcie_k_rp_nep"]
     #[inline(always)]
     #[must_use]
     pub fn u1_plda_pcie_k_rp_nep(
         &mut self,
-    ) -> U1_PLDA_PCIE_K_RP_NEP_W<STG_SYSCONSAIF_SYSCFG736_SPEC, 8> {
-        U1_PLDA_PCIE_K_RP_NEP_W::new(self)
+    ) -> U1_PLDA_PCIE_K_RP_NEP_W<STG_SYSCONSAIF_SYSCFG736_SPEC> {
+        U1_PLDA_PCIE_K_RP_NEP_W::new(self, 8)
     }
     #[doc = "Bit 10 - u1_plda_pcie_l1sub_entreq"]
     #[inline(always)]
     #[must_use]
     pub fn u1_plda_pcie_l1sub_entreq(
         &mut self,
-    ) -> U1_PLDA_PCIE_L1SUB_ENTREQ_W<STG_SYSCONSAIF_SYSCFG736_SPEC, 10> {
-        U1_PLDA_PCIE_L1SUB_ENTREQ_W::new(self)
+    ) -> U1_PLDA_PCIE_L1SUB_ENTREQ_W<STG_SYSCONSAIF_SYSCFG736_SPEC> {
+        U1_PLDA_PCIE_L1SUB_ENTREQ_W::new(self, 10)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

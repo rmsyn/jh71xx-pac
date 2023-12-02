@@ -5,7 +5,7 @@ pub type W = crate::W<AON_IOMUX_CFGSAIF_SYSCFG_FMUX3_SPEC>;
 #[doc = "Field `aon_gpioen_0_reg` reader - Enable GPIO IRQ function."]
 pub type AON_GPIOEN_0_REG_R = crate::BitReader;
 #[doc = "Field `aon_gpioen_0_reg` writer - Enable GPIO IRQ function."]
-pub type AON_GPIOEN_0_REG_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type AON_GPIOEN_0_REG_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - Enable GPIO IRQ function."]
     #[inline(always)]
@@ -17,12 +17,14 @@ impl W {
     #[doc = "Bit 0 - Enable GPIO IRQ function."]
     #[inline(always)]
     #[must_use]
-    pub fn aon_gpioen_0_reg(
-        &mut self,
-    ) -> AON_GPIOEN_0_REG_W<AON_IOMUX_CFGSAIF_SYSCFG_FMUX3_SPEC, 0> {
-        AON_GPIOEN_0_REG_W::new(self)
+    pub fn aon_gpioen_0_reg(&mut self) -> AON_GPIOEN_0_REG_W<AON_IOMUX_CFGSAIF_SYSCFG_FMUX3_SPEC> {
+        AON_GPIOEN_0_REG_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

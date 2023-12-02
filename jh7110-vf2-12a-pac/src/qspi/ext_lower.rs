@@ -5,15 +5,15 @@ pub type W = crate::W<EXT_LOWER_SPEC>;
 #[doc = "Field `stig` reader - stig"]
 pub type STIG_R = crate::FieldReader<u16>;
 #[doc = "Field `stig` writer - stig"]
-pub type STIG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 16, O, u16>;
+pub type STIG_W<'a, REG> = crate::FieldWriter<'a, REG, 16, u16>;
 #[doc = "Field `write` reader - write"]
 pub type WRITE_R = crate::FieldReader;
 #[doc = "Field `write` writer - write"]
-pub type WRITE_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 8, O>;
+pub type WRITE_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 #[doc = "Field `read` reader - read"]
 pub type READ_R = crate::FieldReader;
 #[doc = "Field `read` writer - read"]
-pub type READ_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 8, O>;
+pub type READ_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 impl R {
     #[doc = "Bits 0:15 - stig"]
     #[inline(always)]
@@ -35,22 +35,26 @@ impl W {
     #[doc = "Bits 0:15 - stig"]
     #[inline(always)]
     #[must_use]
-    pub fn stig(&mut self) -> STIG_W<EXT_LOWER_SPEC, 0> {
-        STIG_W::new(self)
+    pub fn stig(&mut self) -> STIG_W<EXT_LOWER_SPEC> {
+        STIG_W::new(self, 0)
     }
     #[doc = "Bits 16:23 - write"]
     #[inline(always)]
     #[must_use]
-    pub fn write(&mut self) -> WRITE_W<EXT_LOWER_SPEC, 16> {
-        WRITE_W::new(self)
+    pub fn write(&mut self) -> WRITE_W<EXT_LOWER_SPEC> {
+        WRITE_W::new(self, 16)
     }
     #[doc = "Bits 24:31 - read"]
     #[inline(always)]
     #[must_use]
-    pub fn read(&mut self) -> READ_W<EXT_LOWER_SPEC, 24> {
-        READ_W::new(self)
+    pub fn read(&mut self) -> READ_W<EXT_LOWER_SPEC> {
+        READ_W::new(self, 24)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

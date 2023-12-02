@@ -5,23 +5,23 @@ pub type W = crate::W<IER_SPEC>;
 #[doc = "Field `erbfi` reader - Enable Received Data Available Interrupt. This is used to enable/disable the generation of Received Data Available Interrupt and the Character Timeout Interrupt (if in FIFO mode and FIFOs enabled). These are the second highest priority interrupts. 0 = disabled 1 = enabled"]
 pub type ERBFI_R = crate::BitReader;
 #[doc = "Field `erbfi` writer - Enable Received Data Available Interrupt. This is used to enable/disable the generation of Received Data Available Interrupt and the Character Timeout Interrupt (if in FIFO mode and FIFOs enabled). These are the second highest priority interrupts. 0 = disabled 1 = enabled"]
-pub type ERBFI_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type ERBFI_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `etbei` reader - Enable Transmit Holding Register Empty Interrupt. This is used to enable/disable the generation of Transmitter Holding Register Empty Interrupt. This is the third highest priority interrupt. 0 = disabled 1 = enabled"]
 pub type ETBEI_R = crate::BitReader;
 #[doc = "Field `etbei` writer - Enable Transmit Holding Register Empty Interrupt. This is used to enable/disable the generation of Transmitter Holding Register Empty Interrupt. This is the third highest priority interrupt. 0 = disabled 1 = enabled"]
-pub type ETBEI_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type ETBEI_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `elsi` reader - Enable Receiver Line Status Interrupt. This is used to enable/disable the generation of Receiver Line Status Interrupt. This is the highest priority interrupt. 0 = disabled 1 = enabled"]
 pub type ELSI_R = crate::BitReader;
 #[doc = "Field `elsi` writer - Enable Receiver Line Status Interrupt. This is used to enable/disable the generation of Receiver Line Status Interrupt. This is the highest priority interrupt. 0 = disabled 1 = enabled"]
-pub type ELSI_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type ELSI_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `edssi` reader - Enable Modem Status Interrupt. This is used to enable/disable the generation of Modem Status Interrupt. This is the fourth highest priority interrupt. 0 = disabled 1 = enabled"]
 pub type EDSSI_R = crate::BitReader;
 #[doc = "Field `edssi` writer - Enable Modem Status Interrupt. This is used to enable/disable the generation of Modem Status Interrupt. This is the fourth highest priority interrupt. 0 = disabled 1 = enabled"]
-pub type EDSSI_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type EDSSI_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `ptime` reader - Programmable THRE Interrupt Mode Enable that can be written to only when THRE_MODE_USER == Enabled, always readable. This is used to enable/disable the generation of THRE Interrupt. 0 = disabled 1 = enabled"]
 pub type PTIME_R = crate::BitReader;
 #[doc = "Field `ptime` writer - Programmable THRE Interrupt Mode Enable that can be written to only when THRE_MODE_USER == Enabled, always readable. This is used to enable/disable the generation of THRE Interrupt. 0 = disabled 1 = enabled"]
-pub type PTIME_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type PTIME_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - Enable Received Data Available Interrupt. This is used to enable/disable the generation of Received Data Available Interrupt and the Character Timeout Interrupt (if in FIFO mode and FIFOs enabled). These are the second highest priority interrupts. 0 = disabled 1 = enabled"]
     #[inline(always)]
@@ -53,34 +53,38 @@ impl W {
     #[doc = "Bit 0 - Enable Received Data Available Interrupt. This is used to enable/disable the generation of Received Data Available Interrupt and the Character Timeout Interrupt (if in FIFO mode and FIFOs enabled). These are the second highest priority interrupts. 0 = disabled 1 = enabled"]
     #[inline(always)]
     #[must_use]
-    pub fn erbfi(&mut self) -> ERBFI_W<IER_SPEC, 0> {
-        ERBFI_W::new(self)
+    pub fn erbfi(&mut self) -> ERBFI_W<IER_SPEC> {
+        ERBFI_W::new(self, 0)
     }
     #[doc = "Bit 1 - Enable Transmit Holding Register Empty Interrupt. This is used to enable/disable the generation of Transmitter Holding Register Empty Interrupt. This is the third highest priority interrupt. 0 = disabled 1 = enabled"]
     #[inline(always)]
     #[must_use]
-    pub fn etbei(&mut self) -> ETBEI_W<IER_SPEC, 1> {
-        ETBEI_W::new(self)
+    pub fn etbei(&mut self) -> ETBEI_W<IER_SPEC> {
+        ETBEI_W::new(self, 1)
     }
     #[doc = "Bit 2 - Enable Receiver Line Status Interrupt. This is used to enable/disable the generation of Receiver Line Status Interrupt. This is the highest priority interrupt. 0 = disabled 1 = enabled"]
     #[inline(always)]
     #[must_use]
-    pub fn elsi(&mut self) -> ELSI_W<IER_SPEC, 2> {
-        ELSI_W::new(self)
+    pub fn elsi(&mut self) -> ELSI_W<IER_SPEC> {
+        ELSI_W::new(self, 2)
     }
     #[doc = "Bit 3 - Enable Modem Status Interrupt. This is used to enable/disable the generation of Modem Status Interrupt. This is the fourth highest priority interrupt. 0 = disabled 1 = enabled"]
     #[inline(always)]
     #[must_use]
-    pub fn edssi(&mut self) -> EDSSI_W<IER_SPEC, 3> {
-        EDSSI_W::new(self)
+    pub fn edssi(&mut self) -> EDSSI_W<IER_SPEC> {
+        EDSSI_W::new(self, 3)
     }
     #[doc = "Bit 7 - Programmable THRE Interrupt Mode Enable that can be written to only when THRE_MODE_USER == Enabled, always readable. This is used to enable/disable the generation of THRE Interrupt. 0 = disabled 1 = enabled"]
     #[inline(always)]
     #[must_use]
-    pub fn ptime(&mut self) -> PTIME_W<IER_SPEC, 7> {
-        PTIME_W::new(self)
+    pub fn ptime(&mut self) -> PTIME_W<IER_SPEC> {
+        PTIME_W::new(self, 7)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

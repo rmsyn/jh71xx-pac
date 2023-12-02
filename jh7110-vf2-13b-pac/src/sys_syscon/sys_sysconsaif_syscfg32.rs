@@ -5,25 +5,25 @@ pub type W = crate::W<SYS_SYSCONSAIF_SYSCFG32_SPEC>;
 #[doc = "Field `u0_pll_wrap_pll0_frac` reader - u0_pll_wrap_pll0_frac"]
 pub type U0_PLL_WRAP_PLL0_FRAC_R = crate::FieldReader<u32>;
 #[doc = "Field `u0_pll_wrap_pll0_frac` writer - u0_pll_wrap_pll0_frac"]
-pub type U0_PLL_WRAP_PLL0_FRAC_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 24, O, u32>;
+pub type U0_PLL_WRAP_PLL0_FRAC_W<'a, REG> = crate::FieldWriter<'a, REG, 24, u32>;
 #[doc = "Field `u0_pll_wrap_pll0_gvco_bias` reader - u0_pll_wrap_pll0_gvco_bias"]
 pub type U0_PLL_WRAP_PLL0_GVCO_BIAS_R = crate::FieldReader;
 #[doc = "Field `u0_pll_wrap_pll0_gvco_bias` writer - u0_pll_wrap_pll0_gvco_bias"]
-pub type U0_PLL_WRAP_PLL0_GVCO_BIAS_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type U0_PLL_WRAP_PLL0_GVCO_BIAS_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `u0_pll_wrap_pll0_lock` reader - u0_pll_wrap_pll0_lock"]
 pub type U0_PLL_WRAP_PLL0_LOCK_R = crate::BitReader;
 #[doc = "Field `u0_pll_wrap_pll0_pd` reader - u0_pll_wrap_pll0_pd"]
 pub type U0_PLL_WRAP_PLL0_PD_R = crate::BitReader;
 #[doc = "Field `u0_pll_wrap_pll0_pd` writer - u0_pll_wrap_pll0_pd"]
-pub type U0_PLL_WRAP_PLL0_PD_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_PLL_WRAP_PLL0_PD_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_pll_wrap_pll0_postdiv1` reader - u0_pll_wrap_pll0_postdiv1"]
 pub type U0_PLL_WRAP_PLL0_POSTDIV1_R = crate::FieldReader;
 #[doc = "Field `u0_pll_wrap_pll0_postdiv1` writer - u0_pll_wrap_pll0_postdiv1"]
-pub type U0_PLL_WRAP_PLL0_POSTDIV1_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type U0_PLL_WRAP_PLL0_POSTDIV1_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `u0_pll_wrap_pll0_postdiv2` reader - u0_pll_wrap_pll0_postdiv2"]
 pub type U0_PLL_WRAP_PLL0_POSTDIV2_R = crate::FieldReader;
 #[doc = "Field `u0_pll_wrap_pll0_postdiv2` writer - u0_pll_wrap_pll0_postdiv2"]
-pub type U0_PLL_WRAP_PLL0_POSTDIV2_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type U0_PLL_WRAP_PLL0_POSTDIV2_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 impl R {
     #[doc = "Bits 0:23 - u0_pll_wrap_pll0_frac"]
     #[inline(always)]
@@ -62,42 +62,44 @@ impl W {
     #[must_use]
     pub fn u0_pll_wrap_pll0_frac(
         &mut self,
-    ) -> U0_PLL_WRAP_PLL0_FRAC_W<SYS_SYSCONSAIF_SYSCFG32_SPEC, 0> {
-        U0_PLL_WRAP_PLL0_FRAC_W::new(self)
+    ) -> U0_PLL_WRAP_PLL0_FRAC_W<SYS_SYSCONSAIF_SYSCFG32_SPEC> {
+        U0_PLL_WRAP_PLL0_FRAC_W::new(self, 0)
     }
     #[doc = "Bits 24:25 - u0_pll_wrap_pll0_gvco_bias"]
     #[inline(always)]
     #[must_use]
     pub fn u0_pll_wrap_pll0_gvco_bias(
         &mut self,
-    ) -> U0_PLL_WRAP_PLL0_GVCO_BIAS_W<SYS_SYSCONSAIF_SYSCFG32_SPEC, 24> {
-        U0_PLL_WRAP_PLL0_GVCO_BIAS_W::new(self)
+    ) -> U0_PLL_WRAP_PLL0_GVCO_BIAS_W<SYS_SYSCONSAIF_SYSCFG32_SPEC> {
+        U0_PLL_WRAP_PLL0_GVCO_BIAS_W::new(self, 24)
     }
     #[doc = "Bit 27 - u0_pll_wrap_pll0_pd"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_pll_wrap_pll0_pd(
-        &mut self,
-    ) -> U0_PLL_WRAP_PLL0_PD_W<SYS_SYSCONSAIF_SYSCFG32_SPEC, 27> {
-        U0_PLL_WRAP_PLL0_PD_W::new(self)
+    pub fn u0_pll_wrap_pll0_pd(&mut self) -> U0_PLL_WRAP_PLL0_PD_W<SYS_SYSCONSAIF_SYSCFG32_SPEC> {
+        U0_PLL_WRAP_PLL0_PD_W::new(self, 27)
     }
     #[doc = "Bits 28:29 - u0_pll_wrap_pll0_postdiv1"]
     #[inline(always)]
     #[must_use]
     pub fn u0_pll_wrap_pll0_postdiv1(
         &mut self,
-    ) -> U0_PLL_WRAP_PLL0_POSTDIV1_W<SYS_SYSCONSAIF_SYSCFG32_SPEC, 28> {
-        U0_PLL_WRAP_PLL0_POSTDIV1_W::new(self)
+    ) -> U0_PLL_WRAP_PLL0_POSTDIV1_W<SYS_SYSCONSAIF_SYSCFG32_SPEC> {
+        U0_PLL_WRAP_PLL0_POSTDIV1_W::new(self, 28)
     }
     #[doc = "Bits 30:31 - u0_pll_wrap_pll0_postdiv2"]
     #[inline(always)]
     #[must_use]
     pub fn u0_pll_wrap_pll0_postdiv2(
         &mut self,
-    ) -> U0_PLL_WRAP_PLL0_POSTDIV2_W<SYS_SYSCONSAIF_SYSCFG32_SPEC, 30> {
-        U0_PLL_WRAP_PLL0_POSTDIV2_W::new(self)
+    ) -> U0_PLL_WRAP_PLL0_POSTDIV2_W<SYS_SYSCONSAIF_SYSCFG32_SPEC> {
+        U0_PLL_WRAP_PLL0_POSTDIV2_W::new(self, 30)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

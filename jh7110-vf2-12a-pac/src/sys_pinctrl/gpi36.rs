@@ -5,19 +5,19 @@ pub type W = crate::W<GPI36_SPEC>;
 #[doc = "Field `u0_tdm16slot_pcm_rxd_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type U0_TDM16SLOT_PCM_RXD_CFG_R = crate::FieldReader;
 #[doc = "Field `u0_tdm16slot_pcm_rxd_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type U0_TDM16SLOT_PCM_RXD_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type U0_TDM16SLOT_PCM_RXD_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 #[doc = "Field `u0_tdm16slot_pcm_synon_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type U0_TDM16SLOT_PCM_SYNON_CFG_R = crate::FieldReader;
 #[doc = "Field `u0_tdm16slot_pcm_synon_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type U0_TDM16SLOT_PCM_SYNON_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type U0_TDM16SLOT_PCM_SYNON_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 #[doc = "Field `u1_can_ctrl_rxd_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type U1_CAN_CTRL_RXD_CFG_R = crate::FieldReader;
 #[doc = "Field `u1_can_ctrl_rxd_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type U1_CAN_CTRL_RXD_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type U1_CAN_CTRL_RXD_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 #[doc = "Field `u1_i2c_ic_clk_in_a_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type U1_I2C_IC_CLK_IN_A_CFG_R = crate::FieldReader;
 #[doc = "Field `u1_i2c_ic_clk_in_a_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type U1_I2C_IC_CLK_IN_A_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type U1_I2C_IC_CLK_IN_A_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 impl R {
     #[doc = "Bits 0:6 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
@@ -44,28 +44,32 @@ impl W {
     #[doc = "Bits 0:6 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
-    pub fn u0_tdm16slot_pcm_rxd_cfg(&mut self) -> U0_TDM16SLOT_PCM_RXD_CFG_W<GPI36_SPEC, 0> {
-        U0_TDM16SLOT_PCM_RXD_CFG_W::new(self)
+    pub fn u0_tdm16slot_pcm_rxd_cfg(&mut self) -> U0_TDM16SLOT_PCM_RXD_CFG_W<GPI36_SPEC> {
+        U0_TDM16SLOT_PCM_RXD_CFG_W::new(self, 0)
     }
     #[doc = "Bits 8:14 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
-    pub fn u0_tdm16slot_pcm_synon_cfg(&mut self) -> U0_TDM16SLOT_PCM_SYNON_CFG_W<GPI36_SPEC, 8> {
-        U0_TDM16SLOT_PCM_SYNON_CFG_W::new(self)
+    pub fn u0_tdm16slot_pcm_synon_cfg(&mut self) -> U0_TDM16SLOT_PCM_SYNON_CFG_W<GPI36_SPEC> {
+        U0_TDM16SLOT_PCM_SYNON_CFG_W::new(self, 8)
     }
     #[doc = "Bits 16:22 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
-    pub fn u1_can_ctrl_rxd_cfg(&mut self) -> U1_CAN_CTRL_RXD_CFG_W<GPI36_SPEC, 16> {
-        U1_CAN_CTRL_RXD_CFG_W::new(self)
+    pub fn u1_can_ctrl_rxd_cfg(&mut self) -> U1_CAN_CTRL_RXD_CFG_W<GPI36_SPEC> {
+        U1_CAN_CTRL_RXD_CFG_W::new(self, 16)
     }
     #[doc = "Bits 24:30 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
-    pub fn u1_i2c_ic_clk_in_a_cfg(&mut self) -> U1_I2C_IC_CLK_IN_A_CFG_W<GPI36_SPEC, 24> {
-        U1_I2C_IC_CLK_IN_A_CFG_W::new(self)
+    pub fn u1_i2c_ic_clk_in_a_cfg(&mut self) -> U1_I2C_IC_CLK_IN_A_CFG_W<GPI36_SPEC> {
+        U1_I2C_IC_CLK_IN_A_CFG_W::new(self, 24)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

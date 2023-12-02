@@ -5,8 +5,7 @@ pub type W = crate::W<STG_SYSCONSAIF_SYSCFG656_SPEC>;
 #[doc = "Field `u1_plda_pcie_k_phyparam_223_192` reader - u1_plda_pcie_k_phyparam_223_192"]
 pub type U1_PLDA_PCIE_K_PHYPARAM_223_192_R = crate::FieldReader<u32>;
 #[doc = "Field `u1_plda_pcie_k_phyparam_223_192` writer - u1_plda_pcie_k_phyparam_223_192"]
-pub type U1_PLDA_PCIE_K_PHYPARAM_223_192_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 32, O, u32>;
+pub type U1_PLDA_PCIE_K_PHYPARAM_223_192_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl R {
     #[doc = "Bits 0:31 - u1_plda_pcie_k_phyparam_223_192"]
     #[inline(always)]
@@ -20,10 +19,14 @@ impl W {
     #[must_use]
     pub fn u1_plda_pcie_k_phyparam_223_192(
         &mut self,
-    ) -> U1_PLDA_PCIE_K_PHYPARAM_223_192_W<STG_SYSCONSAIF_SYSCFG656_SPEC, 0> {
-        U1_PLDA_PCIE_K_PHYPARAM_223_192_W::new(self)
+    ) -> U1_PLDA_PCIE_K_PHYPARAM_223_192_W<STG_SYSCONSAIF_SYSCFG656_SPEC> {
+        U1_PLDA_PCIE_K_PHYPARAM_223_192_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

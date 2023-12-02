@@ -5,7 +5,7 @@ pub type W = crate::W<CMD_READ_AT_UPPER_SPEC>;
 #[doc = "Field `read_at_upper` reader - read_at_upper"]
 pub type READ_AT_UPPER_R = crate::FieldReader<u32>;
 #[doc = "Field `read_at_upper` writer - read_at_upper"]
-pub type READ_AT_UPPER_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 32, O, u32>;
+pub type READ_AT_UPPER_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl R {
     #[doc = "Bits 0:31 - read_at_upper"]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bits 0:31 - read_at_upper"]
     #[inline(always)]
     #[must_use]
-    pub fn read_at_upper(&mut self) -> READ_AT_UPPER_W<CMD_READ_AT_UPPER_SPEC, 0> {
-        READ_AT_UPPER_W::new(self)
+    pub fn read_at_upper(&mut self) -> READ_AT_UPPER_W<CMD_READ_AT_UPPER_SPEC> {
+        READ_AT_UPPER_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

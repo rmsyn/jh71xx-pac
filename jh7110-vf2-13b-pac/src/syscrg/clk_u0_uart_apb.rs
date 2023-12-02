@@ -5,7 +5,7 @@ pub type W = crate::W<CLK_U0_UART_APB_SPEC>;
 #[doc = "Field `clk_icg` reader - 1: Clock enable, 0: Clock disable"]
 pub type CLK_ICG_R = crate::BitReader;
 #[doc = "Field `clk_icg` writer - 1: Clock enable, 0: Clock disable"]
-pub type CLK_ICG_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type CLK_ICG_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 31 - 1: Clock enable, 0: Clock disable"]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bit 31 - 1: Clock enable, 0: Clock disable"]
     #[inline(always)]
     #[must_use]
-    pub fn clk_icg(&mut self) -> CLK_ICG_W<CLK_U0_UART_APB_SPEC, 31> {
-        CLK_ICG_W::new(self)
+    pub fn clk_icg(&mut self) -> CLK_ICG_W<CLK_U0_UART_APB_SPEC> {
+        CLK_ICG_W::new(self, 31)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

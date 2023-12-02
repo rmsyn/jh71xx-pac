@@ -5,7 +5,7 @@ pub type W = crate::W<STG_SYSCONSAIF_SYSCFG48_SPEC>;
 #[doc = "Field `u0_hifi4_breakin` reader - Debug signal"]
 pub type U0_HIFI4_BREAKIN_R = crate::BitReader;
 #[doc = "Field `u0_hifi4_breakin` writer - Debug signal"]
-pub type U0_HIFI4_BREAKIN_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_HIFI4_BREAKIN_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_hifi4_breakinack` reader - Debug signal"]
 pub type U0_HIFI4_BREAKINACK_R = crate::BitReader;
 #[doc = "Field `u0_hifi4_breakout` reader - Debug signal"]
@@ -13,7 +13,7 @@ pub type U0_HIFI4_BREAKOUT_R = crate::BitReader;
 #[doc = "Field `u0_hifi4_breakoutack` reader - Debug signal"]
 pub type U0_HIFI4_BREAKOUTACK_R = crate::BitReader;
 #[doc = "Field `u0_hifi4_breakoutack` writer - Debug signal"]
-pub type U0_HIFI4_BREAKOUTACK_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_HIFI4_BREAKOUTACK_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_hifi4_debugmode` reader - Debug signal"]
 pub type U0_HIFI4_DEBUGMODE_R = crate::BitReader;
 #[doc = "Field `u0_hifi4_doubleexceptionerror` reader - Fault Handling Signals"]
@@ -25,7 +25,7 @@ pub type U0_HIFI4_IRAM1LOADSTORE_R = crate::BitReader;
 #[doc = "Field `u0_hifi4_ocdhaltonreset` reader - Debug signal"]
 pub type U0_HIFI4_OCDHALTONRESET_R = crate::BitReader;
 #[doc = "Field `u0_hifi4_ocdhaltonreset` writer - Debug signal"]
-pub type U0_HIFI4_OCDHALTONRESET_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_HIFI4_OCDHALTONRESET_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_hifi4_pfatalerror` reader - Fault Handling Signals"]
 pub type U0_HIFI4_PFATALERROR_R = crate::BitReader;
 impl R {
@@ -84,26 +84,28 @@ impl W {
     #[doc = "Bit 0 - Debug signal"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_hifi4_breakin(&mut self) -> U0_HIFI4_BREAKIN_W<STG_SYSCONSAIF_SYSCFG48_SPEC, 0> {
-        U0_HIFI4_BREAKIN_W::new(self)
+    pub fn u0_hifi4_breakin(&mut self) -> U0_HIFI4_BREAKIN_W<STG_SYSCONSAIF_SYSCFG48_SPEC> {
+        U0_HIFI4_BREAKIN_W::new(self, 0)
     }
     #[doc = "Bit 3 - Debug signal"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_hifi4_breakoutack(
-        &mut self,
-    ) -> U0_HIFI4_BREAKOUTACK_W<STG_SYSCONSAIF_SYSCFG48_SPEC, 3> {
-        U0_HIFI4_BREAKOUTACK_W::new(self)
+    pub fn u0_hifi4_breakoutack(&mut self) -> U0_HIFI4_BREAKOUTACK_W<STG_SYSCONSAIF_SYSCFG48_SPEC> {
+        U0_HIFI4_BREAKOUTACK_W::new(self, 3)
     }
     #[doc = "Bit 8 - Debug signal"]
     #[inline(always)]
     #[must_use]
     pub fn u0_hifi4_ocdhaltonreset(
         &mut self,
-    ) -> U0_HIFI4_OCDHALTONRESET_W<STG_SYSCONSAIF_SYSCFG48_SPEC, 8> {
-        U0_HIFI4_OCDHALTONRESET_W::new(self)
+    ) -> U0_HIFI4_OCDHALTONRESET_W<STG_SYSCONSAIF_SYSCFG48_SPEC> {
+        U0_HIFI4_OCDHALTONRESET_W::new(self, 8)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

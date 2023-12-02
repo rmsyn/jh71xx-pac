@@ -5,7 +5,7 @@ pub type W = crate::W<TIMEOUT_SEQ_THD_SPEC>;
 #[doc = "Field `timeout_seq_thd` reader - Threshold Sequence Timeout"]
 pub type TIMEOUT_SEQ_THD_R = crate::FieldReader<u16>;
 #[doc = "Field `timeout_seq_thd` writer - Threshold Sequence Timeout"]
-pub type TIMEOUT_SEQ_THD_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 16, O, u16>;
+pub type TIMEOUT_SEQ_THD_W<'a, REG> = crate::FieldWriter<'a, REG, 16, u16>;
 impl R {
     #[doc = "Bits 0:15 - Threshold Sequence Timeout"]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bits 0:15 - Threshold Sequence Timeout"]
     #[inline(always)]
     #[must_use]
-    pub fn timeout_seq_thd(&mut self) -> TIMEOUT_SEQ_THD_W<TIMEOUT_SEQ_THD_SPEC, 0> {
-        TIMEOUT_SEQ_THD_W::new(self)
+    pub fn timeout_seq_thd(&mut self) -> TIMEOUT_SEQ_THD_W<TIMEOUT_SEQ_THD_SPEC> {
+        TIMEOUT_SEQ_THD_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

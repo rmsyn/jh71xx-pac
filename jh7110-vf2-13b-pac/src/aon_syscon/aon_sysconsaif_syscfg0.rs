@@ -5,7 +5,7 @@ pub type W = crate::W<AON_SYSCONSAIF_SYSCFG0_SPEC>;
 #[doc = "Field `aon_gp_reg` reader - aon_gp_reg"]
 pub type AON_GP_REG_R = crate::FieldReader<u32>;
 #[doc = "Field `aon_gp_reg` writer - aon_gp_reg"]
-pub type AON_GP_REG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 32, O, u32>;
+pub type AON_GP_REG_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl R {
     #[doc = "Bits 0:31 - aon_gp_reg"]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bits 0:31 - aon_gp_reg"]
     #[inline(always)]
     #[must_use]
-    pub fn aon_gp_reg(&mut self) -> AON_GP_REG_W<AON_SYSCONSAIF_SYSCFG0_SPEC, 0> {
-        AON_GP_REG_W::new(self)
+    pub fn aon_gp_reg(&mut self) -> AON_GP_REG_W<AON_SYSCONSAIF_SYSCFG0_SPEC> {
+        AON_GP_REG_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

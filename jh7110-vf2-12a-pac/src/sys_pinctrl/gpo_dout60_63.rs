@@ -5,19 +5,19 @@ pub type W = crate::W<GPO_DOUT60_63_SPEC>;
 #[doc = "Field `gpo60_dout` reader - The selected output signal for GPIO60. The register value indicates the selected GPIO output index signal index from GPIO output signal list 0-107. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
 pub type GPO60_DOUT_R = crate::FieldReader;
 #[doc = "Field `gpo60_dout` writer - The selected output signal for GPIO60. The register value indicates the selected GPIO output index signal index from GPIO output signal list 0-107. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
-pub type GPO60_DOUT_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type GPO60_DOUT_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 #[doc = "Field `gpo61_dout` reader - The selected output signal for GPIO61. The register value indicates the selected GPIO output index signal index from GPIO output signal list 0-107. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
 pub type GPO61_DOUT_R = crate::FieldReader;
 #[doc = "Field `gpo61_dout` writer - The selected output signal for GPIO61. The register value indicates the selected GPIO output index signal index from GPIO output signal list 0-107. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
-pub type GPO61_DOUT_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type GPO61_DOUT_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 #[doc = "Field `gpo62_dout` reader - The selected output signal for GPIO62. The register value indicates the selected GPIO output index signal index from GPIO output signal list 0-107. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
 pub type GPO62_DOUT_R = crate::FieldReader;
 #[doc = "Field `gpo62_dout` writer - The selected output signal for GPIO62. The register value indicates the selected GPIO output index signal index from GPIO output signal list 0-107. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
-pub type GPO62_DOUT_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type GPO62_DOUT_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 #[doc = "Field `gpo63_dout` reader - The selected output signal for GPIO63. The register value indicates the selected GPIO output index signal index from GPIO output signal list 0-107. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
 pub type GPO63_DOUT_R = crate::FieldReader;
 #[doc = "Field `gpo63_dout` writer - The selected output signal for GPIO63. The register value indicates the selected GPIO output index signal index from GPIO output signal list 0-107. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
-pub type GPO63_DOUT_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type GPO63_DOUT_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 impl R {
     #[doc = "Bits 0:6 - The selected output signal for GPIO60. The register value indicates the selected GPIO output index signal index from GPIO output signal list 0-107. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
     #[inline(always)]
@@ -44,28 +44,32 @@ impl W {
     #[doc = "Bits 0:6 - The selected output signal for GPIO60. The register value indicates the selected GPIO output index signal index from GPIO output signal list 0-107. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
     #[inline(always)]
     #[must_use]
-    pub fn gpo60_dout(&mut self) -> GPO60_DOUT_W<GPO_DOUT60_63_SPEC, 0> {
-        GPO60_DOUT_W::new(self)
+    pub fn gpo60_dout(&mut self) -> GPO60_DOUT_W<GPO_DOUT60_63_SPEC> {
+        GPO60_DOUT_W::new(self, 0)
     }
     #[doc = "Bits 8:14 - The selected output signal for GPIO61. The register value indicates the selected GPIO output index signal index from GPIO output signal list 0-107. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
     #[inline(always)]
     #[must_use]
-    pub fn gpo61_dout(&mut self) -> GPO61_DOUT_W<GPO_DOUT60_63_SPEC, 8> {
-        GPO61_DOUT_W::new(self)
+    pub fn gpo61_dout(&mut self) -> GPO61_DOUT_W<GPO_DOUT60_63_SPEC> {
+        GPO61_DOUT_W::new(self, 8)
     }
     #[doc = "Bits 16:22 - The selected output signal for GPIO62. The register value indicates the selected GPIO output index signal index from GPIO output signal list 0-107. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
     #[inline(always)]
     #[must_use]
-    pub fn gpo62_dout(&mut self) -> GPO62_DOUT_W<GPO_DOUT60_63_SPEC, 16> {
-        GPO62_DOUT_W::new(self)
+    pub fn gpo62_dout(&mut self) -> GPO62_DOUT_W<GPO_DOUT60_63_SPEC> {
+        GPO62_DOUT_W::new(self, 16)
     }
     #[doc = "Bits 24:30 - The selected output signal for GPIO63. The register value indicates the selected GPIO output index signal index from GPIO output signal list 0-107. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
     #[inline(always)]
     #[must_use]
-    pub fn gpo63_dout(&mut self) -> GPO63_DOUT_W<GPO_DOUT60_63_SPEC, 24> {
-        GPO63_DOUT_W::new(self)
+    pub fn gpo63_dout(&mut self) -> GPO63_DOUT_W<GPO_DOUT60_63_SPEC> {
+        GPO63_DOUT_W::new(self, 24)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

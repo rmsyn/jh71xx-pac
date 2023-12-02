@@ -7,8 +7,7 @@ pub type U1_PLDA_PCIE_TL_CTRL_HOTPLUG_R = crate::FieldReader<u16>;
 #[doc = "Field `u1_plda_pcie_tl_report_hotplug` reader - u1_plda_pcie_tl_report_hotplug"]
 pub type U1_PLDA_PCIE_TL_REPORT_HOTPLUG_R = crate::FieldReader<u16>;
 #[doc = "Field `u1_plda_pcie_tl_report_hotplug` writer - u1_plda_pcie_tl_report_hotplug"]
-pub type U1_PLDA_PCIE_TL_REPORT_HOTPLUG_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 16, O, u16>;
+pub type U1_PLDA_PCIE_TL_REPORT_HOTPLUG_W<'a, REG> = crate::FieldWriter<'a, REG, 16, u16>;
 impl R {
     #[doc = "Bits 0:15 - u1_plda_pcie_tl_ctrl_hotplug"]
     #[inline(always)]
@@ -27,10 +26,14 @@ impl W {
     #[must_use]
     pub fn u1_plda_pcie_tl_report_hotplug(
         &mut self,
-    ) -> U1_PLDA_PCIE_TL_REPORT_HOTPLUG_W<STG_SYSCONSAIF_SYSCFG928_SPEC, 16> {
-        U1_PLDA_PCIE_TL_REPORT_HOTPLUG_W::new(self)
+    ) -> U1_PLDA_PCIE_TL_REPORT_HOTPLUG_W<STG_SYSCONSAIF_SYSCFG928_SPEC> {
+        U1_PLDA_PCIE_TL_REPORT_HOTPLUG_W::new(self, 16)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

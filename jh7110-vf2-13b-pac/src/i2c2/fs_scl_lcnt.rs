@@ -5,7 +5,7 @@ pub type W = crate::W<FS_SCL_LCNT_SPEC>;
 #[doc = "Field `fs_scl_lcnt` reader - fs_scl_lcnt"]
 pub type FS_SCL_LCNT_R = crate::FieldReader<u32>;
 #[doc = "Field `fs_scl_lcnt` writer - fs_scl_lcnt"]
-pub type FS_SCL_LCNT_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 32, O, u32>;
+pub type FS_SCL_LCNT_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl R {
     #[doc = "Bits 0:31 - fs_scl_lcnt"]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bits 0:31 - fs_scl_lcnt"]
     #[inline(always)]
     #[must_use]
-    pub fn fs_scl_lcnt(&mut self) -> FS_SCL_LCNT_W<FS_SCL_LCNT_SPEC, 0> {
-        FS_SCL_LCNT_W::new(self)
+    pub fn fs_scl_lcnt(&mut self) -> FS_SCL_LCNT_W<FS_SCL_LCNT_SPEC> {
+        FS_SCL_LCNT_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

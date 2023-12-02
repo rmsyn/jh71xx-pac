@@ -5,8 +5,8 @@ pub type W = crate::W<STG_SYSCONSAIF_SYSCFG28_SPEC>;
 #[doc = "Field `u0_e2_sft7110_nmi_0_rnmi_exception_vector` reader - u0_e2_sft7110_nmi_0_rnmi_exception_vector"]
 pub type U0_E2_SFT7110_NMI_0_RNMI_EXCEPTION_VECTOR_R = crate::FieldReader<u32>;
 #[doc = "Field `u0_e2_sft7110_nmi_0_rnmi_exception_vector` writer - u0_e2_sft7110_nmi_0_rnmi_exception_vector"]
-pub type U0_E2_SFT7110_NMI_0_RNMI_EXCEPTION_VECTOR_W<'a, REG, const O: u8> =
-    crate::FieldWriter<'a, REG, 32, O, u32>;
+pub type U0_E2_SFT7110_NMI_0_RNMI_EXCEPTION_VECTOR_W<'a, REG> =
+    crate::FieldWriter<'a, REG, 32, u32>;
 impl R {
     #[doc = "Bits 0:31 - u0_e2_sft7110_nmi_0_rnmi_exception_vector"]
     #[inline(always)]
@@ -22,10 +22,14 @@ impl W {
     #[must_use]
     pub fn u0_e2_sft7110_nmi_0_rnmi_exception_vector(
         &mut self,
-    ) -> U0_E2_SFT7110_NMI_0_RNMI_EXCEPTION_VECTOR_W<STG_SYSCONSAIF_SYSCFG28_SPEC, 0> {
-        U0_E2_SFT7110_NMI_0_RNMI_EXCEPTION_VECTOR_W::new(self)
+    ) -> U0_E2_SFT7110_NMI_0_RNMI_EXCEPTION_VECTOR_W<STG_SYSCONSAIF_SYSCFG28_SPEC> {
+        U0_E2_SFT7110_NMI_0_RNMI_EXCEPTION_VECTOR_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

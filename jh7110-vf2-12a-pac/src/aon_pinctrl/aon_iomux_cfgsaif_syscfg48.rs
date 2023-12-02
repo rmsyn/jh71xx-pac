@@ -5,7 +5,7 @@ pub type W = crate::W<AON_IOMUX_CFGSAIF_SYSCFG48_SPEC>;
 #[doc = "Field `padcfg_pad_testen_pos` reader - Power-on-Start (POS) enabler - 1: Enable active pull down for loss of core power, 0: Active pull-down capability disabled"]
 pub type PADCFG_PAD_TESTEN_POS_R = crate::BitReader;
 #[doc = "Field `padcfg_pad_testen_pos` writer - Power-on-Start (POS) enabler - 1: Enable active pull down for loss of core power, 0: Active pull-down capability disabled"]
-pub type PADCFG_PAD_TESTEN_POS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type PADCFG_PAD_TESTEN_POS_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - Power-on-Start (POS) enabler - 1: Enable active pull down for loss of core power, 0: Active pull-down capability disabled"]
     #[inline(always)]
@@ -19,10 +19,14 @@ impl W {
     #[must_use]
     pub fn padcfg_pad_testen_pos(
         &mut self,
-    ) -> PADCFG_PAD_TESTEN_POS_W<AON_IOMUX_CFGSAIF_SYSCFG48_SPEC, 0> {
-        PADCFG_PAD_TESTEN_POS_W::new(self)
+    ) -> PADCFG_PAD_TESTEN_POS_W<AON_IOMUX_CFGSAIF_SYSCFG48_SPEC> {
+        PADCFG_PAD_TESTEN_POS_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

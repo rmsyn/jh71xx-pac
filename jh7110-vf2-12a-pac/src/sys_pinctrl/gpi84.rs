@@ -5,19 +5,19 @@ pub type W = crate::W<GPI84_SPEC>;
 #[doc = "Field `u5_ssp_spi_sspfssin_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type U5_SSP_SPI_SSPFSSIN_CFG_R = crate::FieldReader;
 #[doc = "Field `u5_ssp_spi_sspfssin_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type U5_SSP_SPI_SSPFSSIN_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type U5_SSP_SPI_SSPFSSIN_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 #[doc = "Field `u5_ssp_spi_ssprxd_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type U5_SSP_SPI_SSPRXD_CFG_R = crate::FieldReader;
 #[doc = "Field `u5_ssp_spi_ssprxd_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type U5_SSP_SPI_SSPRXD_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type U5_SSP_SPI_SSPRXD_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 #[doc = "Field `u6_i2c_ic_clk_in_a_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type U6_I2C_IC_CLK_IN_A_CFG_R = crate::FieldReader;
 #[doc = "Field `u6_i2c_ic_clk_in_a_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type U6_I2C_IC_CLK_IN_A_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type U6_I2C_IC_CLK_IN_A_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 #[doc = "Field `u6_i2c_ic_data_in_a_cfg` reader - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
 pub type U6_I2C_IC_DATA_IN_A_CFG_R = crate::FieldReader;
 #[doc = "Field `u6_i2c_ic_data_in_a_cfg` writer - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
-pub type U6_I2C_IC_DATA_IN_A_CFG_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 7, O>;
+pub type U6_I2C_IC_DATA_IN_A_CFG_W<'a, REG> = crate::FieldWriter<'a, REG, 7>;
 impl R {
     #[doc = "Bits 0:6 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
@@ -44,28 +44,32 @@ impl W {
     #[doc = "Bits 0:6 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
-    pub fn u5_ssp_spi_sspfssin_cfg(&mut self) -> U5_SSP_SPI_SSPFSSIN_CFG_W<GPI84_SPEC, 0> {
-        U5_SSP_SPI_SSPFSSIN_CFG_W::new(self)
+    pub fn u5_ssp_spi_sspfssin_cfg(&mut self) -> U5_SSP_SPI_SSPFSSIN_CFG_W<GPI84_SPEC> {
+        U5_SSP_SPI_SSPFSSIN_CFG_W::new(self, 0)
     }
     #[doc = "Bits 8:14 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
-    pub fn u5_ssp_spi_ssprxd_cfg(&mut self) -> U5_SSP_SPI_SSPRXD_CFG_W<GPI84_SPEC, 8> {
-        U5_SSP_SPI_SSPRXD_CFG_W::new(self)
+    pub fn u5_ssp_spi_ssprxd_cfg(&mut self) -> U5_SSP_SPI_SSPRXD_CFG_W<GPI84_SPEC> {
+        U5_SSP_SPI_SSPRXD_CFG_W::new(self, 8)
     }
     #[doc = "Bits 16:22 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
-    pub fn u6_i2c_ic_clk_in_a_cfg(&mut self) -> U6_I2C_IC_CLK_IN_A_CFG_W<GPI84_SPEC, 16> {
-        U6_I2C_IC_CLK_IN_A_CFG_W::new(self)
+    pub fn u6_i2c_ic_clk_in_a_cfg(&mut self) -> U6_I2C_IC_CLK_IN_A_CFG_W<GPI84_SPEC> {
+        U6_I2C_IC_CLK_IN_A_CFG_W::new(self, 16)
     }
     #[doc = "Bits 24:30 - The register value indicates the selected GPIO number + 2 (GPIO2 - GPIO63, GPIO0 and GPIO1 are not available) for the input signal."]
     #[inline(always)]
     #[must_use]
-    pub fn u6_i2c_ic_data_in_a_cfg(&mut self) -> U6_I2C_IC_DATA_IN_A_CFG_W<GPI84_SPEC, 24> {
-        U6_I2C_IC_DATA_IN_A_CFG_W::new(self)
+    pub fn u6_i2c_ic_data_in_a_cfg(&mut self) -> U6_I2C_IC_DATA_IN_A_CFG_W<GPI84_SPEC> {
+        U6_I2C_IC_DATA_IN_A_CFG_W::new(self, 24)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

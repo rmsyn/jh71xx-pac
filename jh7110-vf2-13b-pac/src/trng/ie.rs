@@ -5,19 +5,19 @@ pub type W = crate::W<IE_SPEC>;
 #[doc = "Field `rand_rdy_en` reader - RAND Ready Enable"]
 pub type RAND_RDY_EN_R = crate::BitReader;
 #[doc = "Field `rand_rdy_en` writer - RAND Ready Enable"]
-pub type RAND_RDY_EN_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type RAND_RDY_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `seed_done_en` reader - Seed Done Enable"]
 pub type SEED_DONE_EN_R = crate::BitReader;
 #[doc = "Field `seed_done_en` writer - Seed Done Enable"]
-pub type SEED_DONE_EN_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type SEED_DONE_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `lfsr_lockup_en` reader - LFSR Lockup Enable"]
 pub type LFSR_LOCKUP_EN_R = crate::BitReader;
 #[doc = "Field `lfsr_lockup_en` writer - LFSR Lockup Enable"]
-pub type LFSR_LOCKUP_EN_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type LFSR_LOCKUP_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `glbl_en` reader - Global Enable"]
 pub type GLBL_EN_R = crate::BitReader;
 #[doc = "Field `glbl_en` writer - Global Enable"]
-pub type GLBL_EN_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type GLBL_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - RAND Ready Enable"]
     #[inline(always)]
@@ -44,28 +44,32 @@ impl W {
     #[doc = "Bit 0 - RAND Ready Enable"]
     #[inline(always)]
     #[must_use]
-    pub fn rand_rdy_en(&mut self) -> RAND_RDY_EN_W<IE_SPEC, 0> {
-        RAND_RDY_EN_W::new(self)
+    pub fn rand_rdy_en(&mut self) -> RAND_RDY_EN_W<IE_SPEC> {
+        RAND_RDY_EN_W::new(self, 0)
     }
     #[doc = "Bit 1 - Seed Done Enable"]
     #[inline(always)]
     #[must_use]
-    pub fn seed_done_en(&mut self) -> SEED_DONE_EN_W<IE_SPEC, 1> {
-        SEED_DONE_EN_W::new(self)
+    pub fn seed_done_en(&mut self) -> SEED_DONE_EN_W<IE_SPEC> {
+        SEED_DONE_EN_W::new(self, 1)
     }
     #[doc = "Bit 4 - LFSR Lockup Enable"]
     #[inline(always)]
     #[must_use]
-    pub fn lfsr_lockup_en(&mut self) -> LFSR_LOCKUP_EN_W<IE_SPEC, 4> {
-        LFSR_LOCKUP_EN_W::new(self)
+    pub fn lfsr_lockup_en(&mut self) -> LFSR_LOCKUP_EN_W<IE_SPEC> {
+        LFSR_LOCKUP_EN_W::new(self, 4)
     }
     #[doc = "Bit 31 - Global Enable"]
     #[inline(always)]
     #[must_use]
-    pub fn glbl_en(&mut self) -> GLBL_EN_W<IE_SPEC, 31> {
-        GLBL_EN_W::new(self)
+    pub fn glbl_en(&mut self) -> GLBL_EN_W<IE_SPEC> {
+        GLBL_EN_W::new(self, 31)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

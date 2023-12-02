@@ -7,40 +7,33 @@ pub type U0_SFT7110_NOC_BUS_OIC_EVEMON_6_TRIGGER_R = crate::BitReader;
 #[doc = "Field `u0_sft7110_noc_bus_oic_ignore_modifiable_0` reader - u0_sft7110_noc_bus_oic_ignore_modifiable_0"]
 pub type U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_0_R = crate::BitReader;
 #[doc = "Field `u0_sft7110_noc_bus_oic_ignore_modifiable_0` writer - u0_sft7110_noc_bus_oic_ignore_modifiable_0"]
-pub type U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_0_W<'a, REG, const O: u8> =
-    crate::BitWriter<'a, REG, O>;
+pub type U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_0_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_sft7110_noc_bus_oic_ignore_modifiable_1` reader - u0_sft7110_noc_bus_oic_ignore_modifiable_1"]
 pub type U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_1_R = crate::BitReader;
 #[doc = "Field `u0_sft7110_noc_bus_oic_ignore_modifiable_1` writer - u0_sft7110_noc_bus_oic_ignore_modifiable_1"]
-pub type U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_1_W<'a, REG, const O: u8> =
-    crate::BitWriter<'a, REG, O>;
+pub type U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_1_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_sft7110_noc_bus_oic_ignore_modifiable_2` reader - u0_sft7110_noc_bus_oic_ignore_modifiable_2"]
 pub type U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_2_R = crate::BitReader;
 #[doc = "Field `u0_sft7110_noc_bus_oic_ignore_modifiable_2` writer - u0_sft7110_noc_bus_oic_ignore_modifiable_2"]
-pub type U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_2_W<'a, REG, const O: u8> =
-    crate::BitWriter<'a, REG, O>;
+pub type U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_2_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_sft7110_noc_bus_oic_ignore_modifiable_3` reader - u0_sft7110_noc_bus_oic_ignore_modifiable_3"]
 pub type U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_3_R = crate::BitReader;
 #[doc = "Field `u0_sft7110_noc_bus_oic_ignore_modifiable_3` writer - u0_sft7110_noc_bus_oic_ignore_modifiable_3"]
-pub type U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_3_W<'a, REG, const O: u8> =
-    crate::BitWriter<'a, REG, O>;
+pub type U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_3_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_sft7110_noc_bus_oic_ignore_modifiable_4` reader - u0_sft7110_noc_bus_oic_ignore_modifiable_4"]
 pub type U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_4_R = crate::BitReader;
 #[doc = "Field `u0_sft7110_noc_bus_oic_ignore_modifiable_4` writer - u0_sft7110_noc_bus_oic_ignore_modifiable_4"]
-pub type U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_4_W<'a, REG, const O: u8> =
-    crate::BitWriter<'a, REG, O>;
+pub type U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_4_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_sft7110_noc_bus_oic_evemon_7_start` reader - u0_sft7110_noc_bus_oic_evemon_7_start"]
 pub type U0_SFT7110_NOC_BUS_OIC_EVEMON_7_START_R = crate::BitReader;
 #[doc = "Field `u0_sft7110_noc_bus_oic_evemon_7_start` writer - u0_sft7110_noc_bus_oic_evemon_7_start"]
-pub type U0_SFT7110_NOC_BUS_OIC_EVEMON_7_START_W<'a, REG, const O: u8> =
-    crate::BitWriter<'a, REG, O>;
+pub type U0_SFT7110_NOC_BUS_OIC_EVEMON_7_START_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_sft7110_noc_bus_oic_evemon_7_trigger` reader - u0_sft7110_noc_bus_oic_evemon_7_trigger"]
 pub type U0_SFT7110_NOC_BUS_OIC_EVEMON_7_TRIGGER_R = crate::BitReader;
 #[doc = "Field `u0_sft7110_noc_bus_oic_evemon_8_start` reader - u0_sft7110_noc_bus_oic_evemon_8_start"]
 pub type U0_SFT7110_NOC_BUS_OIC_EVEMON_8_START_R = crate::BitReader;
 #[doc = "Field `u0_sft7110_noc_bus_oic_evemon_8_start` writer - u0_sft7110_noc_bus_oic_evemon_8_start"]
-pub type U0_SFT7110_NOC_BUS_OIC_EVEMON_8_START_W<'a, REG, const O: u8> =
-    crate::BitWriter<'a, REG, O>;
+pub type U0_SFT7110_NOC_BUS_OIC_EVEMON_8_START_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_sft7110_noc_bus_oic_evemon_8_trigger` reader - u0_sft7110_noc_bus_oic_evemon_8_trigger"]
 pub type U0_SFT7110_NOC_BUS_OIC_EVEMON_8_TRIGGER_R = crate::BitReader;
 impl R {
@@ -117,58 +110,62 @@ impl W {
     #[must_use]
     pub fn u0_sft7110_noc_bus_oic_ignore_modifiable_0(
         &mut self,
-    ) -> U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_0_W<SYS_SYSCONSAIF_SYSCFG56_SPEC, 5> {
-        U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_0_W::new(self)
+    ) -> U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_0_W<SYS_SYSCONSAIF_SYSCFG56_SPEC> {
+        U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_0_W::new(self, 5)
     }
     #[doc = "Bit 6 - u0_sft7110_noc_bus_oic_ignore_modifiable_1"]
     #[inline(always)]
     #[must_use]
     pub fn u0_sft7110_noc_bus_oic_ignore_modifiable_1(
         &mut self,
-    ) -> U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_1_W<SYS_SYSCONSAIF_SYSCFG56_SPEC, 6> {
-        U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_1_W::new(self)
+    ) -> U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_1_W<SYS_SYSCONSAIF_SYSCFG56_SPEC> {
+        U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_1_W::new(self, 6)
     }
     #[doc = "Bit 7 - u0_sft7110_noc_bus_oic_ignore_modifiable_2"]
     #[inline(always)]
     #[must_use]
     pub fn u0_sft7110_noc_bus_oic_ignore_modifiable_2(
         &mut self,
-    ) -> U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_2_W<SYS_SYSCONSAIF_SYSCFG56_SPEC, 7> {
-        U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_2_W::new(self)
+    ) -> U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_2_W<SYS_SYSCONSAIF_SYSCFG56_SPEC> {
+        U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_2_W::new(self, 7)
     }
     #[doc = "Bit 8 - u0_sft7110_noc_bus_oic_ignore_modifiable_3"]
     #[inline(always)]
     #[must_use]
     pub fn u0_sft7110_noc_bus_oic_ignore_modifiable_3(
         &mut self,
-    ) -> U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_3_W<SYS_SYSCONSAIF_SYSCFG56_SPEC, 8> {
-        U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_3_W::new(self)
+    ) -> U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_3_W<SYS_SYSCONSAIF_SYSCFG56_SPEC> {
+        U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_3_W::new(self, 8)
     }
     #[doc = "Bit 9 - u0_sft7110_noc_bus_oic_ignore_modifiable_4"]
     #[inline(always)]
     #[must_use]
     pub fn u0_sft7110_noc_bus_oic_ignore_modifiable_4(
         &mut self,
-    ) -> U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_4_W<SYS_SYSCONSAIF_SYSCFG56_SPEC, 9> {
-        U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_4_W::new(self)
+    ) -> U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_4_W<SYS_SYSCONSAIF_SYSCFG56_SPEC> {
+        U0_SFT7110_NOC_BUS_OIC_IGNORE_MODIFIABLE_4_W::new(self, 9)
     }
     #[doc = "Bit 15 - u0_sft7110_noc_bus_oic_evemon_7_start"]
     #[inline(always)]
     #[must_use]
     pub fn u0_sft7110_noc_bus_oic_evemon_7_start(
         &mut self,
-    ) -> U0_SFT7110_NOC_BUS_OIC_EVEMON_7_START_W<SYS_SYSCONSAIF_SYSCFG56_SPEC, 15> {
-        U0_SFT7110_NOC_BUS_OIC_EVEMON_7_START_W::new(self)
+    ) -> U0_SFT7110_NOC_BUS_OIC_EVEMON_7_START_W<SYS_SYSCONSAIF_SYSCFG56_SPEC> {
+        U0_SFT7110_NOC_BUS_OIC_EVEMON_7_START_W::new(self, 15)
     }
     #[doc = "Bit 17 - u0_sft7110_noc_bus_oic_evemon_8_start"]
     #[inline(always)]
     #[must_use]
     pub fn u0_sft7110_noc_bus_oic_evemon_8_start(
         &mut self,
-    ) -> U0_SFT7110_NOC_BUS_OIC_EVEMON_8_START_W<SYS_SYSCONSAIF_SYSCFG56_SPEC, 17> {
-        U0_SFT7110_NOC_BUS_OIC_EVEMON_8_START_W::new(self)
+    ) -> U0_SFT7110_NOC_BUS_OIC_EVEMON_8_START_W<SYS_SYSCONSAIF_SYSCFG56_SPEC> {
+        U0_SFT7110_NOC_BUS_OIC_EVEMON_8_START_W::new(self, 17)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

@@ -5,15 +5,15 @@ pub type W = crate::W<STG_SYSCONSAIF_SYSCFG328_SPEC>;
 #[doc = "Field `u0_plda_pcie_pf3_offset` reader - u0_plda_pcie_pf3_offset"]
 pub type U0_PLDA_PCIE_PF3_OFFSET_R = crate::FieldReader<u32>;
 #[doc = "Field `u0_plda_pcie_pf3_offset` writer - u0_plda_pcie_pf3_offset"]
-pub type U0_PLDA_PCIE_PF3_OFFSET_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 20, O, u32>;
+pub type U0_PLDA_PCIE_PF3_OFFSET_W<'a, REG> = crate::FieldWriter<'a, REG, 20, u32>;
 #[doc = "Field `u0_plda_pcie_phy_mode` reader - u0_plda_pcie_phy_mode"]
 pub type U0_PLDA_PCIE_PHY_MODE_R = crate::FieldReader;
 #[doc = "Field `u0_plda_pcie_phy_mode` writer - u0_plda_pcie_phy_mode"]
-pub type U0_PLDA_PCIE_PHY_MODE_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 2, O>;
+pub type U0_PLDA_PCIE_PHY_MODE_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 #[doc = "Field `u0_plda_pcie_pl_clkrem_allow` reader - u0_plda_pcie_pl_clkrem_allow"]
 pub type U0_PLDA_PCIE_PL_CLKREM_ALLOW_R = crate::BitReader;
 #[doc = "Field `u0_plda_pcie_pl_clkrem_allow` writer - u0_plda_pcie_pl_clkrem_allow"]
-pub type U0_PLDA_PCIE_PL_CLKREM_ALLOW_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_PLDA_PCIE_PL_CLKREM_ALLOW_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_plda_pcie_pl_clkreq_oen` reader - u0_plda_pcie_pl_clkreq_oen"]
 pub type U0_PLDA_PCIE_PL_CLKREQ_OEN_R = crate::BitReader;
 #[doc = "Field `u0_plda_pcie_pl_equ_phase` reader - u0_plda_pcie_pl_equ_phase"]
@@ -58,26 +58,30 @@ impl W {
     #[must_use]
     pub fn u0_plda_pcie_pf3_offset(
         &mut self,
-    ) -> U0_PLDA_PCIE_PF3_OFFSET_W<STG_SYSCONSAIF_SYSCFG328_SPEC, 0> {
-        U0_PLDA_PCIE_PF3_OFFSET_W::new(self)
+    ) -> U0_PLDA_PCIE_PF3_OFFSET_W<STG_SYSCONSAIF_SYSCFG328_SPEC> {
+        U0_PLDA_PCIE_PF3_OFFSET_W::new(self, 0)
     }
     #[doc = "Bits 20:21 - u0_plda_pcie_phy_mode"]
     #[inline(always)]
     #[must_use]
     pub fn u0_plda_pcie_phy_mode(
         &mut self,
-    ) -> U0_PLDA_PCIE_PHY_MODE_W<STG_SYSCONSAIF_SYSCFG328_SPEC, 20> {
-        U0_PLDA_PCIE_PHY_MODE_W::new(self)
+    ) -> U0_PLDA_PCIE_PHY_MODE_W<STG_SYSCONSAIF_SYSCFG328_SPEC> {
+        U0_PLDA_PCIE_PHY_MODE_W::new(self, 20)
     }
     #[doc = "Bit 22 - u0_plda_pcie_pl_clkrem_allow"]
     #[inline(always)]
     #[must_use]
     pub fn u0_plda_pcie_pl_clkrem_allow(
         &mut self,
-    ) -> U0_PLDA_PCIE_PL_CLKREM_ALLOW_W<STG_SYSCONSAIF_SYSCFG328_SPEC, 22> {
-        U0_PLDA_PCIE_PL_CLKREM_ALLOW_W::new(self)
+    ) -> U0_PLDA_PCIE_PL_CLKREM_ALLOW_W<STG_SYSCONSAIF_SYSCFG328_SPEC> {
+        U0_PLDA_PCIE_PL_CLKREM_ALLOW_W::new(self, 22)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

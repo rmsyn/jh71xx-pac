@@ -5,39 +5,39 @@ pub type W = crate::W<CTRL_SPEC>;
 #[doc = "Field `en` reader - PWM PTC enable"]
 pub type EN_R = crate::BitReader;
 #[doc = "Field `en` writer - PWM PTC enable"]
-pub type EN_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type EN_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `eclk` reader - PWM PTC enable clock"]
 pub type ECLK_R = crate::BitReader;
 #[doc = "Field `eclk` writer - PWM PTC enable clock"]
-pub type ECLK_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type ECLK_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `nec` reader - PWM PTC nec"]
 pub type NEC_R = crate::BitReader;
 #[doc = "Field `nec` writer - PWM PTC nec"]
-pub type NEC_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type NEC_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `oe` reader - PWM PTC oe"]
 pub type OE_R = crate::BitReader;
 #[doc = "Field `oe` writer - PWM PTC oe"]
-pub type OE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type OE_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `single` reader - PWM PTC single"]
 pub type SINGLE_R = crate::BitReader;
 #[doc = "Field `single` writer - PWM PTC single"]
-pub type SINGLE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type SINGLE_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `inte` reader - PWM PTC interrupt enable"]
 pub type INTE_R = crate::BitReader;
 #[doc = "Field `inte` writer - PWM PTC interrupt enable"]
-pub type INTE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type INTE_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `int` reader - PWM PTC interrupt"]
 pub type INT_R = crate::BitReader;
 #[doc = "Field `int` writer - PWM PTC interrupt"]
-pub type INT_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type INT_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `cntrrst` reader - PWM PTC counter reset"]
 pub type CNTRRST_R = crate::BitReader;
 #[doc = "Field `cntrrst` writer - PWM PTC counter reset"]
-pub type CNTRRST_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type CNTRRST_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `capte` reader - PWM PTC capte"]
 pub type CAPTE_R = crate::BitReader;
 #[doc = "Field `capte` writer - PWM PTC capte"]
-pub type CAPTE_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type CAPTE_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - PWM PTC enable"]
     #[inline(always)]
@@ -89,58 +89,62 @@ impl W {
     #[doc = "Bit 0 - PWM PTC enable"]
     #[inline(always)]
     #[must_use]
-    pub fn en(&mut self) -> EN_W<CTRL_SPEC, 0> {
-        EN_W::new(self)
+    pub fn en(&mut self) -> EN_W<CTRL_SPEC> {
+        EN_W::new(self, 0)
     }
     #[doc = "Bit 1 - PWM PTC enable clock"]
     #[inline(always)]
     #[must_use]
-    pub fn eclk(&mut self) -> ECLK_W<CTRL_SPEC, 1> {
-        ECLK_W::new(self)
+    pub fn eclk(&mut self) -> ECLK_W<CTRL_SPEC> {
+        ECLK_W::new(self, 1)
     }
     #[doc = "Bit 2 - PWM PTC nec"]
     #[inline(always)]
     #[must_use]
-    pub fn nec(&mut self) -> NEC_W<CTRL_SPEC, 2> {
-        NEC_W::new(self)
+    pub fn nec(&mut self) -> NEC_W<CTRL_SPEC> {
+        NEC_W::new(self, 2)
     }
     #[doc = "Bit 3 - PWM PTC oe"]
     #[inline(always)]
     #[must_use]
-    pub fn oe(&mut self) -> OE_W<CTRL_SPEC, 3> {
-        OE_W::new(self)
+    pub fn oe(&mut self) -> OE_W<CTRL_SPEC> {
+        OE_W::new(self, 3)
     }
     #[doc = "Bit 4 - PWM PTC single"]
     #[inline(always)]
     #[must_use]
-    pub fn single(&mut self) -> SINGLE_W<CTRL_SPEC, 4> {
-        SINGLE_W::new(self)
+    pub fn single(&mut self) -> SINGLE_W<CTRL_SPEC> {
+        SINGLE_W::new(self, 4)
     }
     #[doc = "Bit 5 - PWM PTC interrupt enable"]
     #[inline(always)]
     #[must_use]
-    pub fn inte(&mut self) -> INTE_W<CTRL_SPEC, 5> {
-        INTE_W::new(self)
+    pub fn inte(&mut self) -> INTE_W<CTRL_SPEC> {
+        INTE_W::new(self, 5)
     }
     #[doc = "Bit 6 - PWM PTC interrupt"]
     #[inline(always)]
     #[must_use]
-    pub fn int(&mut self) -> INT_W<CTRL_SPEC, 6> {
-        INT_W::new(self)
+    pub fn int(&mut self) -> INT_W<CTRL_SPEC> {
+        INT_W::new(self, 6)
     }
     #[doc = "Bit 7 - PWM PTC counter reset"]
     #[inline(always)]
     #[must_use]
-    pub fn cntrrst(&mut self) -> CNTRRST_W<CTRL_SPEC, 7> {
-        CNTRRST_W::new(self)
+    pub fn cntrrst(&mut self) -> CNTRRST_W<CTRL_SPEC> {
+        CNTRRST_W::new(self, 7)
     }
     #[doc = "Bit 8 - PWM PTC capte"]
     #[inline(always)]
     #[must_use]
-    pub fn capte(&mut self) -> CAPTE_W<CTRL_SPEC, 8> {
-        CAPTE_W::new(self)
+    pub fn capte(&mut self) -> CAPTE_W<CTRL_SPEC> {
+        CAPTE_W::new(self, 8)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

@@ -5,7 +5,7 @@ pub type W = crate::W<HRC_SPEC>;
 #[doc = "Field `hrc` reader - PWM PTC duty-cycle value"]
 pub type HRC_R = crate::FieldReader<u32>;
 #[doc = "Field `hrc` writer - PWM PTC duty-cycle value"]
-pub type HRC_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 32, O, u32>;
+pub type HRC_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl R {
     #[doc = "Bits 0:31 - PWM PTC duty-cycle value"]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bits 0:31 - PWM PTC duty-cycle value"]
     #[inline(always)]
     #[must_use]
-    pub fn hrc(&mut self) -> HRC_W<HRC_SPEC, 0> {
-        HRC_W::new(self)
+    pub fn hrc(&mut self) -> HRC_W<HRC_SPEC> {
+        HRC_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

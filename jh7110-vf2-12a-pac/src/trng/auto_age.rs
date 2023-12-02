@@ -5,7 +5,7 @@ pub type W = crate::W<AUTO_AGE_SPEC>;
 #[doc = "Field `age` reader - Countdown value for auto-reseed timer"]
 pub type AGE_R = crate::FieldReader<u32>;
 #[doc = "Field `age` writer - Countdown value for auto-reseed timer"]
-pub type AGE_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 32, O, u32>;
+pub type AGE_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl R {
     #[doc = "Bits 0:31 - Countdown value for auto-reseed timer"]
     #[inline(always)]
@@ -17,10 +17,14 @@ impl W {
     #[doc = "Bits 0:31 - Countdown value for auto-reseed timer"]
     #[inline(always)]
     #[must_use]
-    pub fn age(&mut self) -> AGE_W<AUTO_AGE_SPEC, 0> {
-        AGE_W::new(self)
+    pub fn age(&mut self) -> AGE_W<AUTO_AGE_SPEC> {
+        AGE_W::new(self, 0)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

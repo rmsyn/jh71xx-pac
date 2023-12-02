@@ -5,23 +5,23 @@ pub type W = crate::W<STG_SYSCONSAIF_SYSCFG0_SPEC>;
 #[doc = "Field `scfg_hprot_sd0` reader - scfg_hprot_sd0"]
 pub type SCFG_HPROT_SD0_R = crate::FieldReader;
 #[doc = "Field `scfg_hprot_sd0` writer - scfg_hprot_sd0"]
-pub type SCFG_HPROT_SD0_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 4, O>;
+pub type SCFG_HPROT_SD0_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
 #[doc = "Field `scfg_hprot_sd1` reader - scfg_hprot_sd1"]
 pub type SCFG_HPROT_SD1_R = crate::FieldReader;
 #[doc = "Field `scfg_hprot_sd1` writer - scfg_hprot_sd1"]
-pub type SCFG_HPROT_SD1_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 4, O>;
+pub type SCFG_HPROT_SD1_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
 #[doc = "Field `u0_cdn_usb_adp_en` reader - u0_cdn_usb_adp_en"]
 pub type U0_CDN_USB_ADP_EN_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_adp_probe_ana` reader - u0_cdn_usb_adp_probe_ana"]
 pub type U0_CDN_USB_ADP_PROBE_ANA_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_adp_probe_ana` writer - u0_cdn_usb_adp_probe_ana"]
-pub type U0_CDN_USB_ADP_PROBE_ANA_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_ADP_PROBE_ANA_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_adp_probe_en` reader - u0_cdn_usb_adp_probe_en"]
 pub type U0_CDN_USB_ADP_PROBE_EN_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_adp_sense_ana` reader - u0_cdn_usb_adp_sense_ana"]
 pub type U0_CDN_USB_ADP_SENSE_ANA_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_adp_sense_ana` writer - u0_cdn_usb_adp_sense_ana"]
-pub type U0_CDN_USB_ADP_SENSE_ANA_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_ADP_SENSE_ANA_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_adp_sense_en` reader - u0_cdn_usb_adp_sense_en"]
 pub type U0_CDN_USB_ADP_SENSE_EN_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_adp_sink_current_en` reader - u0_cdn_usb_adp_sink_current_en"]
@@ -33,37 +33,37 @@ pub type U0_CDN_USB_BC_EN_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_chrg_vbus` reader - u0_cdn_usb_chrg_vbus"]
 pub type U0_CDN_USB_CHRG_VBUS_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_chrg_vbus` writer - u0_cdn_usb_chrg_vbus"]
-pub type U0_CDN_USB_CHRG_VBUS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_CHRG_VBUS_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_dcd_comp_sts` reader - u0_cdn_usb_dcd_comp_sts"]
 pub type U0_CDN_USB_DCD_COMP_STS_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_dcd_comp_sts` writer - u0_cdn_usb_dcd_comp_sts"]
-pub type U0_CDN_USB_DCD_COMP_STS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_DCD_COMP_STS_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_dischrg_vbus` reader - u0_cdn_usb_dischrg_vbus"]
 pub type U0_CDN_USB_DISCHRG_VBUS_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_dischrg_vbus` writer - u0_cdn_usb_dischrg_vbus"]
-pub type U0_CDN_USB_DISCHRG_VBUS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_DISCHRG_VBUS_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_dm_vdat_ref_comp_en` reader - u0_cdn_usb_dm_vdat_ref_comp_en"]
 pub type U0_CDN_USB_DM_VDAT_REF_COMP_EN_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_dm_vdat_ref_comp_sts` reader - u0_cdn_usb_dm_vdat_ref_comp_sts"]
 pub type U0_CDN_USB_DM_VDAT_REF_COMP_STS_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_dm_vdat_ref_comp_sts` writer - u0_cdn_usb_dm_vdat_ref_comp_sts"]
-pub type U0_CDN_USB_DM_VDAT_REF_COMP_STS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_DM_VDAT_REF_COMP_STS_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_dm_vlgc_comp_en` reader - u0_cdn_usb_dm_vlgc_comp_en"]
 pub type U0_CDN_USB_DM_VLGC_COMP_EN_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_dm_vlgc_comp_sts` reader - u0_cdn_usb_dm_vlgc_comp_sts"]
 pub type U0_CDN_USB_DM_VLGC_COMP_STS_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_dm_vlgc_comp_sts` writer - u0_cdn_usb_dm_vlgc_comp_sts"]
-pub type U0_CDN_USB_DM_VLGC_COMP_STS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_DM_VLGC_COMP_STS_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_dp_vdat_ref_comp_en` reader - u0_cdn_usb_dp_vdat_ref_comp_en"]
 pub type U0_CDN_USB_DP_VDAT_REF_COMP_EN_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_dp_vdat_ref_comp_sts` reader - u0_cdn_usb_dp_vdat_ref_comp_sts"]
 pub type U0_CDN_USB_DP_VDAT_REF_COMP_STS_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_dp_vdat_ref_comp_sts` writer - u0_cdn_usb_dp_vdat_ref_comp_sts"]
-pub type U0_CDN_USB_DP_VDAT_REF_COMP_STS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_DP_VDAT_REF_COMP_STS_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_host_system_err` reader - u0_cdn_usb_host_system_err"]
 pub type U0_CDN_USB_HOST_SYSTEM_ERR_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_host_system_err` writer - u0_cdn_usb_host_system_err"]
-pub type U0_CDN_USB_HOST_SYSTEM_ERR_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type U0_CDN_USB_HOST_SYSTEM_ERR_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdn_usb_hsystem_err_ext` reader - u0_cdn_usb_hsystem_err_ext"]
 pub type U0_CDN_USB_HSYSTEM_ERR_EXT_R = crate::BitReader;
 #[doc = "Field `u0_cdn_usb_idm_sink_en` reader - u0_cdn_usb_idm_sink_en"]
@@ -198,88 +198,90 @@ impl W {
     #[doc = "Bits 0:3 - scfg_hprot_sd0"]
     #[inline(always)]
     #[must_use]
-    pub fn scfg_hprot_sd0(&mut self) -> SCFG_HPROT_SD0_W<STG_SYSCONSAIF_SYSCFG0_SPEC, 0> {
-        SCFG_HPROT_SD0_W::new(self)
+    pub fn scfg_hprot_sd0(&mut self) -> SCFG_HPROT_SD0_W<STG_SYSCONSAIF_SYSCFG0_SPEC> {
+        SCFG_HPROT_SD0_W::new(self, 0)
     }
     #[doc = "Bits 4:7 - scfg_hprot_sd1"]
     #[inline(always)]
     #[must_use]
-    pub fn scfg_hprot_sd1(&mut self) -> SCFG_HPROT_SD1_W<STG_SYSCONSAIF_SYSCFG0_SPEC, 4> {
-        SCFG_HPROT_SD1_W::new(self)
+    pub fn scfg_hprot_sd1(&mut self) -> SCFG_HPROT_SD1_W<STG_SYSCONSAIF_SYSCFG0_SPEC> {
+        SCFG_HPROT_SD1_W::new(self, 4)
     }
     #[doc = "Bit 9 - u0_cdn_usb_adp_probe_ana"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_adp_probe_ana(
         &mut self,
-    ) -> U0_CDN_USB_ADP_PROBE_ANA_W<STG_SYSCONSAIF_SYSCFG0_SPEC, 9> {
-        U0_CDN_USB_ADP_PROBE_ANA_W::new(self)
+    ) -> U0_CDN_USB_ADP_PROBE_ANA_W<STG_SYSCONSAIF_SYSCFG0_SPEC> {
+        U0_CDN_USB_ADP_PROBE_ANA_W::new(self, 9)
     }
     #[doc = "Bit 11 - u0_cdn_usb_adp_sense_ana"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_adp_sense_ana(
         &mut self,
-    ) -> U0_CDN_USB_ADP_SENSE_ANA_W<STG_SYSCONSAIF_SYSCFG0_SPEC, 11> {
-        U0_CDN_USB_ADP_SENSE_ANA_W::new(self)
+    ) -> U0_CDN_USB_ADP_SENSE_ANA_W<STG_SYSCONSAIF_SYSCFG0_SPEC> {
+        U0_CDN_USB_ADP_SENSE_ANA_W::new(self, 11)
     }
     #[doc = "Bit 16 - u0_cdn_usb_chrg_vbus"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_cdn_usb_chrg_vbus(
-        &mut self,
-    ) -> U0_CDN_USB_CHRG_VBUS_W<STG_SYSCONSAIF_SYSCFG0_SPEC, 16> {
-        U0_CDN_USB_CHRG_VBUS_W::new(self)
+    pub fn u0_cdn_usb_chrg_vbus(&mut self) -> U0_CDN_USB_CHRG_VBUS_W<STG_SYSCONSAIF_SYSCFG0_SPEC> {
+        U0_CDN_USB_CHRG_VBUS_W::new(self, 16)
     }
     #[doc = "Bit 17 - u0_cdn_usb_dcd_comp_sts"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_dcd_comp_sts(
         &mut self,
-    ) -> U0_CDN_USB_DCD_COMP_STS_W<STG_SYSCONSAIF_SYSCFG0_SPEC, 17> {
-        U0_CDN_USB_DCD_COMP_STS_W::new(self)
+    ) -> U0_CDN_USB_DCD_COMP_STS_W<STG_SYSCONSAIF_SYSCFG0_SPEC> {
+        U0_CDN_USB_DCD_COMP_STS_W::new(self, 17)
     }
     #[doc = "Bit 18 - u0_cdn_usb_dischrg_vbus"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_dischrg_vbus(
         &mut self,
-    ) -> U0_CDN_USB_DISCHRG_VBUS_W<STG_SYSCONSAIF_SYSCFG0_SPEC, 18> {
-        U0_CDN_USB_DISCHRG_VBUS_W::new(self)
+    ) -> U0_CDN_USB_DISCHRG_VBUS_W<STG_SYSCONSAIF_SYSCFG0_SPEC> {
+        U0_CDN_USB_DISCHRG_VBUS_W::new(self, 18)
     }
     #[doc = "Bit 20 - u0_cdn_usb_dm_vdat_ref_comp_sts"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_dm_vdat_ref_comp_sts(
         &mut self,
-    ) -> U0_CDN_USB_DM_VDAT_REF_COMP_STS_W<STG_SYSCONSAIF_SYSCFG0_SPEC, 20> {
-        U0_CDN_USB_DM_VDAT_REF_COMP_STS_W::new(self)
+    ) -> U0_CDN_USB_DM_VDAT_REF_COMP_STS_W<STG_SYSCONSAIF_SYSCFG0_SPEC> {
+        U0_CDN_USB_DM_VDAT_REF_COMP_STS_W::new(self, 20)
     }
     #[doc = "Bit 22 - u0_cdn_usb_dm_vlgc_comp_sts"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_dm_vlgc_comp_sts(
         &mut self,
-    ) -> U0_CDN_USB_DM_VLGC_COMP_STS_W<STG_SYSCONSAIF_SYSCFG0_SPEC, 22> {
-        U0_CDN_USB_DM_VLGC_COMP_STS_W::new(self)
+    ) -> U0_CDN_USB_DM_VLGC_COMP_STS_W<STG_SYSCONSAIF_SYSCFG0_SPEC> {
+        U0_CDN_USB_DM_VLGC_COMP_STS_W::new(self, 22)
     }
     #[doc = "Bit 24 - u0_cdn_usb_dp_vdat_ref_comp_sts"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_dp_vdat_ref_comp_sts(
         &mut self,
-    ) -> U0_CDN_USB_DP_VDAT_REF_COMP_STS_W<STG_SYSCONSAIF_SYSCFG0_SPEC, 24> {
-        U0_CDN_USB_DP_VDAT_REF_COMP_STS_W::new(self)
+    ) -> U0_CDN_USB_DP_VDAT_REF_COMP_STS_W<STG_SYSCONSAIF_SYSCFG0_SPEC> {
+        U0_CDN_USB_DP_VDAT_REF_COMP_STS_W::new(self, 24)
     }
     #[doc = "Bit 25 - u0_cdn_usb_host_system_err"]
     #[inline(always)]
     #[must_use]
     pub fn u0_cdn_usb_host_system_err(
         &mut self,
-    ) -> U0_CDN_USB_HOST_SYSTEM_ERR_W<STG_SYSCONSAIF_SYSCFG0_SPEC, 25> {
-        U0_CDN_USB_HOST_SYSTEM_ERR_W::new(self)
+    ) -> U0_CDN_USB_HOST_SYSTEM_ERR_W<STG_SYSCONSAIF_SYSCFG0_SPEC> {
+        U0_CDN_USB_HOST_SYSTEM_ERR_W::new(self, 25)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

@@ -5,11 +5,11 @@ pub type W = crate::W<POLLING_STATUS_SPEC>;
 #[doc = "Field `status` reader - status"]
 pub type STATUS_R = crate::FieldReader<u16>;
 #[doc = "Field `status` writer - status"]
-pub type STATUS_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 16, O, u16>;
+pub type STATUS_W<'a, REG> = crate::FieldWriter<'a, REG, 16, u16>;
 #[doc = "Field `dummy` reader - dummy"]
 pub type DUMMY_R = crate::FieldReader;
 #[doc = "Field `dummy` writer - dummy"]
-pub type DUMMY_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 5, O>;
+pub type DUMMY_W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
 impl R {
     #[doc = "Bits 0:15 - status"]
     #[inline(always)]
@@ -26,16 +26,20 @@ impl W {
     #[doc = "Bits 0:15 - status"]
     #[inline(always)]
     #[must_use]
-    pub fn status(&mut self) -> STATUS_W<POLLING_STATUS_SPEC, 0> {
-        STATUS_W::new(self)
+    pub fn status(&mut self) -> STATUS_W<POLLING_STATUS_SPEC> {
+        STATUS_W::new(self, 0)
     }
     #[doc = "Bits 16:20 - dummy"]
     #[inline(always)]
     #[must_use]
-    pub fn dummy(&mut self) -> DUMMY_W<POLLING_STATUS_SPEC, 16> {
-        DUMMY_W::new(self)
+    pub fn dummy(&mut self) -> DUMMY_W<POLLING_STATUS_SPEC> {
+        DUMMY_W::new(self, 16)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;

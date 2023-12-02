@@ -5,47 +5,47 @@ pub type W = crate::W<FUNC_SEL2_SPEC>;
 #[doc = "Field `pad_gpio30_func_sel` reader - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
 pub type PAD_GPIO30_FUNC_SEL_R = crate::FieldReader;
 #[doc = "Field `pad_gpio30_func_sel` writer - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
-pub type PAD_GPIO30_FUNC_SEL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 3, O>;
+pub type PAD_GPIO30_FUNC_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `pad_gpio31_func_sel` reader - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
 pub type PAD_GPIO31_FUNC_SEL_R = crate::FieldReader;
 #[doc = "Field `pad_gpio31_func_sel` writer - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
-pub type PAD_GPIO31_FUNC_SEL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 3, O>;
+pub type PAD_GPIO31_FUNC_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `pad_gpio32_func_sel` reader - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
 pub type PAD_GPIO32_FUNC_SEL_R = crate::FieldReader;
 #[doc = "Field `pad_gpio32_func_sel` writer - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
-pub type PAD_GPIO32_FUNC_SEL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 3, O>;
+pub type PAD_GPIO32_FUNC_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `pad_gpio33_func_sel` reader - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
 pub type PAD_GPIO33_FUNC_SEL_R = crate::FieldReader;
 #[doc = "Field `pad_gpio33_func_sel` writer - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
-pub type PAD_GPIO33_FUNC_SEL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 3, O>;
+pub type PAD_GPIO33_FUNC_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `pad_gpio34_func_sel` reader - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
 pub type PAD_GPIO34_FUNC_SEL_R = crate::FieldReader;
 #[doc = "Field `pad_gpio34_func_sel` writer - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
-pub type PAD_GPIO34_FUNC_SEL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 3, O>;
+pub type PAD_GPIO34_FUNC_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `pad_gpio35_func_sel` reader - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
 pub type PAD_GPIO35_FUNC_SEL_R = crate::FieldReader;
 #[doc = "Field `pad_gpio35_func_sel` writer - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
-pub type PAD_GPIO35_FUNC_SEL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 3, O>;
+pub type PAD_GPIO35_FUNC_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `pad_gpio36_func_sel` reader - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
 pub type PAD_GPIO36_FUNC_SEL_R = crate::FieldReader;
 #[doc = "Field `pad_gpio36_func_sel` writer - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
-pub type PAD_GPIO36_FUNC_SEL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 3, O>;
+pub type PAD_GPIO36_FUNC_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `pad_gpio37_func_sel` reader - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
 pub type PAD_GPIO37_FUNC_SEL_R = crate::FieldReader;
 #[doc = "Field `pad_gpio37_func_sel` writer - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
-pub type PAD_GPIO37_FUNC_SEL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 3, O>;
+pub type PAD_GPIO37_FUNC_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `pad_gpio38_func_sel` reader - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
 pub type PAD_GPIO38_FUNC_SEL_R = crate::FieldReader;
 #[doc = "Field `pad_gpio38_func_sel` writer - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
-pub type PAD_GPIO38_FUNC_SEL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 3, O>;
+pub type PAD_GPIO38_FUNC_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `pad_gpio39_func_sel` reader - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
 pub type PAD_GPIO39_FUNC_SEL_R = crate::FieldReader;
 #[doc = "Field `pad_gpio39_func_sel` writer - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
-pub type PAD_GPIO39_FUNC_SEL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 3, O>;
+pub type PAD_GPIO39_FUNC_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 #[doc = "Field `pad_gpio40_func_sel` reader - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
 pub type PAD_GPIO40_FUNC_SEL_R = crate::FieldReader;
 #[doc = "Field `pad_gpio40_func_sel` writer - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
-pub type PAD_GPIO40_FUNC_SEL_W<'a, REG, const O: u8> = crate::FieldWriter<'a, REG, 3, O>;
+pub type PAD_GPIO40_FUNC_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 impl R {
     #[doc = "Bits 0:2 - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
     #[inline(always)]
@@ -107,70 +107,74 @@ impl W {
     #[doc = "Bits 0:2 - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
     #[inline(always)]
     #[must_use]
-    pub fn pad_gpio30_func_sel(&mut self) -> PAD_GPIO30_FUNC_SEL_W<FUNC_SEL2_SPEC, 0> {
-        PAD_GPIO30_FUNC_SEL_W::new(self)
+    pub fn pad_gpio30_func_sel(&mut self) -> PAD_GPIO30_FUNC_SEL_W<FUNC_SEL2_SPEC> {
+        PAD_GPIO30_FUNC_SEL_W::new(self, 0)
     }
     #[doc = "Bits 3:5 - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
     #[inline(always)]
     #[must_use]
-    pub fn pad_gpio31_func_sel(&mut self) -> PAD_GPIO31_FUNC_SEL_W<FUNC_SEL2_SPEC, 3> {
-        PAD_GPIO31_FUNC_SEL_W::new(self)
+    pub fn pad_gpio31_func_sel(&mut self) -> PAD_GPIO31_FUNC_SEL_W<FUNC_SEL2_SPEC> {
+        PAD_GPIO31_FUNC_SEL_W::new(self, 3)
     }
     #[doc = "Bits 6:8 - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
     #[inline(always)]
     #[must_use]
-    pub fn pad_gpio32_func_sel(&mut self) -> PAD_GPIO32_FUNC_SEL_W<FUNC_SEL2_SPEC, 6> {
-        PAD_GPIO32_FUNC_SEL_W::new(self)
+    pub fn pad_gpio32_func_sel(&mut self) -> PAD_GPIO32_FUNC_SEL_W<FUNC_SEL2_SPEC> {
+        PAD_GPIO32_FUNC_SEL_W::new(self, 6)
     }
     #[doc = "Bits 9:11 - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
     #[inline(always)]
     #[must_use]
-    pub fn pad_gpio33_func_sel(&mut self) -> PAD_GPIO33_FUNC_SEL_W<FUNC_SEL2_SPEC, 9> {
-        PAD_GPIO33_FUNC_SEL_W::new(self)
+    pub fn pad_gpio33_func_sel(&mut self) -> PAD_GPIO33_FUNC_SEL_W<FUNC_SEL2_SPEC> {
+        PAD_GPIO33_FUNC_SEL_W::new(self, 9)
     }
     #[doc = "Bits 12:14 - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
     #[inline(always)]
     #[must_use]
-    pub fn pad_gpio34_func_sel(&mut self) -> PAD_GPIO34_FUNC_SEL_W<FUNC_SEL2_SPEC, 12> {
-        PAD_GPIO34_FUNC_SEL_W::new(self)
+    pub fn pad_gpio34_func_sel(&mut self) -> PAD_GPIO34_FUNC_SEL_W<FUNC_SEL2_SPEC> {
+        PAD_GPIO34_FUNC_SEL_W::new(self, 12)
     }
     #[doc = "Bits 15:17 - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
     #[inline(always)]
     #[must_use]
-    pub fn pad_gpio35_func_sel(&mut self) -> PAD_GPIO35_FUNC_SEL_W<FUNC_SEL2_SPEC, 15> {
-        PAD_GPIO35_FUNC_SEL_W::new(self)
+    pub fn pad_gpio35_func_sel(&mut self) -> PAD_GPIO35_FUNC_SEL_W<FUNC_SEL2_SPEC> {
+        PAD_GPIO35_FUNC_SEL_W::new(self, 15)
     }
     #[doc = "Bits 18:20 - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
     #[inline(always)]
     #[must_use]
-    pub fn pad_gpio36_func_sel(&mut self) -> PAD_GPIO36_FUNC_SEL_W<FUNC_SEL2_SPEC, 18> {
-        PAD_GPIO36_FUNC_SEL_W::new(self)
+    pub fn pad_gpio36_func_sel(&mut self) -> PAD_GPIO36_FUNC_SEL_W<FUNC_SEL2_SPEC> {
+        PAD_GPIO36_FUNC_SEL_W::new(self, 18)
     }
     #[doc = "Bits 21:23 - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
     #[inline(always)]
     #[must_use]
-    pub fn pad_gpio37_func_sel(&mut self) -> PAD_GPIO37_FUNC_SEL_W<FUNC_SEL2_SPEC, 21> {
-        PAD_GPIO37_FUNC_SEL_W::new(self)
+    pub fn pad_gpio37_func_sel(&mut self) -> PAD_GPIO37_FUNC_SEL_W<FUNC_SEL2_SPEC> {
+        PAD_GPIO37_FUNC_SEL_W::new(self, 21)
     }
     #[doc = "Bits 24:26 - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
     #[inline(always)]
     #[must_use]
-    pub fn pad_gpio38_func_sel(&mut self) -> PAD_GPIO38_FUNC_SEL_W<FUNC_SEL2_SPEC, 24> {
-        PAD_GPIO38_FUNC_SEL_W::new(self)
+    pub fn pad_gpio38_func_sel(&mut self) -> PAD_GPIO38_FUNC_SEL_W<FUNC_SEL2_SPEC> {
+        PAD_GPIO38_FUNC_SEL_W::new(self, 24)
     }
     #[doc = "Bits 27:29 - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
     #[inline(always)]
     #[must_use]
-    pub fn pad_gpio39_func_sel(&mut self) -> PAD_GPIO39_FUNC_SEL_W<FUNC_SEL2_SPEC, 27> {
-        PAD_GPIO39_FUNC_SEL_W::new(self)
+    pub fn pad_gpio39_func_sel(&mut self) -> PAD_GPIO39_FUNC_SEL_W<FUNC_SEL2_SPEC> {
+        PAD_GPIO39_FUNC_SEL_W::new(self, 27)
     }
     #[doc = "Bits 30:32 - GPIO function selector: * Function 0: See Function Description no page 84 for more information, * Function 1: See Full Multiplexing for more information, * Function 2: See Function 2 for more information, * Function 3: See Function 3 for more information"]
     #[inline(always)]
     #[must_use]
-    pub fn pad_gpio40_func_sel(&mut self) -> PAD_GPIO40_FUNC_SEL_W<FUNC_SEL2_SPEC, 30> {
-        PAD_GPIO40_FUNC_SEL_W::new(self)
+    pub fn pad_gpio40_func_sel(&mut self) -> PAD_GPIO40_FUNC_SEL_W<FUNC_SEL2_SPEC> {
+        PAD_GPIO40_FUNC_SEL_W::new(self, 30)
     }
-    #[doc = "Writes raw bits to the register."]
+    #[doc = r" Writes raw bits to the register."]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
     #[inline(always)]
     pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
         self.bits = bits;
