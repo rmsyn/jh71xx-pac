@@ -18,10 +18,10 @@ pub type U0_INTMEM_ROM_SRAM_SCFG_DISABLE_ROM_W<'a, REG> = crate::BitWriter<'a, R
 pub type U0_INTMEM_ROM_SRAM_SRAM_CONFIG_SLP_R = crate::BitReader;
 #[doc = "Field `u0_intmem_rom_sram_sram_config_slp` writer - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
 pub type U0_INTMEM_ROM_SRAM_SRAM_CONFIG_SLP_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `u0_intmem_rom_sram_sram_config_sram_config_sd` reader - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
-pub type U0_INTMEM_ROM_SRAM_SRAM_CONFIG_SRAM_CONFIG_SD_R = crate::BitReader;
-#[doc = "Field `u0_intmem_rom_sram_sram_config_sram_config_sd` writer - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
-pub type U0_INTMEM_ROM_SRAM_SRAM_CONFIG_SRAM_CONFIG_SD_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_intmem_rom_sram_sram_config_sd` reader - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
+pub type U0_INTMEM_ROM_SRAM_SRAM_CONFIG_SD_R = crate::BitReader;
+#[doc = "Field `u0_intmem_rom_sram_sram_config_sd` writer - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
+pub type U0_INTMEM_ROM_SRAM_SRAM_CONFIG_SD_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_intmem_rom_sram_sram_config_rtsel` reader - SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01."]
 pub type U0_INTMEM_ROM_SRAM_SRAM_CONFIG_RTSEL_R = crate::FieldReader;
 #[doc = "Field `u0_intmem_rom_sram_sram_config_rtsel` writer - SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01."]
@@ -97,10 +97,8 @@ impl R {
     }
     #[doc = "Bit 4 - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
     #[inline(always)]
-    pub fn u0_intmem_rom_sram_sram_config_sram_config_sd(
-        &self,
-    ) -> U0_INTMEM_ROM_SRAM_SRAM_CONFIG_SRAM_CONFIG_SD_R {
-        U0_INTMEM_ROM_SRAM_SRAM_CONFIG_SRAM_CONFIG_SD_R::new(((self.bits >> 4) & 1) != 0)
+    pub fn u0_intmem_rom_sram_sram_config_sd(&self) -> U0_INTMEM_ROM_SRAM_SRAM_CONFIG_SD_R {
+        U0_INTMEM_ROM_SRAM_SRAM_CONFIG_SD_R::new(((self.bits >> 4) & 1) != 0)
     }
     #[doc = "Bits 5:6 - SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01."]
     #[inline(always)]
@@ -202,10 +200,10 @@ impl W {
     #[doc = "Bit 4 - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
     #[inline(always)]
     #[must_use]
-    pub fn u0_intmem_rom_sram_sram_config_sram_config_sd(
+    pub fn u0_intmem_rom_sram_sram_config_sd(
         &mut self,
-    ) -> U0_INTMEM_ROM_SRAM_SRAM_CONFIG_SRAM_CONFIG_SD_W<SYS_SYSCONSAIF_SYSCFG24_SPEC> {
-        U0_INTMEM_ROM_SRAM_SRAM_CONFIG_SRAM_CONFIG_SD_W::new(self, 4)
+    ) -> U0_INTMEM_ROM_SRAM_SRAM_CONFIG_SD_W<SYS_SYSCONSAIF_SYSCFG24_SPEC> {
+        U0_INTMEM_ROM_SRAM_SRAM_CONFIG_SD_W::new(self, 4)
     }
     #[doc = "Bits 5:6 - SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01."]
     #[inline(always)]
