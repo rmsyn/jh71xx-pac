@@ -27,5 +27,7 @@ members = [
 
 [features]
 visionfive2-12a = ["jh7110-vf2-12a-pac"]
+visionfive2-12a-rt = ["jh7110-vf2-12a-pac/rt"]
 visionfive2-13b = ["jh7110-vf2-13b-pac"]
+visionfive2-13b-rt = ["jh7110-vf2-13b-pac/rt"]
 all = ["visionfive2-12a", "visionfive2-13b"]

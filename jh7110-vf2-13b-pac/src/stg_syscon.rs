@@ -155,7 +155,7 @@ pub struct RegisterBlock {
     stg_syscfg_151: STG_SYSCFG_151,
     stg_syscfg_152: STG_SYSCFG_152,
     stg_syscfg_153: STG_SYSCFG_153,
-    stg_syscfg_l54: STG_SYSCFG_L54,
+    stg_syscfg_154: STG_SYSCFG_154,
     stg_syscfg_155: STG_SYSCFG_155,
     stg_syscfg_156: STG_SYSCFG_156,
     stg_syscfg_157: STG_SYSCFG_157,
@@ -1009,8 +1009,8 @@ impl RegisterBlock {
     }
     #[doc = "0x268 - STG SYSCONSAIF SYSCFG 616"]
     #[inline(always)]
-    pub const fn stg_syscfg_l54(&self) -> &STG_SYSCFG_L54 {
-        &self.stg_syscfg_l54
+    pub const fn stg_syscfg_154(&self) -> &STG_SYSCFG_154 {
+        &self.stg_syscfg_154
     }
     #[doc = "0x26c - STG SYSCONSAIF SYSCFG 620"]
     #[inline(always)]
@@ -2178,11 +2178,11 @@ module"]
 pub type STG_SYSCFG_153 = crate::Reg<stg_syscfg_153::STG_SYSCFG_153_SPEC>;
 #[doc = "STG SYSCONSAIF SYSCFG 612"]
 pub mod stg_syscfg_153;
-#[doc = "stg_syscfg_l54 (rw) register accessor: STG SYSCONSAIF SYSCFG 616\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`stg_syscfg_l54::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`stg_syscfg_l54::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@stg_syscfg_l54`]
+#[doc = "stg_syscfg_154 (rw) register accessor: STG SYSCONSAIF SYSCFG 616\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`stg_syscfg_154::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`stg_syscfg_154::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@stg_syscfg_154`]
 module"]
-pub type STG_SYSCFG_L54 = crate::Reg<stg_syscfg_l54::STG_SYSCFG_L54_SPEC>;
+pub type STG_SYSCFG_154 = crate::Reg<stg_syscfg_154::STG_SYSCFG_154_SPEC>;
 #[doc = "STG SYSCONSAIF SYSCFG 616"]
-pub mod stg_syscfg_l54;
+pub mod stg_syscfg_154;
 #[doc = "stg_syscfg_155 (rw) register accessor: STG SYSCONSAIF SYSCFG 620\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`stg_syscfg_155::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`stg_syscfg_155::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@stg_syscfg_155`]
 module"]
 pub type STG_SYSCFG_155 = crate::Reg<stg_syscfg_155::STG_SYSCFG_155_SPEC>;
