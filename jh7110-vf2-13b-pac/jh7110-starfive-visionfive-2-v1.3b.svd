@@ -13687,7 +13687,7 @@
           </fields>
         </register>
         <register>
-          <name>stg_syscfg_l54</name>
+          <name>stg_syscfg_154</name>
           <description>STG SYSCONSAIF SYSCFG 616</description>
           <addressOffset>0x268</addressOffset>
           <size>32</size>
