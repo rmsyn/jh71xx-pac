@@ -10291,20 +10291,21 @@
       </addressBlock>
       <registers>
         <register>
-          <name>stg_sysconsaif_syscfg0</name>
-          <description>STG SYSCONSAIF SYSCFG 0</description>
+          <name>stg_syscfg_0</name>
+          <description>STG SYCONSAIF SYSCFG 0</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>scfg_hprot_sd0</name>
-              <description>scfg_hprot_sd0</description>
+              <name>scfg_hprot_sd_0</name>
+              <description>scfg_hprot_sd_0</description>
               <bitRange>[3:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>scfg_hprot_sd1</name>
-              <description>scfg_hprot_sd1</description>
+              <name>scfg_hprot_sd_1</name>
+              <description>scfg_hprot_sd_1</description>
               <bitRange>[7:4]</bitRange>
               <access>read-write</access>
             </field>
@@ -10443,10 +10444,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg4</name>
+          <name>stg_syscfg_1</name>
           <description>STG SYSCONSAIF SYSCFG 4</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_cdn_usb_lowest_belt</name>
@@ -10515,20 +10517,20 @@
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_cdn_usb_rid_a_comp_sts</name>
-              <description>u0_cdn_usb_rid_a_comp_sts</description>
+              <name>u0_cdn_usb_rid_comp_sts_0</name>
+              <description>u0_cdn_usb_rid_comp_sts_0</description>
               <bitRange>[24:24]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_cdn_usb_rid_b_comp_sts</name>
-              <description>u0_cdn_usb_rid_b_comp_sts</description>
+              <name>u0_cdn_usb_rid_comp_sts_1</name>
+              <description>u0_cdn_usb_rid_comp_sts_1</description>
               <bitRange>[25:25]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_cdn_usb_rid_c_comp_sts</name>
-              <description>u0_cdn_usb_rid_c_comp_sts</description>
+              <name>u0_cdn_usb_rid_comp_sts_2</name>
+              <description>u0_cdn_usb_rid_comp_sts_2</description>
               <bitRange>[26:26]</bitRange>
               <access>read-write</access>
             </field>
@@ -10565,10 +10567,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg8</name>
+          <name>stg_syscfg_2</name>
           <description>STG SYSCONSAIF SYSCFG 8</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_cdn_usb_rx_dp</name>
@@ -10753,10 +10756,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg12</name>
+          <name>stg_syscfg_3</name>
           <description>STG SYSCONSAIF SYSCFG 12</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_cdn_usb_utmi_rxvalidh_sit</name>
@@ -10863,10 +10867,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg16</name>
+          <name>stg_syscfg_4</name>
           <description>STG SYSCONSAIF SYSCFG 16</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_cdn_usb_xhci_debug_bus</name>
@@ -10877,10 +10882,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg20</name>
+          <name>stg_syscfg_5</name>
           <description>STG SYSCONSAIF SYSCFG 20</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_cdn_usb_xhci_debug_link_state</name>
@@ -10891,10 +10897,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg24</name>
+          <name>stg_syscfg_6</name>
           <description>STG SYSCONSAIF SYSCFG 24</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_cdn_usb_xhci_debug_sel</name>
@@ -10989,10 +10996,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg28</name>
+          <name>stg_syscfg_7</name>
           <description>STG SYSCONSAIF SYSCFG 28</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_e2_sft7110_nmi_0_rnmi_exception_vector</name>
@@ -11003,10 +11011,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg32</name>
+          <name>stg_syscfg_8</name>
           <description>STG SYSCONSAIF SYSCFG 32</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_e2_sft7110_nmi_0_rnmi_interrupt_vector</name>
@@ -11017,10 +11026,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg36</name>
+          <name>stg_syscfg_9</name>
           <description>STG SYSCONSAIF SYSCFG 36</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_e2_sft7110_reset_vector_0</name>
@@ -11031,10 +11041,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg40</name>
+          <name>stg_syscfg_10</name>
           <description>STG SYSCONSAIF SYSCFG 40</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_e2_sft7110_wfi_from_tile_0</name>
@@ -11045,10 +11056,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg44</name>
+          <name>stg_syscfg_11</name>
           <description>STG SYSCONSAIF SYSCFG 44</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_hifi4_altresetvec</name>
@@ -11059,10 +11071,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg48</name>
+          <name>stg_syscfg_12</name>
           <description>STG SYSCONSAIF SYSCFG 48</description>
           <addressOffset>0x30</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_hifi4_breakin</name>
@@ -11127,10 +11140,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg52</name>
+          <name>stg_syscfg_13</name>
           <description>STG SYSCONSAIF SYSCFG 52</description>
           <addressOffset>0x34</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_hifi4_pfaultinfo</name>
@@ -11141,10 +11155,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg56</name>
+          <name>stg_syscfg_14</name>
           <description>STG SYSCONSAIF SYSCFG 56</description>
           <addressOffset>0x38</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_hifi4_pfaultinfovalid</name>
@@ -11173,10 +11188,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg60</name>
+          <name>stg_syscfg_15</name>
           <description>STG SYSCONSAIF SYSCFG 60</description>
           <addressOffset>0x3c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_hifi4_scfg_dsp_mst_offset_master</name>
@@ -11193,10 +11209,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg64</name>
+          <name>stg_syscfg_16</name>
           <description>STG SYSCONSAIF SYSCFG 64</description>
           <addressOffset>0x40</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_hifi4_scfg_dsp_slv_offset</name>
@@ -11207,10 +11224,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg68</name>
+          <name>stg_syscfg_17</name>
           <description>STG SYSCONSAIF SYSCFG 68</description>
           <addressOffset>0x44</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_hifi4_scfg_sram_config_slp</name>
@@ -11219,7 +11237,7 @@
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_hifi4_scfg_sram_config_sram_config_sd</name>
+              <name>u0_hifi4_scfg_sram_config_sd</name>
               <description>SRAM/ROM configuration. SD: shutdown enable, high active, default is low.</description>
               <bitRange>[1:1]</bitRange>
               <access>read-write</access>
@@ -11293,10 +11311,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg72</name>
+          <name>stg_syscfg_18</name>
           <description>STG SYSCONSAIF SYSCFG 72</description>
           <addressOffset>0x48</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_aratomop_31_0</name>
@@ -11307,10 +11326,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg76</name>
+          <name>stg_syscfg_19</name>
           <description>STG SYSCONSAIF SYSCFG 76</description>
           <addressOffset>0x4c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_aratomop_63_32</name>
@@ -11321,10 +11341,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg80</name>
+          <name>stg_syscfg_20</name>
           <description>STG SYSCONSAIF SYSCFG 80</description>
           <addressOffset>0x50</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_aratomop_95_64</name>
@@ -11335,10 +11356,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg84</name>
+          <name>stg_syscfg_21</name>
           <description>STG SYSCONSAIF SYSCFG 84</description>
           <addressOffset>0x54</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_aratomop_127_96</name>
@@ -11349,10 +11371,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg88</name>
+          <name>stg_syscfg_22</name>
           <description>STG SYSCONSAIF SYSCFG 88</description>
           <addressOffset>0x58</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_aratomop_159_128</name>
@@ -11363,10 +11386,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg92</name>
+          <name>stg_syscfg_23</name>
           <description>STG SYSCONSAIF SYSCFG 92</description>
           <addressOffset>0x5c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_aratomop_191_160</name>
@@ -11377,10 +11401,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg96</name>
+          <name>stg_syscfg_24</name>
           <description>STG SYSCONSAIF SYSCFG 96</description>
           <addressOffset>0x60</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_aratomop_223_192</name>
@@ -11391,10 +11416,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg100</name>
+          <name>stg_syscfg_25</name>
           <description>STG SYSCONSAIF SYSCFG 100</description>
           <addressOffset>0x64</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_aratomop_255_224</name>
@@ -11405,10 +11431,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg104</name>
+          <name>stg_syscfg_26</name>
           <description>STG SYSCONSAIF SYSCFG 104</description>
           <addressOffset>0x68</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_aratomop_257_256</name>
@@ -11431,10 +11458,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg108</name>
+          <name>stg_syscfg_27</name>
           <description>STG SYSCONSAIF SYSCFG 108</description>
           <addressOffset>0x6c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_aruser_31_0</name>
@@ -11445,10 +11473,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg112</name>
+          <name>stg_syscfg_28</name>
           <description>STG SYSCONSAIF SYSCFG 112</description>
           <addressOffset>0x70</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_aruser_63_32</name>
@@ -11459,10 +11488,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg116</name>
+          <name>stg_syscfg_29</name>
           <description>STG SYSCONSAIF SYSCFG 116</description>
           <addressOffset>0x74</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_awfunc</name>
@@ -11479,10 +11509,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg120</name>
+          <name>stg_syscfg_30</name>
           <description>STG SYSCONSAIF SYSCFG 120</description>
           <addressOffset>0x78</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_a2user_31_0</name>
@@ -11493,10 +11524,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg124</name>
+          <name>stg_syscfg_31</name>
           <description>STG SYSCONSAIF SYSCFG 124</description>
           <addressOffset>0x7c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_awuser_42_32</name>
@@ -11513,10 +11545,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg128</name>
+          <name>stg_syscfg_32</name>
           <description>STG SYSCONSAIF SYSCFG 128</description>
           <addressOffset>0x80</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_ruser</name>
@@ -11527,10 +11560,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg132</name>
+          <name>stg_syscfg_33</name>
           <description>STG SYSCONSAIF SYSCFG 132</description>
           <addressOffset>0x84</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_wderr</name>
@@ -11541,10 +11575,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg136</name>
+          <name>stg_syscfg_34</name>
           <description>STG SYSCONSAIF SYSCFG 136</description>
           <addressOffset>0x88</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_slv0_aratomop_31_0</name>
@@ -11555,10 +11590,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg140</name>
+          <name>stg_syscfg_35</name>
           <description>STG SYSCONSAIF SYSCFG 140</description>
           <addressOffset>0x8c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_slv0_aratomop_63_32</name>
@@ -11569,10 +11605,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg144</name>
+          <name>stg_syscfg_36</name>
           <description>STG SYSCONSAIF SYSCFG 144</description>
           <addressOffset>0x90</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_slv0_aratomop_95_64</name>
@@ -11583,10 +11620,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg148</name>
+          <name>stg_syscfg_37</name>
           <description>STG SYSCONSAIF SYSCFG 148</description>
           <addressOffset>0x94</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_slv0_aratomop_127_96</name>
@@ -11597,10 +11635,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg152</name>
+          <name>stg_syscfg_38</name>
           <description>STG SYSCONSAIF SYSCFG 152</description>
           <addressOffset>0x98</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_slv0_aratomop_159_128</name>
@@ -11611,10 +11650,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg156</name>
+          <name>stg_syscfg_39</name>
           <description>STG SYSCONSAIF SYSCFG 156</description>
           <addressOffset>0x9c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_slv0_aratomop_191_160</name>
@@ -11625,10 +11665,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg160</name>
+          <name>stg_syscfg_40</name>
           <description>STG SYSCONSAIF SYSCFG 160</description>
           <addressOffset>0xa0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_slv0_aratomop_223_192</name>
@@ -11639,10 +11680,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg164</name>
+          <name>stg_syscfg_41</name>
           <description>STG SYSCONSAIF SYSCFG 164</description>
           <addressOffset>0xa4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_slv0_aratomop_255_224</name>
@@ -11653,10 +11695,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg168</name>
+          <name>stg_syscfg_42</name>
           <description>STG SYSCONSAIF SYSCFG 168</description>
           <addressOffset>0xa8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_slv0_aratomop_257_256</name>
@@ -11679,10 +11722,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg172</name>
+          <name>stg_syscfg_43</name>
           <description>STG SYSCONSAIF SYSCFG 172</description>
           <addressOffset>0xac</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_slv0_aruser_31_0</name>
@@ -11693,10 +11737,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg176</name>
+          <name>stg_syscfg_44</name>
           <description>STG SYSCONSAIF SYSCFG 176</description>
           <addressOffset>0xb0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_slv0_aruser_40_32</name>
@@ -11719,10 +11764,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg180</name>
+          <name>stg_syscfg_45</name>
           <description>STG SYSCONSAIF SYSCFG 180</description>
           <addressOffset>0xb4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_slv0_awuser_31_0</name>
@@ -11733,10 +11779,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg184</name>
+          <name>stg_syscfg_46</name>
           <description>STG SYSCONSAIF SYSCFG 184</description>
           <addressOffset>0xb8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_slv0_awuser_40_32</name>
@@ -11753,10 +11800,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg188</name>
+          <name>stg_syscfg_47</name>
           <description>STG SYSCONSAIF SYSCFG 188</description>
           <addressOffset>0xbc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_slv0_ruser</name>
@@ -11767,10 +11815,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg192</name>
+          <name>stg_syscfg_48</name>
           <description>STG SYSCONSAIF SYSCFG 192</description>
           <addressOffset>0xc0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_slv0_wderr</name>
@@ -11787,10 +11836,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg196</name>
+          <name>stg_syscfg_49</name>
           <description>STG SYSCONSAIF SYSCFG 196</description>
           <addressOffset>0xc4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_slvl_awfunc</name>
@@ -11831,10 +11881,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg200</name>
+          <name>stg_syscfg_50</name>
           <description>STG SYSCONSAIF SYSCFG 200</description>
           <addressOffset>0xc8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_31_0</name>
@@ -11845,10 +11896,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg204</name>
+          <name>stg_syscfg_51</name>
           <description>STG SYSCONSAIF SYSCFG 204</description>
           <addressOffset>0xcc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_63_32</name>
@@ -11859,10 +11911,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg208</name>
+          <name>stg_syscfg_52</name>
           <description>STG SYSCONSAIF SYSCFG 208</description>
           <addressOffset>0xd0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_95_64</name>
@@ -11873,10 +11926,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg212</name>
+          <name>stg_syscfg_53</name>
           <description>STG SYSCONSAIF SYSCFG 212</description>
           <addressOffset>0xd4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_127_96</name>
@@ -11887,10 +11941,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg216</name>
+          <name>stg_syscfg_54</name>
           <description>STG SYSCONSAIF SYSCFG 216</description>
           <addressOffset>0xd8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_159_128</name>
@@ -11901,10 +11956,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg220</name>
+          <name>stg_syscfg_55</name>
           <description>STG SYSCONSAIF SYSCFG 220</description>
           <addressOffset>0xdc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_191_160</name>
@@ -11915,10 +11971,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg224</name>
+          <name>stg_syscfg_56</name>
           <description>STG SYSCONSAIF SYSCFG 224</description>
           <addressOffset>0xe0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_223_192</name>
@@ -11929,10 +11986,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg228</name>
+          <name>stg_syscfg_57</name>
           <description>STG SYSCONSAIF SYSCFG 228</description>
           <addressOffset>0xe4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_255_224</name>
@@ -11943,10 +12001,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg232</name>
+          <name>stg_syscfg_58</name>
           <description>STG SYSCONSAIF SYSCFG 232</description>
           <addressOffset>0xe8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_287_256</name>
@@ -11957,10 +12016,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg236</name>
+          <name>stg_syscfg_59</name>
           <description>STG SYSCONSAIF SYSCFG 236</description>
           <addressOffset>0xec</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_319_288</name>
@@ -11971,10 +12031,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg240</name>
+          <name>stg_syscfg_60</name>
           <description>STG SYSCONSAIF SYSCFG 240</description>
           <addressOffset>0xf0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_351_320</name>
@@ -11985,10 +12046,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg244</name>
+          <name>stg_syscfg_61</name>
           <description>STG SYSCONSAIF SYSCFG 244</description>
           <addressOffset>0xf4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_383_352</name>
@@ -11999,10 +12061,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg248</name>
+          <name>stg_syscfg_62</name>
           <description>STG SYSCONSAIF SYSCFG 248</description>
           <addressOffset>0xf8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_415_384</name>
@@ -12013,10 +12076,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg252</name>
+          <name>stg_syscfg_63</name>
           <description>STG SYSCONSAIF SYSCFG 252</description>
           <addressOffset>0xfc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_447_416</name>
@@ -12027,10 +12091,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg256</name>
+          <name>stg_syscfg_64</name>
           <description>STG SYSCONSAIF SYSCFG 256</description>
           <addressOffset>0x100</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_479_448</name>
@@ -12041,10 +12106,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg260</name>
+          <name>stg_syscfg_65</name>
           <description>STG SYSCONSAIF SYSCFG 260</description>
           <addressOffset>0x104</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_511_480</name>
@@ -12055,10 +12121,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg264</name>
+          <name>stg_syscfg_66</name>
           <description>STG SYSCONSAIF SYSCFG 264</description>
           <addressOffset>0x108</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_543_512</name>
@@ -12069,10 +12136,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg268</name>
+          <name>stg_syscfg_67</name>
           <description>STG SYSCONSAIF SYSCFG 268</description>
           <addressOffset>0x10c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_575_544</name>
@@ -12083,10 +12151,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg272</name>
+          <name>stg_syscfg_68</name>
           <description>STG SYSCONSAIF SYSCFG 272</description>
           <addressOffset>0x110</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_607_576</name>
@@ -12097,10 +12166,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg276</name>
+          <name>stg_syscfg_69</name>
           <description>STG SYSCONSAIF SYSCFG 276</description>
           <addressOffset>0x114</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_639_608</name>
@@ -12111,10 +12181,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg280</name>
+          <name>stg_syscfg_70</name>
           <description>STG SYSCONSAIF SYSCFG 280</description>
           <addressOffset>0x118</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_671_640</name>
@@ -12125,10 +12196,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg284</name>
+          <name>stg_syscfg_71</name>
           <description>STG SYSCONSAIF SYSCFG 284</description>
           <addressOffset>0x11c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_703_672</name>
@@ -12139,10 +12211,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg288</name>
+          <name>stg_syscfg_72</name>
           <description>STG SYSCONSAIF SYSCFG 288</description>
           <addressOffset>0x120</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_735_704</name>
@@ -12153,10 +12226,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg292</name>
+          <name>stg_syscfg_73</name>
           <description>STG SYSCONSAIF SYSCFG 292</description>
           <addressOffset>0x124</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_767_736</name>
@@ -12167,10 +12241,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg296</name>
+          <name>stg_syscfg_74</name>
           <description>STG SYSCONSAIF SYSCFG 296</description>
           <addressOffset>0x128</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_799_768</name>
@@ -12181,10 +12256,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg300</name>
+          <name>stg_syscfg_75</name>
           <description>STG SYSCONSAIF SYSCFG 300</description>
           <addressOffset>0x12c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_831_800</name>
@@ -12195,10 +12271,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg304</name>
+          <name>stg_syscfg_76</name>
           <description>STG SYSCONSAIF SYSCFG 304</description>
           <addressOffset>0x130</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_k_phyparam_839_832</name>
@@ -12227,10 +12304,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg308</name>
+          <name>stg_syscfg_77</name>
           <description>STG SYSCONSAIF SYSCFG 308</description>
           <addressOffset>0x134</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_local_interrupt_in</name>
@@ -12241,10 +12319,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg312</name>
+          <name>stg_syscfg_78</name>
           <description>STG SYSCONSAIF SYSCFG 312</description>
           <addressOffset>0x138</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_mperstn</name>
@@ -12285,10 +12364,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg316</name>
+          <name>stg_syscfg_79</name>
           <description>STG SYSCONSAIF SYSCFG 316</description>
           <addressOffset>0x13c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_pf0_offset</name>
@@ -12299,10 +12379,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg320</name>
+          <name>stg_syscfg_80</name>
           <description>STG SYSCONSAIF SYSCFG 320</description>
           <addressOffset>0x140</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_pf1_offset</name>
@@ -12313,10 +12394,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg324</name>
+          <name>stg_syscfg_81</name>
           <description>STG SYSCONSAIF SYSCFG 324</description>
           <addressOffset>0x144</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_pf2_offset</name>
@@ -12327,10 +12409,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg328</name>
+          <name>stg_syscfg_82</name>
           <description>STG SYSCONSAIF SYSCFG 328</description>
           <addressOffset>0x148</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_pf3_offset</name>
@@ -12371,10 +12454,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg332</name>
+          <name>stg_syscfg_83</name>
           <description>STG SYSCONSAIF SYSCFG 332</description>
           <addressOffset>0x14c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_pl_pclk_rate</name>
@@ -12385,10 +12469,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg336</name>
+          <name>stg_syscfg_84</name>
           <description>STG SYSCONSAIF SYSCFG 336</description>
           <addressOffset>0x150</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_pl_sideband_in_31_0</name>
@@ -12399,10 +12484,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg340</name>
+          <name>stg_syscfg_85</name>
           <description>STG SYSCONSAIF SYSCFG 340</description>
           <addressOffset>0x154</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_pl_sideband_in_63_32</name>
@@ -12413,10 +12499,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg344</name>
+          <name>stg_syscfg_86</name>
           <description>STG SYSCONSAIF SYSCFG 344</description>
           <addressOffset>0x158</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_pl_sideband_out_31_0</name>
@@ -12427,10 +12514,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg348</name>
+          <name>stg_syscfg_87</name>
           <description>STG SYSCONSAIF SYSCFG 348</description>
           <addressOffset>0x15c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_pl_sideband_out_63_32</name>
@@ -12441,10 +12529,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg352</name>
+          <name>stg_syscfg_88</name>
           <description>STG SYSCONSAIF SYSCFG 352</description>
           <addressOffset>0x160</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_pl_wake_in</name>
@@ -12467,10 +12556,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg356</name>
+          <name>stg_syscfg_89</name>
           <description>STG SYSCONSAIF SYSCFG 356</description>
           <addressOffset>0x164</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_in_31_0</name>
@@ -12481,10 +12571,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg360</name>
+          <name>stg_syscfg_90</name>
           <description>STG SYSCONSAIF SYSCFG 360</description>
           <addressOffset>0x168</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_in_63_32</name>
@@ -12495,10 +12586,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg364</name>
+          <name>stg_syscfg_91</name>
           <description>STG SYSCONSAIF SYSCFG 364</description>
           <addressOffset>0x16c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_bridge_31_0</name>
@@ -12509,10 +12601,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg368</name>
+          <name>stg_syscfg_92</name>
           <description>STG SYSCONSAIF SYSCFG 368</description>
           <addressOffset>0x170</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_bridge_63_32</name>
@@ -12523,10 +12616,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg372</name>
+          <name>stg_syscfg_93</name>
           <description>STG SYSCONSAIF SYSCFG 372</description>
           <addressOffset>0x174</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_bridge_95_64</name>
@@ -12537,10 +12631,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg376</name>
+          <name>stg_syscfg_94</name>
           <description>STG SYSCONSAIF SYSCFG 376</description>
           <addressOffset>0x178</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_bridge_127_96</name>
@@ -12551,10 +12646,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg380</name>
+          <name>stg_syscfg_95</name>
           <description>STG SYSCONSAIF SYSCFG 380</description>
           <addressOffset>0x17c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_bridge_159_128</name>
@@ -12565,10 +12661,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg384</name>
+          <name>stg_syscfg_96</name>
           <description>STG SYSCONSAIF SYSCFG 384</description>
           <addressOffset>0x180</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_bridge_191_160</name>
@@ -12579,10 +12676,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg388</name>
+          <name>stg_syscfg_97</name>
           <description>STG SYSCONSAIF SYSCFG 388</description>
           <addressOffset>0x184</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_bridge_223_192</name>
@@ -12593,10 +12691,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg392</name>
+          <name>stg_syscfg_98</name>
           <description>STG SYSCONSAIF SYSCFG 392</description>
           <addressOffset>0x188</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_bridge_255_224</name>
@@ -12607,10 +12706,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg396</name>
+          <name>stg_syscfg_99</name>
           <description>STG SYSCONSAIF SYSCFG 396</description>
           <addressOffset>0x18c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_bridge_287_256</name>
@@ -12621,10 +12721,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg400</name>
+          <name>stg_syscfg_100</name>
           <description>STG SYSCONSAIF SYSCFG 400</description>
           <addressOffset>0x190</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_bridge_319_288</name>
@@ -12635,10 +12736,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg404</name>
+          <name>stg_syscfg_101</name>
           <description>STG SYSCONSAIF SYSCFG 404</description>
           <addressOffset>0x194</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_bridge_351_320</name>
@@ -12649,10 +12751,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg408</name>
+          <name>stg_syscfg_102</name>
           <description>STG SYSCONSAIF SYSCFG 408</description>
           <addressOffset>0x198</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_bridge_383_352</name>
@@ -12663,10 +12766,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg412</name>
+          <name>stg_syscfg_103</name>
           <description>STG SYSCONSAIF SYSCFG 412</description>
           <addressOffset>0x19c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_bridge_415_384</name>
@@ -12677,10 +12781,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg416</name>
+          <name>stg_syscfg_104</name>
           <description>STG SYSCONSAIF SYSCFG 416</description>
           <addressOffset>0x1a0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_bridge_447_416</name>
@@ -12691,10 +12796,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg420</name>
+          <name>stg_syscfg_105</name>
           <description>STG SYSCONSAIF SYSCFG 420</description>
           <addressOffset>0x1a4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_bridge_479_448</name>
@@ -12705,10 +12811,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg424</name>
+          <name>stg_syscfg_106</name>
           <description>STG SYSCONSAIF SYSCFG 424</description>
           <addressOffset>0x1a8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_bridge_511_480</name>
@@ -12719,10 +12826,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg428</name>
+          <name>stg_syscfg_107</name>
           <description>STG SYSCONSAIF SYSCFG 428</description>
           <addressOffset>0x1ac</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_pcie_31_0</name>
@@ -12733,10 +12841,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg432</name>
+          <name>stg_syscfg_108</name>
           <description>STG SYSCONSAIF SYSCFG 432</description>
           <addressOffset>0x1b0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_pcie_63_32</name>
@@ -12747,10 +12856,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg436</name>
+          <name>stg_syscfg_109</name>
           <description>STG SYSCONSAIF SYSCFG 436</description>
           <addressOffset>0x1b4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_pcie_95_64</name>
@@ -12761,10 +12871,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg440</name>
+          <name>stg_syscfg_110</name>
           <description>STG SYSCONSAIF SYSCFG 440</description>
           <addressOffset>0x1b8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_pcie_127_96</name>
@@ -12775,10 +12886,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg444</name>
+          <name>stg_syscfg_111</name>
           <description>STG SYSCONSAIF SYSCFG 444</description>
           <addressOffset>0x1bc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_pcie_159_128</name>
@@ -12789,10 +12901,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg448</name>
+          <name>stg_syscfg_112</name>
           <description>STG SYSCONSAIF SYSCFG 448</description>
           <addressOffset>0x1c0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_pcie_191_160</name>
@@ -12803,10 +12916,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg452</name>
+          <name>stg_syscfg_113</name>
           <description>STG SYSCONSAIF SYSCFG 452</description>
           <addressOffset>0x1c4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_pcie_223_192</name>
@@ -12817,10 +12931,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg456</name>
+          <name>stg_syscfg_114</name>
           <description>STG SYSCONSAIF SYSCFG 456</description>
           <addressOffset>0x1c8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_pcie_255_224</name>
@@ -12831,10 +12946,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg460</name>
+          <name>stg_syscfg_115</name>
           <description>STG SYSCONSAIF SYSCFG 460</description>
           <addressOffset>0x1cc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_pcie_287_256</name>
@@ -12845,10 +12961,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg464</name>
+          <name>stg_syscfg_116</name>
           <description>STG SYSCONSAIF SYSCFG 464</description>
           <addressOffset>0x1d0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_pcie_319_288</name>
@@ -12859,10 +12976,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg468</name>
+          <name>stg_syscfg_117</name>
           <description>STG SYSCONSAIF SYSCFG 468</description>
           <addressOffset>0x1d4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_pcie_351_320</name>
@@ -12873,10 +12991,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg472</name>
+          <name>stg_syscfg_118</name>
           <description>STG SYSCONSAIF SYSCFG 472</description>
           <addressOffset>0x1d8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_pcie_383_352</name>
@@ -12887,10 +13006,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg476</name>
+          <name>stg_syscfg_119</name>
           <description>STG SYSCONSAIF SYSCFG 476</description>
           <addressOffset>0x1dc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_pcie_415_384</name>
@@ -12901,10 +13021,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg480</name>
+          <name>stg_syscfg_120</name>
           <description>STG SYSCONSAIF SYSCFG 480</description>
           <addressOffset>0x1e0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_pcie_447_416</name>
@@ -12915,10 +13036,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg484</name>
+          <name>stg_syscfg_121</name>
           <description>STG SYSCONSAIF SYSCFG 484</description>
           <addressOffset>0x1e4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_pcie_479_448</name>
@@ -12929,10 +13051,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg488</name>
+          <name>stg_syscfg_122</name>
           <description>STG SYSCONSAIF SYSCFG 488</description>
           <addressOffset>0x1e8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_out_pcie_511_480</name>
@@ -12943,10 +13066,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg492</name>
+          <name>stg_syscfg_123</name>
           <description>STG SYSCONSAIF SYSCFG 492</description>
           <addressOffset>0x1ec</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_test_sel</name>
@@ -12963,10 +13087,32 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg500</name>
+          <name>stg_syscfg_124</name>
+          <description>STG SYSCONSAIF SYSCFG 496</description>
+          <addressOffset>0x1f0</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>u0_plda_pcie_tl_ctrl_hotplug</name>
+              <description>u0_plda_pcie_tl_ctrl_hotplug</description>
+              <bitRange>[15:0]</bitRange>
+              <access>read-only</access>
+            </field>
+            <field>
+              <name>u0_plda_pcie_tl_report_hotplug</name>
+              <description>u0_plda_pcie_tl_report_hotplug</description>
+              <bitRange>[31:16]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>stg_syscfg_125</name>
           <description>STG SYSCONSAIF SYSCFG 500</description>
           <addressOffset>0x1f4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_tx_pattern</name>
@@ -13023,7 +13169,7 @@
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_sec_top_sramcfg_sram_config_sd</name>
+              <name>u0_sec_top_sramcfg_sd</name>
               <description>SRAM/ROM configuration. SD: shutdown enable, high active, default is low.</description>
               <bitRange>[12:12]</bitRange>
               <access>read-write</access>
@@ -13073,10 +13219,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg504</name>
+          <name>stg_syscfg_126</name>
           <description>STG SYSCONSAIF SYSCFG 504</description>
           <addressOffset>0x1f8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_aratomop_31_0</name>
@@ -13087,10 +13234,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg508</name>
+          <name>stg_syscfg_127</name>
           <description>STG SYSCONSAIF SYSCFG 508</description>
           <addressOffset>0x1fc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_aratomop_63_32</name>
@@ -13101,10 +13249,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg512</name>
+          <name>stg_syscfg_128</name>
           <description>STG SYSCONSAIF SYSCFG 512</description>
           <addressOffset>0x200</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_aratomop_95_64</name>
@@ -13115,10 +13264,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg516</name>
+          <name>stg_syscfg_129</name>
           <description>STG SYSCONSAIF SYSCFG 516</description>
           <addressOffset>0x204</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_aratomop_127_96</name>
@@ -13129,10 +13279,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg520</name>
+          <name>stg_syscfg_130</name>
           <description>STG SYSCONSAIF SYSCFG 520</description>
           <addressOffset>0x208</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_aratomop_159_128</name>
@@ -13143,10 +13294,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg524</name>
+          <name>stg_syscfg_131</name>
           <description>STG SYSCONSAIF SYSCFG 524</description>
           <addressOffset>0x20c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_aratomop_191_160</name>
@@ -13157,10 +13309,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg528</name>
+          <name>stg_syscfg_132</name>
           <description>STG SYSCONSAIF SYSCFG 528</description>
           <addressOffset>0x210</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_aratomop_223_192</name>
@@ -13171,10 +13324,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg532</name>
+          <name>stg_syscfg_133</name>
           <description>STG SYSCONSAIF SYSCFG 532</description>
           <addressOffset>0x214</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_aratomop_255_224</name>
@@ -13185,10 +13339,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg536</name>
+          <name>stg_syscfg_134</name>
           <description>STG SYSCONSAIF SYSCFG 536</description>
           <addressOffset>0x218</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_plda_pcie_axi4_mst0_aratomop_257_256</name>
@@ -13211,10 +13366,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg540</name>
+          <name>stg_syscfg_135</name>
           <description>STG SYSCONSAIF SYSCFG 540</description>
           <addressOffset>0x21c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_axi4_mst0_aruser_31_0</name>
@@ -13225,10 +13381,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg544</name>
+          <name>stg_syscfg_136</name>
           <description>STG SYSCONSAIF SYSCFG 544</description>
           <addressOffset>0x220</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_axi4_mst0_aruser_52_32</name>
@@ -13239,10 +13396,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg548</name>
+          <name>stg_syscfg_137</name>
           <description>STG SYSCONSAIF SYSCFG 548</description>
           <addressOffset>0x224</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_axi4_mst0_awfunc</name>
@@ -13259,10 +13417,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg552</name>
+          <name>stg_syscfg_138</name>
           <description>STG SYSCONSAIF SYSCFG 552</description>
           <addressOffset>0x228</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_axi4_mst0_awuser_31_0</name>
@@ -13273,10 +13432,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg556</name>
+          <name>stg_syscfg_139</name>
           <description>STG SYSCONSAIF SYSCFG 556</description>
           <addressOffset>0x22c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_axi4_mst0_awuser_42_32</name>
@@ -13293,10 +13453,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg560</name>
+          <name>stg_syscfg_140</name>
           <description>STG SYSCONSAIF SYSCFG 560</description>
           <addressOffset>0x230</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_axi4_mst0_ruser</name>
@@ -13307,10 +13468,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg564</name>
+          <name>stg_syscfg_141</name>
           <description>STG SYSCONSAIF SYSCFG 564</description>
           <addressOffset>0x234</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_axi4_mst0_wderr</name>
@@ -13321,10 +13483,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg568</name>
+          <name>stg_syscfg_142</name>
           <description>STG SYSCONSAIF SYSCFG 568</description>
           <addressOffset>0x238</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_axi4_slv0_aratomop_31_0</name>
@@ -13335,10 +13498,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg572</name>
+          <name>stg_syscfg_143</name>
           <description>STG SYSCONSAIF SYSCFG 572</description>
           <addressOffset>0x23c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_axi4_slv0_aratomop_63_32</name>
@@ -13349,10 +13513,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg576</name>
+          <name>stg_syscfg_144</name>
           <description>STG SYSCONSAIF SYSCFG 576</description>
           <addressOffset>0x240</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_axi4_slv0_aratomop_95_64</name>
@@ -13363,10 +13528,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg580</name>
+          <name>stg_syscfg_145</name>
           <description>STG SYSCONSAIF SYSCFG 580</description>
           <addressOffset>0x244</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_axi4_slv0_aratomop_127_96</name>
@@ -13377,10 +13543,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg584</name>
+          <name>stg_syscfg_146</name>
           <description>STG SYSCONSAIF SYSCFG 584</description>
           <addressOffset>0x248</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_axi4_slv0_aratomop_159_128</name>
@@ -13391,10 +13558,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg588</name>
+          <name>stg_syscfg_147</name>
           <description>STG SYSCONSAIF SYSCFG 588</description>
           <addressOffset>0x24c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_axi4_slv0_aratomop_191_160</name>
@@ -13405,10 +13573,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg592</name>
+          <name>stg_syscfg_148</name>
           <description>STG SYSCONSAIF SYSCFG 592</description>
           <addressOffset>0x250</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_axi4_slv0_aratomop_223_192</name>
@@ -13419,10 +13588,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg596</name>
+          <name>stg_syscfg_149</name>
           <description>STG SYSCONSAIF SYSCFG 596</description>
           <addressOffset>0x254</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_axi4_slv0_aratomop_255_224</name>
@@ -13433,10 +13603,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg600</name>
+          <name>stg_syscfg_150</name>
           <description>STG SYSCONSAIF SYSCFG 600</description>
           <addressOffset>0x258</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_axi4_mst0_aratomop_257_256</name>
@@ -13459,10 +13630,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg604</name>
+          <name>stg_syscfg_151</name>
           <description>STG SYSCONSAIF SYSCFG 604</description>
           <addressOffset>0x25c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_axi4_slv0_aruser_31_0</name>
@@ -13473,10 +13645,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg608</name>
+          <name>stg_syscfg_152</name>
           <description>STG SYSCONSAIF SYSCFG 608</description>
           <addressOffset>0x260</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_axi4_slv0_aruser_40_32</name>
@@ -13499,10 +13672,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg612</name>
+          <name>stg_syscfg_153</name>
           <description>STG SYSCONSAIF SYSCFG 612</description>
           <addressOffset>0x264</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_axi4_slv0_awuser_31_0</name>
@@ -13513,10 +13687,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg616</name>
+          <name>stg_syscfg_l54</name>
           <description>STG SYSCONSAIF SYSCFG 616</description>
           <addressOffset>0x268</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_axi4_slv0_awuser_40_32</name>
@@ -13533,10 +13708,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg620</name>
+          <name>stg_syscfg_155</name>
           <description>STG SYSCONSAIF SYSCFG 620</description>
           <addressOffset>0x26c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_axi4_slv0_ruser</name>
@@ -13547,10 +13723,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg624</name>
+          <name>stg_syscfg_156</name>
           <description>STG SYSCONSAIF SYSCFG 624</description>
           <addressOffset>0x270</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_axi4_slv0_wderr</name>
@@ -13567,10 +13744,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg628</name>
+          <name>stg_syscfg_157</name>
           <description>STG SYSCONSAIF SYSCFG 628</description>
           <addressOffset>0x274</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_axi4_slvl_awfunc</name>
@@ -13611,10 +13789,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg632</name>
+          <name>stg_syscfg_158</name>
           <description>STG SYSCONSAIF SYSCFG 632</description>
           <addressOffset>0x278</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_31_0</name>
@@ -13625,10 +13804,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg636</name>
+          <name>stg_syscfg_159</name>
           <description>STG SYSCONSAIF SYSCFG 636</description>
           <addressOffset>0x27c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_63_32</name>
@@ -13639,10 +13819,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg640</name>
+          <name>stg_syscfg_160</name>
           <description>STG SYSCONSAIF SYSCFG 640</description>
           <addressOffset>0x280</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_95_64</name>
@@ -13653,10 +13834,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg644</name>
+          <name>stg_syscfg_161</name>
           <description>STG SYSCONSAIF SYSCFG 644</description>
           <addressOffset>0x284</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_127_96</name>
@@ -13667,10 +13849,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg648</name>
+          <name>stg_syscfg_162</name>
           <description>STG SYSCONSAIF SYSCFG 648</description>
           <addressOffset>0x288</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_159_128</name>
@@ -13681,10 +13864,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg652</name>
+          <name>stg_syscfg_163</name>
           <description>STG SYSCONSAIF SYSCFG 652</description>
           <addressOffset>0x28c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_191_160</name>
@@ -13695,10 +13879,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg656</name>
+          <name>stg_syscfg_164</name>
           <description>STG SYSCONSAIF SYSCFG 656</description>
           <addressOffset>0x290</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_223_192</name>
@@ -13709,10 +13894,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg660</name>
+          <name>stg_syscfg_165</name>
           <description>STG SYSCONSAIF SYSCFG 660</description>
           <addressOffset>0x294</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_255_224</name>
@@ -13723,10 +13909,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg664</name>
+          <name>stg_syscfg_166</name>
           <description>STG SYSCONSAIF SYSCFG 664</description>
           <addressOffset>0x298</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_287_256</name>
@@ -13737,10 +13924,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg668</name>
+          <name>stg_syscfg_167</name>
           <description>STG SYSCONSAIF SYSCFG 668</description>
           <addressOffset>0x29c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_319_288</name>
@@ -13751,10 +13939,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg672</name>
+          <name>stg_syscfg_168</name>
           <description>STG SYSCONSAIF SYSCFG 672</description>
           <addressOffset>0x2a0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_351_320</name>
@@ -13765,10 +13954,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg676</name>
+          <name>stg_syscfg_169</name>
           <description>STG SYSCONSAIF SYSCFG 676</description>
           <addressOffset>0x2a4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_383_352</name>
@@ -13779,10 +13969,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg680</name>
+          <name>stg_syscfg_170</name>
           <description>STG SYSCONSAIF SYSCFG 680</description>
           <addressOffset>0x2a8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_415_384</name>
@@ -13793,10 +13984,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg684</name>
+          <name>stg_syscfg_171</name>
           <description>STG SYSCONSAIF SYSCFG 684</description>
           <addressOffset>0x2ac</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_447_416</name>
@@ -13807,10 +13999,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg688</name>
+          <name>stg_syscfg_172</name>
           <description>STG SYSCONSAIF SYSCFG 688</description>
           <addressOffset>0x2b0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_479_448</name>
@@ -13821,10 +14014,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg692</name>
+          <name>stg_syscfg_173</name>
           <description>STG SYSCONSAIF SYSCFG 692</description>
           <addressOffset>0x2b4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_511_480</name>
@@ -13835,10 +14029,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg696</name>
+          <name>stg_syscfg_174</name>
           <description>STG SYSCONSAIF SYSCFG 696</description>
           <addressOffset>0x2b8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_543_512</name>
@@ -13849,10 +14044,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg700</name>
+          <name>stg_syscfg_175</name>
           <description>STG SYSCONSAIF SYSCFG 700</description>
           <addressOffset>0x2bc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_575_544</name>
@@ -13863,10 +14059,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg704</name>
+          <name>stg_syscfg_176</name>
           <description>STG SYSCONSAIF SYSCFG 704</description>
           <addressOffset>0x2c0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_607_576</name>
@@ -13877,10 +14074,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg708</name>
+          <name>stg_syscfg_177</name>
           <description>STG SYSCONSAIF SYSCFG 708</description>
           <addressOffset>0x2c4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_639_608</name>
@@ -13891,10 +14089,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg712</name>
+          <name>stg_syscfg_178</name>
           <description>STG SYSCONSAIF SYSCFG 712</description>
           <addressOffset>0x2c8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_671_640</name>
@@ -13905,10 +14104,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg716</name>
+          <name>stg_syscfg_179</name>
           <description>STG SYSCONSAIF SYSCFG 716</description>
           <addressOffset>0x2cc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_703_672</name>
@@ -13919,10 +14119,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg720</name>
+          <name>stg_syscfg_180</name>
           <description>STG SYSCONSAIF SYSCFG 720</description>
           <addressOffset>0x2d0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_735_704</name>
@@ -13933,10 +14134,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg724</name>
+          <name>stg_syscfg_181</name>
           <description>STG SYSCONSAIF SYSCFG 724</description>
           <addressOffset>0x2d4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_767_736</name>
@@ -13947,10 +14149,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg728</name>
+          <name>stg_syscfg_182</name>
           <description>STG SYSCONSAIF SYSCFG 728</description>
           <addressOffset>0x2d8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_799_768</name>
@@ -13961,10 +14164,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg732</name>
+          <name>stg_syscfg_183</name>
           <description>STG SYSCONSAIF SYSCFG 732</description>
           <addressOffset>0x2dc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_831_800</name>
@@ -13975,10 +14179,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg736</name>
+          <name>stg_syscfg_184</name>
           <description>STG SYSCONSAIF SYSCFG 736</description>
           <addressOffset>0x2e0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_k_phyparam_839_832</name>
@@ -14007,10 +14212,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg740</name>
+          <name>stg_syscfg_185</name>
           <description>STG SYSCONSAIF SYSCFG 740</description>
           <addressOffset>0x2e4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_local_interrupt_in</name>
@@ -14021,10 +14227,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg744</name>
+          <name>stg_syscfg_186</name>
           <description>STG SYSCONSAIF SYSCFG 744</description>
           <addressOffset>0x2e8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_mperstn</name>
@@ -14065,10 +14272,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg748</name>
+          <name>stg_syscfg_187</name>
           <description>STG SYSCONSAIF SYSCFG 748</description>
           <addressOffset>0x2ec</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_pf0_offset</name>
@@ -14079,10 +14287,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg752</name>
+          <name>stg_syscfg_188</name>
           <description>STG SYSCONSAIF SYSCFG 752</description>
           <addressOffset>0x2f0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_pf1_offset</name>
@@ -14093,10 +14302,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg756</name>
+          <name>stg_syscfg_189</name>
           <description>STG SYSCONSAIF SYSCFG 756</description>
           <addressOffset>0x2f4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_pf2_offset</name>
@@ -14107,10 +14317,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg760</name>
+          <name>stg_syscfg_190</name>
           <description>STG SYSCONSAIF SYSCFG 760</description>
           <addressOffset>0x2f8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_pf3_offset</name>
@@ -14151,10 +14362,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg764</name>
+          <name>stg_syscfg_191</name>
           <description>STG SYSCONSAIF SYSCFG 764</description>
           <addressOffset>0x2fc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_pl_pclk_rate</name>
@@ -14165,10 +14377,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg768</name>
+          <name>stg_syscfg_192</name>
           <description>STG SYSCONSAIF SYSCFG 768</description>
           <addressOffset>0x300</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_pl_sideband_in_31_0</name>
@@ -14179,10 +14392,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg772</name>
+          <name>stg_syscfg_193</name>
           <description>STG SYSCONSAIF SYSCFG 772</description>
           <addressOffset>0x304</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_pl_sideband_in_63_32</name>
@@ -14193,10 +14407,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg776</name>
+          <name>stg_syscfg_194</name>
           <description>STG SYSCONSAIF SYSCFG 776</description>
           <addressOffset>0x308</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_pl_sideband_out_31_0</name>
@@ -14207,10 +14422,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg780</name>
+          <name>stg_syscfg_195</name>
           <description>STG SYSCONSAIF SYSCFG 780</description>
           <addressOffset>0x30c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_pl_sideband_out_63_32</name>
@@ -14221,10 +14437,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg784</name>
+          <name>stg_syscfg_196</name>
           <description>STG SYSCONSAIF SYSCFG 784</description>
           <addressOffset>0x310</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_pl_wake_in</name>
@@ -14247,10 +14464,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg788</name>
+          <name>stg_syscfg_197</name>
           <description>STG SYSCONSAIF SYSCFG 788</description>
           <addressOffset>0x314</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_in_31_0</name>
@@ -14261,10 +14479,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg792</name>
+          <name>stg_syscfg_198</name>
           <description>STG SYSCONSAIF SYSCFG 792</description>
           <addressOffset>0x318</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_in_63_32</name>
@@ -14275,10 +14494,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg796</name>
+          <name>stg_syscfg_199</name>
           <description>STG SYSCONSAIF SYSCFG 796</description>
           <addressOffset>0x31c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_bridge_31_0</name>
@@ -14289,10 +14509,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg800</name>
+          <name>stg_syscfg_200</name>
           <description>STG SYSCONSAIF SYSCFG 800</description>
           <addressOffset>0x320</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_bridge_63_32</name>
@@ -14303,10 +14524,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg804</name>
+          <name>stg_syscfg_201</name>
           <description>STG SYSCONSAIF SYSCFG 804</description>
           <addressOffset>0x324</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_bridge_95_64</name>
@@ -14317,10 +14539,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg808</name>
+          <name>stg_syscfg_202</name>
           <description>STG SYSCONSAIF SYSCFG 808</description>
           <addressOffset>0x328</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_bridge_127_96</name>
@@ -14331,10 +14554,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg812</name>
+          <name>stg_syscfg_203</name>
           <description>STG SYSCONSAIF SYSCFG 812</description>
           <addressOffset>0x32c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_bridge_159_128</name>
@@ -14345,10 +14569,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg816</name>
+          <name>stg_syscfg_204</name>
           <description>STG SYSCONSAIF SYSCFG 816</description>
           <addressOffset>0x330</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_bridge_191_160</name>
@@ -14359,10 +14584,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg820</name>
+          <name>stg_syscfg_205</name>
           <description>STG SYSCONSAIF SYSCFG 820</description>
           <addressOffset>0x334</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_bridge_223_192</name>
@@ -14373,10 +14599,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg824</name>
+          <name>stg_syscfg_206</name>
           <description>STG SYSCONSAIF SYSCFG 824</description>
           <addressOffset>0x338</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_bridge_255_224</name>
@@ -14387,10 +14614,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg828</name>
+          <name>stg_syscfg_207</name>
           <description>STG SYSCONSAIF SYSCFG 828</description>
           <addressOffset>0x33c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_bridge_287_256</name>
@@ -14401,10 +14629,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg832</name>
+          <name>stg_syscfg_208</name>
           <description>STG SYSCONSAIF SYSCFG 832</description>
           <addressOffset>0x340</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_bridge_319_288</name>
@@ -14415,10 +14644,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg836</name>
+          <name>stg_syscfg_209</name>
           <description>STG SYSCONSAIF SYSCFG 836</description>
           <addressOffset>0x344</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_bridge_351_320</name>
@@ -14429,10 +14659,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg840</name>
+          <name>stg_syscfg_210</name>
           <description>STG SYSCONSAIF SYSCFG 840</description>
           <addressOffset>0x348</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_bridge_383_352</name>
@@ -14443,10 +14674,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg844</name>
+          <name>stg_syscfg_211</name>
           <description>STG SYSCONSAIF SYSCFG 844</description>
           <addressOffset>0x34c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_bridge_415_384</name>
@@ -14457,10 +14689,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg848</name>
+          <name>stg_syscfg_212</name>
           <description>STG SYSCONSAIF SYSCFG 848</description>
           <addressOffset>0x350</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_bridge_447_416</name>
@@ -14471,10 +14704,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg852</name>
+          <name>stg_syscfg_213</name>
           <description>STG SYSCONSAIF SYSCFG 852</description>
           <addressOffset>0x354</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_bridge_479_448</name>
@@ -14485,10 +14719,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg856</name>
+          <name>stg_syscfg_214</name>
           <description>STG SYSCONSAIF SYSCFG 856</description>
           <addressOffset>0x358</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_bridge_511_480</name>
@@ -14499,10 +14734,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg860</name>
+          <name>stg_syscfg_215</name>
           <description>STG SYSCONSAIF SYSCFG 860</description>
           <addressOffset>0x35c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_pcie_31_0</name>
@@ -14513,10 +14749,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg864</name>
+          <name>stg_syscfg_216</name>
           <description>STG SYSCONSAIF SYSCFG 864</description>
           <addressOffset>0x360</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_pcie_63_32</name>
@@ -14527,10 +14764,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg868</name>
+          <name>stg_syscfg_217</name>
           <description>STG SYSCONSAIF SYSCFG 868</description>
           <addressOffset>0x364</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_pcie_95_64</name>
@@ -14541,10 +14779,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg872</name>
+          <name>stg_syscfg_218</name>
           <description>STG SYSCONSAIF SYSCFG 872</description>
           <addressOffset>0x368</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_pcie_127_96</name>
@@ -14555,10 +14794,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg876</name>
+          <name>stg_syscfg_219</name>
           <description>STG SYSCONSAIF SYSCFG 876</description>
           <addressOffset>0x36c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_pcie_159_128</name>
@@ -14569,10 +14809,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg880</name>
+          <name>stg_syscfg_220</name>
           <description>STG SYSCONSAIF SYSCFG 880</description>
           <addressOffset>0x370</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_pcie_191_160</name>
@@ -14583,10 +14824,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg884</name>
+          <name>stg_syscfg_221</name>
           <description>STG SYSCONSAIF SYSCFG 884</description>
           <addressOffset>0x374</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_pcie_223_192</name>
@@ -14597,10 +14839,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg888</name>
+          <name>stg_syscfg_222</name>
           <description>STG SYSCONSAIF SYSCFG 888</description>
           <addressOffset>0x378</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_pcie_255_224</name>
@@ -14611,10 +14854,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg892</name>
+          <name>stg_syscfg_223</name>
           <description>STG SYSCONSAIF SYSCFG 892</description>
           <addressOffset>0x37c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_pcie_287_256</name>
@@ -14625,10 +14869,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg896</name>
+          <name>stg_syscfg_224</name>
           <description>STG SYSCONSAIF SYSCFG 896</description>
           <addressOffset>0x380</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_pcie_319_288</name>
@@ -14639,10 +14884,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg900</name>
+          <name>stg_syscfg_225</name>
           <description>STG SYSCONSAIF SYSCFG 900</description>
           <addressOffset>0x384</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_pcie_351_320</name>
@@ -14653,10 +14899,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg904</name>
+          <name>stg_syscfg_226</name>
           <description>STG SYSCONSAIF SYSCFG 904</description>
           <addressOffset>0x388</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_pcie_383_352</name>
@@ -14667,10 +14914,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg908</name>
+          <name>stg_syscfg_227</name>
           <description>STG SYSCONSAIF SYSCFG 908</description>
           <addressOffset>0x38c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_pcie_415_384</name>
@@ -14681,10 +14929,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg912</name>
+          <name>stg_syscfg_228</name>
           <description>STG SYSCONSAIF SYSCFG 912</description>
           <addressOffset>0x390</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_pcie_447_416</name>
@@ -14695,10 +14944,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg916</name>
+          <name>stg_syscfg_229</name>
           <description>STG SYSCONSAIF SYSCFG 916</description>
           <addressOffset>0x394</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_pcie_479_448</name>
@@ -14709,10 +14959,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg920</name>
+          <name>stg_syscfg_230</name>
           <description>STG SYSCONSAIF SYSCFG 920</description>
           <addressOffset>0x398</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_out_pcie_511_480</name>
@@ -14723,10 +14974,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg924</name>
+          <name>stg_syscfg_231</name>
           <description>STG SYSCONSAIF SYSCFG 924</description>
           <addressOffset>0x39c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_test_sel</name>
@@ -14743,10 +14995,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg928</name>
+          <name>stg_syscfg_232</name>
           <description>STG SYSCONSAIF SYSCFG 928</description>
           <addressOffset>0x3a0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_tl_ctrl_hotplug</name>
@@ -14763,10 +15016,11 @@
           </fields>
         </register>
         <register>
-          <name>stg_sysconsaif_syscfg932</name>
+          <name>stg_syscfg_233</name>
           <description>STG SYSCONSAIF SYSCFG 932</description>
           <addressOffset>0x3a4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_plda_pcie_tx_pattern</name>
@@ -30432,7 +30686,7 @@
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_cdns_qspi_scfg_sram_config_sram_config_sd</name>
+              <name>u0_cdns_qspi_scfg_sram_config_sd</name>
               <description>SRAM/ROM configuration. SD: shutdown enable, high active, default is low.</description>
               <bitRange>[1:1]</bitRange>
               <access>read-write</access>
@@ -30480,7 +30734,7 @@
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_cdns_spdif_scfg_sram_config_sram_config_sd</name>
+              <name>u0_cdns_spdif_scfg_sram_config_sd</name>
               <description>SRAM/ROM configuration. SD: shutdown enable, high active, default is low.</description>
               <bitRange>[13:13]</bitRange>
               <access>read-write</access>
@@ -30578,7 +30832,7 @@
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_intmem_rom_sram_sram_config_sram_config_sd</name>
+              <name>u0_intmem_rom_sram_sram_config_sd</name>
               <description>SRAM/ROM configuration. SD: shutdown enable, high active, default is low.</description>
               <bitRange>[4:4]</bitRange>
               <access>read-write</access>
@@ -31496,7 +31750,7 @@
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_venc_intsram_sram_config_sram_config_sd</name>
+              <name>u0_venc_intsram_sram_config_sd</name>
               <description>SRAM/ROM configuration. SD: shutdown enable, high active, default is low.</description>
               <bitRange>[1:1]</bitRange>
               <access>read-write</access>
@@ -31594,7 +31848,7 @@
               <access>read-write</access>
             </field>
             <field>
-              <name>u1_gmac5_axi64_scfg_ram_cfg_sram_config_sd</name>
+              <name>u1_gmac5_axi64_scfg_ram_cfg_sd</name>
               <description>SRAM/ROM configuration. SD: shutdown enable, high active, default is low.</description>
               <bitRange>[20:20]</bitRange>
               <access>read-write</access>
@@ -39586,7 +39840,7 @@
               <access>read-write</access>
             </field>
             <field>
-              <name>gmac5_axi64_scfg_ram_cfg_sram_config_sd</name>
+              <name>gmac5_axi64_scfg_ram_cfg_sd</name>
               <description>SRAM/ROM configuration. SD: shutdown enable, high active, default is low.</description>
               <bitRange>[5:5]</bitRange>
               <access>read-write</access>

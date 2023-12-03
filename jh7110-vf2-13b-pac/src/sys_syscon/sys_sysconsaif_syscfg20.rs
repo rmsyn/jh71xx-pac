@@ -6,10 +6,10 @@ pub type W = crate::W<SYS_SYSCONSAIF_SYSCFG20_SPEC>;
 pub type U0_CDNS_QSPI_SCFG_SRAM_CONFIG_SLP_R = crate::BitReader;
 #[doc = "Field `u0_cdns_qspi_scfg_sram_config_slp` writer - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
 pub type U0_CDNS_QSPI_SCFG_SRAM_CONFIG_SLP_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `u0_cdns_qspi_scfg_sram_config_sram_config_sd` reader - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
-pub type U0_CDNS_QSPI_SCFG_SRAM_CONFIG_SRAM_CONFIG_SD_R = crate::BitReader;
-#[doc = "Field `u0_cdns_qspi_scfg_sram_config_sram_config_sd` writer - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
-pub type U0_CDNS_QSPI_SCFG_SRAM_CONFIG_SRAM_CONFIG_SD_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_cdns_qspi_scfg_sram_config_sd` reader - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
+pub type U0_CDNS_QSPI_SCFG_SRAM_CONFIG_SD_R = crate::BitReader;
+#[doc = "Field `u0_cdns_qspi_scfg_sram_config_sd` writer - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
+pub type U0_CDNS_QSPI_SCFG_SRAM_CONFIG_SD_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdns_qspi_scfg_sram_config_rtsel` reader - SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01."]
 pub type U0_CDNS_QSPI_SCFG_SRAM_CONFIG_RTSEL_R = crate::FieldReader;
 #[doc = "Field `u0_cdns_qspi_scfg_sram_config_rtsel` writer - SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01."]
@@ -38,10 +38,10 @@ pub type U0_CDNS_QSPI_SCFG_SRAM_CONFIG_VG_W<'a, REG> = crate::BitWriter<'a, REG>
 pub type U0_CDNS_SPDIF_SCFG_SRAM_CONFIG_SLP_R = crate::BitReader;
 #[doc = "Field `u0_cdns_spdif_scfg_sram_config_slp` writer - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
 pub type U0_CDNS_SPDIF_SCFG_SRAM_CONFIG_SLP_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `u0_cdns_spdif_scfg_sram_config_sram_config_sd` reader - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
-pub type U0_CDNS_SPDIF_SCFG_SRAM_CONFIG_SRAM_CONFIG_SD_R = crate::BitReader;
-#[doc = "Field `u0_cdns_spdif_scfg_sram_config_sram_config_sd` writer - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
-pub type U0_CDNS_SPDIF_SCFG_SRAM_CONFIG_SRAM_CONFIG_SD_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_cdns_spdif_scfg_sram_config_sd` reader - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
+pub type U0_CDNS_SPDIF_SCFG_SRAM_CONFIG_SD_R = crate::BitReader;
+#[doc = "Field `u0_cdns_spdif_scfg_sram_config_sd` writer - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
+pub type U0_CDNS_SPDIF_SCFG_SRAM_CONFIG_SD_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_cdns_spdif_scfg_sram_config_rtsel` reader - SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01."]
 pub type U0_CDNS_SPDIF_SCFG_SRAM_CONFIG_RTSEL_R = crate::FieldReader;
 #[doc = "Field `u0_cdns_spdif_scfg_sram_config_rtsel` writer - SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01."]
@@ -86,10 +86,8 @@ impl R {
     }
     #[doc = "Bit 1 - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
     #[inline(always)]
-    pub fn u0_cdns_qspi_scfg_sram_config_sram_config_sd(
-        &self,
-    ) -> U0_CDNS_QSPI_SCFG_SRAM_CONFIG_SRAM_CONFIG_SD_R {
-        U0_CDNS_QSPI_SCFG_SRAM_CONFIG_SRAM_CONFIG_SD_R::new(((self.bits >> 1) & 1) != 0)
+    pub fn u0_cdns_qspi_scfg_sram_config_sd(&self) -> U0_CDNS_QSPI_SCFG_SRAM_CONFIG_SD_R {
+        U0_CDNS_QSPI_SCFG_SRAM_CONFIG_SD_R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bits 2:3 - SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01."]
     #[inline(always)]
@@ -128,10 +126,8 @@ impl R {
     }
     #[doc = "Bit 13 - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
     #[inline(always)]
-    pub fn u0_cdns_spdif_scfg_sram_config_sram_config_sd(
-        &self,
-    ) -> U0_CDNS_SPDIF_SCFG_SRAM_CONFIG_SRAM_CONFIG_SD_R {
-        U0_CDNS_SPDIF_SCFG_SRAM_CONFIG_SRAM_CONFIG_SD_R::new(((self.bits >> 13) & 1) != 0)
+    pub fn u0_cdns_spdif_scfg_sram_config_sd(&self) -> U0_CDNS_SPDIF_SCFG_SRAM_CONFIG_SD_R {
+        U0_CDNS_SPDIF_SCFG_SRAM_CONFIG_SD_R::new(((self.bits >> 13) & 1) != 0)
     }
     #[doc = "Bits 14:15 - SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01."]
     #[inline(always)]
@@ -196,10 +192,10 @@ impl W {
     #[doc = "Bit 1 - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
     #[inline(always)]
     #[must_use]
-    pub fn u0_cdns_qspi_scfg_sram_config_sram_config_sd(
+    pub fn u0_cdns_qspi_scfg_sram_config_sd(
         &mut self,
-    ) -> U0_CDNS_QSPI_SCFG_SRAM_CONFIG_SRAM_CONFIG_SD_W<SYS_SYSCONSAIF_SYSCFG20_SPEC> {
-        U0_CDNS_QSPI_SCFG_SRAM_CONFIG_SRAM_CONFIG_SD_W::new(self, 1)
+    ) -> U0_CDNS_QSPI_SCFG_SRAM_CONFIG_SD_W<SYS_SYSCONSAIF_SYSCFG20_SPEC> {
+        U0_CDNS_QSPI_SCFG_SRAM_CONFIG_SD_W::new(self, 1)
     }
     #[doc = "Bits 2:3 - SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01."]
     #[inline(always)]
@@ -260,10 +256,10 @@ impl W {
     #[doc = "Bit 13 - SRAM/ROM configuration. SD: shutdown enable, high active, default is low."]
     #[inline(always)]
     #[must_use]
-    pub fn u0_cdns_spdif_scfg_sram_config_sram_config_sd(
+    pub fn u0_cdns_spdif_scfg_sram_config_sd(
         &mut self,
-    ) -> U0_CDNS_SPDIF_SCFG_SRAM_CONFIG_SRAM_CONFIG_SD_W<SYS_SYSCONSAIF_SYSCFG20_SPEC> {
-        U0_CDNS_SPDIF_SCFG_SRAM_CONFIG_SRAM_CONFIG_SD_W::new(self, 13)
+    ) -> U0_CDNS_SPDIF_SCFG_SRAM_CONFIG_SD_W<SYS_SYSCONSAIF_SYSCFG20_SPEC> {
+        U0_CDNS_SPDIF_SCFG_SRAM_CONFIG_SD_W::new(self, 13)
     }
     #[doc = "Bits 14:15 - SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01."]
     #[inline(always)]
