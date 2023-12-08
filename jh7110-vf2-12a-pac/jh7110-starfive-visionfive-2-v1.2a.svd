@@ -32297,10 +32297,11 @@
       </addressBlock>
       <registers>
         <register>
-          <name>sys_sysconsaif_syscfg0</name>
+          <name>sys_syscfg_0</name>
           <description>SYS SYSCONSAIF SYSCFG 0</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>scfg_e24_remap_haddr</name>
@@ -32353,10 +32354,11 @@
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg4</name>
+          <name>sys_syscfg_1</name>
           <description>SYS SYSCONSAIF SYSCFG 4</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>scfg_sd1_remap_awaddr</name>
@@ -32409,10 +32411,11 @@
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg8</name>
+          <name>sys_syscfg_2</name>
           <description>SYS SYSCONSAIF SYSCFG 8</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>scfg_vout0_remap_awaddr</name>
@@ -32435,10 +32438,11 @@
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg12</name>
+          <name>sys_syscfg_3</name>
           <description>SYS SYSCONSAIF SYSCFG 12: Set the GPIO voltage of all the 4 GPIO groups in this register</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>scfg_vout0_remap_awaddr_gpio0</name>
@@ -32467,10 +32471,11 @@
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg16</name>
+          <name>sys_syscfg_4</name>
           <description>SYS SYSCONSAIF SYSCFG 16</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_coda12_o_cur_inst_a</name>
@@ -32511,10 +32516,11 @@
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg20</name>
+          <name>sys_syscfg_5</name>
           <description>SYS SYSCONSAIF SYSCFG 20</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_cdns_qspi_scfg_sram_config_slp</name>
@@ -32639,10 +32645,11 @@
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg24</name>
+          <name>sys_syscfg_6</name>
           <description>SYS SYSCONSAIF SYSCFG 24</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_sdio_m_hbig_endian</name>
@@ -32729,36 +32736,37 @@
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll0_cpi_bias</name>
-              <description>u0_pll_wrap_pll0_cpi_bias</description>
+              <name>pll0_cpi_bias</name>
+              <description>pll0_cpi_bias</description>
               <bitRange>[20:18]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll0_cpp_bias</name>
-              <description>u0_pll_wrap_pll0_cpp_bias</description>
+              <name>pll0_cpp_bias</name>
+              <description>pll0_cpp_bias</description>
               <bitRange>[23:21]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll0_dacpd</name>
-              <description>u0_pll_wrap_pll0_dacpd</description>
+              <name>pll0_dacpd</name>
+              <description>pll0_dacpd</description>
               <bitRange>[24:24]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll0_dsmpd</name>
-              <description>u0_pll_wrap_pll0_dsmpd</description>
+              <name>pll0_dsmpd</name>
+              <description>pll0_dsmpd</description>
               <bitRange>[25:25]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg28</name>
+          <name>sys_syscfg_7</name>
           <description>SYS SYSCONSAIF SYSCFG 28</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_pll_wrap_pll0_fbdiv</name>
@@ -32769,275 +32777,281 @@
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg32</name>
+          <name>sys_syscfg_8</name>
           <description>SYS SYSCONSAIF SYSCFG 32</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_pll_wrap_pll0_frac</name>
-              <description>u0_pll_wrap_pll0_frac</description>
+              <name>pll0_frac</name>
+              <description>pll0_frac</description>
               <bitRange>[23:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll0_gvco_bias</name>
-              <description>u0_pll_wrap_pll0_gvco_bias</description>
+              <name>pll0_gvco_bias</name>
+              <description>pll0_gvco_bias</description>
               <bitRange>[25:24]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll0_lock</name>
-              <description>u0_pll_wrap_pll0_lock</description>
+              <name>pll0_lock</name>
+              <description>pll0_lock</description>
               <bitRange>[26:26]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll0_pd</name>
-              <description>u0_pll_wrap_pll0_pd</description>
+              <name>pll0_pd</name>
+              <description>pll0_pd</description>
               <bitRange>[27:27]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll0_postdiv1</name>
-              <description>u0_pll_wrap_pll0_postdiv1</description>
+              <name>pll0_postdiv1</name>
+              <description>pll0_postdiv1</description>
               <bitRange>[29:28]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll0_postdiv2</name>
-              <description>u0_pll_wrap_pll0_postdiv2</description>
+              <name>pll0_postdiv2</name>
+              <description>pll0_postdiv2</description>
               <bitRange>[31:30]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg36</name>
+          <name>sys_syscfg_9</name>
           <description>SYS SYSCONSAIF SYSCFG 36</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_pll_wrap_pll0_prediv</name>
-              <description>u0_pll_wrap_pll0_prediv</description>
+              <name>pll0_prediv</name>
+              <description>pll0_prediv</description>
               <bitRange>[5:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll0_testen</name>
-              <description>u0_pll_wrap_pll0_testen</description>
+              <name>pll0_testen</name>
+              <description>pll0_testen</description>
               <bitRange>[6:6]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll0_testsel</name>
-              <description>u0_pll_wrap_pll0_testsel</description>
+              <name>pll0_testsel</name>
+              <description>pll0_testsel</description>
               <bitRange>[8:7]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll1_cpi_bias</name>
-              <description>u0_pll_wrap_pll1_cpi_bias</description>
+              <name>pll1_cpi_bias</name>
+              <description>pll1_cpi_bias</description>
               <bitRange>[11:9]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll1_cpp_bias</name>
-              <description>u0_pll_wrap_pll1_cpp_bias</description>
+              <name>pll1_cpp_bias</name>
+              <description>pll1_cpp_bias</description>
               <bitRange>[14:12]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll1_dacpd</name>
-              <description>u0_pll_wrap_pll1_dacpd</description>
+              <name>pll1_dacpd</name>
+              <description>pll1_dacpd</description>
               <bitRange>[15:15]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll1_dsmpd</name>
-              <description>u0_pll_wrap_pll1_dsmpd</description>
+              <name>pll1_dsmpd</name>
+              <description>pll1_dsmpd</description>
               <bitRange>[16:16]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll1_fbdiv</name>
-              <description>u0_pll_wrap_pll1_fbdiv</description>
+              <name>pll1_fbdiv</name>
+              <description>pll1_fbdiv</description>
               <bitRange>[28:17]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg40</name>
+          <name>sys_syscfg_10</name>
           <description>SYS SYSCONSAIF SYSCFG 40</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_pll_wrap_pll1_frac</name>
-              <description>u0_pll_wrap_pll1_frac</description>
+              <name>pll1_frac</name>
+              <description>pll1_frac</description>
               <bitRange>[23:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll1_gvco_bias</name>
-              <description>u0_pll_wrap_pll1_gvco_bias</description>
+              <name>pll1_gvco_bias</name>
+              <description>pll1_gvco_bias</description>
               <bitRange>[25:24]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll1_lock</name>
-              <description>u0_pll_wrap_pll1_lock</description>
+              <name>pll1_lock</name>
+              <description>pll1_lock</description>
               <bitRange>[26:26]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll1_pd</name>
-              <description>u0_pll_wrap_pll1_pd</description>
+              <name>pll1_pd</name>
+              <description>pll1_pd</description>
               <bitRange>[27:27]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll1_postdiv1</name>
-              <description>u0_pll_wrap_pll1_postdiv1</description>
+              <name>pll1_postdiv1</name>
+              <description>pll1_postdiv1</description>
               <bitRange>[29:28]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll1_postdiv2</name>
-              <description>u0_pll_wrap_pll1_postdiv2</description>
+              <name>pll1_postdiv2</name>
+              <description>pll1_postdiv2</description>
               <bitRange>[31:30]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg44</name>
+          <name>sys_syscfg_11</name>
           <description>SYS SYSCONSAIF SYSCFG 44</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_pll_wrap_pll1_prediv</name>
-              <description>u0_pll_wrap_pll1_prediv</description>
+              <name>pll1_prediv</name>
+              <description>pll1_prediv</description>
               <bitRange>[5:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll1_testen</name>
-              <description>u0_pll_wrap_pll1_testen</description>
+              <name>pll1_testen</name>
+              <description>pll1_testen</description>
               <bitRange>[6:6]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll1_testsel</name>
-              <description>u0_pll_wrap_pll1_testsel</description>
+              <name>pll1_testsel</name>
+              <description>pll1_testsel</description>
               <bitRange>[8:7]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll2_cpi_bias</name>
-              <description>u0_pll_wrap_pll2_cpi_bias</description>
+              <name>pll2_cpi_bias</name>
+              <description>pll2_cpi_bias</description>
               <bitRange>[11:9]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll2_cpp_bias</name>
-              <description>u0_pll_wrap_pll2_cpp_bias</description>
+              <name>pll2_cpp_bias</name>
+              <description>pll2_cpp_bias</description>
               <bitRange>[14:12]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll2_dacpd</name>
-              <description>u0_pll_wrap_pll2_dacpd</description>
+              <name>pll2_dacpd</name>
+              <description>pll2_dacpd</description>
               <bitRange>[15:15]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll2_dsmpd</name>
-              <description>u0_pll_wrap_pll2_dsmpd</description>
+              <name>pll2_dsmpd</name>
+              <description>pll2_dsmpd</description>
               <bitRange>[16:16]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll2_fbdiv</name>
-              <description>u0_pll_wrap_pll2_fbdiv</description>
+              <name>pll2_fbdiv</name>
+              <description>pll2_fbdiv</description>
               <bitRange>[28:17]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg48</name>
+          <name>sys_syscfg_12</name>
           <description>SYS SYSCONSAIF SYSCFG 48</description>
           <addressOffset>0x30</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_pll_wrap_pll2_frac</name>
-              <description>u0_pll_wrap_pll2_frac</description>
+              <name>pll2_frac</name>
+              <description>pll2_frac</description>
               <bitRange>[23:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll2_gvco_bias</name>
-              <description>u0_pll_wrap_pll2_gvco_bias</description>
+              <name>pll2_gvco_bias</name>
+              <description>pll2_gvco_bias</description>
               <bitRange>[25:24]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll2_lock</name>
-              <description>u0_pll_wrap_pll2_lock</description>
+              <name>pll2_lock</name>
+              <description>pll2_lock</description>
               <bitRange>[26:26]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll2_pd</name>
-              <description>u0_pll_wrap_pll2_pd</description>
+              <name>pll2_pd</name>
+              <description>pll2_pd</description>
               <bitRange>[27:27]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll2_postdiv1</name>
-              <description>u0_pll_wrap_pll2_postdiv1</description>
+              <name>pll2_postdiv1</name>
+              <description>pll2_postdiv1</description>
               <bitRange>[29:28]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll2_postdiv2</name>
-              <description>u0_pll_wrap_pll2_postdiv2</description>
+              <name>pll2_postdiv2</name>
+              <description>pll2_postdiv2</description>
               <bitRange>[31:30]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg52</name>
+          <name>sys_syscfg_13</name>
           <description>SYS SYSCONSAIF SYSCFG 52</description>
           <addressOffset>0x34</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_pll_wrap_pll2_prediv</name>
-              <description>u0_pll_wrap_pll2_prediv</description>
+              <name>pll2_prediv</name>
+              <description>pll2_prediv</description>
               <bitRange>[5:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll2_testen</name>
-              <description>u0_pll_wrap_pll2_testen</description>
+              <name>pll2_testen</name>
+              <description>pll2_testen</description>
               <bitRange>[6:6]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_pll2_testsel</name>
-              <description>u0_pll_wrap_pll2_testsel</description>
+              <name>pll2_testsel</name>
+              <description>pll2_testsel</description>
               <bitRange>[8:7]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pll_wrap_syscfg_test_pll_mode</name>
+              <name>pll_test_mode</name>
               <description>PLL test mode, only used for PLL BIST through jtag2apb</description>
               <bitRange>[9:9]</bitRange>
               <access>read-write</access>
@@ -33055,118 +33069,119 @@
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_sft7110_noc_bus_oic_evemon_0_start</name>
-              <description>u0_sft7110_noc_bus_oic_evemon_0_start</description>
+              <name>noc_bus_oic_evemon_start_0</name>
+              <description>noc_bus_oic_evemon_start_0</description>
               <bitRange>[19:19]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_sft7110_noc_bus_oic_evemon_0_trigger</name>
-              <description>u0_sft7110_noc_bus_oic_evemon_0_trigger</description>
+              <name>noc_bus_oic_evemon_trigger_0</name>
+              <description>noc_bus_oic_evemon_trigger_0</description>
               <bitRange>[20:20]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_sft7110_noc_bus_oic_evemon_1_start</name>
-              <description>u0_sft7110_noc_bus_oic_evemon_1_start</description>
+              <name>noc_bus_oic_evemon_start_1</name>
+              <description>noc_bus_oic_evemon_start_1</description>
               <bitRange>[21:21]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_sft7110_noc_bus_oic_evemon_1_trigger</name>
-              <description>u0_sft7110_noc_bus_oic_evemon_1_trigger</description>
+              <name>noc_bus_oic_evemon_trigger_1</name>
+              <description>noc_bus_oic_evemon_trigger_1</description>
               <bitRange>[22:22]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_sft7110_noc_bus_oic_evemon_2_start</name>
-              <description>u0_sft7110_noc_bus_oic_evemon_2_start</description>
+              <name>noc_bus_oic_evemon_start_2</name>
+              <description>noc_bus_oic_evemon_start_2</description>
               <bitRange>[23:23]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_sft7110_noc_bus_oic_evemon_2_trigger</name>
-              <description>u0_sft7110_noc_bus_oic_evemon_2_trigger</description>
+              <name>noc_bus_oic_evemon_trigger_2</name>
+              <description>noc_bus_oic_evemon_trigger_2</description>
               <bitRange>[24:24]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_sft7110_noc_bus_oic_evemon_3_start</name>
-              <description>u0_sft7110_noc_bus_oic_evemon_3_start</description>
+              <name>noc_bus_oic_evemon_start_3</name>
+              <description>noc_bus_oic_evemon_start_3</description>
               <bitRange>[25:25]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_sft7110_noc_bus_oic_evemon_3_trigger</name>
-              <description>u0_sft7110_noc_bus_oic_evemon_3_trigger</description>
+              <name>noc_bus_oic_evemon_trigger_3</name>
+              <description>noc_bus_oic_evemon_trigger_3</description>
               <bitRange>[26:26]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_sft7110_noc_bus_oic_evemon_4_start</name>
-              <description>u0_sft7110_noc_bus_oic_evemon_4_start</description>
+              <name>noc_bus_oic_evemon_start_4</name>
+              <description>noc_bus_oic_evemon_start_4</description>
               <bitRange>[27:27]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_sft7110_noc_bus_oic_evemon_4_trigger</name>
-              <description>u0_sft7110_noc_bus_oic_evemon_4_trigger</description>
+              <name>noc_bus_oic_evemon_trigger_4</name>
+              <description>noc_bus_oic_evemon_trigger_4</description>
               <bitRange>[28:28]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_sft7110_noc_bus_oic_evemon_5_start</name>
-              <description>u0_sft7110_noc_bus_oic_evemon_5_start</description>
+              <name>noc_bus_oic_evemon_start_5</name>
+              <description>noc_bus_oic_evemon_start_5</description>
               <bitRange>[29:29]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_sft7110_noc_bus_oic_evemon_5_trigger</name>
-              <description>u0_sft7110_noc_bus_oic_evemon_5_trigger</description>
+              <name>noc_bus_oic_evemon_trigger_5</name>
+              <description>noc_bus_oic_evemon_trigger_5</description>
               <bitRange>[30:30]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_sft7110_noc_bus_oic_evemon_6_start</name>
-              <description>u0_sft7110_noc_bus_oic_evemon_6_start</description>
+              <name>noc_bus_oic_evemon_start_6</name>
+              <description>noc_bus_oic_evemon_start_6</description>
               <bitRange>[31:31]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg56</name>
+          <name>sys_syscfg_14</name>
           <description>SYS SYSCONSAIF SYSCFG 56</description>
           <addressOffset>0x38</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_sft7110_noc_bus_oic_evemon_6_trigger</name>
-              <description>u0_sft7110_noc_bus_oic_evemon_6_trigger</description>
+              <name>noc_bus_oic_evemon_trigger_6</name>
+              <description>noc_bus_oic_evemon_trigger_6</description>
               <bitRange>[0:0]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_sft7110_noc_bus_oic_evemon_7_start</name>
-              <description>u0_sft7110_noc_bus_oic_evemon_7_start</description>
+              <name>noc_bus_oic_evemon_start_7</name>
+              <description>noc_bus_oic_evemon_start_7</description>
               <bitRange>[15:15]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_sft7110_noc_bus_oic_evemon_7_trigger</name>
-              <description>u0_sft7110_noc_bus_oic_evemon_7_trigger</description>
+              <name>noc_bus_oic_evemon_trigger_7</name>
+              <description>noc_bus_oic_evemon_trigger_7</description>
               <bitRange>[16:16]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_sft7110_noc_bus_oic_evemon_8_start</name>
-              <description>u0_sft7110_noc_bus_oic_evemon_8_start</description>
+              <name>noc_bus_oic_evemon_start_8</name>
+              <description>noc_bus_oic_evemon_start_8</description>
               <bitRange>[17:17]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_sft7110_noc_bus_oic_evemon_8_trigger</name>
-              <description>u0_sft7110_noc_bus_oic_evemon_8_trigger</description>
+              <name>noc_bus_oic_evemon_trigger_8</name>
+              <description>noc_bus_oic_evemon_trigger_8</description>
               <bitRange>[18:18]</bitRange>
               <access>read-only</access>
             </field>
@@ -33203,136 +33218,146 @@
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg60</name>
+          <name>sys_syscfg_15</name>
           <description>SYS SYSCONSAIF SYSCFG 60</description>
           <addressOffset>0x3c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_sft7110_noc_bus_oic_qch_clock_stop_threshold_0</name>
-              <description>u0_sft7110_noc_bus_oic_qch_clock_stop_threshold_0</description>
+              <name>u0_noc_bus_oic_qch_clock_stop_threshold_0</name>
+              <description>u0_noc_bus_oic_qch_clock_stop_threshold_0</description>
               <bitRange>[31:0]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg64</name>
+          <name>sys_syscfg_16</name>
           <description>SYS SYSCONSAIF SYSCFG 64</description>
           <addressOffset>0x40</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_sft7110_noc_bus_oic_qch_clock_stop_threshold_1</name>
-              <description>u0_sft7110_noc_bus_oic_qch_clock_stop_threshold_1</description>
+              <name>u0_noc_bus_oic_qch_clock_stop_threshold_1</name>
+              <description>u0_noc_bus_oic_qch_clock_stop_threshold_1</description>
               <bitRange>[31:0]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg68</name>
+          <name>sys_syscfg_17</name>
           <description>SYS SYSCONSAIF SYSCFG 68</description>
           <addressOffset>0x44</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_sft7110_noc_bus_oic_qch_clock_stop_threshold_2</name>
-              <description>u0_sft7110_noc_bus_oic_qch_clock_stop_threshold_2</description>
+              <name>u0_noc_bus_oic_qch_clock_stop_threshold_2</name>
+              <description>u0_noc_bus_oic_qch_clock_stop_threshold_2</description>
               <bitRange>[31:0]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg72</name>
+          <name>sys_syscfg_18</name>
           <description>SYS SYSCONSAIF SYSCFG 72</description>
           <addressOffset>0x48</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_sft7110_noc_bus_oic_qch_clock_stop_threshold_3</name>
-              <description>u0_sft7110_noc_bus_oic_qch_clock_stop_threshold_3</description>
+              <name>u0_noc_bus_oic_qch_clock_stop_threshold_3</name>
+              <description>u0_noc_bus_oic_qch_clock_stop_threshold_3</description>
               <bitRange>[31:0]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg76</name>
+          <name>sys_syscfg_19</name>
           <description>SYS SYSCONSAIF SYSCFG 76</description>
           <addressOffset>0x4c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_sft7110_noc_bus_oic_qch_clock_stop_threshold_4</name>
-              <description>u0_sft7110_noc_bus_oic_qch_clock_stop_threshold_4</description>
+              <name>u0_noc_bus_oic_qch_clock_stop_threshold_4</name>
+              <description>u0_noc_bus_oic_qch_clock_stop_threshold_4</description>
               <bitRange>[31:0]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg80</name>
+          <name>sys_syscfg_20</name>
           <description>SYS SYSCONSAIF SYSCFG 80</description>
           <addressOffset>0x50</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_sft7110_noc_bus_oic_qch_clock_stop_threshold_5</name>
-              <description>u0_sft7110_noc_bus_oic_qch_clock_stop_threshold_5</description>
+              <name>u0_noc_bus_oic_qch_clock_stop_threshold_5</name>
+              <description>u0_noc_bus_oic_qch_clock_stop_threshold_5</description>
               <bitRange>[31:0]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg84</name>
+          <name>sys_syscfg_21</name>
           <description>SYS SYSCONSAIF SYSCFG 84</description>
           <addressOffset>0x54</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_sft7110_noc_bus_oic_qch_clock_stop_threshold_6</name>
-              <description>u0_sft7110_noc_bus_oic_qch_clock_stop_threshold_6</description>
+              <name>u0_noc_bus_oic_qch_clock_stop_threshold_6</name>
+              <description>u0_noc_bus_oic_qch_clock_stop_threshold_6</description>
               <bitRange>[31:0]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg88</name>
+          <name>sys_syscfg_22</name>
           <description>SYS SYSCONSAIF SYSCFG 88</description>
           <addressOffset>0x58</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_sft7110_noc_bus_oic_qch_clock_stop_threshold_7</name>
-              <description>u0_sft7110_noc_bus_oic_qch_clock_stop_threshold_7</description>
+              <name>u0_noc_bus_oic_qch_clock_stop_threshold_7</name>
+              <description>u0_noc_bus_oic_qch_clock_stop_threshold_7</description>
               <bitRange>[31:0]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg92</name>
+          <name>sys_syscfg_23</name>
           <description>SYS SYSCONSAIF SYSCFG 92</description>
           <addressOffset>0x5c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_sft7110_noc_bus_oic_qch_clock_stop_threshold_8</name>
-              <description>u0_sft7110_noc_bus_oic_qch_clock_stop_threshold_8</description>
+              <name>u0_noc_bus_oic_qch_clock_stop_threshold_8</name>
+              <description>u0_noc_bus_oic_qch_clock_stop_threshold_8</description>
               <bitRange>[31:0]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg96</name>
+          <name>sys_syscfg_24</name>
           <description>SYS SYSCONSAIF SYSCFG 96</description>
           <addressOffset>0x60</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_tdm16slot_clkpol</name>
@@ -33385,10 +33410,11 @@
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg100</name>
+          <name>sys_syscfg_25</name>
           <description>SYS SYSCONSAIF SYSCFG 100</description>
           <addressOffset>0x64</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_trace_mtx_scfg_c3_in0_ctl</name>
@@ -33415,170 +33441,1111 @@
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_u7mc_sft7110_cease_from_tile_0</name>
-              <description>u0_u7mc_sft7110_cease_from_tile_0</description>
+              <name>u0_cease_from_tile_0</name>
+              <description>u0_cease_from_tile_0</description>
               <bitRange>[20:20]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_u7mc_sft7110_cease_from_tile_1</name>
-              <description>u0_u7mc_sft7110_cease_from_tile_1</description>
+              <name>u0_cease_from_tile_1</name>
+              <description>u0_cease_from_tile_1</description>
               <bitRange>[21:21]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_u7mc_sft7110_cease_from_tile_2</name>
-              <description>u0_u7mc_sft7110_cease_from_tile_2</description>
+              <name>u0_cease_from_tile_2</name>
+              <description>u0_cease_from_tile_2</description>
               <bitRange>[22:22]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_u7mc_sft7110_cease_from_tile_3</name>
-              <description>u0_u7mc_sft7110_cease_from_tile_3</description>
+              <name>u0_cease_from_tile_3</name>
+              <description>u0_cease_from_tile_3</description>
               <bitRange>[23:23]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_u7mc_sft7110_cease_from_tile_4</name>
-              <description>u0_u7mc_sft7110_cease_from_tile_4</description>
+              <name>u0_cease_from_tile_4</name>
+              <description>u0_cease_from_tile_4</description>
               <bitRange>[24:24]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_u7mc_sft7110_halt_from_tile_0</name>
-              <description>u0_u7mc_sft7110_halt_from_tile_0</description>
+              <name>u0_halt_from_tile_0</name>
+              <description>u0_halt_from_tile_0</description>
               <bitRange>[25:25]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_u7mc_sft7110_halt_from_tile_1</name>
-              <description>u0_u7mc_sft7110_halt_from_tile_1</description>
+              <name>u0_halt_from_tile_1</name>
+              <description>u0_halt_from_tile_1</description>
               <bitRange>[26:26]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_u7mc_sft7110_halt_from_tile_2</name>
-              <description>u0_u7mc_sft7110_halt_from_tile_2</description>
+              <name>u0_halt_from_tile_2</name>
+              <description>u0_halt_from_tile_2</description>
               <bitRange>[27:27]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_u7mc_sft7110_halt_from_tile_3</name>
-              <description>u0_u7mc_sft7110_halt_from_tile_3</description>
+              <name>u0_halt_from_tile_3</name>
+              <description>u0_halt_from_tile_3</description>
               <bitRange>[28:28]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_u7mc_sft7110_halt_from_tile_4</name>
-              <description>u0_u7mc_sft7110_halt_from_tile_4</description>
+              <name>u0_halt_from_tile_4</name>
+              <description>u0_halt_from_tile_4</description>
               <bitRange>[29:29]</bitRange>
               <access>read-only</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg104</name>
-          <description>SYS SYSCONSAIF SYSCFG 104</description>
+          <name>sys_syscfg_26</name>
+          <description>SYS SYSCONSAIF SYSCFG 26</description>
           <addressOffset>0x68</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_u7mc_sft7110_reset_vector_1_31_0</name>
-              <description>u0_u7mc_sft7110_reset_vector_1_31_0</description>
-              <bitRange>[31:0]</bitRange>
+              <name>reset_vector_1_0</name>
+              <description>U0 U74MC Reset Vector 1: 0</description>
+              <bitRange>[0:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_1</name>
+              <description>U0 U74MC Reset Vector 1: 1</description>
+              <bitRange>[1:1]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_2</name>
+              <description>U0 U74MC Reset Vector 1: 2</description>
+              <bitRange>[2:2]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_3</name>
+              <description>U0 U74MC Reset Vector 1: 3</description>
+              <bitRange>[3:3]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_4</name>
+              <description>U0 U74MC Reset Vector 1: 4</description>
+              <bitRange>[4:4]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_5</name>
+              <description>U0 U74MC Reset Vector 1: 5</description>
+              <bitRange>[5:5]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_6</name>
+              <description>U0 U74MC Reset Vector 1: 6</description>
+              <bitRange>[6:6]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_7</name>
+              <description>U0 U74MC Reset Vector 1: 7</description>
+              <bitRange>[7:7]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_8</name>
+              <description>U0 U74MC Reset Vector 1: 8</description>
+              <bitRange>[8:8]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_9</name>
+              <description>U0 U74MC Reset Vector 1: 9</description>
+              <bitRange>[9:9]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_10</name>
+              <description>U0 U74MC Reset Vector 1: 10</description>
+              <bitRange>[10:10]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_11</name>
+              <description>U0 U74MC Reset Vector 1: 11</description>
+              <bitRange>[11:11]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_12</name>
+              <description>U0 U74MC Reset Vector 1: 12</description>
+              <bitRange>[12:12]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_13</name>
+              <description>U0 U74MC Reset Vector 1: 13</description>
+              <bitRange>[13:13]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_14</name>
+              <description>U0 U74MC Reset Vector 1: 14</description>
+              <bitRange>[14:14]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_15</name>
+              <description>U0 U74MC Reset Vector 1: 15</description>
+              <bitRange>[15:15]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_16</name>
+              <description>U0 U74MC Reset Vector 1: 16</description>
+              <bitRange>[16:16]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_17</name>
+              <description>U0 U74MC Reset Vector 1: 17</description>
+              <bitRange>[17:17]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_18</name>
+              <description>U0 U74MC Reset Vector 1: 18</description>
+              <bitRange>[18:18]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_19</name>
+              <description>U0 U74MC Reset Vector 1: 19</description>
+              <bitRange>[19:19]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_20</name>
+              <description>U0 U74MC Reset Vector 1: 20</description>
+              <bitRange>[20:20]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_21</name>
+              <description>U0 U74MC Reset Vector 1: 21</description>
+              <bitRange>[21:21]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_22</name>
+              <description>U0 U74MC Reset Vector 1: 22</description>
+              <bitRange>[22:22]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_23</name>
+              <description>U0 U74MC Reset Vector 1: 23</description>
+              <bitRange>[23:23]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_24</name>
+              <description>U0 U74MC Reset Vector 1: 24</description>
+              <bitRange>[24:24]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_25</name>
+              <description>U0 U74MC Reset Vector 1: 25</description>
+              <bitRange>[25:25]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_26</name>
+              <description>U0 U74MC Reset Vector 1: 26</description>
+              <bitRange>[26:26]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_27</name>
+              <description>U0 U74MC Reset Vector 1: 27</description>
+              <bitRange>[27:27]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_28</name>
+              <description>U0 U74MC Reset Vector 1: 28</description>
+              <bitRange>[28:28]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_29</name>
+              <description>U0 U74MC Reset Vector 1: 29</description>
+              <bitRange>[29:29]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_30</name>
+              <description>U0 U74MC Reset Vector 1: 30</description>
+              <bitRange>[30:30]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_31</name>
+              <description>U0 U74MC Reset Vector 1: 31</description>
+              <bitRange>[31:31]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg108</name>
-          <description>SYS SYSCONSAIF SYSCFG 108</description>
+          <name>sys_syscfg_27</name>
+          <description>SYS SYSCONSAIF SYSCFG 27</description>
           <addressOffset>0x6c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_u7mc_sft7110_reset_vector_1_35_32</name>
-              <description>u0_u7mc_sft7110_reset_vector_1_35_32</description>
-              <bitRange>[3:0]</bitRange>
+              <name>reset_vector_1_32</name>
+              <description>U0 U74MC Reset Vector 1: 32</description>
+              <bitRange>[0:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_33</name>
+              <description>U0 U74MC Reset Vector 1: 33</description>
+              <bitRange>[1:1]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_34</name>
+              <description>U0 U74MC Reset Vector 1: 34</description>
+              <bitRange>[2:2]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_1_35</name>
+              <description>U0 U74MC Reset Vector 1: 35</description>
+              <bitRange>[3:3]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg112</name>
-          <description>SYS SYSCONSAIF SYSCFG 112</description>
+          <name>sys_syscfg_28</name>
+          <description>SYS SYSCONSAIF SYSCFG 28</description>
           <addressOffset>0x70</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_u7mc_sft7110_reset_vector_2_31_0</name>
-              <description>u0_u7mc_sft7110_reset_vector_2_31_0</description>
-              <bitRange>[31:0]</bitRange>
+              <name>reset_vector_2_0</name>
+              <description>U0 U74MC Reset Vector 2: 0</description>
+              <bitRange>[0:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_1</name>
+              <description>U0 U74MC Reset Vector 2: 1</description>
+              <bitRange>[1:1]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_2</name>
+              <description>U0 U74MC Reset Vector 2: 2</description>
+              <bitRange>[2:2]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_3</name>
+              <description>U0 U74MC Reset Vector 2: 3</description>
+              <bitRange>[3:3]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_4</name>
+              <description>U0 U74MC Reset Vector 2: 4</description>
+              <bitRange>[4:4]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_5</name>
+              <description>U0 U74MC Reset Vector 2: 5</description>
+              <bitRange>[5:5]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_6</name>
+              <description>U0 U74MC Reset Vector 2: 6</description>
+              <bitRange>[6:6]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_7</name>
+              <description>U0 U74MC Reset Vector 2: 7</description>
+              <bitRange>[7:7]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_8</name>
+              <description>U0 U74MC Reset Vector 2: 8</description>
+              <bitRange>[8:8]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_9</name>
+              <description>U0 U74MC Reset Vector 2: 9</description>
+              <bitRange>[9:9]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_10</name>
+              <description>U0 U74MC Reset Vector 2: 10</description>
+              <bitRange>[10:10]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_11</name>
+              <description>U0 U74MC Reset Vector 2: 11</description>
+              <bitRange>[11:11]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_12</name>
+              <description>U0 U74MC Reset Vector 2: 12</description>
+              <bitRange>[12:12]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_13</name>
+              <description>U0 U74MC Reset Vector 2: 13</description>
+              <bitRange>[13:13]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_14</name>
+              <description>U0 U74MC Reset Vector 2: 14</description>
+              <bitRange>[14:14]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_15</name>
+              <description>U0 U74MC Reset Vector 2: 15</description>
+              <bitRange>[15:15]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_16</name>
+              <description>U0 U74MC Reset Vector 2: 16</description>
+              <bitRange>[16:16]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_17</name>
+              <description>U0 U74MC Reset Vector 2: 17</description>
+              <bitRange>[17:17]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_18</name>
+              <description>U0 U74MC Reset Vector 2: 18</description>
+              <bitRange>[18:18]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_19</name>
+              <description>U0 U74MC Reset Vector 2: 19</description>
+              <bitRange>[19:19]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_20</name>
+              <description>U0 U74MC Reset Vector 2: 20</description>
+              <bitRange>[20:20]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_21</name>
+              <description>U0 U74MC Reset Vector 2: 21</description>
+              <bitRange>[21:21]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_22</name>
+              <description>U0 U74MC Reset Vector 2: 22</description>
+              <bitRange>[22:22]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_23</name>
+              <description>U0 U74MC Reset Vector 2: 23</description>
+              <bitRange>[23:23]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_24</name>
+              <description>U0 U74MC Reset Vector 2: 24</description>
+              <bitRange>[24:24]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_25</name>
+              <description>U0 U74MC Reset Vector 2: 25</description>
+              <bitRange>[25:25]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_26</name>
+              <description>U0 U74MC Reset Vector 2: 26</description>
+              <bitRange>[26:26]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_27</name>
+              <description>U0 U74MC Reset Vector 2: 27</description>
+              <bitRange>[27:27]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_28</name>
+              <description>U0 U74MC Reset Vector 2: 28</description>
+              <bitRange>[28:28]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_29</name>
+              <description>U0 U74MC Reset Vector 2: 29</description>
+              <bitRange>[29:29]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_30</name>
+              <description>U0 U74MC Reset Vector 2: 30</description>
+              <bitRange>[30:30]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_31</name>
+              <description>U0 U74MC Reset Vector 2: 31</description>
+              <bitRange>[31:31]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg116</name>
-          <description>SYS SYSCONSAIF SYSCFG 116</description>
+          <name>sys_syscfg_29</name>
+          <description>SYS SYSCONSAIF SYSCFG 29</description>
           <addressOffset>0x74</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_u7mc_sft7110_reset_vector_2_35_32</name>
-              <description>u0_u7mc_sft7110_reset_vector_2_35_32</description>
-              <bitRange>[3:0]</bitRange>
+              <name>reset_vector_2_32</name>
+              <description>U0 U74MC Reset Vector 2: 32</description>
+              <bitRange>[0:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_33</name>
+              <description>U0 U74MC Reset Vector 2: 33</description>
+              <bitRange>[1:1]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_34</name>
+              <description>U0 U74MC Reset Vector 2: 34</description>
+              <bitRange>[2:2]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_2_35</name>
+              <description>U0 U74MC Reset Vector 2: 35</description>
+              <bitRange>[3:3]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg120</name>
-          <description>SYS SYSCONSAIF SYSCFG 120</description>
+          <name>sys_syscfg_30</name>
+          <description>SYS SYSCONSAIF SYSCFG 30</description>
           <addressOffset>0x78</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_u7mc_sft7110_reset_vector_3_31_0</name>
-              <description>u0_u7mc_sft7110_reset_vector_3_31_0</description>
-              <bitRange>[31:0]</bitRange>
+              <name>reset_vector_3_0</name>
+              <description>U0 U74MC Reset Vector 3: 0</description>
+              <bitRange>[0:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_1</name>
+              <description>U0 U74MC Reset Vector 3: 1</description>
+              <bitRange>[1:1]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_2</name>
+              <description>U0 U74MC Reset Vector 3: 2</description>
+              <bitRange>[2:2]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_3</name>
+              <description>U0 U74MC Reset Vector 3: 3</description>
+              <bitRange>[3:3]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_4</name>
+              <description>U0 U74MC Reset Vector 3: 4</description>
+              <bitRange>[4:4]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_5</name>
+              <description>U0 U74MC Reset Vector 3: 5</description>
+              <bitRange>[5:5]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_6</name>
+              <description>U0 U74MC Reset Vector 3: 6</description>
+              <bitRange>[6:6]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_7</name>
+              <description>U0 U74MC Reset Vector 3: 7</description>
+              <bitRange>[7:7]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_8</name>
+              <description>U0 U74MC Reset Vector 3: 8</description>
+              <bitRange>[8:8]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_9</name>
+              <description>U0 U74MC Reset Vector 3: 9</description>
+              <bitRange>[9:9]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_10</name>
+              <description>U0 U74MC Reset Vector 3: 10</description>
+              <bitRange>[10:10]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_11</name>
+              <description>U0 U74MC Reset Vector 3: 11</description>
+              <bitRange>[11:11]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_12</name>
+              <description>U0 U74MC Reset Vector 3: 12</description>
+              <bitRange>[12:12]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_13</name>
+              <description>U0 U74MC Reset Vector 3: 13</description>
+              <bitRange>[13:13]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_14</name>
+              <description>U0 U74MC Reset Vector 3: 14</description>
+              <bitRange>[14:14]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_15</name>
+              <description>U0 U74MC Reset Vector 3: 15</description>
+              <bitRange>[15:15]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_16</name>
+              <description>U0 U74MC Reset Vector 3: 16</description>
+              <bitRange>[16:16]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_17</name>
+              <description>U0 U74MC Reset Vector 3: 17</description>
+              <bitRange>[17:17]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_18</name>
+              <description>U0 U74MC Reset Vector 3: 18</description>
+              <bitRange>[18:18]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_19</name>
+              <description>U0 U74MC Reset Vector 3: 19</description>
+              <bitRange>[19:19]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_20</name>
+              <description>U0 U74MC Reset Vector 3: 20</description>
+              <bitRange>[20:20]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_21</name>
+              <description>U0 U74MC Reset Vector 3: 21</description>
+              <bitRange>[21:21]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_22</name>
+              <description>U0 U74MC Reset Vector 3: 22</description>
+              <bitRange>[22:22]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_23</name>
+              <description>U0 U74MC Reset Vector 3: 23</description>
+              <bitRange>[23:23]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_24</name>
+              <description>U0 U74MC Reset Vector 3: 24</description>
+              <bitRange>[24:24]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_25</name>
+              <description>U0 U74MC Reset Vector 3: 25</description>
+              <bitRange>[25:25]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_26</name>
+              <description>U0 U74MC Reset Vector 3: 26</description>
+              <bitRange>[26:26]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_27</name>
+              <description>U0 U74MC Reset Vector 3: 27</description>
+              <bitRange>[27:27]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_28</name>
+              <description>U0 U74MC Reset Vector 3: 28</description>
+              <bitRange>[28:28]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_29</name>
+              <description>U0 U74MC Reset Vector 3: 29</description>
+              <bitRange>[29:29]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_30</name>
+              <description>U0 U74MC Reset Vector 3: 30</description>
+              <bitRange>[30:30]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_31</name>
+              <description>U0 U74MC Reset Vector 3: 31</description>
+              <bitRange>[31:31]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg124</name>
-          <description>SYS SYSCONSAIF SYSCFG 124</description>
+          <name>sys_syscfg_31</name>
+          <description>SYS SYSCONSAIF SYSCFG 31</description>
           <addressOffset>0x7c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_u7mc_sft7110_reset_vector_3_35_32</name>
-              <description>u0_u7mc_sft7110_reset_vector_3_35_32</description>
-              <bitRange>[3:0]</bitRange>
+              <name>reset_vector_3_32</name>
+              <description>U0 U74MC Reset Vector 3: 32</description>
+              <bitRange>[0:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_33</name>
+              <description>U0 U74MC Reset Vector 3: 33</description>
+              <bitRange>[1:1]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_34</name>
+              <description>U0 U74MC Reset Vector 3: 34</description>
+              <bitRange>[2:2]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_3_35</name>
+              <description>U0 U74MC Reset Vector 3: 35</description>
+              <bitRange>[3:3]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg128</name>
-          <description>SYS SYSCONSAIF SYSCFG 128</description>
+          <name>sys_syscfg_32</name>
+          <description>SYS SYSCONSAIF SYSCFG 32</description>
           <addressOffset>0x80</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_u7mc_sft7110_reset_vector_4_31_0</name>
-              <description>u0_u7mc_sft7110_reset_vector_4_31_0</description>
-              <bitRange>[31:0]</bitRange>
+              <name>reset_vector_4_0</name>
+              <description>U0 U74MC Reset Vector 4: 0</description>
+              <bitRange>[0:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_1</name>
+              <description>U0 U74MC Reset Vector 4: 1</description>
+              <bitRange>[1:1]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_2</name>
+              <description>U0 U74MC Reset Vector 4: 2</description>
+              <bitRange>[2:2]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_3</name>
+              <description>U0 U74MC Reset Vector 4: 3</description>
+              <bitRange>[3:3]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_4</name>
+              <description>U0 U74MC Reset Vector 4: 4</description>
+              <bitRange>[4:4]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_5</name>
+              <description>U0 U74MC Reset Vector 4: 5</description>
+              <bitRange>[5:5]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_6</name>
+              <description>U0 U74MC Reset Vector 4: 6</description>
+              <bitRange>[6:6]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_7</name>
+              <description>U0 U74MC Reset Vector 4: 7</description>
+              <bitRange>[7:7]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_8</name>
+              <description>U0 U74MC Reset Vector 4: 8</description>
+              <bitRange>[8:8]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_9</name>
+              <description>U0 U74MC Reset Vector 4: 9</description>
+              <bitRange>[9:9]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_10</name>
+              <description>U0 U74MC Reset Vector 4: 10</description>
+              <bitRange>[10:10]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_11</name>
+              <description>U0 U74MC Reset Vector 4: 11</description>
+              <bitRange>[11:11]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_12</name>
+              <description>U0 U74MC Reset Vector 4: 12</description>
+              <bitRange>[12:12]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_13</name>
+              <description>U0 U74MC Reset Vector 4: 13</description>
+              <bitRange>[13:13]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_14</name>
+              <description>U0 U74MC Reset Vector 4: 14</description>
+              <bitRange>[14:14]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_15</name>
+              <description>U0 U74MC Reset Vector 4: 15</description>
+              <bitRange>[15:15]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_16</name>
+              <description>U0 U74MC Reset Vector 4: 16</description>
+              <bitRange>[16:16]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_17</name>
+              <description>U0 U74MC Reset Vector 4: 17</description>
+              <bitRange>[17:17]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_18</name>
+              <description>U0 U74MC Reset Vector 4: 18</description>
+              <bitRange>[18:18]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_19</name>
+              <description>U0 U74MC Reset Vector 4: 19</description>
+              <bitRange>[19:19]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_20</name>
+              <description>U0 U74MC Reset Vector 4: 20</description>
+              <bitRange>[20:20]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_21</name>
+              <description>U0 U74MC Reset Vector 4: 21</description>
+              <bitRange>[21:21]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_22</name>
+              <description>U0 U74MC Reset Vector 4: 22</description>
+              <bitRange>[22:22]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_23</name>
+              <description>U0 U74MC Reset Vector 4: 23</description>
+              <bitRange>[23:23]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_24</name>
+              <description>U0 U74MC Reset Vector 4: 24</description>
+              <bitRange>[24:24]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_25</name>
+              <description>U0 U74MC Reset Vector 4: 25</description>
+              <bitRange>[25:25]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_26</name>
+              <description>U0 U74MC Reset Vector 4: 26</description>
+              <bitRange>[26:26]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_27</name>
+              <description>U0 U74MC Reset Vector 4: 27</description>
+              <bitRange>[27:27]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_28</name>
+              <description>U0 U74MC Reset Vector 4: 28</description>
+              <bitRange>[28:28]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_29</name>
+              <description>U0 U74MC Reset Vector 4: 29</description>
+              <bitRange>[29:29]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_30</name>
+              <description>U0 U74MC Reset Vector 4: 30</description>
+              <bitRange>[30:30]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_31</name>
+              <description>U0 U74MC Reset Vector 4: 31</description>
+              <bitRange>[31:31]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg136</name>
+          <name>sys_syscfg_33</name>
+          <description>SYS SYSCONSAIF SYSCFG 132</description>
+          <addressOffset>0x84</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>reset_vector_4_32</name>
+              <description>U0 U74MC Reset Vector 4: 32</description>
+              <bitRange>[0:0]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_33</name>
+              <description>U0 U74MC Reset Vector 4: 33</description>
+              <bitRange>[1:1]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_34</name>
+              <description>U0 U74MC Reset Vector 4: 34</description>
+              <bitRange>[2:2]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>reset_vector_4_35</name>
+              <description>U0 U74MC Reset Vector 4: 35</description>
+              <bitRange>[3:3]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>u0_suppress_fetch_1</name>
+              <description>u0_suppress_fetch_1</description>
+              <bitRange>[4:4]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>u0_suppress_fetch_2</name>
+              <description>u0_suppress_fetch_2</description>
+              <bitRange>[5:5]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>u0_suppress_fetch_3</name>
+              <description>u0_suppress_fetch_3</description>
+              <bitRange>[6:6]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>u0_suppress_fetch_4</name>
+              <description>u0_suppress_fetch_4</description>
+              <bitRange>[7:7]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>u0_wfi_from_tile_0</name>
+              <description>u0_wfi_from_tile_0</description>
+              <bitRange>[8:8]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>u0_wfi_from_tile_1</name>
+              <description>u0_wfi_from_tile_1</description>
+              <bitRange>[9:9]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>u0_wfi_from_tile_2</name>
+              <description>u0_wfi_from_tile_2</description>
+              <bitRange>[10:10]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>u0_wfi_from_tile_3</name>
+              <description>u0_wfi_from_tile_3</description>
+              <bitRange>[11:11]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>u0_wfi_from_tile_4</name>
+              <description>u0_wfi_from_tile_4</description>
+              <bitRange>[12:12]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>u0_vdec_intsram_sram_config_slp</name>
+              <description>SRAM/ROM configuration. SLP: sleep enable, high active, default is low.</description>
+              <bitRange>[13:13]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>u0_vdec_intsram_sram_config_sd</name>
+              <description>SRAM/ROM configuration. SD: shutdown enable, high active, default is low.</description>
+              <bitRange>[14:14]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>u0_vdec_intsram_sram_config_rtsel</name>
+              <description>SRAM/ROM configuration. RTSEL: timing setting for debug purpose, default is 2'b01.</description>
+              <bitRange>[16:15]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>u0_vdec_intsram_sram_config_ptsel</name>
+              <description>SRAM/ROM configuration. PTSEL: timing setting for debug purpose, default is 2'b01.</description>
+              <bitRange>[18:17]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>u0_vdec_intsram_sram_config_trb</name>
+              <description>SRAM/ROM configuration. TRB: timing setting for debug purpose, default is 2'b01.</description>
+              <bitRange>[20:19]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>u0_vdec_intsram_sram_config_wtsel</name>
+              <description>SRAM/ROM configuration. WTSEL: timing setting for debug purpose, default is 2'b01.</description>
+              <bitRange>[22:21]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>u0_vdec_intsram_sram_config_vs</name>
+              <description>SRAM/ROM configuration. VS: timing setting for debug purpose, default is 1'b1.</description>
+              <bitRange>[23:23]</bitRange>
+              <access>read-write</access>
+            </field>
+            <field>
+              <name>u0_vdec_intsram_sram_config_vg</name>
+              <description>SRAM/ROM configuration. VG: timing setting for debug purpose, default is 1'b1.</description>
+              <bitRange>[24:24]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
+        </register>
+        <register>
+          <name>sys_syscfg_34</name>
           <description>SYS SYSCONSAIF SYSCFG 136</description>
           <addressOffset>0x88</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_venc_intsram_sram_config_slp</name>
@@ -33667,10 +34634,11 @@
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg140</name>
+          <name>sys_syscfg_35</name>
           <description>SYS SYSCONSAIF SYSCFG 140</description>
           <addressOffset>0x8c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_can_ctrl_host_if</name>
@@ -33729,10 +34697,11 @@
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg144</name>
+          <name>sys_syscfg_36</name>
           <description>SYS SYSCONSAIF SYSCFG 144</description>
           <addressOffset>0x90</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_gmac5_axi64_mac_speed_0</name>
@@ -33749,10 +34718,11 @@
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg148</name>
+          <name>sys_syscfg_37</name>
           <description>SYS SYSCONSAIF SYSCFG 148</description>
           <addressOffset>0x94</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_gmac5_axi64_ptp_timestamp_o_31_0</name>
@@ -33763,10 +34733,11 @@
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg152</name>
+          <name>sys_syscfg_38</name>
           <description>SYS SYSCONSAIF SYSCFG 152</description>
           <addressOffset>0x98</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_gmac5_axi64_ptp_timestamp_o_63_32</name>
@@ -33777,10 +34748,11 @@
           </fields>
         </register>
         <register>
-          <name>sys_sysconsaif_syscfg156</name>
+          <name>sys_syscfg_39</name>
           <description>SYS SYSCONSAIF SYSCFG 156</description>
           <addressOffset>0x9c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u1_i2c_ic_en</name>
@@ -33831,31 +34803,31 @@
               <access>read-only</access>
             </field>
             <field>
-              <name>u2_i2c_ic_en</name>
+              <name>i2c_ic_en_2</name>
               <description>I2C interface enable.</description>
               <bitRange>[15:15]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u3_i2c_ic_en</name>
+              <name>i2c_ic_en_3</name>
               <description>I2C interface enable.</description>
               <bitRange>[16:16]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u4_i2c_ic_en</name>
+              <name>i2c_ic_en_4</name>
               <description>I2C interface enable.</description>
               <bitRange>[17:17]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u5_i2c_ic_en</name>
+              <name>i2c_ic_en_5</name>
               <description>I2C interface enable.</description>
               <bitRange>[18:18]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u6_i2c_ic_en</name>
+              <name>i2c_ic_en_6</name>
               <description>I2C interface enable.</description>
               <bitRange>[19:19]</bitRange>
               <access>read-only</access>
