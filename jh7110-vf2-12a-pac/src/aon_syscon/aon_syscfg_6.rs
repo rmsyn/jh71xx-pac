@@ -1,7 +1,7 @@
-#[doc = "Register `aon_sysconsaif_syscfg24` reader"]
-pub type R = crate::R<AON_SYSCONSAIF_SYSCFG24_SPEC>;
-#[doc = "Register `aon_sysconsaif_syscfg24` writer"]
-pub type W = crate::W<AON_SYSCONSAIF_SYSCFG24_SPEC>;
+#[doc = "Register `aon_syscfg_6` reader"]
+pub type R = crate::R<AON_SYSCFG_6_SPEC>;
+#[doc = "Register `aon_syscfg_6` writer"]
+pub type W = crate::W<AON_SYSCFG_6_SPEC>;
 #[doc = "Field `u0_otpc_chip_mode` reader - u0_otpc_chip_mode"]
 pub type U0_OTPC_CHIP_MODE_R = crate::BitReader;
 #[doc = "Field `u0_otpc_crc_pass` reader - u0_otpc_crc_pass"]
@@ -37,15 +37,19 @@ impl W {
         self
     }
 }
-#[doc = "AON SYSCONSAIF SYSCFG 24\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`aon_sysconsaif_syscfg24::R`](R).  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`aon_sysconsaif_syscfg24::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
-pub struct AON_SYSCONSAIF_SYSCFG24_SPEC;
-impl crate::RegisterSpec for AON_SYSCONSAIF_SYSCFG24_SPEC {
+#[doc = "AON SYSCONSAIF SYSCFG 24\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`aon_syscfg_6::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`aon_syscfg_6::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct AON_SYSCFG_6_SPEC;
+impl crate::RegisterSpec for AON_SYSCFG_6_SPEC {
     type Ux = u32;
 }
-#[doc = "`read()` method returns [`aon_sysconsaif_syscfg24::R`](R) reader structure"]
-impl crate::Readable for AON_SYSCONSAIF_SYSCFG24_SPEC {}
-#[doc = "`write(|w| ..)` method takes [`aon_sysconsaif_syscfg24::W`](W) writer structure"]
-impl crate::Writable for AON_SYSCONSAIF_SYSCFG24_SPEC {
+#[doc = "`read()` method returns [`aon_syscfg_6::R`](R) reader structure"]
+impl crate::Readable for AON_SYSCFG_6_SPEC {}
+#[doc = "`write(|w| ..)` method takes [`aon_syscfg_6::W`](W) writer structure"]
+impl crate::Writable for AON_SYSCFG_6_SPEC {
     const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+}
+#[doc = "`reset()` method sets aon_syscfg_6 to value 0"]
+impl crate::Resettable for AON_SYSCFG_6_SPEC {
+    const RESET_VALUE: Self::Ux = 0;
 }

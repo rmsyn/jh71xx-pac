@@ -42589,10 +42589,11 @@
       </addressBlock>
       <registers>
         <register>
-          <name>aon_sysconsaif_syscfg0</name>
+          <name>aon_syscfg_0</name>
           <description>AON SYSCONSAIF SYSCFG 0</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>aon_gp_reg</name>
@@ -42603,10 +42604,11 @@
           </fields>
         </register>
         <register>
-          <name>aon_sysconsaif_syscfg4</name>
+          <name>aon_syscfg_1</name>
           <description>AON SYSCONSAIF SYSCFG 4</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_boot_ctrl_boot_status</name>
@@ -42617,24 +42619,26 @@
           </fields>
         </register>
         <register>
-          <name>aon_sysconsaif_syscfg8</name>
+          <name>aon_syscfg_2</name>
           <description>AON SYSCONSAIF SYSCFG 8</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_boot_ctrl_boot_vector_31_0</name>
-              <description>u0_boot_ctrl_boot_vector_31_0</description>
+              <name>u0_boot_ctrl_boot_vector_0_31</name>
+              <description>u0_boot_ctrl_boot_vector_0_31</description>
               <bitRange>[31:0]</bitRange>
               <access>read-only</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>aon_sysconsaif_syscfg12</name>
+          <name>aon_syscfg_3</name>
           <description>AON SYSCONSAIF SYSCFG 12</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_boot_ctrl_boot_vector_35_32</name>
@@ -42705,38 +42709,41 @@
           </fields>
         </register>
         <register>
-          <name>aon_sysconsaif_syscfg16</name>
+          <name>aon_syscfg_4</name>
           <description>AON SYSCONSAIF SYSCFG 16</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>gmac5_axi64_ptp_timestamp_o_31_0</name>
-              <description>gmac5_axi64_ptp_timestamp_o_31_0</description>
+              <name>gmac5_axi64_ptp_timestamp_o_0_31</name>
+              <description>gmac5_axi64_ptp_timestamp_o_0_31</description>
               <bitRange>[31:0]</bitRange>
               <access>read-only</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>aon_sysconsaif_syscfg20</name>
+          <name>aon_syscfg_5</name>
           <description>AON SYSCONSAIF SYSCFG 20</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>gmac5_axi64_ptp_timestamp_o_63_32</name>
-              <description>gmac5_axi64_ptp_timestamp_o_63_32</description>
+              <name>gmac5_axi64_ptp_timestamp_o_32_63</name>
+              <description>gmac5_axi64_ptp_timestamp_o_32_63</description>
               <bitRange>[31:0]</bitRange>
               <access>read-only</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>aon_sysconsaif_syscfg24</name>
+          <name>aon_syscfg_6</name>
           <description>AON SYSCONSAIF SYSCFG 24</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_otpc_chip_mode</name>
@@ -42759,10 +42766,11 @@
           </fields>
         </register>
         <register>
-          <name>aon_sysconsaif_syscfg28</name>
+          <name>aon_syscfg_7</name>
           <description>AON SYSCONSAIF SYSCFG 28</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_otpc_fl_func_lock</name>
@@ -42773,10 +42781,11 @@
           </fields>
         </register>
         <register>
-          <name>aon_sysconsaif_syscfg32</name>
+          <name>aon_syscfg_8</name>
           <description>AON SYSCONSAIF SYSCFG 32</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_otpc_fl_pll0_lock</name>
@@ -42787,10 +42796,11 @@
           </fields>
         </register>
         <register>
-          <name>aon_sysconsaif_syscfg36</name>
+          <name>aon_syscfg_9</name>
           <description>AON SYSCONSAIF SYSCFG 36</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_otpc_fl_pll1_lock</name>
@@ -42801,10 +42811,11 @@
           </fields>
         </register>
         <register>
-          <name>aon_sysconsaif_syscfg40</name>
+          <name>aon_syscfg_10</name>
           <description>AON SYSCONSAIF SYSCFG 40</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>u0_otpc_fl_sec_boot_lmt</name>
