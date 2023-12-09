@@ -6,14 +6,14 @@ pub type W = crate::W<CTRL_SPEC>;
 pub type EXEC_NOP_R = crate::BitReader;
 #[doc = "Field `exec_nop` writer - Execute a NOP instruction"]
 pub type EXEC_NOP_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `gene_randnum` reader - Generate a random number"]
-pub type GENE_RANDNUM_R = crate::BitReader;
-#[doc = "Field `gene_randnum` writer - Generate a random number"]
-pub type GENE_RANDNUM_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `exec_randreseed` reader - Reseed the TRNG from noise sources"]
-pub type EXEC_RANDRESEED_R = crate::BitReader;
-#[doc = "Field `exec_randreseed` writer - Reseed the TRNG from noise sources"]
-pub type EXEC_RANDRESEED_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `gen_rand` reader - Generate a random number"]
+pub type GEN_RAND_R = crate::BitReader;
+#[doc = "Field `gen_rand` writer - Generate a random number"]
+pub type GEN_RAND_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `reseed` reader - Reseed the TRNG from noise sources"]
+pub type RESEED_R = crate::BitReader;
+#[doc = "Field `reseed` writer - Reseed the TRNG from noise sources"]
+pub type RESEED_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - Execute a NOP instruction"]
     #[inline(always)]
@@ -22,13 +22,13 @@ impl R {
     }
     #[doc = "Bit 1 - Generate a random number"]
     #[inline(always)]
-    pub fn gene_randnum(&self) -> GENE_RANDNUM_R {
-        GENE_RANDNUM_R::new(((self.bits >> 1) & 1) != 0)
+    pub fn gen_rand(&self) -> GEN_RAND_R {
+        GEN_RAND_R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2 - Reseed the TRNG from noise sources"]
     #[inline(always)]
-    pub fn exec_randreseed(&self) -> EXEC_RANDRESEED_R {
-        EXEC_RANDRESEED_R::new(((self.bits >> 2) & 1) != 0)
+    pub fn reseed(&self) -> RESEED_R {
+        RESEED_R::new(((self.bits >> 2) & 1) != 0)
     }
 }
 impl W {
@@ -41,14 +41,14 @@ impl W {
     #[doc = "Bit 1 - Generate a random number"]
     #[inline(always)]
     #[must_use]
-    pub fn gene_randnum(&mut self) -> GENE_RANDNUM_W<CTRL_SPEC> {
-        GENE_RANDNUM_W::new(self, 1)
+    pub fn gen_rand(&mut self) -> GEN_RAND_W<CTRL_SPEC> {
+        GEN_RAND_W::new(self, 1)
     }
     #[doc = "Bit 2 - Reseed the TRNG from noise sources"]
     #[inline(always)]
     #[must_use]
-    pub fn exec_randreseed(&mut self) -> EXEC_RANDRESEED_W<CTRL_SPEC> {
-        EXEC_RANDRESEED_W::new(self, 2)
+    pub fn reseed(&mut self) -> RESEED_W<CTRL_SPEC> {
+        RESEED_W::new(self, 2)
     }
     #[doc = r" Writes raw bits to the register."]
     #[doc = r""]
@@ -61,7 +61,7 @@ impl W {
         self
     }
 }
-#[doc = "TRNG CTRL Register\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ctrl::R`](R).  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ctrl::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "TRNG CTRL Register\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`ctrl::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ctrl::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct CTRL_SPEC;
 impl crate::RegisterSpec for CTRL_SPEC {
     type Ux = u32;
@@ -72,4 +72,8 @@ impl crate::Readable for CTRL_SPEC {}
 impl crate::Writable for CTRL_SPEC {
     const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+}
+#[doc = "`reset()` method sets ctrl to value 0"]
+impl crate::Resettable for CTRL_SPEC {
+    const RESET_VALUE: Self::Ux = 0;
 }

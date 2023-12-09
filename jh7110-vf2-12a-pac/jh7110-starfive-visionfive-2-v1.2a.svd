@@ -41829,6 +41829,7 @@
           <description>TRNG CTRL Register</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>exec_nop</name>
@@ -41837,13 +41838,13 @@
               <access>read-write</access>
             </field>
             <field>
-              <name>gene_randnum</name>
+              <name>gen_rand</name>
               <description>Generate a random number</description>
               <bitRange>[1:1]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>exec_randreseed</name>
+              <name>reseed</name>
               <description>Reseed the TRNG from noise sources</description>
               <bitRange>[2:2]</bitRange>
               <access>read-write</access>
@@ -41855,6 +41856,7 @@
           <description>TRNG STAT Register</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>nonce_mode</name>
@@ -41881,49 +41883,49 @@
               <access>read-only</access>
             </field>
             <field>
-              <name>last_reseed0</name>
+              <name>last_reseed_0</name>
               <description>TRNG Last Reseed 0 status</description>
               <bitRange>[16:16]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>last_reseed1</name>
+              <name>last_reseed_1</name>
               <description>TRNG Last Reseed 1 status</description>
               <bitRange>[17:17]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>last_reseed2</name>
+              <name>last_reseed_2</name>
               <description>TRNG Last Reseed 2 status</description>
               <bitRange>[18:18]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>last_reseed3</name>
+              <name>last_reseed_3</name>
               <description>TRNG Last Reseed 3 status</description>
               <bitRange>[19:19]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>last_reseed4</name>
+              <name>last_reseed_4</name>
               <description>TRNG Last Reseed 4 status</description>
               <bitRange>[20:20]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>last_reseed5</name>
+              <name>last_reseed_5</name>
               <description>TRNG Last Reseed 5 status</description>
               <bitRange>[21:21]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>last_reseed6</name>
+              <name>last_reseed_6</name>
               <description>TRNG Last Reseed 6 status</description>
               <bitRange>[22:22]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>last_reseed7</name>
+              <name>last_reseed_7</name>
               <description>TRNG Last Reseed 7 status</description>
               <bitRange>[23:23]</bitRange>
               <access>read-only</access>
@@ -41953,6 +41955,7 @@
           <description>TRNG MODE Register</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>r256</name>
@@ -41967,6 +41970,7 @@
           <description>TRNG SMODE Register</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>nonce_mode</name>
@@ -41993,6 +41997,7 @@
           <description>TRNG Interrupt Enable Register</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rand_rdy_en</name>
@@ -42025,6 +42030,7 @@
           <description>TRNG Interrupt Status Register</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rand_rdy</name>
@@ -42047,10 +42053,11 @@
           </fields>
         </register>
         <register>
-          <name>rand0</name>
+          <name>rand_0</name>
           <description>TRNG RAND 0 Status Register</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rand</name>
@@ -42061,10 +42068,11 @@
           </fields>
         </register>
         <register>
-          <name>rand1</name>
+          <name>rand_1</name>
           <description>TRNG RAND 1 Status Register</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rand</name>
@@ -42075,10 +42083,11 @@
           </fields>
         </register>
         <register>
-          <name>rand2</name>
+          <name>rand_2</name>
           <description>TRNG RAND 2 Status Register</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rand</name>
@@ -42089,10 +42098,11 @@
           </fields>
         </register>
         <register>
-          <name>rand3</name>
+          <name>rand_3</name>
           <description>TRNG RAND 3 Status Register</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rand</name>
@@ -42103,10 +42113,11 @@
           </fields>
         </register>
         <register>
-          <name>rand4</name>
+          <name>rand_4</name>
           <description>TRNG RAND 4 Status Register</description>
           <addressOffset>0x30</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rand</name>
@@ -42117,10 +42128,11 @@
           </fields>
         </register>
         <register>
-          <name>rand5</name>
+          <name>rand_5</name>
           <description>TRNG RAND 5 Status Register</description>
           <addressOffset>0x34</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rand</name>
@@ -42131,10 +42143,11 @@
           </fields>
         </register>
         <register>
-          <name>rand6</name>
+          <name>rand_6</name>
           <description>TRNG RAND 6 Status Register</description>
           <addressOffset>0x38</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rand</name>
@@ -42145,10 +42158,11 @@
           </fields>
         </register>
         <register>
-          <name>rand7</name>
+          <name>rand_7</name>
           <description>TRNG RAND 7 Status Register</description>
           <addressOffset>0x3c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rand</name>
@@ -42163,6 +42177,7 @@
           <description>Auto-reseeding after random number requests by host reaches specified counter: 0 - disable counter, other - reload value for internal counter</description>
           <addressOffset>0x60</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rqsts</name>
@@ -42177,6 +42192,7 @@
           <description>Auto-reseeding after specified timer countdowns to 0: 0 - disable timer, other - reload value for internal timer</description>
           <addressOffset>0x64</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>age</name>

@@ -31,7 +31,7 @@ impl W {
         self
     }
 }
-#[doc = "Auto-reseeding after random number requests by host reaches specified counter: 0 - disable counter, other - reload value for internal counter\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`auto_rqsts::R`](R).  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`auto_rqsts::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "Auto-reseeding after random number requests by host reaches specified counter: 0 - disable counter, other - reload value for internal counter\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`auto_rqsts::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`auto_rqsts::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct AUTO_RQSTS_SPEC;
 impl crate::RegisterSpec for AUTO_RQSTS_SPEC {
     type Ux = u32;
@@ -42,4 +42,8 @@ impl crate::Readable for AUTO_RQSTS_SPEC {}
 impl crate::Writable for AUTO_RQSTS_SPEC {
     const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+}
+#[doc = "`reset()` method sets auto_rqsts to value 0"]
+impl crate::Resettable for AUTO_RQSTS_SPEC {
+    const RESET_VALUE: Self::Ux = 0;
 }
