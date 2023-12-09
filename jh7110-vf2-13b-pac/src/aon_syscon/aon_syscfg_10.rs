@@ -1,7 +1,7 @@
-#[doc = "Register `aon_sysconsaif_syscfg40` reader"]
-pub type R = crate::R<AON_SYSCONSAIF_SYSCFG40_SPEC>;
-#[doc = "Register `aon_sysconsaif_syscfg40` writer"]
-pub type W = crate::W<AON_SYSCONSAIF_SYSCFG40_SPEC>;
+#[doc = "Register `aon_syscfg_10` reader"]
+pub type R = crate::R<AON_SYSCFG_10_SPEC>;
+#[doc = "Register `aon_syscfg_10` writer"]
+pub type W = crate::W<AON_SYSCFG_10_SPEC>;
 #[doc = "Field `u0_otpc_fl_sec_boot_lmt` reader - u0_otpc_fl_sec_boot_lmt"]
 pub type U0_OTPC_FL_SEC_BOOT_LMT_R = crate::BitReader;
 #[doc = "Field `u0_otpc_fl_xip` reader - u0_otpc_fl_xip"]
@@ -63,15 +63,13 @@ impl W {
     #[must_use]
     pub fn u0_reset_ctrl_clr_reset_status(
         &mut self,
-    ) -> U0_RESET_CTRL_CLR_RESET_STATUS_W<AON_SYSCONSAIF_SYSCFG40_SPEC> {
+    ) -> U0_RESET_CTRL_CLR_RESET_STATUS_W<AON_SYSCFG_10_SPEC> {
         U0_RESET_CTRL_CLR_RESET_STATUS_W::new(self, 3)
     }
     #[doc = "Bit 5 - u0_reset_ctrl_rstn_sw"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_reset_ctrl_rstn_sw(
-        &mut self,
-    ) -> U0_RESET_CTRL_RSTN_SW_W<AON_SYSCONSAIF_SYSCFG40_SPEC> {
+    pub fn u0_reset_ctrl_rstn_sw(&mut self) -> U0_RESET_CTRL_RSTN_SW_W<AON_SYSCFG_10_SPEC> {
         U0_RESET_CTRL_RSTN_SW_W::new(self, 5)
     }
     #[doc = r" Writes raw bits to the register."]
@@ -85,15 +83,19 @@ impl W {
         self
     }
 }
-#[doc = "AON SYSCONSAIF SYSCFG 40\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`aon_sysconsaif_syscfg40::R`](R).  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`aon_sysconsaif_syscfg40::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
-pub struct AON_SYSCONSAIF_SYSCFG40_SPEC;
-impl crate::RegisterSpec for AON_SYSCONSAIF_SYSCFG40_SPEC {
+#[doc = "AON SYSCONSAIF SYSCFG 40\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`aon_syscfg_10::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`aon_syscfg_10::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct AON_SYSCFG_10_SPEC;
+impl crate::RegisterSpec for AON_SYSCFG_10_SPEC {
     type Ux = u32;
 }
-#[doc = "`read()` method returns [`aon_sysconsaif_syscfg40::R`](R) reader structure"]
-impl crate::Readable for AON_SYSCONSAIF_SYSCFG40_SPEC {}
-#[doc = "`write(|w| ..)` method takes [`aon_sysconsaif_syscfg40::W`](W) writer structure"]
-impl crate::Writable for AON_SYSCONSAIF_SYSCFG40_SPEC {
+#[doc = "`read()` method returns [`aon_syscfg_10::R`](R) reader structure"]
+impl crate::Readable for AON_SYSCFG_10_SPEC {}
+#[doc = "`write(|w| ..)` method takes [`aon_syscfg_10::W`](W) writer structure"]
+impl crate::Writable for AON_SYSCFG_10_SPEC {
     const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+}
+#[doc = "`reset()` method sets aon_syscfg_10 to value 0"]
+impl crate::Resettable for AON_SYSCFG_10_SPEC {
+    const RESET_VALUE: Self::Ux = 0;
 }
