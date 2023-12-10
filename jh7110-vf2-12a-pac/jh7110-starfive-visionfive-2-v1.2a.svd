@@ -43145,31 +43145,32 @@
       </addressBlock>
       <registers>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg_fmux0</name>
+          <name>fmux_0</name>
           <description>AON IOMUX CFG SAIF SYSCFG FMUX 0</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>aon_iomux_gpo0_doen_cfg</name>
+              <name>gpo_doen_0</name>
               <description>The selected OEN signal for GPIO0. The register value indicates the selected GPIO (Output Enable) OEN index from GPIO OEN list 0-5. See Table 2-42: GPIO OEN List for AON_IOMUX for more information.</description>
               <bitRange>[2:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>aon_iomux_gpo1_doen_cfg</name>
+              <name>gpo_doen_1</name>
               <description>The selected OEN signal for GPIO1. The register value indicates the selected GPIO (Output Enable) OEN index from GPIO OEN list 0-5. See Table 2-42: GPIO OEN List for AON_IOMUX for more information.</description>
               <bitRange>[10:8]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>aon_iomux_gpo2_doen_cfg</name>
+              <name>gpo_doen_2</name>
               <description>The selected OEN signal for GPIO2. The register value indicates the selected GPIO (Output Enable) OEN index from GPIO OEN list 0-5. See Table 2-42: GPIO OEN List for AON_IOMUX for more information.</description>
               <bitRange>[18:16]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>aon_iomux_gpo3_doen_cfg</name>
+              <name>gpo_doen_3</name>
               <description>The selected OEN signal for GPIO3. The register value indicates the selected GPIO (Output Enable) OEN index from GPIO OEN list 0-5. See Table 2-42: GPIO OEN List for AON_IOMUX for more information.</description>
               <bitRange>[26:24]</bitRange>
               <access>read-write</access>
@@ -43177,31 +43178,32 @@
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg_fmux1</name>
-          <description>AON IOMUX CFG SAIF SYSCFG FMUX 1</description>
+          <name>fmux_1</name>
+          <description>AON IOMUX CFG SAIF SYSCFG FMUX 4</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>aon_iomux_gpo0_dout_cfg</name>
+              <name>gpo_dout_0</name>
               <description>The selected OEN signal for GPIO0. The register value indicates the selected GPIO output signal list 0-9. See Table 2-42: GPIO OEN List for AON_IOMUX for more information.</description>
               <bitRange>[3:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>aon_iomux_gpo1_dout_cfg</name>
+              <name>gpo_dout_1</name>
               <description>The selected OEN signal for GPIO1. The register value indicates the selected GPIO output signal list 0-9. See Table 2-42: GPIO OEN List for AON_IOMUX for more information.</description>
               <bitRange>[11:8]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>aon_iomux_gpo2_dout_cfg</name>
+              <name>gpo_dout_2</name>
               <description>The selected OEN signal for GPIO2. The register value indicates the selected GPIO output signal list 0-9. See Table 2-42: GPIO OEN List for AON_IOMUX for more information.</description>
               <bitRange>[19:16]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>aon_iomux_gpo3_dout_cfg</name>
+              <name>gpo_dout_3</name>
               <description>The selected OEN signal for GPIO3. The register value indicates the selected GPIO output signal list 0-9. See Table 2-42: GPIO OEN List for AON_IOMUX for more information.</description>
               <bitRange>[27:24]</bitRange>
               <access>read-write</access>
@@ -43209,31 +43211,32 @@
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg_fmux2</name>
-          <description>AON IOMUX CFG SAIF SYSCFG FMUX 2</description>
+          <name>fmux_2</name>
+          <description>AON IOMUX CFG SAIF SYSCFG FMUX 8</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>aon_iomux_gpi_u0_pmu_io_event_stub_gpio_wakeup_0_cfg</name>
+              <name>gpi_pmu_wakeup_0</name>
               <description>The register value indicates the selected GPIO number + 2 (GPIO2-GPIO63, GPIO0 and GPIO1 are not available) for the input signal.</description>
               <bitRange>[2:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>aon_iomux_gpi_u0_pmu_io_event_stub_gpio_wakeup_1_cfg</name>
+              <name>gpi_pmu_wakeup_1</name>
               <description>The register value indicates the selected GPIO number + 2 (GPIO2-GPIO63, GPIO0 and GPIO1 are not available) for the input signal.</description>
               <bitRange>[10:8]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>aon_iomux_gpi_u0_pmu_io_event_stub_gpio_wakeup_2_cfg</name>
+              <name>gpi_pmu_wakeup_2</name>
               <description>The register value indicates the selected GPIO number + 2 (GPIO2-GPIO63, GPIO0 and GPIO1 are not available) for the input signal.</description>
               <bitRange>[18:16]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>aon_iomux_gpi_u0_pmu_io_event_stub_gpio_wakeup_3_cfg</name>
+              <name>gpi_pmu_wakeup_3</name>
               <description>The register value indicates the selected GPIO number + 2 (GPIO2-GPIO63, GPIO0 and GPIO1 are not available) for the input signal.</description>
               <bitRange>[26:24]</bitRange>
               <access>read-write</access>
@@ -43241,13 +43244,14 @@
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg_fmux3</name>
-          <description>AON IOMUX CFG SAIF SYSCFG FMUX 3</description>
+          <name>fmux_3</name>
+          <description>AON IOMUX CFG SAIF SYSCFG FMUX 12</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>aon_gpioen_0_reg</name>
+              <name>gpen_0</name>
               <description>Enable GPIO IRQ function.</description>
               <bitRange>[0:0]</bitRange>
               <access>read-write</access>
@@ -43255,13 +43259,14 @@
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg_ioirq4</name>
-          <description>AON IOMUX CFG SAIF SYSCFG IOIRQ 4</description>
+          <name>ioirq_0</name>
+          <description>AON IOMUX CFG SAIF SYSCFG IOIRQ 16</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>aon_gpiois_0_reg</name>
+              <name>is</name>
               <description>1: Edge trigger, 0: Level trigger</description>
               <bitRange>[3:0]</bitRange>
               <access>read-write</access>
@@ -43269,13 +43274,14 @@
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg_ioirq5</name>
-          <description>AON IOMUX CFG SAIF SYSCFG IOIRQ 5</description>
+          <name>ioirq_1</name>
+          <description>AON IOMUX CFG SAIF SYSCFG IOIRQ 20</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>aon_gpioic_0_reg</name>
+              <name>ic</name>
               <description>1: Do not clear the register, 0: Clear the register</description>
               <bitRange>[3:0]</bitRange>
               <access>read-write</access>
@@ -43283,13 +43289,14 @@
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg_ioirq6</name>
-          <description>AON IOMUX CFG SAIF SYSCFG IOIRQ 6</description>
+          <name>ioirq_2</name>
+          <description>AON IOMUX CFG SAIF SYSCFG IOIRQ 24</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>aon_gpioibe_0_reg</name>
+              <name>ibe</name>
               <description>1: Trigger on both edges, 0: Trigger on a single edge</description>
               <bitRange>[3:0]</bitRange>
               <access>read-write</access>
@@ -43297,13 +43304,14 @@
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg_ioirq7</name>
-          <description>AON IOMUX CFG SAIF SYSCFG IOIRQ 7</description>
+          <name>ioirq_3</name>
+          <description>AON IOMUX CFG SAIF SYSCFG IOIRQ 28</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>aon_gpioiev_0_reg</name>
+              <name>iev</name>
               <description>1: Positive/Low, 0: Negative/High</description>
               <bitRange>[3:0]</bitRange>
               <access>read-write</access>
@@ -43311,13 +43319,14 @@
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg_ioirq8</name>
-          <description>AON IOMUX CFG SAIF SYSCFG IOIRQ 8</description>
+          <name>ioirq_4</name>
+          <description>AON IOMUX CFG SAIF SYSCFG IOIRQ 32</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>aon_gpioie_0_reg</name>
+              <name>ie</name>
               <description>1: Unmask, 0: Mask</description>
               <bitRange>[3:0]</bitRange>
               <access>read-write</access>
@@ -43325,13 +43334,14 @@
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg_ioirq9</name>
-          <description>AON IOMUX CFG SAIF SYSCFG IOIRQ 9</description>
+          <name>ioirq_5</name>
+          <description>AON IOMUX CFG SAIF SYSCFG IOIRQ 36</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>aon_gpioris_0_reg</name>
+              <name>ris</name>
               <description>Status of the edge trigger, can be cleared by writing gpioic.</description>
               <bitRange>[3:0]</bitRange>
               <access>read-only</access>
@@ -43339,13 +43349,14 @@
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg_ioirq10</name>
-          <description>AON IOMUX CFG SAIF SYSCFG IOIRQ 10</description>
+          <name>ioirq_6</name>
+          <description>AON IOMUX CFG SAIF SYSCFG IOIRQ 40</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>aon_gpiomis_0_reg</name>
+              <name>mis</name>
               <description>The masked GPIO IRQ status.</description>
               <bitRange>[3:0]</bitRange>
               <access>read-only</access>
@@ -43353,13 +43364,14 @@
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg_ioirq11</name>
-          <description>AON IOMUX CFG SAIF SYSCFG IOIRQ 11</description>
+          <name>ioirq_7</name>
+          <description>AON IOMUX CFG SAIF SYSCFG IOIRQ 44</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>aon_gpio_in_sync2_0_reg</name>
+              <name>in_sync2</name>
               <description>Status of gpio_in after synchronization.</description>
               <bitRange>[3:0]</bitRange>
               <access>read-only</access>
@@ -43367,13 +43379,14 @@
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg48</name>
+          <name>testen</name>
           <description>AON IOMUX CFG SAIF SYSCFG 48</description>
           <addressOffset>0x30</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>padcfg_pad_testen_pos</name>
+              <name>testen_pos</name>
               <description>Power-on-Start (POS) enabler - 1: Enable active pull down for loss of core power, 0: Active pull-down capability disabled</description>
               <bitRange>[0:0]</bitRange>
               <access>read-write</access>
@@ -43381,49 +43394,50 @@
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg52</name>
+          <name>rgpio_0</name>
           <description>AON IOMUX CFG SAIF SYSCFG 52</description>
           <addressOffset>0x34</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>padcfg_pad_rgpio0_ie</name>
+              <name>ie</name>
               <description>Input Enable (IE) Controller - 1: Enable the receiver, 0: Disable the receiver</description>
               <bitRange>[0:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rgpio0_ds</name>
+              <name>ds</name>
               <description>Output Drive Strength (DS) - 00: The rated drive strength is 2 mA, 01: The rated drive strength is 4 mA, 10: The rated drive strength is 8 mA, 11: The rated drive strength is 12 mA</description>
               <bitRange>[2:1]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rgpio0_pu</name>
+              <name>pu</name>
               <description>Pull-Up (PU) settings - 1: Yes, 0: No</description>
               <bitRange>[3:3]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rgpio0_pd</name>
+              <name>pd</name>
               <description>Pull-Down (PD) settings - 1: Yes, 0: No</description>
               <bitRange>[4:4]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rgpio0_slew</name>
+              <name>slew</name>
               <description>Slew Rate Control - 0: Slow (Half frequency), 1: Fast</description>
               <bitRange>[5:5]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rgpio0_smt</name>
+              <name>smt</name>
               <description>Active high Schmitt (SMT) trigger selector - 0: No hysteresis, 1: Schmitt trigger ebabled</description>
               <bitRange>[6:6]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rgpio0_pos</name>
+              <name>pos</name>
               <description>Power-on-Start (POS) enabler - 1: Enable active pull down for loss of core power, 0: Active pull-down capability disabled</description>
               <bitRange>[7:7]</bitRange>
               <access>read-write</access>
@@ -43431,49 +43445,50 @@
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg56</name>
+          <name>rgpio_1</name>
           <description>AON IOMUX CFG SAIF SYSCFG 56</description>
           <addressOffset>0x38</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>padcfg_pad_rgpio1_ie</name>
+              <name>ie</name>
               <description>Input Enable (IE) Controller - 1: Enable the receiver, 0: Disable the receiver</description>
               <bitRange>[0:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rgpio1_ds</name>
+              <name>ds</name>
               <description>Output Drive Strength (DS) - 00: The rated drive strength is 2 mA, 01: The rated drive strength is 4 mA, 10: The rated drive strength is 8 mA, 11: The rated drive strength is 12 mA</description>
               <bitRange>[2:1]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rgpio1_pu</name>
+              <name>pu</name>
               <description>Pull-Up (PU) settings - 1: Yes, 0: No</description>
               <bitRange>[3:3]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rgpio1_pd</name>
+              <name>pd</name>
               <description>Pull-Down (PD) settings - 1: Yes, 0: No</description>
               <bitRange>[4:4]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rgpio1_slew</name>
+              <name>slew</name>
               <description>Slew Rate Control - 0: Slow (Half frequency), 1: Fast</description>
               <bitRange>[5:5]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rgpio1_smt</name>
+              <name>smt</name>
               <description>Active high Schmitt (SMT) trigger selector - 0: No hysteresis, 1: Schmitt trigger ebabled</description>
               <bitRange>[6:6]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rgpio1_pos</name>
+              <name>pos</name>
               <description>Power-on-Start (POS) enabler - 1: Enable active pull down for loss of core power, 0: Active pull-down capability disabled</description>
               <bitRange>[7:7]</bitRange>
               <access>read-write</access>
@@ -43481,49 +43496,50 @@
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg60</name>
+          <name>rgpio_2</name>
           <description>AON IOMUX CFG SAIF SYSCFG 60</description>
           <addressOffset>0x3c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>padcfg_pad_rgpio2_ie</name>
+              <name>ie</name>
               <description>Input Enable (IE) Controller - 1: Enable the receiver, 0: Disable the receiver</description>
               <bitRange>[0:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rgpio2_ds</name>
+              <name>ds</name>
               <description>Output Drive Strength (DS) - 00: The rated drive strength is 2 mA, 01: The rated drive strength is 4 mA, 10: The rated drive strength is 8 mA, 11: The rated drive strength is 12 mA</description>
               <bitRange>[2:1]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rgpio2_pu</name>
+              <name>pu</name>
               <description>Pull-Up (PU) settings - 1: Yes, 0: No</description>
               <bitRange>[3:3]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rgpio2_pd</name>
+              <name>pd</name>
               <description>Pull-Down (PD) settings - 1: Yes, 0: No</description>
               <bitRange>[4:4]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rgpio2_slew</name>
+              <name>slew</name>
               <description>Slew Rate Control - 0: Slow (Half frequency), 1: Fast</description>
               <bitRange>[5:5]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rgpio2_smt</name>
+              <name>smt</name>
               <description>Active high Schmitt (SMT) trigger selector - 0: No hysteresis, 1: Schmitt trigger ebabled</description>
               <bitRange>[6:6]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rgpio2_pos</name>
+              <name>pos</name>
               <description>Power-on-Start (POS) enabler - 1: Enable active pull down for loss of core power, 0: Active pull-down capability disabled</description>
               <bitRange>[7:7]</bitRange>
               <access>read-write</access>
@@ -43531,49 +43547,50 @@
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg64</name>
+          <name>rgpio_3</name>
           <description>AON IOMUX CFG SAIF SYSCFG 64</description>
           <addressOffset>0x40</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>padcfg_pad_rgpio3_ie</name>
+              <name>ie</name>
               <description>Input Enable (IE) Controller - 1: Enable the receiver, 0: Disable the receiver</description>
               <bitRange>[0:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rgpio3_ds</name>
+              <name>ds</name>
               <description>Output Drive Strength (DS) - 00: The rated drive strength is 2 mA, 01: The rated drive strength is 4 mA, 10: The rated drive strength is 8 mA, 11: The rated drive strength is 12 mA</description>
               <bitRange>[2:1]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rgpio3_pu</name>
+              <name>pu</name>
               <description>Pull-Up (PU) settings - 1: Yes, 0: No</description>
               <bitRange>[3:3]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rgpio3_pd</name>
+              <name>pd</name>
               <description>Pull-Down (PD) settings - 1: Yes, 0: No</description>
               <bitRange>[4:4]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rgpio3_slew</name>
+              <name>slew</name>
               <description>Slew Rate Control - 0: Slow (Half frequency), 1: Fast</description>
               <bitRange>[5:5]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rgpio3_smt</name>
+              <name>smt</name>
               <description>Active high Schmitt (SMT) trigger selector - 0: No hysteresis, 1: Schmitt trigger ebabled</description>
               <bitRange>[6:6]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rgpio3_pos</name>
+              <name>pos</name>
               <description>Power-on-Start (POS) enabler - 1: Enable active pull down for loss of core power, 0: Active pull-down capability disabled</description>
               <bitRange>[7:7]</bitRange>
               <access>read-write</access>
@@ -43581,19 +43598,20 @@
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg68</name>
+          <name>rstn</name>
           <description>AON IOMUX CFG SAIF SYSCFG 68</description>
           <addressOffset>0x44</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>padcfg_pad_rstn_smt</name>
+              <name>smt</name>
               <description>Active high Schmitt (SMT) trigger selector - 0: No hysteresis, 1: Schmitt trigger enabled</description>
               <bitRange>[0:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>padcfg_pad_rstn_pos</name>
+              <name>pos</name>
               <description>Power-on-Start (POS) enabler - 1: Enable active pull-down for loss of core power, 0: Active pull-down capability disabled</description>
               <bitRange>[1:1]</bitRange>
               <access>read-write</access>
@@ -43601,13 +43619,14 @@
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg76</name>
+          <name>rtc</name>
           <description>AON IOMUX CFG SAIF SYSCFG 76</description>
           <addressOffset>0x4c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>padcfg_pad_rtc_ds</name>
+              <name>ds</name>
               <description>Output Drive Strength (DS): * 00: The rated drive strength is 2 mA. * 01: The rated drive strength is 4 mA. * 10: The rated drive strength is 8 mA. * 11: The rated drive strength is 12 mA.</description>
               <bitRange>[1:0]</bitRange>
               <access>read-write</access>
@@ -43615,13 +43634,14 @@
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg84</name>
+          <name>osc</name>
           <description>AON IOMUX CFG SAIF SYSCFG 84</description>
           <addressOffset>0x54</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>padcfg_pad_osc_ds</name>
+              <name>ds</name>
               <description>Output Drive Strength (DS): * 00: The rated drive strength is 2 mA. * 01: The rated drive strength is 4 mA. * 10: The rated drive strength is 8 mA. * 11: The rated drive strength is 12 mA.</description>
               <bitRange>[1:0]</bitRange>
               <access>read-write</access>
@@ -43629,41 +43649,44 @@
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg88</name>
+          <name>gmac0_mdc</name>
           <description>AON IOMUX CFG SAIF SYSCFG 88</description>
           <addressOffset>0x58</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>padcfg_pad_gmac0_mdc_syscon</name>
-              <description>padcfg_pad_gmac0_mdc_syscon</description>
+              <name>value</name>
+              <description>value</description>
               <bitRange>[1:0]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg92</name>
+          <name>gmac0_mdio</name>
           <description>AON IOMUX CFG SAIF SYSCFG 92</description>
           <addressOffset>0x5c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>padcfg_pad_gmac0_mdio_syscon</name>
-              <description>padcfg_pad_gmac0_mdio_syscon</description>
+              <name>value</name>
+              <description>value</description>
               <bitRange>[1:0]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg96</name>
+          <name>gmac0_rxd0</name>
           <description>AON IOMUX CFG SAIF SYSCFG 96</description>
           <addressOffset>0x60</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>padcfg_pad_gmac0_rxd0_syscon</name>
+              <name>value</name>
               <description>0: GMAC0 IO voltage select 3.3V, 1: GMAC0 IO voltage select 2.5V, 2: GMAC0 IO voltage select 1.8V</description>
               <bitRange>[1:0]</bitRange>
               <access>read-write</access>
@@ -43671,167 +43694,179 @@
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg100</name>
+          <name>gmac0_rxd1</name>
           <description>AON IOMUX CFG SAIF SYSCFG 100</description>
           <addressOffset>0x64</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>padcfg_pad_gmac0_rxd1_syscon</name>
-              <description>padcfg_pad_gmac0_rxd1_syscon</description>
+              <name>value</name>
+              <description>value</description>
               <bitRange>[1:0]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg104</name>
+          <name>gmac0_rxd2</name>
           <description>AON IOMUX CFG SAIF SYSCFG 104</description>
           <addressOffset>0x68</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>padcfg_pad_gmac0_rxd2_syscon</name>
-              <description>padcfg_pad_gmac0_rxd2_syscon</description>
+              <name>value</name>
+              <description>value</description>
               <bitRange>[1:0]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg108</name>
+          <name>gmac0_rxd3</name>
           <description>AON IOMUX CFG SAIF SYSCFG 108</description>
           <addressOffset>0x6c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>padcfg_pad_gmac0_rxd3_syscon</name>
-              <description>padcfg_pad_gmac0_rxd3_syscon</description>
+              <name>value</name>
+              <description>value</description>
               <bitRange>[1:0]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg112</name>
+          <name>gmac0_rxdv</name>
           <description>AON IOMUX CFG SAIF SYSCFG 112</description>
           <addressOffset>0x70</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>padcfg_pad_gmac0_rxdv_syscon</name>
-              <description>padcfg_pad_gmac0_rxdv_syscon</description>
+              <name>value</name>
+              <description>value</description>
               <bitRange>[1:0]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg116</name>
+          <name>gmac0_rxc</name>
           <description>AON IOMUX CFG SAIF SYSCFG 116</description>
           <addressOffset>0x74</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>padcfg_pad_gmac0_rxc_syscon</name>
-              <description>padcfg_pad_gmac0_rxc_syscon</description>
+              <name>value</name>
+              <description>value</description>
               <bitRange>[1:0]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg120</name>
+          <name>gmac0_txd0</name>
           <description>AON IOMUX CFG SAIF SYSCFG 120</description>
           <addressOffset>0x78</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>padcfg_pad_gmac0_txd0_syscon</name>
-              <description>padcfg_pad_gmac0_txd0_syscon</description>
+              <name>value</name>
+              <description>value</description>
               <bitRange>[1:0]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg124</name>
+          <name>gmac0_txd1</name>
           <description>AON IOMUX CFG SAIF SYSCFG 124</description>
           <addressOffset>0x7c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>padcfg_pad_gmac0_txd1_syscon</name>
-              <description>padcfg_pad_gmac0_txd1_syscon</description>
+              <name>value</name>
+              <description>value</description>
               <bitRange>[1:0]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg128</name>
+          <name>gmac0_txd2</name>
           <description>AON IOMUX CFG SAIF SYSCFG 128</description>
           <addressOffset>0x80</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>padcfg_pad_gmac0_txd2_syscon</name>
-              <description>padcfg_pad_gmac0_txd2_syscon</description>
+              <name>value</name>
+              <description>value</description>
               <bitRange>[1:0]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg132</name>
+          <name>gmac0_txd3</name>
           <description>AON IOMUX CFG SAIF SYSCFG 132</description>
           <addressOffset>0x84</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>padcfg_pad_gmac0_txd3_syscon</name>
-              <description>padcfg_pad_gmac0_txd3_syscon</description>
+              <name>value</name>
+              <description>value</description>
               <bitRange>[1:0]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg136</name>
+          <name>gmac0_txen</name>
           <description>AON IOMUX CFG SAIF SYSCFG 136</description>
           <addressOffset>0x88</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>padcfg_pad_gmac0_txen_syscon</name>
-              <description>padcfg_pad_gmac0_txen_syscon</description>
+              <name>value</name>
+              <description>value</description>
               <bitRange>[1:0]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg140</name>
+          <name>gmac0_txc</name>
           <description>AON IOMUX CFG SAIF SYSCFG 140</description>
           <addressOffset>0x8c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>padcfg_pad_gmac0_txc_syscon</name>
-              <description>padcfg_pad_gmac0_txc_syscon</description>
+              <name>value</name>
+              <description>value</description>
               <bitRange>[1:0]</bitRange>
               <access>read-write</access>
             </field>
           </fields>
         </register>
         <register>
-          <name>aon_iomux_cfgsaif_syscfg144</name>
+          <name>gmac0_rxc_func_sel</name>
           <description>AON IOMUX CFG SAIF SYSCFG 144</description>
           <addressOffset>0x90</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>pad_gmac0_rxc_func_sel</name>
+              <name>value</name>
               <description>Function selector of GMAC0_RXC: * Function 0: u0_aon_crg_clk_gmac0_rgmii_rx, * Function 1: u0_aon_crg_clk_gmac0_rmii_ref, * Function 2: None, * Function 3: None</description>
               <bitRange>[1:0]</bitRange>
               <access>read-write</access>
