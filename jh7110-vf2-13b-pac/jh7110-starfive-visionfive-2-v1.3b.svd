@@ -2747,6 +2747,10 @@
         <size>0x10000</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>uart0</name>
+        <value>27</value>
+      </interrupt>
       <registers>
         <register>
           <name>rbr</name>
@@ -4043,6 +4047,10 @@
         <size>0x10000</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>uart1</name>
+        <value>28</value>
+      </interrupt>
       <registers>
         <register>
           <name>rbr</name>
@@ -5339,6 +5347,10 @@
         <size>0x10000</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>uart2</name>
+        <value>29</value>
+      </interrupt>
       <registers>
         <register>
           <name>rbr</name>
@@ -6635,6 +6647,10 @@
         <size>0x10000</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>i2c0</name>
+        <value>30</value>
+      </interrupt>
       <registers>
         <register>
           <name>con</name>
@@ -7736,6 +7752,10 @@
         <size>0x10000</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>i2c1</name>
+        <value>31</value>
+      </interrupt>
       <registers>
         <register>
           <name>con</name>
@@ -8837,6 +8857,10 @@
         <size>0x10000</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>i2c2</name>
+        <value>32</value>
+      </interrupt>
       <registers>
         <register>
           <name>con</name>
@@ -9938,6 +9962,10 @@
         <size>0x10000</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>spi0</name>
+        <value>33</value>
+      </interrupt>
       <registers>
         <register>
           <name>ssp_cr0</name>
@@ -10384,6 +10412,10 @@
         <size>0x10000</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>spi1</name>
+        <value>34</value>
+      </interrupt>
       <registers>
         <register>
           <name>ssp_cr0</name>
@@ -10820,6 +10852,10 @@
         <size>0x10000</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>spi2</name>
+        <value>35</value>
+      </interrupt>
       <registers>
         <register>
           <name>ssp_cr0</name>
@@ -16859,6 +16895,10 @@
         <size>0x10000</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>uart3</name>
+        <value>40</value>
+      </interrupt>
       <registers>
         <register>
           <name>rbr</name>
@@ -18155,6 +18195,10 @@
         <size>0x10000</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>uart4</name>
+        <value>41</value>
+      </interrupt>
       <registers>
         <register>
           <name>rbr</name>
@@ -19451,6 +19495,10 @@
         <size>0x10000</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>uart5</name>
+        <value>42</value>
+      </interrupt>
       <registers>
         <register>
           <name>rbr</name>
@@ -20747,6 +20795,10 @@
         <size>0x10000</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>i2c3</name>
+        <value>43</value>
+      </interrupt>
       <registers>
         <register>
           <name>con</name>
@@ -21848,6 +21900,10 @@
         <size>0x10000</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>i2c4</name>
+        <value>44</value>
+      </interrupt>
       <registers>
         <register>
           <name>con</name>
@@ -22949,6 +23005,10 @@
         <size>0x10000</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>i2c5</name>
+        <value>45</value>
+      </interrupt>
       <registers>
         <register>
           <name>con</name>
@@ -24060,6 +24120,10 @@
         <size>0x10000</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>i2c6</name>
+        <value>46</value>
+      </interrupt>
       <registers>
         <register>
           <name>con</name>
@@ -25161,6 +25225,10 @@
         <size>0x10000</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>spi3</name>
+        <value>47</value>
+      </interrupt>
       <registers>
         <register>
           <name>ssp_cr0</name>
@@ -25597,6 +25665,10 @@
         <size>0x10000</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>spi4</name>
+        <value>48</value>
+      </interrupt>
       <registers>
         <register>
           <name>ssp_cr0</name>
@@ -26033,6 +26105,10 @@
         <size>0x10000</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>spi5</name>
+        <value>49</value>
+      </interrupt>
       <registers>
         <register>
           <name>ssp_cr0</name>
@@ -26469,6 +26545,10 @@
         <size>0x10000</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>spi6</name>
+        <value>50</value>
+      </interrupt>
       <registers>
         <register>
           <name>ssp_cr0</name>
@@ -26925,6 +27005,10 @@
         <size>0x10000</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>qspi</name>
+        <value>20</value>
+      </interrupt>
       <registers>
         <register>
           <name>config</name>
@@ -43782,6 +43866,10 @@
         <size>0x10000</size>
         <usage>registers</usage>
       </addressBlock>
+      <interrupt>
+        <name>pmu</name>
+        <value>106</value>
+      </interrupt>
       <registers>
         <register>
           <name>hard_event_turn_on_mask</name>
