@@ -11302,6 +11302,7 @@
           <description>Clock HIFI4 Core</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11316,6 +11317,7 @@
           <description>Clock USB APB</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11330,6 +11332,7 @@
           <description>Clock USB UTMI APB</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11344,6 +11347,7 @@
           <description>Clock USB AXI</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11358,6 +11362,7 @@
           <description>Clock USB AXI</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11378,6 +11383,7 @@
           <description>Clock USB STB</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11398,6 +11404,7 @@
           <description>Clock USB APP 125</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11412,6 +11419,7 @@
           <description>Clock USB Reference Clock</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -11426,6 +11434,7 @@
           <description>U0 Clock PCIe AXI MST 0</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11440,6 +11449,7 @@
           <description>U0 Clock PCIe APB</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11454,6 +11464,7 @@
           <description>U0 Clock PCIe TL</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11468,6 +11479,7 @@
           <description>U1 Clock PCIe AXI MST 0</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11482,6 +11494,7 @@
           <description>U1 Clock PCIe APB</description>
           <addressOffset>0x30</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11496,6 +11509,7 @@
           <description>U1 Clock PCIe TL</description>
           <addressOffset>0x34</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11510,6 +11524,7 @@
           <description>Clock PCIe 01 SLV DEC Main</description>
           <addressOffset>0x38</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11524,6 +11539,7 @@
           <description>Clock Security HCLK</description>
           <addressOffset>0x3c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11538,6 +11554,7 @@
           <description>Clock Security Miscellaneous AHB</description>
           <addressOffset>0x40</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11552,6 +11569,7 @@
           <description>Clock STG MTRX Group 0 Main</description>
           <addressOffset>0x44</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11566,6 +11584,7 @@
           <description>Clock STG MTRX Group 0 Bus</description>
           <addressOffset>0x48</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11580,6 +11599,7 @@
           <description>Clock STG MTRX Group 0 STG</description>
           <addressOffset>0x4c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11594,6 +11614,7 @@
           <description>Clock STG MTRX Group 1 Main</description>
           <addressOffset>0x50</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11608,6 +11629,7 @@
           <description>Clock STG MTRX Group 1 Bus</description>
           <addressOffset>0x54</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11622,6 +11644,7 @@
           <description>Clock STG MTRX Group 1 STG</description>
           <addressOffset>0x58</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11636,6 +11659,7 @@
           <description>Clock STG MTRX Group 1 HIFI</description>
           <addressOffset>0x5c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11650,6 +11674,7 @@
           <description>Clock E2 RTC</description>
           <addressOffset>0x60</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11670,6 +11695,7 @@
           <description>Clock E2 Core</description>
           <addressOffset>0x64</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11684,6 +11710,7 @@
           <description>Clock E2 DBG</description>
           <addressOffset>0x68</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11698,6 +11725,7 @@
           <description>Clock DMA AXI</description>
           <addressOffset>0x6c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11712,6 +11740,7 @@
           <description>Clock DMA AHB</description>
           <addressOffset>0x70</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -11726,6 +11755,7 @@
           <description>Software RESET Address Selector</description>
           <addressOffset>0x74</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rstn_u0_stg_syscon_presetn</name>
@@ -11872,6 +11902,7 @@
           <description>STGCRG RESET Status</description>
           <addressOffset>0x78</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rstn_u0_stg_syscon_presetn</name>
@@ -27837,6 +27868,7 @@
           <description>Clock CPU Root</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_mux_sel</name>
@@ -27851,6 +27883,7 @@
           <description>Clock CPU Core</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -27865,6 +27898,7 @@
           <description>Clock CPU Bus</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -27879,6 +27913,7 @@
           <description>Clock GPU Root</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_mux_sel</name>
@@ -27893,6 +27928,7 @@
           <description>Clock Peripheral Root</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_mux_sel</name>
@@ -27913,6 +27949,7 @@
           <description>Clock Bus Root</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_mux_sel</name>
@@ -27927,6 +27964,7 @@
           <description>Clock NOCSTG Bus</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -27941,6 +27979,7 @@
           <description>Clock AXI Configuration 0</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -27955,6 +27994,7 @@
           <description>Clock STG AXI AHB</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -27969,6 +28009,7 @@
           <description>Clock AHB 0</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -27983,6 +28024,7 @@
           <description>Clock AHB 1</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -27997,6 +28039,7 @@
           <description>Clock APB Bus</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -28011,6 +28054,7 @@
           <description>Clock APB 0</description>
           <addressOffset>0x30</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28025,6 +28069,7 @@
           <description>Clock PLL 0 Divider 2</description>
           <addressOffset>0x34</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -28039,6 +28084,7 @@
           <description>Clock PLL 1 Divider 2</description>
           <addressOffset>0x38</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -28053,6 +28099,7 @@
           <description>Clock PLL 2 Divider 2</description>
           <addressOffset>0x3c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -28067,6 +28114,7 @@
           <description>Clock Audio Root</description>
           <addressOffset>0x40</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -28081,6 +28129,7 @@
           <description>Clock MCLK Inner</description>
           <addressOffset>0x44</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -28095,6 +28144,7 @@
           <description>Clock MCLK</description>
           <addressOffset>0x48</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_mux_sel</name>
@@ -28109,6 +28159,7 @@
           <description>Clock MCLK Out</description>
           <addressOffset>0x4c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28123,6 +28174,7 @@
           <description>Clock ISP 2x</description>
           <addressOffset>0x50</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_mux_sel</name>
@@ -28143,6 +28195,7 @@
           <description>Clock ISP AXI</description>
           <addressOffset>0x54</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -28157,6 +28210,7 @@
           <description>Clock GCLK 0</description>
           <addressOffset>0x58</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28177,6 +28231,7 @@
           <description>Clock GCLK 1</description>
           <addressOffset>0x5c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28197,6 +28252,7 @@
           <description>Clock GCLK 2</description>
           <addressOffset>0x60</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28217,6 +28273,7 @@
           <description>U7MC Core Clock 0</description>
           <addressOffset>0x64</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28231,6 +28288,7 @@
           <description>U7MC Core Clock 1</description>
           <addressOffset>0x68</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28245,6 +28303,7 @@
           <description>U7MC Core Clock 2</description>
           <addressOffset>0x6c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28259,6 +28318,7 @@
           <description>U7MC Core Clock 3</description>
           <addressOffset>0x70</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28273,6 +28333,7 @@
           <description>U7MC Core Clock 4</description>
           <addressOffset>0x74</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28287,6 +28348,7 @@
           <description>U7MC Debug Clock</description>
           <addressOffset>0x78</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28301,6 +28363,7 @@
           <description>U7MC RTC Toggle</description>
           <addressOffset>0x7c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -28315,6 +28378,7 @@
           <description>U7MC Trace Clock 0</description>
           <addressOffset>0x80</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28329,6 +28393,7 @@
           <description>U7MC Trace Clock 1</description>
           <addressOffset>0x84</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28343,6 +28408,7 @@
           <description>U7MC Trace Clock 2</description>
           <addressOffset>0x88</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28357,6 +28423,7 @@
           <description>U7MC Trace Clock 3</description>
           <addressOffset>0x8c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28371,6 +28438,7 @@
           <description>U7MC Trace Clock 4</description>
           <addressOffset>0x90</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28385,6 +28453,7 @@
           <description>U7MC Trace Clock COM</description>
           <addressOffset>0x94</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28399,6 +28468,7 @@
           <description>clk_u0_sft7110_noc_bus_clk_cpu_axi</description>
           <addressOffset>0x98</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28413,6 +28483,7 @@
           <description>clk_u0_sft7110_noc_bus_clk_axicfg0_axi</description>
           <addressOffset>0x9c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28427,6 +28498,7 @@
           <description>clk_osc_div2</description>
           <addressOffset>0xa0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -28441,6 +28513,7 @@
           <description>clk_pll1_div4</description>
           <addressOffset>0xa4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -28455,6 +28528,7 @@
           <description>clk_pll1_div8</description>
           <addressOffset>0xa8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -28469,6 +28543,7 @@
           <description>clk_ddr_bus</description>
           <addressOffset>0xac</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_mux_sel</name>
@@ -28483,6 +28558,7 @@
           <description>clk_u0_ddr_sfft7110_clk_axi</description>
           <addressOffset>0xb0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28497,6 +28573,7 @@
           <description>clk_gpu_core</description>
           <addressOffset>0xb4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -28511,6 +28588,7 @@
           <description>clk_u0_img_gpu_core_clk</description>
           <addressOffset>0xb8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28525,6 +28603,7 @@
           <description>clk_u0_img_gpu_sys_clk</description>
           <addressOffset>0xbc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28539,6 +28618,7 @@
           <description>clk_u0_img_gpu_clk_apb</description>
           <addressOffset>0xc0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28553,6 +28633,7 @@
           <description>clk_u0_gpu_rtc_toggle</description>
           <addressOffset>0xc4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28573,6 +28654,7 @@
           <description>clk_u0_sft7110_noc_bus_clk_gpu_axi</description>
           <addressOffset>0xc8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28587,6 +28669,7 @@
           <description>clk_u0_dom_isp_top_clk_dom_isp_top_clk_ispcore_2x</description>
           <addressOffset>0xcc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28601,6 +28684,7 @@
           <description>clk_u0_dom_isp_top_clk_dom_isp_top_clk_isp_axi</description>
           <addressOffset>0xd0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28615,6 +28699,7 @@
           <description>clk_u0_sft7110_noc_bux_clk_isp_axi</description>
           <addressOffset>0xd4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28629,6 +28714,7 @@
           <description>clk_hifi4_core</description>
           <addressOffset>0xd8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -28643,6 +28729,7 @@
           <description>clk_hifi4_axi</description>
           <addressOffset>0xdc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -28657,6 +28744,7 @@
           <description>clk_u0_axi_cfg1_dec_clk_main</description>
           <addressOffset>0xe0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28671,6 +28759,7 @@
           <description>clk_u0_axi_cfg1_dec_clk_ahb</description>
           <addressOffset>0xe4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28685,6 +28774,7 @@
           <description>clk_u0_dom_vout_top_clk_dom_vout_top_clk_vout_src</description>
           <addressOffset>0xe8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28699,6 +28789,7 @@
           <description>Clock Video Output AXI DIVCFG</description>
           <addressOffset>0xec</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -28713,6 +28804,7 @@
           <description>Clock NOC Display AXI</description>
           <addressOffset>0xf0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28727,6 +28819,7 @@
           <description>Clock Video Output AHB</description>
           <addressOffset>0xf4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28741,6 +28834,7 @@
           <description>Clock Video Output AXI ICG</description>
           <addressOffset>0xf8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28755,6 +28849,7 @@
           <description>Clock Video Output HDMI TX0 MCLK</description>
           <addressOffset>0xfc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28769,6 +28864,7 @@
           <description>Clock Video Output MIPI PHY Reference</description>
           <addressOffset>0x100</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -28783,6 +28879,7 @@
           <description>Clock JPEG Codec AXI</description>
           <addressOffset>0x104</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -28797,6 +28894,7 @@
           <description>CODAJ12 Clock AXI</description>
           <addressOffset>0x108</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28811,6 +28909,7 @@
           <description>CODAJ12 Clock Core</description>
           <addressOffset>0x10c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28831,6 +28930,7 @@
           <description>CODAJ12 Clock APB</description>
           <addressOffset>0x110</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28845,6 +28945,7 @@
           <description>Clock Video Decoder AXI</description>
           <addressOffset>0x114</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -28859,6 +28960,7 @@
           <description>Clock WAVE511 AXI</description>
           <addressOffset>0x118</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28873,6 +28975,7 @@
           <description>Clock WAVE511 BPU</description>
           <addressOffset>0x11c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28893,6 +28996,7 @@
           <description>Clock WAVE511 VCE</description>
           <addressOffset>0x120</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28913,6 +29017,7 @@
           <description>Clock WAVE511 APB</description>
           <addressOffset>0x124</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28927,6 +29032,7 @@
           <description>Clock WAVE511 JPG ARB</description>
           <addressOffset>0x128</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28941,6 +29047,7 @@
           <description>Clock WAVE511 JPG Main</description>
           <addressOffset>0x12c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28955,6 +29062,7 @@
           <description>Clock NOC Video Decoder AXI</description>
           <addressOffset>0x130</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28969,6 +29077,7 @@
           <description>Clock Video Encoder AXI</description>
           <addressOffset>0x134</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -28983,6 +29092,7 @@
           <description>Clock WAVE420L AXI</description>
           <addressOffset>0x138</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -28997,6 +29107,7 @@
           <description>Clock WAVE420L BPU</description>
           <addressOffset>0x13c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29017,6 +29128,7 @@
           <description>Clock WAVE420L VCE</description>
           <addressOffset>0x140</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29037,6 +29149,7 @@
           <description>Clock WAVE420L APB</description>
           <addressOffset>0x144</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29051,6 +29164,7 @@
           <description>Clock NOC Video Encoder AXI</description>
           <addressOffset>0x148</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29065,6 +29179,7 @@
           <description>Clock AXI Config 0 DEC Main Divider</description>
           <addressOffset>0x14c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29079,6 +29194,7 @@
           <description>Clock AXI Config 0 DEC Main</description>
           <addressOffset>0x150</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29093,6 +29209,7 @@
           <description>Clock AXI Config 0 DEC HIFI4</description>
           <addressOffset>0x154</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29107,6 +29224,7 @@
           <description>Clock AXIMEM 128B AXI</description>
           <addressOffset>0x158</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29121,6 +29239,7 @@
           <description>Clock QSPI AHB</description>
           <addressOffset>0x15c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29135,6 +29254,7 @@
           <description>Clock QSPI APB</description>
           <addressOffset>0x160</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29149,6 +29269,7 @@
           <description>Clock QSPI Reference Source</description>
           <addressOffset>0x164</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -29163,6 +29284,7 @@
           <description>Clock QSPI Reference</description>
           <addressOffset>0x168</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29183,6 +29305,7 @@
           <description>U0 SD Clock AHB</description>
           <addressOffset>0x16c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29197,6 +29320,7 @@
           <description>U1 SD Clock AHB</description>
           <addressOffset>0x170</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29211,6 +29335,7 @@
           <description>U0 SD Card Clock</description>
           <addressOffset>0x174</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29231,6 +29356,7 @@
           <description>U1 SD Card Clock</description>
           <addressOffset>0x178</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29251,6 +29377,7 @@
           <description>Clock USB 125M</description>
           <addressOffset>0x17c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -29265,6 +29392,7 @@
           <description>Clock NOC STG AXI</description>
           <addressOffset>0x180</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29279,6 +29407,7 @@
           <description>Clock GMAC 5 AXI 64 AHB</description>
           <addressOffset>0x184</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29293,6 +29422,7 @@
           <description>Clock GMAC 5 AXI 64 AXI</description>
           <addressOffset>0x188</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29307,6 +29437,7 @@
           <description>Clock GMAC Source</description>
           <addressOffset>0x18c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -29321,6 +29452,7 @@
           <description>Clock GMAC 1 GTX</description>
           <addressOffset>0x190</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -29335,6 +29467,7 @@
           <description>Clock GMAC 1 RMII RTX</description>
           <addressOffset>0x194</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -29349,6 +29482,7 @@
           <description>Clock GMAC 5 AXI 64 PTP</description>
           <addressOffset>0x198</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29369,6 +29503,7 @@
           <description>Clock GMAC 5 AXI 64 RX</description>
           <addressOffset>0x19c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>dly_chain_sel</name>
@@ -29383,6 +29518,7 @@
           <description>Clock GMAC 5 AXI 64 RX Inverter</description>
           <addressOffset>0x1a0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_polarity</name>
@@ -29397,6 +29533,7 @@
           <description>Clock GMAC 5 AXI 64 TX</description>
           <addressOffset>0x1a4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29417,6 +29554,7 @@
           <description>Clock GMAC 5 AXI 64 TX Inverter</description>
           <addressOffset>0x1a8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_polarity</name>
@@ -29431,6 +29569,7 @@
           <description>Clock GMAC 1 GTXC</description>
           <addressOffset>0x1ac</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>dly_chain_sel</name>
@@ -29445,6 +29584,7 @@
           <description>Clock GMAC 0 GTX</description>
           <addressOffset>0x1b0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29465,6 +29605,7 @@
           <description>Clock GMAC 0 PTP</description>
           <addressOffset>0x1b4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29485,6 +29626,7 @@
           <description>Clock GMAC PHY</description>
           <addressOffset>0x1b8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29505,6 +29647,7 @@
           <description>Clock GMAC 0 GTXC</description>
           <addressOffset>0x1bc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>dly_chain_sel</name>
@@ -29519,6 +29662,7 @@
           <description>Clock SYS IOMUX PCLK</description>
           <addressOffset>0x1c0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29533,6 +29677,7 @@
           <description>Clock Mailbox APB</description>
           <addressOffset>0x1c4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29547,6 +29692,7 @@
           <description>Clock Internal Controller APB</description>
           <addressOffset>0x1c8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29561,6 +29707,7 @@
           <description>U0 Clock CAN Controller APB</description>
           <addressOffset>0x1cc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29575,6 +29722,7 @@
           <description>U0 Clock CAN Controller Timer</description>
           <addressOffset>0x1d0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29595,6 +29743,7 @@
           <description>U0 Clock CAN Controller CAN</description>
           <addressOffset>0x1d4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29615,6 +29764,7 @@
           <description>U1 Clock CAN Controller APB</description>
           <addressOffset>0x1d8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29629,6 +29779,7 @@
           <description>U1 Clock CAN Controller Timer</description>
           <addressOffset>0x1dc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29649,6 +29800,7 @@
           <description>U1 Clock CAN Controller CAN</description>
           <addressOffset>0x1e0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29669,6 +29821,7 @@
           <description>Clock PWM APB</description>
           <addressOffset>0x1e4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29683,6 +29836,7 @@
           <description>Clock WDT APB</description>
           <addressOffset>0x1e8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29697,6 +29851,7 @@
           <description>Clock WDT</description>
           <addressOffset>0x1ec</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29711,6 +29866,7 @@
           <description>Clock Timer APB</description>
           <addressOffset>0x1f0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29725,6 +29881,7 @@
           <description>Clock Timer 0</description>
           <addressOffset>0x1f4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29739,6 +29896,7 @@
           <description>Clock Timer 1</description>
           <addressOffset>0x1f8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29753,6 +29911,7 @@
           <description>Clock Timer 2</description>
           <addressOffset>0x1fc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29767,6 +29926,7 @@
           <description>Clock Timer 3</description>
           <addressOffset>0x200</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29781,6 +29941,7 @@
           <description>Clock Temperature Sensor APB</description>
           <addressOffset>0x204</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29795,6 +29956,7 @@
           <description>Clock Temperature Sensor</description>
           <addressOffset>0x208</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29815,6 +29977,7 @@
           <description>U0 Clock SPI APB</description>
           <addressOffset>0x20c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29829,6 +29992,7 @@
           <description>U1 Clock SPI APB</description>
           <addressOffset>0x210</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29843,6 +30007,7 @@
           <description>U2 Clock SPI APB</description>
           <addressOffset>0x214</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29857,6 +30022,7 @@
           <description>U3 Clock SPI APB</description>
           <addressOffset>0x218</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29871,6 +30037,7 @@
           <description>U4 Clock SPI APB</description>
           <addressOffset>0x21c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29885,6 +30052,7 @@
           <description>U5 Clock SPI APB</description>
           <addressOffset>0x220</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29899,6 +30067,7 @@
           <description>U6 Clock SPI APB</description>
           <addressOffset>0x224</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29913,6 +30082,7 @@
           <description>U0 Clock I2C APB</description>
           <addressOffset>0x228</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29927,6 +30097,7 @@
           <description>U1 Clock I2C APB</description>
           <addressOffset>0x22c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29941,6 +30112,7 @@
           <description>U2 Clock I2C APB</description>
           <addressOffset>0x230</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29955,6 +30127,7 @@
           <description>U3 Clock I2C APB</description>
           <addressOffset>0x234</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29969,6 +30142,7 @@
           <description>U4 Clock I2C APB</description>
           <addressOffset>0x238</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29983,6 +30157,7 @@
           <description>U5 Clock I2C APB</description>
           <addressOffset>0x23c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -29997,6 +30172,7 @@
           <description>U6 Clock I2C APB</description>
           <addressOffset>0x240</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30011,6 +30187,7 @@
           <description>U0 Clock UART APB</description>
           <addressOffset>0x244</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30025,6 +30202,7 @@
           <description>U0 Clock UART Core</description>
           <addressOffset>0x248</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30039,6 +30217,7 @@
           <description>U1 Clock UART APB</description>
           <addressOffset>0x24c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30053,6 +30232,7 @@
           <description>U1 Clock UART Core</description>
           <addressOffset>0x250</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30067,6 +30247,7 @@
           <description>U2 Clock UART APB</description>
           <addressOffset>0x254</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30081,6 +30262,7 @@
           <description>U2 Clock UART Core</description>
           <addressOffset>0x258</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30095,6 +30277,7 @@
           <description>U3 Clock UART APB</description>
           <addressOffset>0x25c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30109,6 +30292,7 @@
           <description>U3 Clock UART Core</description>
           <addressOffset>0x260</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30129,6 +30313,7 @@
           <description>U4 Clock UART APB</description>
           <addressOffset>0x264</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30143,6 +30328,7 @@
           <description>U4 Clock UART Core</description>
           <addressOffset>0x268</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30163,6 +30349,7 @@
           <description>U5 Clock UART APB</description>
           <addressOffset>0x26c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30177,6 +30364,7 @@
           <description>U5 Clock UART Core</description>
           <addressOffset>0x270</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30197,6 +30385,7 @@
           <description>Clock PWMDAC APB</description>
           <addressOffset>0x274</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30211,6 +30400,7 @@
           <description>Clock PWMDAC Core</description>
           <addressOffset>0x278</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30231,6 +30421,7 @@
           <description>Clock SPDIF APB</description>
           <addressOffset>0x27c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30245,6 +30436,7 @@
           <description>Clock SPDIF Core</description>
           <addressOffset>0x280</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30259,6 +30451,7 @@
           <description>U0 Clock I2S TX APB</description>
           <addressOffset>0x284</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30273,6 +30466,7 @@
           <description>U0 Clock I2S TX 0 BCLK MST</description>
           <addressOffset>0x288</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30293,6 +30487,7 @@
           <description>U0 Clock I2S TX 0 BCLK MST Inverter</description>
           <addressOffset>0x28c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_polarity</name>
@@ -30307,6 +30502,7 @@
           <description>Clock I2S TX 0 LRCK MST</description>
           <addressOffset>0x290</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_mux_sel</name>
@@ -30327,6 +30523,7 @@
           <description>U0 Clock I2S TX BCLK</description>
           <addressOffset>0x294</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_mux_sel</name>
@@ -30341,6 +30538,7 @@
           <description>U0 Clock I2S TX BCLK Negative</description>
           <addressOffset>0x298</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_polarity</name>
@@ -30355,6 +30553,7 @@
           <description>U0 Clock I2S TX LRCK</description>
           <addressOffset>0x29c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_mux_sel</name>
@@ -30369,6 +30568,7 @@
           <description>U1 Clock I2S TX APB</description>
           <addressOffset>0x2a0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30383,6 +30583,7 @@
           <description>U1 Clock I2S TX 1 BCLK MST</description>
           <addressOffset>0x2a4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30403,6 +30604,7 @@
           <description>U1 Clock I2S TX 1 BCLK MST Inverter</description>
           <addressOffset>0x2a8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_polarity</name>
@@ -30417,6 +30619,7 @@
           <description>Clock I2S TX 1 LRCK MST</description>
           <addressOffset>0x2ac</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_mux_sel</name>
@@ -30437,6 +30640,7 @@
           <description>U1 Clock I2S TX BCLK</description>
           <addressOffset>0x2b0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_mux_sel</name>
@@ -30451,6 +30655,7 @@
           <description>U1 Clock I2S TX BCLK Negative</description>
           <addressOffset>0x2b4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_polarity</name>
@@ -30465,6 +30670,7 @@
           <description>U1 Clock I2S TX LRCK</description>
           <addressOffset>0x2b8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_mux_sel</name>
@@ -30479,6 +30685,7 @@
           <description>Clock I2S APB</description>
           <addressOffset>0x2bc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30493,6 +30700,7 @@
           <description>Clock I2S BCLK MST</description>
           <addressOffset>0x2c0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30513,6 +30721,7 @@
           <description>Clock I2S BCLK MST Inverter</description>
           <addressOffset>0x2c4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_polarity</name>
@@ -30527,6 +30736,7 @@
           <description>Clock I2S LRCK MST</description>
           <addressOffset>0x2c8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_mux_sel</name>
@@ -30547,6 +30757,7 @@
           <description>Clock I2S BCLK</description>
           <addressOffset>0x2cc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_mux_sel</name>
@@ -30561,6 +30772,7 @@
           <description>Clock I2S BCLK Negative</description>
           <addressOffset>0x2d0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_polarity</name>
@@ -30575,6 +30787,7 @@
           <description>Clock I2S LRCK</description>
           <addressOffset>0x2d4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_mux_sel</name>
@@ -30589,6 +30802,7 @@
           <description>Clock PDM DMIC</description>
           <addressOffset>0x2d8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30609,6 +30823,7 @@
           <description>Clock PDM APB</description>
           <addressOffset>0x2dc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30623,6 +30838,7 @@
           <description>Clock TDM AHB</description>
           <addressOffset>0x2e0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30637,6 +30853,7 @@
           <description>Clock TDM APB</description>
           <addressOffset>0x2e4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30651,6 +30868,7 @@
           <description>Clock TDM Internal</description>
           <addressOffset>0x2e8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -30671,6 +30889,7 @@
           <description>Clock TDM</description>
           <addressOffset>0x2ec</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_mux_sel</name>
@@ -30685,6 +30904,7 @@
           <description>Clock TDM Negative</description>
           <addressOffset>0x2f0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_polarity</name>
@@ -30699,6 +30919,7 @@
           <description>Clock JTAG Certification TRNG</description>
           <addressOffset>0x2f4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -30713,6 +30934,7 @@
           <description>Software RESET 0 Address Selector</description>
           <addressOffset>0x2f8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rstn_u0_jtag2apb_presetn</name>
@@ -30913,6 +31135,7 @@
           <description>Software RESET 1 Address Selector</description>
           <addressOffset>0x2fc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rstn_u0_sft7100_noc_bus_reset_venc_axi_n</name>
@@ -31113,6 +31336,7 @@
           <description>Software RESET 2 Address Selector</description>
           <addressOffset>0x300</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rstn_u0_sdio_rstn_ahb</name>
@@ -31313,6 +31537,7 @@
           <description>Software RESET 3 Address Selector</description>
           <addressOffset>0x304</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rstn_u0_pwmdac_rstn_apb</name>
@@ -31501,6 +31726,7 @@
           <description>SYSCRG RESET Status 0</description>
           <addressOffset>0x308</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rstn_u0_jtag2apb_presetn</name>
@@ -31701,6 +31927,7 @@
           <description>SYSCRG RESET Status 1</description>
           <addressOffset>0x30c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rstn_u0_sft7100_noc_bus_reset_venc_axi_n</name>
@@ -31901,6 +32128,7 @@
           <description>SYSCRG RESET Status 2</description>
           <addressOffset>0x310</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rstn_u0_sdio_rstn_ahb</name>
@@ -32101,6 +32329,7 @@
           <description>SYSCRG RESET Status 3</description>
           <addressOffset>0x314</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>rstn_u0_pwmdac_rstn_apb</name>
@@ -42289,6 +42518,7 @@
           <description>Oscillator Clock</description>
           <addressOffset>0x0</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -42303,6 +42533,7 @@
           <description>AON APB Function Clock</description>
           <addressOffset>0x4</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_mux_sel</name>
@@ -42317,6 +42548,7 @@
           <description>AHB GMAC5 Clock</description>
           <addressOffset>0x8</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -42331,6 +42563,7 @@
           <description>AXI GMAC5 Clock</description>
           <addressOffset>0xc</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -42345,6 +42578,7 @@
           <description>GMAC0 RMII RTX Clock</description>
           <addressOffset>0x10</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -42359,6 +42593,7 @@
           <description>GMAC5 AXI64 Clock Transmitter</description>
           <addressOffset>0x14</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_mux_sel</name>
@@ -42373,6 +42608,7 @@
           <description>GMAC5 AXI64 Clock Transmission Inverter</description>
           <addressOffset>0x18</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_polarity</name>
@@ -42387,6 +42623,7 @@
           <description>GMAC5 AXI64 Clock Receiver</description>
           <addressOffset>0x1c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>dly_chain_sel</name>
@@ -42401,6 +42638,7 @@
           <description>GMAC5 AXI64 Clock Receiving Inverter</description>
           <addressOffset>0x20</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_polarity</name>
@@ -42415,6 +42653,7 @@
           <description>OPTC APB Clock</description>
           <addressOffset>0x24</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -42429,6 +42668,7 @@
           <description>RTC HMS APB Clock</description>
           <addressOffset>0x28</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -42443,6 +42683,7 @@
           <description>RTC Internal Clock</description>
           <addressOffset>0x2c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_divcfg</name>
@@ -42457,6 +42698,7 @@
           <description>RTC HMS Clock Oscillator 32K</description>
           <addressOffset>0x30</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_mux_sel</name>
@@ -42471,6 +42713,7 @@
           <description>RTC HMS Clock Calculator</description>
           <addressOffset>0x34</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>clk_icg</name>
@@ -42485,6 +42728,7 @@
           <description>Software RESET Address Selector</description>
           <addressOffset>0x38</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>gmac5_axi64_rstn_axi</name>
@@ -42541,6 +42785,7 @@
           <description>AONCRG RESET Status</description>
           <addressOffset>0x3c</addressOffset>
           <size>32</size>
+          <resetValue>0</resetValue>
           <fields>
             <field>
               <name>gmac5_axi64_rstn_axi</name>
