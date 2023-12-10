@@ -31,7 +31,7 @@ impl W {
         self
     }
 }
-#[doc = "U7MC RTC Toggle\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`u7mc_rtc_toggle::R`](R).  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`u7mc_rtc_toggle::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "U7MC RTC Toggle\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`u7mc_rtc_toggle::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`u7mc_rtc_toggle::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct U7MC_RTC_TOGGLE_SPEC;
 impl crate::RegisterSpec for U7MC_RTC_TOGGLE_SPEC {
     type Ux = u32;
@@ -42,4 +42,8 @@ impl crate::Readable for U7MC_RTC_TOGGLE_SPEC {}
 impl crate::Writable for U7MC_RTC_TOGGLE_SPEC {
     const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+}
+#[doc = "`reset()` method sets u7mc_rtc_toggle to value 0"]
+impl crate::Resettable for U7MC_RTC_TOGGLE_SPEC {
+    const RESET_VALUE: Self::Ux = 0;
 }

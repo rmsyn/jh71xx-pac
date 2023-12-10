@@ -31,7 +31,7 @@ impl W {
         self
     }
 }
-#[doc = "Clock MCLK\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_mclk::R`](R).  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_mclk::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "Clock MCLK\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_mclk::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_mclk::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct CLK_MCLK_SPEC;
 impl crate::RegisterSpec for CLK_MCLK_SPEC {
     type Ux = u32;
@@ -42,4 +42,8 @@ impl crate::Readable for CLK_MCLK_SPEC {}
 impl crate::Writable for CLK_MCLK_SPEC {
     const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+}
+#[doc = "`reset()` method sets clk_mclk to value 0"]
+impl crate::Resettable for CLK_MCLK_SPEC {
+    const RESET_VALUE: Self::Ux = 0;
 }

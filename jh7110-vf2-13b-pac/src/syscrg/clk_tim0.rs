@@ -31,7 +31,7 @@ impl W {
         self
     }
 }
-#[doc = "Clock Timer 0\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_tim0::R`](R).  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_tim0::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "Clock Timer 0\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_tim0::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_tim0::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct CLK_TIM0_SPEC;
 impl crate::RegisterSpec for CLK_TIM0_SPEC {
     type Ux = u32;
@@ -42,4 +42,8 @@ impl crate::Readable for CLK_TIM0_SPEC {}
 impl crate::Writable for CLK_TIM0_SPEC {
     const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+}
+#[doc = "`reset()` method sets clk_tim0 to value 0"]
+impl crate::Resettable for CLK_TIM0_SPEC {
+    const RESET_VALUE: Self::Ux = 0;
 }

@@ -31,7 +31,7 @@ impl W {
         self
     }
 }
-#[doc = "Clock AXI Config 0 DEC HIFI4\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_axi_cfg0_dec_hifi4::R`](R).  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_axi_cfg0_dec_hifi4::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "Clock AXI Config 0 DEC HIFI4\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_axi_cfg0_dec_hifi4::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_axi_cfg0_dec_hifi4::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct CLK_AXI_CFG0_DEC_HIFI4_SPEC;
 impl crate::RegisterSpec for CLK_AXI_CFG0_DEC_HIFI4_SPEC {
     type Ux = u32;
@@ -42,4 +42,8 @@ impl crate::Readable for CLK_AXI_CFG0_DEC_HIFI4_SPEC {}
 impl crate::Writable for CLK_AXI_CFG0_DEC_HIFI4_SPEC {
     const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+}
+#[doc = "`reset()` method sets clk_axi_cfg0_dec_hifi4 to value 0"]
+impl crate::Resettable for CLK_AXI_CFG0_DEC_HIFI4_SPEC {
+    const RESET_VALUE: Self::Ux = 0;
 }

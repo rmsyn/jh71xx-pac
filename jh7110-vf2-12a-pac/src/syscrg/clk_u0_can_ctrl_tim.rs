@@ -46,7 +46,7 @@ impl W {
         self
     }
 }
-#[doc = "U0 Clock CAN Controller Timer\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u0_can_ctrl_tim::R`](R).  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u0_can_ctrl_tim::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "U0 Clock CAN Controller Timer\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u0_can_ctrl_tim::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u0_can_ctrl_tim::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct CLK_U0_CAN_CTRL_TIM_SPEC;
 impl crate::RegisterSpec for CLK_U0_CAN_CTRL_TIM_SPEC {
     type Ux = u32;
@@ -57,4 +57,8 @@ impl crate::Readable for CLK_U0_CAN_CTRL_TIM_SPEC {}
 impl crate::Writable for CLK_U0_CAN_CTRL_TIM_SPEC {
     const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+}
+#[doc = "`reset()` method sets clk_u0_can_ctrl_tim to value 0"]
+impl crate::Resettable for CLK_U0_CAN_CTRL_TIM_SPEC {
+    const RESET_VALUE: Self::Ux = 0;
 }

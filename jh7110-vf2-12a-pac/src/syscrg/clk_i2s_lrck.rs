@@ -31,7 +31,7 @@ impl W {
         self
     }
 }
-#[doc = "Clock I2S LRCK\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_i2s_lrck::R`](R).  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_i2s_lrck::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "Clock I2S LRCK\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_i2s_lrck::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_i2s_lrck::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct CLK_I2S_LRCK_SPEC;
 impl crate::RegisterSpec for CLK_I2S_LRCK_SPEC {
     type Ux = u32;
@@ -42,4 +42,8 @@ impl crate::Readable for CLK_I2S_LRCK_SPEC {}
 impl crate::Writable for CLK_I2S_LRCK_SPEC {
     const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+}
+#[doc = "`reset()` method sets clk_i2s_lrck to value 0"]
+impl crate::Resettable for CLK_I2S_LRCK_SPEC {
+    const RESET_VALUE: Self::Ux = 0;
 }

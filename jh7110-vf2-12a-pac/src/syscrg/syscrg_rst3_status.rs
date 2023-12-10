@@ -526,7 +526,7 @@ impl W {
         self
     }
 }
-#[doc = "SYSCRG RESET Status 3\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`syscrg_rst3_status::R`](R).  You can [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`syscrg_rst3_status::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+#[doc = "SYSCRG RESET Status 3\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`syscrg_rst3_status::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`syscrg_rst3_status::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
 pub struct SYSCRG_RST3_STATUS_SPEC;
 impl crate::RegisterSpec for SYSCRG_RST3_STATUS_SPEC {
     type Ux = u32;
@@ -537,4 +537,8 @@ impl crate::Readable for SYSCRG_RST3_STATUS_SPEC {}
 impl crate::Writable for SYSCRG_RST3_STATUS_SPEC {
     const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+}
+#[doc = "`reset()` method sets syscrg_rst3_status to value 0"]
+impl crate::Resettable for SYSCRG_RST3_STATUS_SPEC {
+    const RESET_VALUE: Self::Ux = 0;
 }
