@@ -10,7 +10,30 @@ use generic::*;
 #[doc = r"Common register and bit access and modify traits"]
 pub mod generic;
 #[cfg(feature = "rt")]
-extern "C" {}
+extern "C" {
+    fn QSPI();
+    fn UART0();
+    fn UART1();
+    fn UART2();
+    fn I2C0();
+    fn I2C1();
+    fn I2C2();
+    fn SPI0();
+    fn SPI1();
+    fn SPI2();
+    fn UART3();
+    fn UART4();
+    fn UART5();
+    fn I2C3();
+    fn I2C4();
+    fn I2C5();
+    fn I2C6();
+    fn SPI3();
+    fn SPI4();
+    fn SPI5();
+    fn SPI6();
+    fn PMU();
+}
 #[doc(hidden)]
 #[repr(C)]
 pub union Vector {
@@ -20,7 +43,118 @@ pub union Vector {
 #[cfg(feature = "rt")]
 #[doc(hidden)]
 #[no_mangle]
-pub static __EXTERNAL_INTERRUPTS: [Vector; 0] = [];
+pub static __EXTERNAL_INTERRUPTS: [Vector; 107] = [
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _handler: QSPI },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _handler: UART0 },
+    Vector { _handler: UART1 },
+    Vector { _handler: UART2 },
+    Vector { _handler: I2C0 },
+    Vector { _handler: I2C1 },
+    Vector { _handler: I2C2 },
+    Vector { _handler: SPI0 },
+    Vector { _handler: SPI1 },
+    Vector { _handler: SPI2 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _handler: UART3 },
+    Vector { _handler: UART4 },
+    Vector { _handler: UART5 },
+    Vector { _handler: I2C3 },
+    Vector { _handler: I2C4 },
+    Vector { _handler: I2C5 },
+    Vector { _handler: I2C6 },
+    Vector { _handler: SPI3 },
+    Vector { _handler: SPI4 },
+    Vector { _handler: SPI5 },
+    Vector { _handler: SPI6 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _reserved: 0 },
+    Vector { _handler: PMU },
+];
+#[doc(hidden)]
+pub mod interrupt;
+pub use self::interrupt::Interrupt;
 #[doc = "From starfive,jh7110-clint, peripheral generator"]
 pub struct CLINT {
     _marker: PhantomData<*const ()>,
