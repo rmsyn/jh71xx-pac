@@ -2,8 +2,8 @@
 
 #![no_std]
 
-#[cfg(feature = "visionfive2-12a")]
+#[cfg(any(feature = "visionfive2-12a", feature = "visionfive2-12a-rt"))]
 pub extern crate jh7110_vf2_12a_pac;
 
-#[cfg(feature = "visionfive2-13b")]
+#[cfg(any(feature = "visionfive2-13b", feature = "visionfive2-13b-rt"))]
 pub extern crate jh7110_vf2_13b_pac;
