@@ -23,45 +23,43 @@ pub struct RegisterBlock {
     clk_mclk_out: CLK_MCLK_OUT,
     clk_isp_2x: CLK_ISP_2X,
     clk_isp_axi: CLK_ISP_AXI,
-    clk_gclk0: CLK_GCLK0,
-    clk_gclk1: CLK_GCLK1,
-    clk_gclk2: CLK_GCLK2,
-    clk_u7mc_core0: CLK_U7MC_CORE0,
-    clk_u7mc_core1: CLK_U7MC_CORE1,
-    clk_u7mc_core2: CLK_U7MC_CORE2,
-    clk_u7mc_core3: CLK_U7MC_CORE3,
-    clk_u7mc_core4: CLK_U7MC_CORE4,
+    clk_gclk_0: CLK_GCLK_0,
+    clk_gclk_1: CLK_GCLK_1,
+    clk_gclk_2: CLK_GCLK_2,
+    clk_u7mc_core_0: CLK_U7MC_CORE_0,
+    clk_u7mc_core_1: CLK_U7MC_CORE_1,
+    clk_u7mc_core_2: CLK_U7MC_CORE_2,
+    clk_u7mc_core_3: CLK_U7MC_CORE_3,
+    clk_u7mc_core_4: CLK_U7MC_CORE_4,
     clk_u7mc_debug: CLK_U7MC_DEBUG,
     u7mc_rtc_toggle: U7MC_RTC_TOGGLE,
-    clk_u7mc_trace0: CLK_U7MC_TRACE0,
-    clk_u7mc_trace1: CLK_U7MC_TRACE1,
-    clk_u7mc_trace2: CLK_U7MC_TRACE2,
-    clk_u7mc_trace3: CLK_U7MC_TRACE3,
-    clk_u7mc_trace4: CLK_U7MC_TRACE4,
+    clk_u7mc_trace_0: CLK_U7MC_TRACE_0,
+    clk_u7mc_trace_1: CLK_U7MC_TRACE_1,
+    clk_u7mc_trace_2: CLK_U7MC_TRACE_2,
+    clk_u7mc_trace_3: CLK_U7MC_TRACE_3,
+    clk_u7mc_trace_4: CLK_U7MC_TRACE_4,
     clk_u7mc_trace_com: CLK_U7MC_TRACE_COM,
-    clk_u0_sft7110_noc_bus_clk_cpu_axi: CLK_U0_SFT7110_NOC_BUS_CLK_CPU_AXI,
-    clk_u0_sft7110_noc_bus_clk_axicfg0_axi: CLK_U0_SFT7110_NOC_BUS_CLK_AXICFG0_AXI,
+    clk_u0_noc_bus_cpu_axi: CLK_U0_NOC_BUS_CPU_AXI,
+    clk_u0_noc_bus_axicfg0_axi: CLK_U0_NOC_BUS_AXICFG0_AXI,
     clk_osc_div2: CLK_OSC_DIV2,
     clk_pll1_div4: CLK_PLL1_DIV4,
     clk_pll1_div8: CLK_PLL1_DIV8,
     clk_ddr_bus: CLK_DDR_BUS,
-    clk_u0_ddr_sft7110_clk_axi: CLK_U0_DDR_SFT7110_CLK_AXI,
+    clk_u0_ddr_axi: CLK_U0_DDR_AXI,
     clk_gpu_core: CLK_GPU_CORE,
     clk_u0_img_gpu_core_clk: CLK_U0_IMG_GPU_CORE_CLK,
     clk_u0_img_gpu_sys_clk: CLK_U0_IMG_GPU_SYS_CLK,
     clk_u0_img_gpu_clk_apb: CLK_U0_IMG_GPU_CLK_APB,
     clk_u0_gpu_rtc_toggle: CLK_U0_GPU_RTC_TOGGLE,
-    clk_u0_sft7110_noc_bus_clk_gpu_axi: CLK_U0_SFT7110_NOC_BUS_CLK_GPU_AXI,
-    clk_u0_dom_isp_top_clk_dom_isp_top_clk_ispcore_2x:
-        CLK_U0_DOM_ISP_TOP_CLK_DOM_ISP_TOP_CLK_ISPCORE_2X,
-    clk_u0_dom_isp_top_clk_dom_isp_top_clk_isp_axi: CLK_U0_DOM_ISP_TOP_CLK_DOM_ISP_TOP_CLK_ISP_AXI,
-    clk_u0_sft7110_noc_bux_clk_isp_axi: CLK_U0_SFT7110_NOC_BUX_CLK_ISP_AXI,
+    clk_u0_noc_bus_gpu_axi: CLK_U0_NOC_BUS_GPU_AXI,
+    clk_u0_isp_ispcore_2x: CLK_U0_ISP_ISPCORE_2X,
+    clk_u0_isp_axi: CLK_U0_ISP_AXI,
+    clk_u0_noc_bus_isp_axi: CLK_U0_NOC_BUS_ISP_AXI,
     clk_hifi4_core: CLK_HIFI4_CORE,
     clk_hifi4_axi: CLK_HIFI4_AXI,
     clk_u0_axi_cfg1_dec_clk_main: CLK_U0_AXI_CFG1_DEC_CLK_MAIN,
     clk_u0_axi_cfg1_dec_clk_ahb: CLK_U0_AXI_CFG1_DEC_CLK_AHB,
-    clk_u0_dom_vout_top_clk_dom_vout_top_clk_vout_src:
-        CLK_U0_DOM_VOUT_TOP_CLK_DOM_VOUT_TOP_CLK_VOUT_SRC,
+    clk_u0_vout_src: CLK_U0_VOUT_SRC,
     clk_vout_axi_divcfg: CLK_VOUT_AXI_DIVCFG,
     clk_noc_display_axi: CLK_NOC_DISPLAY_AXI,
     clk_vout_ahb: CLK_VOUT_AHB,
@@ -115,7 +113,7 @@ pub struct RegisterBlock {
     clk_gmac0_ptp: CLK_GMAC0_PTP,
     clk_gmac_phy: CLK_GMAC_PHY,
     clk_gmac0_gtxclk: CLK_GMAC0_GTXCLK,
-    clk_sys_iomux_pclk: CLK_SYS_IOMUX_PCLK,
+    clk_pclk: CLK_PCLK,
     clk_mbox_apb: CLK_MBOX_APB,
     clk_internal_ctrl_apb: CLK_INTERNAL_CTRL_APB,
     clk_u0_can_ctrl_apb: CLK_U0_CAN_CTRL_APB,
@@ -128,10 +126,10 @@ pub struct RegisterBlock {
     clk_wdt_apb: CLK_WDT_APB,
     clk_wdt: CLK_WDT,
     clk_tim_apb: CLK_TIM_APB,
-    clk_tim0: CLK_TIM0,
-    clk_tim1: CLK_TIM1,
-    clk_tim2: CLK_TIM2,
-    clk_tim3: CLK_TIM3,
+    clk_tim_0: CLK_TIM_0,
+    clk_tim_1: CLK_TIM_1,
+    clk_tim_2: CLK_TIM_2,
+    clk_tim_3: CLK_TIM_3,
     clk_temp_sensor_apb: CLK_TEMP_SENSOR_APB,
     clk_temp_sensor: CLK_TEMP_SENSOR,
     clk_u0_spi_apb: CLK_U0_SPI_APB,
@@ -192,15 +190,15 @@ pub struct RegisterBlock {
     clk_tdm_internal: CLK_TDM_INTERNAL,
     clk_tdm: CLK_TDM,
     clk_tdm_neg: CLK_TDM_NEG,
-    clk_jtag_cert_trng: CLK_JTAG_CERT_TRNG,
-    soft_rst0_addr_sel: SOFT_RST0_ADDR_SEL,
-    soft_rst1_addr_sel: SOFT_RST1_ADDR_SEL,
-    soft_rst2_addr_sel: SOFT_RST2_ADDR_SEL,
-    soft_rst3_addr_sel: SOFT_RST3_ADDR_SEL,
-    syscrg_rst0_status: SYSCRG_RST0_STATUS,
-    syscrg_rst1_status: SYSCRG_RST1_STATUS,
-    syscrg_rst2_status: SYSCRG_RST2_STATUS,
-    syscrg_rst3_status: SYSCRG_RST3_STATUS,
+    clk_jtag_trng: CLK_JTAG_TRNG,
+    soft_rst_addr_sel_0: SOFT_RST_ADDR_SEL_0,
+    soft_rst_addr_sel_1: SOFT_RST_ADDR_SEL_1,
+    soft_rst_addr_sel_2: SOFT_RST_ADDR_SEL_2,
+    soft_rst_addr_sel_3: SOFT_RST_ADDR_SEL_3,
+    syscrg_rst_status_0: SYSCRG_RST_STATUS_0,
+    syscrg_rst_status_1: SYSCRG_RST_STATUS_1,
+    syscrg_rst_status_2: SYSCRG_RST_STATUS_2,
+    syscrg_rst_status_3: SYSCRG_RST_STATUS_3,
 }
 impl RegisterBlock {
     #[doc = "0x00 - Clock CPU Root"]
@@ -315,43 +313,43 @@ impl RegisterBlock {
     }
     #[doc = "0x58 - Clock GCLK 0"]
     #[inline(always)]
-    pub const fn clk_gclk0(&self) -> &CLK_GCLK0 {
-        &self.clk_gclk0
+    pub const fn clk_gclk_0(&self) -> &CLK_GCLK_0 {
+        &self.clk_gclk_0
     }
     #[doc = "0x5c - Clock GCLK 1"]
     #[inline(always)]
-    pub const fn clk_gclk1(&self) -> &CLK_GCLK1 {
-        &self.clk_gclk1
+    pub const fn clk_gclk_1(&self) -> &CLK_GCLK_1 {
+        &self.clk_gclk_1
     }
     #[doc = "0x60 - Clock GCLK 2"]
     #[inline(always)]
-    pub const fn clk_gclk2(&self) -> &CLK_GCLK2 {
-        &self.clk_gclk2
+    pub const fn clk_gclk_2(&self) -> &CLK_GCLK_2 {
+        &self.clk_gclk_2
     }
     #[doc = "0x64 - U7MC Core Clock 0"]
     #[inline(always)]
-    pub const fn clk_u7mc_core0(&self) -> &CLK_U7MC_CORE0 {
-        &self.clk_u7mc_core0
+    pub const fn clk_u7mc_core_0(&self) -> &CLK_U7MC_CORE_0 {
+        &self.clk_u7mc_core_0
     }
     #[doc = "0x68 - U7MC Core Clock 1"]
     #[inline(always)]
-    pub const fn clk_u7mc_core1(&self) -> &CLK_U7MC_CORE1 {
-        &self.clk_u7mc_core1
+    pub const fn clk_u7mc_core_1(&self) -> &CLK_U7MC_CORE_1 {
+        &self.clk_u7mc_core_1
     }
     #[doc = "0x6c - U7MC Core Clock 2"]
     #[inline(always)]
-    pub const fn clk_u7mc_core2(&self) -> &CLK_U7MC_CORE2 {
-        &self.clk_u7mc_core2
+    pub const fn clk_u7mc_core_2(&self) -> &CLK_U7MC_CORE_2 {
+        &self.clk_u7mc_core_2
     }
     #[doc = "0x70 - U7MC Core Clock 3"]
     #[inline(always)]
-    pub const fn clk_u7mc_core3(&self) -> &CLK_U7MC_CORE3 {
-        &self.clk_u7mc_core3
+    pub const fn clk_u7mc_core_3(&self) -> &CLK_U7MC_CORE_3 {
+        &self.clk_u7mc_core_3
     }
     #[doc = "0x74 - U7MC Core Clock 4"]
     #[inline(always)]
-    pub const fn clk_u7mc_core4(&self) -> &CLK_U7MC_CORE4 {
-        &self.clk_u7mc_core4
+    pub const fn clk_u7mc_core_4(&self) -> &CLK_U7MC_CORE_4 {
+        &self.clk_u7mc_core_4
     }
     #[doc = "0x78 - U7MC Debug Clock"]
     #[inline(always)]
@@ -365,28 +363,28 @@ impl RegisterBlock {
     }
     #[doc = "0x80 - U7MC Trace Clock 0"]
     #[inline(always)]
-    pub const fn clk_u7mc_trace0(&self) -> &CLK_U7MC_TRACE0 {
-        &self.clk_u7mc_trace0
+    pub const fn clk_u7mc_trace_0(&self) -> &CLK_U7MC_TRACE_0 {
+        &self.clk_u7mc_trace_0
     }
     #[doc = "0x84 - U7MC Trace Clock 1"]
     #[inline(always)]
-    pub const fn clk_u7mc_trace1(&self) -> &CLK_U7MC_TRACE1 {
-        &self.clk_u7mc_trace1
+    pub const fn clk_u7mc_trace_1(&self) -> &CLK_U7MC_TRACE_1 {
+        &self.clk_u7mc_trace_1
     }
     #[doc = "0x88 - U7MC Trace Clock 2"]
     #[inline(always)]
-    pub const fn clk_u7mc_trace2(&self) -> &CLK_U7MC_TRACE2 {
-        &self.clk_u7mc_trace2
+    pub const fn clk_u7mc_trace_2(&self) -> &CLK_U7MC_TRACE_2 {
+        &self.clk_u7mc_trace_2
     }
     #[doc = "0x8c - U7MC Trace Clock 3"]
     #[inline(always)]
-    pub const fn clk_u7mc_trace3(&self) -> &CLK_U7MC_TRACE3 {
-        &self.clk_u7mc_trace3
+    pub const fn clk_u7mc_trace_3(&self) -> &CLK_U7MC_TRACE_3 {
+        &self.clk_u7mc_trace_3
     }
     #[doc = "0x90 - U7MC Trace Clock 4"]
     #[inline(always)]
-    pub const fn clk_u7mc_trace4(&self) -> &CLK_U7MC_TRACE4 {
-        &self.clk_u7mc_trace4
+    pub const fn clk_u7mc_trace_4(&self) -> &CLK_U7MC_TRACE_4 {
+        &self.clk_u7mc_trace_4
     }
     #[doc = "0x94 - U7MC Trace Clock COM"]
     #[inline(always)]
@@ -395,15 +393,13 @@ impl RegisterBlock {
     }
     #[doc = "0x98 - clk_u0_sft7110_noc_bus_clk_cpu_axi"]
     #[inline(always)]
-    pub const fn clk_u0_sft7110_noc_bus_clk_cpu_axi(&self) -> &CLK_U0_SFT7110_NOC_BUS_CLK_CPU_AXI {
-        &self.clk_u0_sft7110_noc_bus_clk_cpu_axi
+    pub const fn clk_u0_noc_bus_cpu_axi(&self) -> &CLK_U0_NOC_BUS_CPU_AXI {
+        &self.clk_u0_noc_bus_cpu_axi
     }
     #[doc = "0x9c - clk_u0_sft7110_noc_bus_clk_axicfg0_axi"]
     #[inline(always)]
-    pub const fn clk_u0_sft7110_noc_bus_clk_axicfg0_axi(
-        &self,
-    ) -> &CLK_U0_SFT7110_NOC_BUS_CLK_AXICFG0_AXI {
-        &self.clk_u0_sft7110_noc_bus_clk_axicfg0_axi
+    pub const fn clk_u0_noc_bus_axicfg0_axi(&self) -> &CLK_U0_NOC_BUS_AXICFG0_AXI {
+        &self.clk_u0_noc_bus_axicfg0_axi
     }
     #[doc = "0xa0 - clk_osc_div2"]
     #[inline(always)]
@@ -425,10 +421,10 @@ impl RegisterBlock {
     pub const fn clk_ddr_bus(&self) -> &CLK_DDR_BUS {
         &self.clk_ddr_bus
     }
-    #[doc = "0xb0 - clk_u0_ddr_sfft7110_clk_axi"]
+    #[doc = "0xb0 - clk_u0_ddr_axi"]
     #[inline(always)]
-    pub const fn clk_u0_ddr_sft7110_clk_axi(&self) -> &CLK_U0_DDR_SFT7110_CLK_AXI {
-        &self.clk_u0_ddr_sft7110_clk_axi
+    pub const fn clk_u0_ddr_axi(&self) -> &CLK_U0_DDR_AXI {
+        &self.clk_u0_ddr_axi
     }
     #[doc = "0xb4 - clk_gpu_core"]
     #[inline(always)]
@@ -457,27 +453,23 @@ impl RegisterBlock {
     }
     #[doc = "0xc8 - clk_u0_sft7110_noc_bus_clk_gpu_axi"]
     #[inline(always)]
-    pub const fn clk_u0_sft7110_noc_bus_clk_gpu_axi(&self) -> &CLK_U0_SFT7110_NOC_BUS_CLK_GPU_AXI {
-        &self.clk_u0_sft7110_noc_bus_clk_gpu_axi
+    pub const fn clk_u0_noc_bus_gpu_axi(&self) -> &CLK_U0_NOC_BUS_GPU_AXI {
+        &self.clk_u0_noc_bus_gpu_axi
     }
     #[doc = "0xcc - clk_u0_dom_isp_top_clk_dom_isp_top_clk_ispcore_2x"]
     #[inline(always)]
-    pub const fn clk_u0_dom_isp_top_clk_dom_isp_top_clk_ispcore_2x(
-        &self,
-    ) -> &CLK_U0_DOM_ISP_TOP_CLK_DOM_ISP_TOP_CLK_ISPCORE_2X {
-        &self.clk_u0_dom_isp_top_clk_dom_isp_top_clk_ispcore_2x
+    pub const fn clk_u0_isp_ispcore_2x(&self) -> &CLK_U0_ISP_ISPCORE_2X {
+        &self.clk_u0_isp_ispcore_2x
     }
     #[doc = "0xd0 - clk_u0_dom_isp_top_clk_dom_isp_top_clk_isp_axi"]
     #[inline(always)]
-    pub const fn clk_u0_dom_isp_top_clk_dom_isp_top_clk_isp_axi(
-        &self,
-    ) -> &CLK_U0_DOM_ISP_TOP_CLK_DOM_ISP_TOP_CLK_ISP_AXI {
-        &self.clk_u0_dom_isp_top_clk_dom_isp_top_clk_isp_axi
+    pub const fn clk_u0_isp_axi(&self) -> &CLK_U0_ISP_AXI {
+        &self.clk_u0_isp_axi
     }
-    #[doc = "0xd4 - clk_u0_sft7110_noc_bux_clk_isp_axi"]
+    #[doc = "0xd4 - clk_u0_sft7110_noc_bus_clk_isp_axi"]
     #[inline(always)]
-    pub const fn clk_u0_sft7110_noc_bux_clk_isp_axi(&self) -> &CLK_U0_SFT7110_NOC_BUX_CLK_ISP_AXI {
-        &self.clk_u0_sft7110_noc_bux_clk_isp_axi
+    pub const fn clk_u0_noc_bus_isp_axi(&self) -> &CLK_U0_NOC_BUS_ISP_AXI {
+        &self.clk_u0_noc_bus_isp_axi
     }
     #[doc = "0xd8 - clk_hifi4_core"]
     #[inline(always)]
@@ -501,10 +493,8 @@ impl RegisterBlock {
     }
     #[doc = "0xe8 - clk_u0_dom_vout_top_clk_dom_vout_top_clk_vout_src"]
     #[inline(always)]
-    pub const fn clk_u0_dom_vout_top_clk_dom_vout_top_clk_vout_src(
-        &self,
-    ) -> &CLK_U0_DOM_VOUT_TOP_CLK_DOM_VOUT_TOP_CLK_VOUT_SRC {
-        &self.clk_u0_dom_vout_top_clk_dom_vout_top_clk_vout_src
+    pub const fn clk_u0_vout_src(&self) -> &CLK_U0_VOUT_SRC {
+        &self.clk_u0_vout_src
     }
     #[doc = "0xec - Clock Video Output AXI DIVCFG"]
     #[inline(always)]
@@ -773,8 +763,8 @@ impl RegisterBlock {
     }
     #[doc = "0x1c0 - Clock SYS IOMUX PCLK"]
     #[inline(always)]
-    pub const fn clk_sys_iomux_pclk(&self) -> &CLK_SYS_IOMUX_PCLK {
-        &self.clk_sys_iomux_pclk
+    pub const fn clk_pclk(&self) -> &CLK_PCLK {
+        &self.clk_pclk
     }
     #[doc = "0x1c4 - Clock Mailbox APB"]
     #[inline(always)]
@@ -838,23 +828,23 @@ impl RegisterBlock {
     }
     #[doc = "0x1f4 - Clock Timer 0"]
     #[inline(always)]
-    pub const fn clk_tim0(&self) -> &CLK_TIM0 {
-        &self.clk_tim0
+    pub const fn clk_tim_0(&self) -> &CLK_TIM_0 {
+        &self.clk_tim_0
     }
     #[doc = "0x1f8 - Clock Timer 1"]
     #[inline(always)]
-    pub const fn clk_tim1(&self) -> &CLK_TIM1 {
-        &self.clk_tim1
+    pub const fn clk_tim_1(&self) -> &CLK_TIM_1 {
+        &self.clk_tim_1
     }
     #[doc = "0x1fc - Clock Timer 2"]
     #[inline(always)]
-    pub const fn clk_tim2(&self) -> &CLK_TIM2 {
-        &self.clk_tim2
+    pub const fn clk_tim_2(&self) -> &CLK_TIM_2 {
+        &self.clk_tim_2
     }
     #[doc = "0x200 - Clock Timer 3"]
     #[inline(always)]
-    pub const fn clk_tim3(&self) -> &CLK_TIM3 {
-        &self.clk_tim3
+    pub const fn clk_tim_3(&self) -> &CLK_TIM_3 {
+        &self.clk_tim_3
     }
     #[doc = "0x204 - Clock Temperature Sensor APB"]
     #[inline(always)]
@@ -1158,48 +1148,48 @@ impl RegisterBlock {
     }
     #[doc = "0x2f4 - Clock JTAG Certification TRNG"]
     #[inline(always)]
-    pub const fn clk_jtag_cert_trng(&self) -> &CLK_JTAG_CERT_TRNG {
-        &self.clk_jtag_cert_trng
+    pub const fn clk_jtag_trng(&self) -> &CLK_JTAG_TRNG {
+        &self.clk_jtag_trng
     }
     #[doc = "0x2f8 - Software RESET 0 Address Selector"]
     #[inline(always)]
-    pub const fn soft_rst0_addr_sel(&self) -> &SOFT_RST0_ADDR_SEL {
-        &self.soft_rst0_addr_sel
+    pub const fn soft_rst_addr_sel_0(&self) -> &SOFT_RST_ADDR_SEL_0 {
+        &self.soft_rst_addr_sel_0
     }
     #[doc = "0x2fc - Software RESET 1 Address Selector"]
     #[inline(always)]
-    pub const fn soft_rst1_addr_sel(&self) -> &SOFT_RST1_ADDR_SEL {
-        &self.soft_rst1_addr_sel
+    pub const fn soft_rst_addr_sel_1(&self) -> &SOFT_RST_ADDR_SEL_1 {
+        &self.soft_rst_addr_sel_1
     }
     #[doc = "0x300 - Software RESET 2 Address Selector"]
     #[inline(always)]
-    pub const fn soft_rst2_addr_sel(&self) -> &SOFT_RST2_ADDR_SEL {
-        &self.soft_rst2_addr_sel
+    pub const fn soft_rst_addr_sel_2(&self) -> &SOFT_RST_ADDR_SEL_2 {
+        &self.soft_rst_addr_sel_2
     }
     #[doc = "0x304 - Software RESET 3 Address Selector"]
     #[inline(always)]
-    pub const fn soft_rst3_addr_sel(&self) -> &SOFT_RST3_ADDR_SEL {
-        &self.soft_rst3_addr_sel
+    pub const fn soft_rst_addr_sel_3(&self) -> &SOFT_RST_ADDR_SEL_3 {
+        &self.soft_rst_addr_sel_3
     }
     #[doc = "0x308 - SYSCRG RESET Status 0"]
     #[inline(always)]
-    pub const fn syscrg_rst0_status(&self) -> &SYSCRG_RST0_STATUS {
-        &self.syscrg_rst0_status
+    pub const fn syscrg_rst_status_0(&self) -> &SYSCRG_RST_STATUS_0 {
+        &self.syscrg_rst_status_0
     }
     #[doc = "0x30c - SYSCRG RESET Status 1"]
     #[inline(always)]
-    pub const fn syscrg_rst1_status(&self) -> &SYSCRG_RST1_STATUS {
-        &self.syscrg_rst1_status
+    pub const fn syscrg_rst_status_1(&self) -> &SYSCRG_RST_STATUS_1 {
+        &self.syscrg_rst_status_1
     }
     #[doc = "0x310 - SYSCRG RESET Status 2"]
     #[inline(always)]
-    pub const fn syscrg_rst2_status(&self) -> &SYSCRG_RST2_STATUS {
-        &self.syscrg_rst2_status
+    pub const fn syscrg_rst_status_2(&self) -> &SYSCRG_RST_STATUS_2 {
+        &self.syscrg_rst_status_2
     }
     #[doc = "0x314 - SYSCRG RESET Status 3"]
     #[inline(always)]
-    pub const fn syscrg_rst3_status(&self) -> &SYSCRG_RST3_STATUS {
-        &self.syscrg_rst3_status
+    pub const fn syscrg_rst_status_3(&self) -> &SYSCRG_RST_STATUS_3 {
+        &self.syscrg_rst_status_3
     }
 }
 #[doc = "clk_cpu_root (rw) register accessor: Clock CPU Root\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_cpu_root::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_cpu_root::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_cpu_root`]
@@ -1312,46 +1302,46 @@ module"]
 pub type CLK_ISP_AXI = crate::Reg<clk_isp_axi::CLK_ISP_AXI_SPEC>;
 #[doc = "Clock ISP AXI"]
 pub mod clk_isp_axi;
-#[doc = "clk_gclk0 (rw) register accessor: Clock GCLK 0\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_gclk0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_gclk0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_gclk0`]
+#[doc = "clk_gclk_0 (rw) register accessor: Clock GCLK 0\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_gclk_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_gclk_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_gclk_0`]
 module"]
-pub type CLK_GCLK0 = crate::Reg<clk_gclk0::CLK_GCLK0_SPEC>;
+pub type CLK_GCLK_0 = crate::Reg<clk_gclk_0::CLK_GCLK_0_SPEC>;
 #[doc = "Clock GCLK 0"]
-pub mod clk_gclk0;
-#[doc = "clk_gclk1 (rw) register accessor: Clock GCLK 1\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_gclk1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_gclk1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_gclk1`]
+pub mod clk_gclk_0;
+#[doc = "clk_gclk_1 (rw) register accessor: Clock GCLK 1\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_gclk_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_gclk_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_gclk_1`]
 module"]
-pub type CLK_GCLK1 = crate::Reg<clk_gclk1::CLK_GCLK1_SPEC>;
+pub type CLK_GCLK_1 = crate::Reg<clk_gclk_1::CLK_GCLK_1_SPEC>;
 #[doc = "Clock GCLK 1"]
-pub mod clk_gclk1;
-#[doc = "clk_gclk2 (rw) register accessor: Clock GCLK 2\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_gclk2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_gclk2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_gclk2`]
+pub mod clk_gclk_1;
+#[doc = "clk_gclk_2 (rw) register accessor: Clock GCLK 2\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_gclk_2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_gclk_2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_gclk_2`]
 module"]
-pub type CLK_GCLK2 = crate::Reg<clk_gclk2::CLK_GCLK2_SPEC>;
+pub type CLK_GCLK_2 = crate::Reg<clk_gclk_2::CLK_GCLK_2_SPEC>;
 #[doc = "Clock GCLK 2"]
-pub mod clk_gclk2;
-#[doc = "clk_u7mc_core0 (rw) register accessor: U7MC Core Clock 0\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u7mc_core0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u7mc_core0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u7mc_core0`]
+pub mod clk_gclk_2;
+#[doc = "clk_u7mc_core_0 (rw) register accessor: U7MC Core Clock 0\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u7mc_core_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u7mc_core_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u7mc_core_0`]
 module"]
-pub type CLK_U7MC_CORE0 = crate::Reg<clk_u7mc_core0::CLK_U7MC_CORE0_SPEC>;
+pub type CLK_U7MC_CORE_0 = crate::Reg<clk_u7mc_core_0::CLK_U7MC_CORE_0_SPEC>;
 #[doc = "U7MC Core Clock 0"]
-pub mod clk_u7mc_core0;
-#[doc = "clk_u7mc_core1 (rw) register accessor: U7MC Core Clock 1\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u7mc_core1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u7mc_core1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u7mc_core1`]
+pub mod clk_u7mc_core_0;
+#[doc = "clk_u7mc_core_1 (rw) register accessor: U7MC Core Clock 1\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u7mc_core_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u7mc_core_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u7mc_core_1`]
 module"]
-pub type CLK_U7MC_CORE1 = crate::Reg<clk_u7mc_core1::CLK_U7MC_CORE1_SPEC>;
+pub type CLK_U7MC_CORE_1 = crate::Reg<clk_u7mc_core_1::CLK_U7MC_CORE_1_SPEC>;
 #[doc = "U7MC Core Clock 1"]
-pub mod clk_u7mc_core1;
-#[doc = "clk_u7mc_core2 (rw) register accessor: U7MC Core Clock 2\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u7mc_core2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u7mc_core2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u7mc_core2`]
+pub mod clk_u7mc_core_1;
+#[doc = "clk_u7mc_core_2 (rw) register accessor: U7MC Core Clock 2\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u7mc_core_2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u7mc_core_2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u7mc_core_2`]
 module"]
-pub type CLK_U7MC_CORE2 = crate::Reg<clk_u7mc_core2::CLK_U7MC_CORE2_SPEC>;
+pub type CLK_U7MC_CORE_2 = crate::Reg<clk_u7mc_core_2::CLK_U7MC_CORE_2_SPEC>;
 #[doc = "U7MC Core Clock 2"]
-pub mod clk_u7mc_core2;
-#[doc = "clk_u7mc_core3 (rw) register accessor: U7MC Core Clock 3\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u7mc_core3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u7mc_core3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u7mc_core3`]
+pub mod clk_u7mc_core_2;
+#[doc = "clk_u7mc_core_3 (rw) register accessor: U7MC Core Clock 3\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u7mc_core_3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u7mc_core_3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u7mc_core_3`]
 module"]
-pub type CLK_U7MC_CORE3 = crate::Reg<clk_u7mc_core3::CLK_U7MC_CORE3_SPEC>;
+pub type CLK_U7MC_CORE_3 = crate::Reg<clk_u7mc_core_3::CLK_U7MC_CORE_3_SPEC>;
 #[doc = "U7MC Core Clock 3"]
-pub mod clk_u7mc_core3;
-#[doc = "clk_u7mc_core4 (rw) register accessor: U7MC Core Clock 4\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u7mc_core4::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u7mc_core4::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u7mc_core4`]
+pub mod clk_u7mc_core_3;
+#[doc = "clk_u7mc_core_4 (rw) register accessor: U7MC Core Clock 4\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u7mc_core_4::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u7mc_core_4::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u7mc_core_4`]
 module"]
-pub type CLK_U7MC_CORE4 = crate::Reg<clk_u7mc_core4::CLK_U7MC_CORE4_SPEC>;
+pub type CLK_U7MC_CORE_4 = crate::Reg<clk_u7mc_core_4::CLK_U7MC_CORE_4_SPEC>;
 #[doc = "U7MC Core Clock 4"]
-pub mod clk_u7mc_core4;
+pub mod clk_u7mc_core_4;
 #[doc = "clk_u7mc_debug (rw) register accessor: U7MC Debug Clock\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u7mc_debug::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u7mc_debug::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u7mc_debug`]
 module"]
 pub type CLK_U7MC_DEBUG = crate::Reg<clk_u7mc_debug::CLK_U7MC_DEBUG_SPEC>;
@@ -1362,48 +1352,47 @@ module"]
 pub type U7MC_RTC_TOGGLE = crate::Reg<u7mc_rtc_toggle::U7MC_RTC_TOGGLE_SPEC>;
 #[doc = "U7MC RTC Toggle"]
 pub mod u7mc_rtc_toggle;
-#[doc = "clk_u7mc_trace0 (rw) register accessor: U7MC Trace Clock 0\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u7mc_trace0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u7mc_trace0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u7mc_trace0`]
+#[doc = "clk_u7mc_trace_0 (rw) register accessor: U7MC Trace Clock 0\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u7mc_trace_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u7mc_trace_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u7mc_trace_0`]
 module"]
-pub type CLK_U7MC_TRACE0 = crate::Reg<clk_u7mc_trace0::CLK_U7MC_TRACE0_SPEC>;
+pub type CLK_U7MC_TRACE_0 = crate::Reg<clk_u7mc_trace_0::CLK_U7MC_TRACE_0_SPEC>;
 #[doc = "U7MC Trace Clock 0"]
-pub mod clk_u7mc_trace0;
-#[doc = "clk_u7mc_trace1 (rw) register accessor: U7MC Trace Clock 1\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u7mc_trace1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u7mc_trace1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u7mc_trace1`]
+pub mod clk_u7mc_trace_0;
+#[doc = "clk_u7mc_trace_1 (rw) register accessor: U7MC Trace Clock 1\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u7mc_trace_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u7mc_trace_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u7mc_trace_1`]
 module"]
-pub type CLK_U7MC_TRACE1 = crate::Reg<clk_u7mc_trace1::CLK_U7MC_TRACE1_SPEC>;
+pub type CLK_U7MC_TRACE_1 = crate::Reg<clk_u7mc_trace_1::CLK_U7MC_TRACE_1_SPEC>;
 #[doc = "U7MC Trace Clock 1"]
-pub mod clk_u7mc_trace1;
-#[doc = "clk_u7mc_trace2 (rw) register accessor: U7MC Trace Clock 2\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u7mc_trace2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u7mc_trace2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u7mc_trace2`]
+pub mod clk_u7mc_trace_1;
+#[doc = "clk_u7mc_trace_2 (rw) register accessor: U7MC Trace Clock 2\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u7mc_trace_2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u7mc_trace_2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u7mc_trace_2`]
 module"]
-pub type CLK_U7MC_TRACE2 = crate::Reg<clk_u7mc_trace2::CLK_U7MC_TRACE2_SPEC>;
+pub type CLK_U7MC_TRACE_2 = crate::Reg<clk_u7mc_trace_2::CLK_U7MC_TRACE_2_SPEC>;
 #[doc = "U7MC Trace Clock 2"]
-pub mod clk_u7mc_trace2;
-#[doc = "clk_u7mc_trace3 (rw) register accessor: U7MC Trace Clock 3\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u7mc_trace3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u7mc_trace3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u7mc_trace3`]
+pub mod clk_u7mc_trace_2;
+#[doc = "clk_u7mc_trace_3 (rw) register accessor: U7MC Trace Clock 3\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u7mc_trace_3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u7mc_trace_3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u7mc_trace_3`]
 module"]
-pub type CLK_U7MC_TRACE3 = crate::Reg<clk_u7mc_trace3::CLK_U7MC_TRACE3_SPEC>;
+pub type CLK_U7MC_TRACE_3 = crate::Reg<clk_u7mc_trace_3::CLK_U7MC_TRACE_3_SPEC>;
 #[doc = "U7MC Trace Clock 3"]
-pub mod clk_u7mc_trace3;
-#[doc = "clk_u7mc_trace4 (rw) register accessor: U7MC Trace Clock 4\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u7mc_trace4::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u7mc_trace4::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u7mc_trace4`]
+pub mod clk_u7mc_trace_3;
+#[doc = "clk_u7mc_trace_4 (rw) register accessor: U7MC Trace Clock 4\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u7mc_trace_4::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u7mc_trace_4::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u7mc_trace_4`]
 module"]
-pub type CLK_U7MC_TRACE4 = crate::Reg<clk_u7mc_trace4::CLK_U7MC_TRACE4_SPEC>;
+pub type CLK_U7MC_TRACE_4 = crate::Reg<clk_u7mc_trace_4::CLK_U7MC_TRACE_4_SPEC>;
 #[doc = "U7MC Trace Clock 4"]
-pub mod clk_u7mc_trace4;
+pub mod clk_u7mc_trace_4;
 #[doc = "clk_u7mc_trace_com (rw) register accessor: U7MC Trace Clock COM\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u7mc_trace_com::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u7mc_trace_com::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u7mc_trace_com`]
 module"]
 pub type CLK_U7MC_TRACE_COM = crate::Reg<clk_u7mc_trace_com::CLK_U7MC_TRACE_COM_SPEC>;
 #[doc = "U7MC Trace Clock COM"]
 pub mod clk_u7mc_trace_com;
-#[doc = "clk_u0_sft7110_noc_bus_clk_cpu_axi (rw) register accessor: clk_u0_sft7110_noc_bus_clk_cpu_axi\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u0_sft7110_noc_bus_clk_cpu_axi::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u0_sft7110_noc_bus_clk_cpu_axi::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u0_sft7110_noc_bus_clk_cpu_axi`]
+#[doc = "clk_u0_noc_bus_cpu_axi (rw) register accessor: clk_u0_sft7110_noc_bus_clk_cpu_axi\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u0_noc_bus_cpu_axi::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u0_noc_bus_cpu_axi::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u0_noc_bus_cpu_axi`]
 module"]
-pub type CLK_U0_SFT7110_NOC_BUS_CLK_CPU_AXI =
-    crate::Reg<clk_u0_sft7110_noc_bus_clk_cpu_axi::CLK_U0_SFT7110_NOC_BUS_CLK_CPU_AXI_SPEC>;
+pub type CLK_U0_NOC_BUS_CPU_AXI = crate::Reg<clk_u0_noc_bus_cpu_axi::CLK_U0_NOC_BUS_CPU_AXI_SPEC>;
 #[doc = "clk_u0_sft7110_noc_bus_clk_cpu_axi"]
-pub mod clk_u0_sft7110_noc_bus_clk_cpu_axi;
-#[doc = "clk_u0_sft7110_noc_bus_clk_axicfg0_axi (rw) register accessor: clk_u0_sft7110_noc_bus_clk_axicfg0_axi\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u0_sft7110_noc_bus_clk_axicfg0_axi::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u0_sft7110_noc_bus_clk_axicfg0_axi::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u0_sft7110_noc_bus_clk_axicfg0_axi`]
+pub mod clk_u0_noc_bus_cpu_axi;
+#[doc = "clk_u0_noc_bus_axicfg0_axi (rw) register accessor: clk_u0_sft7110_noc_bus_clk_axicfg0_axi\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u0_noc_bus_axicfg0_axi::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u0_noc_bus_axicfg0_axi::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u0_noc_bus_axicfg0_axi`]
 module"]
-pub type CLK_U0_SFT7110_NOC_BUS_CLK_AXICFG0_AXI =
-    crate::Reg<clk_u0_sft7110_noc_bus_clk_axicfg0_axi::CLK_U0_SFT7110_NOC_BUS_CLK_AXICFG0_AXI_SPEC>;
+pub type CLK_U0_NOC_BUS_AXICFG0_AXI =
+    crate::Reg<clk_u0_noc_bus_axicfg0_axi::CLK_U0_NOC_BUS_AXICFG0_AXI_SPEC>;
 #[doc = "clk_u0_sft7110_noc_bus_clk_axicfg0_axi"]
-pub mod clk_u0_sft7110_noc_bus_clk_axicfg0_axi;
+pub mod clk_u0_noc_bus_axicfg0_axi;
 #[doc = "clk_osc_div2 (rw) register accessor: clk_osc_div2\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_osc_div2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_osc_div2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_osc_div2`]
 module"]
 pub type CLK_OSC_DIV2 = crate::Reg<clk_osc_div2::CLK_OSC_DIV2_SPEC>;
@@ -1424,12 +1413,11 @@ module"]
 pub type CLK_DDR_BUS = crate::Reg<clk_ddr_bus::CLK_DDR_BUS_SPEC>;
 #[doc = "clk_ddr_bus"]
 pub mod clk_ddr_bus;
-#[doc = "clk_u0_ddr_sft7110_clk_axi (rw) register accessor: clk_u0_ddr_sfft7110_clk_axi\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u0_ddr_sft7110_clk_axi::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u0_ddr_sft7110_clk_axi::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u0_ddr_sft7110_clk_axi`]
+#[doc = "clk_u0_ddr_axi (rw) register accessor: clk_u0_ddr_axi\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u0_ddr_axi::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u0_ddr_axi::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u0_ddr_axi`]
 module"]
-pub type CLK_U0_DDR_SFT7110_CLK_AXI =
-    crate::Reg<clk_u0_ddr_sft7110_clk_axi::CLK_U0_DDR_SFT7110_CLK_AXI_SPEC>;
-#[doc = "clk_u0_ddr_sfft7110_clk_axi"]
-pub mod clk_u0_ddr_sft7110_clk_axi;
+pub type CLK_U0_DDR_AXI = crate::Reg<clk_u0_ddr_axi::CLK_U0_DDR_AXI_SPEC>;
+#[doc = "clk_u0_ddr_axi"]
+pub mod clk_u0_ddr_axi;
 #[doc = "clk_gpu_core (rw) register accessor: clk_gpu_core\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_gpu_core::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_gpu_core::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_gpu_core`]
 module"]
 pub type CLK_GPU_CORE = crate::Reg<clk_gpu_core::CLK_GPU_CORE_SPEC>;
@@ -1456,28 +1444,26 @@ module"]
 pub type CLK_U0_GPU_RTC_TOGGLE = crate::Reg<clk_u0_gpu_rtc_toggle::CLK_U0_GPU_RTC_TOGGLE_SPEC>;
 #[doc = "clk_u0_gpu_rtc_toggle"]
 pub mod clk_u0_gpu_rtc_toggle;
-#[doc = "clk_u0_sft7110_noc_bus_clk_gpu_axi (rw) register accessor: clk_u0_sft7110_noc_bus_clk_gpu_axi\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u0_sft7110_noc_bus_clk_gpu_axi::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u0_sft7110_noc_bus_clk_gpu_axi::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u0_sft7110_noc_bus_clk_gpu_axi`]
+#[doc = "clk_u0_noc_bus_gpu_axi (rw) register accessor: clk_u0_sft7110_noc_bus_clk_gpu_axi\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u0_noc_bus_gpu_axi::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u0_noc_bus_gpu_axi::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u0_noc_bus_gpu_axi`]
 module"]
-pub type CLK_U0_SFT7110_NOC_BUS_CLK_GPU_AXI =
-    crate::Reg<clk_u0_sft7110_noc_bus_clk_gpu_axi::CLK_U0_SFT7110_NOC_BUS_CLK_GPU_AXI_SPEC>;
+pub type CLK_U0_NOC_BUS_GPU_AXI = crate::Reg<clk_u0_noc_bus_gpu_axi::CLK_U0_NOC_BUS_GPU_AXI_SPEC>;
 #[doc = "clk_u0_sft7110_noc_bus_clk_gpu_axi"]
-pub mod clk_u0_sft7110_noc_bus_clk_gpu_axi;
-#[doc = "clk_u0_dom_isp_top_clk_dom_isp_top_clk_ispcore_2x (rw) register accessor: clk_u0_dom_isp_top_clk_dom_isp_top_clk_ispcore_2x\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u0_dom_isp_top_clk_dom_isp_top_clk_ispcore_2x::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u0_dom_isp_top_clk_dom_isp_top_clk_ispcore_2x::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u0_dom_isp_top_clk_dom_isp_top_clk_ispcore_2x`]
+pub mod clk_u0_noc_bus_gpu_axi;
+#[doc = "clk_u0_isp_ispcore_2x (rw) register accessor: clk_u0_dom_isp_top_clk_dom_isp_top_clk_ispcore_2x\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u0_isp_ispcore_2x::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u0_isp_ispcore_2x::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u0_isp_ispcore_2x`]
 module"]
-pub type CLK_U0_DOM_ISP_TOP_CLK_DOM_ISP_TOP_CLK_ISPCORE_2X = crate :: Reg < clk_u0_dom_isp_top_clk_dom_isp_top_clk_ispcore_2x :: CLK_U0_DOM_ISP_TOP_CLK_DOM_ISP_TOP_CLK_ISPCORE_2X_SPEC > ;
+pub type CLK_U0_ISP_ISPCORE_2X = crate::Reg<clk_u0_isp_ispcore_2x::CLK_U0_ISP_ISPCORE_2X_SPEC>;
 #[doc = "clk_u0_dom_isp_top_clk_dom_isp_top_clk_ispcore_2x"]
-pub mod clk_u0_dom_isp_top_clk_dom_isp_top_clk_ispcore_2x;
-#[doc = "clk_u0_dom_isp_top_clk_dom_isp_top_clk_isp_axi (rw) register accessor: clk_u0_dom_isp_top_clk_dom_isp_top_clk_isp_axi\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u0_dom_isp_top_clk_dom_isp_top_clk_isp_axi::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u0_dom_isp_top_clk_dom_isp_top_clk_isp_axi::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u0_dom_isp_top_clk_dom_isp_top_clk_isp_axi`]
+pub mod clk_u0_isp_ispcore_2x;
+#[doc = "clk_u0_isp_axi (rw) register accessor: clk_u0_dom_isp_top_clk_dom_isp_top_clk_isp_axi\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u0_isp_axi::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u0_isp_axi::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u0_isp_axi`]
 module"]
-pub type CLK_U0_DOM_ISP_TOP_CLK_DOM_ISP_TOP_CLK_ISP_AXI = crate :: Reg < clk_u0_dom_isp_top_clk_dom_isp_top_clk_isp_axi :: CLK_U0_DOM_ISP_TOP_CLK_DOM_ISP_TOP_CLK_ISP_AXI_SPEC > ;
+pub type CLK_U0_ISP_AXI = crate::Reg<clk_u0_isp_axi::CLK_U0_ISP_AXI_SPEC>;
 #[doc = "clk_u0_dom_isp_top_clk_dom_isp_top_clk_isp_axi"]
-pub mod clk_u0_dom_isp_top_clk_dom_isp_top_clk_isp_axi;
-#[doc = "clk_u0_sft7110_noc_bux_clk_isp_axi (rw) register accessor: clk_u0_sft7110_noc_bux_clk_isp_axi\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u0_sft7110_noc_bux_clk_isp_axi::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u0_sft7110_noc_bux_clk_isp_axi::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u0_sft7110_noc_bux_clk_isp_axi`]
+pub mod clk_u0_isp_axi;
+#[doc = "clk_u0_noc_bus_isp_axi (rw) register accessor: clk_u0_sft7110_noc_bus_clk_isp_axi\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u0_noc_bus_isp_axi::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u0_noc_bus_isp_axi::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u0_noc_bus_isp_axi`]
 module"]
-pub type CLK_U0_SFT7110_NOC_BUX_CLK_ISP_AXI =
-    crate::Reg<clk_u0_sft7110_noc_bux_clk_isp_axi::CLK_U0_SFT7110_NOC_BUX_CLK_ISP_AXI_SPEC>;
-#[doc = "clk_u0_sft7110_noc_bux_clk_isp_axi"]
-pub mod clk_u0_sft7110_noc_bux_clk_isp_axi;
+pub type CLK_U0_NOC_BUS_ISP_AXI = crate::Reg<clk_u0_noc_bus_isp_axi::CLK_U0_NOC_BUS_ISP_AXI_SPEC>;
+#[doc = "clk_u0_sft7110_noc_bus_clk_isp_axi"]
+pub mod clk_u0_noc_bus_isp_axi;
 #[doc = "clk_hifi4_core (rw) register accessor: clk_hifi4_core\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_hifi4_core::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_hifi4_core::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_hifi4_core`]
 module"]
 pub type CLK_HIFI4_CORE = crate::Reg<clk_hifi4_core::CLK_HIFI4_CORE_SPEC>;
@@ -1500,11 +1486,11 @@ pub type CLK_U0_AXI_CFG1_DEC_CLK_AHB =
     crate::Reg<clk_u0_axi_cfg1_dec_clk_ahb::CLK_U0_AXI_CFG1_DEC_CLK_AHB_SPEC>;
 #[doc = "clk_u0_axi_cfg1_dec_clk_ahb"]
 pub mod clk_u0_axi_cfg1_dec_clk_ahb;
-#[doc = "clk_u0_dom_vout_top_clk_dom_vout_top_clk_vout_src (rw) register accessor: clk_u0_dom_vout_top_clk_dom_vout_top_clk_vout_src\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u0_dom_vout_top_clk_dom_vout_top_clk_vout_src::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u0_dom_vout_top_clk_dom_vout_top_clk_vout_src::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u0_dom_vout_top_clk_dom_vout_top_clk_vout_src`]
+#[doc = "clk_u0_vout_src (rw) register accessor: clk_u0_dom_vout_top_clk_dom_vout_top_clk_vout_src\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_u0_vout_src::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_u0_vout_src::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_u0_vout_src`]
 module"]
-pub type CLK_U0_DOM_VOUT_TOP_CLK_DOM_VOUT_TOP_CLK_VOUT_SRC = crate :: Reg < clk_u0_dom_vout_top_clk_dom_vout_top_clk_vout_src :: CLK_U0_DOM_VOUT_TOP_CLK_DOM_VOUT_TOP_CLK_VOUT_SRC_SPEC > ;
+pub type CLK_U0_VOUT_SRC = crate::Reg<clk_u0_vout_src::CLK_U0_VOUT_SRC_SPEC>;
 #[doc = "clk_u0_dom_vout_top_clk_dom_vout_top_clk_vout_src"]
-pub mod clk_u0_dom_vout_top_clk_dom_vout_top_clk_vout_src;
+pub mod clk_u0_vout_src;
 #[doc = "clk_vout_axi_divcfg (rw) register accessor: Clock Video Output AXI DIVCFG\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_vout_axi_divcfg::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_vout_axi_divcfg::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_vout_axi_divcfg`]
 module"]
 pub type CLK_VOUT_AXI_DIVCFG = crate::Reg<clk_vout_axi_divcfg::CLK_VOUT_AXI_DIVCFG_SPEC>;
@@ -1771,11 +1757,11 @@ module"]
 pub type CLK_GMAC0_GTXCLK = crate::Reg<clk_gmac0_gtxclk::CLK_GMAC0_GTXCLK_SPEC>;
 #[doc = "Clock GMAC 0 GTXC"]
 pub mod clk_gmac0_gtxclk;
-#[doc = "clk_sys_iomux_pclk (rw) register accessor: Clock SYS IOMUX PCLK\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_sys_iomux_pclk::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_sys_iomux_pclk::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_sys_iomux_pclk`]
+#[doc = "clk_pclk (rw) register accessor: Clock SYS IOMUX PCLK\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_pclk::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_pclk::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_pclk`]
 module"]
-pub type CLK_SYS_IOMUX_PCLK = crate::Reg<clk_sys_iomux_pclk::CLK_SYS_IOMUX_PCLK_SPEC>;
+pub type CLK_PCLK = crate::Reg<clk_pclk::CLK_PCLK_SPEC>;
 #[doc = "Clock SYS IOMUX PCLK"]
-pub mod clk_sys_iomux_pclk;
+pub mod clk_pclk;
 #[doc = "clk_mbox_apb (rw) register accessor: Clock Mailbox APB\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_mbox_apb::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_mbox_apb::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_mbox_apb`]
 module"]
 pub type CLK_MBOX_APB = crate::Reg<clk_mbox_apb::CLK_MBOX_APB_SPEC>;
@@ -1836,26 +1822,26 @@ module"]
 pub type CLK_TIM_APB = crate::Reg<clk_tim_apb::CLK_TIM_APB_SPEC>;
 #[doc = "Clock Timer APB"]
 pub mod clk_tim_apb;
-#[doc = "clk_tim0 (rw) register accessor: Clock Timer 0\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_tim0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_tim0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_tim0`]
+#[doc = "clk_tim_0 (rw) register accessor: Clock Timer 0\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_tim_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_tim_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_tim_0`]
 module"]
-pub type CLK_TIM0 = crate::Reg<clk_tim0::CLK_TIM0_SPEC>;
+pub type CLK_TIM_0 = crate::Reg<clk_tim_0::CLK_TIM_0_SPEC>;
 #[doc = "Clock Timer 0"]
-pub mod clk_tim0;
-#[doc = "clk_tim1 (rw) register accessor: Clock Timer 1\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_tim1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_tim1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_tim1`]
+pub mod clk_tim_0;
+#[doc = "clk_tim_1 (rw) register accessor: Clock Timer 1\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_tim_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_tim_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_tim_1`]
 module"]
-pub type CLK_TIM1 = crate::Reg<clk_tim1::CLK_TIM1_SPEC>;
+pub type CLK_TIM_1 = crate::Reg<clk_tim_1::CLK_TIM_1_SPEC>;
 #[doc = "Clock Timer 1"]
-pub mod clk_tim1;
-#[doc = "clk_tim2 (rw) register accessor: Clock Timer 2\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_tim2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_tim2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_tim2`]
+pub mod clk_tim_1;
+#[doc = "clk_tim_2 (rw) register accessor: Clock Timer 2\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_tim_2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_tim_2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_tim_2`]
 module"]
-pub type CLK_TIM2 = crate::Reg<clk_tim2::CLK_TIM2_SPEC>;
+pub type CLK_TIM_2 = crate::Reg<clk_tim_2::CLK_TIM_2_SPEC>;
 #[doc = "Clock Timer 2"]
-pub mod clk_tim2;
-#[doc = "clk_tim3 (rw) register accessor: Clock Timer 3\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_tim3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_tim3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_tim3`]
+pub mod clk_tim_2;
+#[doc = "clk_tim_3 (rw) register accessor: Clock Timer 3\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_tim_3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_tim_3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_tim_3`]
 module"]
-pub type CLK_TIM3 = crate::Reg<clk_tim3::CLK_TIM3_SPEC>;
+pub type CLK_TIM_3 = crate::Reg<clk_tim_3::CLK_TIM_3_SPEC>;
 #[doc = "Clock Timer 3"]
-pub mod clk_tim3;
+pub mod clk_tim_3;
 #[doc = "clk_temp_sensor_apb (rw) register accessor: Clock Temperature Sensor APB\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_temp_sensor_apb::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_temp_sensor_apb::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_temp_sensor_apb`]
 module"]
 pub type CLK_TEMP_SENSOR_APB = crate::Reg<clk_temp_sensor_apb::CLK_TEMP_SENSOR_APB_SPEC>;
@@ -2160,48 +2146,48 @@ module"]
 pub type CLK_TDM_NEG = crate::Reg<clk_tdm_neg::CLK_TDM_NEG_SPEC>;
 #[doc = "Clock TDM Negative"]
 pub mod clk_tdm_neg;
-#[doc = "clk_jtag_cert_trng (rw) register accessor: Clock JTAG Certification TRNG\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_jtag_cert_trng::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_jtag_cert_trng::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_jtag_cert_trng`]
+#[doc = "clk_jtag_trng (rw) register accessor: Clock JTAG Certification TRNG\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`clk_jtag_trng::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`clk_jtag_trng::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@clk_jtag_trng`]
 module"]
-pub type CLK_JTAG_CERT_TRNG = crate::Reg<clk_jtag_cert_trng::CLK_JTAG_CERT_TRNG_SPEC>;
+pub type CLK_JTAG_TRNG = crate::Reg<clk_jtag_trng::CLK_JTAG_TRNG_SPEC>;
 #[doc = "Clock JTAG Certification TRNG"]
-pub mod clk_jtag_cert_trng;
-#[doc = "soft_rst0_addr_sel (rw) register accessor: Software RESET 0 Address Selector\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`soft_rst0_addr_sel::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`soft_rst0_addr_sel::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@soft_rst0_addr_sel`]
+pub mod clk_jtag_trng;
+#[doc = "soft_rst_addr_sel_0 (rw) register accessor: Software RESET 0 Address Selector\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`soft_rst_addr_sel_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`soft_rst_addr_sel_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@soft_rst_addr_sel_0`]
 module"]
-pub type SOFT_RST0_ADDR_SEL = crate::Reg<soft_rst0_addr_sel::SOFT_RST0_ADDR_SEL_SPEC>;
+pub type SOFT_RST_ADDR_SEL_0 = crate::Reg<soft_rst_addr_sel_0::SOFT_RST_ADDR_SEL_0_SPEC>;
 #[doc = "Software RESET 0 Address Selector"]
-pub mod soft_rst0_addr_sel;
-#[doc = "soft_rst1_addr_sel (rw) register accessor: Software RESET 1 Address Selector\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`soft_rst1_addr_sel::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`soft_rst1_addr_sel::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@soft_rst1_addr_sel`]
+pub mod soft_rst_addr_sel_0;
+#[doc = "soft_rst_addr_sel_1 (rw) register accessor: Software RESET 1 Address Selector\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`soft_rst_addr_sel_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`soft_rst_addr_sel_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@soft_rst_addr_sel_1`]
 module"]
-pub type SOFT_RST1_ADDR_SEL = crate::Reg<soft_rst1_addr_sel::SOFT_RST1_ADDR_SEL_SPEC>;
+pub type SOFT_RST_ADDR_SEL_1 = crate::Reg<soft_rst_addr_sel_1::SOFT_RST_ADDR_SEL_1_SPEC>;
 #[doc = "Software RESET 1 Address Selector"]
-pub mod soft_rst1_addr_sel;
-#[doc = "soft_rst2_addr_sel (rw) register accessor: Software RESET 2 Address Selector\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`soft_rst2_addr_sel::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`soft_rst2_addr_sel::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@soft_rst2_addr_sel`]
+pub mod soft_rst_addr_sel_1;
+#[doc = "soft_rst_addr_sel_2 (rw) register accessor: Software RESET 2 Address Selector\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`soft_rst_addr_sel_2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`soft_rst_addr_sel_2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@soft_rst_addr_sel_2`]
 module"]
-pub type SOFT_RST2_ADDR_SEL = crate::Reg<soft_rst2_addr_sel::SOFT_RST2_ADDR_SEL_SPEC>;
+pub type SOFT_RST_ADDR_SEL_2 = crate::Reg<soft_rst_addr_sel_2::SOFT_RST_ADDR_SEL_2_SPEC>;
 #[doc = "Software RESET 2 Address Selector"]
-pub mod soft_rst2_addr_sel;
-#[doc = "soft_rst3_addr_sel (rw) register accessor: Software RESET 3 Address Selector\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`soft_rst3_addr_sel::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`soft_rst3_addr_sel::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@soft_rst3_addr_sel`]
+pub mod soft_rst_addr_sel_2;
+#[doc = "soft_rst_addr_sel_3 (rw) register accessor: Software RESET 3 Address Selector\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`soft_rst_addr_sel_3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`soft_rst_addr_sel_3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@soft_rst_addr_sel_3`]
 module"]
-pub type SOFT_RST3_ADDR_SEL = crate::Reg<soft_rst3_addr_sel::SOFT_RST3_ADDR_SEL_SPEC>;
+pub type SOFT_RST_ADDR_SEL_3 = crate::Reg<soft_rst_addr_sel_3::SOFT_RST_ADDR_SEL_3_SPEC>;
 #[doc = "Software RESET 3 Address Selector"]
-pub mod soft_rst3_addr_sel;
-#[doc = "syscrg_rst0_status (rw) register accessor: SYSCRG RESET Status 0\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`syscrg_rst0_status::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`syscrg_rst0_status::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@syscrg_rst0_status`]
+pub mod soft_rst_addr_sel_3;
+#[doc = "syscrg_rst_status_0 (rw) register accessor: SYSCRG RESET Status 0\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`syscrg_rst_status_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`syscrg_rst_status_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@syscrg_rst_status_0`]
 module"]
-pub type SYSCRG_RST0_STATUS = crate::Reg<syscrg_rst0_status::SYSCRG_RST0_STATUS_SPEC>;
+pub type SYSCRG_RST_STATUS_0 = crate::Reg<syscrg_rst_status_0::SYSCRG_RST_STATUS_0_SPEC>;
 #[doc = "SYSCRG RESET Status 0"]
-pub mod syscrg_rst0_status;
-#[doc = "syscrg_rst1_status (rw) register accessor: SYSCRG RESET Status 1\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`syscrg_rst1_status::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`syscrg_rst1_status::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@syscrg_rst1_status`]
+pub mod syscrg_rst_status_0;
+#[doc = "syscrg_rst_status_1 (rw) register accessor: SYSCRG RESET Status 1\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`syscrg_rst_status_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`syscrg_rst_status_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@syscrg_rst_status_1`]
 module"]
-pub type SYSCRG_RST1_STATUS = crate::Reg<syscrg_rst1_status::SYSCRG_RST1_STATUS_SPEC>;
+pub type SYSCRG_RST_STATUS_1 = crate::Reg<syscrg_rst_status_1::SYSCRG_RST_STATUS_1_SPEC>;
 #[doc = "SYSCRG RESET Status 1"]
-pub mod syscrg_rst1_status;
-#[doc = "syscrg_rst2_status (rw) register accessor: SYSCRG RESET Status 2\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`syscrg_rst2_status::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`syscrg_rst2_status::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@syscrg_rst2_status`]
+pub mod syscrg_rst_status_1;
+#[doc = "syscrg_rst_status_2 (rw) register accessor: SYSCRG RESET Status 2\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`syscrg_rst_status_2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`syscrg_rst_status_2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@syscrg_rst_status_2`]
 module"]
-pub type SYSCRG_RST2_STATUS = crate::Reg<syscrg_rst2_status::SYSCRG_RST2_STATUS_SPEC>;
+pub type SYSCRG_RST_STATUS_2 = crate::Reg<syscrg_rst_status_2::SYSCRG_RST_STATUS_2_SPEC>;
 #[doc = "SYSCRG RESET Status 2"]
-pub mod syscrg_rst2_status;
-#[doc = "syscrg_rst3_status (rw) register accessor: SYSCRG RESET Status 3\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`syscrg_rst3_status::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`syscrg_rst3_status::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@syscrg_rst3_status`]
+pub mod syscrg_rst_status_2;
+#[doc = "syscrg_rst_status_3 (rw) register accessor: SYSCRG RESET Status 3\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`syscrg_rst_status_3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`syscrg_rst_status_3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@syscrg_rst_status_3`]
 module"]
-pub type SYSCRG_RST3_STATUS = crate::Reg<syscrg_rst3_status::SYSCRG_RST3_STATUS_SPEC>;
+pub type SYSCRG_RST_STATUS_3 = crate::Reg<syscrg_rst_status_3::SYSCRG_RST_STATUS_3_SPEC>;
 #[doc = "SYSCRG RESET Status 3"]
-pub mod syscrg_rst3_status;
+pub mod syscrg_rst_status_3;
