@@ -2,23 +2,23 @@
 pub type R = crate::R<SYS_SYSCFG_7_SPEC>;
 #[doc = "Register `sys_syscfg_7` writer"]
 pub type W = crate::W<SYS_SYSCFG_7_SPEC>;
-#[doc = "Field `u0_pll_wrap_pll0_fbdiv` reader - u0_pll_wrap_pll0_fbdiv"]
-pub type U0_PLL_WRAP_PLL0_FBDIV_R = crate::FieldReader<u16>;
-#[doc = "Field `u0_pll_wrap_pll0_fbdiv` writer - u0_pll_wrap_pll0_fbdiv"]
-pub type U0_PLL_WRAP_PLL0_FBDIV_W<'a, REG> = crate::FieldWriter<'a, REG, 12, u16>;
+#[doc = "Field `pll0_fbdiv` reader - pll0_fbdiv"]
+pub type PLL0_FBDIV_R = crate::FieldReader<u16>;
+#[doc = "Field `pll0_fbdiv` writer - pll0_fbdiv"]
+pub type PLL0_FBDIV_W<'a, REG> = crate::FieldWriter<'a, REG, 12, u16>;
 impl R {
-    #[doc = "Bits 0:11 - u0_pll_wrap_pll0_fbdiv"]
+    #[doc = "Bits 0:11 - pll0_fbdiv"]
     #[inline(always)]
-    pub fn u0_pll_wrap_pll0_fbdiv(&self) -> U0_PLL_WRAP_PLL0_FBDIV_R {
-        U0_PLL_WRAP_PLL0_FBDIV_R::new((self.bits & 0x0fff) as u16)
+    pub fn pll0_fbdiv(&self) -> PLL0_FBDIV_R {
+        PLL0_FBDIV_R::new((self.bits & 0x0fff) as u16)
     }
 }
 impl W {
-    #[doc = "Bits 0:11 - u0_pll_wrap_pll0_fbdiv"]
+    #[doc = "Bits 0:11 - pll0_fbdiv"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_pll_wrap_pll0_fbdiv(&mut self) -> U0_PLL_WRAP_PLL0_FBDIV_W<SYS_SYSCFG_7_SPEC> {
-        U0_PLL_WRAP_PLL0_FBDIV_W::new(self, 0)
+    pub fn pll0_fbdiv(&mut self) -> PLL0_FBDIV_W<SYS_SYSCFG_7_SPEC> {
+        PLL0_FBDIV_W::new(self, 0)
     }
     #[doc = r" Writes raw bits to the register."]
     #[doc = r""]

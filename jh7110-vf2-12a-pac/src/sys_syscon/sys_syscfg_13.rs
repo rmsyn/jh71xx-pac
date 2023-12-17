@@ -18,14 +18,14 @@ pub type PLL2_TESTSEL_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
 pub type PLL_TEST_MODE_R = crate::BitReader;
 #[doc = "Field `pll_test_mode` writer - PLL test mode, only used for PLL BIST through jtag2apb"]
 pub type PLL_TEST_MODE_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `u0_saif_audio_sdin_mux_scfg_i2sdin_sel` reader - u0_saif_audio_sdin_mux_scfg_i2sdin_sel"]
-pub type U0_SAIF_AUDIO_SDIN_MUX_SCFG_I2SDIN_SEL_R = crate::FieldReader;
-#[doc = "Field `u0_saif_audio_sdin_mux_scfg_i2sdin_sel` writer - u0_saif_audio_sdin_mux_scfg_i2sdin_sel"]
-pub type U0_SAIF_AUDIO_SDIN_MUX_SCFG_I2SDIN_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
-#[doc = "Field `u0_sft7110_noc_bus_clock_gating_off` reader - u0_sft7110_noc_bus_clock_gating_off"]
-pub type U0_SFT7110_NOC_BUS_CLOCK_GATING_OFF_R = crate::BitReader;
-#[doc = "Field `u0_sft7110_noc_bus_clock_gating_off` writer - u0_sft7110_noc_bus_clock_gating_off"]
-pub type U0_SFT7110_NOC_BUS_CLOCK_GATING_OFF_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `audio_i2sdin_sel` reader - audio_i2sdin_sel"]
+pub type AUDIO_I2SDIN_SEL_R = crate::FieldReader;
+#[doc = "Field `audio_i2sdin_sel` writer - audio_i2sdin_sel"]
+pub type AUDIO_I2SDIN_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
+#[doc = "Field `noc_bus_clock_gating_off` reader - noc_bus_clock_gating_off"]
+pub type NOC_BUS_CLOCK_GATING_OFF_R = crate::BitReader;
+#[doc = "Field `noc_bus_clock_gating_off` writer - noc_bus_clock_gating_off"]
+pub type NOC_BUS_CLOCK_GATING_OFF_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `noc_bus_oic_evemon_start_0` reader - noc_bus_oic_evemon_start_0"]
 pub type NOC_BUS_OIC_EVEMON_START_0_R = crate::BitReader;
 #[doc = "Field `noc_bus_oic_evemon_start_0` writer - noc_bus_oic_evemon_start_0"]
@@ -87,17 +87,15 @@ impl R {
     pub fn pll_test_mode(&self) -> PLL_TEST_MODE_R {
         PLL_TEST_MODE_R::new(((self.bits >> 9) & 1) != 0)
     }
-    #[doc = "Bits 10:17 - u0_saif_audio_sdin_mux_scfg_i2sdin_sel"]
+    #[doc = "Bits 10:17 - audio_i2sdin_sel"]
     #[inline(always)]
-    pub fn u0_saif_audio_sdin_mux_scfg_i2sdin_sel(
-        &self,
-    ) -> U0_SAIF_AUDIO_SDIN_MUX_SCFG_I2SDIN_SEL_R {
-        U0_SAIF_AUDIO_SDIN_MUX_SCFG_I2SDIN_SEL_R::new(((self.bits >> 10) & 0xff) as u8)
+    pub fn audio_i2sdin_sel(&self) -> AUDIO_I2SDIN_SEL_R {
+        AUDIO_I2SDIN_SEL_R::new(((self.bits >> 10) & 0xff) as u8)
     }
-    #[doc = "Bit 18 - u0_sft7110_noc_bus_clock_gating_off"]
+    #[doc = "Bit 18 - noc_bus_clock_gating_off"]
     #[inline(always)]
-    pub fn u0_sft7110_noc_bus_clock_gating_off(&self) -> U0_SFT7110_NOC_BUS_CLOCK_GATING_OFF_R {
-        U0_SFT7110_NOC_BUS_CLOCK_GATING_OFF_R::new(((self.bits >> 18) & 1) != 0)
+    pub fn noc_bus_clock_gating_off(&self) -> NOC_BUS_CLOCK_GATING_OFF_R {
+        NOC_BUS_CLOCK_GATING_OFF_R::new(((self.bits >> 18) & 1) != 0)
     }
     #[doc = "Bit 19 - noc_bus_oic_evemon_start_0"]
     #[inline(always)]
@@ -190,21 +188,17 @@ impl W {
     pub fn pll_test_mode(&mut self) -> PLL_TEST_MODE_W<SYS_SYSCFG_13_SPEC> {
         PLL_TEST_MODE_W::new(self, 9)
     }
-    #[doc = "Bits 10:17 - u0_saif_audio_sdin_mux_scfg_i2sdin_sel"]
+    #[doc = "Bits 10:17 - audio_i2sdin_sel"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_saif_audio_sdin_mux_scfg_i2sdin_sel(
-        &mut self,
-    ) -> U0_SAIF_AUDIO_SDIN_MUX_SCFG_I2SDIN_SEL_W<SYS_SYSCFG_13_SPEC> {
-        U0_SAIF_AUDIO_SDIN_MUX_SCFG_I2SDIN_SEL_W::new(self, 10)
+    pub fn audio_i2sdin_sel(&mut self) -> AUDIO_I2SDIN_SEL_W<SYS_SYSCFG_13_SPEC> {
+        AUDIO_I2SDIN_SEL_W::new(self, 10)
     }
-    #[doc = "Bit 18 - u0_sft7110_noc_bus_clock_gating_off"]
+    #[doc = "Bit 18 - noc_bus_clock_gating_off"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_sft7110_noc_bus_clock_gating_off(
-        &mut self,
-    ) -> U0_SFT7110_NOC_BUS_CLOCK_GATING_OFF_W<SYS_SYSCFG_13_SPEC> {
-        U0_SFT7110_NOC_BUS_CLOCK_GATING_OFF_W::new(self, 18)
+    pub fn noc_bus_clock_gating_off(&mut self) -> NOC_BUS_CLOCK_GATING_OFF_W<SYS_SYSCFG_13_SPEC> {
+        NOC_BUS_CLOCK_GATING_OFF_W::new(self, 18)
     }
     #[doc = "Bit 19 - noc_bus_oic_evemon_start_0"]
     #[inline(always)]

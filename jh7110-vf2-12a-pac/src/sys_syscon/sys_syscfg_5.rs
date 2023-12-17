@@ -66,18 +66,18 @@ pub type U0_CDNS_SPDIF_SCFG_SRAM_CONFIG_VS_W<'a, REG> = crate::BitWriter<'a, REG
 pub type U0_CDNS_SPDIF_SCFG_SRAM_CONFIG_VG_R = crate::BitReader;
 #[doc = "Field `u0_cdns_spdif_scfg_sram_config_vg` writer - SRAM/ROM configuration. VG: timing setting for debug purpose, default is 1'b1."]
 pub type U0_CDNS_SPDIF_SCFG_SRAM_CONFIG_VG_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `u0_cdns_spdif_trmodeo` reader - 1 for transmitter 0 for receiver"]
-pub type U0_CDNS_SPDIF_TRMODEO_R = crate::BitReader;
-#[doc = "Field `u0_i2c_ic_en` reader - I2C interface enable"]
-pub type U0_I2C_IC_EN_R = crate::BitReader;
-#[doc = "Field `u0_sdio_data_strobe_phase_ctrl` reader - Data strobe delay chain select"]
-pub type U0_SDIO_DATA_STROBE_PHASE_CTRL_R = crate::FieldReader;
-#[doc = "Field `u0_sdio_data_strobe_phase_ctrl` writer - Data strobe delay chain select"]
-pub type U0_SDIO_DATA_STROBE_PHASE_CTRL_W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
-#[doc = "Field `u0_sdio_hbig_endian` reader - AHB bus interface endianness: 1: Big-endian AHB bus interface, 0: Little-endian AHB bus interface"]
-pub type U0_SDIO_HBIG_ENDIAN_R = crate::BitReader;
-#[doc = "Field `u0_sdio_hbig_endian` writer - AHB bus interface endianness: 1: Big-endian AHB bus interface, 0: Little-endian AHB bus interface"]
-pub type U0_SDIO_HBIG_ENDIAN_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `spdif_trmodeo` reader - 1 for transmitter 0 for receiver"]
+pub type SPDIF_TRMODEO_R = crate::BitReader;
+#[doc = "Field `i2c_ic_en` reader - I2C interface enable"]
+pub type I2C_IC_EN_R = crate::BitReader;
+#[doc = "Field `sdio_data_strobe_phase_ctrl` reader - Data strobe delay chain select"]
+pub type SDIO_DATA_STROBE_PHASE_CTRL_R = crate::FieldReader;
+#[doc = "Field `sdio_data_strobe_phase_ctrl` writer - Data strobe delay chain select"]
+pub type SDIO_DATA_STROBE_PHASE_CTRL_W<'a, REG> = crate::FieldWriter<'a, REG, 5>;
+#[doc = "Field `sdio_hbig_endian` reader - AHB bus interface endianness: 1: Big-endian AHB bus interface, 0: Little-endian AHB bus interface"]
+pub type SDIO_HBIG_ENDIAN_R = crate::BitReader;
+#[doc = "Field `sdio_hbig_endian` writer - AHB bus interface endianness: 1: Big-endian AHB bus interface, 0: Little-endian AHB bus interface"]
+pub type SDIO_HBIG_ENDIAN_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
     #[inline(always)]
@@ -161,23 +161,23 @@ impl R {
     }
     #[doc = "Bit 24 - 1 for transmitter 0 for receiver"]
     #[inline(always)]
-    pub fn u0_cdns_spdif_trmodeo(&self) -> U0_CDNS_SPDIF_TRMODEO_R {
-        U0_CDNS_SPDIF_TRMODEO_R::new(((self.bits >> 24) & 1) != 0)
+    pub fn spdif_trmodeo(&self) -> SPDIF_TRMODEO_R {
+        SPDIF_TRMODEO_R::new(((self.bits >> 24) & 1) != 0)
     }
     #[doc = "Bit 25 - I2C interface enable"]
     #[inline(always)]
-    pub fn u0_i2c_ic_en(&self) -> U0_I2C_IC_EN_R {
-        U0_I2C_IC_EN_R::new(((self.bits >> 25) & 1) != 0)
+    pub fn i2c_ic_en(&self) -> I2C_IC_EN_R {
+        I2C_IC_EN_R::new(((self.bits >> 25) & 1) != 0)
     }
     #[doc = "Bits 26:30 - Data strobe delay chain select"]
     #[inline(always)]
-    pub fn u0_sdio_data_strobe_phase_ctrl(&self) -> U0_SDIO_DATA_STROBE_PHASE_CTRL_R {
-        U0_SDIO_DATA_STROBE_PHASE_CTRL_R::new(((self.bits >> 26) & 0x1f) as u8)
+    pub fn sdio_data_strobe_phase_ctrl(&self) -> SDIO_DATA_STROBE_PHASE_CTRL_R {
+        SDIO_DATA_STROBE_PHASE_CTRL_R::new(((self.bits >> 26) & 0x1f) as u8)
     }
     #[doc = "Bit 31 - AHB bus interface endianness: 1: Big-endian AHB bus interface, 0: Little-endian AHB bus interface"]
     #[inline(always)]
-    pub fn u0_sdio_hbig_endian(&self) -> U0_SDIO_HBIG_ENDIAN_R {
-        U0_SDIO_HBIG_ENDIAN_R::new(((self.bits >> 31) & 1) != 0)
+    pub fn sdio_hbig_endian(&self) -> SDIO_HBIG_ENDIAN_R {
+        SDIO_HBIG_ENDIAN_R::new(((self.bits >> 31) & 1) != 0)
     }
 }
 impl W {
@@ -312,16 +312,16 @@ impl W {
     #[doc = "Bits 26:30 - Data strobe delay chain select"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_sdio_data_strobe_phase_ctrl(
+    pub fn sdio_data_strobe_phase_ctrl(
         &mut self,
-    ) -> U0_SDIO_DATA_STROBE_PHASE_CTRL_W<SYS_SYSCFG_5_SPEC> {
-        U0_SDIO_DATA_STROBE_PHASE_CTRL_W::new(self, 26)
+    ) -> SDIO_DATA_STROBE_PHASE_CTRL_W<SYS_SYSCFG_5_SPEC> {
+        SDIO_DATA_STROBE_PHASE_CTRL_W::new(self, 26)
     }
     #[doc = "Bit 31 - AHB bus interface endianness: 1: Big-endian AHB bus interface, 0: Little-endian AHB bus interface"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_sdio_hbig_endian(&mut self) -> U0_SDIO_HBIG_ENDIAN_W<SYS_SYSCFG_5_SPEC> {
-        U0_SDIO_HBIG_ENDIAN_W::new(self, 31)
+    pub fn sdio_hbig_endian(&mut self) -> SDIO_HBIG_ENDIAN_W<SYS_SYSCFG_5_SPEC> {
+        SDIO_HBIG_ENDIAN_W::new(self, 31)
     }
     #[doc = r" Writes raw bits to the register."]
     #[doc = r""]

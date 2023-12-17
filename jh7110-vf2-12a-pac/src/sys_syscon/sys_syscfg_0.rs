@@ -2,136 +2,128 @@
 pub type R = crate::R<SYS_SYSCFG_0_SPEC>;
 #[doc = "Register `sys_syscfg_0` writer"]
 pub type W = crate::W<SYS_SYSCFG_0_SPEC>;
-#[doc = "Field `scfg_e24_remap_haddr` reader - scfg_e24_remap_haddr"]
-pub type SCFG_E24_REMAP_HADDR_R = crate::FieldReader;
-#[doc = "Field `scfg_e24_remap_haddr` writer - scfg_e24_remap_haddr"]
-pub type SCFG_E24_REMAP_HADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
-#[doc = "Field `scfg_hifi4_idma_remap_araddr` reader - scfg_hifi4_idma_remap_araddr"]
-pub type SCFG_HIFI4_IDMA_REMAP_ARADDR_R = crate::FieldReader;
-#[doc = "Field `scfg_hifi4_idma_remap_araddr` writer - scfg_hifi4_idma_remap_araddr"]
-pub type SCFG_HIFI4_IDMA_REMAP_ARADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
-#[doc = "Field `scfg_hifi4_idma_remap_awaddr` reader - scfg_hifi4_idma_remap_awaddr"]
-pub type SCFG_HIFI4_IDMA_REMAP_AWADDR_R = crate::FieldReader;
-#[doc = "Field `scfg_hifi4_idma_remap_awaddr` writer - scfg_hifi4_idma_remap_awaddr"]
-pub type SCFG_HIFI4_IDMA_REMAP_AWADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
-#[doc = "Field `scfg_hifi4_sys_remap_araddr` reader - scfg_hifi4_sys_remap_araddr"]
-pub type SCFG_HIFI4_SYS_REMAP_ARADDR_R = crate::FieldReader;
-#[doc = "Field `scfg_hifi4_sys_remap_araddr` writer - scfg_hifi4_sys_remap_araddr"]
-pub type SCFG_HIFI4_SYS_REMAP_ARADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
-#[doc = "Field `scfg_hifi4_sys_remap_awaddr` reader - scfg_hifi4_sys_remap_awaddr"]
-pub type SCFG_HIFI4_SYS_REMAP_AWADDR_R = crate::FieldReader;
-#[doc = "Field `scfg_hifi4_sys_remap_awaddr` writer - scfg_hifi4_sys_remap_awaddr"]
-pub type SCFG_HIFI4_SYS_REMAP_AWADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
-#[doc = "Field `scfg_jpg_remap_araddr` reader - scfg_jpg_remap_araddr"]
-pub type SCFG_JPG_REMAP_ARADDR_R = crate::FieldReader;
-#[doc = "Field `scfg_jpg_remap_araddr` writer - scfg_jpg_remap_araddr"]
-pub type SCFG_JPG_REMAP_ARADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
-#[doc = "Field `scfg_jpg_remap_awaddr` reader - scfg_jpg_remap_awaddr"]
-pub type SCFG_JPG_REMAP_AWADDR_R = crate::FieldReader;
-#[doc = "Field `scfg_jpg_remap_awaddr` writer - scfg_jpg_remap_awaddr"]
-pub type SCFG_JPG_REMAP_AWADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
-#[doc = "Field `scfg_sd0_remap_araddr` reader - scfg_sd0_remap_araddr"]
-pub type SCFG_SD0_REMAP_ARADDR_R = crate::FieldReader;
-#[doc = "Field `scfg_sd0_remap_araddr` writer - scfg_sd0_remap_araddr"]
-pub type SCFG_SD0_REMAP_ARADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+#[doc = "Field `e24_remap_haddr` reader - e24_remap_haddr"]
+pub type E24_REMAP_HADDR_R = crate::FieldReader;
+#[doc = "Field `e24_remap_haddr` writer - e24_remap_haddr"]
+pub type E24_REMAP_HADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+#[doc = "Field `hifi4_idma_remap_araddr` reader - hifi4_idma_remap_araddr"]
+pub type HIFI4_IDMA_REMAP_ARADDR_R = crate::FieldReader;
+#[doc = "Field `hifi4_idma_remap_araddr` writer - hifi4_idma_remap_araddr"]
+pub type HIFI4_IDMA_REMAP_ARADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+#[doc = "Field `hifi4_idma_remap_awaddr` reader - hifi4_idma_remap_awaddr"]
+pub type HIFI4_IDMA_REMAP_AWADDR_R = crate::FieldReader;
+#[doc = "Field `hifi4_idma_remap_awaddr` writer - hifi4_idma_remap_awaddr"]
+pub type HIFI4_IDMA_REMAP_AWADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+#[doc = "Field `hifi4_sys_remap_araddr` reader - hifi4_sys_remap_araddr"]
+pub type HIFI4_SYS_REMAP_ARADDR_R = crate::FieldReader;
+#[doc = "Field `hifi4_sys_remap_araddr` writer - hifi4_sys_remap_araddr"]
+pub type HIFI4_SYS_REMAP_ARADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+#[doc = "Field `hifi4_sys_remap_awaddr` reader - hifi4_sys_remap_awaddr"]
+pub type HIFI4_SYS_REMAP_AWADDR_R = crate::FieldReader;
+#[doc = "Field `hifi4_sys_remap_awaddr` writer - hifi4_sys_remap_awaddr"]
+pub type HIFI4_SYS_REMAP_AWADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+#[doc = "Field `jpg_remap_araddr` reader - jpg_remap_araddr"]
+pub type JPG_REMAP_ARADDR_R = crate::FieldReader;
+#[doc = "Field `jpg_remap_araddr` writer - jpg_remap_araddr"]
+pub type JPG_REMAP_ARADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+#[doc = "Field `jpg_remap_awaddr` reader - jpg_remap_awaddr"]
+pub type JPG_REMAP_AWADDR_R = crate::FieldReader;
+#[doc = "Field `jpg_remap_awaddr` writer - jpg_remap_awaddr"]
+pub type JPG_REMAP_AWADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+#[doc = "Field `sd0_remap_araddr` reader - sd0_remap_araddr"]
+pub type SD0_REMAP_ARADDR_R = crate::FieldReader;
+#[doc = "Field `sd0_remap_araddr` writer - sd0_remap_araddr"]
+pub type SD0_REMAP_ARADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
 impl R {
-    #[doc = "Bits 0:3 - scfg_e24_remap_haddr"]
+    #[doc = "Bits 0:3 - e24_remap_haddr"]
     #[inline(always)]
-    pub fn scfg_e24_remap_haddr(&self) -> SCFG_E24_REMAP_HADDR_R {
-        SCFG_E24_REMAP_HADDR_R::new((self.bits & 0x0f) as u8)
+    pub fn e24_remap_haddr(&self) -> E24_REMAP_HADDR_R {
+        E24_REMAP_HADDR_R::new((self.bits & 0x0f) as u8)
     }
-    #[doc = "Bits 4:7 - scfg_hifi4_idma_remap_araddr"]
+    #[doc = "Bits 4:7 - hifi4_idma_remap_araddr"]
     #[inline(always)]
-    pub fn scfg_hifi4_idma_remap_araddr(&self) -> SCFG_HIFI4_IDMA_REMAP_ARADDR_R {
-        SCFG_HIFI4_IDMA_REMAP_ARADDR_R::new(((self.bits >> 4) & 0x0f) as u8)
+    pub fn hifi4_idma_remap_araddr(&self) -> HIFI4_IDMA_REMAP_ARADDR_R {
+        HIFI4_IDMA_REMAP_ARADDR_R::new(((self.bits >> 4) & 0x0f) as u8)
     }
-    #[doc = "Bits 8:11 - scfg_hifi4_idma_remap_awaddr"]
+    #[doc = "Bits 8:11 - hifi4_idma_remap_awaddr"]
     #[inline(always)]
-    pub fn scfg_hifi4_idma_remap_awaddr(&self) -> SCFG_HIFI4_IDMA_REMAP_AWADDR_R {
-        SCFG_HIFI4_IDMA_REMAP_AWADDR_R::new(((self.bits >> 8) & 0x0f) as u8)
+    pub fn hifi4_idma_remap_awaddr(&self) -> HIFI4_IDMA_REMAP_AWADDR_R {
+        HIFI4_IDMA_REMAP_AWADDR_R::new(((self.bits >> 8) & 0x0f) as u8)
     }
-    #[doc = "Bits 12:15 - scfg_hifi4_sys_remap_araddr"]
+    #[doc = "Bits 12:15 - hifi4_sys_remap_araddr"]
     #[inline(always)]
-    pub fn scfg_hifi4_sys_remap_araddr(&self) -> SCFG_HIFI4_SYS_REMAP_ARADDR_R {
-        SCFG_HIFI4_SYS_REMAP_ARADDR_R::new(((self.bits >> 12) & 0x0f) as u8)
+    pub fn hifi4_sys_remap_araddr(&self) -> HIFI4_SYS_REMAP_ARADDR_R {
+        HIFI4_SYS_REMAP_ARADDR_R::new(((self.bits >> 12) & 0x0f) as u8)
     }
-    #[doc = "Bits 16:19 - scfg_hifi4_sys_remap_awaddr"]
+    #[doc = "Bits 16:19 - hifi4_sys_remap_awaddr"]
     #[inline(always)]
-    pub fn scfg_hifi4_sys_remap_awaddr(&self) -> SCFG_HIFI4_SYS_REMAP_AWADDR_R {
-        SCFG_HIFI4_SYS_REMAP_AWADDR_R::new(((self.bits >> 16) & 0x0f) as u8)
+    pub fn hifi4_sys_remap_awaddr(&self) -> HIFI4_SYS_REMAP_AWADDR_R {
+        HIFI4_SYS_REMAP_AWADDR_R::new(((self.bits >> 16) & 0x0f) as u8)
     }
-    #[doc = "Bits 20:23 - scfg_jpg_remap_araddr"]
+    #[doc = "Bits 20:23 - jpg_remap_araddr"]
     #[inline(always)]
-    pub fn scfg_jpg_remap_araddr(&self) -> SCFG_JPG_REMAP_ARADDR_R {
-        SCFG_JPG_REMAP_ARADDR_R::new(((self.bits >> 20) & 0x0f) as u8)
+    pub fn jpg_remap_araddr(&self) -> JPG_REMAP_ARADDR_R {
+        JPG_REMAP_ARADDR_R::new(((self.bits >> 20) & 0x0f) as u8)
     }
-    #[doc = "Bits 24:27 - scfg_jpg_remap_awaddr"]
+    #[doc = "Bits 24:27 - jpg_remap_awaddr"]
     #[inline(always)]
-    pub fn scfg_jpg_remap_awaddr(&self) -> SCFG_JPG_REMAP_AWADDR_R {
-        SCFG_JPG_REMAP_AWADDR_R::new(((self.bits >> 24) & 0x0f) as u8)
+    pub fn jpg_remap_awaddr(&self) -> JPG_REMAP_AWADDR_R {
+        JPG_REMAP_AWADDR_R::new(((self.bits >> 24) & 0x0f) as u8)
     }
-    #[doc = "Bits 28:31 - scfg_sd0_remap_araddr"]
+    #[doc = "Bits 28:31 - sd0_remap_araddr"]
     #[inline(always)]
-    pub fn scfg_sd0_remap_araddr(&self) -> SCFG_SD0_REMAP_ARADDR_R {
-        SCFG_SD0_REMAP_ARADDR_R::new(((self.bits >> 28) & 0x0f) as u8)
+    pub fn sd0_remap_araddr(&self) -> SD0_REMAP_ARADDR_R {
+        SD0_REMAP_ARADDR_R::new(((self.bits >> 28) & 0x0f) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 0:3 - scfg_e24_remap_haddr"]
+    #[doc = "Bits 0:3 - e24_remap_haddr"]
     #[inline(always)]
     #[must_use]
-    pub fn scfg_e24_remap_haddr(&mut self) -> SCFG_E24_REMAP_HADDR_W<SYS_SYSCFG_0_SPEC> {
-        SCFG_E24_REMAP_HADDR_W::new(self, 0)
+    pub fn e24_remap_haddr(&mut self) -> E24_REMAP_HADDR_W<SYS_SYSCFG_0_SPEC> {
+        E24_REMAP_HADDR_W::new(self, 0)
     }
-    #[doc = "Bits 4:7 - scfg_hifi4_idma_remap_araddr"]
+    #[doc = "Bits 4:7 - hifi4_idma_remap_araddr"]
     #[inline(always)]
     #[must_use]
-    pub fn scfg_hifi4_idma_remap_araddr(
-        &mut self,
-    ) -> SCFG_HIFI4_IDMA_REMAP_ARADDR_W<SYS_SYSCFG_0_SPEC> {
-        SCFG_HIFI4_IDMA_REMAP_ARADDR_W::new(self, 4)
+    pub fn hifi4_idma_remap_araddr(&mut self) -> HIFI4_IDMA_REMAP_ARADDR_W<SYS_SYSCFG_0_SPEC> {
+        HIFI4_IDMA_REMAP_ARADDR_W::new(self, 4)
     }
-    #[doc = "Bits 8:11 - scfg_hifi4_idma_remap_awaddr"]
+    #[doc = "Bits 8:11 - hifi4_idma_remap_awaddr"]
     #[inline(always)]
     #[must_use]
-    pub fn scfg_hifi4_idma_remap_awaddr(
-        &mut self,
-    ) -> SCFG_HIFI4_IDMA_REMAP_AWADDR_W<SYS_SYSCFG_0_SPEC> {
-        SCFG_HIFI4_IDMA_REMAP_AWADDR_W::new(self, 8)
+    pub fn hifi4_idma_remap_awaddr(&mut self) -> HIFI4_IDMA_REMAP_AWADDR_W<SYS_SYSCFG_0_SPEC> {
+        HIFI4_IDMA_REMAP_AWADDR_W::new(self, 8)
     }
-    #[doc = "Bits 12:15 - scfg_hifi4_sys_remap_araddr"]
+    #[doc = "Bits 12:15 - hifi4_sys_remap_araddr"]
     #[inline(always)]
     #[must_use]
-    pub fn scfg_hifi4_sys_remap_araddr(
-        &mut self,
-    ) -> SCFG_HIFI4_SYS_REMAP_ARADDR_W<SYS_SYSCFG_0_SPEC> {
-        SCFG_HIFI4_SYS_REMAP_ARADDR_W::new(self, 12)
+    pub fn hifi4_sys_remap_araddr(&mut self) -> HIFI4_SYS_REMAP_ARADDR_W<SYS_SYSCFG_0_SPEC> {
+        HIFI4_SYS_REMAP_ARADDR_W::new(self, 12)
     }
-    #[doc = "Bits 16:19 - scfg_hifi4_sys_remap_awaddr"]
+    #[doc = "Bits 16:19 - hifi4_sys_remap_awaddr"]
     #[inline(always)]
     #[must_use]
-    pub fn scfg_hifi4_sys_remap_awaddr(
-        &mut self,
-    ) -> SCFG_HIFI4_SYS_REMAP_AWADDR_W<SYS_SYSCFG_0_SPEC> {
-        SCFG_HIFI4_SYS_REMAP_AWADDR_W::new(self, 16)
+    pub fn hifi4_sys_remap_awaddr(&mut self) -> HIFI4_SYS_REMAP_AWADDR_W<SYS_SYSCFG_0_SPEC> {
+        HIFI4_SYS_REMAP_AWADDR_W::new(self, 16)
     }
-    #[doc = "Bits 20:23 - scfg_jpg_remap_araddr"]
+    #[doc = "Bits 20:23 - jpg_remap_araddr"]
     #[inline(always)]
     #[must_use]
-    pub fn scfg_jpg_remap_araddr(&mut self) -> SCFG_JPG_REMAP_ARADDR_W<SYS_SYSCFG_0_SPEC> {
-        SCFG_JPG_REMAP_ARADDR_W::new(self, 20)
+    pub fn jpg_remap_araddr(&mut self) -> JPG_REMAP_ARADDR_W<SYS_SYSCFG_0_SPEC> {
+        JPG_REMAP_ARADDR_W::new(self, 20)
     }
-    #[doc = "Bits 24:27 - scfg_jpg_remap_awaddr"]
+    #[doc = "Bits 24:27 - jpg_remap_awaddr"]
     #[inline(always)]
     #[must_use]
-    pub fn scfg_jpg_remap_awaddr(&mut self) -> SCFG_JPG_REMAP_AWADDR_W<SYS_SYSCFG_0_SPEC> {
-        SCFG_JPG_REMAP_AWADDR_W::new(self, 24)
+    pub fn jpg_remap_awaddr(&mut self) -> JPG_REMAP_AWADDR_W<SYS_SYSCFG_0_SPEC> {
+        JPG_REMAP_AWADDR_W::new(self, 24)
     }
-    #[doc = "Bits 28:31 - scfg_sd0_remap_araddr"]
+    #[doc = "Bits 28:31 - sd0_remap_araddr"]
     #[inline(always)]
     #[must_use]
-    pub fn scfg_sd0_remap_araddr(&mut self) -> SCFG_SD0_REMAP_ARADDR_W<SYS_SYSCFG_0_SPEC> {
-        SCFG_SD0_REMAP_ARADDR_W::new(self, 28)
+    pub fn sd0_remap_araddr(&mut self) -> SD0_REMAP_ARADDR_W<SYS_SYSCFG_0_SPEC> {
+        SD0_REMAP_ARADDR_W::new(self, 28)
     }
     #[doc = r" Writes raw bits to the register."]
     #[doc = r""]

@@ -2,18 +2,18 @@
 pub type R = crate::R<SYS_SYSCFG_6_SPEC>;
 #[doc = "Register `sys_syscfg_6` writer"]
 pub type W = crate::W<SYS_SYSCFG_6_SPEC>;
-#[doc = "Field `u0_sdio_m_hbig_endian` reader - AHB master bus interface endianess: 1: Big-endian AHB bus interface, 0: Little-endian AHB bus interface"]
-pub type U0_SDIO_M_HBIG_ENDIAN_R = crate::BitReader;
-#[doc = "Field `u0_sdio_m_hbig_endian` writer - AHB master bus interface endianess: 1: Big-endian AHB bus interface, 0: Little-endian AHB bus interface"]
-pub type U0_SDIO_M_HBIG_ENDIAN_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `u0_i2srx_3ch_adc_ena` reader - u0_i2srx_3ch_adc_ena"]
-pub type U0_I2SRX_3CH_ADC_ENA_R = crate::BitReader;
-#[doc = "Field `u0_i2srx_3ch_adc_ena` writer - u0_i2srx_3ch_adc_ena"]
-pub type U0_I2SRX_3CH_ADC_ENA_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `u0_intmem_rom_sram_scfg_disable_rom` reader - u0_intmem_rom_sram_scfg_disable_rom"]
-pub type U0_INTMEM_ROM_SRAM_SCFG_DISABLE_ROM_R = crate::BitReader;
-#[doc = "Field `u0_intmem_rom_sram_scfg_disable_rom` writer - u0_intmem_rom_sram_scfg_disable_rom"]
-pub type U0_INTMEM_ROM_SRAM_SCFG_DISABLE_ROM_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `sdio_m_hbig_endian` reader - AHB master bus interface endianess: 1: Big-endian AHB bus interface, 0: Little-endian AHB bus interface"]
+pub type SDIO_M_HBIG_ENDIAN_R = crate::BitReader;
+#[doc = "Field `sdio_m_hbig_endian` writer - AHB master bus interface endianess: 1: Big-endian AHB bus interface, 0: Little-endian AHB bus interface"]
+pub type SDIO_M_HBIG_ENDIAN_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `i2srx_adc_en` reader - i2srx_adc_en"]
+pub type I2SRX_ADC_EN_R = crate::BitReader;
+#[doc = "Field `i2srx_adc_en` writer - i2srx_adc_en"]
+pub type I2SRX_ADC_EN_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `intmem_rom_sram_scfg_disable_rom` reader - intmem_rom_sram_scfg_disable_rom"]
+pub type INTMEM_ROM_SRAM_SCFG_DISABLE_ROM_R = crate::BitReader;
+#[doc = "Field `intmem_rom_sram_scfg_disable_rom` writer - intmem_rom_sram_scfg_disable_rom"]
+pub type INTMEM_ROM_SRAM_SCFG_DISABLE_ROM_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_intmem_rom_sram_sram_config_slp` reader - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
 pub type U0_INTMEM_ROM_SRAM_SRAM_CONFIG_SLP_R = crate::BitReader;
 #[doc = "Field `u0_intmem_rom_sram_sram_config_slp` writer - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
@@ -46,18 +46,18 @@ pub type U0_INTMEM_ROM_SRAM_SRAM_CONFIG_VS_W<'a, REG> = crate::BitWriter<'a, REG
 pub type U0_INTMEM_ROM_SRAM_SRAM_CONFIG_VG_R = crate::BitReader;
 #[doc = "Field `u0_intmem_rom_sram_sram_config_vg` writer - SRAM/ROM configuration. VG: timing setting for debug purpose, default is 1'b1."]
 pub type U0_INTMEM_ROM_SRAM_SRAM_CONFIG_VG_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `u0_jtag_daisy_chain_jtag_en_0` reader - u0_jtag_daisy_chain_jtag_en_0"]
-pub type U0_JTAG_DAISY_CHAIN_JTAG_EN_0_R = crate::BitReader;
-#[doc = "Field `u0_jtag_daisy_chain_jtag_en_0` writer - u0_jtag_daisy_chain_jtag_en_0"]
-pub type U0_JTAG_DAISY_CHAIN_JTAG_EN_0_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `u0_jtag_daisy_chain_jtag_en_1` reader - u0_jtag_daisy_chain_jtag_en_1"]
-pub type U0_JTAG_DAISY_CHAIN_JTAG_EN_1_R = crate::BitReader;
-#[doc = "Field `u0_jtag_daisy_chain_jtag_en_1` writer - u0_jtag_daisy_chain_jtag_en_1"]
-pub type U0_JTAG_DAISY_CHAIN_JTAG_EN_1_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `u0_pdrstn_split_sw_usbpipe_plugen` reader - u0_pdrstn_split_sw_usbpipe_plugen"]
-pub type U0_PDRSTN_SPLIT_SW_USBPIPE_PLUGEN_R = crate::BitReader;
-#[doc = "Field `u0_pdrstn_split_sw_usbpipe_plugen` writer - u0_pdrstn_split_sw_usbpipe_plugen"]
-pub type U0_PDRSTN_SPLIT_SW_USBPIPE_PLUGEN_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `jtag_daisy_chain_en_0` reader - jtag_daisy_chain_en_0"]
+pub type JTAG_DAISY_CHAIN_EN_0_R = crate::BitReader;
+#[doc = "Field `jtag_daisy_chain_en_0` writer - jtag_daisy_chain_en_0"]
+pub type JTAG_DAISY_CHAIN_EN_0_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `jtag_daisy_chain_en_1` reader - jtag_daisy_chain_en_1"]
+pub type JTAG_DAISY_CHAIN_EN_1_R = crate::BitReader;
+#[doc = "Field `jtag_daisy_chain_en_1` writer - jtag_daisy_chain_en_1"]
+pub type JTAG_DAISY_CHAIN_EN_1_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `pdrstn_usbpipe_plugen` reader - pdrstn_usbpipe_plugen"]
+pub type PDRSTN_USBPIPE_PLUGEN_R = crate::BitReader;
+#[doc = "Field `pdrstn_usbpipe_plugen` writer - pdrstn_usbpipe_plugen"]
+pub type PDRSTN_USBPIPE_PLUGEN_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `pll0_cpi_bias` reader - pll0_cpi_bias"]
 pub type PLL0_CPI_BIAS_R = crate::FieldReader;
 #[doc = "Field `pll0_cpi_bias` writer - pll0_cpi_bias"]
@@ -77,18 +77,18 @@ pub type PLL0_DSMPD_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - AHB master bus interface endianess: 1: Big-endian AHB bus interface, 0: Little-endian AHB bus interface"]
     #[inline(always)]
-    pub fn u0_sdio_m_hbig_endian(&self) -> U0_SDIO_M_HBIG_ENDIAN_R {
-        U0_SDIO_M_HBIG_ENDIAN_R::new((self.bits & 1) != 0)
+    pub fn sdio_m_hbig_endian(&self) -> SDIO_M_HBIG_ENDIAN_R {
+        SDIO_M_HBIG_ENDIAN_R::new((self.bits & 1) != 0)
     }
-    #[doc = "Bit 1 - u0_i2srx_3ch_adc_ena"]
+    #[doc = "Bit 1 - i2srx_adc_en"]
     #[inline(always)]
-    pub fn u0_i2srx_3ch_adc_ena(&self) -> U0_I2SRX_3CH_ADC_ENA_R {
-        U0_I2SRX_3CH_ADC_ENA_R::new(((self.bits >> 1) & 1) != 0)
+    pub fn i2srx_adc_en(&self) -> I2SRX_ADC_EN_R {
+        I2SRX_ADC_EN_R::new(((self.bits >> 1) & 1) != 0)
     }
-    #[doc = "Bit 2 - u0_intmem_rom_sram_scfg_disable_rom"]
+    #[doc = "Bit 2 - intmem_rom_sram_scfg_disable_rom"]
     #[inline(always)]
-    pub fn u0_intmem_rom_sram_scfg_disable_rom(&self) -> U0_INTMEM_ROM_SRAM_SCFG_DISABLE_ROM_R {
-        U0_INTMEM_ROM_SRAM_SCFG_DISABLE_ROM_R::new(((self.bits >> 2) & 1) != 0)
+    pub fn intmem_rom_sram_scfg_disable_rom(&self) -> INTMEM_ROM_SRAM_SCFG_DISABLE_ROM_R {
+        INTMEM_ROM_SRAM_SCFG_DISABLE_ROM_R::new(((self.bits >> 2) & 1) != 0)
     }
     #[doc = "Bit 3 - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
     #[inline(always)]
@@ -130,20 +130,20 @@ impl R {
     pub fn u0_intmem_rom_sram_sram_config_vg(&self) -> U0_INTMEM_ROM_SRAM_SRAM_CONFIG_VG_R {
         U0_INTMEM_ROM_SRAM_SRAM_CONFIG_VG_R::new(((self.bits >> 14) & 1) != 0)
     }
-    #[doc = "Bit 15 - u0_jtag_daisy_chain_jtag_en_0"]
+    #[doc = "Bit 15 - jtag_daisy_chain_en_0"]
     #[inline(always)]
-    pub fn u0_jtag_daisy_chain_jtag_en_0(&self) -> U0_JTAG_DAISY_CHAIN_JTAG_EN_0_R {
-        U0_JTAG_DAISY_CHAIN_JTAG_EN_0_R::new(((self.bits >> 15) & 1) != 0)
+    pub fn jtag_daisy_chain_en_0(&self) -> JTAG_DAISY_CHAIN_EN_0_R {
+        JTAG_DAISY_CHAIN_EN_0_R::new(((self.bits >> 15) & 1) != 0)
     }
-    #[doc = "Bit 16 - u0_jtag_daisy_chain_jtag_en_1"]
+    #[doc = "Bit 16 - jtag_daisy_chain_en_1"]
     #[inline(always)]
-    pub fn u0_jtag_daisy_chain_jtag_en_1(&self) -> U0_JTAG_DAISY_CHAIN_JTAG_EN_1_R {
-        U0_JTAG_DAISY_CHAIN_JTAG_EN_1_R::new(((self.bits >> 16) & 1) != 0)
+    pub fn jtag_daisy_chain_en_1(&self) -> JTAG_DAISY_CHAIN_EN_1_R {
+        JTAG_DAISY_CHAIN_EN_1_R::new(((self.bits >> 16) & 1) != 0)
     }
-    #[doc = "Bit 17 - u0_pdrstn_split_sw_usbpipe_plugen"]
+    #[doc = "Bit 17 - pdrstn_usbpipe_plugen"]
     #[inline(always)]
-    pub fn u0_pdrstn_split_sw_usbpipe_plugen(&self) -> U0_PDRSTN_SPLIT_SW_USBPIPE_PLUGEN_R {
-        U0_PDRSTN_SPLIT_SW_USBPIPE_PLUGEN_R::new(((self.bits >> 17) & 1) != 0)
+    pub fn pdrstn_usbpipe_plugen(&self) -> PDRSTN_USBPIPE_PLUGEN_R {
+        PDRSTN_USBPIPE_PLUGEN_R::new(((self.bits >> 17) & 1) != 0)
     }
     #[doc = "Bits 18:20 - pll0_cpi_bias"]
     #[inline(always)]
@@ -170,22 +170,22 @@ impl W {
     #[doc = "Bit 0 - AHB master bus interface endianess: 1: Big-endian AHB bus interface, 0: Little-endian AHB bus interface"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_sdio_m_hbig_endian(&mut self) -> U0_SDIO_M_HBIG_ENDIAN_W<SYS_SYSCFG_6_SPEC> {
-        U0_SDIO_M_HBIG_ENDIAN_W::new(self, 0)
+    pub fn sdio_m_hbig_endian(&mut self) -> SDIO_M_HBIG_ENDIAN_W<SYS_SYSCFG_6_SPEC> {
+        SDIO_M_HBIG_ENDIAN_W::new(self, 0)
     }
-    #[doc = "Bit 1 - u0_i2srx_3ch_adc_ena"]
+    #[doc = "Bit 1 - i2srx_adc_en"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_i2srx_3ch_adc_ena(&mut self) -> U0_I2SRX_3CH_ADC_ENA_W<SYS_SYSCFG_6_SPEC> {
-        U0_I2SRX_3CH_ADC_ENA_W::new(self, 1)
+    pub fn i2srx_adc_en(&mut self) -> I2SRX_ADC_EN_W<SYS_SYSCFG_6_SPEC> {
+        I2SRX_ADC_EN_W::new(self, 1)
     }
-    #[doc = "Bit 2 - u0_intmem_rom_sram_scfg_disable_rom"]
+    #[doc = "Bit 2 - intmem_rom_sram_scfg_disable_rom"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_intmem_rom_sram_scfg_disable_rom(
+    pub fn intmem_rom_sram_scfg_disable_rom(
         &mut self,
-    ) -> U0_INTMEM_ROM_SRAM_SCFG_DISABLE_ROM_W<SYS_SYSCFG_6_SPEC> {
-        U0_INTMEM_ROM_SRAM_SCFG_DISABLE_ROM_W::new(self, 2)
+    ) -> INTMEM_ROM_SRAM_SCFG_DISABLE_ROM_W<SYS_SYSCFG_6_SPEC> {
+        INTMEM_ROM_SRAM_SCFG_DISABLE_ROM_W::new(self, 2)
     }
     #[doc = "Bit 3 - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
     #[inline(always)]
@@ -251,29 +251,23 @@ impl W {
     ) -> U0_INTMEM_ROM_SRAM_SRAM_CONFIG_VG_W<SYS_SYSCFG_6_SPEC> {
         U0_INTMEM_ROM_SRAM_SRAM_CONFIG_VG_W::new(self, 14)
     }
-    #[doc = "Bit 15 - u0_jtag_daisy_chain_jtag_en_0"]
+    #[doc = "Bit 15 - jtag_daisy_chain_en_0"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_jtag_daisy_chain_jtag_en_0(
-        &mut self,
-    ) -> U0_JTAG_DAISY_CHAIN_JTAG_EN_0_W<SYS_SYSCFG_6_SPEC> {
-        U0_JTAG_DAISY_CHAIN_JTAG_EN_0_W::new(self, 15)
+    pub fn jtag_daisy_chain_en_0(&mut self) -> JTAG_DAISY_CHAIN_EN_0_W<SYS_SYSCFG_6_SPEC> {
+        JTAG_DAISY_CHAIN_EN_0_W::new(self, 15)
     }
-    #[doc = "Bit 16 - u0_jtag_daisy_chain_jtag_en_1"]
+    #[doc = "Bit 16 - jtag_daisy_chain_en_1"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_jtag_daisy_chain_jtag_en_1(
-        &mut self,
-    ) -> U0_JTAG_DAISY_CHAIN_JTAG_EN_1_W<SYS_SYSCFG_6_SPEC> {
-        U0_JTAG_DAISY_CHAIN_JTAG_EN_1_W::new(self, 16)
+    pub fn jtag_daisy_chain_en_1(&mut self) -> JTAG_DAISY_CHAIN_EN_1_W<SYS_SYSCFG_6_SPEC> {
+        JTAG_DAISY_CHAIN_EN_1_W::new(self, 16)
     }
-    #[doc = "Bit 17 - u0_pdrstn_split_sw_usbpipe_plugen"]
+    #[doc = "Bit 17 - pdrstn_usbpipe_plugen"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_pdrstn_split_sw_usbpipe_plugen(
-        &mut self,
-    ) -> U0_PDRSTN_SPLIT_SW_USBPIPE_PLUGEN_W<SYS_SYSCFG_6_SPEC> {
-        U0_PDRSTN_SPLIT_SW_USBPIPE_PLUGEN_W::new(self, 17)
+    pub fn pdrstn_usbpipe_plugen(&mut self) -> PDRSTN_USBPIPE_PLUGEN_W<SYS_SYSCFG_6_SPEC> {
+        PDRSTN_USBPIPE_PLUGEN_W::new(self, 17)
     }
     #[doc = "Bits 18:20 - pll0_cpi_bias"]
     #[inline(always)]

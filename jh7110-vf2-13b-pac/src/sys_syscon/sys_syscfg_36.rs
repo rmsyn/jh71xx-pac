@@ -2,32 +2,30 @@
 pub type R = crate::R<SYS_SYSCFG_36_SPEC>;
 #[doc = "Register `sys_syscfg_36` writer"]
 pub type W = crate::W<SYS_SYSCFG_36_SPEC>;
-#[doc = "Field `u1_gmac5_axi64_mac_speed_0` reader - u1_gmac5_axi64_mac_speed_0"]
-pub type U1_GMAC5_AXI64_MAC_SPEED_0_R = crate::FieldReader;
-#[doc = "Field `u1_gmac5_axi64_phy_intf_sel_i` reader - Active PHY Selected | When you have multiple GMAC PHY interfaces in your configuration, this field indicates the sampled value of the PHY selector during reset de-assertion. | Values: 0x0:(GMII or MII), 0x01:RGMII, 0x2:SGMII, 0x3:TBI, 0x4:RMII, 0x5:RTBI, 0x6:SMII, 0x7:REVMII"]
-pub type U1_GMAC5_AXI64_PHY_INTF_SEL_I_R = crate::FieldReader;
-#[doc = "Field `u1_gmac5_axi64_phy_intf_sel_i` writer - Active PHY Selected | When you have multiple GMAC PHY interfaces in your configuration, this field indicates the sampled value of the PHY selector during reset de-assertion. | Values: 0x0:(GMII or MII), 0x01:RGMII, 0x2:SGMII, 0x3:TBI, 0x4:RMII, 0x5:RTBI, 0x6:SMII, 0x7:REVMII"]
-pub type U1_GMAC5_AXI64_PHY_INTF_SEL_I_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
+#[doc = "Field `gmac5_axi64_mac_speed` reader - gmac5_axi64_mac_speed"]
+pub type GMAC5_AXI64_MAC_SPEED_R = crate::FieldReader;
+#[doc = "Field `gmac5_axi64_phy_intf_sel` reader - Active PHY Selected | When you have multiple GMAC PHY interfaces in your configuration, this field indicates the sampled value of the PHY selector during reset de-assertion. | Values: 0x0:(GMII or MII), 0x01:RGMII, 0x2:SGMII, 0x3:TBI, 0x4:RMII, 0x5:RTBI, 0x6:SMII, 0x7:REVMII"]
+pub type GMAC5_AXI64_PHY_INTF_SEL_R = crate::FieldReader;
+#[doc = "Field `gmac5_axi64_phy_intf_sel` writer - Active PHY Selected | When you have multiple GMAC PHY interfaces in your configuration, this field indicates the sampled value of the PHY selector during reset de-assertion. | Values: 0x0:(GMII or MII), 0x01:RGMII, 0x2:SGMII, 0x3:TBI, 0x4:RMII, 0x5:RTBI, 0x6:SMII, 0x7:REVMII"]
+pub type GMAC5_AXI64_PHY_INTF_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
 impl R {
-    #[doc = "Bits 0:1 - u1_gmac5_axi64_mac_speed_0"]
+    #[doc = "Bits 0:1 - gmac5_axi64_mac_speed"]
     #[inline(always)]
-    pub fn u1_gmac5_axi64_mac_speed_0(&self) -> U1_GMAC5_AXI64_MAC_SPEED_0_R {
-        U1_GMAC5_AXI64_MAC_SPEED_0_R::new((self.bits & 3) as u8)
+    pub fn gmac5_axi64_mac_speed(&self) -> GMAC5_AXI64_MAC_SPEED_R {
+        GMAC5_AXI64_MAC_SPEED_R::new((self.bits & 3) as u8)
     }
     #[doc = "Bits 2:4 - Active PHY Selected | When you have multiple GMAC PHY interfaces in your configuration, this field indicates the sampled value of the PHY selector during reset de-assertion. | Values: 0x0:(GMII or MII), 0x01:RGMII, 0x2:SGMII, 0x3:TBI, 0x4:RMII, 0x5:RTBI, 0x6:SMII, 0x7:REVMII"]
     #[inline(always)]
-    pub fn u1_gmac5_axi64_phy_intf_sel_i(&self) -> U1_GMAC5_AXI64_PHY_INTF_SEL_I_R {
-        U1_GMAC5_AXI64_PHY_INTF_SEL_I_R::new(((self.bits >> 2) & 7) as u8)
+    pub fn gmac5_axi64_phy_intf_sel(&self) -> GMAC5_AXI64_PHY_INTF_SEL_R {
+        GMAC5_AXI64_PHY_INTF_SEL_R::new(((self.bits >> 2) & 7) as u8)
     }
 }
 impl W {
     #[doc = "Bits 2:4 - Active PHY Selected | When you have multiple GMAC PHY interfaces in your configuration, this field indicates the sampled value of the PHY selector during reset de-assertion. | Values: 0x0:(GMII or MII), 0x01:RGMII, 0x2:SGMII, 0x3:TBI, 0x4:RMII, 0x5:RTBI, 0x6:SMII, 0x7:REVMII"]
     #[inline(always)]
     #[must_use]
-    pub fn u1_gmac5_axi64_phy_intf_sel_i(
-        &mut self,
-    ) -> U1_GMAC5_AXI64_PHY_INTF_SEL_I_W<SYS_SYSCFG_36_SPEC> {
-        U1_GMAC5_AXI64_PHY_INTF_SEL_I_W::new(self, 2)
+    pub fn gmac5_axi64_phy_intf_sel(&mut self) -> GMAC5_AXI64_PHY_INTF_SEL_W<SYS_SYSCFG_36_SPEC> {
+        GMAC5_AXI64_PHY_INTF_SEL_W::new(self, 2)
     }
     #[doc = r" Writes raw bits to the register."]
     #[doc = r""]

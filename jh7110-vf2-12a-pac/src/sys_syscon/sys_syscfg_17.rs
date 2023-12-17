@@ -2,28 +2,27 @@
 pub type R = crate::R<SYS_SYSCFG_17_SPEC>;
 #[doc = "Register `sys_syscfg_17` writer"]
 pub type W = crate::W<SYS_SYSCFG_17_SPEC>;
-#[doc = "Field `u0_noc_bus_oic_qch_clock_stop_threshold_2` reader - u0_noc_bus_oic_qch_clock_stop_threshold_2"]
-pub type U0_NOC_BUS_OIC_QCH_CLOCK_STOP_THRESHOLD_2_R = crate::FieldReader<u32>;
-#[doc = "Field `u0_noc_bus_oic_qch_clock_stop_threshold_2` writer - u0_noc_bus_oic_qch_clock_stop_threshold_2"]
-pub type U0_NOC_BUS_OIC_QCH_CLOCK_STOP_THRESHOLD_2_W<'a, REG> =
-    crate::FieldWriter<'a, REG, 32, u32>;
+#[doc = "Field `noc_bus_oic_qch_clock_stop_threshold_2` reader - noc_bus_oic_qch_clock_stop_threshold_2"]
+pub type NOC_BUS_OIC_QCH_CLOCK_STOP_THRESHOLD_2_R = crate::FieldReader<u32>;
+#[doc = "Field `noc_bus_oic_qch_clock_stop_threshold_2` writer - noc_bus_oic_qch_clock_stop_threshold_2"]
+pub type NOC_BUS_OIC_QCH_CLOCK_STOP_THRESHOLD_2_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl R {
-    #[doc = "Bits 0:31 - u0_noc_bus_oic_qch_clock_stop_threshold_2"]
+    #[doc = "Bits 0:31 - noc_bus_oic_qch_clock_stop_threshold_2"]
     #[inline(always)]
-    pub fn u0_noc_bus_oic_qch_clock_stop_threshold_2(
+    pub fn noc_bus_oic_qch_clock_stop_threshold_2(
         &self,
-    ) -> U0_NOC_BUS_OIC_QCH_CLOCK_STOP_THRESHOLD_2_R {
-        U0_NOC_BUS_OIC_QCH_CLOCK_STOP_THRESHOLD_2_R::new(self.bits)
+    ) -> NOC_BUS_OIC_QCH_CLOCK_STOP_THRESHOLD_2_R {
+        NOC_BUS_OIC_QCH_CLOCK_STOP_THRESHOLD_2_R::new(self.bits)
     }
 }
 impl W {
-    #[doc = "Bits 0:31 - u0_noc_bus_oic_qch_clock_stop_threshold_2"]
+    #[doc = "Bits 0:31 - noc_bus_oic_qch_clock_stop_threshold_2"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_noc_bus_oic_qch_clock_stop_threshold_2(
+    pub fn noc_bus_oic_qch_clock_stop_threshold_2(
         &mut self,
-    ) -> U0_NOC_BUS_OIC_QCH_CLOCK_STOP_THRESHOLD_2_W<SYS_SYSCFG_17_SPEC> {
-        U0_NOC_BUS_OIC_QCH_CLOCK_STOP_THRESHOLD_2_W::new(self, 0)
+    ) -> NOC_BUS_OIC_QCH_CLOCK_STOP_THRESHOLD_2_W<SYS_SYSCFG_17_SPEC> {
+        NOC_BUS_OIC_QCH_CLOCK_STOP_THRESHOLD_2_W::new(self, 0)
     }
     #[doc = r" Writes raw bits to the register."]
     #[doc = r""]
