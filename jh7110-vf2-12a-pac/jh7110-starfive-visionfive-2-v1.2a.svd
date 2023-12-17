@@ -28290,7 +28290,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_gclk0</name>
+          <name>clk_gclk_0</name>
           <description>Clock GCLK 0</description>
           <addressOffset>0x58</addressOffset>
           <size>32</size>
@@ -28311,7 +28311,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_gclk1</name>
+          <name>clk_gclk_1</name>
           <description>Clock GCLK 1</description>
           <addressOffset>0x5c</addressOffset>
           <size>32</size>
@@ -28332,7 +28332,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_gclk2</name>
+          <name>clk_gclk_2</name>
           <description>Clock GCLK 2</description>
           <addressOffset>0x60</addressOffset>
           <size>32</size>
@@ -28353,7 +28353,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_u7mc_core0</name>
+          <name>clk_u7mc_core_0</name>
           <description>U7MC Core Clock 0</description>
           <addressOffset>0x64</addressOffset>
           <size>32</size>
@@ -28368,7 +28368,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_u7mc_core1</name>
+          <name>clk_u7mc_core_1</name>
           <description>U7MC Core Clock 1</description>
           <addressOffset>0x68</addressOffset>
           <size>32</size>
@@ -28383,7 +28383,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_u7mc_core2</name>
+          <name>clk_u7mc_core_2</name>
           <description>U7MC Core Clock 2</description>
           <addressOffset>0x6c</addressOffset>
           <size>32</size>
@@ -28398,7 +28398,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_u7mc_core3</name>
+          <name>clk_u7mc_core_3</name>
           <description>U7MC Core Clock 3</description>
           <addressOffset>0x70</addressOffset>
           <size>32</size>
@@ -28413,7 +28413,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_u7mc_core4</name>
+          <name>clk_u7mc_core_4</name>
           <description>U7MC Core Clock 4</description>
           <addressOffset>0x74</addressOffset>
           <size>32</size>
@@ -28458,7 +28458,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_u7mc_trace0</name>
+          <name>clk_u7mc_trace_0</name>
           <description>U7MC Trace Clock 0</description>
           <addressOffset>0x80</addressOffset>
           <size>32</size>
@@ -28473,7 +28473,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_u7mc_trace1</name>
+          <name>clk_u7mc_trace_1</name>
           <description>U7MC Trace Clock 1</description>
           <addressOffset>0x84</addressOffset>
           <size>32</size>
@@ -28488,7 +28488,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_u7mc_trace2</name>
+          <name>clk_u7mc_trace_2</name>
           <description>U7MC Trace Clock 2</description>
           <addressOffset>0x88</addressOffset>
           <size>32</size>
@@ -28503,7 +28503,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_u7mc_trace3</name>
+          <name>clk_u7mc_trace_3</name>
           <description>U7MC Trace Clock 3</description>
           <addressOffset>0x8c</addressOffset>
           <size>32</size>
@@ -28518,7 +28518,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_u7mc_trace4</name>
+          <name>clk_u7mc_trace_4</name>
           <description>U7MC Trace Clock 4</description>
           <addressOffset>0x90</addressOffset>
           <size>32</size>
@@ -28548,7 +28548,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_u0_sft7110_noc_bus_clk_cpu_axi</name>
+          <name>clk_u0_noc_bus_cpu_axi</name>
           <description>clk_u0_sft7110_noc_bus_clk_cpu_axi</description>
           <addressOffset>0x98</addressOffset>
           <size>32</size>
@@ -28563,7 +28563,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_u0_sft7110_noc_bus_clk_axicfg0_axi</name>
+          <name>clk_u0_noc_bus_axicfg0_axi</name>
           <description>clk_u0_sft7110_noc_bus_clk_axicfg0_axi</description>
           <addressOffset>0x9c</addressOffset>
           <size>32</size>
@@ -28638,8 +28638,8 @@
           </fields>
         </register>
         <register>
-          <name>clk_u0_ddr_sft7110_clk_axi</name>
-          <description>clk_u0_ddr_sfft7110_clk_axi</description>
+          <name>clk_u0_ddr_axi</name>
+          <description>clk_u0_ddr_axi</description>
           <addressOffset>0xb0</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
@@ -28734,7 +28734,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_u0_sft7110_noc_bus_clk_gpu_axi</name>
+          <name>clk_u0_noc_bus_gpu_axi</name>
           <description>clk_u0_sft7110_noc_bus_clk_gpu_axi</description>
           <addressOffset>0xc8</addressOffset>
           <size>32</size>
@@ -28749,7 +28749,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_u0_dom_isp_top_clk_dom_isp_top_clk_ispcore_2x</name>
+          <name>clk_u0_isp_ispcore_2x</name>
           <description>clk_u0_dom_isp_top_clk_dom_isp_top_clk_ispcore_2x</description>
           <addressOffset>0xcc</addressOffset>
           <size>32</size>
@@ -28764,7 +28764,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_u0_dom_isp_top_clk_dom_isp_top_clk_isp_axi</name>
+          <name>clk_u0_isp_axi</name>
           <description>clk_u0_dom_isp_top_clk_dom_isp_top_clk_isp_axi</description>
           <addressOffset>0xd0</addressOffset>
           <size>32</size>
@@ -28779,8 +28779,8 @@
           </fields>
         </register>
         <register>
-          <name>clk_u0_sft7110_noc_bux_clk_isp_axi</name>
-          <description>clk_u0_sft7110_noc_bux_clk_isp_axi</description>
+          <name>clk_u0_noc_bus_isp_axi</name>
+          <description>clk_u0_sft7110_noc_bus_clk_isp_axi</description>
           <addressOffset>0xd4</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
@@ -28854,7 +28854,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_u0_dom_vout_top_clk_dom_vout_top_clk_vout_src</name>
+          <name>clk_u0_vout_src</name>
           <description>clk_u0_dom_vout_top_clk_dom_vout_top_clk_vout_src</description>
           <addressOffset>0xe8</addressOffset>
           <size>32</size>
@@ -29742,7 +29742,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_sys_iomux_pclk</name>
+          <name>clk_pclk</name>
           <description>Clock SYS IOMUX PCLK</description>
           <addressOffset>0x1c0</addressOffset>
           <size>32</size>
@@ -29961,7 +29961,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_tim0</name>
+          <name>clk_tim_0</name>
           <description>Clock Timer 0</description>
           <addressOffset>0x1f4</addressOffset>
           <size>32</size>
@@ -29976,7 +29976,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_tim1</name>
+          <name>clk_tim_1</name>
           <description>Clock Timer 1</description>
           <addressOffset>0x1f8</addressOffset>
           <size>32</size>
@@ -29991,7 +29991,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_tim2</name>
+          <name>clk_tim_2</name>
           <description>Clock Timer 2</description>
           <addressOffset>0x1fc</addressOffset>
           <size>32</size>
@@ -30006,7 +30006,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_tim3</name>
+          <name>clk_tim_3</name>
           <description>Clock Timer 3</description>
           <addressOffset>0x200</addressOffset>
           <size>32</size>
@@ -30999,7 +30999,7 @@
           </fields>
         </register>
         <register>
-          <name>clk_jtag_cert_trng</name>
+          <name>clk_jtag_trng</name>
           <description>Clock JTAG Certification TRNG</description>
           <addressOffset>0x2f4</addressOffset>
           <size>32</size>
@@ -31014,7 +31014,7 @@
           </fields>
         </register>
         <register>
-          <name>soft_rst0_addr_sel</name>
+          <name>soft_rst_addr_sel_0</name>
           <description>Software RESET 0 Address Selector</description>
           <addressOffset>0x2f8</addressOffset>
           <size>32</size>
@@ -31215,7 +31215,7 @@
           </fields>
         </register>
         <register>
-          <name>soft_rst1_addr_sel</name>
+          <name>soft_rst_addr_sel_1</name>
           <description>Software RESET 1 Address Selector</description>
           <addressOffset>0x2fc</addressOffset>
           <size>32</size>
@@ -31416,7 +31416,7 @@
           </fields>
         </register>
         <register>
-          <name>soft_rst2_addr_sel</name>
+          <name>soft_rst_addr_sel_2</name>
           <description>Software RESET 2 Address Selector</description>
           <addressOffset>0x300</addressOffset>
           <size>32</size>
@@ -31617,7 +31617,7 @@
           </fields>
         </register>
         <register>
-          <name>soft_rst3_addr_sel</name>
+          <name>soft_rst_addr_sel_3</name>
           <description>Software RESET 3 Address Selector</description>
           <addressOffset>0x304</addressOffset>
           <size>32</size>
@@ -31806,7 +31806,7 @@
           </fields>
         </register>
         <register>
-          <name>syscrg_rst0_status</name>
+          <name>syscrg_rst_status_0</name>
           <description>SYSCRG RESET Status 0</description>
           <addressOffset>0x308</addressOffset>
           <size>32</size>
@@ -32007,7 +32007,7 @@
           </fields>
         </register>
         <register>
-          <name>syscrg_rst1_status</name>
+          <name>syscrg_rst_status_1</name>
           <description>SYSCRG RESET Status 1</description>
           <addressOffset>0x30c</addressOffset>
           <size>32</size>
@@ -32208,7 +32208,7 @@
           </fields>
         </register>
         <register>
-          <name>syscrg_rst2_status</name>
+          <name>syscrg_rst_status_2</name>
           <description>SYSCRG RESET Status 2</description>
           <addressOffset>0x310</addressOffset>
           <size>32</size>
@@ -32409,7 +32409,7 @@
           </fields>
         </register>
         <register>
-          <name>syscrg_rst3_status</name>
+          <name>syscrg_rst_status_3</name>
           <description>SYSCRG RESET Status 3</description>
           <addressOffset>0x314</addressOffset>
           <size>32</size>
