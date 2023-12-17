@@ -2,128 +2,128 @@
 pub type R = crate::R<SYS_SYSCFG_1_SPEC>;
 #[doc = "Register `sys_syscfg_1` writer"]
 pub type W = crate::W<SYS_SYSCFG_1_SPEC>;
-#[doc = "Field `scfg_sd1_remap_awaddr` reader - scfg_sd1_remap_awaddr"]
-pub type SCFG_SD1_REMAP_AWADDR_R = crate::FieldReader;
-#[doc = "Field `scfg_sd1_remap_awaddr` writer - scfg_sd1_remap_awaddr"]
-pub type SCFG_SD1_REMAP_AWADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
-#[doc = "Field `scfg_sec_haddr_remap` reader - scfg_sec_haddr_remap"]
-pub type SCFG_SEC_HADDR_REMAP_R = crate::FieldReader;
-#[doc = "Field `scfg_sec_haddr_remap` writer - scfg_sec_haddr_remap"]
-pub type SCFG_SEC_HADDR_REMAP_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
-#[doc = "Field `scfg_usb_araddr_remap` reader - scfg_usb_araddr_remap"]
-pub type SCFG_USB_ARADDR_REMAP_R = crate::FieldReader;
-#[doc = "Field `scfg_usb_araddr_remap` writer - scfg_usb_araddr_remap"]
-pub type SCFG_USB_ARADDR_REMAP_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
-#[doc = "Field `scfg_usb_awaddr_remap` reader - scfg_usb_awaddr_remap"]
-pub type SCFG_USB_AWADDR_REMAP_R = crate::FieldReader;
-#[doc = "Field `scfg_usb_awaddr_remap` writer - scfg_usb_awaddr_remap"]
-pub type SCFG_USB_AWADDR_REMAP_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
-#[doc = "Field `scfg_vdec_remap_awaddr` reader - scfg_vdec_remap_awaddr"]
-pub type SCFG_VDEC_REMAP_AWADDR_R = crate::FieldReader;
-#[doc = "Field `scfg_vdec_remap_awaddr` writer - scfg_vdec_remap_awaddr"]
-pub type SCFG_VDEC_REMAP_AWADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
-#[doc = "Field `scfg_venc_remap_araddr` reader - scfg_venc_remap_araddr"]
-pub type SCFG_VENC_REMAP_ARADDR_R = crate::FieldReader;
-#[doc = "Field `scfg_venc_remap_araddr` writer - scfg_venc_remap_araddr"]
-pub type SCFG_VENC_REMAP_ARADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
-#[doc = "Field `scfg_venc_remap_awaddr` reader - scfg_venc_remap_awaddr"]
-pub type SCFG_VENC_REMAP_AWADDR_R = crate::FieldReader;
-#[doc = "Field `scfg_venc_remap_awaddr` writer - scfg_venc_remap_awaddr"]
-pub type SCFG_VENC_REMAP_AWADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
-#[doc = "Field `scfg_vout0_remap_araddr` reader - scfg_vout0_remap_araddr"]
-pub type SCFG_VOUT0_REMAP_ARADDR_R = crate::FieldReader;
-#[doc = "Field `scfg_vout0_remap_araddr` writer - scfg_vout0_remap_araddr"]
-pub type SCFG_VOUT0_REMAP_ARADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+#[doc = "Field `sd1_remap_awaddr` reader - sd1_remap_awaddr"]
+pub type SD1_REMAP_AWADDR_R = crate::FieldReader;
+#[doc = "Field `sd1_remap_awaddr` writer - sd1_remap_awaddr"]
+pub type SD1_REMAP_AWADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+#[doc = "Field `sec_haddr_remap` reader - sec_haddr_remap"]
+pub type SEC_HADDR_REMAP_R = crate::FieldReader;
+#[doc = "Field `sec_haddr_remap` writer - sec_haddr_remap"]
+pub type SEC_HADDR_REMAP_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+#[doc = "Field `usb_araddr_remap` reader - usb_araddr_remap"]
+pub type USB_ARADDR_REMAP_R = crate::FieldReader;
+#[doc = "Field `usb_araddr_remap` writer - usb_araddr_remap"]
+pub type USB_ARADDR_REMAP_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+#[doc = "Field `usb_awaddr_remap` reader - usb_awaddr_remap"]
+pub type USB_AWADDR_REMAP_R = crate::FieldReader;
+#[doc = "Field `usb_awaddr_remap` writer - usb_awaddr_remap"]
+pub type USB_AWADDR_REMAP_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+#[doc = "Field `vdec_remap_awaddr` reader - vdec_remap_awaddr"]
+pub type VDEC_REMAP_AWADDR_R = crate::FieldReader;
+#[doc = "Field `vdec_remap_awaddr` writer - vdec_remap_awaddr"]
+pub type VDEC_REMAP_AWADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+#[doc = "Field `venc_remap_araddr` reader - venc_remap_araddr"]
+pub type VENC_REMAP_ARADDR_R = crate::FieldReader;
+#[doc = "Field `venc_remap_araddr` writer - venc_remap_araddr"]
+pub type VENC_REMAP_ARADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+#[doc = "Field `venc_remap_awaddr` reader - venc_remap_awaddr"]
+pub type VENC_REMAP_AWADDR_R = crate::FieldReader;
+#[doc = "Field `venc_remap_awaddr` writer - venc_remap_awaddr"]
+pub type VENC_REMAP_AWADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+#[doc = "Field `vout0_remap_araddr` reader - vout0_remap_araddr"]
+pub type VOUT0_REMAP_ARADDR_R = crate::FieldReader;
+#[doc = "Field `vout0_remap_araddr` writer - vout0_remap_araddr"]
+pub type VOUT0_REMAP_ARADDR_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
 impl R {
-    #[doc = "Bits 0:3 - scfg_sd1_remap_awaddr"]
+    #[doc = "Bits 0:3 - sd1_remap_awaddr"]
     #[inline(always)]
-    pub fn scfg_sd1_remap_awaddr(&self) -> SCFG_SD1_REMAP_AWADDR_R {
-        SCFG_SD1_REMAP_AWADDR_R::new((self.bits & 0x0f) as u8)
+    pub fn sd1_remap_awaddr(&self) -> SD1_REMAP_AWADDR_R {
+        SD1_REMAP_AWADDR_R::new((self.bits & 0x0f) as u8)
     }
-    #[doc = "Bits 4:7 - scfg_sec_haddr_remap"]
+    #[doc = "Bits 4:7 - sec_haddr_remap"]
     #[inline(always)]
-    pub fn scfg_sec_haddr_remap(&self) -> SCFG_SEC_HADDR_REMAP_R {
-        SCFG_SEC_HADDR_REMAP_R::new(((self.bits >> 4) & 0x0f) as u8)
+    pub fn sec_haddr_remap(&self) -> SEC_HADDR_REMAP_R {
+        SEC_HADDR_REMAP_R::new(((self.bits >> 4) & 0x0f) as u8)
     }
-    #[doc = "Bits 8:11 - scfg_usb_araddr_remap"]
+    #[doc = "Bits 8:11 - usb_araddr_remap"]
     #[inline(always)]
-    pub fn scfg_usb_araddr_remap(&self) -> SCFG_USB_ARADDR_REMAP_R {
-        SCFG_USB_ARADDR_REMAP_R::new(((self.bits >> 8) & 0x0f) as u8)
+    pub fn usb_araddr_remap(&self) -> USB_ARADDR_REMAP_R {
+        USB_ARADDR_REMAP_R::new(((self.bits >> 8) & 0x0f) as u8)
     }
-    #[doc = "Bits 12:15 - scfg_usb_awaddr_remap"]
+    #[doc = "Bits 12:15 - usb_awaddr_remap"]
     #[inline(always)]
-    pub fn scfg_usb_awaddr_remap(&self) -> SCFG_USB_AWADDR_REMAP_R {
-        SCFG_USB_AWADDR_REMAP_R::new(((self.bits >> 12) & 0x0f) as u8)
+    pub fn usb_awaddr_remap(&self) -> USB_AWADDR_REMAP_R {
+        USB_AWADDR_REMAP_R::new(((self.bits >> 12) & 0x0f) as u8)
     }
-    #[doc = "Bits 16:19 - scfg_vdec_remap_awaddr"]
+    #[doc = "Bits 16:19 - vdec_remap_awaddr"]
     #[inline(always)]
-    pub fn scfg_vdec_remap_awaddr(&self) -> SCFG_VDEC_REMAP_AWADDR_R {
-        SCFG_VDEC_REMAP_AWADDR_R::new(((self.bits >> 16) & 0x0f) as u8)
+    pub fn vdec_remap_awaddr(&self) -> VDEC_REMAP_AWADDR_R {
+        VDEC_REMAP_AWADDR_R::new(((self.bits >> 16) & 0x0f) as u8)
     }
-    #[doc = "Bits 20:23 - scfg_venc_remap_araddr"]
+    #[doc = "Bits 20:23 - venc_remap_araddr"]
     #[inline(always)]
-    pub fn scfg_venc_remap_araddr(&self) -> SCFG_VENC_REMAP_ARADDR_R {
-        SCFG_VENC_REMAP_ARADDR_R::new(((self.bits >> 20) & 0x0f) as u8)
+    pub fn venc_remap_araddr(&self) -> VENC_REMAP_ARADDR_R {
+        VENC_REMAP_ARADDR_R::new(((self.bits >> 20) & 0x0f) as u8)
     }
-    #[doc = "Bits 24:27 - scfg_venc_remap_awaddr"]
+    #[doc = "Bits 24:27 - venc_remap_awaddr"]
     #[inline(always)]
-    pub fn scfg_venc_remap_awaddr(&self) -> SCFG_VENC_REMAP_AWADDR_R {
-        SCFG_VENC_REMAP_AWADDR_R::new(((self.bits >> 24) & 0x0f) as u8)
+    pub fn venc_remap_awaddr(&self) -> VENC_REMAP_AWADDR_R {
+        VENC_REMAP_AWADDR_R::new(((self.bits >> 24) & 0x0f) as u8)
     }
-    #[doc = "Bits 28:31 - scfg_vout0_remap_araddr"]
+    #[doc = "Bits 28:31 - vout0_remap_araddr"]
     #[inline(always)]
-    pub fn scfg_vout0_remap_araddr(&self) -> SCFG_VOUT0_REMAP_ARADDR_R {
-        SCFG_VOUT0_REMAP_ARADDR_R::new(((self.bits >> 28) & 0x0f) as u8)
+    pub fn vout0_remap_araddr(&self) -> VOUT0_REMAP_ARADDR_R {
+        VOUT0_REMAP_ARADDR_R::new(((self.bits >> 28) & 0x0f) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 0:3 - scfg_sd1_remap_awaddr"]
+    #[doc = "Bits 0:3 - sd1_remap_awaddr"]
     #[inline(always)]
     #[must_use]
-    pub fn scfg_sd1_remap_awaddr(&mut self) -> SCFG_SD1_REMAP_AWADDR_W<SYS_SYSCFG_1_SPEC> {
-        SCFG_SD1_REMAP_AWADDR_W::new(self, 0)
+    pub fn sd1_remap_awaddr(&mut self) -> SD1_REMAP_AWADDR_W<SYS_SYSCFG_1_SPEC> {
+        SD1_REMAP_AWADDR_W::new(self, 0)
     }
-    #[doc = "Bits 4:7 - scfg_sec_haddr_remap"]
+    #[doc = "Bits 4:7 - sec_haddr_remap"]
     #[inline(always)]
     #[must_use]
-    pub fn scfg_sec_haddr_remap(&mut self) -> SCFG_SEC_HADDR_REMAP_W<SYS_SYSCFG_1_SPEC> {
-        SCFG_SEC_HADDR_REMAP_W::new(self, 4)
+    pub fn sec_haddr_remap(&mut self) -> SEC_HADDR_REMAP_W<SYS_SYSCFG_1_SPEC> {
+        SEC_HADDR_REMAP_W::new(self, 4)
     }
-    #[doc = "Bits 8:11 - scfg_usb_araddr_remap"]
+    #[doc = "Bits 8:11 - usb_araddr_remap"]
     #[inline(always)]
     #[must_use]
-    pub fn scfg_usb_araddr_remap(&mut self) -> SCFG_USB_ARADDR_REMAP_W<SYS_SYSCFG_1_SPEC> {
-        SCFG_USB_ARADDR_REMAP_W::new(self, 8)
+    pub fn usb_araddr_remap(&mut self) -> USB_ARADDR_REMAP_W<SYS_SYSCFG_1_SPEC> {
+        USB_ARADDR_REMAP_W::new(self, 8)
     }
-    #[doc = "Bits 12:15 - scfg_usb_awaddr_remap"]
+    #[doc = "Bits 12:15 - usb_awaddr_remap"]
     #[inline(always)]
     #[must_use]
-    pub fn scfg_usb_awaddr_remap(&mut self) -> SCFG_USB_AWADDR_REMAP_W<SYS_SYSCFG_1_SPEC> {
-        SCFG_USB_AWADDR_REMAP_W::new(self, 12)
+    pub fn usb_awaddr_remap(&mut self) -> USB_AWADDR_REMAP_W<SYS_SYSCFG_1_SPEC> {
+        USB_AWADDR_REMAP_W::new(self, 12)
     }
-    #[doc = "Bits 16:19 - scfg_vdec_remap_awaddr"]
+    #[doc = "Bits 16:19 - vdec_remap_awaddr"]
     #[inline(always)]
     #[must_use]
-    pub fn scfg_vdec_remap_awaddr(&mut self) -> SCFG_VDEC_REMAP_AWADDR_W<SYS_SYSCFG_1_SPEC> {
-        SCFG_VDEC_REMAP_AWADDR_W::new(self, 16)
+    pub fn vdec_remap_awaddr(&mut self) -> VDEC_REMAP_AWADDR_W<SYS_SYSCFG_1_SPEC> {
+        VDEC_REMAP_AWADDR_W::new(self, 16)
     }
-    #[doc = "Bits 20:23 - scfg_venc_remap_araddr"]
+    #[doc = "Bits 20:23 - venc_remap_araddr"]
     #[inline(always)]
     #[must_use]
-    pub fn scfg_venc_remap_araddr(&mut self) -> SCFG_VENC_REMAP_ARADDR_W<SYS_SYSCFG_1_SPEC> {
-        SCFG_VENC_REMAP_ARADDR_W::new(self, 20)
+    pub fn venc_remap_araddr(&mut self) -> VENC_REMAP_ARADDR_W<SYS_SYSCFG_1_SPEC> {
+        VENC_REMAP_ARADDR_W::new(self, 20)
     }
-    #[doc = "Bits 24:27 - scfg_venc_remap_awaddr"]
+    #[doc = "Bits 24:27 - venc_remap_awaddr"]
     #[inline(always)]
     #[must_use]
-    pub fn scfg_venc_remap_awaddr(&mut self) -> SCFG_VENC_REMAP_AWADDR_W<SYS_SYSCFG_1_SPEC> {
-        SCFG_VENC_REMAP_AWADDR_W::new(self, 24)
+    pub fn venc_remap_awaddr(&mut self) -> VENC_REMAP_AWADDR_W<SYS_SYSCFG_1_SPEC> {
+        VENC_REMAP_AWADDR_W::new(self, 24)
     }
-    #[doc = "Bits 28:31 - scfg_vout0_remap_araddr"]
+    #[doc = "Bits 28:31 - vout0_remap_araddr"]
     #[inline(always)]
     #[must_use]
-    pub fn scfg_vout0_remap_araddr(&mut self) -> SCFG_VOUT0_REMAP_ARADDR_W<SYS_SYSCFG_1_SPEC> {
-        SCFG_VOUT0_REMAP_ARADDR_W::new(self, 28)
+    pub fn vout0_remap_araddr(&mut self) -> VOUT0_REMAP_ARADDR_W<SYS_SYSCFG_1_SPEC> {
+        VOUT0_REMAP_ARADDR_W::new(self, 28)
     }
     #[doc = r" Writes raw bits to the register."]
     #[doc = r""]

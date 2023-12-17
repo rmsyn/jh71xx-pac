@@ -2,8 +2,8 @@
 pub type R = crate::R<SYS_SYSCFG_35_SPEC>;
 #[doc = "Register `sys_syscfg_35` writer"]
 pub type W = crate::W<SYS_SYSCFG_35_SPEC>;
-#[doc = "Field `u1_can_ctrl_host_if` reader - u1_can_ctrl_host_if"]
-pub type U1_CAN_CTRL_HOST_IF_R = crate::FieldReader<u32>;
+#[doc = "Field `can_ctrl_host_if_1` reader - can_ctrl_host_if_1"]
+pub type CAN_CTRL_HOST_IF_1_R = crate::FieldReader<u32>;
 #[doc = "Field `u1_gmac5_axi64_scfg_ram_cfg_slp` reader - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
 pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_SLP_R = crate::BitReader;
 #[doc = "Field `u1_gmac5_axi64_scfg_ram_cfg_slp` writer - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
@@ -37,10 +37,10 @@ pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_VG_R = crate::BitReader;
 #[doc = "Field `u1_gmac5_axi64_scfg_ram_cfg_vg` writer - SRAM/ROM configuration. VG: timing setting for debug purpose, default is 1'b1."]
 pub type U1_GMAC5_AXI64_SCFG_RAM_CFG_VG_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
-    #[doc = "Bits 0:18 - u1_can_ctrl_host_if"]
+    #[doc = "Bits 0:18 - can_ctrl_host_if_1"]
     #[inline(always)]
-    pub fn u1_can_ctrl_host_if(&self) -> U1_CAN_CTRL_HOST_IF_R {
-        U1_CAN_CTRL_HOST_IF_R::new(self.bits & 0x0007_ffff)
+    pub fn can_ctrl_host_if_1(&self) -> CAN_CTRL_HOST_IF_1_R {
+        CAN_CTRL_HOST_IF_1_R::new(self.bits & 0x0007_ffff)
     }
     #[doc = "Bit 19 - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
     #[inline(always)]

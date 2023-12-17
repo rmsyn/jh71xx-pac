@@ -2,13 +2,13 @@
 pub type R = crate::R<SYS_SYSCFG_38_SPEC>;
 #[doc = "Register `sys_syscfg_38` writer"]
 pub type W = crate::W<SYS_SYSCFG_38_SPEC>;
-#[doc = "Field `u1_gmac5_axi64_ptp_timestamp_o_63_32` reader - u1_gmac5_axi64_ptp_timestamp_o_63_32"]
-pub type U1_GMAC5_AXI64_PTP_TIMESTAMP_O_63_32_R = crate::FieldReader<u32>;
+#[doc = "Field `gmac5_axi64_ptp_timestamp_32_63` reader - gmac5_axi64_ptp_timestamp_32_63"]
+pub type GMAC5_AXI64_PTP_TIMESTAMP_32_63_R = crate::FieldReader<u32>;
 impl R {
-    #[doc = "Bits 0:31 - u1_gmac5_axi64_ptp_timestamp_o_63_32"]
+    #[doc = "Bits 0:31 - gmac5_axi64_ptp_timestamp_32_63"]
     #[inline(always)]
-    pub fn u1_gmac5_axi64_ptp_timestamp_o_63_32(&self) -> U1_GMAC5_AXI64_PTP_TIMESTAMP_O_63_32_R {
-        U1_GMAC5_AXI64_PTP_TIMESTAMP_O_63_32_R::new(self.bits)
+    pub fn gmac5_axi64_ptp_timestamp_32_63(&self) -> GMAC5_AXI64_PTP_TIMESTAMP_32_63_R {
+        GMAC5_AXI64_PTP_TIMESTAMP_32_63_R::new(self.bits)
     }
 }
 impl W {

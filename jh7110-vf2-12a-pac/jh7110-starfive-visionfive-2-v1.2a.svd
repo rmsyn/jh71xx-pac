@@ -32617,50 +32617,50 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>scfg_e24_remap_haddr</name>
-              <description>scfg_e24_remap_haddr</description>
+              <name>e24_remap_haddr</name>
+              <description>e24_remap_haddr</description>
               <bitRange>[3:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>scfg_hifi4_idma_remap_araddr</name>
-              <description>scfg_hifi4_idma_remap_araddr</description>
+              <name>hifi4_idma_remap_araddr</name>
+              <description>hifi4_idma_remap_araddr</description>
               <bitRange>[7:4]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>scfg_hifi4_idma_remap_awaddr</name>
-              <description>scfg_hifi4_idma_remap_awaddr</description>
+              <name>hifi4_idma_remap_awaddr</name>
+              <description>hifi4_idma_remap_awaddr</description>
               <bitRange>[11:8]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>scfg_hifi4_sys_remap_araddr</name>
-              <description>scfg_hifi4_sys_remap_araddr</description>
+              <name>hifi4_sys_remap_araddr</name>
+              <description>hifi4_sys_remap_araddr</description>
               <bitRange>[15:12]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>scfg_hifi4_sys_remap_awaddr</name>
-              <description>scfg_hifi4_sys_remap_awaddr</description>
+              <name>hifi4_sys_remap_awaddr</name>
+              <description>hifi4_sys_remap_awaddr</description>
               <bitRange>[19:16]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>scfg_jpg_remap_araddr</name>
-              <description>scfg_jpg_remap_araddr</description>
+              <name>jpg_remap_araddr</name>
+              <description>jpg_remap_araddr</description>
               <bitRange>[23:20]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>scfg_jpg_remap_awaddr</name>
-              <description>scfg_jpg_remap_awaddr</description>
+              <name>jpg_remap_awaddr</name>
+              <description>jpg_remap_awaddr</description>
               <bitRange>[27:24]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>scfg_sd0_remap_araddr</name>
-              <description>scfg_sd0_remap_araddr</description>
+              <name>sd0_remap_araddr</name>
+              <description>sd0_remap_araddr</description>
               <bitRange>[31:28]</bitRange>
               <access>read-write</access>
             </field>
@@ -32674,50 +32674,50 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>scfg_sd1_remap_awaddr</name>
-              <description>scfg_sd1_remap_awaddr</description>
+              <name>sd1_remap_awaddr</name>
+              <description>sd1_remap_awaddr</description>
               <bitRange>[3:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>scfg_sec_haddr_remap</name>
-              <description>scfg_sec_haddr_remap</description>
+              <name>sec_haddr_remap</name>
+              <description>sec_haddr_remap</description>
               <bitRange>[7:4]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>scfg_usb_araddr_remap</name>
-              <description>scfg_usb_araddr_remap</description>
+              <name>usb_araddr_remap</name>
+              <description>usb_araddr_remap</description>
               <bitRange>[11:8]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>scfg_usb_awaddr_remap</name>
-              <description>scfg_usb_awaddr_remap</description>
+              <name>usb_awaddr_remap</name>
+              <description>usb_awaddr_remap</description>
               <bitRange>[15:12]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>scfg_vdec_remap_awaddr</name>
-              <description>scfg_vdec_remap_awaddr</description>
+              <name>vdec_remap_awaddr</name>
+              <description>vdec_remap_awaddr</description>
               <bitRange>[19:16]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>scfg_venc_remap_araddr</name>
-              <description>scfg_venc_remap_araddr</description>
+              <name>venc_remap_araddr</name>
+              <description>venc_remap_araddr</description>
               <bitRange>[23:20]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>scfg_venc_remap_awaddr</name>
-              <description>scfg_venc_remap_awaddr</description>
+              <name>venc_remap_awaddr</name>
+              <description>venc_remap_awaddr</description>
               <bitRange>[27:24]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>scfg_vout0_remap_araddr</name>
-              <description>scfg_vout0_remap_araddr</description>
+              <name>vout0_remap_araddr</name>
+              <description>vout0_remap_araddr</description>
               <bitRange>[31:28]</bitRange>
               <access>read-write</access>
             </field>
@@ -32731,20 +32731,20 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>scfg_vout0_remap_awaddr</name>
-              <description>scfg_vout0_remap_awaddr</description>
+              <name>vout0_remap_awaddr</name>
+              <description>vout0_remap_awaddr</description>
               <bitRange>[3:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>scfg_vout1_remap_araddr</name>
-              <description>scfg_vout1_remap_araddr</description>
+              <name>vout1_remap_araddr</name>
+              <description>vout1_remap_araddr</description>
               <bitRange>[7:4]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>scfg_vout1_remap_awaddr</name>
-              <description>scfg_vout1_remap_awaddr</description>
+              <name>vout1_remap_awaddr</name>
+              <description>vout1_remap_awaddr</description>
               <bitRange>[11:8]</bitRange>
               <access>read-write</access>
             </field>
@@ -32758,25 +32758,25 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>scfg_vout0_remap_awaddr_gpio0</name>
+              <name>vout0_remap_awaddr_gpio0</name>
               <description>0: GPIO Group 0 (GPIO21-35) voltage select 3.3V, 1: GPIO Group 0 (GPIO21-35) voltage select 1.8V</description>
               <bitRange>[0:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>scfg_vout0_remap_awaddr_gpio1</name>
+              <name>vout0_remap_awaddr_gpio1</name>
               <description>0: GPIO Group 1 (GPIO36-63) voltage select 3.3V, 1: GPIO Group 1 (GPIO36-63) voltage select 1.8V</description>
               <bitRange>[1:1]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>scfg_vout0_remap_awaddr_gpio2</name>
+              <name>vout0_remap_awaddr_gpio2</name>
               <description>0: GPIO Group 2 (GPIO0-6) voltage select 3.3V, 1: GPIO Group 2 (GPIO0-6) voltage select 1.8V</description>
               <bitRange>[2:2]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>scfg_vout0_remap_awaddr_gpio3</name>
+              <name>vout0_remap_awaddr_gpio3</name>
               <description>0: GPIO Group 3 (GPIO7-20) voltage select 3.3V, 1: GPIO Group 3 (GPIO7-20) voltage select 1.8V</description>
               <bitRange>[3:3]</bitRange>
               <access>read-write</access>
@@ -32791,37 +32791,37 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_coda12_o_cur_inst_a</name>
+              <name>coda12_cur_inst</name>
               <description>Tie 0 in JPU internal, do not care</description>
               <bitRange>[1:0]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_wave511_o_vpu_idle</name>
+              <name>wave511_vpu_idle</name>
               <description>VPU monitoring signal</description>
               <bitRange>[2:2]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_can_ctrl_can_fd_enable</name>
-              <description>u0_can_ctrl_can_fd_enable</description>
+              <name>can_ctrl_fd_enable_0</name>
+              <description>can_ctrl_fd_enable_0</description>
               <bitRange>[3:3]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_can_ctrl_host_ecc_disable</name>
-              <description>u0_can_ctrl_host_ecc_disable</description>
+              <name>can_ctrl_host_ecc_disable_0</name>
+              <description>can_ctrl_host_ecc_disable_0</description>
               <bitRange>[4:4]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_can_ctrl_host_if</name>
-              <description>u0_can_ctrl_host_if</description>
+              <name>can_ctrl_host_if_0</name>
+              <description>can_ctrl_host_if_0</description>
               <bitRange>[23:5]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_cdns_qspi_scfg_qspi_sclk_dlychain_sel</name>
+              <name>qspi_sclk_dlychain_sel</name>
               <description>des_qspi_sclk_dla: clock delay</description>
               <bitRange>[28:24]</bitRange>
               <access>read-only</access>
@@ -32932,25 +32932,25 @@
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_cdns_spdif_trmodeo</name>
+              <name>spdif_trmodeo</name>
               <description>1 for transmitter 0 for receiver</description>
               <bitRange>[24:24]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_i2c_ic_en</name>
+              <name>i2c_ic_en</name>
               <description>I2C interface enable</description>
               <bitRange>[25:25]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_sdio_data_strobe_phase_ctrl</name>
+              <name>sdio_data_strobe_phase_ctrl</name>
               <description>Data strobe delay chain select</description>
               <bitRange>[30:26]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_sdio_hbig_endian</name>
+              <name>sdio_hbig_endian</name>
               <description>AHB bus interface endianness: 1: Big-endian AHB bus interface, 0: Little-endian AHB bus interface</description>
               <bitRange>[31:31]</bitRange>
               <access>read-write</access>
@@ -32965,20 +32965,20 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_sdio_m_hbig_endian</name>
+              <name>sdio_m_hbig_endian</name>
               <description>AHB master bus interface endianess: 1: Big-endian AHB bus interface, 0: Little-endian AHB bus interface</description>
               <bitRange>[0:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_i2srx_3ch_adc_ena</name>
-              <description>u0_i2srx_3ch_adc_ena</description>
+              <name>i2srx_adc_en</name>
+              <description>i2srx_adc_en</description>
               <bitRange>[1:1]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_intmem_rom_sram_scfg_disable_rom</name>
-              <description>u0_intmem_rom_sram_scfg_disable_rom</description>
+              <name>intmem_rom_sram_scfg_disable_rom</name>
+              <description>intmem_rom_sram_scfg_disable_rom</description>
               <bitRange>[2:2]</bitRange>
               <access>read-write</access>
             </field>
@@ -33031,20 +33031,20 @@
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_jtag_daisy_chain_jtag_en_0</name>
-              <description>u0_jtag_daisy_chain_jtag_en_0</description>
+              <name>jtag_daisy_chain_en_0</name>
+              <description>jtag_daisy_chain_en_0</description>
               <bitRange>[15:15]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_jtag_daisy_chain_jtag_en_1</name>
-              <description>u0_jtag_daisy_chain_jtag_en_1</description>
+              <name>jtag_daisy_chain_en_1</name>
+              <description>jtag_daisy_chain_en_1</description>
               <bitRange>[16:16]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_pdrstn_split_sw_usbpipe_plugen</name>
-              <description>u0_pdrstn_split_sw_usbpipe_plugen</description>
+              <name>pdrstn_usbpipe_plugen</name>
+              <description>pdrstn_usbpipe_plugen</description>
               <bitRange>[17:17]</bitRange>
               <access>read-write</access>
             </field>
@@ -33082,8 +33082,8 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_pll_wrap_pll0_fbdiv</name>
-              <description>u0_pll_wrap_pll0_fbdiv</description>
+              <name>pll0_fbdiv</name>
+              <description>pll0_fbdiv</description>
               <bitRange>[11:0]</bitRange>
               <access>read-write</access>
             </field>
@@ -33370,14 +33370,14 @@
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_saif_audio_sdin_mux_scfg_i2sdin_sel</name>
-              <description>u0_saif_audio_sdin_mux_scfg_i2sdin_sel</description>
+              <name>audio_i2sdin_sel</name>
+              <description>audio_i2sdin_sel</description>
               <bitRange>[17:10]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_sft7110_noc_bus_clock_gating_off</name>
-              <description>u0_sft7110_noc_bus_clock_gating_off</description>
+              <name>noc_bus_clock_gating_off</name>
+              <description>noc_bus_clock_gating_off</description>
               <bitRange>[18:18]</bitRange>
               <access>read-write</access>
             </field>
@@ -33499,32 +33499,32 @@
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_sft7110_noc_bus_oic_ignore_modifiable_0</name>
-              <description>u0_sft7110_noc_bus_oic_ignore_modifiable_0</description>
+              <name>noc_bus_oic_ignore_modifiable_0</name>
+              <description>noc_bus_oic_ignore_modifiable_0</description>
               <bitRange>[5:5]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_sft7110_noc_bus_oic_ignore_modifiable_1</name>
-              <description>u0_sft7110_noc_bus_oic_ignore_modifiable_1</description>
+              <name>noc_bus_oic_ignore_modifiable_1</name>
+              <description>noc_bus_oic_ignore_modifiable_1</description>
               <bitRange>[6:6]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_sft7110_noc_bus_oic_ignore_modifiable_2</name>
-              <description>u0_sft7110_noc_bus_oic_ignore_modifiable_2</description>
+              <name>noc_bus_oic_ignore_modifiable_2</name>
+              <description>noc_bus_oic_ignore_modifiable_2</description>
               <bitRange>[7:7]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_sft7110_noc_bus_oic_ignore_modifiable_3</name>
-              <description>u0_sft7110_noc_bus_oic_ignore_modifiable_3</description>
+              <name>noc_bus_oic_ignore_modifiable_3</name>
+              <description>noc_bus_oic_ignore_modifiable_3</description>
               <bitRange>[8:8]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_sft7110_noc_bus_oic_ignore_modifiable_4</name>
-              <description>u0_sft7110_noc_bus_oic_ignore_modifiable_4</description>
+              <name>noc_bus_oic_ignore_modifiable_4</name>
+              <description>noc_bus_oic_ignore_modifiable_4</description>
               <bitRange>[9:9]</bitRange>
               <access>read-write</access>
             </field>
@@ -33538,8 +33538,8 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_noc_bus_oic_qch_clock_stop_threshold_0</name>
-              <description>u0_noc_bus_oic_qch_clock_stop_threshold_0</description>
+              <name>noc_bus_oic_qch_clock_stop_threshold_0</name>
+              <description>noc_bus_oic_qch_clock_stop_threshold_0</description>
               <bitRange>[31:0]</bitRange>
               <access>read-write</access>
             </field>
@@ -33553,8 +33553,8 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_noc_bus_oic_qch_clock_stop_threshold_1</name>
-              <description>u0_noc_bus_oic_qch_clock_stop_threshold_1</description>
+              <name>noc_bus_oic_qch_clock_stop_threshold_1</name>
+              <description>noc_bus_oic_qch_clock_stop_threshold_1</description>
               <bitRange>[31:0]</bitRange>
               <access>read-write</access>
             </field>
@@ -33568,8 +33568,8 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_noc_bus_oic_qch_clock_stop_threshold_2</name>
-              <description>u0_noc_bus_oic_qch_clock_stop_threshold_2</description>
+              <name>noc_bus_oic_qch_clock_stop_threshold_2</name>
+              <description>noc_bus_oic_qch_clock_stop_threshold_2</description>
               <bitRange>[31:0]</bitRange>
               <access>read-write</access>
             </field>
@@ -33583,8 +33583,8 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_noc_bus_oic_qch_clock_stop_threshold_3</name>
-              <description>u0_noc_bus_oic_qch_clock_stop_threshold_3</description>
+              <name>noc_bus_oic_qch_clock_stop_threshold_3</name>
+              <description>noc_bus_oic_qch_clock_stop_threshold_3</description>
               <bitRange>[31:0]</bitRange>
               <access>read-write</access>
             </field>
@@ -33598,8 +33598,8 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_noc_bus_oic_qch_clock_stop_threshold_4</name>
-              <description>u0_noc_bus_oic_qch_clock_stop_threshold_4</description>
+              <name>noc_bus_oic_qch_clock_stop_threshold_4</name>
+              <description>noc_bus_oic_qch_clock_stop_threshold_4</description>
               <bitRange>[31:0]</bitRange>
               <access>read-write</access>
             </field>
@@ -33613,8 +33613,8 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_noc_bus_oic_qch_clock_stop_threshold_5</name>
-              <description>u0_noc_bus_oic_qch_clock_stop_threshold_5</description>
+              <name>noc_bus_oic_qch_clock_stop_threshold_5</name>
+              <description>noc_bus_oic_qch_clock_stop_threshold_5</description>
               <bitRange>[31:0]</bitRange>
               <access>read-write</access>
             </field>
@@ -33628,8 +33628,8 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_noc_bus_oic_qch_clock_stop_threshold_6</name>
-              <description>u0_noc_bus_oic_qch_clock_stop_threshold_6</description>
+              <name>noc_bus_oic_qch_clock_stop_threshold_6</name>
+              <description>noc_bus_oic_qch_clock_stop_threshold_6</description>
               <bitRange>[31:0]</bitRange>
               <access>read-write</access>
             </field>
@@ -33643,8 +33643,8 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_noc_bus_oic_qch_clock_stop_threshold_7</name>
-              <description>u0_noc_bus_oic_qch_clock_stop_threshold_7</description>
+              <name>noc_bus_oic_qch_clock_stop_threshold_7</name>
+              <description>noc_bus_oic_qch_clock_stop_threshold_7</description>
               <bitRange>[31:0]</bitRange>
               <access>read-write</access>
             </field>
@@ -33658,8 +33658,8 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_noc_bus_oic_qch_clock_stop_threshold_8</name>
-              <description>u0_noc_bus_oic_qch_clock_stop_threshold_8</description>
+              <name>noc_bus_oic_qch_clock_stop_threshold_8</name>
+              <description>noc_bus_oic_qch_clock_stop_threshold_8</description>
               <bitRange>[31:0]</bitRange>
               <access>read-write</access>
             </field>
@@ -33673,50 +33673,50 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u0_tdm16slot_clkpol</name>
-              <description>u0_tdm16slot_clkpol</description>
+              <name>tdm16slot_clkpol</name>
+              <description>tdm16slot_clkpol</description>
               <bitRange>[0:0]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_tdm16slot_pcm_ms</name>
-              <description>u0_tdm16slot_pcm_ms</description>
+              <name>tdm16slot_pcm_ms</name>
+              <description>tdm16slot_pcm_ms</description>
               <bitRange>[1:1]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u0_trace_mtx_scfg_c0_in0_ctl</name>
-              <description>u0_trace_mtx_scfg_c0_in0_ctl</description>
+              <name>u0_trace_mtx_in0_0</name>
+              <description>u0_trace_mtx_in0_0</description>
               <bitRange>[6:2]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_trace_mtx_scfg_c0_in1_ctl</name>
-              <description>u0_trace_mtx_scfg_c0_in1_ctl</description>
+              <name>u0_trace_mtx_in1_0</name>
+              <description>u0_trace_mtx_in1_0</description>
               <bitRange>[11:7]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_trace_mtx_scfg_c1_in0_ctl</name>
-              <description>u0_trace_mtx_scfg_c1_in0_ctl</description>
+              <name>u0_trace_mtx_in0_1</name>
+              <description>u0_trace_mtx_in0_1</description>
               <bitRange>[16:12]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_trace_mtx_scfg_c1_in1_ctl</name>
-              <description>u0_trace_mtx_scfg_c1_in1_ctl</description>
+              <name>u0_trace_mtx_in1_1</name>
+              <description>u0_trace_mtx_in1_1</description>
               <bitRange>[21:17]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_trace_mtx_scfg_c2_in0_ctl</name>
-              <description>u0_trace_mtx_scfg_c2_in0_ctl</description>
+              <name>u0_trace_mtx_in0_2</name>
+              <description>u0_trace_mtx_in0_2</description>
               <bitRange>[26:22]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_trace_mtx_scfg_c2_in1_ctl</name>
-              <description>u0_trace_mtx_scfg_c2_in1_ctl</description>
+              <name>u0_trace_mtx_in1_2</name>
+              <description>u0_trace_mtx_in1_2</description>
               <bitRange>[31:27]</bitRange>
               <access>read-write</access>
             </field>
@@ -34909,38 +34909,38 @@
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_wave420l_i_ipu_current_buffer</name>
+              <name>wave420l_ipu_current_buffer</name>
               <description>This signal indicates which buffer is currently active so that the VPU can correctly use the ipu_end_of_row signal for row counter.</description>
               <bitRange>[14:12]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_wave420l_i_ipu_end_of_row</name>
+              <name>wave420l_ipu_end_of_row</name>
               <description>This signal is flipped every time when the IPU completes writing a row.</description>
               <bitRange>[15:15]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_wave420l_i_ipu_new_frame</name>
+              <name>wave420l_ipu_new_frame</name>
               <description>This signal is flipped every time when the IPU completes writing a new frame.</description>
               <bitRange>[16:16]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u0_wave420l_o_vpu_idle</name>
+              <name>wave420l_vpu_idle</name>
               <description>VPU monitoring signal. This signal gives out an opposite value of VPU_BUSY register.</description>
               <bitRange>[17:17]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u1_can_ctrl_can_fd_enable</name>
-              <description>u1_can_ctrl_can_fd_enable</description>
+              <name>can_ctrl_fd_enable_1</name>
+              <description>can_ctrl_fd_enable_1</description>
               <bitRange>[18:18]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u1_can_ctrl_host_ecc_disable</name>
-              <description>u1_can_ctrl_host_ecc_disable</description>
+              <name>can_ctrl_host_ecc_disable_1</name>
+              <description>can_ctrl_host_ecc_disable_1</description>
               <bitRange>[19:19]</bitRange>
               <access>read-write</access>
             </field>
@@ -34954,8 +34954,8 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u1_can_ctrl_host_if</name>
-              <description>u1_can_ctrl_host_if</description>
+              <name>can_ctrl_host_if_1</name>
+              <description>can_ctrl_host_if_1</description>
               <bitRange>[18:0]</bitRange>
               <access>read-only</access>
             </field>
@@ -35017,13 +35017,13 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u1_gmac5_axi64_mac_speed_0</name>
-              <description>u1_gmac5_axi64_mac_speed_0</description>
+              <name>gmac5_axi64_mac_speed</name>
+              <description>gmac5_axi64_mac_speed</description>
               <bitRange>[1:0]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u1_gmac5_axi64_phy_intf_sel_i</name>
+              <name>gmac5_axi64_phy_intf_sel</name>
               <description>Active PHY Selected | When you have multiple GMAC PHY interfaces in your configuration, this field indicates the sampled value of the PHY selector during reset de-assertion. | Values: 0x0:(GMII or MII), 0x01:RGMII, 0x2:SGMII, 0x3:TBI, 0x4:RMII, 0x5:RTBI, 0x6:SMII, 0x7:REVMII</description>
               <bitRange>[4:2]</bitRange>
               <access>read-write</access>
@@ -35038,8 +35038,8 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u1_gmac5_axi64_ptp_timestamp_o_31_0</name>
-              <description>u1_gmac5_axi64_ptp_timestamp_o_31_0</description>
+              <name>gmac5_axi64_ptp_timestamp_0_31</name>
+              <description>gmac5_axi64_ptp_timestamp_0_31</description>
               <bitRange>[31:0]</bitRange>
               <access>read-only</access>
             </field>
@@ -35053,8 +35053,8 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u1_gmac5_axi64_ptp_timestamp_o_63_32</name>
-              <description>u1_gmac5_axi64_ptp_timestamp_o_63_32</description>
+              <name>gmac5_axi64_ptp_timestamp_32_63</name>
+              <description>gmac5_axi64_ptp_timestamp_32_63</description>
               <bitRange>[31:0]</bitRange>
               <access>read-only</access>
             </field>
@@ -35068,50 +35068,50 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>u1_i2c_ic_en</name>
+              <name>i2c_ic_en_1</name>
               <description>I2C interface enable.</description>
               <bitRange>[0:0]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u1_sdio_data_strobe_phase_ctrl</name>
+              <name>sdio_data_strobe_phase_ctrl_1</name>
               <description>Data strobe delay chain select.</description>
               <bitRange>[5:1]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u1_sdio_hbig_endian</name>
+              <name>sdio_hbig_endian_1</name>
               <description>AHB bus interface endianness: 1: Big-endian AHB bus interface, 0: Little-endian AHB bus interface</description>
               <bitRange>[6:6]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u1_sdio_m_hbig_endian</name>
+              <name>sdio_m_hbig_endian_1</name>
               <description>AHB bus interface endianness: 1: Big-endian AHB bus interface, 0: Little-endian AHB bus interface</description>
               <bitRange>[7:7]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u1_reset_ctrl_clr_reset_status</name>
-              <description>u1_reset_ctrl_clr_reset_status</description>
+              <name>reset_ctrl_clr_reset_status_1</name>
+              <description>reset_ctrl_clr_reset_status_1</description>
               <bitRange>[8:8]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u1_reset_ctrl_pll_timecnt_finish</name>
-              <description>u1_reset_ctrl_pll_timecnt_finish</description>
+              <name>reset_ctrl_pll_timecnt_finish_1</name>
+              <description>reset_ctrl_pll_timecnt_finish_1</description>
               <bitRange>[9:9]</bitRange>
               <access>read-only</access>
             </field>
             <field>
-              <name>u1_reset_ctrl_rstn_sw</name>
-              <description>u1_reset_ctrl_rstn_sw</description>
+              <name>reset_ctrl_rstn_sw_1</name>
+              <description>reset_ctrl_rstn_sw_1</description>
               <bitRange>[10:10]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>u1_reset_ctrl_sys_reset_status</name>
-              <description>u1_reset_ctrl_sys_reset_status</description>
+              <name>reset_ctrl_sys_reset_status_1</name>
+              <description>reset_ctrl_sys_reset_status_1</description>
               <bitRange>[14:11]</bitRange>
               <access>read-only</access>
             </field>

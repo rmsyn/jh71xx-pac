@@ -34,28 +34,28 @@ pub type U0_VENC_INTSRAM_SRAM_CONFIG_VS_W<'a, REG> = crate::BitWriter<'a, REG>;
 pub type U0_VENC_INTSRAM_SRAM_CONFIG_VG_R = crate::BitReader;
 #[doc = "Field `u0_venc_intsram_sram_config_vg` writer - SRAM/ROM configuration. VG: timing setting for debug purpose, default is 1'b1."]
 pub type U0_VENC_INTSRAM_SRAM_CONFIG_VG_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `u0_wave420l_i_ipu_current_buffer` reader - This signal indicates which buffer is currently active so that the VPU can correctly use the ipu_end_of_row signal for row counter."]
-pub type U0_WAVE420L_I_IPU_CURRENT_BUFFER_R = crate::FieldReader;
-#[doc = "Field `u0_wave420l_i_ipu_current_buffer` writer - This signal indicates which buffer is currently active so that the VPU can correctly use the ipu_end_of_row signal for row counter."]
-pub type U0_WAVE420L_I_IPU_CURRENT_BUFFER_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
-#[doc = "Field `u0_wave420l_i_ipu_end_of_row` reader - This signal is flipped every time when the IPU completes writing a row."]
-pub type U0_WAVE420L_I_IPU_END_OF_ROW_R = crate::BitReader;
-#[doc = "Field `u0_wave420l_i_ipu_end_of_row` writer - This signal is flipped every time when the IPU completes writing a row."]
-pub type U0_WAVE420L_I_IPU_END_OF_ROW_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `u0_wave420l_i_ipu_new_frame` reader - This signal is flipped every time when the IPU completes writing a new frame."]
-pub type U0_WAVE420L_I_IPU_NEW_FRAME_R = crate::BitReader;
-#[doc = "Field `u0_wave420l_i_ipu_new_frame` writer - This signal is flipped every time when the IPU completes writing a new frame."]
-pub type U0_WAVE420L_I_IPU_NEW_FRAME_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `u0_wave420l_o_vpu_idle` reader - VPU monitoring signal. This signal gives out an opposite value of VPU_BUSY register."]
-pub type U0_WAVE420L_O_VPU_IDLE_R = crate::BitReader;
-#[doc = "Field `u1_can_ctrl_can_fd_enable` reader - u1_can_ctrl_can_fd_enable"]
-pub type U1_CAN_CTRL_CAN_FD_ENABLE_R = crate::BitReader;
-#[doc = "Field `u1_can_ctrl_can_fd_enable` writer - u1_can_ctrl_can_fd_enable"]
-pub type U1_CAN_CTRL_CAN_FD_ENABLE_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `u1_can_ctrl_host_ecc_disable` reader - u1_can_ctrl_host_ecc_disable"]
-pub type U1_CAN_CTRL_HOST_ECC_DISABLE_R = crate::BitReader;
-#[doc = "Field `u1_can_ctrl_host_ecc_disable` writer - u1_can_ctrl_host_ecc_disable"]
-pub type U1_CAN_CTRL_HOST_ECC_DISABLE_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `wave420l_ipu_current_buffer` reader - This signal indicates which buffer is currently active so that the VPU can correctly use the ipu_end_of_row signal for row counter."]
+pub type WAVE420L_IPU_CURRENT_BUFFER_R = crate::FieldReader;
+#[doc = "Field `wave420l_ipu_current_buffer` writer - This signal indicates which buffer is currently active so that the VPU can correctly use the ipu_end_of_row signal for row counter."]
+pub type WAVE420L_IPU_CURRENT_BUFFER_W<'a, REG> = crate::FieldWriter<'a, REG, 3>;
+#[doc = "Field `wave420l_ipu_end_of_row` reader - This signal is flipped every time when the IPU completes writing a row."]
+pub type WAVE420L_IPU_END_OF_ROW_R = crate::BitReader;
+#[doc = "Field `wave420l_ipu_end_of_row` writer - This signal is flipped every time when the IPU completes writing a row."]
+pub type WAVE420L_IPU_END_OF_ROW_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `wave420l_ipu_new_frame` reader - This signal is flipped every time when the IPU completes writing a new frame."]
+pub type WAVE420L_IPU_NEW_FRAME_R = crate::BitReader;
+#[doc = "Field `wave420l_ipu_new_frame` writer - This signal is flipped every time when the IPU completes writing a new frame."]
+pub type WAVE420L_IPU_NEW_FRAME_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `wave420l_vpu_idle` reader - VPU monitoring signal. This signal gives out an opposite value of VPU_BUSY register."]
+pub type WAVE420L_VPU_IDLE_R = crate::BitReader;
+#[doc = "Field `can_ctrl_fd_enable_1` reader - can_ctrl_fd_enable_1"]
+pub type CAN_CTRL_FD_ENABLE_1_R = crate::BitReader;
+#[doc = "Field `can_ctrl_fd_enable_1` writer - can_ctrl_fd_enable_1"]
+pub type CAN_CTRL_FD_ENABLE_1_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `can_ctrl_host_ecc_disable_1` reader - can_ctrl_host_ecc_disable_1"]
+pub type CAN_CTRL_HOST_ECC_DISABLE_1_R = crate::BitReader;
+#[doc = "Field `can_ctrl_host_ecc_disable_1` writer - can_ctrl_host_ecc_disable_1"]
+pub type CAN_CTRL_HOST_ECC_DISABLE_1_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
     #[inline(always)]
@@ -99,33 +99,33 @@ impl R {
     }
     #[doc = "Bits 12:14 - This signal indicates which buffer is currently active so that the VPU can correctly use the ipu_end_of_row signal for row counter."]
     #[inline(always)]
-    pub fn u0_wave420l_i_ipu_current_buffer(&self) -> U0_WAVE420L_I_IPU_CURRENT_BUFFER_R {
-        U0_WAVE420L_I_IPU_CURRENT_BUFFER_R::new(((self.bits >> 12) & 7) as u8)
+    pub fn wave420l_ipu_current_buffer(&self) -> WAVE420L_IPU_CURRENT_BUFFER_R {
+        WAVE420L_IPU_CURRENT_BUFFER_R::new(((self.bits >> 12) & 7) as u8)
     }
     #[doc = "Bit 15 - This signal is flipped every time when the IPU completes writing a row."]
     #[inline(always)]
-    pub fn u0_wave420l_i_ipu_end_of_row(&self) -> U0_WAVE420L_I_IPU_END_OF_ROW_R {
-        U0_WAVE420L_I_IPU_END_OF_ROW_R::new(((self.bits >> 15) & 1) != 0)
+    pub fn wave420l_ipu_end_of_row(&self) -> WAVE420L_IPU_END_OF_ROW_R {
+        WAVE420L_IPU_END_OF_ROW_R::new(((self.bits >> 15) & 1) != 0)
     }
     #[doc = "Bit 16 - This signal is flipped every time when the IPU completes writing a new frame."]
     #[inline(always)]
-    pub fn u0_wave420l_i_ipu_new_frame(&self) -> U0_WAVE420L_I_IPU_NEW_FRAME_R {
-        U0_WAVE420L_I_IPU_NEW_FRAME_R::new(((self.bits >> 16) & 1) != 0)
+    pub fn wave420l_ipu_new_frame(&self) -> WAVE420L_IPU_NEW_FRAME_R {
+        WAVE420L_IPU_NEW_FRAME_R::new(((self.bits >> 16) & 1) != 0)
     }
     #[doc = "Bit 17 - VPU monitoring signal. This signal gives out an opposite value of VPU_BUSY register."]
     #[inline(always)]
-    pub fn u0_wave420l_o_vpu_idle(&self) -> U0_WAVE420L_O_VPU_IDLE_R {
-        U0_WAVE420L_O_VPU_IDLE_R::new(((self.bits >> 17) & 1) != 0)
+    pub fn wave420l_vpu_idle(&self) -> WAVE420L_VPU_IDLE_R {
+        WAVE420L_VPU_IDLE_R::new(((self.bits >> 17) & 1) != 0)
     }
-    #[doc = "Bit 18 - u1_can_ctrl_can_fd_enable"]
+    #[doc = "Bit 18 - can_ctrl_fd_enable_1"]
     #[inline(always)]
-    pub fn u1_can_ctrl_can_fd_enable(&self) -> U1_CAN_CTRL_CAN_FD_ENABLE_R {
-        U1_CAN_CTRL_CAN_FD_ENABLE_R::new(((self.bits >> 18) & 1) != 0)
+    pub fn can_ctrl_fd_enable_1(&self) -> CAN_CTRL_FD_ENABLE_1_R {
+        CAN_CTRL_FD_ENABLE_1_R::new(((self.bits >> 18) & 1) != 0)
     }
-    #[doc = "Bit 19 - u1_can_ctrl_host_ecc_disable"]
+    #[doc = "Bit 19 - can_ctrl_host_ecc_disable_1"]
     #[inline(always)]
-    pub fn u1_can_ctrl_host_ecc_disable(&self) -> U1_CAN_CTRL_HOST_ECC_DISABLE_R {
-        U1_CAN_CTRL_HOST_ECC_DISABLE_R::new(((self.bits >> 19) & 1) != 0)
+    pub fn can_ctrl_host_ecc_disable_1(&self) -> CAN_CTRL_HOST_ECC_DISABLE_1_R {
+        CAN_CTRL_HOST_ECC_DISABLE_1_R::new(((self.bits >> 19) & 1) != 0)
     }
 }
 impl W {
@@ -196,40 +196,36 @@ impl W {
     #[doc = "Bits 12:14 - This signal indicates which buffer is currently active so that the VPU can correctly use the ipu_end_of_row signal for row counter."]
     #[inline(always)]
     #[must_use]
-    pub fn u0_wave420l_i_ipu_current_buffer(
+    pub fn wave420l_ipu_current_buffer(
         &mut self,
-    ) -> U0_WAVE420L_I_IPU_CURRENT_BUFFER_W<SYS_SYSCFG_34_SPEC> {
-        U0_WAVE420L_I_IPU_CURRENT_BUFFER_W::new(self, 12)
+    ) -> WAVE420L_IPU_CURRENT_BUFFER_W<SYS_SYSCFG_34_SPEC> {
+        WAVE420L_IPU_CURRENT_BUFFER_W::new(self, 12)
     }
     #[doc = "Bit 15 - This signal is flipped every time when the IPU completes writing a row."]
     #[inline(always)]
     #[must_use]
-    pub fn u0_wave420l_i_ipu_end_of_row(
-        &mut self,
-    ) -> U0_WAVE420L_I_IPU_END_OF_ROW_W<SYS_SYSCFG_34_SPEC> {
-        U0_WAVE420L_I_IPU_END_OF_ROW_W::new(self, 15)
+    pub fn wave420l_ipu_end_of_row(&mut self) -> WAVE420L_IPU_END_OF_ROW_W<SYS_SYSCFG_34_SPEC> {
+        WAVE420L_IPU_END_OF_ROW_W::new(self, 15)
     }
     #[doc = "Bit 16 - This signal is flipped every time when the IPU completes writing a new frame."]
     #[inline(always)]
     #[must_use]
-    pub fn u0_wave420l_i_ipu_new_frame(
-        &mut self,
-    ) -> U0_WAVE420L_I_IPU_NEW_FRAME_W<SYS_SYSCFG_34_SPEC> {
-        U0_WAVE420L_I_IPU_NEW_FRAME_W::new(self, 16)
+    pub fn wave420l_ipu_new_frame(&mut self) -> WAVE420L_IPU_NEW_FRAME_W<SYS_SYSCFG_34_SPEC> {
+        WAVE420L_IPU_NEW_FRAME_W::new(self, 16)
     }
-    #[doc = "Bit 18 - u1_can_ctrl_can_fd_enable"]
+    #[doc = "Bit 18 - can_ctrl_fd_enable_1"]
     #[inline(always)]
     #[must_use]
-    pub fn u1_can_ctrl_can_fd_enable(&mut self) -> U1_CAN_CTRL_CAN_FD_ENABLE_W<SYS_SYSCFG_34_SPEC> {
-        U1_CAN_CTRL_CAN_FD_ENABLE_W::new(self, 18)
+    pub fn can_ctrl_fd_enable_1(&mut self) -> CAN_CTRL_FD_ENABLE_1_W<SYS_SYSCFG_34_SPEC> {
+        CAN_CTRL_FD_ENABLE_1_W::new(self, 18)
     }
-    #[doc = "Bit 19 - u1_can_ctrl_host_ecc_disable"]
+    #[doc = "Bit 19 - can_ctrl_host_ecc_disable_1"]
     #[inline(always)]
     #[must_use]
-    pub fn u1_can_ctrl_host_ecc_disable(
+    pub fn can_ctrl_host_ecc_disable_1(
         &mut self,
-    ) -> U1_CAN_CTRL_HOST_ECC_DISABLE_W<SYS_SYSCFG_34_SPEC> {
-        U1_CAN_CTRL_HOST_ECC_DISABLE_W::new(self, 19)
+    ) -> CAN_CTRL_HOST_ECC_DISABLE_1_W<SYS_SYSCFG_34_SPEC> {
+        CAN_CTRL_HOST_ECC_DISABLE_1_W::new(self, 19)
     }
     #[doc = r" Writes raw bits to the register."]
     #[doc = r""]
