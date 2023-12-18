@@ -2,17 +2,24 @@
 pub type R = crate::R<MTIMECMP_3_SPEC>;
 #[doc = "Register `mtimecmp_3` writer"]
 pub type W = crate::W<MTIMECMP_3_SPEC>;
-impl core::fmt::Debug for R {
-    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        write!(f, "{}", self.bits())
-    }
-}
-impl core::fmt::Debug for crate::generic::Reg<MTIMECMP_3_SPEC> {
-    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
-        core::fmt::Debug::fmt(&self.read(), f)
+#[doc = "Field `cycles` reader - "]
+pub type CYCLES_R = crate::FieldReader<u64>;
+#[doc = "Field `cycles` writer - "]
+pub type CYCLES_W<'a, REG> = crate::FieldWriter<'a, REG, 64, u64>;
+impl R {
+    #[doc = "Bits 0:63"]
+    #[inline(always)]
+    pub fn cycles(&self) -> CYCLES_R {
+        CYCLES_R::new(self.bits)
     }
 }
 impl W {
+    #[doc = "Bits 0:63"]
+    #[inline(always)]
+    #[must_use]
+    pub fn cycles(&mut self) -> CYCLES_W<MTIMECMP_3_SPEC> {
+        CYCLES_W::new(self, 0)
+    }
     #[doc = r" Writes raw bits to the register."]
     #[doc = r""]
     #[doc = r" # Safety"]

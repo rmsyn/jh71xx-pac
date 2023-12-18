@@ -24,6 +24,14 @@
           <addressOffset>0x0</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>control</name>
+              <description></description>
+              <bitRange>[0:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>msip_1</name>
@@ -31,6 +39,14 @@
           <addressOffset>0x4</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>control</name>
+              <description></description>
+              <bitRange>[0:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>msip_2</name>
@@ -38,6 +54,14 @@
           <addressOffset>0x8</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>control</name>
+              <description></description>
+              <bitRange>[0:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>msip_3</name>
@@ -45,6 +69,14 @@
           <addressOffset>0xC</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>control</name>
+              <description></description>
+              <bitRange>[0:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>msip_4</name>
@@ -52,6 +84,14 @@
           <addressOffset>0x10</addressOffset>
           <size>32</size>
           <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>control</name>
+              <description></description>
+              <bitRange>[0:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>mtimecmp_0</name>
@@ -59,6 +99,14 @@
           <addressOffset>0x4000</addressOffset>
           <size>64</size>
           <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>cycles</name>
+              <description></description>
+              <bitRange>[63:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>mtimecmp_1</name>
@@ -66,6 +114,14 @@
           <addressOffset>0x4008</addressOffset>
           <size>64</size>
           <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>cycles</name>
+              <description></description>
+              <bitRange>[63:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>mtimecmp_2</name>
@@ -73,6 +129,14 @@
           <addressOffset>0x4010</addressOffset>
           <size>64</size>
           <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>cycles</name>
+              <description></description>
+              <bitRange>[63:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>mtimecmp_3</name>
@@ -80,6 +144,14 @@
           <addressOffset>0x4018</addressOffset>
           <size>64</size>
           <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>cycles</name>
+              <description></description>
+              <bitRange>[63:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>mtimecmp_4</name>
@@ -87,6 +159,14 @@
           <addressOffset>0x4020</addressOffset>
           <size>64</size>
           <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>cycles</name>
+              <description></description>
+              <bitRange>[63:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
         <register>
           <name>mtime</name>
@@ -94,6 +174,14 @@
           <addressOffset>0xBFF8</addressOffset>
           <size>64</size>
           <resetValue>0</resetValue>
+          <fields>
+            <field>
+              <name>cycles</name>
+              <description></description>
+              <bitRange>[63:0]</bitRange>
+              <access>read-write</access>
+            </field>
+          </fields>
         </register>
       </registers>
     </peripheral>
