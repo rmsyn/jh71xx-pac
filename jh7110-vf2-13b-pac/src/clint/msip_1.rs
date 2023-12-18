@@ -2,17 +2,24 @@
 pub type R = crate::R<MSIP_1_SPEC>;
 #[doc = "Register `msip_1` writer"]
 pub type W = crate::W<MSIP_1_SPEC>;
-impl core::fmt::Debug for R {
-    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        write!(f, "{}", self.bits())
-    }
-}
-impl core::fmt::Debug for crate::generic::Reg<MSIP_1_SPEC> {
-    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
-        core::fmt::Debug::fmt(&self.read(), f)
+#[doc = "Field `control` reader - "]
+pub type CONTROL_R = crate::BitReader;
+#[doc = "Field `control` writer - "]
+pub type CONTROL_W<'a, REG> = crate::BitWriter<'a, REG>;
+impl R {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    pub fn control(&self) -> CONTROL_R {
+        CONTROL_R::new((self.bits & 1) != 0)
     }
 }
 impl W {
+    #[doc = "Bit 0"]
+    #[inline(always)]
+    #[must_use]
+    pub fn control(&mut self) -> CONTROL_W<MSIP_1_SPEC> {
+        CONTROL_W::new(self, 0)
+    }
     #[doc = r" Writes raw bits to the register."]
     #[doc = r""]
     #[doc = r" # Safety"]
