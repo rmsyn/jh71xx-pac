@@ -22,62 +22,78 @@
           <name>msip_0</name>
           <description>MSIP Register for hart 0</description>
           <addressOffset>0x0</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
         </register>
         <register>
           <name>msip_1</name>
           <description>MSIP Register for hart 1</description>
           <addressOffset>0x4</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
         </register>
         <register>
           <name>msip_2</name>
           <description>MSIP Register for hart 2</description>
           <addressOffset>0x8</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
         </register>
         <register>
           <name>msip_3</name>
           <description>MSIP Register for hart 3</description>
           <addressOffset>0xC</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
         </register>
         <register>
           <name>msip_4</name>
           <description>MSIP Register for hart 4</description>
           <addressOffset>0x10</addressOffset>
+          <size>32</size>
+          <resetValue>0</resetValue>
         </register>
         <register>
           <name>mtimecmp_0</name>
           <description>MTIMECMP Register for hart 0</description>
           <addressOffset>0x4000</addressOffset>
           <size>64</size>
+          <resetValue>0</resetValue>
         </register>
         <register>
           <name>mtimecmp_1</name>
           <description>MTIMECMP Register for hart 1</description>
           <addressOffset>0x4008</addressOffset>
           <size>64</size>
+          <resetValue>0</resetValue>
         </register>
         <register>
           <name>mtimecmp_2</name>
           <description>MTIMECMP Register for hart 2</description>
           <addressOffset>0x4010</addressOffset>
           <size>64</size>
+          <resetValue>0</resetValue>
         </register>
         <register>
           <name>mtimecmp_3</name>
           <description>MTIMECMP Register for hart 3</description>
           <addressOffset>0x4018</addressOffset>
           <size>64</size>
+          <resetValue>0</resetValue>
         </register>
         <register>
           <name>mtimecmp_4</name>
           <description>MTIMECMP Register for hart 4</description>
           <addressOffset>0x4020</addressOffset>
           <size>64</size>
+          <resetValue>0</resetValue>
         </register>
         <register>
           <name>mtime</name>
           <description>MTIME Register</description>
           <addressOffset>0xBFF8</addressOffset>
           <size>64</size>
+          <resetValue>0</resetValue>
         </register>
       </registers>
     </peripheral>
