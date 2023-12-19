@@ -46,8 +46,8 @@ pub type U0_HIFI4_TRIGIN_IDMA_W<'a, REG> = crate::BitWriter<'a, REG>;
 pub type U0_HIFI4_TRIGOUT_IDMA_R = crate::BitReader;
 #[doc = "Field `u0_hifi4_xocdmode` reader - Debug signal"]
 pub type U0_HIFI4_XOCDMODE_R = crate::BitReader;
-#[doc = "Field `u0_plda_pcie_align_detect` reader - u0_plda_pcie_align_detect"]
-pub type U0_PLDA_PCIE_ALIGN_DETECT_R = crate::BitReader;
+#[doc = "Field `u0_pcie_align_detect` reader - u0_pcie_align_detect"]
+pub type U0_PCIE_ALIGN_DETECT_R = crate::BitReader;
 impl R {
     #[doc = "Bit 0 - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
     #[inline(always)]
@@ -109,10 +109,10 @@ impl R {
     pub fn u0_hifi4_xocdmode(&self) -> U0_HIFI4_XOCDMODE_R {
         U0_HIFI4_XOCDMODE_R::new(((self.bits >> 15) & 1) != 0)
     }
-    #[doc = "Bit 16 - u0_plda_pcie_align_detect"]
+    #[doc = "Bit 16 - u0_pcie_align_detect"]
     #[inline(always)]
-    pub fn u0_plda_pcie_align_detect(&self) -> U0_PLDA_PCIE_ALIGN_DETECT_R {
-        U0_PLDA_PCIE_ALIGN_DETECT_R::new(((self.bits >> 16) & 1) != 0)
+    pub fn u0_pcie_align_detect(&self) -> U0_PCIE_ALIGN_DETECT_R {
+        U0_PCIE_ALIGN_DETECT_R::new(((self.bits >> 16) & 1) != 0)
     }
 }
 impl W {

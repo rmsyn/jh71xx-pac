@@ -2,13 +2,13 @@
 pub type R = crate::R<STG_SYSCFG_5_SPEC>;
 #[doc = "Register `stg_syscfg_5` writer"]
 pub type W = crate::W<STG_SYSCFG_5_SPEC>;
-#[doc = "Field `u0_cdn_usb_xhci_debug_link_state` reader - u0_cdn_usb_xhci_debug_link_state"]
-pub type U0_CDN_USB_XHCI_DEBUG_LINK_STATE_R = crate::FieldReader<u32>;
+#[doc = "Field `u0_usb_xhci_debug_link_state` reader - u0_usb_xhci_debug_link_state"]
+pub type U0_USB_XHCI_DEBUG_LINK_STATE_R = crate::FieldReader<u32>;
 impl R {
-    #[doc = "Bits 0:30 - u0_cdn_usb_xhci_debug_link_state"]
+    #[doc = "Bits 0:30 - u0_usb_xhci_debug_link_state"]
     #[inline(always)]
-    pub fn u0_cdn_usb_xhci_debug_link_state(&self) -> U0_CDN_USB_XHCI_DEBUG_LINK_STATE_R {
-        U0_CDN_USB_XHCI_DEBUG_LINK_STATE_R::new(self.bits & 0x7fff_ffff)
+    pub fn u0_usb_xhci_debug_link_state(&self) -> U0_USB_XHCI_DEBUG_LINK_STATE_R {
+        U0_USB_XHCI_DEBUG_LINK_STATE_R::new(self.bits & 0x7fff_ffff)
     }
 }
 impl W {

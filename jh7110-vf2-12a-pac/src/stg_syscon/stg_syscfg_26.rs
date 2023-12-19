@@ -2,29 +2,27 @@
 pub type R = crate::R<STG_SYSCFG_26_SPEC>;
 #[doc = "Register `stg_syscfg_26` writer"]
 pub type W = crate::W<STG_SYSCFG_26_SPEC>;
-#[doc = "Field `u0_plda_pcie_axi4_mst0_aratomop_257_256` reader - u0_plda_pcie_axi4_mst0_aratomop_257_256"]
-pub type U0_PLDA_PCIE_AXI4_MST0_ARATOMOP_257_256_R = crate::FieldReader;
-#[doc = "Field `u0_plda_pcie_axi4_mst0_arfunc` reader - u0_plda_pcie_axi4_mst0_arfunc"]
-pub type U0_PLDA_PCIE_AXI4_MST0_ARFUNC_R = crate::FieldReader<u16>;
-#[doc = "Field `u0_plda_pcie_axi4_mst0_arregion` reader - u0_plda_pcie_axi4_mst0_arregion"]
-pub type U0_PLDA_PCIE_AXI4_MST0_ARREGION_R = crate::FieldReader;
+#[doc = "Field `u0_pcie_axi4_mst0_aratomop_257_256` reader - u0_pcie_axi4_mst0_aratomop_257_256"]
+pub type U0_PCIE_AXI4_MST0_ARATOMOP_257_256_R = crate::FieldReader;
+#[doc = "Field `u0_pcie_axi4_mst0_arfunc` reader - u0_pcie_axi4_mst0_arfunc"]
+pub type U0_PCIE_AXI4_MST0_ARFUNC_R = crate::FieldReader<u16>;
+#[doc = "Field `u0_pcie_axi4_mst0_arregion` reader - u0_pcie_axi4_mst0_arregion"]
+pub type U0_PCIE_AXI4_MST0_ARREGION_R = crate::FieldReader;
 impl R {
-    #[doc = "Bits 0:1 - u0_plda_pcie_axi4_mst0_aratomop_257_256"]
+    #[doc = "Bits 0:1 - u0_pcie_axi4_mst0_aratomop_257_256"]
     #[inline(always)]
-    pub fn u0_plda_pcie_axi4_mst0_aratomop_257_256(
-        &self,
-    ) -> U0_PLDA_PCIE_AXI4_MST0_ARATOMOP_257_256_R {
-        U0_PLDA_PCIE_AXI4_MST0_ARATOMOP_257_256_R::new((self.bits & 3) as u8)
+    pub fn u0_pcie_axi4_mst0_aratomop_257_256(&self) -> U0_PCIE_AXI4_MST0_ARATOMOP_257_256_R {
+        U0_PCIE_AXI4_MST0_ARATOMOP_257_256_R::new((self.bits & 3) as u8)
     }
-    #[doc = "Bits 2:16 - u0_plda_pcie_axi4_mst0_arfunc"]
+    #[doc = "Bits 2:16 - u0_pcie_axi4_mst0_arfunc"]
     #[inline(always)]
-    pub fn u0_plda_pcie_axi4_mst0_arfunc(&self) -> U0_PLDA_PCIE_AXI4_MST0_ARFUNC_R {
-        U0_PLDA_PCIE_AXI4_MST0_ARFUNC_R::new(((self.bits >> 2) & 0x7fff) as u16)
+    pub fn u0_pcie_axi4_mst0_arfunc(&self) -> U0_PCIE_AXI4_MST0_ARFUNC_R {
+        U0_PCIE_AXI4_MST0_ARFUNC_R::new(((self.bits >> 2) & 0x7fff) as u16)
     }
-    #[doc = "Bits 17:20 - u0_plda_pcie_axi4_mst0_arregion"]
+    #[doc = "Bits 17:20 - u0_pcie_axi4_mst0_arregion"]
     #[inline(always)]
-    pub fn u0_plda_pcie_axi4_mst0_arregion(&self) -> U0_PLDA_PCIE_AXI4_MST0_ARREGION_R {
-        U0_PLDA_PCIE_AXI4_MST0_ARREGION_R::new(((self.bits >> 17) & 0x0f) as u8)
+    pub fn u0_pcie_axi4_mst0_arregion(&self) -> U0_PCIE_AXI4_MST0_ARREGION_R {
+        U0_PCIE_AXI4_MST0_ARREGION_R::new(((self.bits >> 17) & 0x0f) as u8)
     }
 }
 impl W {

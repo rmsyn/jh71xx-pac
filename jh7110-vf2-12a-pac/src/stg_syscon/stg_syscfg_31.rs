@@ -2,32 +2,30 @@
 pub type R = crate::R<STG_SYSCFG_31_SPEC>;
 #[doc = "Register `stg_syscfg_31` writer"]
 pub type W = crate::W<STG_SYSCFG_31_SPEC>;
-#[doc = "Field `u0_plda_pcie_axi4_mst0_awuser_42_32` reader - u0_plda_pcie_axi4_mst0_awuser_42_32"]
-pub type U0_PLDA_PCIE_AXI4_MST0_AWUSER_42_32_R = crate::FieldReader<u16>;
-#[doc = "Field `u0_plda_pcie_axi4_mst0_rderr` reader - u0_plda_pcie_axi4_mst0_rderr"]
-pub type U0_PLDA_PCIE_AXI4_MST0_RDERR_R = crate::FieldReader;
-#[doc = "Field `u0_plda_pcie_axi4_mst0_rderr` writer - u0_plda_pcie_axi4_mst0_rderr"]
-pub type U0_PLDA_PCIE_AXI4_MST0_RDERR_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
+#[doc = "Field `u0_pcie_axi4_mst0_awuser_42_32` reader - u0_pcie_axi4_mst0_awuser_42_32"]
+pub type U0_PCIE_AXI4_MST0_AWUSER_42_32_R = crate::FieldReader<u16>;
+#[doc = "Field `u0_pcie_axi4_mst0_rderr` reader - u0_pcie_axi4_mst0_rderr"]
+pub type U0_PCIE_AXI4_MST0_RDERR_R = crate::FieldReader;
+#[doc = "Field `u0_pcie_axi4_mst0_rderr` writer - u0_pcie_axi4_mst0_rderr"]
+pub type U0_PCIE_AXI4_MST0_RDERR_W<'a, REG> = crate::FieldWriter<'a, REG, 8>;
 impl R {
-    #[doc = "Bits 0:10 - u0_plda_pcie_axi4_mst0_awuser_42_32"]
+    #[doc = "Bits 0:10 - u0_pcie_axi4_mst0_awuser_42_32"]
     #[inline(always)]
-    pub fn u0_plda_pcie_axi4_mst0_awuser_42_32(&self) -> U0_PLDA_PCIE_AXI4_MST0_AWUSER_42_32_R {
-        U0_PLDA_PCIE_AXI4_MST0_AWUSER_42_32_R::new((self.bits & 0x07ff) as u16)
+    pub fn u0_pcie_axi4_mst0_awuser_42_32(&self) -> U0_PCIE_AXI4_MST0_AWUSER_42_32_R {
+        U0_PCIE_AXI4_MST0_AWUSER_42_32_R::new((self.bits & 0x07ff) as u16)
     }
-    #[doc = "Bits 11:18 - u0_plda_pcie_axi4_mst0_rderr"]
+    #[doc = "Bits 11:18 - u0_pcie_axi4_mst0_rderr"]
     #[inline(always)]
-    pub fn u0_plda_pcie_axi4_mst0_rderr(&self) -> U0_PLDA_PCIE_AXI4_MST0_RDERR_R {
-        U0_PLDA_PCIE_AXI4_MST0_RDERR_R::new(((self.bits >> 11) & 0xff) as u8)
+    pub fn u0_pcie_axi4_mst0_rderr(&self) -> U0_PCIE_AXI4_MST0_RDERR_R {
+        U0_PCIE_AXI4_MST0_RDERR_R::new(((self.bits >> 11) & 0xff) as u8)
     }
 }
 impl W {
-    #[doc = "Bits 11:18 - u0_plda_pcie_axi4_mst0_rderr"]
+    #[doc = "Bits 11:18 - u0_pcie_axi4_mst0_rderr"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_plda_pcie_axi4_mst0_rderr(
-        &mut self,
-    ) -> U0_PLDA_PCIE_AXI4_MST0_RDERR_W<STG_SYSCFG_31_SPEC> {
-        U0_PLDA_PCIE_AXI4_MST0_RDERR_W::new(self, 11)
+    pub fn u0_pcie_axi4_mst0_rderr(&mut self) -> U0_PCIE_AXI4_MST0_RDERR_W<STG_SYSCFG_31_SPEC> {
+        U0_PCIE_AXI4_MST0_RDERR_W::new(self, 11)
     }
     #[doc = r" Writes raw bits to the register."]
     #[doc = r""]

@@ -2,13 +2,13 @@
 pub type R = crate::R<STG_SYSCFG_107_SPEC>;
 #[doc = "Register `stg_syscfg_107` writer"]
 pub type W = crate::W<STG_SYSCFG_107_SPEC>;
-#[doc = "Field `u0_plda_pcie_test_out_pcie_31_0` reader - u0_plda_pcie_test_out_pcie_31_0"]
-pub type U0_PLDA_PCIE_TEST_OUT_PCIE_31_0_R = crate::FieldReader<u32>;
+#[doc = "Field `u0_pcie_test_out_pcie_31_0` reader - u0_pcie_test_out_pcie_31_0"]
+pub type U0_PCIE_TEST_OUT_PCIE_31_0_R = crate::FieldReader<u32>;
 impl R {
-    #[doc = "Bits 0:31 - u0_plda_pcie_test_out_pcie_31_0"]
+    #[doc = "Bits 0:31 - u0_pcie_test_out_pcie_31_0"]
     #[inline(always)]
-    pub fn u0_plda_pcie_test_out_pcie_31_0(&self) -> U0_PLDA_PCIE_TEST_OUT_PCIE_31_0_R {
-        U0_PLDA_PCIE_TEST_OUT_PCIE_31_0_R::new(self.bits)
+    pub fn u0_pcie_test_out_pcie_31_0(&self) -> U0_PCIE_TEST_OUT_PCIE_31_0_R {
+        U0_PCIE_TEST_OUT_PCIE_31_0_R::new(self.bits)
     }
 }
 impl W {

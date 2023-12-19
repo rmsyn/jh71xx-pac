@@ -2,34 +2,34 @@
 pub type R = crate::R<STG_SYSCFG_125_SPEC>;
 #[doc = "Register `stg_syscfg_125` writer"]
 pub type W = crate::W<STG_SYSCFG_125_SPEC>;
-#[doc = "Field `u0_plda_pcie_tx_pattern` reader - u0_plda_pcie_tx_pattern"]
-pub type U0_PLDA_PCIE_TX_PATTERN_R = crate::FieldReader;
-#[doc = "Field `u0_plda_pcie_tx_pattern` writer - u0_plda_pcie_tx_pattern"]
-pub type U0_PLDA_PCIE_TX_PATTERN_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
-#[doc = "Field `u0_plda_pcie_usb3_bus_width` reader - u0_plda_pcie_usb3_bus_width"]
-pub type U0_PLDA_PCIE_USB3_BUS_WIDTH_R = crate::FieldReader;
-#[doc = "Field `u0_plda_pcie_usb3_bus_width` writer - u0_plda_pcie_usb3_bus_width"]
-pub type U0_PLDA_PCIE_USB3_BUS_WIDTH_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
-#[doc = "Field `u0_plda_pcie_usb3_phy_enable` reader - u0_plda_pcie_usb3_phy_enable"]
-pub type U0_PLDA_PCIE_USB3_PHY_ENABLE_R = crate::BitReader;
-#[doc = "Field `u0_plda_pcie_usb3_phy_enable` writer - u0_plda_pcie_usb3_phy_enable"]
-pub type U0_PLDA_PCIE_USB3_PHY_ENABLE_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `u0_plda_pcie_usb3_rate` reader - u0_plda_pcie_usb3_rate"]
-pub type U0_PLDA_PCIE_USB3_RATE_R = crate::FieldReader;
-#[doc = "Field `u0_plda_pcie_usb3_rate` writer - u0_plda_pcie_usb3_rate"]
-pub type U0_PLDA_PCIE_USB3_RATE_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
-#[doc = "Field `u0_plda_pcie_usb3_rx_standby` reader - u0_plda_pcie_usb3_rx_standby"]
-pub type U0_PLDA_PCIE_USB3_RX_STANDBY_R = crate::BitReader;
-#[doc = "Field `u0_plda_pcie_usb3_rx_standby` writer - u0_plda_pcie_usb3_rx_standby"]
-pub type U0_PLDA_PCIE_USB3_RX_STANDBY_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `u0_plda_pcie_xwdecerr` reader - u0_plda_pcie_xwdecerr"]
-pub type U0_PLDA_PCIE_XWDECERR_R = crate::BitReader;
-#[doc = "Field `u0_plda_pcie_xwerrclr` reader - u0_plda_pcie_xwerrclr"]
-pub type U0_PLDA_PCIE_XWERRCLR_R = crate::BitReader;
-#[doc = "Field `u0_plda_pcie_xwerrclr` writer - u0_plda_pcie_xwerrclr"]
-pub type U0_PLDA_PCIE_XWERRCLR_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `u0_plda_pcie_xwslverr` reader - u0_plda_pcie_xwslverr"]
-pub type U0_PLDA_PCIE_XWSLVERR_R = crate::BitReader;
+#[doc = "Field `u0_pcie_tx_pattern` reader - u0_pcie_tx_pattern"]
+pub type U0_PCIE_TX_PATTERN_R = crate::FieldReader;
+#[doc = "Field `u0_pcie_tx_pattern` writer - u0_pcie_tx_pattern"]
+pub type U0_PCIE_TX_PATTERN_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+#[doc = "Field `u0_pcie_usb3_bus_width` reader - u0_pcie_usb3_bus_width"]
+pub type U0_PCIE_USB3_BUS_WIDTH_R = crate::FieldReader;
+#[doc = "Field `u0_pcie_usb3_bus_width` writer - u0_pcie_usb3_bus_width"]
+pub type U0_PCIE_USB3_BUS_WIDTH_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+#[doc = "Field `u0_pcie_usb3_phy_enable` reader - u0_pcie_usb3_phy_enable"]
+pub type U0_PCIE_USB3_PHY_ENABLE_R = crate::BitReader;
+#[doc = "Field `u0_pcie_usb3_phy_enable` writer - u0_pcie_usb3_phy_enable"]
+pub type U0_PCIE_USB3_PHY_ENABLE_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_pcie_usb3_rate` reader - u0_pcie_usb3_rate"]
+pub type U0_PCIE_USB3_RATE_R = crate::FieldReader;
+#[doc = "Field `u0_pcie_usb3_rate` writer - u0_pcie_usb3_rate"]
+pub type U0_PCIE_USB3_RATE_W<'a, REG> = crate::FieldWriter<'a, REG, 2>;
+#[doc = "Field `u0_pcie_usb3_rx_standby` reader - u0_pcie_usb3_rx_standby"]
+pub type U0_PCIE_USB3_RX_STANDBY_R = crate::BitReader;
+#[doc = "Field `u0_pcie_usb3_rx_standby` writer - u0_pcie_usb3_rx_standby"]
+pub type U0_PCIE_USB3_RX_STANDBY_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_pcie_xwdecerr` reader - u0_pcie_xwdecerr"]
+pub type U0_PCIE_XWDECERR_R = crate::BitReader;
+#[doc = "Field `u0_pcie_xwerrclr` reader - u0_pcie_xwerrclr"]
+pub type U0_PCIE_XWERRCLR_R = crate::BitReader;
+#[doc = "Field `u0_pcie_xwerrclr` writer - u0_pcie_xwerrclr"]
+pub type U0_PCIE_XWERRCLR_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_pcie_xwslverr` reader - u0_pcie_xwslverr"]
+pub type U0_PCIE_XWSLVERR_R = crate::BitReader;
 #[doc = "Field `u0_sec_top_sramcfg_slp` reader - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
 pub type U0_SEC_TOP_SRAMCFG_SLP_R = crate::BitReader;
 #[doc = "Field `u0_sec_top_sramcfg_slp` writer - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
@@ -65,45 +65,45 @@ pub type U0_SEC_TOP_SRAMCFG_VG_W<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `u0_plda_pcie_align_detect` reader - u0_plda_pcie_align_detect"]
 pub type U0_PLDA_PCIE_ALIGN_DETECT_R = crate::BitReader;
 impl R {
-    #[doc = "Bits 0:1 - u0_plda_pcie_tx_pattern"]
+    #[doc = "Bits 0:1 - u0_pcie_tx_pattern"]
     #[inline(always)]
-    pub fn u0_plda_pcie_tx_pattern(&self) -> U0_PLDA_PCIE_TX_PATTERN_R {
-        U0_PLDA_PCIE_TX_PATTERN_R::new((self.bits & 3) as u8)
+    pub fn u0_pcie_tx_pattern(&self) -> U0_PCIE_TX_PATTERN_R {
+        U0_PCIE_TX_PATTERN_R::new((self.bits & 3) as u8)
     }
-    #[doc = "Bits 2:3 - u0_plda_pcie_usb3_bus_width"]
+    #[doc = "Bits 2:3 - u0_pcie_usb3_bus_width"]
     #[inline(always)]
-    pub fn u0_plda_pcie_usb3_bus_width(&self) -> U0_PLDA_PCIE_USB3_BUS_WIDTH_R {
-        U0_PLDA_PCIE_USB3_BUS_WIDTH_R::new(((self.bits >> 2) & 3) as u8)
+    pub fn u0_pcie_usb3_bus_width(&self) -> U0_PCIE_USB3_BUS_WIDTH_R {
+        U0_PCIE_USB3_BUS_WIDTH_R::new(((self.bits >> 2) & 3) as u8)
     }
-    #[doc = "Bit 4 - u0_plda_pcie_usb3_phy_enable"]
+    #[doc = "Bit 4 - u0_pcie_usb3_phy_enable"]
     #[inline(always)]
-    pub fn u0_plda_pcie_usb3_phy_enable(&self) -> U0_PLDA_PCIE_USB3_PHY_ENABLE_R {
-        U0_PLDA_PCIE_USB3_PHY_ENABLE_R::new(((self.bits >> 4) & 1) != 0)
+    pub fn u0_pcie_usb3_phy_enable(&self) -> U0_PCIE_USB3_PHY_ENABLE_R {
+        U0_PCIE_USB3_PHY_ENABLE_R::new(((self.bits >> 4) & 1) != 0)
     }
-    #[doc = "Bits 5:6 - u0_plda_pcie_usb3_rate"]
+    #[doc = "Bits 5:6 - u0_pcie_usb3_rate"]
     #[inline(always)]
-    pub fn u0_plda_pcie_usb3_rate(&self) -> U0_PLDA_PCIE_USB3_RATE_R {
-        U0_PLDA_PCIE_USB3_RATE_R::new(((self.bits >> 5) & 3) as u8)
+    pub fn u0_pcie_usb3_rate(&self) -> U0_PCIE_USB3_RATE_R {
+        U0_PCIE_USB3_RATE_R::new(((self.bits >> 5) & 3) as u8)
     }
-    #[doc = "Bit 7 - u0_plda_pcie_usb3_rx_standby"]
+    #[doc = "Bit 7 - u0_pcie_usb3_rx_standby"]
     #[inline(always)]
-    pub fn u0_plda_pcie_usb3_rx_standby(&self) -> U0_PLDA_PCIE_USB3_RX_STANDBY_R {
-        U0_PLDA_PCIE_USB3_RX_STANDBY_R::new(((self.bits >> 7) & 1) != 0)
+    pub fn u0_pcie_usb3_rx_standby(&self) -> U0_PCIE_USB3_RX_STANDBY_R {
+        U0_PCIE_USB3_RX_STANDBY_R::new(((self.bits >> 7) & 1) != 0)
     }
-    #[doc = "Bit 8 - u0_plda_pcie_xwdecerr"]
+    #[doc = "Bit 8 - u0_pcie_xwdecerr"]
     #[inline(always)]
-    pub fn u0_plda_pcie_xwdecerr(&self) -> U0_PLDA_PCIE_XWDECERR_R {
-        U0_PLDA_PCIE_XWDECERR_R::new(((self.bits >> 8) & 1) != 0)
+    pub fn u0_pcie_xwdecerr(&self) -> U0_PCIE_XWDECERR_R {
+        U0_PCIE_XWDECERR_R::new(((self.bits >> 8) & 1) != 0)
     }
-    #[doc = "Bit 9 - u0_plda_pcie_xwerrclr"]
+    #[doc = "Bit 9 - u0_pcie_xwerrclr"]
     #[inline(always)]
-    pub fn u0_plda_pcie_xwerrclr(&self) -> U0_PLDA_PCIE_XWERRCLR_R {
-        U0_PLDA_PCIE_XWERRCLR_R::new(((self.bits >> 9) & 1) != 0)
+    pub fn u0_pcie_xwerrclr(&self) -> U0_PCIE_XWERRCLR_R {
+        U0_PCIE_XWERRCLR_R::new(((self.bits >> 9) & 1) != 0)
     }
-    #[doc = "Bit 10 - u0_plda_pcie_xwslverr"]
+    #[doc = "Bit 10 - u0_pcie_xwslverr"]
     #[inline(always)]
-    pub fn u0_plda_pcie_xwslverr(&self) -> U0_PLDA_PCIE_XWSLVERR_R {
-        U0_PLDA_PCIE_XWSLVERR_R::new(((self.bits >> 10) & 1) != 0)
+    pub fn u0_pcie_xwslverr(&self) -> U0_PCIE_XWSLVERR_R {
+        U0_PCIE_XWSLVERR_R::new(((self.bits >> 10) & 1) != 0)
     }
     #[doc = "Bit 11 - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
     #[inline(always)]
@@ -152,47 +152,41 @@ impl R {
     }
 }
 impl W {
-    #[doc = "Bits 0:1 - u0_plda_pcie_tx_pattern"]
+    #[doc = "Bits 0:1 - u0_pcie_tx_pattern"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_plda_pcie_tx_pattern(&mut self) -> U0_PLDA_PCIE_TX_PATTERN_W<STG_SYSCFG_125_SPEC> {
-        U0_PLDA_PCIE_TX_PATTERN_W::new(self, 0)
+    pub fn u0_pcie_tx_pattern(&mut self) -> U0_PCIE_TX_PATTERN_W<STG_SYSCFG_125_SPEC> {
+        U0_PCIE_TX_PATTERN_W::new(self, 0)
     }
-    #[doc = "Bits 2:3 - u0_plda_pcie_usb3_bus_width"]
+    #[doc = "Bits 2:3 - u0_pcie_usb3_bus_width"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_plda_pcie_usb3_bus_width(
-        &mut self,
-    ) -> U0_PLDA_PCIE_USB3_BUS_WIDTH_W<STG_SYSCFG_125_SPEC> {
-        U0_PLDA_PCIE_USB3_BUS_WIDTH_W::new(self, 2)
+    pub fn u0_pcie_usb3_bus_width(&mut self) -> U0_PCIE_USB3_BUS_WIDTH_W<STG_SYSCFG_125_SPEC> {
+        U0_PCIE_USB3_BUS_WIDTH_W::new(self, 2)
     }
-    #[doc = "Bit 4 - u0_plda_pcie_usb3_phy_enable"]
+    #[doc = "Bit 4 - u0_pcie_usb3_phy_enable"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_plda_pcie_usb3_phy_enable(
-        &mut self,
-    ) -> U0_PLDA_PCIE_USB3_PHY_ENABLE_W<STG_SYSCFG_125_SPEC> {
-        U0_PLDA_PCIE_USB3_PHY_ENABLE_W::new(self, 4)
+    pub fn u0_pcie_usb3_phy_enable(&mut self) -> U0_PCIE_USB3_PHY_ENABLE_W<STG_SYSCFG_125_SPEC> {
+        U0_PCIE_USB3_PHY_ENABLE_W::new(self, 4)
     }
-    #[doc = "Bits 5:6 - u0_plda_pcie_usb3_rate"]
+    #[doc = "Bits 5:6 - u0_pcie_usb3_rate"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_plda_pcie_usb3_rate(&mut self) -> U0_PLDA_PCIE_USB3_RATE_W<STG_SYSCFG_125_SPEC> {
-        U0_PLDA_PCIE_USB3_RATE_W::new(self, 5)
+    pub fn u0_pcie_usb3_rate(&mut self) -> U0_PCIE_USB3_RATE_W<STG_SYSCFG_125_SPEC> {
+        U0_PCIE_USB3_RATE_W::new(self, 5)
     }
-    #[doc = "Bit 7 - u0_plda_pcie_usb3_rx_standby"]
+    #[doc = "Bit 7 - u0_pcie_usb3_rx_standby"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_plda_pcie_usb3_rx_standby(
-        &mut self,
-    ) -> U0_PLDA_PCIE_USB3_RX_STANDBY_W<STG_SYSCFG_125_SPEC> {
-        U0_PLDA_PCIE_USB3_RX_STANDBY_W::new(self, 7)
+    pub fn u0_pcie_usb3_rx_standby(&mut self) -> U0_PCIE_USB3_RX_STANDBY_W<STG_SYSCFG_125_SPEC> {
+        U0_PCIE_USB3_RX_STANDBY_W::new(self, 7)
     }
-    #[doc = "Bit 9 - u0_plda_pcie_xwerrclr"]
+    #[doc = "Bit 9 - u0_pcie_xwerrclr"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_plda_pcie_xwerrclr(&mut self) -> U0_PLDA_PCIE_XWERRCLR_W<STG_SYSCFG_125_SPEC> {
-        U0_PLDA_PCIE_XWERRCLR_W::new(self, 9)
+    pub fn u0_pcie_xwerrclr(&mut self) -> U0_PCIE_XWERRCLR_W<STG_SYSCFG_125_SPEC> {
+        U0_PCIE_XWERRCLR_W::new(self, 9)
     }
     #[doc = "Bit 11 - SRAM/ROM configuration. SLP: sleep enable, high active, default is low."]
     #[inline(always)]

@@ -2,13 +2,13 @@
 pub type R = crate::R<STG_SYSCFG_138_SPEC>;
 #[doc = "Register `stg_syscfg_138` writer"]
 pub type W = crate::W<STG_SYSCFG_138_SPEC>;
-#[doc = "Field `u1_plda_pcie_axi4_mst0_awuser_31_0` reader - u1_plda_pcie_axi4_mst0_awuser_31_0"]
-pub type U1_PLDA_PCIE_AXI4_MST0_AWUSER_31_0_R = crate::FieldReader<u32>;
+#[doc = "Field `u1_pcie_axi4_mst0_awuser_31_0` reader - u1_pcie_axi4_mst0_awuser_31_0"]
+pub type U1_PCIE_AXI4_MST0_AWUSER_31_0_R = crate::FieldReader<u32>;
 impl R {
-    #[doc = "Bits 0:31 - u1_plda_pcie_axi4_mst0_awuser_31_0"]
+    #[doc = "Bits 0:31 - u1_pcie_axi4_mst0_awuser_31_0"]
     #[inline(always)]
-    pub fn u1_plda_pcie_axi4_mst0_awuser_31_0(&self) -> U1_PLDA_PCIE_AXI4_MST0_AWUSER_31_0_R {
-        U1_PLDA_PCIE_AXI4_MST0_AWUSER_31_0_R::new(self.bits)
+    pub fn u1_pcie_axi4_mst0_awuser_31_0(&self) -> U1_PCIE_AXI4_MST0_AWUSER_31_0_R {
+        U1_PCIE_AXI4_MST0_AWUSER_31_0_R::new(self.bits)
     }
 }
 impl W {

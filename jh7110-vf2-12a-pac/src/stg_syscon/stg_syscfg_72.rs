@@ -2,25 +2,25 @@
 pub type R = crate::R<STG_SYSCFG_72_SPEC>;
 #[doc = "Register `stg_syscfg_72` writer"]
 pub type W = crate::W<STG_SYSCFG_72_SPEC>;
-#[doc = "Field `u0_plda_pcie_k_phyparam_735_704` reader - u0_plda_pcie_k_phyparam_735_704"]
-pub type U0_PLDA_PCIE_K_PHYPARAM_735_704_R = crate::FieldReader<u32>;
-#[doc = "Field `u0_plda_pcie_k_phyparam_735_704` writer - u0_plda_pcie_k_phyparam_735_704"]
-pub type U0_PLDA_PCIE_K_PHYPARAM_735_704_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
+#[doc = "Field `u0_pcie_k_phyparam_735_704` reader - u0_pcie_k_phyparam_735_704"]
+pub type U0_PCIE_K_PHYPARAM_735_704_R = crate::FieldReader<u32>;
+#[doc = "Field `u0_pcie_k_phyparam_735_704` writer - u0_pcie_k_phyparam_735_704"]
+pub type U0_PCIE_K_PHYPARAM_735_704_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl R {
-    #[doc = "Bits 0:31 - u0_plda_pcie_k_phyparam_735_704"]
+    #[doc = "Bits 0:31 - u0_pcie_k_phyparam_735_704"]
     #[inline(always)]
-    pub fn u0_plda_pcie_k_phyparam_735_704(&self) -> U0_PLDA_PCIE_K_PHYPARAM_735_704_R {
-        U0_PLDA_PCIE_K_PHYPARAM_735_704_R::new(self.bits)
+    pub fn u0_pcie_k_phyparam_735_704(&self) -> U0_PCIE_K_PHYPARAM_735_704_R {
+        U0_PCIE_K_PHYPARAM_735_704_R::new(self.bits)
     }
 }
 impl W {
-    #[doc = "Bits 0:31 - u0_plda_pcie_k_phyparam_735_704"]
+    #[doc = "Bits 0:31 - u0_pcie_k_phyparam_735_704"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_plda_pcie_k_phyparam_735_704(
+    pub fn u0_pcie_k_phyparam_735_704(
         &mut self,
-    ) -> U0_PLDA_PCIE_K_PHYPARAM_735_704_W<STG_SYSCFG_72_SPEC> {
-        U0_PLDA_PCIE_K_PHYPARAM_735_704_W::new(self, 0)
+    ) -> U0_PCIE_K_PHYPARAM_735_704_W<STG_SYSCFG_72_SPEC> {
+        U0_PCIE_K_PHYPARAM_735_704_W::new(self, 0)
     }
     #[doc = r" Writes raw bits to the register."]
     #[doc = r""]

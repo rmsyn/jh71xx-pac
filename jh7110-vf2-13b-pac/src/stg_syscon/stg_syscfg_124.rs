@@ -2,32 +2,32 @@
 pub type R = crate::R<STG_SYSCFG_124_SPEC>;
 #[doc = "Register `stg_syscfg_124` writer"]
 pub type W = crate::W<STG_SYSCFG_124_SPEC>;
-#[doc = "Field `u0_plda_pcie_tl_ctrl_hotplug` reader - u0_plda_pcie_tl_ctrl_hotplug"]
-pub type U0_PLDA_PCIE_TL_CTRL_HOTPLUG_R = crate::FieldReader<u16>;
-#[doc = "Field `u0_plda_pcie_tl_report_hotplug` reader - u0_plda_pcie_tl_report_hotplug"]
-pub type U0_PLDA_PCIE_TL_REPORT_HOTPLUG_R = crate::FieldReader<u16>;
-#[doc = "Field `u0_plda_pcie_tl_report_hotplug` writer - u0_plda_pcie_tl_report_hotplug"]
-pub type U0_PLDA_PCIE_TL_REPORT_HOTPLUG_W<'a, REG> = crate::FieldWriter<'a, REG, 16, u16>;
+#[doc = "Field `u0_pcie_tl_ctrl_hotplug` reader - u0_pcie_tl_ctrl_hotplug"]
+pub type U0_PCIE_TL_CTRL_HOTPLUG_R = crate::FieldReader<u16>;
+#[doc = "Field `u0_pcie_tl_report_hotplug` reader - u0_pcie_tl_report_hotplug"]
+pub type U0_PCIE_TL_REPORT_HOTPLUG_R = crate::FieldReader<u16>;
+#[doc = "Field `u0_pcie_tl_report_hotplug` writer - u0_pcie_tl_report_hotplug"]
+pub type U0_PCIE_TL_REPORT_HOTPLUG_W<'a, REG> = crate::FieldWriter<'a, REG, 16, u16>;
 impl R {
-    #[doc = "Bits 0:15 - u0_plda_pcie_tl_ctrl_hotplug"]
+    #[doc = "Bits 0:15 - u0_pcie_tl_ctrl_hotplug"]
     #[inline(always)]
-    pub fn u0_plda_pcie_tl_ctrl_hotplug(&self) -> U0_PLDA_PCIE_TL_CTRL_HOTPLUG_R {
-        U0_PLDA_PCIE_TL_CTRL_HOTPLUG_R::new((self.bits & 0xffff) as u16)
+    pub fn u0_pcie_tl_ctrl_hotplug(&self) -> U0_PCIE_TL_CTRL_HOTPLUG_R {
+        U0_PCIE_TL_CTRL_HOTPLUG_R::new((self.bits & 0xffff) as u16)
     }
-    #[doc = "Bits 16:31 - u0_plda_pcie_tl_report_hotplug"]
+    #[doc = "Bits 16:31 - u0_pcie_tl_report_hotplug"]
     #[inline(always)]
-    pub fn u0_plda_pcie_tl_report_hotplug(&self) -> U0_PLDA_PCIE_TL_REPORT_HOTPLUG_R {
-        U0_PLDA_PCIE_TL_REPORT_HOTPLUG_R::new(((self.bits >> 16) & 0xffff) as u16)
+    pub fn u0_pcie_tl_report_hotplug(&self) -> U0_PCIE_TL_REPORT_HOTPLUG_R {
+        U0_PCIE_TL_REPORT_HOTPLUG_R::new(((self.bits >> 16) & 0xffff) as u16)
     }
 }
 impl W {
-    #[doc = "Bits 16:31 - u0_plda_pcie_tl_report_hotplug"]
+    #[doc = "Bits 16:31 - u0_pcie_tl_report_hotplug"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_plda_pcie_tl_report_hotplug(
+    pub fn u0_pcie_tl_report_hotplug(
         &mut self,
-    ) -> U0_PLDA_PCIE_TL_REPORT_HOTPLUG_W<STG_SYSCFG_124_SPEC> {
-        U0_PLDA_PCIE_TL_REPORT_HOTPLUG_W::new(self, 16)
+    ) -> U0_PCIE_TL_REPORT_HOTPLUG_W<STG_SYSCFG_124_SPEC> {
+        U0_PCIE_TL_REPORT_HOTPLUG_W::new(self, 16)
     }
     #[doc = r" Writes raw bits to the register."]
     #[doc = r""]

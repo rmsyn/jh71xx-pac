@@ -2,13 +2,13 @@
 pub type R = crate::R<STG_SYSCFG_191_SPEC>;
 #[doc = "Register `stg_syscfg_191` writer"]
 pub type W = crate::W<STG_SYSCFG_191_SPEC>;
-#[doc = "Field `u1_plda_pcie_pl_pclk_rate` reader - u1_plda_pcie_pl_pclk_rate"]
-pub type U1_PLDA_PCIE_PL_PCLK_RATE_R = crate::FieldReader;
+#[doc = "Field `u1_pcie_pl_pclk_rate` reader - u1_pcie_pl_pclk_rate"]
+pub type U1_PCIE_PL_PCLK_RATE_R = crate::FieldReader;
 impl R {
-    #[doc = "Bits 0:4 - u1_plda_pcie_pl_pclk_rate"]
+    #[doc = "Bits 0:4 - u1_pcie_pl_pclk_rate"]
     #[inline(always)]
-    pub fn u1_plda_pcie_pl_pclk_rate(&self) -> U1_PLDA_PCIE_PL_PCLK_RATE_R {
-        U1_PLDA_PCIE_PL_PCLK_RATE_R::new((self.bits & 0x1f) as u8)
+    pub fn u1_pcie_pl_pclk_rate(&self) -> U1_PCIE_PL_PCLK_RATE_R {
+        U1_PCIE_PL_PCLK_RATE_R::new((self.bits & 0x1f) as u8)
     }
 }
 impl W {

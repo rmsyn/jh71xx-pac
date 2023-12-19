@@ -2,25 +2,23 @@
 pub type R = crate::R<STG_SYSCFG_9_SPEC>;
 #[doc = "Register `stg_syscfg_9` writer"]
 pub type W = crate::W<STG_SYSCFG_9_SPEC>;
-#[doc = "Field `u0_e2_sft7110_reset_vector_0` reader - u0_e2_sft7110_reset_vector_0"]
-pub type U0_E2_SFT7110_RESET_VECTOR_0_R = crate::FieldReader<u32>;
-#[doc = "Field `u0_e2_sft7110_reset_vector_0` writer - u0_e2_sft7110_reset_vector_0"]
-pub type U0_E2_SFT7110_RESET_VECTOR_0_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
+#[doc = "Field `u0_e2_reset_vector_0` reader - u0_e2_reset_vector_0"]
+pub type U0_E2_RESET_VECTOR_0_R = crate::FieldReader<u32>;
+#[doc = "Field `u0_e2_reset_vector_0` writer - u0_e2_reset_vector_0"]
+pub type U0_E2_RESET_VECTOR_0_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl R {
-    #[doc = "Bits 0:31 - u0_e2_sft7110_reset_vector_0"]
+    #[doc = "Bits 0:31 - u0_e2_reset_vector_0"]
     #[inline(always)]
-    pub fn u0_e2_sft7110_reset_vector_0(&self) -> U0_E2_SFT7110_RESET_VECTOR_0_R {
-        U0_E2_SFT7110_RESET_VECTOR_0_R::new(self.bits)
+    pub fn u0_e2_reset_vector_0(&self) -> U0_E2_RESET_VECTOR_0_R {
+        U0_E2_RESET_VECTOR_0_R::new(self.bits)
     }
 }
 impl W {
-    #[doc = "Bits 0:31 - u0_e2_sft7110_reset_vector_0"]
+    #[doc = "Bits 0:31 - u0_e2_reset_vector_0"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_e2_sft7110_reset_vector_0(
-        &mut self,
-    ) -> U0_E2_SFT7110_RESET_VECTOR_0_W<STG_SYSCFG_9_SPEC> {
-        U0_E2_SFT7110_RESET_VECTOR_0_W::new(self, 0)
+    pub fn u0_e2_reset_vector_0(&mut self) -> U0_E2_RESET_VECTOR_0_W<STG_SYSCFG_9_SPEC> {
+        U0_E2_RESET_VECTOR_0_W::new(self, 0)
     }
     #[doc = r" Writes raw bits to the register."]
     #[doc = r""]

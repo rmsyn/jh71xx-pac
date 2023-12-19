@@ -2,13 +2,13 @@
 pub type R = crate::R<STG_SYSCFG_4_SPEC>;
 #[doc = "Register `stg_syscfg_4` writer"]
 pub type W = crate::W<STG_SYSCFG_4_SPEC>;
-#[doc = "Field `u0_cdn_usb_xhci_debug_bus` reader - u0_cdn_usb_xhci_debug_bus"]
-pub type U0_CDN_USB_XHCI_DEBUG_BUS_R = crate::FieldReader<u32>;
+#[doc = "Field `u0_usb_xhci_debug_bus` reader - u0_usb_xhci_debug_bus"]
+pub type U0_USB_XHCI_DEBUG_BUS_R = crate::FieldReader<u32>;
 impl R {
-    #[doc = "Bits 0:31 - u0_cdn_usb_xhci_debug_bus"]
+    #[doc = "Bits 0:31 - u0_usb_xhci_debug_bus"]
     #[inline(always)]
-    pub fn u0_cdn_usb_xhci_debug_bus(&self) -> U0_CDN_USB_XHCI_DEBUG_BUS_R {
-        U0_CDN_USB_XHCI_DEBUG_BUS_R::new(self.bits)
+    pub fn u0_usb_xhci_debug_bus(&self) -> U0_USB_XHCI_DEBUG_BUS_R {
+        U0_USB_XHCI_DEBUG_BUS_R::new(self.bits)
     }
 }
 impl W {

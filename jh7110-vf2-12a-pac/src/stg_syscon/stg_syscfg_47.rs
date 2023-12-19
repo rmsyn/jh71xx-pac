@@ -2,13 +2,13 @@
 pub type R = crate::R<STG_SYSCFG_47_SPEC>;
 #[doc = "Register `stg_syscfg_47` writer"]
 pub type W = crate::W<STG_SYSCFG_47_SPEC>;
-#[doc = "Field `u0_plda_pcie_axi4_slv0_ruser` reader - u0_plda_pcie_axi4_slv0_ruser"]
-pub type U0_PLDA_PCIE_AXI4_SLV0_RUSER_R = crate::FieldReader<u32>;
+#[doc = "Field `u0_pcie_axi4_slv0_ruser` reader - u0_pcie_axi4_slv0_ruser"]
+pub type U0_PCIE_AXI4_SLV0_RUSER_R = crate::FieldReader<u32>;
 impl R {
-    #[doc = "Bits 0:31 - u0_plda_pcie_axi4_slv0_ruser"]
+    #[doc = "Bits 0:31 - u0_pcie_axi4_slv0_ruser"]
     #[inline(always)]
-    pub fn u0_plda_pcie_axi4_slv0_ruser(&self) -> U0_PLDA_PCIE_AXI4_SLV0_RUSER_R {
-        U0_PLDA_PCIE_AXI4_SLV0_RUSER_R::new(self.bits)
+    pub fn u0_pcie_axi4_slv0_ruser(&self) -> U0_PCIE_AXI4_SLV0_RUSER_R {
+        U0_PCIE_AXI4_SLV0_RUSER_R::new(self.bits)
     }
 }
 impl W {

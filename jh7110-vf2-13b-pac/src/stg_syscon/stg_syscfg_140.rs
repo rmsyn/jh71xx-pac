@@ -2,25 +2,23 @@
 pub type R = crate::R<STG_SYSCFG_140_SPEC>;
 #[doc = "Register `stg_syscfg_140` writer"]
 pub type W = crate::W<STG_SYSCFG_140_SPEC>;
-#[doc = "Field `u1_plda_pcie_axi4_mst0_ruser` reader - u1_plda_pcie_axi4_mst0_ruser"]
-pub type U1_PLDA_PCIE_AXI4_MST0_RUSER_R = crate::FieldReader<u32>;
-#[doc = "Field `u1_plda_pcie_axi4_mst0_ruser` writer - u1_plda_pcie_axi4_mst0_ruser"]
-pub type U1_PLDA_PCIE_AXI4_MST0_RUSER_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
+#[doc = "Field `u1_pcie_axi4_mst0_ruser` reader - u1_pcie_axi4_mst0_ruser"]
+pub type U1_PCIE_AXI4_MST0_RUSER_R = crate::FieldReader<u32>;
+#[doc = "Field `u1_pcie_axi4_mst0_ruser` writer - u1_pcie_axi4_mst0_ruser"]
+pub type U1_PCIE_AXI4_MST0_RUSER_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl R {
-    #[doc = "Bits 0:31 - u1_plda_pcie_axi4_mst0_ruser"]
+    #[doc = "Bits 0:31 - u1_pcie_axi4_mst0_ruser"]
     #[inline(always)]
-    pub fn u1_plda_pcie_axi4_mst0_ruser(&self) -> U1_PLDA_PCIE_AXI4_MST0_RUSER_R {
-        U1_PLDA_PCIE_AXI4_MST0_RUSER_R::new(self.bits)
+    pub fn u1_pcie_axi4_mst0_ruser(&self) -> U1_PCIE_AXI4_MST0_RUSER_R {
+        U1_PCIE_AXI4_MST0_RUSER_R::new(self.bits)
     }
 }
 impl W {
-    #[doc = "Bits 0:31 - u1_plda_pcie_axi4_mst0_ruser"]
+    #[doc = "Bits 0:31 - u1_pcie_axi4_mst0_ruser"]
     #[inline(always)]
     #[must_use]
-    pub fn u1_plda_pcie_axi4_mst0_ruser(
-        &mut self,
-    ) -> U1_PLDA_PCIE_AXI4_MST0_RUSER_W<STG_SYSCFG_140_SPEC> {
-        U1_PLDA_PCIE_AXI4_MST0_RUSER_W::new(self, 0)
+    pub fn u1_pcie_axi4_mst0_ruser(&mut self) -> U1_PCIE_AXI4_MST0_RUSER_W<STG_SYSCFG_140_SPEC> {
+        U1_PCIE_AXI4_MST0_RUSER_W::new(self, 0)
     }
     #[doc = r" Writes raw bits to the register."]
     #[doc = r""]

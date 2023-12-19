@@ -2,25 +2,25 @@
 pub type R = crate::R<STG_SYSCFG_213_SPEC>;
 #[doc = "Register `stg_syscfg_213` writer"]
 pub type W = crate::W<STG_SYSCFG_213_SPEC>;
-#[doc = "Field `u1_plda_pcie_test_out_bridge_479_448` reader - u1_plda_pcie_test_out_bridge_479_448"]
-pub type U1_PLDA_PCIE_TEST_OUT_BRIDGE_479_448_R = crate::FieldReader<u32>;
-#[doc = "Field `u1_plda_pcie_test_out_bridge_479_448` writer - u1_plda_pcie_test_out_bridge_479_448"]
-pub type U1_PLDA_PCIE_TEST_OUT_BRIDGE_479_448_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
+#[doc = "Field `u1_pcie_test_out_bridge_479_448` reader - u1_pcie_test_out_bridge_479_448"]
+pub type U1_PCIE_TEST_OUT_BRIDGE_479_448_R = crate::FieldReader<u32>;
+#[doc = "Field `u1_pcie_test_out_bridge_479_448` writer - u1_pcie_test_out_bridge_479_448"]
+pub type U1_PCIE_TEST_OUT_BRIDGE_479_448_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl R {
-    #[doc = "Bits 0:31 - u1_plda_pcie_test_out_bridge_479_448"]
+    #[doc = "Bits 0:31 - u1_pcie_test_out_bridge_479_448"]
     #[inline(always)]
-    pub fn u1_plda_pcie_test_out_bridge_479_448(&self) -> U1_PLDA_PCIE_TEST_OUT_BRIDGE_479_448_R {
-        U1_PLDA_PCIE_TEST_OUT_BRIDGE_479_448_R::new(self.bits)
+    pub fn u1_pcie_test_out_bridge_479_448(&self) -> U1_PCIE_TEST_OUT_BRIDGE_479_448_R {
+        U1_PCIE_TEST_OUT_BRIDGE_479_448_R::new(self.bits)
     }
 }
 impl W {
-    #[doc = "Bits 0:31 - u1_plda_pcie_test_out_bridge_479_448"]
+    #[doc = "Bits 0:31 - u1_pcie_test_out_bridge_479_448"]
     #[inline(always)]
     #[must_use]
-    pub fn u1_plda_pcie_test_out_bridge_479_448(
+    pub fn u1_pcie_test_out_bridge_479_448(
         &mut self,
-    ) -> U1_PLDA_PCIE_TEST_OUT_BRIDGE_479_448_W<STG_SYSCFG_213_SPEC> {
-        U1_PLDA_PCIE_TEST_OUT_BRIDGE_479_448_W::new(self, 0)
+    ) -> U1_PCIE_TEST_OUT_BRIDGE_479_448_W<STG_SYSCFG_213_SPEC> {
+        U1_PCIE_TEST_OUT_BRIDGE_479_448_W::new(self, 0)
     }
     #[doc = r" Writes raw bits to the register."]
     #[doc = r""]
