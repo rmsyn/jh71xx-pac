@@ -11898,139 +11898,139 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>rstn_u0_stg_syscon_presetn</name>
+              <name>u0_stg_syscon_presetn</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[0:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_hifi4_rst_core</name>
+              <name>u0_hifi4_core</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[1:1]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_hifi4_rst_axi</name>
+              <name>u0_hifi4_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[2:2]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_sec_top_hreesetn</name>
+              <name>u0_sec_top_hreesetn</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[3:3]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_e2_sft7110_rst_core</name>
+              <name>u0_e2_core</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[4:4]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_dma1p_8ch_56hs_rstn_axi</name>
+              <name>u0_dma_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[5:5]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_dma1p_8ch_56hs_rstn_ahb</name>
+              <name>u0_dma_ahb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[6:6]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_cdn_usb_rstn_axi</name>
+              <name>u0_usb_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[7:7]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_cdn_usb_rstn_usb_apb</name>
+              <name>u0_usb_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[8:8]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_cdn_usb_rstn_utmi_apb</name>
+              <name>u0_usb_utmi_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[9:9]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_cdn_usb_rstn_pwrup</name>
+              <name>u0_usb_pwrup</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[10:10]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_plda_pcie_rstn_axi_mst0</name>
+              <name>u0_pcie_axi_mst0</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[11:11]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_plda_pcie_rstn_axi_slv0</name>
+              <name>u0_pcie_axi_slv0</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[12:12]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_plda_pcie_rstn_axi_slv</name>
+              <name>u0_pcie_axi_slv</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[13:13]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_plda_pci_rstn_brg</name>
+              <name>u0_pci_brg</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[14:14]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_plda_pcie_rstn_pcie</name>
+              <name>u0_pcie_pcie</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[15:15]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_plda_pcie_rstn_apb</name>
+              <name>u0_pcie_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[16:16]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_plda_pcie_rstn_axi_mst0</name>
+              <name>u1_pcie_axi_mst0</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[17:17]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_plda_pcie_rstn_axi_slv0</name>
+              <name>u1_pcie_axi_slv0</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[18:18]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_plda_pcie_rstn_axi_slv</name>
+              <name>u1_pcie_axi_slv</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[19:19]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_plda_pcie_rstn_brg</name>
+              <name>u1_pcie_brg</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[20:20]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_plda_pcie_rstn_pcie</name>
+              <name>u1_pcie_pcie</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[21:21]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_plda_pcie_rstn_apb</name>
+              <name>u1_pcie_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[22:22]</bitRange>
               <access>read-write</access>
@@ -12045,139 +12045,139 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>rstn_u0_stg_syscon_presetn</name>
+              <name>u0_stg_syscon_presetn</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[0:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_hifi4_rst_core</name>
+              <name>u0_hifi4_core</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[1:1]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_hifi4_rst_axi</name>
+              <name>u0_hifi4_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[2:2]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_sec_top_hreesetn</name>
+              <name>u0_sec_top_hreesetn</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[3:3]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_e2_sft7110_rst_core</name>
+              <name>u0_e2_core</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[4:4]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_dma1p_8ch_56hs_rstn_axi</name>
+              <name>u0_dma_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[5:5]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_dma1p_8ch_56hs_rstn_ahb</name>
+              <name>u0_dma_ahb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[6:6]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_cdn_usb_rstn_axi</name>
+              <name>u0_usb_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[7:7]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_cdn_usb_rstn_usb_apb</name>
+              <name>u0_usb_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[8:8]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_cdn_usb_rstn_utmi_apb</name>
+              <name>u0_usb_utmi_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[9:9]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_cdn_usb_rstn_pwrup</name>
+              <name>u0_usb_pwrup</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[10:10]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_plda_pcie_rstn_axi_mst0</name>
+              <name>u0_pcie_axi_mst0</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[11:11]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_plda_pcie_rstn_axi_slv0</name>
+              <name>u0_pcie_axi_slv0</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[12:12]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_plda_pcie_rstn_axi_slv</name>
+              <name>u0_pcie_axi_slv</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[13:13]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_plda_pci_rstn_brg</name>
+              <name>u0_pci_brg</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[14:14]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_plda_pcie_rstn_pcie</name>
+              <name>u0_pcie_pcie</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[15:15]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_plda_pcie_rstn_apb</name>
+              <name>u0_pcie_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[16:16]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_plda_pcie_rstn_axi_mst0</name>
+              <name>u1_pcie_axi_mst0</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[17:17]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_plda_pcie_rstn_axi_slv0</name>
+              <name>u1_pcie_axi_slv0</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[18:18]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_plda_pcie_rstn_axi_slv</name>
+              <name>u1_pcie_axi_slv</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[19:19]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_plda_pcie_rstn_brg</name>
+              <name>u1_pcie_brg</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[20:20]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_plda_pcie_rstn_pcie</name>
+              <name>u1_pcie_pcie</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[21:21]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_plda_pcie_rstn_apb</name>
+              <name>u1_pcie_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[22:22]</bitRange>
               <access>read-write</access>
@@ -31023,193 +31023,193 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>rstn_u0_jtag2apb_presetn</name>
+              <name>u0_jtag2apb_presetn</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[0:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_sys_syscon_presetn</name>
+              <name>u0_sys_syscon_presetn</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[1:1]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_sys_iomux_presetn</name>
+              <name>u0_sys_iomux_presetn</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[2:2]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_rst_bus</name>
+              <name>u0_bus</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[3:3]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_debug_reset</name>
+              <name>u0_debug</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[4:4]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_rst_core0</name>
+              <name>u0_core_0</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[5:5]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_rst_core1</name>
+              <name>u0_core_1</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[6:6]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_rst_core2</name>
+              <name>u0_core_2</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[7:7]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_rst_core3</name>
+              <name>u0_core3</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[8:8]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_rst_core4</name>
+              <name>u0_core4</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[9:9]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_rst_core0_st</name>
+              <name>u0_core_st_0</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[10:10]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_rst_core1_st</name>
+              <name>u0_core_st_1</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[11:11]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_rst_core2_st</name>
+              <name>u0_core_st_2</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[12:12]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_rst_core3_st</name>
+              <name>u0_core_st_3</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[13:13]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_rst_core4_st</name>
+              <name>u0_core_st_4</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[14:14]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_trace_rst0</name>
+              <name>u0_trace_0</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[15:15]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_trace_rst1</name>
+              <name>u0_trace_1</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[16:16]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_trace_rst2</name>
+              <name>u0_trace_2</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[17:17]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_trace_rst3</name>
+              <name>u0_trace_3</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[18:18]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_trace_rst4</name>
+              <name>u0_trace_4</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[19:19]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_trace_com_rst</name>
+              <name>u0_trace_com</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[20:20]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_img_gpu_rstn_apb</name>
+              <name>u0_img_gpu_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[21:21]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_img_gpu_rstn_doma</name>
+              <name>u0_img_gpu_doma</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[22:22]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_noc_bus_reset_apb_bus_n</name>
+              <name>u0_noc_bus_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[23:23]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_noc_bus_reset_axicfg0_axi_n</name>
+              <name>u0_noc_bus_axicfg0</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[24:24]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_noc_bus_reset_cpu_axi_n</name>
+              <name>u0_noc_bus_cpu_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[25:25]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_noc_bus_reset_disp_axi_n</name>
+              <name>u0_noc_bus_disp_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[26:26]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_noc_bus_reset_gpu_axi_n</name>
+              <name>u0_noc_bus_gpu_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[27:27]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_noc_bus_reset_isp_axi_n</name>
+              <name>u0_noc_bus_isp_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[28:28]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_noc_bus_reset_ddrc_n</name>
+              <name>u0_noc_bus_ddrc</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[29:29]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_noc_bus_reset_stg_axi_n</name>
+              <name>u0_noc_bus_stg_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[30:30]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_noc_bus_reset_vdec_axi_n</name>
+              <name>u0_noc_bus_vdec_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[31:31]</bitRange>
               <access>read-write</access>
@@ -31224,193 +31224,193 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>rstn_u0_sft7100_noc_bus_reset_venc_axi_n</name>
+              <name>u0_noc_bus_venc_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[0:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_axi_cfg1_dec_rstn_ahb</name>
+              <name>u0_axi_cfg1_dec_ahb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[1:1]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_axi_cfg1_dec_rstn_main</name>
+              <name>u0_axi_cfg1_dec_main</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[2:2]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_axi_cfg0_dec_rstn_main</name>
+              <name>u0_axi_cfg0_dec_main</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[3:3]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_axi_cfg0_dec_rstn_main_div</name>
+              <name>u0_axi_cfg0_dec_main_div</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[4:4]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_axi_cfg0_dec_rstn_hifi4</name>
+              <name>u0_axi_cfg0_dec_hifi4</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[5:5]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_ddr_sft7110_rstn_axi</name>
+              <name>u0_ddr_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[6:6]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_ddr_sft7110_rstn_osc</name>
+              <name>u0_ddr_osc</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[7:7]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_ddr_sft7110_rstn_apb</name>
+              <name>u0_ddr_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[8:8]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_dom_isp_top_rstn_dom_isp_top_ip_top_reset_n</name>
+              <name>u0_isp_top</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[9:9]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_dom_isp_top_rstn_dom_isp_top_rstn_isp_axi</name>
+              <name>u0_isp_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[10:10]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_dom_vout_top_rstn_dom_vout_top_rstn_vout_src</name>
+              <name>u0_vout_src</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[11:11]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_codaj12_rstn_axi</name>
+              <name>u0_codaj12_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[12:12]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_codaj12_rstn_core</name>
+              <name>u0_codaj12_core</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[13:13]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_codaj12_rstn_apb</name>
+              <name>u0_codaj12_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[14:14]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_wave511_rstn_axi</name>
+              <name>u0_wave511_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[15:15]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_wave511_rstn_bpu</name>
+              <name>u0_wave511_bpu</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[16:16]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_wave511_rstn_vce</name>
+              <name>u0_wave511_vce</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[17:17]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_wave511_rstn_apb</name>
+              <name>u0_wave511_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[18:18]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_vdec_jpg_arb_jpgresetn</name>
+              <name>u0_vdec_jpg_arb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[19:19]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_vdec_jpg_arb_mainresetn</name>
+              <name>u0_vdec_jpg_arb_main</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[20:20]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_aximem_128b_rstn_axi</name>
+              <name>u0_aximem_128b_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[21:21]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_wave420l_rstn_axi</name>
+              <name>u0_wave420l_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[22:22]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_wave420l_rstn_bpu</name>
+              <name>u0_wave420l_bpu</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[23:23]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_wave420l_rstn_vce</name>
+              <name>u0_wave420l_vce</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[24:24]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_wave420l_rstn_apb</name>
+              <name>u0_wave420l_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[25:25]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_aximem_128b_rstn_axi</name>
+              <name>u1_aximem</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[26:26]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u2_aximem_128b_rstn_axi</name>
+              <name>u2_aximem</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[27:27]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_intmem_rom_sram_rstn_rom</name>
+              <name>u0_intmem_rom_sram</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[28:28]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_cdns_qspi_rstn_ahb</name>
+              <name>u0_qspi_ahb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[29:29]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_cdns_qspi_rstn_apb</name>
+              <name>u0_qspi_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[30:30]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_cdns_qspi_rstn_ref</name>
+              <name>u0_qspi_ref</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[31:31]</bitRange>
               <access>read-write</access>
@@ -31425,193 +31425,193 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>rstn_u0_sdio_rstn_ahb</name>
+              <name>u0_sdio_ahb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[0:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_sdi_rstn_ahb</name>
+              <name>u1_sdi_ahb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[1:1]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_gmac5_axi64_aresetn_i</name>
+              <name>u1_gmac5_axi64</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[2:2]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_gmac5_axi64_hresetn_n</name>
+              <name>u1_gmac5_axi64_hresetn</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[3:3]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_mailbox_presetn</name>
+              <name>u0_mailbox_presetn</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[4:4]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_ssp_spi_rstn_apb</name>
+              <name>u0_spi_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[5:5]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_ssp_spi_rstn_apb</name>
+              <name>u1_spi_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[6:6]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u2_ssp_spi_rstn_apb</name>
+              <name>u2_spi_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[7:7]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u3_ssp_spi_rstn_apb</name>
+              <name>u3_spi_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[8:8]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u4_ssp_spi_rstn_apb</name>
+              <name>u4_spi_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[9:9]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u5_ssp_spi_rstn_apb</name>
+              <name>u5_spi_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[10:10]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u6_ssp_spi_rstn_apb</name>
+              <name>u6_spi_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[11:11]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_i2c_rstn_apb</name>
+              <name>u0_i2c_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[12:12]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_i2c_rstn_apb</name>
+              <name>u1_i2c_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[13:13]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u2_i2c_rstn_apb</name>
+              <name>u2_i2c_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[14:14]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u3_i2c_rstn_apb</name>
+              <name>u3_i2c_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[15:15]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u4_i2c_rstn_apb</name>
+              <name>u4_i2c_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[16:16]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u5_i2c_rstn_apb</name>
+              <name>u5_i2c_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[17:17]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u6_i2c_rstn_apb</name>
+              <name>u6_i2c_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[18:18]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_uart_rstn_apb</name>
+              <name>u0_uart_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[19:19]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_uart_rstn_core</name>
+              <name>u0_uart_core</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[20:20]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_uart_rstn_apb</name>
+              <name>u1_uart_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[21:21]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_uart_rstn_core</name>
+              <name>u1_uart_core</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[22:22]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u2_uart_rstn_apb</name>
+              <name>u2_uart_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[23:23]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u2_uart_rstn_core</name>
+              <name>u2_uart_core</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[24:24]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u3_uart_rstn_apb</name>
+              <name>u3_uart_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[25:25]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u3_uart_rstn_core</name>
+              <name>u3_uart_core</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[26:26]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u4_uart_rstn_apb</name>
+              <name>u4_uart_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[27:27]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u4_uart_rstn_core</name>
+              <name>u4_uart_core</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[28:28]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u5_uart_rstn_apb</name>
+              <name>u5_uart_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[29:29]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u6_uart_rstn_core</name>
+              <name>u6_uart_core</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[30:30]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_cdns_spdif_rstn_apb</name>
+              <name>u0_spdif_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[31:31]</bitRange>
               <access>read-write</access>
@@ -31626,181 +31626,181 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>rstn_u0_pwmdac_rstn_apb</name>
+              <name>u0_pwmdac_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[0:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_pdm_4mic_rstn_dmic</name>
+              <name>u0_pdm_4mic_dmic</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[1:1]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_pdm_4mic_rstn_apb</name>
+              <name>u0_pdm_4mic_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[2:2]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_i2srx_3ch_rstn_apb</name>
+              <name>u0_i2srx_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[3:3]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_i2srx_3ch_rstn_bclk</name>
+              <name>u0_i2srx_bclk</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[4:4]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_i2stx_4ch_rstn_apb</name>
+              <name>u0_i2stx_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[5:5]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_i2stx_4ch_rstn_bclk</name>
+              <name>u0_i2stx_bclk</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[6:6]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_i2stx_4ch_rstn_apb</name>
+              <name>u1_i2stx_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[7:7]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_i2stx_4ch_rstn_bclk</name>
+              <name>u1_i2stx_bclk</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[8:8]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_tdm16slot_rstn_ahb</name>
+              <name>u0_tdm16slot_ahb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[9:9]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_tdm16slot_rstn_tdm</name>
+              <name>u0_tdm16slot_tdm</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[10:10]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_tdm16slot_rstn_apb</name>
+              <name>u0_tdm16slot_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[11:11]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_pwm_8ch_rstn_apb</name>
+              <name>u0_pwm_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[12:12]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_dskit_wdt_rstn_apb</name>
+              <name>u0_dskit_wdt_rstn_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[13:13]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_dskit_wdt_rstn_wdt</name>
+              <name>u0_dskit_wdt</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[14:14]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_can_ctrl_rstn_apb</name>
+              <name>u0_can_ctrl_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[15:15]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_can_ctrl_rstn_can</name>
+              <name>u0_can_ctrl</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[16:16]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_can_ctrl_rstn_timer</name>
+              <name>u0_can_ctrl_timer</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[17:17]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_can_ctrl_rstn_apb</name>
+              <name>u1_can_ctrl_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[18:18]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_can_ctrl_rstn_can</name>
+              <name>u1_can_ctrl_can</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[19:19]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_can_ctrl_rstn_timer</name>
+              <name>u1_can_ctrl_timer</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[20:20]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_si5_timer_rstn_apb</name>
+              <name>u0_si5_timer_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[21:21]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_si5_timer_rstn_timer0</name>
+              <name>u0_si5_timer_0</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[22:22]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_si5_timer_rstn_time10</name>
+              <name>u0_si5_timer_1</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[23:23]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_si5_timer_rstn_timer2</name>
+              <name>u0_si5_timer_2</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[24:24]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_si5_timer_rstn_timer3</name>
+              <name>u0_si5_timer_3</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[25:25]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_int_ctrl_rstn_apb</name>
+              <name>u0_int_ctrl_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[26:26]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_temp_sensor_rstn_apb</name>
+              <name>u0_temp_sensor_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[27:27]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_temp_sensor_rstn_temp</name>
+              <name>u0_temp_sensor</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[28:28]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_jtag_certification_rst_n</name>
+              <name>u0_jtag_rst</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[29:29]</bitRange>
               <access>read-write</access>
@@ -31815,193 +31815,193 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>rstn_u0_jtag2apb_presetn</name>
+              <name>u0_jtag2apb_presetn</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[0:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_sys_syscon_presetn</name>
+              <name>u0_sys_syscon_presetn</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[1:1]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_sys_iomux_presetn</name>
+              <name>u0_sys_iomux_presetn</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[2:2]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_rst_bus</name>
+              <name>u0_bus</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[3:3]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_debug_reset</name>
+              <name>u0_debug</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[4:4]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_rst_core0</name>
+              <name>u0_core_0</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[5:5]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_rst_core1</name>
+              <name>u0_core_1</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[6:6]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_rst_core2</name>
+              <name>u0_core_2</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[7:7]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_rst_core3</name>
+              <name>u0_core3</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[8:8]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_rst_core4</name>
+              <name>u0_core4</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[9:9]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_rst_core0_st</name>
+              <name>u0_core_st_0</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[10:10]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_rst_core1_st</name>
+              <name>u0_core_st_1</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[11:11]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_rst_core2_st</name>
+              <name>u0_core_st_2</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[12:12]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_rst_core3_st</name>
+              <name>u0_core_st_3</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[13:13]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_rst_core4_st</name>
+              <name>u0_core_st_4</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[14:14]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_trace_rst0</name>
+              <name>u0_trace_0</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[15:15]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_trace_rst1</name>
+              <name>u0_trace_1</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[16:16]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_trace_rst2</name>
+              <name>u0_trace_2</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[17:17]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_trace_rst3</name>
+              <name>u0_trace_3</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[18:18]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_trace_rst4</name>
+              <name>u0_trace_4</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[19:19]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_trace_com_rst</name>
+              <name>u0_trace_com</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[20:20]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_img_gpu_rstn_apb</name>
+              <name>u0_img_gpu_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[21:21]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_img_gpu_rstn_doma</name>
+              <name>u0_img_gpu_doma</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[22:22]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_noc_bus_reset_apb_bus_n</name>
+              <name>u0_noc_bus_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[23:23]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_noc_bus_reset_axicfg0_axi_n</name>
+              <name>u0_noc_bus_axicfg0</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[24:24]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_noc_bus_reset_cpu_axi_n</name>
+              <name>u0_noc_bus_cpu_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[25:25]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_noc_bus_reset_disp_axi_n</name>
+              <name>u0_noc_bus_disp_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[26:26]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_noc_bus_reset_gpu_axi_n</name>
+              <name>u0_noc_bus_gpu_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[27:27]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_noc_bus_reset_isp_axi_n</name>
+              <name>u0_noc_bus_isp_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[28:28]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_noc_bus_reset_ddrc_n</name>
+              <name>u0_noc_bus_ddrc</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[29:29]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_noc_bus_reset_stg_axi_n</name>
+              <name>u0_noc_bus_stg_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[30:30]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rst_u0_u7mc_sft7110_noc_bus_reset_vdec_axi_n</name>
+              <name>u0_noc_bus_vdec_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[31:31]</bitRange>
               <access>read-write</access>
@@ -32016,193 +32016,193 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>rstn_u0_sft7100_noc_bus_reset_venc_axi_n</name>
+              <name>u0_noc_bus_venc_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[0:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_axi_cfg1_dec_rstn_ahb</name>
+              <name>u0_axi_cfg1_dec_ahb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[1:1]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_axi_cfg1_dec_rstn_main</name>
+              <name>u0_axi_cfg1_dec_main</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[2:2]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_axi_cfg0_dec_rstn_main</name>
+              <name>u0_axi_cfg0_dec_main</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[3:3]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_axi_cfg0_dec_rstn_main_div</name>
+              <name>u0_axi_cfg0_dec_main_div</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[4:4]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_axi_cfg0_dec_rstn_hifi4</name>
+              <name>u0_axi_cfg0_dec_hifi4</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[5:5]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_ddr_sft7110_rstn_axi</name>
+              <name>u0_ddr_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[6:6]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_ddr_sft7110_rstn_osc</name>
+              <name>u0_ddr_osc</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[7:7]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_ddr_sft7110_rstn_apb</name>
+              <name>u0_ddr_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[8:8]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_dom_isp_top_rstn_dom_isp_top_ip_top_reset_n</name>
+              <name>u0_isp_top</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[9:9]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_dom_isp_top_rstn_dom_isp_top_rstn_isp_axi</name>
+              <name>u0_isp_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[10:10]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_dom_vout_top_rstn_dom_vout_top_rstn_vout_src</name>
+              <name>u0_vout_src</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[11:11]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_codaj12_rstn_axi</name>
+              <name>u0_codaj12_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[12:12]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_codaj12_rstn_core</name>
+              <name>u0_codaj12_core</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[13:13]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_codaj12_rstn_apb</name>
+              <name>u0_codaj12_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[14:14]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_wave511_rstn_axi</name>
+              <name>u0_wave511_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[15:15]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_wave511_rstn_bpu</name>
+              <name>u0_wave511_bpu</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[16:16]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_wave511_rstn_vce</name>
+              <name>u0_wave511_vce</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[17:17]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_wave511_rstn_apb</name>
+              <name>u0_wave511_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[18:18]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_vdec_jpg_arb_jpgresetn</name>
+              <name>u0_vdec_jpg_arb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[19:19]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_vdec_jpg_arb_mainresetn</name>
+              <name>u0_vdec_jpg_arb_main</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[20:20]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_aximem_128b_rstn_axi</name>
+              <name>u0_aximem_128b_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[21:21]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_wave420l_rstn_axi</name>
+              <name>u0_wave420l_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[22:22]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_wave420l_rstn_bpu</name>
+              <name>u0_wave420l_bpu</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[23:23]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_wave420l_rstn_vce</name>
+              <name>u0_wave420l_vce</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[24:24]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_wave420l_rstn_apb</name>
+              <name>u0_wave420l_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[25:25]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_aximem_128b_rstn_axi</name>
+              <name>u1_aximem</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[26:26]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u2_aximem_128b_rstn_axi</name>
+              <name>u2_aximem</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[27:27]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_intmem_rom_sram_rstn_rom</name>
+              <name>u0_intmem_rom_sram</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[28:28]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_cdns_qspi_rstn_ahb</name>
+              <name>u0_qspi_ahb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[29:29]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_cdns_qspi_rstn_apb</name>
+              <name>u0_qspi_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[30:30]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_cdns_qspi_rstn_ref</name>
+              <name>u0_qspi_ref</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[31:31]</bitRange>
               <access>read-write</access>
@@ -32217,193 +32217,193 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>rstn_u0_sdio_rstn_ahb</name>
+              <name>u0_sdio_ahb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[0:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_sdi_rstn_ahb</name>
+              <name>u1_sdi_ahb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[1:1]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_gmac5_axi64_aresetn_i</name>
+              <name>u1_gmac5_axi64</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[2:2]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_gmac5_axi64_hresetn_n</name>
+              <name>u1_gmac5_axi64_hresetn</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[3:3]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_mailbox_presetn</name>
+              <name>u0_mailbox_presetn</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[4:4]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_ssp_spi_rstn_apb</name>
+              <name>u0_spi_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[5:5]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_ssp_spi_rstn_apb</name>
+              <name>u1_spi_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[6:6]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u2_ssp_spi_rstn_apb</name>
+              <name>u2_spi_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[7:7]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u3_ssp_spi_rstn_apb</name>
+              <name>u3_spi_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[8:8]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u4_ssp_spi_rstn_apb</name>
+              <name>u4_spi_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[9:9]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u5_ssp_spi_rstn_apb</name>
+              <name>u5_spi_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[10:10]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u6_ssp_spi_rstn_apb</name>
+              <name>u6_spi_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[11:11]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_i2c_rstn_apb</name>
+              <name>u0_i2c_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[12:12]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_i2c_rstn_apb</name>
+              <name>u1_i2c_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[13:13]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u2_i2c_rstn_apb</name>
+              <name>u2_i2c_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[14:14]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u3_i2c_rstn_apb</name>
+              <name>u3_i2c_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[15:15]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u4_i2c_rstn_apb</name>
+              <name>u4_i2c_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[16:16]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u5_i2c_rstn_apb</name>
+              <name>u5_i2c_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[17:17]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u6_i2c_rstn_apb</name>
+              <name>u6_i2c_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[18:18]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_uart_rstn_apb</name>
+              <name>u0_uart_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[19:19]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_uart_rstn_core</name>
+              <name>u0_uart_core</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[20:20]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_uart_rstn_apb</name>
+              <name>u1_uart_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[21:21]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_uart_rstn_core</name>
+              <name>u1_uart_core</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[22:22]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u2_uart_rstn_apb</name>
+              <name>u2_uart_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[23:23]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u2_uart_rstn_core</name>
+              <name>u2_uart_core</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[24:24]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u3_uart_rstn_apb</name>
+              <name>u3_uart_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[25:25]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u3_uart_rstn_core</name>
+              <name>u3_uart_core</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[26:26]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u4_uart_rstn_apb</name>
+              <name>u4_uart_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[27:27]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u4_uart_rstn_core</name>
+              <name>u4_uart_core</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[28:28]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u5_uart_rstn_apb</name>
+              <name>u5_uart_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[29:29]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u6_uart_rstn_core</name>
+              <name>u6_uart_core</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[30:30]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_cdns_spdif_rstn_apb</name>
+              <name>u0_spdif_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[31:31]</bitRange>
               <access>read-write</access>
@@ -32418,181 +32418,181 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>rstn_u0_pwmdac_rstn_apb</name>
+              <name>u0_pwmdac_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[0:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_pdm_4mic_rstn_dmic</name>
+              <name>u0_pdm_4mic_dmic</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[1:1]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_pdm_4mic_rstn_apb</name>
+              <name>u0_pdm_4mic_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[2:2]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_i2srx_3ch_rstn_apb</name>
+              <name>u0_i2srx_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[3:3]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_i2srx_3ch_rstn_bclk</name>
+              <name>u0_i2srx_bclk</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[4:4]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_i2stx_4ch_rstn_apb</name>
+              <name>u0_i2stx_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[5:5]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_i2stx_4ch_rstn_bclk</name>
+              <name>u0_i2stx_bclk</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[6:6]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_i2stx_4ch_rstn_apb</name>
+              <name>u1_i2stx_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[7:7]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_i2stx_4ch_rstn_bclk</name>
+              <name>u1_i2stx_bclk</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[8:8]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_tdm16slot_rstn_ahb</name>
+              <name>u0_tdm16slot_ahb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[9:9]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_tdm16slot_rstn_tdm</name>
+              <name>u0_tdm16slot_tdm</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[10:10]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_tdm16slot_rstn_apb</name>
+              <name>u0_tdm16slot_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[11:11]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_pwm_8ch_rstn_apb</name>
+              <name>u0_pwm_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[12:12]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_dskit_wdt_rstn_apb</name>
+              <name>u0_dskit_wdt_rstn_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[13:13]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_dskit_wdt_rstn_wdt</name>
+              <name>u0_dskit_wdt</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[14:14]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_can_ctrl_rstn_apb</name>
+              <name>u0_can_ctrl_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[15:15]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_can_ctrl_rstn_can</name>
+              <name>u0_can_ctrl</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[16:16]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_can_ctrl_rstn_timer</name>
+              <name>u0_can_ctrl_timer</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[17:17]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_can_ctrl_rstn_apb</name>
+              <name>u1_can_ctrl_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[18:18]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_can_ctrl_rstn_can</name>
+              <name>u1_can_ctrl_can</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[19:19]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u1_can_ctrl_rstn_timer</name>
+              <name>u1_can_ctrl_timer</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[20:20]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_si5_timer_rstn_apb</name>
+              <name>u0_si5_timer_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[21:21]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_si5_timer_rstn_timer0</name>
+              <name>u0_si5_timer_0</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[22:22]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_si5_timer_rstn_time10</name>
+              <name>u0_si5_timer_1</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[23:23]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_si5_timer_rstn_timer2</name>
+              <name>u0_si5_timer_2</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[24:24]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_si5_timer_rstn_timer3</name>
+              <name>u0_si5_timer_3</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[25:25]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_int_ctrl_rstn_apb</name>
+              <name>u0_int_ctrl_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[26:26]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_temp_sensor_rstn_apb</name>
+              <name>u0_temp_sensor_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[27:27]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_temp_sensor_rstn_temp</name>
+              <name>u0_temp_sensor</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[28:28]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rstn_u0_jtag_certification_rst_n</name>
+              <name>u0_jtag_rst</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[29:29]</bitRange>
               <access>read-write</access>
@@ -42817,13 +42817,13 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>gmac5_axi64_rstn_axi</name>
+              <name>gmac5_axi64_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[0:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>gmac5_axi64_rstn_ahb</name>
+              <name>gmac5_axi64_ahb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[1:1]</bitRange>
               <access>read-write</access>
@@ -42835,31 +42835,31 @@
               <access>read-write</access>
             </field>
             <field>
-              <name>pmu_rstn_apb</name>
+              <name>pmu_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[3:3]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>pmu_rstn_wkup</name>
+              <name>pmu_wkup</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[4:4]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rtc_hms_rstn_apb</name>
+              <name>rtc_hms_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[5:5]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rtc_hms_rstn_cal</name>
+              <name>rtc_hms_cal</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[6:6]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rtc_hms_rstn_osc32k</name>
+              <name>rtc_hms_osc32k</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[7:7]</bitRange>
               <access>read-write</access>
@@ -42874,13 +42874,13 @@
           <resetValue>0</resetValue>
           <fields>
             <field>
-              <name>gmac5_axi64_rstn_axi</name>
+              <name>gmac5_axi64_axi</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[0:0]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>gmac5_axi64_rstn_ahb</name>
+              <name>gmac5_axi64_ahb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[1:1]</bitRange>
               <access>read-write</access>
@@ -42892,31 +42892,31 @@
               <access>read-write</access>
             </field>
             <field>
-              <name>pmu_rstn_apb</name>
+              <name>pmu_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[3:3]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>pmu_rstn_wkup</name>
+              <name>pmu_wkup</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[4:4]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rtc_hms_rstn_apb</name>
+              <name>rtc_hms_apb</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[5:5]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rtc_hms_rstn_cal</name>
+              <name>rtc_hms_cal</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[6:6]</bitRange>
               <access>read-write</access>
             </field>
             <field>
-              <name>rtc_hms_rstn_osc32k</name>
+              <name>rtc_hms_osc32k</name>
               <description>1: Assert reset, 0: De-assert reset</description>
               <bitRange>[7:7]</bitRange>
               <access>read-write</access>
