@@ -2,40 +2,38 @@
 pub type R = crate::R<STG_SYSCFG_231_SPEC>;
 #[doc = "Register `stg_syscfg_231` writer"]
 pub type W = crate::W<STG_SYSCFG_231_SPEC>;
-#[doc = "Field `u1_plda_pcie_test_sel` reader - u1_plda_pcie_test_sel"]
-pub type U1_PLDA_PCIE_TEST_SEL_R = crate::FieldReader;
-#[doc = "Field `u1_plda_pcie_test_sel` writer - u1_plda_pcie_test_sel"]
-pub type U1_PLDA_PCIE_TEST_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
-#[doc = "Field `u1_plda_pcie_tl_clock_freq` reader - u1_plda_pcie_tl_clock_freq"]
-pub type U1_PLDA_PCIE_TL_CLOCK_FREQ_R = crate::FieldReader<u32>;
-#[doc = "Field `u1_plda_pcie_tl_clock_freq` writer - u1_plda_pcie_tl_clock_freq"]
-pub type U1_PLDA_PCIE_TL_CLOCK_FREQ_W<'a, REG> = crate::FieldWriter<'a, REG, 22, u32>;
+#[doc = "Field `u1_pcie_test_sel` reader - u1_pcie_test_sel"]
+pub type U1_PCIE_TEST_SEL_R = crate::FieldReader;
+#[doc = "Field `u1_pcie_test_sel` writer - u1_pcie_test_sel"]
+pub type U1_PCIE_TEST_SEL_W<'a, REG> = crate::FieldWriter<'a, REG, 4>;
+#[doc = "Field `u1_pcie_tl_clock_freq` reader - u1_pcie_tl_clock_freq"]
+pub type U1_PCIE_TL_CLOCK_FREQ_R = crate::FieldReader<u32>;
+#[doc = "Field `u1_pcie_tl_clock_freq` writer - u1_pcie_tl_clock_freq"]
+pub type U1_PCIE_TL_CLOCK_FREQ_W<'a, REG> = crate::FieldWriter<'a, REG, 22, u32>;
 impl R {
-    #[doc = "Bits 0:3 - u1_plda_pcie_test_sel"]
+    #[doc = "Bits 0:3 - u1_pcie_test_sel"]
     #[inline(always)]
-    pub fn u1_plda_pcie_test_sel(&self) -> U1_PLDA_PCIE_TEST_SEL_R {
-        U1_PLDA_PCIE_TEST_SEL_R::new((self.bits & 0x0f) as u8)
+    pub fn u1_pcie_test_sel(&self) -> U1_PCIE_TEST_SEL_R {
+        U1_PCIE_TEST_SEL_R::new((self.bits & 0x0f) as u8)
     }
-    #[doc = "Bits 4:25 - u1_plda_pcie_tl_clock_freq"]
+    #[doc = "Bits 4:25 - u1_pcie_tl_clock_freq"]
     #[inline(always)]
-    pub fn u1_plda_pcie_tl_clock_freq(&self) -> U1_PLDA_PCIE_TL_CLOCK_FREQ_R {
-        U1_PLDA_PCIE_TL_CLOCK_FREQ_R::new((self.bits >> 4) & 0x003f_ffff)
+    pub fn u1_pcie_tl_clock_freq(&self) -> U1_PCIE_TL_CLOCK_FREQ_R {
+        U1_PCIE_TL_CLOCK_FREQ_R::new((self.bits >> 4) & 0x003f_ffff)
     }
 }
 impl W {
-    #[doc = "Bits 0:3 - u1_plda_pcie_test_sel"]
+    #[doc = "Bits 0:3 - u1_pcie_test_sel"]
     #[inline(always)]
     #[must_use]
-    pub fn u1_plda_pcie_test_sel(&mut self) -> U1_PLDA_PCIE_TEST_SEL_W<STG_SYSCFG_231_SPEC> {
-        U1_PLDA_PCIE_TEST_SEL_W::new(self, 0)
+    pub fn u1_pcie_test_sel(&mut self) -> U1_PCIE_TEST_SEL_W<STG_SYSCFG_231_SPEC> {
+        U1_PCIE_TEST_SEL_W::new(self, 0)
     }
-    #[doc = "Bits 4:25 - u1_plda_pcie_tl_clock_freq"]
+    #[doc = "Bits 4:25 - u1_pcie_tl_clock_freq"]
     #[inline(always)]
     #[must_use]
-    pub fn u1_plda_pcie_tl_clock_freq(
-        &mut self,
-    ) -> U1_PLDA_PCIE_TL_CLOCK_FREQ_W<STG_SYSCFG_231_SPEC> {
-        U1_PLDA_PCIE_TL_CLOCK_FREQ_W::new(self, 4)
+    pub fn u1_pcie_tl_clock_freq(&mut self) -> U1_PCIE_TL_CLOCK_FREQ_W<STG_SYSCFG_231_SPEC> {
+        U1_PCIE_TL_CLOCK_FREQ_W::new(self, 4)
     }
     #[doc = r" Writes raw bits to the register."]
     #[doc = r""]

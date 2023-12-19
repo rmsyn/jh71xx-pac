@@ -2,13 +2,13 @@
 pub type R = crate::R<STG_SYSCFG_85_SPEC>;
 #[doc = "Register `stg_syscfg_85` writer"]
 pub type W = crate::W<STG_SYSCFG_85_SPEC>;
-#[doc = "Field `u0_plda_pcie_pl_sideband_in_63_32` reader - u0_plda_pcie_pl_sideband_in_63_32"]
-pub type U0_PLDA_PCIE_PL_SIDEBAND_IN_63_32_R = crate::FieldReader<u32>;
+#[doc = "Field `u0_pcie_pl_sideband_in_63_32` reader - u0_pcie_pl_sideband_in_63_32"]
+pub type U0_PCIE_PL_SIDEBAND_IN_63_32_R = crate::FieldReader<u32>;
 impl R {
-    #[doc = "Bits 0:31 - u0_plda_pcie_pl_sideband_in_63_32"]
+    #[doc = "Bits 0:31 - u0_pcie_pl_sideband_in_63_32"]
     #[inline(always)]
-    pub fn u0_plda_pcie_pl_sideband_in_63_32(&self) -> U0_PLDA_PCIE_PL_SIDEBAND_IN_63_32_R {
-        U0_PLDA_PCIE_PL_SIDEBAND_IN_63_32_R::new(self.bits)
+    pub fn u0_pcie_pl_sideband_in_63_32(&self) -> U0_PCIE_PL_SIDEBAND_IN_63_32_R {
+        U0_PCIE_PL_SIDEBAND_IN_63_32_R::new(self.bits)
     }
 }
 impl W {

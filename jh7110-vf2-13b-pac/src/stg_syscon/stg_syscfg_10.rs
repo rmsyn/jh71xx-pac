@@ -2,13 +2,13 @@
 pub type R = crate::R<STG_SYSCFG_10_SPEC>;
 #[doc = "Register `stg_syscfg_10` writer"]
 pub type W = crate::W<STG_SYSCFG_10_SPEC>;
-#[doc = "Field `u0_e2_sft7110_wfi_from_tile_0` reader - u0_e2_sft7110_wfi_from_tile_0"]
-pub type U0_E2_SFT7110_WFI_FROM_TILE_0_R = crate::BitReader;
+#[doc = "Field `u0_e2_wfi_from_tile_0` reader - u0_e2_wfi_from_tile_0"]
+pub type U0_E2_WFI_FROM_TILE_0_R = crate::BitReader;
 impl R {
-    #[doc = "Bit 0 - u0_e2_sft7110_wfi_from_tile_0"]
+    #[doc = "Bit 0 - u0_e2_wfi_from_tile_0"]
     #[inline(always)]
-    pub fn u0_e2_sft7110_wfi_from_tile_0(&self) -> U0_E2_SFT7110_WFI_FROM_TILE_0_R {
-        U0_E2_SFT7110_WFI_FROM_TILE_0_R::new((self.bits & 1) != 0)
+    pub fn u0_e2_wfi_from_tile_0(&self) -> U0_E2_WFI_FROM_TILE_0_R {
+        U0_E2_WFI_FROM_TILE_0_R::new((self.bits & 1) != 0)
     }
 }
 impl W {

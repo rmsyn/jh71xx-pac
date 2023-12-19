@@ -2,23 +2,23 @@
 pub type R = crate::R<STG_SYSCFG_79_SPEC>;
 #[doc = "Register `stg_syscfg_79` writer"]
 pub type W = crate::W<STG_SYSCFG_79_SPEC>;
-#[doc = "Field `u0_plda_pcie_pf0_offset` reader - u0_plda_pcie_pf0_offset"]
-pub type U0_PLDA_PCIE_PF0_OFFSET_R = crate::FieldReader<u32>;
-#[doc = "Field `u0_plda_pcie_pf0_offset` writer - u0_plda_pcie_pf0_offset"]
-pub type U0_PLDA_PCIE_PF0_OFFSET_W<'a, REG> = crate::FieldWriter<'a, REG, 20, u32>;
+#[doc = "Field `u0_pcie_pf0_offset` reader - u0_pcie_pf0_offset"]
+pub type U0_PCIE_PF0_OFFSET_R = crate::FieldReader<u32>;
+#[doc = "Field `u0_pcie_pf0_offset` writer - u0_pcie_pf0_offset"]
+pub type U0_PCIE_PF0_OFFSET_W<'a, REG> = crate::FieldWriter<'a, REG, 20, u32>;
 impl R {
-    #[doc = "Bits 0:19 - u0_plda_pcie_pf0_offset"]
+    #[doc = "Bits 0:19 - u0_pcie_pf0_offset"]
     #[inline(always)]
-    pub fn u0_plda_pcie_pf0_offset(&self) -> U0_PLDA_PCIE_PF0_OFFSET_R {
-        U0_PLDA_PCIE_PF0_OFFSET_R::new(self.bits & 0x000f_ffff)
+    pub fn u0_pcie_pf0_offset(&self) -> U0_PCIE_PF0_OFFSET_R {
+        U0_PCIE_PF0_OFFSET_R::new(self.bits & 0x000f_ffff)
     }
 }
 impl W {
-    #[doc = "Bits 0:19 - u0_plda_pcie_pf0_offset"]
+    #[doc = "Bits 0:19 - u0_pcie_pf0_offset"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_plda_pcie_pf0_offset(&mut self) -> U0_PLDA_PCIE_PF0_OFFSET_W<STG_SYSCFG_79_SPEC> {
-        U0_PLDA_PCIE_PF0_OFFSET_W::new(self, 0)
+    pub fn u0_pcie_pf0_offset(&mut self) -> U0_PCIE_PF0_OFFSET_W<STG_SYSCFG_79_SPEC> {
+        U0_PCIE_PF0_OFFSET_W::new(self, 0)
     }
     #[doc = r" Writes raw bits to the register."]
     #[doc = r""]

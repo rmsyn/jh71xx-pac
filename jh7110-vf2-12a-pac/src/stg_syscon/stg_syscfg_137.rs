@@ -2,20 +2,20 @@
 pub type R = crate::R<STG_SYSCFG_137_SPEC>;
 #[doc = "Register `stg_syscfg_137` writer"]
 pub type W = crate::W<STG_SYSCFG_137_SPEC>;
-#[doc = "Field `u1_plda_pcie_axi4_mst0_awfunc` reader - u1_plda_pcie_axi4_mst0_awfunc"]
-pub type U1_PLDA_PCIE_AXI4_MST0_AWFUNC_R = crate::FieldReader<u16>;
-#[doc = "Field `u1_plda_pcie_axi4_mst0_awregion` reader - u1_plda_pcie_axi4_mst0_awregion"]
-pub type U1_PLDA_PCIE_AXI4_MST0_AWREGION_R = crate::FieldReader;
+#[doc = "Field `u1_pcie_axi4_mst0_awfunc` reader - u1_pcie_axi4_mst0_awfunc"]
+pub type U1_PCIE_AXI4_MST0_AWFUNC_R = crate::FieldReader<u16>;
+#[doc = "Field `u1_pcie_axi4_mst0_awregion` reader - u1_pcie_axi4_mst0_awregion"]
+pub type U1_PCIE_AXI4_MST0_AWREGION_R = crate::FieldReader;
 impl R {
-    #[doc = "Bits 0:14 - u1_plda_pcie_axi4_mst0_awfunc"]
+    #[doc = "Bits 0:14 - u1_pcie_axi4_mst0_awfunc"]
     #[inline(always)]
-    pub fn u1_plda_pcie_axi4_mst0_awfunc(&self) -> U1_PLDA_PCIE_AXI4_MST0_AWFUNC_R {
-        U1_PLDA_PCIE_AXI4_MST0_AWFUNC_R::new((self.bits & 0x7fff) as u16)
+    pub fn u1_pcie_axi4_mst0_awfunc(&self) -> U1_PCIE_AXI4_MST0_AWFUNC_R {
+        U1_PCIE_AXI4_MST0_AWFUNC_R::new((self.bits & 0x7fff) as u16)
     }
-    #[doc = "Bits 15:18 - u1_plda_pcie_axi4_mst0_awregion"]
+    #[doc = "Bits 15:18 - u1_pcie_axi4_mst0_awregion"]
     #[inline(always)]
-    pub fn u1_plda_pcie_axi4_mst0_awregion(&self) -> U1_PLDA_PCIE_AXI4_MST0_AWREGION_R {
-        U1_PLDA_PCIE_AXI4_MST0_AWREGION_R::new(((self.bits >> 15) & 0x0f) as u8)
+    pub fn u1_pcie_axi4_mst0_awregion(&self) -> U1_PCIE_AXI4_MST0_AWREGION_R {
+        U1_PCIE_AXI4_MST0_AWREGION_R::new(((self.bits >> 15) & 0x0f) as u8)
     }
 }
 impl W {

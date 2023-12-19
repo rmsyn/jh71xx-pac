@@ -2,28 +2,25 @@
 pub type R = crate::R<STG_SYSCFG_7_SPEC>;
 #[doc = "Register `stg_syscfg_7` writer"]
 pub type W = crate::W<STG_SYSCFG_7_SPEC>;
-#[doc = "Field `u0_e2_sft7110_nmi_0_rnmi_exception_vector` reader - u0_e2_sft7110_nmi_0_rnmi_exception_vector"]
-pub type U0_E2_SFT7110_NMI_0_RNMI_EXCEPTION_VECTOR_R = crate::FieldReader<u32>;
-#[doc = "Field `u0_e2_sft7110_nmi_0_rnmi_exception_vector` writer - u0_e2_sft7110_nmi_0_rnmi_exception_vector"]
-pub type U0_E2_SFT7110_NMI_0_RNMI_EXCEPTION_VECTOR_W<'a, REG> =
-    crate::FieldWriter<'a, REG, 32, u32>;
+#[doc = "Field `u0_e2_nmi_exception_vector` reader - u0_e2_nmi_exception_vector"]
+pub type U0_E2_NMI_EXCEPTION_VECTOR_R = crate::FieldReader<u32>;
+#[doc = "Field `u0_e2_nmi_exception_vector` writer - u0_e2_nmi_exception_vector"]
+pub type U0_E2_NMI_EXCEPTION_VECTOR_W<'a, REG> = crate::FieldWriter<'a, REG, 32, u32>;
 impl R {
-    #[doc = "Bits 0:31 - u0_e2_sft7110_nmi_0_rnmi_exception_vector"]
+    #[doc = "Bits 0:31 - u0_e2_nmi_exception_vector"]
     #[inline(always)]
-    pub fn u0_e2_sft7110_nmi_0_rnmi_exception_vector(
-        &self,
-    ) -> U0_E2_SFT7110_NMI_0_RNMI_EXCEPTION_VECTOR_R {
-        U0_E2_SFT7110_NMI_0_RNMI_EXCEPTION_VECTOR_R::new(self.bits)
+    pub fn u0_e2_nmi_exception_vector(&self) -> U0_E2_NMI_EXCEPTION_VECTOR_R {
+        U0_E2_NMI_EXCEPTION_VECTOR_R::new(self.bits)
     }
 }
 impl W {
-    #[doc = "Bits 0:31 - u0_e2_sft7110_nmi_0_rnmi_exception_vector"]
+    #[doc = "Bits 0:31 - u0_e2_nmi_exception_vector"]
     #[inline(always)]
     #[must_use]
-    pub fn u0_e2_sft7110_nmi_0_rnmi_exception_vector(
+    pub fn u0_e2_nmi_exception_vector(
         &mut self,
-    ) -> U0_E2_SFT7110_NMI_0_RNMI_EXCEPTION_VECTOR_W<STG_SYSCFG_7_SPEC> {
-        U0_E2_SFT7110_NMI_0_RNMI_EXCEPTION_VECTOR_W::new(self, 0)
+    ) -> U0_E2_NMI_EXCEPTION_VECTOR_W<STG_SYSCFG_7_SPEC> {
+        U0_E2_NMI_EXCEPTION_VECTOR_W::new(self, 0)
     }
     #[doc = r" Writes raw bits to the register."]
     #[doc = r""]
