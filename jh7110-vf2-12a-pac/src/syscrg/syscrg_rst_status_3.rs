@@ -2,518 +2,458 @@
 pub type R = crate::R<SYSCRG_RST_STATUS_3_SPEC>;
 #[doc = "Register `syscrg_rst_status_3` writer"]
 pub type W = crate::W<SYSCRG_RST_STATUS_3_SPEC>;
-#[doc = "Field `rstn_u0_pwmdac_rstn_apb` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_PWMDAC_RSTN_APB_R = crate::BitReader;
-#[doc = "Field `rstn_u0_pwmdac_rstn_apb` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_PWMDAC_RSTN_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u0_pdm_4mic_rstn_dmic` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_PDM_4MIC_RSTN_DMIC_R = crate::BitReader;
-#[doc = "Field `rstn_u0_pdm_4mic_rstn_dmic` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_PDM_4MIC_RSTN_DMIC_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u0_pdm_4mic_rstn_apb` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_PDM_4MIC_RSTN_APB_R = crate::BitReader;
-#[doc = "Field `rstn_u0_pdm_4mic_rstn_apb` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_PDM_4MIC_RSTN_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u0_i2srx_3ch_rstn_apb` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_I2SRX_3CH_RSTN_APB_R = crate::BitReader;
-#[doc = "Field `rstn_u0_i2srx_3ch_rstn_apb` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_I2SRX_3CH_RSTN_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u0_i2srx_3ch_rstn_bclk` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_I2SRX_3CH_RSTN_BCLK_R = crate::BitReader;
-#[doc = "Field `rstn_u0_i2srx_3ch_rstn_bclk` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_I2SRX_3CH_RSTN_BCLK_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u0_i2stx_4ch_rstn_apb` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_I2STX_4CH_RSTN_APB_R = crate::BitReader;
-#[doc = "Field `rstn_u0_i2stx_4ch_rstn_apb` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_I2STX_4CH_RSTN_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u0_i2stx_4ch_rstn_bclk` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_I2STX_4CH_RSTN_BCLK_R = crate::BitReader;
-#[doc = "Field `rstn_u0_i2stx_4ch_rstn_bclk` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_I2STX_4CH_RSTN_BCLK_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u1_i2stx_4ch_rstn_apb` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U1_I2STX_4CH_RSTN_APB_R = crate::BitReader;
-#[doc = "Field `rstn_u1_i2stx_4ch_rstn_apb` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U1_I2STX_4CH_RSTN_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u1_i2stx_4ch_rstn_bclk` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U1_I2STX_4CH_RSTN_BCLK_R = crate::BitReader;
-#[doc = "Field `rstn_u1_i2stx_4ch_rstn_bclk` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U1_I2STX_4CH_RSTN_BCLK_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u0_tdm16slot_rstn_ahb` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_TDM16SLOT_RSTN_AHB_R = crate::BitReader;
-#[doc = "Field `rstn_u0_tdm16slot_rstn_ahb` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_TDM16SLOT_RSTN_AHB_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u0_tdm16slot_rstn_tdm` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_TDM16SLOT_RSTN_TDM_R = crate::BitReader;
-#[doc = "Field `rstn_u0_tdm16slot_rstn_tdm` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_TDM16SLOT_RSTN_TDM_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u0_tdm16slot_rstn_apb` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_TDM16SLOT_RSTN_APB_R = crate::BitReader;
-#[doc = "Field `rstn_u0_tdm16slot_rstn_apb` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_TDM16SLOT_RSTN_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u0_pwm_8ch_rstn_apb` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_PWM_8CH_RSTN_APB_R = crate::BitReader;
-#[doc = "Field `rstn_u0_pwm_8ch_rstn_apb` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_PWM_8CH_RSTN_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u0_dskit_wdt_rstn_apb` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_DSKIT_WDT_RSTN_APB_R = crate::BitReader;
-#[doc = "Field `rstn_u0_dskit_wdt_rstn_apb` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_DSKIT_WDT_RSTN_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u0_dskit_wdt_rstn_wdt` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_DSKIT_WDT_RSTN_WDT_R = crate::BitReader;
-#[doc = "Field `rstn_u0_dskit_wdt_rstn_wdt` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_DSKIT_WDT_RSTN_WDT_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u0_can_ctrl_rstn_apb` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_CAN_CTRL_RSTN_APB_R = crate::BitReader;
-#[doc = "Field `rstn_u0_can_ctrl_rstn_apb` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_CAN_CTRL_RSTN_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u0_can_ctrl_rstn_can` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_CAN_CTRL_RSTN_CAN_R = crate::BitReader;
-#[doc = "Field `rstn_u0_can_ctrl_rstn_can` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_CAN_CTRL_RSTN_CAN_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u0_can_ctrl_rstn_timer` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_CAN_CTRL_RSTN_TIMER_R = crate::BitReader;
-#[doc = "Field `rstn_u0_can_ctrl_rstn_timer` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_CAN_CTRL_RSTN_TIMER_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u1_can_ctrl_rstn_apb` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U1_CAN_CTRL_RSTN_APB_R = crate::BitReader;
-#[doc = "Field `rstn_u1_can_ctrl_rstn_apb` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U1_CAN_CTRL_RSTN_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u1_can_ctrl_rstn_can` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U1_CAN_CTRL_RSTN_CAN_R = crate::BitReader;
-#[doc = "Field `rstn_u1_can_ctrl_rstn_can` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U1_CAN_CTRL_RSTN_CAN_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u1_can_ctrl_rstn_timer` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U1_CAN_CTRL_RSTN_TIMER_R = crate::BitReader;
-#[doc = "Field `rstn_u1_can_ctrl_rstn_timer` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U1_CAN_CTRL_RSTN_TIMER_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u0_si5_timer_rstn_apb` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_SI5_TIMER_RSTN_APB_R = crate::BitReader;
-#[doc = "Field `rstn_u0_si5_timer_rstn_apb` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_SI5_TIMER_RSTN_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u0_si5_timer_rstn_timer0` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_SI5_TIMER_RSTN_TIMER0_R = crate::BitReader;
-#[doc = "Field `rstn_u0_si5_timer_rstn_timer0` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_SI5_TIMER_RSTN_TIMER0_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u0_si5_timer_rstn_time10` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_SI5_TIMER_RSTN_TIME10_R = crate::BitReader;
-#[doc = "Field `rstn_u0_si5_timer_rstn_time10` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_SI5_TIMER_RSTN_TIME10_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u0_si5_timer_rstn_timer2` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_SI5_TIMER_RSTN_TIMER2_R = crate::BitReader;
-#[doc = "Field `rstn_u0_si5_timer_rstn_timer2` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_SI5_TIMER_RSTN_TIMER2_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u0_si5_timer_rstn_timer3` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_SI5_TIMER_RSTN_TIMER3_R = crate::BitReader;
-#[doc = "Field `rstn_u0_si5_timer_rstn_timer3` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_SI5_TIMER_RSTN_TIMER3_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u0_int_ctrl_rstn_apb` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_INT_CTRL_RSTN_APB_R = crate::BitReader;
-#[doc = "Field `rstn_u0_int_ctrl_rstn_apb` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_INT_CTRL_RSTN_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u0_temp_sensor_rstn_apb` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_TEMP_SENSOR_RSTN_APB_R = crate::BitReader;
-#[doc = "Field `rstn_u0_temp_sensor_rstn_apb` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_TEMP_SENSOR_RSTN_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u0_temp_sensor_rstn_temp` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_TEMP_SENSOR_RSTN_TEMP_R = crate::BitReader;
-#[doc = "Field `rstn_u0_temp_sensor_rstn_temp` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_TEMP_SENSOR_RSTN_TEMP_W<'a, REG> = crate::BitWriter<'a, REG>;
-#[doc = "Field `rstn_u0_jtag_certification_rst_n` reader - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_JTAG_CERTIFICATION_RST_N_R = crate::BitReader;
-#[doc = "Field `rstn_u0_jtag_certification_rst_n` writer - 1: Assert reset, 0: De-assert reset"]
-pub type RSTN_U0_JTAG_CERTIFICATION_RST_N_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_pwmdac_apb` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_PWMDAC_APB_R = crate::BitReader;
+#[doc = "Field `u0_pwmdac_apb` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_PWMDAC_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_pdm_4mic_dmic` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_PDM_4MIC_DMIC_R = crate::BitReader;
+#[doc = "Field `u0_pdm_4mic_dmic` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_PDM_4MIC_DMIC_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_pdm_4mic_apb` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_PDM_4MIC_APB_R = crate::BitReader;
+#[doc = "Field `u0_pdm_4mic_apb` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_PDM_4MIC_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_i2srx_apb` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_I2SRX_APB_R = crate::BitReader;
+#[doc = "Field `u0_i2srx_apb` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_I2SRX_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_i2srx_bclk` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_I2SRX_BCLK_R = crate::BitReader;
+#[doc = "Field `u0_i2srx_bclk` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_I2SRX_BCLK_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_i2stx_apb` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_I2STX_APB_R = crate::BitReader;
+#[doc = "Field `u0_i2stx_apb` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_I2STX_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_i2stx_bclk` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_I2STX_BCLK_R = crate::BitReader;
+#[doc = "Field `u0_i2stx_bclk` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_I2STX_BCLK_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u1_i2stx_apb` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U1_I2STX_APB_R = crate::BitReader;
+#[doc = "Field `u1_i2stx_apb` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U1_I2STX_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u1_i2stx_bclk` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U1_I2STX_BCLK_R = crate::BitReader;
+#[doc = "Field `u1_i2stx_bclk` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U1_I2STX_BCLK_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_tdm16slot_ahb` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_TDM16SLOT_AHB_R = crate::BitReader;
+#[doc = "Field `u0_tdm16slot_ahb` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_TDM16SLOT_AHB_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_tdm16slot_tdm` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_TDM16SLOT_TDM_R = crate::BitReader;
+#[doc = "Field `u0_tdm16slot_tdm` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_TDM16SLOT_TDM_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_tdm16slot_apb` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_TDM16SLOT_APB_R = crate::BitReader;
+#[doc = "Field `u0_tdm16slot_apb` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_TDM16SLOT_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_pwm_apb` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_PWM_APB_R = crate::BitReader;
+#[doc = "Field `u0_pwm_apb` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_PWM_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_dskit_wdt_rstn_apb` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_DSKIT_WDT_RSTN_APB_R = crate::BitReader;
+#[doc = "Field `u0_dskit_wdt_rstn_apb` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_DSKIT_WDT_RSTN_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_dskit_wdt` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_DSKIT_WDT_R = crate::BitReader;
+#[doc = "Field `u0_dskit_wdt` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_DSKIT_WDT_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_can_ctrl_apb` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_CAN_CTRL_APB_R = crate::BitReader;
+#[doc = "Field `u0_can_ctrl_apb` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_CAN_CTRL_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_can_ctrl` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_CAN_CTRL_R = crate::BitReader;
+#[doc = "Field `u0_can_ctrl` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_CAN_CTRL_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_can_ctrl_timer` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_CAN_CTRL_TIMER_R = crate::BitReader;
+#[doc = "Field `u0_can_ctrl_timer` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_CAN_CTRL_TIMER_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u1_can_ctrl_apb` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U1_CAN_CTRL_APB_R = crate::BitReader;
+#[doc = "Field `u1_can_ctrl_apb` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U1_CAN_CTRL_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u1_can_ctrl_can` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U1_CAN_CTRL_CAN_R = crate::BitReader;
+#[doc = "Field `u1_can_ctrl_can` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U1_CAN_CTRL_CAN_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u1_can_ctrl_timer` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U1_CAN_CTRL_TIMER_R = crate::BitReader;
+#[doc = "Field `u1_can_ctrl_timer` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U1_CAN_CTRL_TIMER_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_si5_timer_apb` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_SI5_TIMER_APB_R = crate::BitReader;
+#[doc = "Field `u0_si5_timer_apb` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_SI5_TIMER_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_si5_timer_0` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_SI5_TIMER_0_R = crate::BitReader;
+#[doc = "Field `u0_si5_timer_0` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_SI5_TIMER_0_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_si5_timer_1` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_SI5_TIMER_1_R = crate::BitReader;
+#[doc = "Field `u0_si5_timer_1` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_SI5_TIMER_1_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_si5_timer_2` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_SI5_TIMER_2_R = crate::BitReader;
+#[doc = "Field `u0_si5_timer_2` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_SI5_TIMER_2_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_si5_timer_3` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_SI5_TIMER_3_R = crate::BitReader;
+#[doc = "Field `u0_si5_timer_3` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_SI5_TIMER_3_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_int_ctrl_apb` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_INT_CTRL_APB_R = crate::BitReader;
+#[doc = "Field `u0_int_ctrl_apb` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_INT_CTRL_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_temp_sensor_apb` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_TEMP_SENSOR_APB_R = crate::BitReader;
+#[doc = "Field `u0_temp_sensor_apb` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_TEMP_SENSOR_APB_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_temp_sensor` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_TEMP_SENSOR_R = crate::BitReader;
+#[doc = "Field `u0_temp_sensor` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_TEMP_SENSOR_W<'a, REG> = crate::BitWriter<'a, REG>;
+#[doc = "Field `u0_jtag_rst` reader - 1: Assert reset, 0: De-assert reset"]
+pub type U0_JTAG_RST_R = crate::BitReader;
+#[doc = "Field `u0_jtag_rst` writer - 1: Assert reset, 0: De-assert reset"]
+pub type U0_JTAG_RST_W<'a, REG> = crate::BitWriter<'a, REG>;
 impl R {
     #[doc = "Bit 0 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_pwmdac_rstn_apb(&self) -> RSTN_U0_PWMDAC_RSTN_APB_R {
-        RSTN_U0_PWMDAC_RSTN_APB_R::new((self.bits & 1) != 0)
+    pub fn u0_pwmdac_apb(&self) -> U0_PWMDAC_APB_R {
+        U0_PWMDAC_APB_R::new((self.bits & 1) != 0)
     }
     #[doc = "Bit 1 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_pdm_4mic_rstn_dmic(&self) -> RSTN_U0_PDM_4MIC_RSTN_DMIC_R {
-        RSTN_U0_PDM_4MIC_RSTN_DMIC_R::new(((self.bits >> 1) & 1) != 0)
+    pub fn u0_pdm_4mic_dmic(&self) -> U0_PDM_4MIC_DMIC_R {
+        U0_PDM_4MIC_DMIC_R::new(((self.bits >> 1) & 1) != 0)
     }
     #[doc = "Bit 2 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_pdm_4mic_rstn_apb(&self) -> RSTN_U0_PDM_4MIC_RSTN_APB_R {
-        RSTN_U0_PDM_4MIC_RSTN_APB_R::new(((self.bits >> 2) & 1) != 0)
+    pub fn u0_pdm_4mic_apb(&self) -> U0_PDM_4MIC_APB_R {
+        U0_PDM_4MIC_APB_R::new(((self.bits >> 2) & 1) != 0)
     }
     #[doc = "Bit 3 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_i2srx_3ch_rstn_apb(&self) -> RSTN_U0_I2SRX_3CH_RSTN_APB_R {
-        RSTN_U0_I2SRX_3CH_RSTN_APB_R::new(((self.bits >> 3) & 1) != 0)
+    pub fn u0_i2srx_apb(&self) -> U0_I2SRX_APB_R {
+        U0_I2SRX_APB_R::new(((self.bits >> 3) & 1) != 0)
     }
     #[doc = "Bit 4 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_i2srx_3ch_rstn_bclk(&self) -> RSTN_U0_I2SRX_3CH_RSTN_BCLK_R {
-        RSTN_U0_I2SRX_3CH_RSTN_BCLK_R::new(((self.bits >> 4) & 1) != 0)
+    pub fn u0_i2srx_bclk(&self) -> U0_I2SRX_BCLK_R {
+        U0_I2SRX_BCLK_R::new(((self.bits >> 4) & 1) != 0)
     }
     #[doc = "Bit 5 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_i2stx_4ch_rstn_apb(&self) -> RSTN_U0_I2STX_4CH_RSTN_APB_R {
-        RSTN_U0_I2STX_4CH_RSTN_APB_R::new(((self.bits >> 5) & 1) != 0)
+    pub fn u0_i2stx_apb(&self) -> U0_I2STX_APB_R {
+        U0_I2STX_APB_R::new(((self.bits >> 5) & 1) != 0)
     }
     #[doc = "Bit 6 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_i2stx_4ch_rstn_bclk(&self) -> RSTN_U0_I2STX_4CH_RSTN_BCLK_R {
-        RSTN_U0_I2STX_4CH_RSTN_BCLK_R::new(((self.bits >> 6) & 1) != 0)
+    pub fn u0_i2stx_bclk(&self) -> U0_I2STX_BCLK_R {
+        U0_I2STX_BCLK_R::new(((self.bits >> 6) & 1) != 0)
     }
     #[doc = "Bit 7 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u1_i2stx_4ch_rstn_apb(&self) -> RSTN_U1_I2STX_4CH_RSTN_APB_R {
-        RSTN_U1_I2STX_4CH_RSTN_APB_R::new(((self.bits >> 7) & 1) != 0)
+    pub fn u1_i2stx_apb(&self) -> U1_I2STX_APB_R {
+        U1_I2STX_APB_R::new(((self.bits >> 7) & 1) != 0)
     }
     #[doc = "Bit 8 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u1_i2stx_4ch_rstn_bclk(&self) -> RSTN_U1_I2STX_4CH_RSTN_BCLK_R {
-        RSTN_U1_I2STX_4CH_RSTN_BCLK_R::new(((self.bits >> 8) & 1) != 0)
+    pub fn u1_i2stx_bclk(&self) -> U1_I2STX_BCLK_R {
+        U1_I2STX_BCLK_R::new(((self.bits >> 8) & 1) != 0)
     }
     #[doc = "Bit 9 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_tdm16slot_rstn_ahb(&self) -> RSTN_U0_TDM16SLOT_RSTN_AHB_R {
-        RSTN_U0_TDM16SLOT_RSTN_AHB_R::new(((self.bits >> 9) & 1) != 0)
+    pub fn u0_tdm16slot_ahb(&self) -> U0_TDM16SLOT_AHB_R {
+        U0_TDM16SLOT_AHB_R::new(((self.bits >> 9) & 1) != 0)
     }
     #[doc = "Bit 10 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_tdm16slot_rstn_tdm(&self) -> RSTN_U0_TDM16SLOT_RSTN_TDM_R {
-        RSTN_U0_TDM16SLOT_RSTN_TDM_R::new(((self.bits >> 10) & 1) != 0)
+    pub fn u0_tdm16slot_tdm(&self) -> U0_TDM16SLOT_TDM_R {
+        U0_TDM16SLOT_TDM_R::new(((self.bits >> 10) & 1) != 0)
     }
     #[doc = "Bit 11 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_tdm16slot_rstn_apb(&self) -> RSTN_U0_TDM16SLOT_RSTN_APB_R {
-        RSTN_U0_TDM16SLOT_RSTN_APB_R::new(((self.bits >> 11) & 1) != 0)
+    pub fn u0_tdm16slot_apb(&self) -> U0_TDM16SLOT_APB_R {
+        U0_TDM16SLOT_APB_R::new(((self.bits >> 11) & 1) != 0)
     }
     #[doc = "Bit 12 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_pwm_8ch_rstn_apb(&self) -> RSTN_U0_PWM_8CH_RSTN_APB_R {
-        RSTN_U0_PWM_8CH_RSTN_APB_R::new(((self.bits >> 12) & 1) != 0)
+    pub fn u0_pwm_apb(&self) -> U0_PWM_APB_R {
+        U0_PWM_APB_R::new(((self.bits >> 12) & 1) != 0)
     }
     #[doc = "Bit 13 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_dskit_wdt_rstn_apb(&self) -> RSTN_U0_DSKIT_WDT_RSTN_APB_R {
-        RSTN_U0_DSKIT_WDT_RSTN_APB_R::new(((self.bits >> 13) & 1) != 0)
+    pub fn u0_dskit_wdt_rstn_apb(&self) -> U0_DSKIT_WDT_RSTN_APB_R {
+        U0_DSKIT_WDT_RSTN_APB_R::new(((self.bits >> 13) & 1) != 0)
     }
     #[doc = "Bit 14 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_dskit_wdt_rstn_wdt(&self) -> RSTN_U0_DSKIT_WDT_RSTN_WDT_R {
-        RSTN_U0_DSKIT_WDT_RSTN_WDT_R::new(((self.bits >> 14) & 1) != 0)
+    pub fn u0_dskit_wdt(&self) -> U0_DSKIT_WDT_R {
+        U0_DSKIT_WDT_R::new(((self.bits >> 14) & 1) != 0)
     }
     #[doc = "Bit 15 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_can_ctrl_rstn_apb(&self) -> RSTN_U0_CAN_CTRL_RSTN_APB_R {
-        RSTN_U0_CAN_CTRL_RSTN_APB_R::new(((self.bits >> 15) & 1) != 0)
+    pub fn u0_can_ctrl_apb(&self) -> U0_CAN_CTRL_APB_R {
+        U0_CAN_CTRL_APB_R::new(((self.bits >> 15) & 1) != 0)
     }
     #[doc = "Bit 16 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_can_ctrl_rstn_can(&self) -> RSTN_U0_CAN_CTRL_RSTN_CAN_R {
-        RSTN_U0_CAN_CTRL_RSTN_CAN_R::new(((self.bits >> 16) & 1) != 0)
+    pub fn u0_can_ctrl(&self) -> U0_CAN_CTRL_R {
+        U0_CAN_CTRL_R::new(((self.bits >> 16) & 1) != 0)
     }
     #[doc = "Bit 17 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_can_ctrl_rstn_timer(&self) -> RSTN_U0_CAN_CTRL_RSTN_TIMER_R {
-        RSTN_U0_CAN_CTRL_RSTN_TIMER_R::new(((self.bits >> 17) & 1) != 0)
+    pub fn u0_can_ctrl_timer(&self) -> U0_CAN_CTRL_TIMER_R {
+        U0_CAN_CTRL_TIMER_R::new(((self.bits >> 17) & 1) != 0)
     }
     #[doc = "Bit 18 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u1_can_ctrl_rstn_apb(&self) -> RSTN_U1_CAN_CTRL_RSTN_APB_R {
-        RSTN_U1_CAN_CTRL_RSTN_APB_R::new(((self.bits >> 18) & 1) != 0)
+    pub fn u1_can_ctrl_apb(&self) -> U1_CAN_CTRL_APB_R {
+        U1_CAN_CTRL_APB_R::new(((self.bits >> 18) & 1) != 0)
     }
     #[doc = "Bit 19 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u1_can_ctrl_rstn_can(&self) -> RSTN_U1_CAN_CTRL_RSTN_CAN_R {
-        RSTN_U1_CAN_CTRL_RSTN_CAN_R::new(((self.bits >> 19) & 1) != 0)
+    pub fn u1_can_ctrl_can(&self) -> U1_CAN_CTRL_CAN_R {
+        U1_CAN_CTRL_CAN_R::new(((self.bits >> 19) & 1) != 0)
     }
     #[doc = "Bit 20 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u1_can_ctrl_rstn_timer(&self) -> RSTN_U1_CAN_CTRL_RSTN_TIMER_R {
-        RSTN_U1_CAN_CTRL_RSTN_TIMER_R::new(((self.bits >> 20) & 1) != 0)
+    pub fn u1_can_ctrl_timer(&self) -> U1_CAN_CTRL_TIMER_R {
+        U1_CAN_CTRL_TIMER_R::new(((self.bits >> 20) & 1) != 0)
     }
     #[doc = "Bit 21 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_si5_timer_rstn_apb(&self) -> RSTN_U0_SI5_TIMER_RSTN_APB_R {
-        RSTN_U0_SI5_TIMER_RSTN_APB_R::new(((self.bits >> 21) & 1) != 0)
+    pub fn u0_si5_timer_apb(&self) -> U0_SI5_TIMER_APB_R {
+        U0_SI5_TIMER_APB_R::new(((self.bits >> 21) & 1) != 0)
     }
     #[doc = "Bit 22 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_si5_timer_rstn_timer0(&self) -> RSTN_U0_SI5_TIMER_RSTN_TIMER0_R {
-        RSTN_U0_SI5_TIMER_RSTN_TIMER0_R::new(((self.bits >> 22) & 1) != 0)
+    pub fn u0_si5_timer_0(&self) -> U0_SI5_TIMER_0_R {
+        U0_SI5_TIMER_0_R::new(((self.bits >> 22) & 1) != 0)
     }
     #[doc = "Bit 23 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_si5_timer_rstn_time10(&self) -> RSTN_U0_SI5_TIMER_RSTN_TIME10_R {
-        RSTN_U0_SI5_TIMER_RSTN_TIME10_R::new(((self.bits >> 23) & 1) != 0)
+    pub fn u0_si5_timer_1(&self) -> U0_SI5_TIMER_1_R {
+        U0_SI5_TIMER_1_R::new(((self.bits >> 23) & 1) != 0)
     }
     #[doc = "Bit 24 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_si5_timer_rstn_timer2(&self) -> RSTN_U0_SI5_TIMER_RSTN_TIMER2_R {
-        RSTN_U0_SI5_TIMER_RSTN_TIMER2_R::new(((self.bits >> 24) & 1) != 0)
+    pub fn u0_si5_timer_2(&self) -> U0_SI5_TIMER_2_R {
+        U0_SI5_TIMER_2_R::new(((self.bits >> 24) & 1) != 0)
     }
     #[doc = "Bit 25 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_si5_timer_rstn_timer3(&self) -> RSTN_U0_SI5_TIMER_RSTN_TIMER3_R {
-        RSTN_U0_SI5_TIMER_RSTN_TIMER3_R::new(((self.bits >> 25) & 1) != 0)
+    pub fn u0_si5_timer_3(&self) -> U0_SI5_TIMER_3_R {
+        U0_SI5_TIMER_3_R::new(((self.bits >> 25) & 1) != 0)
     }
     #[doc = "Bit 26 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_int_ctrl_rstn_apb(&self) -> RSTN_U0_INT_CTRL_RSTN_APB_R {
-        RSTN_U0_INT_CTRL_RSTN_APB_R::new(((self.bits >> 26) & 1) != 0)
+    pub fn u0_int_ctrl_apb(&self) -> U0_INT_CTRL_APB_R {
+        U0_INT_CTRL_APB_R::new(((self.bits >> 26) & 1) != 0)
     }
     #[doc = "Bit 27 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_temp_sensor_rstn_apb(&self) -> RSTN_U0_TEMP_SENSOR_RSTN_APB_R {
-        RSTN_U0_TEMP_SENSOR_RSTN_APB_R::new(((self.bits >> 27) & 1) != 0)
+    pub fn u0_temp_sensor_apb(&self) -> U0_TEMP_SENSOR_APB_R {
+        U0_TEMP_SENSOR_APB_R::new(((self.bits >> 27) & 1) != 0)
     }
     #[doc = "Bit 28 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_temp_sensor_rstn_temp(&self) -> RSTN_U0_TEMP_SENSOR_RSTN_TEMP_R {
-        RSTN_U0_TEMP_SENSOR_RSTN_TEMP_R::new(((self.bits >> 28) & 1) != 0)
+    pub fn u0_temp_sensor(&self) -> U0_TEMP_SENSOR_R {
+        U0_TEMP_SENSOR_R::new(((self.bits >> 28) & 1) != 0)
     }
     #[doc = "Bit 29 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
-    pub fn rstn_u0_jtag_certification_rst_n(&self) -> RSTN_U0_JTAG_CERTIFICATION_RST_N_R {
-        RSTN_U0_JTAG_CERTIFICATION_RST_N_R::new(((self.bits >> 29) & 1) != 0)
+    pub fn u0_jtag_rst(&self) -> U0_JTAG_RST_R {
+        U0_JTAG_RST_R::new(((self.bits >> 29) & 1) != 0)
     }
 }
 impl W {
     #[doc = "Bit 0 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_pwmdac_rstn_apb(
-        &mut self,
-    ) -> RSTN_U0_PWMDAC_RSTN_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_PWMDAC_RSTN_APB_W::new(self, 0)
+    pub fn u0_pwmdac_apb(&mut self) -> U0_PWMDAC_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_PWMDAC_APB_W::new(self, 0)
     }
     #[doc = "Bit 1 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_pdm_4mic_rstn_dmic(
-        &mut self,
-    ) -> RSTN_U0_PDM_4MIC_RSTN_DMIC_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_PDM_4MIC_RSTN_DMIC_W::new(self, 1)
+    pub fn u0_pdm_4mic_dmic(&mut self) -> U0_PDM_4MIC_DMIC_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_PDM_4MIC_DMIC_W::new(self, 1)
     }
     #[doc = "Bit 2 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_pdm_4mic_rstn_apb(
-        &mut self,
-    ) -> RSTN_U0_PDM_4MIC_RSTN_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_PDM_4MIC_RSTN_APB_W::new(self, 2)
+    pub fn u0_pdm_4mic_apb(&mut self) -> U0_PDM_4MIC_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_PDM_4MIC_APB_W::new(self, 2)
     }
     #[doc = "Bit 3 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_i2srx_3ch_rstn_apb(
-        &mut self,
-    ) -> RSTN_U0_I2SRX_3CH_RSTN_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_I2SRX_3CH_RSTN_APB_W::new(self, 3)
+    pub fn u0_i2srx_apb(&mut self) -> U0_I2SRX_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_I2SRX_APB_W::new(self, 3)
     }
     #[doc = "Bit 4 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_i2srx_3ch_rstn_bclk(
-        &mut self,
-    ) -> RSTN_U0_I2SRX_3CH_RSTN_BCLK_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_I2SRX_3CH_RSTN_BCLK_W::new(self, 4)
+    pub fn u0_i2srx_bclk(&mut self) -> U0_I2SRX_BCLK_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_I2SRX_BCLK_W::new(self, 4)
     }
     #[doc = "Bit 5 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_i2stx_4ch_rstn_apb(
-        &mut self,
-    ) -> RSTN_U0_I2STX_4CH_RSTN_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_I2STX_4CH_RSTN_APB_W::new(self, 5)
+    pub fn u0_i2stx_apb(&mut self) -> U0_I2STX_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_I2STX_APB_W::new(self, 5)
     }
     #[doc = "Bit 6 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_i2stx_4ch_rstn_bclk(
-        &mut self,
-    ) -> RSTN_U0_I2STX_4CH_RSTN_BCLK_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_I2STX_4CH_RSTN_BCLK_W::new(self, 6)
+    pub fn u0_i2stx_bclk(&mut self) -> U0_I2STX_BCLK_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_I2STX_BCLK_W::new(self, 6)
     }
     #[doc = "Bit 7 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u1_i2stx_4ch_rstn_apb(
-        &mut self,
-    ) -> RSTN_U1_I2STX_4CH_RSTN_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U1_I2STX_4CH_RSTN_APB_W::new(self, 7)
+    pub fn u1_i2stx_apb(&mut self) -> U1_I2STX_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U1_I2STX_APB_W::new(self, 7)
     }
     #[doc = "Bit 8 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u1_i2stx_4ch_rstn_bclk(
-        &mut self,
-    ) -> RSTN_U1_I2STX_4CH_RSTN_BCLK_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U1_I2STX_4CH_RSTN_BCLK_W::new(self, 8)
+    pub fn u1_i2stx_bclk(&mut self) -> U1_I2STX_BCLK_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U1_I2STX_BCLK_W::new(self, 8)
     }
     #[doc = "Bit 9 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_tdm16slot_rstn_ahb(
-        &mut self,
-    ) -> RSTN_U0_TDM16SLOT_RSTN_AHB_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_TDM16SLOT_RSTN_AHB_W::new(self, 9)
+    pub fn u0_tdm16slot_ahb(&mut self) -> U0_TDM16SLOT_AHB_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_TDM16SLOT_AHB_W::new(self, 9)
     }
     #[doc = "Bit 10 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_tdm16slot_rstn_tdm(
-        &mut self,
-    ) -> RSTN_U0_TDM16SLOT_RSTN_TDM_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_TDM16SLOT_RSTN_TDM_W::new(self, 10)
+    pub fn u0_tdm16slot_tdm(&mut self) -> U0_TDM16SLOT_TDM_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_TDM16SLOT_TDM_W::new(self, 10)
     }
     #[doc = "Bit 11 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_tdm16slot_rstn_apb(
-        &mut self,
-    ) -> RSTN_U0_TDM16SLOT_RSTN_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_TDM16SLOT_RSTN_APB_W::new(self, 11)
+    pub fn u0_tdm16slot_apb(&mut self) -> U0_TDM16SLOT_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_TDM16SLOT_APB_W::new(self, 11)
     }
     #[doc = "Bit 12 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_pwm_8ch_rstn_apb(
-        &mut self,
-    ) -> RSTN_U0_PWM_8CH_RSTN_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_PWM_8CH_RSTN_APB_W::new(self, 12)
+    pub fn u0_pwm_apb(&mut self) -> U0_PWM_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_PWM_APB_W::new(self, 12)
     }
     #[doc = "Bit 13 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_dskit_wdt_rstn_apb(
-        &mut self,
-    ) -> RSTN_U0_DSKIT_WDT_RSTN_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_DSKIT_WDT_RSTN_APB_W::new(self, 13)
+    pub fn u0_dskit_wdt_rstn_apb(&mut self) -> U0_DSKIT_WDT_RSTN_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_DSKIT_WDT_RSTN_APB_W::new(self, 13)
     }
     #[doc = "Bit 14 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_dskit_wdt_rstn_wdt(
-        &mut self,
-    ) -> RSTN_U0_DSKIT_WDT_RSTN_WDT_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_DSKIT_WDT_RSTN_WDT_W::new(self, 14)
+    pub fn u0_dskit_wdt(&mut self) -> U0_DSKIT_WDT_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_DSKIT_WDT_W::new(self, 14)
     }
     #[doc = "Bit 15 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_can_ctrl_rstn_apb(
-        &mut self,
-    ) -> RSTN_U0_CAN_CTRL_RSTN_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_CAN_CTRL_RSTN_APB_W::new(self, 15)
+    pub fn u0_can_ctrl_apb(&mut self) -> U0_CAN_CTRL_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_CAN_CTRL_APB_W::new(self, 15)
     }
     #[doc = "Bit 16 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_can_ctrl_rstn_can(
-        &mut self,
-    ) -> RSTN_U0_CAN_CTRL_RSTN_CAN_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_CAN_CTRL_RSTN_CAN_W::new(self, 16)
+    pub fn u0_can_ctrl(&mut self) -> U0_CAN_CTRL_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_CAN_CTRL_W::new(self, 16)
     }
     #[doc = "Bit 17 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_can_ctrl_rstn_timer(
-        &mut self,
-    ) -> RSTN_U0_CAN_CTRL_RSTN_TIMER_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_CAN_CTRL_RSTN_TIMER_W::new(self, 17)
+    pub fn u0_can_ctrl_timer(&mut self) -> U0_CAN_CTRL_TIMER_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_CAN_CTRL_TIMER_W::new(self, 17)
     }
     #[doc = "Bit 18 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u1_can_ctrl_rstn_apb(
-        &mut self,
-    ) -> RSTN_U1_CAN_CTRL_RSTN_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U1_CAN_CTRL_RSTN_APB_W::new(self, 18)
+    pub fn u1_can_ctrl_apb(&mut self) -> U1_CAN_CTRL_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U1_CAN_CTRL_APB_W::new(self, 18)
     }
     #[doc = "Bit 19 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u1_can_ctrl_rstn_can(
-        &mut self,
-    ) -> RSTN_U1_CAN_CTRL_RSTN_CAN_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U1_CAN_CTRL_RSTN_CAN_W::new(self, 19)
+    pub fn u1_can_ctrl_can(&mut self) -> U1_CAN_CTRL_CAN_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U1_CAN_CTRL_CAN_W::new(self, 19)
     }
     #[doc = "Bit 20 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u1_can_ctrl_rstn_timer(
-        &mut self,
-    ) -> RSTN_U1_CAN_CTRL_RSTN_TIMER_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U1_CAN_CTRL_RSTN_TIMER_W::new(self, 20)
+    pub fn u1_can_ctrl_timer(&mut self) -> U1_CAN_CTRL_TIMER_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U1_CAN_CTRL_TIMER_W::new(self, 20)
     }
     #[doc = "Bit 21 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_si5_timer_rstn_apb(
-        &mut self,
-    ) -> RSTN_U0_SI5_TIMER_RSTN_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_SI5_TIMER_RSTN_APB_W::new(self, 21)
+    pub fn u0_si5_timer_apb(&mut self) -> U0_SI5_TIMER_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_SI5_TIMER_APB_W::new(self, 21)
     }
     #[doc = "Bit 22 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_si5_timer_rstn_timer0(
-        &mut self,
-    ) -> RSTN_U0_SI5_TIMER_RSTN_TIMER0_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_SI5_TIMER_RSTN_TIMER0_W::new(self, 22)
+    pub fn u0_si5_timer_0(&mut self) -> U0_SI5_TIMER_0_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_SI5_TIMER_0_W::new(self, 22)
     }
     #[doc = "Bit 23 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_si5_timer_rstn_time10(
-        &mut self,
-    ) -> RSTN_U0_SI5_TIMER_RSTN_TIME10_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_SI5_TIMER_RSTN_TIME10_W::new(self, 23)
+    pub fn u0_si5_timer_1(&mut self) -> U0_SI5_TIMER_1_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_SI5_TIMER_1_W::new(self, 23)
     }
     #[doc = "Bit 24 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_si5_timer_rstn_timer2(
-        &mut self,
-    ) -> RSTN_U0_SI5_TIMER_RSTN_TIMER2_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_SI5_TIMER_RSTN_TIMER2_W::new(self, 24)
+    pub fn u0_si5_timer_2(&mut self) -> U0_SI5_TIMER_2_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_SI5_TIMER_2_W::new(self, 24)
     }
     #[doc = "Bit 25 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_si5_timer_rstn_timer3(
-        &mut self,
-    ) -> RSTN_U0_SI5_TIMER_RSTN_TIMER3_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_SI5_TIMER_RSTN_TIMER3_W::new(self, 25)
+    pub fn u0_si5_timer_3(&mut self) -> U0_SI5_TIMER_3_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_SI5_TIMER_3_W::new(self, 25)
     }
     #[doc = "Bit 26 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_int_ctrl_rstn_apb(
-        &mut self,
-    ) -> RSTN_U0_INT_CTRL_RSTN_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_INT_CTRL_RSTN_APB_W::new(self, 26)
+    pub fn u0_int_ctrl_apb(&mut self) -> U0_INT_CTRL_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_INT_CTRL_APB_W::new(self, 26)
     }
     #[doc = "Bit 27 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_temp_sensor_rstn_apb(
-        &mut self,
-    ) -> RSTN_U0_TEMP_SENSOR_RSTN_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_TEMP_SENSOR_RSTN_APB_W::new(self, 27)
+    pub fn u0_temp_sensor_apb(&mut self) -> U0_TEMP_SENSOR_APB_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_TEMP_SENSOR_APB_W::new(self, 27)
     }
     #[doc = "Bit 28 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_temp_sensor_rstn_temp(
-        &mut self,
-    ) -> RSTN_U0_TEMP_SENSOR_RSTN_TEMP_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_TEMP_SENSOR_RSTN_TEMP_W::new(self, 28)
+    pub fn u0_temp_sensor(&mut self) -> U0_TEMP_SENSOR_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_TEMP_SENSOR_W::new(self, 28)
     }
     #[doc = "Bit 29 - 1: Assert reset, 0: De-assert reset"]
     #[inline(always)]
     #[must_use]
-    pub fn rstn_u0_jtag_certification_rst_n(
-        &mut self,
-    ) -> RSTN_U0_JTAG_CERTIFICATION_RST_N_W<SYSCRG_RST_STATUS_3_SPEC> {
-        RSTN_U0_JTAG_CERTIFICATION_RST_N_W::new(self, 29)
+    pub fn u0_jtag_rst(&mut self) -> U0_JTAG_RST_W<SYSCRG_RST_STATUS_3_SPEC> {
+        U0_JTAG_RST_W::new(self, 29)
     }
     #[doc = r" Writes raw bits to the register."]
     #[doc = r""]
