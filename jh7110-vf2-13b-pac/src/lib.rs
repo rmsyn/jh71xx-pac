@@ -9,7 +9,7 @@ use core::ops::Deref;
 use generic::*;
 #[doc = r"Common register and bit access and modify traits"]
 pub mod generic;
-#[cfg(feature = "rt")]
+#[cfg(any(feature = "rt", feature = "rts"))]
 extern "C" {
     fn QSPI();
     fn UART0();
@@ -40,7 +40,7 @@ pub union Vector {
     pub _handler: unsafe extern "C" fn(),
     pub _reserved: usize,
 }
-#[cfg(feature = "rt")]
+#[cfg(any(feature = "rt", feature = "rts"))]
 #[doc(hidden)]
 #[no_mangle]
 pub static __EXTERNAL_INTERRUPTS: [Vector; 107] = [
