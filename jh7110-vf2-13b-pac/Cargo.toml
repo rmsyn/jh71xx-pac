@@ -19,3 +19,4 @@ vcell = "0.1.3"
 default = ["critical-section"]
 critical-section = ["dep:critical-section"]
 rt = ["riscv-rt"]
+rts = ["riscv-rt/s-mode"]

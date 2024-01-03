@@ -81,7 +81,7 @@ impl Interrupt {
         }
     }
 }
-#[cfg(feature = "rt")]
+#[cfg(any(feature = "rt", feature = "rts"))]
 #[macro_export]
 #[doc = r" Assigns a handler to an interrupt"]
 #[doc = r""]

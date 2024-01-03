@@ -1,7 +1,7 @@
-#[doc = "Register `gpo_dout_12_15` reader"]
-pub type R = crate::R<GPO_DOUT_12_15_SPEC>;
-#[doc = "Register `gpo_dout_12_15` writer"]
-pub type W = crate::W<GPO_DOUT_12_15_SPEC>;
+#[doc = "Register `gpo_dout_3` reader"]
+pub type R = crate::R<GPO_DOUT_3_SPEC>;
+#[doc = "Register `gpo_dout_3` writer"]
+pub type W = crate::W<GPO_DOUT_3_SPEC>;
 #[doc = "Field `dout_12` reader - The selected output signal for GPIO12. The register value indicates the selected GPIO output index signal index from GPIO output signal list 0-107. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
 pub type DOUT_12_R = crate::FieldReader;
 #[doc = "Field `dout_12` writer - The selected output signal for GPIO12. The register value indicates the selected GPIO output index signal index from GPIO output signal list 0-107. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
@@ -44,25 +44,25 @@ impl W {
     #[doc = "Bits 0:6 - The selected output signal for GPIO12. The register value indicates the selected GPIO output index signal index from GPIO output signal list 0-107. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
     #[inline(always)]
     #[must_use]
-    pub fn dout_12(&mut self) -> DOUT_12_W<GPO_DOUT_12_15_SPEC> {
+    pub fn dout_12(&mut self) -> DOUT_12_W<GPO_DOUT_3_SPEC> {
         DOUT_12_W::new(self, 0)
     }
     #[doc = "Bits 8:14 - The selected output signal for GPIO13. The register value indicates the selected GPIO output index signal index from GPIO output signal list 0-107. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
     #[inline(always)]
     #[must_use]
-    pub fn dout_13(&mut self) -> DOUT_13_W<GPO_DOUT_12_15_SPEC> {
+    pub fn dout_13(&mut self) -> DOUT_13_W<GPO_DOUT_3_SPEC> {
         DOUT_13_W::new(self, 8)
     }
     #[doc = "Bits 16:22 - The selected output signal for GPIO14. The register value indicates the selected GPIO output index signal index from GPIO output signal list 0-107. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
     #[inline(always)]
     #[must_use]
-    pub fn dout_14(&mut self) -> DOUT_14_W<GPO_DOUT_12_15_SPEC> {
+    pub fn dout_14(&mut self) -> DOUT_14_W<GPO_DOUT_3_SPEC> {
         DOUT_14_W::new(self, 16)
     }
     #[doc = "Bits 24:30 - The selected output signal for GPIO15. The register value indicates the selected GPIO output index signal index from GPIO output signal list 0-107. See Table 2-41: GPIO OEN List for SYS_IOMUX (on page 97) for more information."]
     #[inline(always)]
     #[must_use]
-    pub fn dout_15(&mut self) -> DOUT_15_W<GPO_DOUT_12_15_SPEC> {
+    pub fn dout_15(&mut self) -> DOUT_15_W<GPO_DOUT_3_SPEC> {
         DOUT_15_W::new(self, 24)
     }
     #[doc = r" Writes raw bits to the register."]
@@ -76,19 +76,19 @@ impl W {
         self
     }
 }
-#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 12-15 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_12_15::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_12_15::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
-pub struct GPO_DOUT_12_15_SPEC;
-impl crate::RegisterSpec for GPO_DOUT_12_15_SPEC {
+#[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 12-15 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_3::R`](R).  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_3::W`](W). You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct GPO_DOUT_3_SPEC;
+impl crate::RegisterSpec for GPO_DOUT_3_SPEC {
     type Ux = u32;
 }
-#[doc = "`read()` method returns [`gpo_dout_12_15::R`](R) reader structure"]
-impl crate::Readable for GPO_DOUT_12_15_SPEC {}
-#[doc = "`write(|w| ..)` method takes [`gpo_dout_12_15::W`](W) writer structure"]
-impl crate::Writable for GPO_DOUT_12_15_SPEC {
+#[doc = "`read()` method returns [`gpo_dout_3::R`](R) reader structure"]
+impl crate::Readable for GPO_DOUT_3_SPEC {}
+#[doc = "`write(|w| ..)` method takes [`gpo_dout_3::W`](W) writer structure"]
+impl crate::Writable for GPO_DOUT_3_SPEC {
     const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
     const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
 }
-#[doc = "`reset()` method sets gpo_dout_12_15 to value 0"]
-impl crate::Resettable for GPO_DOUT_12_15_SPEC {
+#[doc = "`reset()` method sets gpo_dout_3 to value 0"]
+impl crate::Resettable for GPO_DOUT_3_SPEC {
     const RESET_VALUE: Self::Ux = 0;
 }
