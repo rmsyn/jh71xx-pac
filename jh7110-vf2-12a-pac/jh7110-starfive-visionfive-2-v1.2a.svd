@@ -35812,7 +35812,7 @@
           </fields>
         </register>
         <register>
-          <name>gpo_dout_0_3</name>
+          <name>gpo_dout_0</name>
           <description>SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 0-3 DOUT</description>
           <addressOffset>0x40</addressOffset>
           <size>32</size>
@@ -35845,7 +35845,7 @@
           </fields>
         </register>
         <register>
-          <name>gpo_dout_4_7</name>
+          <name>gpo_dout_1</name>
           <description>SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 4-7 DOUT</description>
           <addressOffset>0x44</addressOffset>
           <size>32</size>
@@ -35878,7 +35878,7 @@
           </fields>
         </register>
         <register>
-          <name>gpo_dout_8_11</name>
+          <name>gpo_dout_2</name>
           <description>SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 8-11 DOUT</description>
           <addressOffset>0x48</addressOffset>
           <size>32</size>
@@ -35911,7 +35911,7 @@
           </fields>
         </register>
         <register>
-          <name>gpo_dout_12_15</name>
+          <name>gpo_dout_3</name>
           <description>SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 12-15 DOUT</description>
           <addressOffset>0x4c</addressOffset>
           <size>32</size>
@@ -35944,7 +35944,7 @@
           </fields>
         </register>
         <register>
-          <name>gpo_dout_16_19</name>
+          <name>gpo_dout_4</name>
           <description>SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 16-19 DOUT</description>
           <addressOffset>0x50</addressOffset>
           <size>32</size>
@@ -35977,7 +35977,7 @@
           </fields>
         </register>
         <register>
-          <name>gpo_dout_20_23</name>
+          <name>gpo_dout_5</name>
           <description>SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 20-23 DOUT</description>
           <addressOffset>0x54</addressOffset>
           <size>32</size>
@@ -36010,7 +36010,7 @@
           </fields>
         </register>
         <register>
-          <name>gpo_dout_24_27</name>
+          <name>gpo_dout_6</name>
           <description>SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 24-27 DOUT</description>
           <addressOffset>0x58</addressOffset>
           <size>32</size>
@@ -36043,7 +36043,7 @@
           </fields>
         </register>
         <register>
-          <name>gpo_dout_28_31</name>
+          <name>gpo_dout_7</name>
           <description>SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 28-31 DOUT</description>
           <addressOffset>0x5c</addressOffset>
           <size>32</size>
@@ -36076,7 +36076,7 @@
           </fields>
         </register>
         <register>
-          <name>gpo_dout_32_35</name>
+          <name>gpo_dout_8</name>
           <description>SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 32-35 DOUT</description>
           <addressOffset>0x60</addressOffset>
           <size>32</size>
@@ -36109,7 +36109,7 @@
           </fields>
         </register>
         <register>
-          <name>gpo_dout_36_39</name>
+          <name>gpo_dout_9</name>
           <description>SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 36-39 DOUT</description>
           <addressOffset>0x64</addressOffset>
           <size>32</size>
@@ -36142,7 +36142,7 @@
           </fields>
         </register>
         <register>
-          <name>gpo_dout_40_43</name>
+          <name>gpo_dout_10</name>
           <description>SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 40-43 DOUT</description>
           <addressOffset>0x68</addressOffset>
           <size>32</size>
@@ -36175,7 +36175,7 @@
           </fields>
         </register>
         <register>
-          <name>gpo_dout_44_47</name>
+          <name>gpo_dout_11</name>
           <description>SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 44-47 DOUT</description>
           <addressOffset>0x6c</addressOffset>
           <size>32</size>
@@ -36208,7 +36208,7 @@
           </fields>
         </register>
         <register>
-          <name>gpo_dout_48_51</name>
+          <name>gpo_dout_12</name>
           <description>SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 48-51 DOUT</description>
           <addressOffset>0x70</addressOffset>
           <size>32</size>
@@ -36241,7 +36241,7 @@
           </fields>
         </register>
         <register>
-          <name>gpo_dout_52_55</name>
+          <name>gpo_dout_13</name>
           <description>SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 52-55 DOUT</description>
           <addressOffset>0x74</addressOffset>
           <size>32</size>
@@ -36274,7 +36274,7 @@
           </fields>
         </register>
         <register>
-          <name>gpo_dout_56_59</name>
+          <name>gpo_dout_14</name>
           <description>SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 56-59 DOUT</description>
           <addressOffset>0x78</addressOffset>
           <size>32</size>
@@ -36307,7 +36307,7 @@
           </fields>
         </register>
         <register>
-          <name>gpo_dout_60_63</name>
+          <name>gpo_dout_15</name>
           <description>SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 60-63 DOUT</description>
           <addressOffset>0x7c</addressOffset>
           <size>32</size>

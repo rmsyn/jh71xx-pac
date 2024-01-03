@@ -17,22 +17,22 @@ pub struct RegisterBlock {
     gpo_doen_13: GPO_DOEN_13,
     gpo_doen_14: GPO_DOEN_14,
     gpo_doen_15: GPO_DOEN_15,
-    gpo_dout_0_3: GPO_DOUT_0_3,
-    gpo_dout_4_7: GPO_DOUT_4_7,
-    gpo_dout_8_11: GPO_DOUT_8_11,
-    gpo_dout_12_15: GPO_DOUT_12_15,
-    gpo_dout_16_19: GPO_DOUT_16_19,
-    gpo_dout_20_23: GPO_DOUT_20_23,
-    gpo_dout_24_27: GPO_DOUT_24_27,
-    gpo_dout_28_31: GPO_DOUT_28_31,
-    gpo_dout_32_35: GPO_DOUT_32_35,
-    gpo_dout_36_39: GPO_DOUT_36_39,
-    gpo_dout_40_43: GPO_DOUT_40_43,
-    gpo_dout_44_47: GPO_DOUT_44_47,
-    gpo_dout_48_51: GPO_DOUT_48_51,
-    gpo_dout_52_55: GPO_DOUT_52_55,
-    gpo_dout_56_59: GPO_DOUT_56_59,
-    gpo_dout_60_63: GPO_DOUT_60_63,
+    gpo_dout_0: GPO_DOUT_0,
+    gpo_dout_1: GPO_DOUT_1,
+    gpo_dout_2: GPO_DOUT_2,
+    gpo_dout_3: GPO_DOUT_3,
+    gpo_dout_4: GPO_DOUT_4,
+    gpo_dout_5: GPO_DOUT_5,
+    gpo_dout_6: GPO_DOUT_6,
+    gpo_dout_7: GPO_DOUT_7,
+    gpo_dout_8: GPO_DOUT_8,
+    gpo_dout_9: GPO_DOUT_9,
+    gpo_dout_10: GPO_DOUT_10,
+    gpo_dout_11: GPO_DOUT_11,
+    gpo_dout_12: GPO_DOUT_12,
+    gpo_dout_13: GPO_DOUT_13,
+    gpo_dout_14: GPO_DOUT_14,
+    gpo_dout_15: GPO_DOUT_15,
     gpi_0: GPI_0,
     gpi_1: GPI_1,
     gpi_2: GPI_2,
@@ -259,83 +259,83 @@ impl RegisterBlock {
     }
     #[doc = "0x40 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 0-3 DOUT"]
     #[inline(always)]
-    pub const fn gpo_dout_0_3(&self) -> &GPO_DOUT_0_3 {
-        &self.gpo_dout_0_3
+    pub const fn gpo_dout_0(&self) -> &GPO_DOUT_0 {
+        &self.gpo_dout_0
     }
     #[doc = "0x44 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 4-7 DOUT"]
     #[inline(always)]
-    pub const fn gpo_dout_4_7(&self) -> &GPO_DOUT_4_7 {
-        &self.gpo_dout_4_7
+    pub const fn gpo_dout_1(&self) -> &GPO_DOUT_1 {
+        &self.gpo_dout_1
     }
     #[doc = "0x48 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 8-11 DOUT"]
     #[inline(always)]
-    pub const fn gpo_dout_8_11(&self) -> &GPO_DOUT_8_11 {
-        &self.gpo_dout_8_11
+    pub const fn gpo_dout_2(&self) -> &GPO_DOUT_2 {
+        &self.gpo_dout_2
     }
     #[doc = "0x4c - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 12-15 DOUT"]
     #[inline(always)]
-    pub const fn gpo_dout_12_15(&self) -> &GPO_DOUT_12_15 {
-        &self.gpo_dout_12_15
+    pub const fn gpo_dout_3(&self) -> &GPO_DOUT_3 {
+        &self.gpo_dout_3
     }
     #[doc = "0x50 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 16-19 DOUT"]
     #[inline(always)]
-    pub const fn gpo_dout_16_19(&self) -> &GPO_DOUT_16_19 {
-        &self.gpo_dout_16_19
+    pub const fn gpo_dout_4(&self) -> &GPO_DOUT_4 {
+        &self.gpo_dout_4
     }
     #[doc = "0x54 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 20-23 DOUT"]
     #[inline(always)]
-    pub const fn gpo_dout_20_23(&self) -> &GPO_DOUT_20_23 {
-        &self.gpo_dout_20_23
+    pub const fn gpo_dout_5(&self) -> &GPO_DOUT_5 {
+        &self.gpo_dout_5
     }
     #[doc = "0x58 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 24-27 DOUT"]
     #[inline(always)]
-    pub const fn gpo_dout_24_27(&self) -> &GPO_DOUT_24_27 {
-        &self.gpo_dout_24_27
+    pub const fn gpo_dout_6(&self) -> &GPO_DOUT_6 {
+        &self.gpo_dout_6
     }
     #[doc = "0x5c - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 28-31 DOUT"]
     #[inline(always)]
-    pub const fn gpo_dout_28_31(&self) -> &GPO_DOUT_28_31 {
-        &self.gpo_dout_28_31
+    pub const fn gpo_dout_7(&self) -> &GPO_DOUT_7 {
+        &self.gpo_dout_7
     }
     #[doc = "0x60 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 32-35 DOUT"]
     #[inline(always)]
-    pub const fn gpo_dout_32_35(&self) -> &GPO_DOUT_32_35 {
-        &self.gpo_dout_32_35
+    pub const fn gpo_dout_8(&self) -> &GPO_DOUT_8 {
+        &self.gpo_dout_8
     }
     #[doc = "0x64 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 36-39 DOUT"]
     #[inline(always)]
-    pub const fn gpo_dout_36_39(&self) -> &GPO_DOUT_36_39 {
-        &self.gpo_dout_36_39
+    pub const fn gpo_dout_9(&self) -> &GPO_DOUT_9 {
+        &self.gpo_dout_9
     }
     #[doc = "0x68 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 40-43 DOUT"]
     #[inline(always)]
-    pub const fn gpo_dout_40_43(&self) -> &GPO_DOUT_40_43 {
-        &self.gpo_dout_40_43
+    pub const fn gpo_dout_10(&self) -> &GPO_DOUT_10 {
+        &self.gpo_dout_10
     }
     #[doc = "0x6c - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 44-47 DOUT"]
     #[inline(always)]
-    pub const fn gpo_dout_44_47(&self) -> &GPO_DOUT_44_47 {
-        &self.gpo_dout_44_47
+    pub const fn gpo_dout_11(&self) -> &GPO_DOUT_11 {
+        &self.gpo_dout_11
     }
     #[doc = "0x70 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 48-51 DOUT"]
     #[inline(always)]
-    pub const fn gpo_dout_48_51(&self) -> &GPO_DOUT_48_51 {
-        &self.gpo_dout_48_51
+    pub const fn gpo_dout_12(&self) -> &GPO_DOUT_12 {
+        &self.gpo_dout_12
     }
     #[doc = "0x74 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 52-55 DOUT"]
     #[inline(always)]
-    pub const fn gpo_dout_52_55(&self) -> &GPO_DOUT_52_55 {
-        &self.gpo_dout_52_55
+    pub const fn gpo_dout_13(&self) -> &GPO_DOUT_13 {
+        &self.gpo_dout_13
     }
     #[doc = "0x78 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 56-59 DOUT"]
     #[inline(always)]
-    pub const fn gpo_dout_56_59(&self) -> &GPO_DOUT_56_59 {
-        &self.gpo_dout_56_59
+    pub const fn gpo_dout_14(&self) -> &GPO_DOUT_14 {
+        &self.gpo_dout_14
     }
     #[doc = "0x7c - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 60-63 DOUT"]
     #[inline(always)]
-    pub const fn gpo_dout_60_63(&self) -> &GPO_DOUT_60_63 {
-        &self.gpo_dout_60_63
+    pub const fn gpo_dout_15(&self) -> &GPO_DOUT_15 {
+        &self.gpo_dout_15
     }
     #[doc = "0x80 - SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 0 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals."]
     #[inline(always)]
@@ -1128,86 +1128,86 @@ module"]
 pub type GPO_DOEN_15 = crate::Reg<gpo_doen_15::GPO_DOEN_15_SPEC>;
 #[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX 15 DOEN"]
 pub mod gpo_doen_15;
-#[doc = "gpo_dout_0_3 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 0-3 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_0_3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_0_3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_0_3`]
+#[doc = "gpo_dout_0 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 0-3 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_0`]
 module"]
-pub type GPO_DOUT_0_3 = crate::Reg<gpo_dout_0_3::GPO_DOUT_0_3_SPEC>;
+pub type GPO_DOUT_0 = crate::Reg<gpo_dout_0::GPO_DOUT_0_SPEC>;
 #[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 0-3 DOUT"]
-pub mod gpo_dout_0_3;
-#[doc = "gpo_dout_4_7 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 4-7 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_4_7::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_4_7::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_4_7`]
+pub mod gpo_dout_0;
+#[doc = "gpo_dout_1 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 4-7 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_1::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_1::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_1`]
 module"]
-pub type GPO_DOUT_4_7 = crate::Reg<gpo_dout_4_7::GPO_DOUT_4_7_SPEC>;
+pub type GPO_DOUT_1 = crate::Reg<gpo_dout_1::GPO_DOUT_1_SPEC>;
 #[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 4-7 DOUT"]
-pub mod gpo_dout_4_7;
-#[doc = "gpo_dout_8_11 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 8-11 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_8_11::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_8_11::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_8_11`]
+pub mod gpo_dout_1;
+#[doc = "gpo_dout_2 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 8-11 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_2::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_2::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_2`]
 module"]
-pub type GPO_DOUT_8_11 = crate::Reg<gpo_dout_8_11::GPO_DOUT_8_11_SPEC>;
+pub type GPO_DOUT_2 = crate::Reg<gpo_dout_2::GPO_DOUT_2_SPEC>;
 #[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 8-11 DOUT"]
-pub mod gpo_dout_8_11;
-#[doc = "gpo_dout_12_15 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 12-15 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_12_15::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_12_15::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_12_15`]
+pub mod gpo_dout_2;
+#[doc = "gpo_dout_3 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 12-15 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_3::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_3::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_3`]
 module"]
-pub type GPO_DOUT_12_15 = crate::Reg<gpo_dout_12_15::GPO_DOUT_12_15_SPEC>;
+pub type GPO_DOUT_3 = crate::Reg<gpo_dout_3::GPO_DOUT_3_SPEC>;
 #[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 12-15 DOUT"]
-pub mod gpo_dout_12_15;
-#[doc = "gpo_dout_16_19 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 16-19 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_16_19::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_16_19::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_16_19`]
+pub mod gpo_dout_3;
+#[doc = "gpo_dout_4 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 16-19 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_4::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_4::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_4`]
 module"]
-pub type GPO_DOUT_16_19 = crate::Reg<gpo_dout_16_19::GPO_DOUT_16_19_SPEC>;
+pub type GPO_DOUT_4 = crate::Reg<gpo_dout_4::GPO_DOUT_4_SPEC>;
 #[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 16-19 DOUT"]
-pub mod gpo_dout_16_19;
-#[doc = "gpo_dout_20_23 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 20-23 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_20_23::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_20_23::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_20_23`]
+pub mod gpo_dout_4;
+#[doc = "gpo_dout_5 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 20-23 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_5::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_5::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_5`]
 module"]
-pub type GPO_DOUT_20_23 = crate::Reg<gpo_dout_20_23::GPO_DOUT_20_23_SPEC>;
+pub type GPO_DOUT_5 = crate::Reg<gpo_dout_5::GPO_DOUT_5_SPEC>;
 #[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 20-23 DOUT"]
-pub mod gpo_dout_20_23;
-#[doc = "gpo_dout_24_27 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 24-27 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_24_27::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_24_27::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_24_27`]
+pub mod gpo_dout_5;
+#[doc = "gpo_dout_6 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 24-27 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_6::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_6::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_6`]
 module"]
-pub type GPO_DOUT_24_27 = crate::Reg<gpo_dout_24_27::GPO_DOUT_24_27_SPEC>;
+pub type GPO_DOUT_6 = crate::Reg<gpo_dout_6::GPO_DOUT_6_SPEC>;
 #[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 24-27 DOUT"]
-pub mod gpo_dout_24_27;
-#[doc = "gpo_dout_28_31 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 28-31 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_28_31::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_28_31::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_28_31`]
+pub mod gpo_dout_6;
+#[doc = "gpo_dout_7 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 28-31 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_7::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_7::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_7`]
 module"]
-pub type GPO_DOUT_28_31 = crate::Reg<gpo_dout_28_31::GPO_DOUT_28_31_SPEC>;
+pub type GPO_DOUT_7 = crate::Reg<gpo_dout_7::GPO_DOUT_7_SPEC>;
 #[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 28-31 DOUT"]
-pub mod gpo_dout_28_31;
-#[doc = "gpo_dout_32_35 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 32-35 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_32_35::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_32_35::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_32_35`]
+pub mod gpo_dout_7;
+#[doc = "gpo_dout_8 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 32-35 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_8::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_8::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_8`]
 module"]
-pub type GPO_DOUT_32_35 = crate::Reg<gpo_dout_32_35::GPO_DOUT_32_35_SPEC>;
+pub type GPO_DOUT_8 = crate::Reg<gpo_dout_8::GPO_DOUT_8_SPEC>;
 #[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 32-35 DOUT"]
-pub mod gpo_dout_32_35;
-#[doc = "gpo_dout_36_39 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 36-39 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_36_39::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_36_39::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_36_39`]
+pub mod gpo_dout_8;
+#[doc = "gpo_dout_9 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 36-39 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_9::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_9::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_9`]
 module"]
-pub type GPO_DOUT_36_39 = crate::Reg<gpo_dout_36_39::GPO_DOUT_36_39_SPEC>;
+pub type GPO_DOUT_9 = crate::Reg<gpo_dout_9::GPO_DOUT_9_SPEC>;
 #[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 36-39 DOUT"]
-pub mod gpo_dout_36_39;
-#[doc = "gpo_dout_40_43 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 40-43 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_40_43::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_40_43::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_40_43`]
+pub mod gpo_dout_9;
+#[doc = "gpo_dout_10 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 40-43 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_10::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_10::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_10`]
 module"]
-pub type GPO_DOUT_40_43 = crate::Reg<gpo_dout_40_43::GPO_DOUT_40_43_SPEC>;
+pub type GPO_DOUT_10 = crate::Reg<gpo_dout_10::GPO_DOUT_10_SPEC>;
 #[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 40-43 DOUT"]
-pub mod gpo_dout_40_43;
-#[doc = "gpo_dout_44_47 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 44-47 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_44_47::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_44_47::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_44_47`]
+pub mod gpo_dout_10;
+#[doc = "gpo_dout_11 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 44-47 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_11::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_11::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_11`]
 module"]
-pub type GPO_DOUT_44_47 = crate::Reg<gpo_dout_44_47::GPO_DOUT_44_47_SPEC>;
+pub type GPO_DOUT_11 = crate::Reg<gpo_dout_11::GPO_DOUT_11_SPEC>;
 #[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 44-47 DOUT"]
-pub mod gpo_dout_44_47;
-#[doc = "gpo_dout_48_51 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 48-51 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_48_51::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_48_51::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_48_51`]
+pub mod gpo_dout_11;
+#[doc = "gpo_dout_12 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 48-51 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_12::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_12::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_12`]
 module"]
-pub type GPO_DOUT_48_51 = crate::Reg<gpo_dout_48_51::GPO_DOUT_48_51_SPEC>;
+pub type GPO_DOUT_12 = crate::Reg<gpo_dout_12::GPO_DOUT_12_SPEC>;
 #[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 48-51 DOUT"]
-pub mod gpo_dout_48_51;
-#[doc = "gpo_dout_52_55 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 52-55 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_52_55::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_52_55::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_52_55`]
+pub mod gpo_dout_12;
+#[doc = "gpo_dout_13 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 52-55 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_13::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_13::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_13`]
 module"]
-pub type GPO_DOUT_52_55 = crate::Reg<gpo_dout_52_55::GPO_DOUT_52_55_SPEC>;
+pub type GPO_DOUT_13 = crate::Reg<gpo_dout_13::GPO_DOUT_13_SPEC>;
 #[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 52-55 DOUT"]
-pub mod gpo_dout_52_55;
-#[doc = "gpo_dout_56_59 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 56-59 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_56_59::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_56_59::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_56_59`]
+pub mod gpo_dout_13;
+#[doc = "gpo_dout_14 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 56-59 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_14::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_14::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_14`]
 module"]
-pub type GPO_DOUT_56_59 = crate::Reg<gpo_dout_56_59::GPO_DOUT_56_59_SPEC>;
+pub type GPO_DOUT_14 = crate::Reg<gpo_dout_14::GPO_DOUT_14_SPEC>;
 #[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 56-59 DOUT"]
-pub mod gpo_dout_56_59;
-#[doc = "gpo_dout_60_63 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 60-63 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_60_63::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_60_63::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_60_63`]
+pub mod gpo_dout_14;
+#[doc = "gpo_dout_15 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 60-63 DOUT\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpo_dout_15::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpo_dout_15::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpo_dout_15`]
 module"]
-pub type GPO_DOUT_60_63 = crate::Reg<gpo_dout_60_63::GPO_DOUT_60_63_SPEC>;
+pub type GPO_DOUT_15 = crate::Reg<gpo_dout_15::GPO_DOUT_15_SPEC>;
 #[doc = "SYS IOMUX CFG SAIF SYSCFG FMUX GPIO 60-63 DOUT"]
-pub mod gpo_dout_60_63;
+pub mod gpo_dout_15;
 #[doc = "gpi_0 (rw) register accessor: SYS IOMUX CFG SAIF SYSCFG FMUX GPIO GPI 0 - The register can be used to configure the selected GPIO connector number for input signals. The signal name is indicated in the \"Name\" column of the following table per StarFive naming conventions. For example, name \"u0_WAVE511_i_uart_rxsin_cfg\" indicates the corresponding input signal is \"u0_WAVE511.i_uart_rxsin\". See GPIO Input Signals (on page 107) for a complete list of the input GPIO signals.\n\nYou can [`read`](crate::generic::Reg::read) this register and get [`gpi_0::R`].  You can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`gpi_0::W`]. You can also [`modify`](crate::generic::Reg::modify) this register. See [API](https://docs.rs/svd2rust/#read--modify--write-api).\n\nFor information about available fields see [`mod@gpi_0`]
 module"]
 pub type GPI_0 = crate::Reg<gpi_0::GPI_0_SPEC>;
