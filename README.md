@@ -4,7 +4,9 @@
 
 # JH71xx Peripheral Access Crate
 
-Low-level access crates for JH71xx-based SoCs and development boards.
+Low-level access crates for JH71xx-based SoCs. Currently, only the JH7110 SoC is supported.
+
+The JH7100 SoC is discontinued, and the next SoC in the JH-series will be the JH8110.
 
 **WARNING** This crate is in the very earliest stages of development. SVD files used to generate the Rust code are partially hand-crafted from referencing the [JH7110 Technical Reference Manual, preliminary release V2](https://doc-en.rvspace.org/JH7110/PDF/JH7110_TRM_StarFive_Preliminary_V2.pdf). Any mistakes are my own, and reviews/contributions are welcome.
 
@@ -23,9 +25,5 @@ Until changes are upstreamed, a development revision can be cloned from [rmsyn/c
 To regenerate/update the Rust code:
 
 ```bash
-# For JH7110 VisionFive2 v1.2a:
-./scripts/regen.sh jh7110-vf2-12a-pac
-
-# For JH7110 VisionFive2 v1.3b:
-./scripts/regen.sh jh7110-vf2-13b-pac
+./scripts/regen.sh
 ``` 
