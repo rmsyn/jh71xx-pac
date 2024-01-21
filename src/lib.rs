@@ -661,6 +661,98 @@ impl core::fmt::Debug for SPI2 {
 }
 #[doc = "From arm,pl022, peripheral generator"]
 pub mod spi2;
+#[doc = "From starfive,jh7110-dmc-ctrl, peripheral generator"]
+pub struct DMC_CTRL {
+    _marker: PhantomData<*const ()>,
+}
+unsafe impl Send for DMC_CTRL {}
+impl DMC_CTRL {
+    #[doc = r"Pointer to the register block"]
+    pub const PTR: *const dmc_ctrl::RegisterBlock = 0x1570_0000 as *const _;
+    #[doc = r"Return the pointer to the register block"]
+    #[inline(always)]
+    pub const fn ptr() -> *const dmc_ctrl::RegisterBlock {
+        Self::PTR
+    }
+    #[doc = r" Steal an instance of this peripheral"]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Ensure that the new instance of the peripheral cannot be used in a way"]
+    #[doc = r" that may race with any existing instances, for example by only"]
+    #[doc = r" accessing read-only or write-only registers, or by consuming the"]
+    #[doc = r" original peripheral and using critical sections to coordinate"]
+    #[doc = r" access between multiple new instances."]
+    #[doc = r""]
+    #[doc = r" Additionally, other software such as HALs may rely on only one"]
+    #[doc = r" peripheral instance existing to ensure memory safety; ensure"]
+    #[doc = r" no stolen instances are passed to such software."]
+    pub unsafe fn steal() -> Self {
+        Self {
+            _marker: PhantomData,
+        }
+    }
+}
+impl Deref for DMC_CTRL {
+    type Target = dmc_ctrl::RegisterBlock;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        unsafe { &*Self::PTR }
+    }
+}
+impl core::fmt::Debug for DMC_CTRL {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("DMC_CTRL").finish()
+    }
+}
+#[doc = "From starfive,jh7110-dmc-ctrl, peripheral generator"]
+pub mod dmc_ctrl;
+#[doc = "From starfive,jh7110-dmc-phy, peripheral generator"]
+pub struct DMC_PHY {
+    _marker: PhantomData<*const ()>,
+}
+unsafe impl Send for DMC_PHY {}
+impl DMC_PHY {
+    #[doc = r"Pointer to the register block"]
+    pub const PTR: *const dmc_phy::RegisterBlock = 0x1300_0000 as *const _;
+    #[doc = r"Return the pointer to the register block"]
+    #[inline(always)]
+    pub const fn ptr() -> *const dmc_phy::RegisterBlock {
+        Self::PTR
+    }
+    #[doc = r" Steal an instance of this peripheral"]
+    #[doc = r""]
+    #[doc = r" # Safety"]
+    #[doc = r""]
+    #[doc = r" Ensure that the new instance of the peripheral cannot be used in a way"]
+    #[doc = r" that may race with any existing instances, for example by only"]
+    #[doc = r" accessing read-only or write-only registers, or by consuming the"]
+    #[doc = r" original peripheral and using critical sections to coordinate"]
+    #[doc = r" access between multiple new instances."]
+    #[doc = r""]
+    #[doc = r" Additionally, other software such as HALs may rely on only one"]
+    #[doc = r" peripheral instance existing to ensure memory safety; ensure"]
+    #[doc = r" no stolen instances are passed to such software."]
+    pub unsafe fn steal() -> Self {
+        Self {
+            _marker: PhantomData,
+        }
+    }
+}
+impl Deref for DMC_PHY {
+    type Target = dmc_phy::RegisterBlock;
+    #[inline(always)]
+    fn deref(&self) -> &Self::Target {
+        unsafe { &*Self::PTR }
+    }
+}
+impl core::fmt::Debug for DMC_PHY {
+    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
+        f.debug_struct("DMC_PHY").finish()
+    }
+}
+#[doc = "From starfive,jh7110-dmc-phy, peripheral generator"]
+pub mod dmc_phy;
 #[doc = "From starfive,jh7110-stgcrg, peripheral generator"]
 pub struct STGCRG {
     _marker: PhantomData<*const ()>,
@@ -1746,6 +1838,10 @@ pub struct Peripherals {
     pub SPI1: SPI1,
     #[doc = "SPI2"]
     pub SPI2: SPI2,
+    #[doc = "DMC_CTRL"]
+    pub DMC_CTRL: DMC_CTRL,
+    #[doc = "DMC_PHY"]
+    pub DMC_PHY: DMC_PHY,
     #[doc = "STGCRG"]
     pub STGCRG: STGCRG,
     #[doc = "STG_SYSCON"]
@@ -1845,6 +1941,12 @@ impl Peripherals {
                 _marker: PhantomData,
             },
             SPI2: SPI2 {
+                _marker: PhantomData,
+            },
+            DMC_CTRL: DMC_CTRL {
+                _marker: PhantomData,
+            },
+            DMC_PHY: DMC_PHY {
                 _marker: PhantomData,
             },
             STGCRG: STGCRG {

@@ -11398,6 +11398,70 @@
       </addressBlock>
     </peripheral>
     <peripheral>
+      <name>dmc_ctrl</name>
+      <description>From starfive,jh7110-dmc-ctrl, peripheral generator</description>
+      <baseAddress>0x15700000</baseAddress>
+      <addressBlock>
+        <offset>0</offset>
+        <size>0x10000</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <dim>1024</dim>
+          <dimIncrement>0x4</dimIncrement>
+          <name>csr[%s]</name>
+          <description>DDR Memory Control CSR register</description>
+          <addressOffset>0x0</addressOffset>
+          <resetValue>0</resetValue>
+        </register>
+        <register>
+          <dim>1024</dim>
+          <dimIncrement>0x4</dimIncrement>
+          <name>sec[%s]</name>
+          <description>DDR Memory Control SEC register</description>
+          <addressOffset>0x1000</addressOffset>
+          <resetValue>0</resetValue>
+        </register>
+      </registers>
+    </peripheral>
+    <peripheral>
+      <name>dmc_phy</name>
+      <description>From starfive,jh7110-dmc-phy, peripheral generator</description>
+      <baseAddress>0x13000000</baseAddress>
+      <addressBlock>
+        <offset>0</offset>
+        <size>0x10000</size>
+        <usage>registers</usage>
+      </addressBlock>
+      <registers>
+        <register>
+          <dim>512</dim>
+          <dimIncrement>0x4</dimIncrement>
+          <name>csr[%s]</name>
+          <description>DDR Memory Control PHY CSR</description>
+          <addressOffset>0x0</addressOffset>
+          <resetValue>0</resetValue>
+        </register>
+        <register>
+          <dim>512</dim>
+          <dimIncrement>0x4</dimIncrement>
+          <name>base[%s]</name>
+          <description>DDR Memory Control PHY Base register</description>
+          <addressOffset>0x800</addressOffset>
+          <resetValue>0</resetValue>
+        </register>
+        <register>
+          <dim>512</dim>
+          <dimIncrement>0x4</dimIncrement>
+          <name>ac_base[%s]</name>
+          <description>DDR Memory Control PHY AC Base register</description>
+          <addressOffset>0x1000</addressOffset>
+          <resetValue>0</resetValue>
+        </register>
+      </registers>
+    </peripheral>
+    <peripheral>
       <name>starfive_jh7110_usb_phy_0</name>
       <description>From starfive,jh7110-usb-phy, peripheral generator</description>
       <baseAddress>0x10200000</baseAddress>
