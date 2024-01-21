@@ -11416,7 +11416,7 @@
           <resetValue>0</resetValue>
         </register>
         <register>
-          <dim>1024</dim>
+          <dim>2048</dim>
           <dimIncrement>0x4</dimIncrement>
           <name>sec[%s]</name>
           <description>DDR Memory Control SEC register</description>
@@ -11436,7 +11436,7 @@
       </addressBlock>
       <registers>
         <register>
-          <dim>512</dim>
+          <dim>2048</dim>
           <dimIncrement>0x4</dimIncrement>
           <name>csr[%s]</name>
           <description>DDR Memory Control PHY CSR</description>
@@ -11444,11 +11444,11 @@
           <resetValue>0</resetValue>
         </register>
         <register>
-          <dim>512</dim>
+          <dim>2048</dim>
           <dimIncrement>0x4</dimIncrement>
           <name>base[%s]</name>
           <description>DDR Memory Control PHY Base register</description>
-          <addressOffset>0x800</addressOffset>
+          <addressOffset>0x2000</addressOffset>
           <resetValue>0</resetValue>
         </register>
         <register>
@@ -11456,7 +11456,7 @@
           <dimIncrement>0x4</dimIncrement>
           <name>ac_base[%s]</name>
           <description>DDR Memory Control PHY AC Base register</description>
-          <addressOffset>0x1000</addressOffset>
+          <addressOffset>0x4000</addressOffset>
           <resetValue>0</resetValue>
         </register>
       </registers>
