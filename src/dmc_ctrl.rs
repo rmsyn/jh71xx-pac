@@ -2,7 +2,7 @@
 #[repr(C)]
 pub struct RegisterBlock {
     csr: [CSR; 1024],
-    sec: [SEC; 1024],
+    sec: [SEC; 2048],
 }
 impl RegisterBlock {
     #[doc = "0x00..0x1000 - DDR Memory Control CSR register"]
@@ -16,13 +16,13 @@ impl RegisterBlock {
     pub fn csr_iter(&self) -> impl Iterator<Item = &CSR> {
         self.csr.iter()
     }
-    #[doc = "0x1000..0x2000 - DDR Memory Control SEC register"]
+    #[doc = "0x1000..0x3000 - DDR Memory Control SEC register"]
     #[inline(always)]
     pub const fn sec(&self, n: usize) -> &SEC {
         &self.sec[n]
     }
     #[doc = "Iterator for array of:"]
-    #[doc = "0x1000..0x2000 - DDR Memory Control SEC register"]
+    #[doc = "0x1000..0x3000 - DDR Memory Control SEC register"]
     #[inline(always)]
     pub fn sec_iter(&self) -> impl Iterator<Item = &SEC> {
         self.sec.iter()
