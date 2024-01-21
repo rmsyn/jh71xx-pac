@@ -297,6 +297,14 @@
 		#size-cells = <0x02>;
 		ranges;
 
+		rstgen: reset-controller {
+                        compatible = "starfive,jh7110-reset";
+                        reg = <0x00 0x13020000 0x00 0x10000>, <0x00 0x10230000 0x00 0x10000>, <0x00 0x17000000 0x00 0x10000>, <0x00 0x19810000 0x00 0x10000>, <0x00 0x295c0000 0x00 0x10000>;
+                        reg-names = "syscrg", "stgcrg", "aoncrg", "ispcrg", "voutcrg";
+                        #reset-cells = <0x01>;
+                        phandle = <0x13>;
+                };
+
 		clint: timer@2000000 {
 			compatible = "starfive,jh7110-clint";
 			reg = <0x00 0x2000000 0x00 0x10000>;
@@ -474,6 +482,22 @@
 			status = "okay";
 			pinctrl-names = "default";
 			pinctrl-0 = <&tdm_pins>;
+		};
+
+		dmc_ctrl: dmc@100b0000 {
+			compatible = "starfive,jh7110-dmc-ctrl";
+			reg = <0x0 0x15700000 0x0 0x10000>;
+			resets = <&rstgen 38>, <&rstgen 39>, <&rstgen 40>;
+			reset-names = "axi", "osc", "apb";
+			clock-frequency = <2133>;
+		};
+
+		dmc_phy: dmc@100c0000 {
+			compatible = "starfive,jh7110-dmc-phy";
+			reg = <0x0 0x13000000 0x0 0x10000>;
+			resets = <&rstgen 38>, <&rstgen 39>, <&rstgen 40>;
+			reset-names = "axi", "osc", "apb";
+			clock-frequency = <2133>;
 		};
 
 		usb0: usb@10100000 {
