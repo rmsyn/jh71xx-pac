@@ -11452,7 +11452,7 @@
           <resetValue>0</resetValue>
         </register>
         <register>
-          <dim>512</dim>
+          <dim>2048</dim>
           <dimIncrement>0x4</dimIncrement>
           <name>ac_base[%s]</name>
           <description>DDR Memory Control PHY AC Base register</description>

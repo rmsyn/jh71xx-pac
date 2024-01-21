@@ -3,7 +3,7 @@
 pub struct RegisterBlock {
     csr: [CSR; 512],
     base: [BASE; 512],
-    ac_base: [AC_BASE; 512],
+    ac_base: [AC_BASE; 2048],
 }
 impl RegisterBlock {
     #[doc = "0x00..0x800 - DDR Memory Control PHY CSR"]
@@ -28,13 +28,13 @@ impl RegisterBlock {
     pub fn base_iter(&self) -> impl Iterator<Item = &BASE> {
         self.base.iter()
     }
-    #[doc = "0x1000..0x1800 - DDR Memory Control PHY AC Base register"]
+    #[doc = "0x1000..0x3000 - DDR Memory Control PHY AC Base register"]
     #[inline(always)]
     pub const fn ac_base(&self, n: usize) -> &AC_BASE {
         &self.ac_base[n]
     }
     #[doc = "Iterator for array of:"]
-    #[doc = "0x1000..0x1800 - DDR Memory Control PHY AC Base register"]
+    #[doc = "0x1000..0x3000 - DDR Memory Control PHY AC Base register"]
     #[inline(always)]
     pub fn ac_base_iter(&self) -> impl Iterator<Item = &AC_BASE> {
         self.ac_base.iter()
