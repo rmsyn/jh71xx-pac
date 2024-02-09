@@ -1,8 +1,10 @@
 [![crates.io](https://img.shields.io/crates/d/jh71xx-pac.svg)](https://crates.io/crates/jh71xx-pac)
 [![crates.io](https://img.shields.io/crates/v/jh71xx-pac.svg)](https://crates.io/crates/jh71xx-pac)
-![Build Status](https://github.com/rmsyn/jh71xx-pac/workflows/CI/badge.svg)
+![Build Status](https://codeberg.org/weathered-steel/jh71xx-pac/workflows/CI/badge.svg)
 
 # JH71xx Peripheral Access Crate
+
+Development has moved to Codeberg: <https://codeberg.org/weathered-steel/jh71xx-pac>
 
 Low-level access crates for JH71xx-based SoCs. Currently, only the JH7110 SoC is supported.
 
