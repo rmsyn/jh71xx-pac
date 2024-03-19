@@ -4,7 +4,7 @@
 
 # JH71xx Peripheral Access Crate
 
-Development has moved to Codeberg: <https://codeberg.org/weathered-steel/jh71xx-pac>
+**NOTE** Development has moved to Codeberg: <https://codeberg.org/weathered-steel/jh71xx-pac>
 
 Low-level access crates for JH71xx-based SoCs. Currently, only the JH7110 SoC is supported.
 
